@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Instabug/Instabug-iOS.git", :tag => "1.1.2" }
   s.source_files = 'Instabug.framework/Versions/A/Headers/*.{h}'
   s.resources    = 'Instabug.bundle'
-  s.preserve_paths =  'Instabug.framework', 'Instabug.bundle'
+  s.preserve_paths =  'Instabug.framework/*', 'Instabug.bundle'
   s.frameworks   = 'QuartzCore', 'CoreGraphics', 'CoreFoundation', 'SystemConfiguration', 'Foundation', 'AVFoundation', 'OpenGLES', 'AudioToolbox', 'GLKit', 'CoreTelephony', 'UIKit', 'CoreLocation', 'Instabug'
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
   s.requires_arc = true
