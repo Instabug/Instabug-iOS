@@ -1,1 +1,5 @@
-Instabug iOS SDK. For integration steps check http://instabug.com/sdk_integration
+Instabug iOS SDK
+================
+Instant bug reporting for iOS apps.
+<br/>
+For integration steps check http://instabug.com/sdk_integration
