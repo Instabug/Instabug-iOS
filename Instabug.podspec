@@ -28,4 +28,5 @@ Pod::Spec.new do |s|
   s.resources    = 'Instabug.bundle'
   s.preserve_paths =  'Instabug.framework', 'Instabug.bundle'
   s.frameworks   = 'QuartzCore', 'CoreGraphics', 'CoreFoundation', 'SystemConfiguration', 'Foundation', 'AVFoundation', 'OpenGLES', 'AudioToolbox', 'GLKit', 'CoreTelephony', 'UIKit', 'CoreLocation', 'Instabug'
+  s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
 end
