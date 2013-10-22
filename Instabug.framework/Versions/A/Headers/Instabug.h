@@ -5,7 +5,7 @@
  
  Copyright:  (c) 2013 by Instabug, Inc., all rights reserved.
  
- Version:    1.1
+ Version:    1.1.2
  */
 
 //=============================================================================================
@@ -162,6 +162,18 @@ typedef enum{
  @discussion	Instantly shows the feedback form either with or without a screenshot
  */
 +(void)ShowFeedbackFormWithScreenshot:(BOOL)withScreenshot;
+
+/*!
+ @method		disableSDK
+ @discussion	Disables the SDK, this will disable all the SDK functions
+ */
++(void)disableSDK;
+
+/*!
+ @method		enableSDK
+ @discussion	Enables the SDK, this will enable all the SDK functions. The SDK is enabled by default
+ */
++(void)enableSDK;
 //=============================================================================================
 
 
@@ -188,6 +200,24 @@ typedef enum{
  @discussion	Sets the default value of the email field, whether to ask the user for it or not
  */
 +(void)setShowEmail:(BOOL) showEmail;
+
+/*!
+ @method		setEmail
+ @discussion	Sets the default value of the email field
+ */
++(void)setEmail:(NSString*) email;
+
+/*!
+ @method		setEmailIsRequired
+ @discussion	Sets the value of whether the email field is required or not
+ */
++(void)setEmailIsRequired:(BOOL) emailIsRequired;
+
+/*!
+ @method		setEmailInvalidText
+ @discussion	Sets the email invalid alert text, shown if an invalid email is entered
+ */
++(void)setEmailInvalidText:(NSString*) emailInvalidText;
 
 /*!
  @method		setShowStartAlert
