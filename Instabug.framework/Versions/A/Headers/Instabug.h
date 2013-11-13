@@ -5,7 +5,7 @@
  
  Copyright:  (c) 2013 by Instabug, Inc., all rights reserved.
  
- Version:    1.1.2
+ Version:    1.2
  */
 
 //=============================================================================================
@@ -32,12 +32,16 @@
  
  @constant   InstabugFeedbackEventNone
                 No event will be registered to show the feedback form, you'll need to code your own and call the function ShowFeedbackForm
+ 
+ @constant   InstabugFeedbackEventFloatingButton
+                Shows a floating button on top of all views, when pressed it takes a screenshot
  */
 typedef enum{
     InstabugFeedbackEventShake,
     InstabugFeedbackEventScreenshot,
     InstabugFeedbackEventThreeFingersSwipe,
-    InstabugFeedbackEventNone
+    InstabugFeedbackEventNone,
+    InstabugFeedbackEventFloatingButton
 } InstabugFeedbackEvent;
 
 /*!
@@ -122,9 +126,6 @@ typedef enum{
 //=============================================================================================
 
 
-
-
-
 @interface Instabug : NSObject
 
 //=============================================================================================
@@ -143,9 +144,6 @@ typedef enum{
           FeedbackEvent:(InstabugFeedbackEvent)feedbackEvent
      IsTrackingLocation:(BOOL)isTrackingLocation;
 //=============================================================================================
-
-
-
 
 
 //=============================================================================================
@@ -177,9 +175,6 @@ typedef enum{
 //=============================================================================================
 
 
-
-
-
 //=============================================================================================
 //  Sets the SDK parameters
 //=============================================================================================
@@ -208,6 +203,23 @@ typedef enum{
 +(void)setEmail:(NSString*) email;
 
 /*!
+ @method		setiPhoneShakingThreshold
+ @discussion	Sets the threshold value of the shake gesture on iPhone/iPod Touch. The default value is 2.5
+ */
++(void)setiPhoneShakingThreshold:(double) iPhoneShakingThreshold;
+
+/*!
+ @method		setiPadShakingThreshold
+ @discussion	Sets the threshold value of the shake gesture on iPad. The default value is 0.6
+ */
++(void)setiPadShakingThreshold:(double) iPadShakingThreshold;
+//=============================================================================================
+
+
+//=============================================================================================
+//  Sets the alerts parameters
+//=============================================================================================
+/*!
  @method		setEmailIsRequired
  @discussion	Sets the value of whether the email field is required or not
  */
@@ -218,6 +230,18 @@ typedef enum{
  @discussion	Sets the email invalid alert text, shown if an invalid email is entered
  */
 +(void)setEmailInvalidText:(NSString*) emailInvalidText;
+
+/*!
+ @method		setCommentIsRequired
+ @discussion	Sets the value of whether the comment field is required or not
+ */
++(void)setCommentIsRequired:(BOOL) commentIsRequired;
+
+/*!
+ @method		setCommentInvalidText
+ @discussion	Sets the comment invalid alert text, shown if no comment was entered
+ */
++(void)setCommentInvalidText:(NSString*) commentInvalidText;
 
 /*!
  @method		setShowStartAlert
@@ -242,10 +266,13 @@ typedef enum{
  @discussion	Sets the thank you alert text, that gets shown after sending a feedback
  */
 +(void)setThankYouAlertText:(NSString*) thankYouAlertText;
+
+/*!
+ @method		setAlertsTitle
+ @discussion	Sets the title of all future alerts
+ */
++(void)setAlertsTitle:(NSString*) alertsTitle;
 //=============================================================================================
-
-
-
 
 
 //=============================================================================================
@@ -292,5 +319,17 @@ typedef enum{
  @discussion	Sets the email, comment and footer font color
  */
 +(void)setTextFontColor:(UIColor*) color;
+
+/*!
+ @method		setFloatingButtonForeColor
+ @discussion	Sets the fore color of the floating button, if the floating button is selected
+ */
++(void)setFloatingButtonForeColor:(UIColor*) color;
+
+/*!
+ @method		setFloatingButtonBackColor
+ @discussion	Sets the back color of the floating button, if the floating button is selected
+ */
++(void)setFloatingButtonBackColor:(UIColor*) color;
 //=============================================================================================
 @end
