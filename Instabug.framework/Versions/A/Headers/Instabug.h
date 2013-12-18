@@ -5,7 +5,7 @@
  
  Copyright:  (c) 2013 by Instabug, Inc., all rights reserved.
  
- Version:    1.2
+ Version:    1.3
  */
 
 //=============================================================================================
@@ -178,6 +178,12 @@ typedef enum{
 //=============================================================================================
 //  Sets the SDK parameters
 //=============================================================================================
+/*!
+ @method		setAppIntrospection
+ @discussion	Set whether to log automatically the users' actions or not, enabled by defaulted
+ */
++(void)setAppIntrospection:(BOOL) appIntrospection;
+
 /*!
  @method		setUserDataString
  @discussion	Sets optional user data in a string. Maximum size of the string is 1000 characters
