@@ -3,9 +3,9 @@
  
  Contains:   API for using Instabug's SDK.
  
- Copyright:  (c) 2013 by Instabug, Inc., all rights reserved.
+ Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
  
- Version:    1.3
+ Version:    1.4
  */
 
 //=============================================================================================
