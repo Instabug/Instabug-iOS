@@ -209,6 +209,18 @@ typedef enum{
 +(void)setEmail:(NSString*) email;
 
 /*!
+ @method		setEmailPlaceholder
+ @discussion	Sets the placeholder text of the email field
+ */
++(void)setEmailPlaceholder:(NSString*) emailPlaceholder;
+
+/*!
+ @method		setEmail
+ @discussion	Sets the placeholder text of the comment field
+ */
++(void)setCommentPlaceholder:(NSString*) commentPlaceholder;
+
+/*!
  @method		setiPhoneShakingThreshold
  @discussion	Sets the threshold value of the shake gesture on iPhone/iPod Touch. The default value is 2.5
  */
