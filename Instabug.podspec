@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name         = "Instabug"
-  s.version      = "2.0"
+  s.version      = "3.0"
   s.summary      = "Bug reporting for mobile apps. Learn more at http://instabug.com"
   s.homepage     = "http://instabug.com"
   s.license      = {
       :type => 'Commercial',
       :text => <<-LICENSE
-                Copyright (C) 2013 Instabug
+                Copyright (C) 2014 Instabug
 
                 Permission is hereby granted to use this framework as is, modification are not allowed.
 
@@ -23,11 +23,12 @@ Pod::Spec.new do |s|
     }
   s.author       = { "Instabug" => "contactus@instabug.com" }
   s.platform     = :ios, '5.0'
-  s.source       = { :git => "https://github.com/Instabug/Instabug-iOS.git", :tag => "2.0" }
+  s.source       = { :git => "https://github.com/Instabug/Instabug-iOS.git", :tag => "3.0" }
   s.source_files = 'Instabug.framework/Versions/A/Headers/*.{h}'
   s.resources    = 'Instabug.bundle'
   s.preserve_paths =  'Instabug.framework/*', 'Instabug.bundle'
-  s.frameworks   = 'QuartzCore', 'CoreGraphics', 'CoreMotion', 'CoreFoundation', 'SystemConfiguration', 'Foundation', 'AVFoundation', 'OpenGLES', 'AudioToolbox', 'GLKit', 'CoreTelephony', 'UIKit', 'CoreLocation', 'Instabug'
+  s.frameworks   = 'QuartzCore', 'CoreGraphics', 'CoreMotion', 'CoreFoundation', 'SystemConfiguration', 'Foundation', 'AVFoundation', 'OpenGLES', 'AudioToolbox', 'GLKit', 'CoreTelephony', 'UIKit', 'CoreLocation', 'MessageUI', 'MobileCoreServices', 'Instabug'
+  s.libraries    = 'c++'
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
   s.requires_arc = true
 
