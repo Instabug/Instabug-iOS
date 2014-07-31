@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    3.0
+ Version:    3.3
  */
 
 //===========================================================================================================================================
@@ -122,12 +122,20 @@
 + (void)setIsTrackingUserSteps:(BOOL)isTrackingUserSteps;
 
 /**
- *  Set whether to show a screenshot to be annotated or not
+ *  Sets whether to show a screenshot to be annotated or not
  *
  *  Default = YES for bug reports, NO for feedback reports
  *  @param willShowScreenshotAnnotation willShowScreenshotAnnotation
  */
 + (void)setWillShowScreenshotAnnotation:(BOOL)willShowScreenshotAnnotation;
+
+/**
+ *  Sets the default SDK mode upon invocation
+ *
+ *  Default = IBGInvocationModeNA
+ *  @param invocationMode invocationMode
+ */
++ (void)setDefaultInvocationMode:(IBGInvocationMode)invocationMode;
 
 /**
  *  Sets the default value of whether to ask the user for an email or not

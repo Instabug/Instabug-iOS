@@ -50,6 +50,15 @@ typedef enum IBGColorTheme {
 } IBGColorTheme;
 
 /**
+ *  The mode used upon invocating the SDK
+ */
+typedef enum IBGInvocationMode {
+    IBGInvocationModeNA,
+    IBGInvocationModeBugReporter,
+    IBGInvocationModeFeedbackSender
+} IBGInvocationMode;
+
+/**
  *  The supported locales
  */
 typedef enum IBGLocale {
