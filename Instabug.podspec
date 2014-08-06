@@ -1,17 +1,16 @@
 Pod::Spec.new do |s|
   Pod::Installer::UserProjectIntegrator::TargetIntegrator.class_eval do
     unless method_defined?(:integrate_with_instabug!)
-
       INSTABUG_PHASE_NAME = "Upload Instabug dSYM"
-      INSTABUG_PHASE_SCRIPT = <<'END'
-  # SKIP_SIMULATOR_BUILDS=1
-  SCRIPT_SRC=$(find "$PROJECT_DIR" -name 'Instabug_dsym_upload.sh')
-  if [ ! "${SCRIPT_SRC}" ]; then
-    echo "Instabug: err: script not found. Make sure that you're including Instabug.bundle in your project directory"
-    exit 1
-  fi
-  source "${SCRIPT_SRC}"
-  END
+      INSTABUG_PHASE_SCRIPT = <<-SCRIPTEND
+        # SKIP_SIMULATOR_BUILDS=1
+        SCRIPT_SRC=$(find "$PROJECT_DIR" -name 'Instabug_dsym_upload.sh')
+        if [ ! "${SCRIPT_SRC}" ]; then
+          echo "Instabug: err: script not found. Make sure that you're including Instabug.bundle in your project directory"
+          exit 1
+        fi
+        source "${SCRIPT_SRC}"
+        SCRIPTEND
 
       def integrate_with_instabug!
         integrate_without_instabug!
@@ -57,7 +56,7 @@ Pod::Spec.new do |s|
       end
     end
   end
-  
+
   s.name         = "Instabug"
   s.version      = "3.4"
   s.summary      = "Bug reporting for mobile apps. Learn more at http://instabug.com"
