@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
     }
   s.author       = { "Instabug" => "contactus@instabug.com" }
   s.platform     = :ios, '5.0'
-  s.source       = { :git => "https://github.com/Instabug/Instabug-iOS.git", :tag => "3.4" }
+  s.source       = { :git => "https://github.com/Instabug/Instabug-iOS.git", :tag => "3.4.1" }
   s.source_files = 'Instabug.framework/Versions/A/Headers/*.{h}'
   s.resources    = 'Instabug.bundle'
   s.preserve_paths =  'Instabug.framework/*', 'Instabug.bundle'
