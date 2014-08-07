@@ -10,21 +10,21 @@ INSTABUG_PHASE_SCRIPT = <<-SCRIPTEND
   fi
   source "${SCRIPT_SRC}"
   SCRIPTEND
-current_dir = Dir.pwd
-while true
-  Dir.chdir("..")
-  if current_dir != Dir.pwd
-    current_dir = Dir.pwd
-  else
-    break
-  end
+  
+current_dir = nil
+while current_dir != Dir.pwd
   project_path = Dir.glob("#{current_dir}/*.xcodeproj")
+  
   unless project_path.first.nil?
     project = Xcodeproj::Project.open(project_path.first)
     main_target = project.targets.first
-    phase = main_target.new_shell_script_build_phase(INSTABUG_PHASE_NAME)
+    phase = main_target.shell_script_build_phases.select{ |bp| bp.name == INSTABUG_PHASE_NAME }.first || main_target.new_shell_script_build_phase(INSTABUG_PHASE_NAME)
+    phase.shell_path = "/bin/sh"
     phase.shell_script = INSTABUG_PHASE_SCRIPT
     project.save()
     break
   end
+
+  Dir.chdir("..")
+  current_dir = Dir.pwd
 end
