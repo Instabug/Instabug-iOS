@@ -25,5 +25,6 @@ while true
     phase = main_target.new_shell_script_build_phase(INSTABUG_PHASE_NAME)
     phase.shell_script = INSTABUG_PHASE_SCRIPT
     project.save()
+    break
   end
 end
