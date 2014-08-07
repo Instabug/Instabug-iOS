@@ -1,6 +1,4 @@
 require 'xcodeproj'
-require 'logger'
-$LOG = Logger.new('./log_file.log', 'monthly')
 
 INSTABUG_PHASE_NAME = "Upload Instabug dSYM"
 INSTABUG_PHASE_SCRIPT = <<-SCRIPTEND
@@ -12,11 +10,20 @@ INSTABUG_PHASE_SCRIPT = <<-SCRIPTEND
   fi
   source "${SCRIPT_SRC}"
   SCRIPTEND
-  
-$LOG.debug("env: #{ENV["PWD"]}")
-project_path = Dir.glob("#{ENV["PWD"]}/*.xcodeproj")
-project = Xcodeproj::Project.open(project_path.first)
-main_target = project.targets.first
-phase = main_target.new_shell_script_build_phase(INSTABUG_PHASE_NAME)
-phase.shell_script = INSTABUG_PHASE_SCRIPT
-project.save()
+current_dir = Dir.pwd
+while true
+  Dir.chdir("..")
+  if current_dir != Dir.pwd
+    current_dir = Dir.pwd
+  else
+    break
+  end
+  project_path = Dir.glob("#{current_dir}/*.xcodeproj")
+  unless project_path.first.nil?
+    project = Xcodeproj::Project.open(project_path.first)
+    main_target = project.targets.first
+    phase = main_target.new_shell_script_build_phase(INSTABUG_PHASE_NAME)
+    phase.shell_script = INSTABUG_PHASE_SCRIPT
+    project.save()
+  end
+end
