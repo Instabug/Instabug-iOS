@@ -59,8 +59,6 @@ if [ -f "${DSYM_UUIDs_PATH}" ]; then
         exit 0
     fi
 fi
-echo "${DSYM_UUIDs}" >> "${DSYM_UUIDs_PATH}"
-
 
 # Create dSYM .zip file
 DSYM_PATH_ZIP="${TEMP_DIRECTORY}/$DWARF_DSYM_FILE_NAME.zip"
@@ -86,6 +84,10 @@ fi
 echo "Instabug: deleting temporary dSYM archive..."
 /bin/rm -f "${DSYM_PATH_ZIP}"
 
+# Save UUIDs
+echo "${DSYM_UUIDs}" >> "${DSYM_UUIDs_PATH}"
+
+# Finalize
 echo "Instabug: dSYM upload complete."
 if [ "$?" -ne 0 ]; then
   echo "Instabug: err: an error was encountered uploading dSYM"
