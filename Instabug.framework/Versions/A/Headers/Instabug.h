@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    3.5
+ Version:    3.6
  */
 
 //===========================================================================================================================================
@@ -38,6 +38,14 @@
 //===========================================================================================================================================
 /** @name SDK Pro Features */
 //===========================================================================================================================================
+/**
+ *  Adds custom logs that will be sent with each report
+ *
+ *  @param format format
+ *  @param ...    ...
+ */
+void IBGLog(NSString *format, ...);
+
 /**
  *  Sets the user data that's attached with each bug report sent. Maximum size of the string is 1000 characters
  *  @param userData userData
@@ -79,7 +87,7 @@
 //===========================================================================================================================================
 
 //===========================================================================================================================================
-/** @name SDK Parameters' Initialization */
+/** @name SDK Functions Customization */
 //===========================================================================================================================================
 /**
  *  Sets the event that invocates the feedback form
@@ -88,14 +96,6 @@
  *  @param invocationEvent invocationEvent
  */
 + (void)setInvocationEvent:(IBGInvocationEvent)invocationEvent;
-
-/**
- *  Sets the locale used to display the strings in the correct language
- *  
- *  Default is fetched from the device locale
- *  @param locale locale
- */
-+ (void)setLocale:(IBGLocale)locale;
 
 /**
  *  Sets whether to track the crashes in the app or not
@@ -122,13 +122,25 @@
 + (void)setIsTrackingUserSteps:(BOOL)isTrackingUserSteps;
 
 /**
- *  Sets whether to show a screenshot to be annotated or not
+ *  Sets whether to send the crash report immediatly on crash or not. When set to NO, the crash report is sent on the next app launch.
  *
- *  Default = YES for bug reports, NO for feedback reports
- *  @param willShowScreenshotAnnotation willShowScreenshotAnnotation
+ *  Default = NO
+ *  @param sendCrashReportsImmendiatly sendCrashReportsImmendiatly
  */
-+ (void)setWillShowScreenshotAnnotation:(BOOL)willShowScreenshotAnnotation;
++ (void)setWillSendCrashReportsImmendiatly:(BOOL)sendCrashReportsImmendiatly;
 
+/**
+ *  Sets the default value of the email field
+ *
+ *  Default = @""
+ *  @param defaultEmail defaultEmail
+ */
++ (void)setDefaultEmail:(NSString *)defaultEmail;
+//===========================================================================================================================================
+
+//===========================================================================================================================================
+/** @name SDK Experience Customization */
+//===========================================================================================================================================
 /**
  *  Sets the default SDK mode upon invocation
  *
@@ -136,6 +148,14 @@
  *  @param invocationMode invocationMode
  */
 + (void)setDefaultInvocationMode:(IBGInvocationMode)invocationMode;
+
+/**
+ *  Sets whether to show a screenshot to be annotated or not
+ *
+ *  Default = YES for bug reports, NO for feedback reports
+ *  @param willShowScreenshotAnnotation willShowScreenshotAnnotation
+ */
++ (void)setWillShowScreenshotAnnotation:(BOOL)willShowScreenshotAnnotation;
 
 /**
  *  Sets the default value of whether to ask the user for an email or not
@@ -162,30 +182,6 @@
 + (void)setCommentIsRequired:(BOOL)commentIsRequired;
 
 /**
- *  Sets the default value of the email field
- *
- *  Default = @""
- *  @param defaultEmail defaultEmail
- */
-+ (void)setDefaultEmail:(NSString *)defaultEmail;
-
-/**
- *  Sets the placeholder text of the email field
- *
- *  Default = @"Enter your email..."
- *  @param emailPlaceholder emailPlaceholder
- */
-+ (void)setEmailPlaceholder:(NSString *)emailPlaceholder;
-
-/**
- *  Sets the placeholder text of the comment field
- *
- *  Default = @"Enter your feedback..."
- *  @param commentPlaceholder commentPlaceholder
- */
-+ (void)setCommentPlaceholder:(NSString *)commentPlaceholder;
-
-/**
  *  Sets the default value of the tutorial alert, that gets shown on launching the first bug report
  *
  *  Default = YES
@@ -210,6 +206,22 @@
 + (void)setWillShowFeedbackSentAlert:(BOOL)willShowFeedbackSentAlert;
 
 /**
+ *  Sets the default offset of the floating button from the top of the screen. Different orientations are already handled
+ *
+ *  Default = 50
+ *  @param floatingButtonOffsetFromTop floatingButtonOffsetFromTop
+ */
++ (void)setFloatingButtonOffsetFromTop:(double)floatingButtonOffsetFromTop;
+
+/**
+ *  Sets the default edge at which the floating button will be shown. Use CGRectMaxXEdge(right) or CGRectMinXEdge(left). Different orientations are already handled
+ *
+ *  Default = CGRectMaxXEdge
+ *  @param floatingButtonEdge floatingButtonEdge
+ */
++ (void)setFloatingButtonEdge:(CGRectEdge)floatingButtonEdge;
+
+/**
  *  Sets the threshold value of the shake gesture on iPhone/iPod Touch
  *
  *  Default = 2.5
@@ -232,22 +244,6 @@
  *  @param willVibrateOnInvocation willVibrateOnInvocation
  */
 + (void)setWillVibrateOnInvocation:(BOOL)willVibrateOnInvocation;
-
-/**
- *  Sets the default offset of the floating button from the top of the screen. Different orientations are already handled
- *
- *  Default = 50
- *  @param floatingButtonOffsetFromTop floatingButtonOffsetFromTop
- */
-+ (void)setFloatingButtonOffsetFromTop:(double)floatingButtonOffsetFromTop;
-
-/**
- *  Sets the default edge at which the floating button will be shown. Use CGRectMaxXEdge(right) or CGRectMinXEdge(left). Different orientations are already handled
- *
- *  Default = CGRectMaxXEdge
- *  @param floatingButtonEdge floatingButtonEdge
- */
-+ (void)setFloatingButtonEdge:(CGRectEdge)floatingButtonEdge;
 //===========================================================================================================================================
 
 //===========================================================================================================================================
@@ -315,5 +311,137 @@
  *  @param color color
  */
 + (void)setFloatingButtonBackColor:(UIColor *)color;
+//===========================================================================================================================================
+
+//===========================================================================================================================================
+/** @name SDK Strings Customization */
+//===========================================================================================================================================
+/**
+ *  Sets the locale used to display the strings in the correct language
+ *
+ *  Default is fetched from the device locale
+ *  @param locale locale
+ */
++ (void)setLocale:(IBGLocale)locale;
+
+/**
+ *  Sets the text displayed in the header and the action sheet representing bug reports
+ *
+ *  Default = @"Report a bug"
+ *  @param bugHeaderText bugHeaderText
+ */
++ (void)setBugHeaderText:(NSString *)bugHeaderText;
+
+/**
+ *  Sets the text displayed in the header and the action sheet representing feedback reports
+ *
+ *  Default = @"Send Feedback"
+ *  @param feedbackHeaderText feedbackHeaderText
+ */
++ (void)setFeedbackHeaderText:(NSString *)feedbackHeaderText;
+
+/**
+ *  Sets the placeholder text of the email field
+ *
+ *  Default = @"Enter your email..."
+ *  @param emailPlaceholder emailPlaceholder
+ */
++ (void)setEmailPlaceholder:(NSString *)emailPlaceholder;
+
+/**
+ *  Sets the placeholder text of the comment field
+ *
+ *  Default = @"Enter your feedback..."
+ *  @param commentPlaceholder commentPlaceholder
+ */
++ (void)setCommentPlaceholder:(NSString *)commentPlaceholder;
+
+/**
+ *  Sets the text displayed in the alert shown on startup
+ *
+ *  Default = @"Shake to send feedback"
+ *  @param startAlertText startAlertText
+ */
++ (void)setStartAlertText:(NSString *)startAlertText;
+
+/**
+ *  Sets the text displayed in the alert shown on sending the first report
+ *
+ *  Default = @"Draw on screenshot then add text"
+ *  @param tutorialAlertText tutorialAlertText
+ */
++ (void)setTutorialAlertText:(NSString *)tutorialAlertText;
+
+/**
+ *  Sets the title displayed in the alert shown after sending reports
+ *
+ *  Default = @"Feedback Sent"
+ *  @param feedbackSentAlertTitle feedbackSentAlertTitle
+ */
++ (void)setFeedbackSentAlertTitle:(NSString *)feedbackSentAlertTitle;
+
+/**
+ *  Sets the text displayed in the alert shown after sending reports
+ *
+ *  Default = @"Thank you for helping us improve <App Name>!"
+ *  @param feedbackSentAlertText feedbackSentAlertText
+ */
++ (void)setFeedbackSentAlertText:(NSString *)feedbackSentAlertText;
+
+/**
+ *  Sets the title displayed in the alert shown when an invalid email is entered, and the email field is required
+ *
+ *  Default = @"Invalid Email"
+ *  @param invalidEmailAlertTitle invalidEmailAlertTitle
+ */
++ (void)setInvalidEmailAlertTitle:(NSString *)invalidEmailAlertTitle;
+
+/**
+ *  Sets the text displayed in the alert shown when an invalid email is entered, and the email field is required
+ *
+ *  Default = @"Please enter a valid email"
+ *  @param invalidEmailAlertText invalidEmailAlertText
+ */
++ (void)setInvalidEmailAlertText:(NSString *)invalidEmailAlertText;
+
+/**
+ *  Sets the title displayed in the alert shown when no comment is entered, and the comment field is required
+ *
+ *  Default = @"Invalid Comment"
+ *  @param invalidCommentAlertTitle invalidCommentAlertTitle
+ */
++ (void)setInvalidCommentAlertTitle:(NSString *)invalidCommentAlertTitle;
+
+/**
+ *  Sets the text displayed in the alert shown when no comment is entered, and the comment field is required
+ *
+ *  Default = @"Please enter a valid comment"
+ *  @param invalidCommentAlertText invalidCommentAlertText
+ */
++ (void)setInvalidCommentAlertText:(NSString *)invalidCommentAlertText;
+
+/**
+ *  Sets the text of the OK button that dismisses alerts
+ *
+ *  Default = @"OK"
+ *  @param okButtonText okButtonText
+ */
++ (void)setOkButtonText:(NSString *)okButtonText;
+
+/**
+ *  Sets the text of the submit button that sends reports
+ *
+ *  Default = @"Send"
+ *  @param submitButtonText submitButtonText
+ */
++ (void)setSubmitButtonText:(NSString *)submitButtonText;
+
+/**
+ *  Sets the text of the cancel button that dismisses sending reports
+ *
+ *  Default = @"Cancel"
+ *  @param cancelButtonText cancelButtonText
+ */
++ (void)setCancelButtonText:(NSString *)cancelButtonText;
 //===========================================================================================================================================
 @end
