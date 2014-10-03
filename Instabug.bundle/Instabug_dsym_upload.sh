@@ -69,10 +69,10 @@ fi
 DSYM_PATH_ZIP="${TEMP_DIRECTORY}/$DWARF_DSYM_FILE_NAME.zip"
 if [ ! -d "$DSYM_PATH" ]; then
   echo "Instabug: err: dSYM not found: ${DSYM_PATH}"
-  exit 1
+  exit 0
 fi
 echo "Instabug: Compressing dSYM file..."
-(/usr/bin/zip --recurse-paths --quiet "${DSYM_PATH_ZIP}" "${DSYM_PATH}") || exit 1
+(/usr/bin/zip --recurse-paths --quiet "${DSYM_PATH_ZIP}" "${DSYM_PATH}") || exit 0
 
 # Upload dSYM
 echo "Instabug: Uploading dSYM file..."
@@ -82,7 +82,7 @@ if [ $STATUS -ne 200 ]; then
   echo "Instabug: err: dSYM archive not succesfully uploaded."
   echo "Instabug: deleting temporary dSYM archive..."
   /bin/rm -f "${DSYM_PATH_ZIP}"
-  exit 1
+  exit 0
 fi
 
 # Remove temp dSYM archive
@@ -96,5 +96,5 @@ echo "${DSYM_UUIDs}" >> "${DSYM_UUIDs_PATH}"
 echo "Instabug: dSYM upload complete."
 if [ "$?" -ne 0 ]; then
   echo "Instabug: err: an error was encountered uploading dSYM"
-  exit 1
+  exit 0
 fi
