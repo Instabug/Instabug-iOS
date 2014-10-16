@@ -66,6 +66,7 @@ typedef enum IBGLocale {
     IBGLocaleChineseSimplified,
     IBGLocaleChineseTraditional,
     IBGLocaleEnglish,
+    IBGLocaleFinnish,
     IBGLocaleFrench,
     IBGLocaleGerman,
     IBGLocaleItalian,
