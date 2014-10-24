@@ -31,5 +31,4 @@ Pod::Spec.new do |s|
   s.libraries    = 'c++'
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"', 'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11', 'CLANG_CXX_LIBRARY' => 'libc++' }
   s.requires_arc = true
-  s.prepare_command = "ruby add_instabug_build_script.rb"
 end
