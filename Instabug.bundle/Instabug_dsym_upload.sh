@@ -9,7 +9,7 @@
 #
 # --- INVOCATION SCRIPT BEGIN ---
 # # SKIP_SIMULATOR_BUILDS=1
-# SCRIPT_SRC=$(find "$PROJECT_DIR" -name 'Instabug_dsym_upload.sh')
+# SCRIPT_SRC=$(find "$PROJECT_DIR" -name 'Instabug_dsym_upload.sh' | head -1)
 # if [ ! "${SCRIPT_SRC}" ]; then
 #   echo "Instabug: err: script not found. Make sure that you're including Instabug.bundle in your project directory"
 #   exit 1
@@ -22,6 +22,10 @@ echo "Instabug: Started uploading dSYM"
 # Check to make sure the app token exists
 if [ ! "${APP_TOKEN}" ]; then
 APP_TOKEN=$(grep -r 'Instabug startWithToken:@\"[0-9a-zA-Z]*\"' ./ -m 1 | grep -o '\"[0-9a-zA-Z]*\"' | cut -d "\"" -f 2)
+fi
+
+if [ ! "${APP_TOKEN}" ]; then
+APP_TOKEN=$(grep -r 'Instabug.startWithToken(\"[0-9a-zA-Z]*\"' ./ -m 1 | grep -o '\"[0-9a-zA-Z]*\"' | cut -d "\"" -f 2)
 fi
 
 if [ ! "${APP_TOKEN}" ] || [ -z "${APP_TOKEN}" ];then

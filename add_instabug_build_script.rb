@@ -3,14 +3,14 @@
 # INSTABUG_PHASE_NAME = "Upload Instabug dSYM"
 # INSTABUG_PHASE_SCRIPT = <<-SCRIPTEND
 #   # SKIP_SIMULATOR_BUILDS=1
-#   SCRIPT_SRC=$(find "$PROJECT_DIR" -name 'Instabug_dsym_upload.sh')
+#   SCRIPT_SRC=$(find "$PROJECT_DIR" -name 'Instabug_dsym_upload.sh' | head -1)
 #   if [ ! "${SCRIPT_SRC}" ]; then
 #     echo "Instabug: err: script not found. Make sure that you're including Instabug.bundle in your project directory"
 #     exit 1
 #   fi
 #   source "${SCRIPT_SRC}"
-#   SCRIPTEND
-  
+#   SCRIPTEND  
+
 # current_path = nil
 # while current_path != Dir.pwd
 #   current_path = Dir.pwd
