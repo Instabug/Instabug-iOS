@@ -78,6 +78,7 @@ typedef enum IBGLocale {
     IBGLocaleRussian,
     IBGLocaleSlovenian,
     IBGLocaleSpanish,
+    IBGLocaleSwedish,
     IBGLocaleTurkish
 } IBGLocale;
 //===========================================================================================================================================
