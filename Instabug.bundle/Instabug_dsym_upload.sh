@@ -47,14 +47,27 @@ if [ "$EFFECTIVE_PLATFORM_NAME" == "-iphonesimulator" ]; then
   fi
 fi
 
-# Create temp directory if not exists
-TEMP_ROOT="/tmp/Instabug"
-if [ ! -d "${TEMP_ROOT}" ]; then
-mkdir "${TEMP_ROOT}"
+# Create a temp directory
+TEMP_ROOT=$(mktemp -d /tmp/Instabug.XXXXXX)
+
+if [ "$?" -ne 0 ]; then
+    echo "Instabug: Failed to create temporary directory"
+    exit 1
 fi
-TEMP_DIRECTORY="/tmp/Instabug/$EXECUTABLE_NAME"
-if [ ! -d "${TEMP_DIRECTORY}" ]; then
-mkdir "${TEMP_DIRECTORY}"
+
+function cleanUp() {
+    rm -rf $TEMP_ROOT;
+}
+
+trap cleanUp EXIT
+
+TEMP_DIRECTORY="${TEMP_ROOT}/${EXECUTABLE_NAME}"
+
+mkdir -p $TEMP_DIRECTORY
+
+if [ "$?" -ne 0 ]; then
+    echo "Instabug: Failed to create temporary directory in ${TEMP_DIRECTORY}"
+    exit 1
 fi
 
 # Check dSYM file
@@ -84,21 +97,14 @@ ENDPOINT="https://www.instabug.com/api/ios/v1/dsym"
 STATUS=$(curl "${ENDPOINT}" --write-out %{http_code} --silent --output /dev/null -F dsym=@"${DSYM_PATH_ZIP}" -F token="${APP_TOKEN}")
 if [ $STATUS -ne 200 ]; then
   echo "Instabug: err: dSYM archive not succesfully uploaded."
-  echo "Instabug: deleting temporary dSYM archive..."
-  /bin/rm -f "${DSYM_PATH_ZIP}"
   exit 0
 fi
-
-# Remove temp dSYM archive
-echo "Instabug: deleting temporary dSYM archive..."
-/bin/rm -f "${DSYM_PATH_ZIP}"
 
 # Save UUIDs
 echo "${DSYM_UUIDs}" >> "${DSYM_UUIDs_PATH}"
 
 # Finalize
 echo "Instabug: dSYM upload complete."
-if [ "$?" -ne 0 ]; then
-  echo "Instabug: err: an error was encountered uploading dSYM"
-  exit 0
-fi
+
+trap - EXIT
+cleanUp
