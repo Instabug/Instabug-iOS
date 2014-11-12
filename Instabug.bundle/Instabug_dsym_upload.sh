@@ -48,11 +48,12 @@ if [ "$EFFECTIVE_PLATFORM_NAME" == "-iphonesimulator" ]; then
 fi
 
 # Create temp directory if not exists
-TEMP_ROOT="/tmp/Instabug"
+CURRENT_USER=$(whoami| tr -dc '[:alnum:]\n\r' | tr '[:upper:]' '[:lower:]')
+TEMP_ROOT="/tmp/Instabug-${CURRENT_USER}"
 if [ ! -d "${TEMP_ROOT}" ]; then
 mkdir "${TEMP_ROOT}"
 fi
-TEMP_DIRECTORY="/tmp/Instabug/$EXECUTABLE_NAME"
+TEMP_DIRECTORY="${TEMP_ROOT}/$EXECUTABLE_NAME"
 if [ ! -d "${TEMP_DIRECTORY}" ]; then
 mkdir "${TEMP_DIRECTORY}"
 fi

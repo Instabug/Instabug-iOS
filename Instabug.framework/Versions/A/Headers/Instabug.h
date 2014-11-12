@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    3.17
+ Version:    3.18
  */
 
 //===========================================================================================================================================
@@ -148,6 +148,14 @@ void IBGLog(NSString *format, ...);
  *  @param invocationMode invocationMode
  */
 + (void)setDefaultInvocationMode:(IBGInvocationMode)invocationMode;
+
+/**
+ *  Sets whether to attach a screenshot to crash reports or not
+ *
+ *  Default = NO
+ *  @param willAttachCrashScreenshot willAttachCrashScreenshot
+ */
++ (void)setWillAttachCrashScreenshot:(BOOL)willAttachCrashScreenshot;
 
 /**
  *  Sets whether to show a screenshot to be annotated or not
