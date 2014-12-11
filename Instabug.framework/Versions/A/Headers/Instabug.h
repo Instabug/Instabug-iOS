@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    3.18
+ Version:    3.19
  */
 
 //===========================================================================================================================================
@@ -104,14 +104,6 @@ void IBGLog(NSString *format, ...);
  *  @param isTrackingCrashes isTrackingCrashes
  */
 + (void)setIsTrackingCrashes:(BOOL)isTrackingCrashes;
-
-/**
- *  Sets whether to track the user location or not
- *
- *  Default = YES
- *  @param isTrackingLocation isTrackingLocation
- */
-+ (void)setIsTrackingLocation:(BOOL)isTrackingLocation;
 
 /**
  *  Sets whether to track the user's steps while using the app or not
