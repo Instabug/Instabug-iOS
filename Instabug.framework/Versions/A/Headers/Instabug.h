@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    3.20
+ Version:    3.21
  */
 
 //===========================================================================================================================================
@@ -83,6 +83,28 @@ void IBGLog(NSString *format, ...);
  *  Shows the email composer view to send feedback
  */
 + (void)invokeFeedbackSenderViaEmail;
+
+/**
+ *  Manually reports a bug without showing any UI elements
+ *  @param comment comment(optional)
+ *  @param email email(optional)
+ *  @param screenshot screenshot(optional)
+ */
++ (void)reportBugWithComment:(NSString *)comment email:(NSString *)email screenshot:(UIImage *)screenshot;
+
+/**
+ *  Manually send a feedback without showing any UI elements
+ *  @param comment comment(optional)
+ *  @param email email(optional)
+ *  @param screenshot screenshot(optional)
+ */
++ (void)sendFeedbackWithComment:(NSString *)comment email:(NSString *)email screenshot:(UIImage *)screenshot;
+
+/**
+ *  Manually reports an exception
+ *  @param exception exception(required)
+ */
++ (void)reportException:(NSException *)exception;
 
 //===========================================================================================================================================
 
