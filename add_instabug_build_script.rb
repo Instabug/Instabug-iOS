@@ -2,6 +2,11 @@ require 'xcodeproj'
 
 INSTABUG_PHASE_NAME = "Upload Instabug dSYM"
 INSTABUG_PHASE_SCRIPT = <<-SCRIPTEND
+  if [ "${INSTABUG_SKIP_DSYM_UPLOAD}" ]; then
+    echo "Skipping dSYM upload."
+    exit 0
+  fi
+
   # SKIP_SIMULATOR_BUILDS=1
   SCRIPT_SRC=$(find "$PROJECT_DIR" -name 'Instabug_dsym_upload.sh' | head -1)
   if [ ! "${SCRIPT_SRC}" ]; then
@@ -10,16 +15,16 @@ INSTABUG_PHASE_SCRIPT = <<-SCRIPTEND
   fi
   source "${SCRIPT_SRC}"
   SCRIPTEND
-  
+
 current_path = nil
 while current_path != Dir.pwd
   current_path = Dir.pwd
   project_path = Dir.glob("#{current_path}/*.xcodeproj")
-  
+
   unless project_path.first.nil?
     project = Xcodeproj::Project.open(project_path.first)
     targets = project.targets
-    
+
     targets.each do |target|
       if target.product_type == "com.apple.product-type.application" or target.product_type == "com.apple.product-type.app-extension"
         phase = target.new_shell_script_build_phase(INSTABUG_PHASE_NAME)
@@ -27,7 +32,7 @@ while current_path != Dir.pwd
         project.save()
       end
     end
-    
+
     break
   end
 
