@@ -81,7 +81,7 @@ echo "Instabug: Compressing dSYM file..."
 
 # Upload dSYM
 echo "Instabug: Uploading dSYM file..."
-ENDPOINT="https://www.instabug.com/api/ios/v1/dsym"
+ENDPOINT="https://api.instabug.com/api/ios/v1/dsym"
 STATUS=$(curl "${ENDPOINT}" --write-out %{http_code} --silent --output /dev/null -F dsym=@"${DSYM_PATH_ZIP}" -F token="${APP_TOKEN}")
 if [ $STATUS -ne 200 ]; then
   echo "Instabug: err: dSYM archive not succesfully uploaded."
