@@ -34,17 +34,17 @@ if [ ! "${APP_TOKEN}" ] || [ -z "${APP_TOKEN}" ];then
 fi
 echo "Instabug: found APP_TOKEN=${APP_TOKEN}"
 
-# Check internet connection
-if [ ! "`ping -c 1 instabug.com`" ]; then
-  exit 0
-fi
-
 # Check for simulator builds
 if [ "$EFFECTIVE_PLATFORM_NAME" == "-iphonesimulator" ]; then
   if [ "${SKIP_SIMULATOR_BUILDS}" ] && [ "${SKIP_SIMULATOR_BUILDS}" -eq 1 ]; then
     echo "Instabug: Skipping simulator build"
     exit 0
   fi
+fi
+
+# Check internet connection
+if [ ! "`ping -c 1 api.instabug.com`" ]; then
+  exit 0
 fi
 
 # Create temp directory if not exists
