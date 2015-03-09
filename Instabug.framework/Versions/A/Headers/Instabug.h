@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    4.0
+ Version:    4.1
  */
 
 //===========================================================================================================================================
@@ -333,6 +333,20 @@ void IBGLog(NSString *format, ...);
  *  @param color color
  */
 + (void)setFloatingButtonBackColor:(UIColor *)color;
+
+/**
+ *  Sets the background color of the cancel button and the text color of the other buttons that are shown in the action sheet
+ *
+ *  @param color color
+ */
++ (void)setPromptPrimaryColor:(UIColor *)color;
+
+/**
+ *  Sets the text color of the cancel button and the background color of the other buttons that are shown in the action sheet
+ *
+ *  @param color color
+ */
++ (void)setPromptSecondaryColor:(UIColor *)color;
 //===========================================================================================================================================
 
 //===========================================================================================================================================
