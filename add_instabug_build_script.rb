@@ -19,15 +19,15 @@
 #   unless project_path.first.nil?
 #     project = Xcodeproj::Project.open(project_path.first)
 #     targets = project.targets
-    
-#     targets.each do |target|
-#       if target.product_type == "com.apple.product-type.application" or target.product_type == "com.apple.product-type.app-extension"
-#         phase = target.new_shell_script_build_phase(INSTABUG_PHASE_NAME)
-#         phase.shell_script = INSTABUG_PHASE_SCRIPT
-#         project.save()
-#       end
-#     end
-    
+#    targets.each do |target|
+#      if target.product_type == "com.apple.product-type.application" or target.product_type == "com.apple.product-type.app-extension"
+#        if target.shell_script_build_phases.detect { |existing_build_phase| existing_build_phase.name == INSTABUG_PHASE_NAME } == nil
+#          phase = target.new_shell_script_build_phase(INSTABUG_PHASE_NAME)
+#          phase.shell_script = INSTABUG_PHASE_SCRIPT
+#          project.save()
+#        end
+#      end
+#    end
 #     break
 #   end
 
