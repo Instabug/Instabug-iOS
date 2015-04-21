@@ -60,7 +60,7 @@ fi
 
 # Check dSYM file
 DSYM_PATH=${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}
-DSYM_UUIDs=$(dwarfdump --uuid ${DSYM_PATH} | cut -d' ' -f2)
+DSYM_UUIDs=$(dwarfdump --uuid "${DSYM_PATH}" | cut -d' ' -f2)
 
 # Check if UUIDs exists
 DSYM_UUIDs_PATH="${TEMP_DIRECTORY}/UUIDs.dat"
