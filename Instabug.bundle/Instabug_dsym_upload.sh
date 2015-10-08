@@ -43,8 +43,9 @@ if [ "$EFFECTIVE_PLATFORM_NAME" == "-iphonesimulator" ]; then
 fi
 
 # Check internet connection
-if [ ! "`ping -c 1 api.instabug.com`" ]; then
-  exit 0
+if [ "`curl -s https://api.instabug.com | grep status | grep -c OK`" != "1" ]; then
+  echo "ERROR connecting to api.instabug.com. Aborting."
+  exit 1
 fi
 
 # Create temp directory if not exists
