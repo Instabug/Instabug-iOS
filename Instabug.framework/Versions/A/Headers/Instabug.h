@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    4.1.8
+ Version:    4.1.9
  */
 
 //===========================================================================================================================================
@@ -134,14 +134,6 @@ void IBGLog(NSString *format, ...);
  *  @param isTrackingUserSteps isTrackingUserSteps
  */
 + (void)setIsTrackingUserSteps:(BOOL)isTrackingUserSteps;
-
-/**
- *  Sets whether to send the crash report immediately on crash or not. When set to NO, the crash report is sent on the next app launch.
- *
- *  Default = NO
- *  @param sendCrashReportsImmediately sendCrashReportsImmediately
- */
-+ (void)setWillSendCrashReportsImmediately:(BOOL)sendCrashReportsImmediately;
 
 /**
  *  Sets the default value of the email field
