@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    4.1.9
+ Version:    4.1.10
  */
 
 //===========================================================================================================================================
@@ -105,6 +105,11 @@ void IBGLog(NSString *format, ...);
  *  @param exception exception(required)
  */
 + (void)reportException:(NSException *)exception;
+
+/**
+ *  Dismisses the reporting view
+ */
++ (void)dismiss;
 
 //===========================================================================================================================================
 
