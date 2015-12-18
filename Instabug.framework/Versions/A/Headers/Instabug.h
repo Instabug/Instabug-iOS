@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    4.1.10
+ Version:    4.1.10b1812
  */
 
 //===========================================================================================================================================
@@ -123,6 +123,22 @@ void IBGLog(NSString *format, ...);
  *  @param invocationEvent invocationEvent
  */
 + (void)setInvocationEvent:(IBGInvocationEvent)invocationEvent;
+
+/**
+ *  Add an event that invocates the feedback form
+ *
+ *  Default is set by startWithToken:captureSource:invocationEvent:
+ *  @param invocationEvent invocationEvent
+ */
++ (void)addInvocationEvent:(IBGInvocationEvent)invocationEvent;
+
+/**
+ *  Remove an event that invocates the feedback form
+ *
+ *  Default is set by startWithToken:captureSource:invocationEvent:
+ *  @param invocationEvent invocationEvent
+ */
++ (void)removeInvocationEvent:(IBGInvocationEvent)invocationEvent;
 
 /**
  *  Sets whether to track the crashes in the app or not
