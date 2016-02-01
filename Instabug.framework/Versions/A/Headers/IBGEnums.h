@@ -28,25 +28,11 @@ typedef enum IBGInvocationEvent {
 } IBGInvocationEvent;
 
 /**
- *  The capture source for capturing the screenshot
- */
-typedef enum IBGCaptureSource {
-    IBGCaptureSourceUIKit,
-    IBGCaptureSourceOpenGL
-} IBGCaptureSource;
-
-/**
  *  The color theme of the different UI elements
  */
 typedef enum IBGColorTheme {
-    IBGColorThemeBlack,
-    IBGColorThemeGrey,
-    IBGColorThemeOrange,
-    IBGColorThemeRed,
-    IBGColorThemeNavy,
-    IBGColorThemeGreen,
-    IBGColorThemeCyan,
-    IBGColorThemeBlue
+    IBGColorThemeLight,
+    IBGColorThemeDark
 } IBGColorTheme;
 
 /**
@@ -66,17 +52,14 @@ typedef enum IBGLocale {
     IBGLocaleChineseSimplified,
     IBGLocaleChineseTraditional,
     IBGLocaleEnglish,
-    IBGLocaleFinnish,
     IBGLocaleFrench,
     IBGLocaleGerman,
     IBGLocaleItalian,
     IBGLocaleJapanese,
     IBGLocaleKorean,
     IBGLocalePolish,
-    IBGLocalePortuguese,
     IBGLocalePortugueseBrazil,
     IBGLocaleRussian,
-    IBGLocaleSlovenian,
     IBGLocaleSpanish,
     IBGLocaleSwedish,
     IBGLocaleTurkish

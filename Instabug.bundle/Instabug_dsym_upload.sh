@@ -19,6 +19,14 @@
 
 echo "Instabug: Started uploading dSYM"
 
+# Check for simulator builds
+if [ "$EFFECTIVE_PLATFORM_NAME" == "-iphonesimulator" ]; then
+  if [ "${SKIP_SIMULATOR_BUILDS}" ] && [ "${SKIP_SIMULATOR_BUILDS}" -eq 1 ]; then
+    echo "Instabug: Skipping simulator build"
+    exit 0
+  fi
+fi
+
 # Check to make sure the app token exists
 if [ ! "${APP_TOKEN}" ]; then
 APP_TOKEN=$(grep -r 'Instabug startWithToken:@\"[0-9a-zA-Z]*\"' ./ -m 1 | grep -o '\"[0-9a-zA-Z]*\"' | cut -d "\"" -f 2)
@@ -29,21 +37,14 @@ APP_TOKEN=$(grep -r 'Instabug.startWithToken(\"[0-9a-zA-Z]*\"' ./ -m 1 | grep -o
 fi
 
 if [ ! "${APP_TOKEN}" ] || [ -z "${APP_TOKEN}" ];then
-  echo "Instabug: err: APP_TOKEN not found. Make sure you've added the SDK initialization line [Instabug startWithToken: captureSource: invocationEvent:]"
+  echo "Instabug: err: APP_TOKEN not found. Make sure you've added the SDK initialization line [Instabug startWithToken: invocationEvent:]"
   exit 1
 fi
 echo "Instabug: found APP_TOKEN=${APP_TOKEN}"
 
-# Check for simulator builds
-if [ "$EFFECTIVE_PLATFORM_NAME" == "-iphonesimulator" ]; then
-  if [ "${SKIP_SIMULATOR_BUILDS}" ] && [ "${SKIP_SIMULATOR_BUILDS}" -eq 1 ]; then
-    echo "Instabug: Skipping simulator build"
-    exit 0
-  fi
-fi
-
 # Check internet connection
-if [ ! "`ping -c 1 api.instabug.com`" ]; then
+if [ "`curl -s https://api.instabug.com | grep status | grep -c OK`" != "1" ]; then
+  echo "ERROR connecting to api.instabug.com."
   exit 0
 fi
 

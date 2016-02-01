@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    4.1.10
+ Version:    5.0.0
  */
 
 //===========================================================================================================================================
@@ -29,15 +29,48 @@
  *  Should be called at the end of the method application:didFinishLaunchingWithOptions:
  *  
  *  @param token           The token that identifies the app, you can find it on your dashboard
- *  @param captureSource   The capture source (UIKit or OpenGL)
  *  @param invocationEvent The event that invocates the feedback form
  */
-+ (void)startWithToken:(NSString *)token captureSource:(IBGCaptureSource)captureSource invocationEvent:(IBGInvocationEvent)invocationEvent;
++ (void)startWithToken:(NSString *)token invocationEvent:(IBGInvocationEvent)invocationEvent;
+
+//===========================================================================================================================================
+
+//===========================================================================================================================================
+/** @name SDK Manual Invocation */
+//===========================================================================================================================================
+
+/**
+ *  Shows the form with the prompt asking whether to report a bug or send feedback
+ */
++ (void)invoke;
+
+/**
+ *  Invoke the SDK's either bug reporter or feedback sender UIs
+ *
+ *  @param invocationMode invocationMode
+ */
++ (void)invokeWithInvocationMode:(IBGInvocationMode)invocationMode;
+
 //===========================================================================================================================================
 
 //===========================================================================================================================================
 /** @name SDK Pro Features */
 //===========================================================================================================================================
+
+/**
+ *  Attaches a new copy of this file with each bug report sent with a maximum size of 1 MB. Calling this method several times overrides the file to be attached. The file has to be stored locally at the location provided
+ *
+ *  @param fileLocation fileLocation
+ */
++ (void)setFileAttachment:(NSString *)fileLocation;
+
+/**
+ *  Sets the user data that's attached with each bug report sent. Maximum size of the string is 1000 characters
+ *
+ *  @param userData userData
+ */
++ (void)setUserData:(NSString *)userData;
+
 /**
  *  Adds custom logs that will be sent with each report
  *
@@ -47,111 +80,77 @@
 void IBGLog(NSString *format, ...);
 
 /**
- *  Sets the user data that's attached with each bug report sent. Maximum size of the string is 1000 characters
- *  @param userData userData
- */
-+ (void)setUserData:(NSString *)userData;
-
-/**
- *  Attaches a new copy of this file with each bug report sent with a maximum size of 1 MB. Calling this method several times overrides the file to be attached. The file has to be stored locally at the location provided
- *  @param fileLocation fileLocation
- */
-+ (void)attachFileAtLocation:(NSString *)fileLocation;
-
-/**
- *  Sets the block of code that gets executed just before sending the bug report. Warning: This code block is executed on the main thread, so it might block the UI
- *  @param preSendingBlock preSendingBlock
- */
-+ (void)setPreSendingBlock:(void (^)())preSendingBlock;
-
-/**
- *  Shows the form with the prompt asking whether to report a bug or send feedback
- */
-+ (void)invoke;
-
-/**
- *  Shows the bug reporter form with the screenshot to be annotated or add text
- */
-+ (void)invokeBugReporter;
-
-/**
- *  Shows the feedback sender form with only the text area
- */
-+ (void)invokeFeedbackSender;
-
-/**
- *  Shows the email composer view to send feedback
- */
-+ (void)invokeFeedbackSenderViaEmail;
-
-/**
- *  Manually reports a bug without showing any UI elements
- *  @param comment comment(optional)
- *  @param email email(optional)
- *  @param screenshot screenshot(optional)
- */
-+ (void)reportBugWithComment:(NSString *)comment email:(NSString *)email screenshot:(UIImage *)screenshot;
-
-/**
- *  Manually send a feedback without showing any UI elements
- *  @param comment comment(optional)
- *  @param email email(optional)
- *  @param screenshot screenshot(optional)
- */
-+ (void)sendFeedbackWithComment:(NSString *)comment email:(NSString *)email screenshot:(UIImage *)screenshot;
-
-/**
- *  Manually reports an exception
- *  @param exception exception(required)
- */
-+ (void)reportException:(NSException *)exception;
-
-/**
- *  Dismisses the reporting view
- */
-+ (void)dismiss;
-
-//===========================================================================================================================================
-
-//===========================================================================================================================================
-/** @name SDK Functions Customization */
-//===========================================================================================================================================
-/**
- *  Sets the event that invocates the feedback form
+ *  Adds custom logs that will be sent with each report. A convenience method for Swift, identical to IBGLog().
  *
- *  Default is set by startWithToken:captureSource:invocationEvent:
- *  @param invocationEvent invocationEvent
- */
-+ (void)setInvocationEvent:(IBGInvocationEvent)invocationEvent;
-
-/**
- *  Sets whether to track the crashes in the app or not
+ *  Put following function in your swift project:
+ *  func IBGLog(str: String, _ arguments: CVarArgType...) -> Void {
+ *      return withVaList(arguments) { Instabug.IBGLog(str, withArguments :$0) }
+ *  }
+ *  And use it like this IBGLog("%@ - %d - %0.1f", "foo", 3, 3.0)
  *
- *  Default = YES
- *  @param isTrackingCrashes isTrackingCrashes
+ *  @param format    format
+ *  @param arguments arguments
  */
-+ (void)setIsTrackingCrashes:(BOOL)isTrackingCrashes;
++ (void)IBGLog:(NSString *)format withArguments:(va_list)arguments;
 
 /**
  *  Sets whether to track the user's steps while using the app or not
  *
  *  Default = YES
- *  @param isTrackingUserSteps isTrackingUserSteps
+ *  @param isUserStepsEnabled isUserStepsEnabled
  */
-+ (void)setIsTrackingUserSteps:(BOOL)isTrackingUserSteps;
++ (void)setUserStepsEnabled:(BOOL)isUserStepsEnabled;
 
 /**
- *  Sets the default value of the email field
+ *  Sets whether to track the crashes in the app or not
+ *
+ *  Default = YES
+ *  @param isReportingCrashes isReportingCrashes
+ */
++ (void)setCrashReportingEnabled:(BOOL)isReportingCrashes;
+
+/**
+ *  Sets the block of code that gets executed just before sending the bug report.
+ *
+ *  @param preSendingBlock preSendingBlock
+ */
++ (void)setPreSendingBlock:(void (^)())preSendingBlock;
+
+/**
+ * Presents a quick tip UI educating the user on how to invoke SDK with the currently set invocation event
+ */
++ (void)showIntroMessage;
+
+/**
+ *  Sets the default value of the email field and hides the email field from the reporting UI
  *
  *  Default = @""
- *  @param defaultEmail defaultEmail
+ *  @param userEmail userEmail
  */
-+ (void)setDefaultEmail:(NSString *)defaultEmail;
++ (void)setUserEmail:(NSString *)userEmail;
+
+/**
+ *  Sets the user name that is used in the dashboard's contacts
+ *
+ *  Default = @""
+ *  @param userName userName
+ */
++ (void)setUserName:(NSString *)userName;
+
 //===========================================================================================================================================
 
 //===========================================================================================================================================
-/** @name SDK Experience Customization */
+/** @name SDK Settings */
 //===========================================================================================================================================
+
+/**
+ *  Sets the event that invocates the feedback form
+ *
+ *  Default is set by startWithToken:invocationEvent:
+ *  @param invocationEvent invocationEvent
+ */
++ (void)setInvocationEvent:(IBGInvocationEvent)invocationEvent;
+
 /**
  *  Sets the default SDK mode upon invocation
  *
@@ -161,194 +160,52 @@ void IBGLog(NSString *format, ...);
 + (void)setDefaultInvocationMode:(IBGInvocationMode)invocationMode;
 
 /**
- *  Sets whether to attach a screenshot to crash reports or not
+ *  Enable/disable SDK to use push notifications
+ *
+ *  Default = YES
+ *  @param isPushNotificationsEnabled isPushNotificationsEnabled
+ *  Note: In order to enable push notifications, UIApplicationDelegate method 
+ *  `application:didRegisterForRemoteNotificationsWithDeviceToken:` should be implemented. Also 
+ *  `application:didReceiveRemoteNotification` or `application:didReceiveRemoteNotification:fetchCompletionHandler:`
+ */
++ (void)setPushNotificationsEnabled:(BOOL)isPushNotificationsEnabled;
+
+/**
+ *  Sets the value of whether the email field is validated or not
+ *
+ *  Default = YES
+ *  @param isEmailFieldRequired isEmailFieldRequired
+ */
++ (void)setEmailFieldRequired:(BOOL)isEmailFieldRequired;
+
+/**
+ *  Sets whether the comment field is validated or not
  *
  *  Default = NO
- *  @param willAttachCrashScreenshot willAttachCrashScreenshot
+ *  @param isCommentFieldRequired isCommentFieldRequired
  */
-+ (void)setWillAttachCrashScreenshot:(BOOL)willAttachCrashScreenshot;
++ (void)setCommentFieldRequired:(BOOL)isCommentFieldRequired;
 
 /**
- *  Sets whether to show a screenshot to be annotated or not
+ *  Sets the threshold value of the shake gesture for iPhone/iPod Touch and iPad
  *
- *  Default = YES for bug reports, NO for feedback reports
- *  @param willShowScreenshotAnnotation willShowScreenshotAnnotation
- */
-+ (void)setWillShowScreenshotAnnotation:(BOOL)willShowScreenshotAnnotation;
-
-/**
- *  Sets the default value of whether to ask the user for an email or not
- *
- *  Default = YES
- *  @param willShowEmailField willShowEmailField
- */
-+ (void)setWillShowEmailField:(BOOL)willShowEmailField;
-
-/**
- *  Sets the value of whether the email field is required or not
- *
- *  Default = YES
- *  @param emailIsRequired emailIsRequired
- */
-+ (void)setEmailIsRequired:(BOOL)emailIsRequired;
-
-/**
- *  Sets whether the comment field is required or not
- *
- *  Default = NO
- *  @param commentIsRequired commentIsRequired
- */
-+ (void)setCommentIsRequired:(BOOL)commentIsRequired;
-
-/**
- *  Sets the default value of the tutorial alert, that gets shown on launching the first bug report
- *
- *  Default = YES
- *  @param willShowTutorialAlert willShowTutorialAlert
- */
-+ (void)setWillShowTutorialAlert:(BOOL)willShowTutorialAlert;
-
-/**
- *  Sets the default value of the start alert, that gets shown on launching the app
- *
- *  Default = YES
- *  @param willShowStartAlert willShowStartAlert
- */
-+ (void)setWillShowStartAlert:(BOOL)willShowStartAlert;
-
-/**
- *  Sets the default value of the feedback sent alert, that gets shown after sending a feedback
- *
- *  Default = YES
- *  @param willShowFeedbackSentAlert willShowFeedbackSentAlert
- */
-+ (void)setWillShowFeedbackSentAlert:(BOOL)willShowFeedbackSentAlert;
-
-/**
- *  Sets the default offset of the floating button from the top of the screen. Different orientations are already handled
- *
- *  Default = 50
- *  @param floatingButtonOffsetFromTop floatingButtonOffsetFromTop
- */
-+ (void)setFloatingButtonOffsetFromTop:(double)floatingButtonOffsetFromTop;
-
-/**
- *  Sets the default edge at which the floating button will be shown. Use CGRectMaxXEdge(right) or CGRectMinXEdge(left). Different orientations are already handled
- *
- *  Default = CGRectMaxXEdge
- *  @param floatingButtonEdge floatingButtonEdge
- */
-+ (void)setFloatingButtonEdge:(CGRectEdge)floatingButtonEdge;
-
-/**
- *  Sets the threshold value of the shake gesture on iPhone/iPod Touch
- *
- *  Default = 2.5
+ *  Default iPhone = 2.5
+ *  Default iPad = 0.6
  *  @param iPhoneShakingThreshold iPhoneShakingThreshold
- */
-+ (void)setiPhoneShakingThreshold:(double)iPhoneShakingThreshold;
-
-/**
- *  Sets the threshold value of the shake gesture on iPad
- *
- *  Default = 0.6
  *  @param iPadShakingThreshold iPadShakingThreshold
  */
-+ (void)setiPadShakingThreshold:(double)iPadShakingThreshold;
++ (void)setShakingThresholdForiPhone:(double)iPhoneShakingThreshold foriPad:(double)iPadShakingThreshold;
 
 /**
- *  Sets the default value of whether to vibrate on invocation or not
+ *  Sets the default edge and offset from the top at which the floating button will be shown. Different orientations are already handled
  *
- *  Default = YES
- *  @param willVibrateOnInvocation willVibrateOnInvocation
+ *  Default floatingButtonEdge = CGRectMaxXEdge
+ *  Default floatingButtonOffsetFromTop = 50
+ *  @param floatingButtonEdge CGRectMaxXEdge(right) or CGRectMinXEdge(left)
+ *  @param floatingButtonOffsetFromTop floatingButtonOffsetFromTop
  */
-+ (void)setWillVibrateOnInvocation:(BOOL)willVibrateOnInvocation;
-//===========================================================================================================================================
++ (void)setFloatingButtonEdge:(CGRectEdge)floatingButtonEdge withTopOffset:(double)floatingButtonOffsetFromTop;
 
-//===========================================================================================================================================
-/** @name SDK Design Customization */
-//===========================================================================================================================================
-/**
- *  Sets the color theme of the whole SDK UI, you can use is instead of the other design customization methods
- *
- *  @param colorTheme colorTheme
- */
-+ (void)setColorTheme:(IBGColorTheme)colorTheme;
-
-/**
- *  Sets the header background color
- *
- *  @param color color
- */
-+ (void)setHeaderColor:(UIColor *)color;
-
-/**
- *  Sets the header font color
- *
- *  @param color color
- */
-+ (void)setHeaderFontColor:(UIColor *)color;
-
-/**
- *  Sets the buttons background color
- *
- *  @param color color
- */
-+ (void)setButtonsColor:(UIColor *)color;
-
-/**
- *  Sets the buttons font color
- *
- *  @param color color
- */
-+ (void)setButtonsFontColor:(UIColor *)color;
-
-/**
- *  Sets the background color of the text area
- *
- *  @param color color
- */
-+ (void)setTextBackgroundColor:(UIColor *)color;
-
-/**
- *  Sets the email, comment and footer font color
- *
- *  @param color color
- */
-+ (void)setTextFontColor:(UIColor *)color;
-
-/**
- *  Sets the fore color of the floating button, if the floating button is selected
- *
- *  @param color color
- */
-+ (void)setFloatingButtonForeColor:(UIColor *)color;
-
-/**
- *  Sets the back color of the floating button, if the floating button is selected
- *
- *  @param color color
- */
-+ (void)setFloatingButtonBackColor:(UIColor *)color;
-
-/**
- *  Sets the background color of the cancel button and the text color of the other buttons that are shown in the action sheet
- *
- *  @param color color
- */
-+ (void)setPromptPrimaryColor:(UIColor *)color;
-
-/**
- *  Sets the text color of the cancel button and the background color of the other buttons that are shown in the action sheet
- *
- *  @param color color
- */
-+ (void)setPromptSecondaryColor:(UIColor *)color;
-//===========================================================================================================================================
-
-//===========================================================================================================================================
-/** @name SDK Strings Customization */
-//===========================================================================================================================================
 /**
  *  Sets the locale used to display the strings in the correct language
  *
@@ -358,123 +215,60 @@ void IBGLog(NSString *format, ...);
 + (void)setLocale:(IBGLocale)locale;
 
 /**
- *  Sets the text displayed in the header and the action sheet representing bug reports
+ *  Sets the default value of the intro message that gets shown on launching the app
  *
- *  Default = @"Report a bug"
- *  @param bugHeaderText bugHeaderText
+ *  Default = YES
+ *  @param isIntroMessageEnabled isIntroMessageEnabled
  */
-+ (void)setBugHeaderText:(NSString *)bugHeaderText;
++ (void)setIntroMessageEnabled:(BOOL)isIntroMessageEnabled;
 
 /**
- *  Sets the text displayed in the header and the action sheet representing feedback reports
+ *  Sets the color theme of the whole SDK UI
  *
- *  Default = @"Send Feedback"
- *  @param feedbackHeaderText feedbackHeaderText
+ *  @param colorTheme colorTheme
  */
-+ (void)setFeedbackHeaderText:(NSString *)feedbackHeaderText;
++ (void)setColorTheme:(IBGColorTheme)colorTheme;
 
 /**
- *  Sets the placeholder text of the email field
+ *  Sets the primary color of the SDK user interface, mostly indicating interactivity or call to action
  *
- *  Default = @"Enter your email..."
- *  @param emailPlaceholder emailPlaceholder
+ *  @param color color
  */
-+ (void)setEmailPlaceholder:(NSString *)emailPlaceholder;
++ (void)setPrimaryColor:(UIColor *)color;
 
 /**
- *  Sets the placeholder text of the comment field
+ *  Manually sets how to capture a screenshot, use it only if you're using OpenGL
  *
- *  Default = @"Enter your feedback..."
- *  @param commentPlaceholder commentPlaceholder
+ *  @param screenshotCapturingBlock screenshotCapturingBlock
  */
-+ (void)setCommentPlaceholder:(NSString *)commentPlaceholder;
++ (void)setScreenshotCapturingBlock:(CGImageRef (^)())screenshotCapturingBlock;
 
-/**
- *  Sets the text displayed in the alert shown on startup
- *
- *  Default = @"Shake to send feedback"
- *  @param startAlertText startAlertText
- */
-+ (void)setStartAlertText:(NSString *)startAlertText;
-
-/**
- *  Sets the text displayed in the alert shown on sending the first report
- *
- *  Default = @"Draw on screenshot then add text"
- *  @param tutorialAlertText tutorialAlertText
- */
-+ (void)setTutorialAlertText:(NSString *)tutorialAlertText;
-
-/**
- *  Sets the title displayed in the alert shown after sending reports
- *
- *  Default = @"Feedback Sent"
- *  @param feedbackSentAlertTitle feedbackSentAlertTitle
- */
-+ (void)setFeedbackSentAlertTitle:(NSString *)feedbackSentAlertTitle;
-
-/**
- *  Sets the text displayed in the alert shown after sending reports
- *
- *  Default = @"Thank you for helping us improve <App Name>!"
- *  @param feedbackSentAlertText feedbackSentAlertText
- */
-+ (void)setFeedbackSentAlertText:(NSString *)feedbackSentAlertText;
-
-/**
- *  Sets the title displayed in the alert shown when an invalid email is entered, and the email field is required
- *
- *  Default = @"Invalid Email"
- *  @param invalidEmailAlertTitle invalidEmailAlertTitle
- */
-+ (void)setInvalidEmailAlertTitle:(NSString *)invalidEmailAlertTitle;
-
-/**
- *  Sets the text displayed in the alert shown when an invalid email is entered, and the email field is required
- *
- *  Default = @"Please enter a valid email"
- *  @param invalidEmailAlertText invalidEmailAlertText
- */
-+ (void)setInvalidEmailAlertText:(NSString *)invalidEmailAlertText;
-
-/**
- *  Sets the title displayed in the alert shown when no comment is entered, and the comment field is required
- *
- *  Default = @"Invalid Comment"
- *  @param invalidCommentAlertTitle invalidCommentAlertTitle
- */
-+ (void)setInvalidCommentAlertTitle:(NSString *)invalidCommentAlertTitle;
-
-/**
- *  Sets the text displayed in the alert shown when no comment is entered, and the comment field is required
- *
- *  Default = @"Please enter a valid comment"
- *  @param invalidCommentAlertText invalidCommentAlertText
- */
-+ (void)setInvalidCommentAlertText:(NSString *)invalidCommentAlertText;
-
-/**
- *  Sets the text of the OK button that dismisses alerts
- *
- *  Default = @"OK"
- *  @param okButtonText okButtonText
- */
-+ (void)setOkButtonText:(NSString *)okButtonText;
-
-/**
- *  Sets the text of the submit button that sends reports
- *
- *  Default = @"Send"
- *  @param submitButtonText submitButtonText
- */
-+ (void)setSubmitButtonText:(NSString *)submitButtonText;
-
-/**
- *  Sets the text of the cancel button that dismisses sending reports
- *
- *  Default = @"Cancel"
- *  @param cancelButtonText cancelButtonText
- */
-+ (void)setCancelButtonText:(NSString *)cancelButtonText;
 //===========================================================================================================================================
+
+//===========================================================================================================================================
+/** @name SDK Reporting */
+//===========================================================================================================================================
+
+/**
+ *  Manually reports a bug without showing any UI elements
+ *  @param comment comment(optional)
+ *  @param screenshot screenshot(optional)
+ */
++ (void)reportBugWithComment:(NSString *)comment screenshot:(UIImage *)screenshot;
+
+/**
+ *  Manually send a feedback without showing any UI elements
+ *  @param comment comment(optional)
+ *  @param screenshot screenshot(optional)
+ */
++ (void)reportFeedbackWithComment:(NSString *)comment screenshot:(UIImage *)screenshot;
+
+/**
+ *  Manually reports an exception
+ *  @param exception exception(required)
+ */
++ (void)reportException:(NSException *)exception;
+
+//===========================================================================================================================================
+
 @end
