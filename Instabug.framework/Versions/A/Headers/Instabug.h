@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    5.0.2
+ Version:    5.1.0
  */
 
 //===========================================================================================================================================
@@ -50,6 +50,11 @@
  *  @param invocationMode invocationMode
  */
 + (void)invokeWithInvocationMode:(IBGInvocationMode)invocationMode;
+
+/**
+ *  Dismiss Instabug
+ */
++ (void)dismiss;
 
 //===========================================================================================================================================
 
@@ -108,6 +113,15 @@ void IBGLog(NSString *format, ...);
  *  @param isReportingCrashes isReportingCrashes
  */
 + (void)setCrashReportingEnabled:(BOOL)isReportingCrashes;
+
+/**
+ *  Sets whether In-App Conversations button and notifications are displayed or not
+ *  If set to NO it disables push notifications as well
+ *
+ *  Default = YES
+ *  @param isInAppConversationsEnabled isInAppConversationsEnabled
+ */
++ (void)setInAppConversationsEnabled:(BOOL)isInAppConversationsEnabled;
 
 /**
  *  Sets the block of code that gets executed just before sending the bug report.
@@ -250,24 +264,21 @@ void IBGLog(NSString *format, ...);
 //===========================================================================================================================================
 
 /**
- *  Manually reports a bug without showing any UI elements
- *  @param comment comment(optional)
- *  @param screenshot screenshot(optional)
- */
-+ (void)reportBugWithComment:(NSString *)comment screenshot:(UIImage *)screenshot;
-
-/**
- *  Manually send a feedback without showing any UI elements
- *  @param comment comment(optional)
- *  @param screenshot screenshot(optional)
- */
-+ (void)reportFeedbackWithComment:(NSString *)comment screenshot:(UIImage *)screenshot;
-
-/**
  *  Manually reports an exception
  *  @param exception exception(required)
  */
 + (void)reportException:(NSException *)exception;
+
+//===========================================================================================================================================
+
+//===========================================================================================================================================
+/** @name In-App Conversations */
+//===========================================================================================================================================
+
+/**
+ *  Open conversations view
+ */
++ (void)invokeConversations;
 
 //===========================================================================================================================================
 
