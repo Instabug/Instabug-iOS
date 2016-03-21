@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    5.1.2
+ Version:    5.2
  */
 
 //===========================================================================================================================================
@@ -82,7 +82,7 @@
  *  @param format format
  *  @param ...    ...
  */
-void IBGLog(NSString *format, ...);
+OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
 
 /**
  *  Adds custom logs that will be sent with each report. A convenience method for Swift, identical to IBGLog().
@@ -134,6 +134,13 @@ void IBGLog(NSString *format, ...);
  * Presents a quick tip UI educating the user on how to invoke SDK with the currently set invocation event
  */
 + (void)showIntroMessage;
+
+/**
+ * Enabled/disable the attachment of an initial screenshot when reporting a bug/imporovement
+ * @param willTakeScreenshot willTakeScreenshot
+ */
+
++ (void)setWillTakeScreenshot:(BOOL)willTakeScreenshot;
 
 /**
  *  Sets the default value of the email field and hides the email field from the reporting UI
