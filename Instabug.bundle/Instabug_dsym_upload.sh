@@ -29,11 +29,11 @@ fi
 
 # Check to make sure the app token exists
 if [ ! "${APP_TOKEN}" ]; then
-APP_TOKEN=$(grep -r 'Instabug startWithToken:@\"[0-9a-zA-Z]*\"' ./ -m 1 | grep -o '\"[0-9a-zA-Z]*\"' | cut -d "\"" -f 2)
+  APP_TOKEN=$(grep -r 'Instabug startWithToken:@\"[0-9a-zA-Z]*\"' ./ -m 1 | grep -o '\"[0-9a-zA-Z]*\"' | cut -d "\"" -f 2)
 fi
 
 if [ ! "${APP_TOKEN}" ]; then
-APP_TOKEN=$(grep -r 'Instabug.startWithToken(\"[0-9a-zA-Z]*\"' ./ -m 1 | grep -o '\"[0-9a-zA-Z]*\"' | cut -d "\"" -f 2)
+  APP_TOKEN=$(grep -r 'Instabug.startWithToken(\"[0-9a-zA-Z]*\"' ./ -m 1 | grep -o '\"[0-9a-zA-Z]*\"' | cut -d "\"" -f 2)
 fi
 
 if [ ! "${APP_TOKEN}" ] || [ -z "${APP_TOKEN}" ];then
@@ -60,10 +60,17 @@ mkdir "${TEMP_DIRECTORY}"
 fi
 
 # Check dSYM file
-DSYM_PATH=${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}
-DSYM_UUIDs=$(dwarfdump --uuid "${DSYM_PATH}" | cut -d' ' -f2)
+if [ ! "${DSYM_PATH}" ]; then
+  if [ ! "${DWARF_DSYM_FOLDER_PATH}" ] || [ ! "${DWARF_DSYM_FILE_NAME}" ]; then
+    echo "Instabug: err: DWARF_DSYM_FOLDER_PATH or DWARF_DSYM_FILE_NAME not defined"
+    exit 0
+  fi
+  DSYM_PATH=${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}
+fi
+echo "Instabug: found DSYM_PATH=${DSYM_PATH}"
 
 # Check if UUIDs exists
+DSYM_UUIDs=$(dwarfdump --uuid "${DSYM_PATH}" | cut -d' ' -f2)
 DSYM_UUIDs_PATH="${TEMP_DIRECTORY}/UUIDs.dat"
 if [ -f "${DSYM_UUIDs_PATH}" ]; then
     if grep -Fxq "${DSYM_UUIDs}" "${DSYM_UUIDs_PATH}"; then

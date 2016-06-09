@@ -45,6 +45,27 @@ typedef NS_ENUM(NSInteger, IBGInvocationMode) {
 };
 
 /**
+ *  Type of feedback to be submit
+ */
+typedef NS_ENUM(NSInteger, IBGFeedbackType) {
+    IBGFeedbackTypeBug,
+    IBGFeedbackTypeFeedback,
+    IBGFeedbackTypeCrash
+};
+
+/**
+ *  State of Issue after SDK dismiss
+ */
+typedef NS_ENUM(NSInteger, IBGIssueState) {
+    // Issue is submitted
+    IBGIssueSubmitted,
+    // Issue is cancelled
+    IBGIssueCancelled,
+    // Issue is in progress, adding extra screenshot
+    IBGIssueInProgress
+};
+
+/**
  *  The supported locales
  */
 typedef NS_ENUM(NSInteger, IBGLocale) {

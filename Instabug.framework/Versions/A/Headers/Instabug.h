@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    5.2.4
+ Version:    5.2.5
  */
 
 //===========================================================================================================================================
@@ -131,6 +131,21 @@ OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
 + (void)setPreSendingBlock:(void (^)())preSendingBlock;
 
 /**
+ *  Sets the block of code that gets executed just before the SDK UI is presented.
+ *
+ *  @param preInvocationBlock preInvocationBlock
+ */
++ (void)setPreInvocationBlock:(void (^)())preInvocationBlock;
+
+/**
+ *  Sets the block of code that gets executed after the SDK UI is dismissed.
+ *  @param issueState issue state after SDK dismiss.
+ *  @param feedbackType Sent feedback type. Or will be set to IBGFeedbackTypeBug in case user dismissed SDK without
+ *  selecting report type, So you might need to check issueState before feedbackType.
+ *  @see IBGFeedbackType
+ */
++ (void)setPostInvocationBlock:(void (^)(IBGIssueState issueState, IBGFeedbackType feedbackType))postInvocationBlock;
+/**
  * Presents a quick tip UI educating the user on how to invoke SDK with the currently set invocation event
  */
 + (void)showIntroMessage;
@@ -157,6 +172,20 @@ OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  *  @param userName userName
  */
 + (void)setUserName:(NSString *)userName;
+
+/**
+ *  Enable/disable screenshot view when reporting a bug/improvement.
+ *
+ *  Default: If you don't use this method the default behaviour will be to show screenshot view when reporting a bug but not when reporting a feedback
+ *  @param willShowScreenshotView Pass YES to show screenshot view for both feedback and bug reporting and NO to
+ *  disable it for both
+ */
++ (void)setWillShowScreenshotView:(BOOL)willShowScreenshotView;
+
+/**
+ *  Get number of unread messages , Or will be set to -1 incase of SDK not initialized
+ */
++ (NSInteger)getUnreadMessagesCount;
 
 //===========================================================================================================================================
 
@@ -264,6 +293,37 @@ OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  */
 + (void)setScreenshotCapturingBlock:(CGImageRef (^)())screenshotCapturingBlock;
 
+/**
+ *  Append tags of reported feedback, bug or crash to previously added tags.
+ *
+ *  @param tag tag
+ *  @param ... ...
+ */
++ (void)addTags:(NSString *)tag, ... NS_REQUIRES_NIL_TERMINATION;
+
+/**
+ *  Adds custom addTags that will append tags of reported feedback, bug or crash to previously added tags. A convenience method for Swift, identical to [Instabug addTags:@"",@""].
+ *
+ *  Put following function in your swift project:
+ *  func addTags(str: String, _ arguments: CVarArgType...) -> Void {
+ *      return withVaList(arguments) { Instabug.addTags(str, withArguments :$0) }
+ *  }
+ *  And use it like this addTags("tag1","tag2","tag3")
+ *
+ *  @param tag    tag
+ *  @param arguments arguments
+ */
++ (void)addTags:(NSString *)tag withArguments:(va_list)arguments;
+
+/**
+ *  Manually removes all tags of reported feedback, bug or crash.
+ */
++ (void)resetTags;
+
+/**
+ *  Get all tags of reported feedback, bug or crash.
+ */
++ (NSArray *)getTags;
 //===========================================================================================================================================
 
 //===========================================================================================================================================
