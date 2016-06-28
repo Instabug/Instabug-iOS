@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    5.2.5
+ Version:    5.3
  */
 
 //===========================================================================================================================================
@@ -97,6 +97,13 @@ OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  *  @param arguments arguments
  */
 + (void)IBGLog:(NSString *)format withArguments:(va_list)arguments;
+
+/**
+ *  Adds custom logs that will be sent with each report
+ *
+ *  @param log log message
+ */
++ (void)IBGLog:(NSString *)log;
 
 /**
  *  Sets whether to track the user's steps while using the app or not
@@ -348,5 +355,36 @@ OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
 + (void)invokeConversations;
 
 //===========================================================================================================================================
+
+//===========================================================================================================================================
+/** @name Push Notifications */
+//===========================================================================================================================================
+
+/**
+ *  Use this method to check if push notification is from Instabug
+ *
+ *  @return YES if APN payload contains the key "IBGHost"
+ */
++ (BOOL)isInstabugNotification:(NSDictionary *)notification;
+
+/**
+ *  Use this method to set Apple Push Notification token to enable receiving Instabug push notifications.
+ *  You should call this method after receiving token in [AppDelegate didRegisterForRemoteNotificationsWithDeviceToken:]
+ *  and pass received token.
+ *
+ *  @param deviceToken device token
+ */
++ (void)didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
+
+/**
+ *  Call it to allow Instabug to handle remote notifications. Instabug will check if notification is from Instabug
+ *  server and handle it. otherwise it will do nothing.
+ *  You should call this method in [AppDelegate application:didReceiveRemoteNotification:] and pass received userInfo
+ *  Or [AppDelegate application:didFinishLaunchingWithOptions:] and pass 
+ *  [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey]
+ *
+ *  @param userInfo remote notification
+ */
++ (void)didReceiveRemoteNotification:(NSDictionary *)userInfo;
 
 @end
