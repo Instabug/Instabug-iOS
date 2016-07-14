@@ -72,6 +72,8 @@ typedef NS_ENUM(NSInteger, IBGLocale) {
     IBGLocaleArabic,
     IBGLocaleChineseSimplified,
     IBGLocaleChineseTraditional,
+    IBGLocaleCzech,
+    IBGLocaleDanish,
     IBGLocaleEnglish,
     IBGLocaleFrench,
     IBGLocaleGerman,

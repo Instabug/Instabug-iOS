@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2014 by Instabug, Inc., all rights reserved.
 
- Version:    5.3
+ Version:    5.3.1
  */
 
 //===========================================================================================================================================
@@ -96,7 +96,7 @@ OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  *  @param format    format
  *  @param arguments arguments
  */
-+ (void)IBGLog:(NSString *)format withArguments:(va_list)arguments;
++ (void)IBGLog:(NSString *)format withArguments:(va_list)arguments DEPRECATED_MSG_ATTRIBUTE("Starting from (v5.3). Use IBGLog:(NSString *)log instead.");
 
 /**
  *  Adds custom logs that will be sent with each report

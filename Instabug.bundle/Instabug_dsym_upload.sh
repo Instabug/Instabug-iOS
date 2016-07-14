@@ -72,8 +72,10 @@ echo "Instabug: found DSYM_PATH=${DSYM_PATH}"
 # Check if UUIDs exists
 DSYM_UUIDs=$(dwarfdump --uuid "${DSYM_PATH}" | cut -d' ' -f2)
 DSYM_UUIDs_PATH="${TEMP_DIRECTORY}/UUIDs.dat"
+DSYM_UUIDs_TOKEN="${DSYM_UUIDs//$'\n'/-${APP_TOKEN}$'\n'}"-${APP_TOKEN}
+
 if [ -f "${DSYM_UUIDs_PATH}" ]; then
-    if grep -Fxq "${DSYM_UUIDs}" "${DSYM_UUIDs_PATH}"; then
+    if grep -Fxq "${DSYM_UUIDs_TOKEN}" "${DSYM_UUIDs_PATH}"; then
         exit 0
     fi
 fi
@@ -103,7 +105,7 @@ echo "Instabug: deleting temporary dSYM archive..."
 /bin/rm -f "${DSYM_PATH_ZIP}"
 
 # Save UUIDs
-echo "${DSYM_UUIDs}" >> "${DSYM_UUIDs_PATH}"
+echo "${DSYM_UUIDs_TOKEN}" >> "${DSYM_UUIDs_PATH}"
 
 # Finalize
 echo "Instabug: dSYM upload complete."
