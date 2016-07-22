@@ -37,15 +37,15 @@ $ pod install
 
 ## Usage
 
-1. Import Instabug framework header
+1. Import Instabug framework header in your app delegate
 
     ```swift
-    // Swift: In your bridging header
-    #import <Instabug/Instabug.h>
+    // Swift
+    import Instabug
     ```
     
     ```objective-c
-    // Objective-C: In your app delegate
+    // Objective-C
     #import <Instabug/Instabug.h>
     ```
 
