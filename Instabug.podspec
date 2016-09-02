@@ -22,11 +22,11 @@ Pod::Spec.new do |s|
       LICENSE
     }
   s.author       = { "Instabug" => "contactus@instabug.com" }
-  s.platform     = :ios, '6.0'
+  s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/Instabug/Instabug-iOS.git", :tag => s.version.to_s }
-  s.source_files = 'Instabug.framework/Versions/A/Headers/*.{h}'
-  s.resources    = 'Instabug.bundle'
+  s.source_files = 'Instabug.framework/Headers/*.{h}'
   s.preserve_paths =  'Instabug.framework/*', 'Instabug.bundle'
+  s.vendored_frameworks = 'Instabug.framework'
   s.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'Instabug'
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
   s.requires_arc = true
