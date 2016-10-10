@@ -61,13 +61,20 @@ $ pod install
 	```
 	Make sure to replace `{{app_token}}` with your application token. Find it [here](https://instabug.com/app/sdk/).
 
-3. Add following keys to your application .plist file:
-	
-	**NSMicrophoneUsageDescription** This should describe why you need to access microphone. Prompt message will not appear unless user try to attach voice note while reporting. The description can be something like "Voice notes recording requires access to microphone"
+## Notes
+Instabug needs access to the microphone and photo library. Starting from iOS 10, apps that don’t provide a usage description for those 2 permissions would be rejected when submitted to the App Store.
 
-	**NSPhotoLibraryUsageDescription** Should describe why your application needs to access Photo Library. Prompt message will not appear unless user try to attach photo from Photo Library. The description can be something like "Attaching images from Photo Library requires access to Photo Library"
+For your app not to be rejected, you’ll need to add the following 2 keys to your app’s info.plist file with text explaining to the user why those permissions are needed:
 
-	They are required starting from iOS 10 to avoid AppStore rejection.
+* `NSMicrophoneUsageDescription`
+* `NSPhotoLibraryUsageDescription`
+
+If your app doesn’t already access the microphone or photo library, we recommend using a usage description like:
+
+* "`<app name>` needs access to the microphone to be able to attach voice notes."
+* "`<app name>` needs access to your photo library for you to be able to attach images."
+
+**The permission alert for accessing the microphone/photo library will NOT appear unless users attempt to attach a voice note/photo while using Instabug.**
 	
 ## More
 
