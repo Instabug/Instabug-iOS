@@ -35,6 +35,10 @@ $ pod install
 	* SystemConfiguration.framework
 	* UIKit.framework
 
+### Dynamic Framework
+
+[Instabug Dynamic Framework](https://github.com/Instabug/Instabug-iOS/tree/dynamic_framework)
+
 ## Usage
 
 1. Import Instabug framework header in your app delegate
