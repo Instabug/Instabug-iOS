@@ -24,8 +24,8 @@ Pod::Spec.new do |s|
   s.author       = { "Instabug" => "contactus@instabug.com" }
   s.platform     = :ios, '7.0'
   s.source       = { :git => "https://github.com/Instabug/Instabug-iOS.git", :tag => s.version.to_s }
-  s.source_files = 'Instabug.framework/Versions/A/Headers/*.{h}'
-  s.resources    = 'Instabug.bundle'
+  s.source_files = 'SDK/Instabug.framework/Versions/A/Headers/*.{h}'
+  s.resources    = 'SDK/Instabug.bundle'
   s.preserve_paths =  'Instabug.framework/*', 'Instabug.bundle'
   s.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'Instabug'
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
