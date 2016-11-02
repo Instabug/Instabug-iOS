@@ -59,7 +59,7 @@ $ pod install
 	
 	```swift
 	// Swift
-	Instabug.start(withToken: <#app token#>, invocationEvent:.shake)
+	Instabug.start(withToken: <#app token#>, invocationEvent: .shake)
 	```
 	```objective-c
 	// Objective-C
