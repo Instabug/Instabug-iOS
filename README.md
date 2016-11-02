@@ -34,6 +34,8 @@ $ pod install
 	* CoreTelephony.framework
 	* SystemConfiguration.framework
 	* UIKit.framework
+	* CoreMedia
+	* CoreVideo
 
 ### Dynamic Framework
 
