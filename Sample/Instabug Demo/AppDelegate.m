@@ -11,7 +11,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Add your app token below. You can get the token from https://instabug.com/applications/instabug-ios/sdk/
+    // Add your app token below. You can find the token under the SDK tab in Instabug's dashboard.
     [Instabug startWithToken:<#Instabug token#> invocationEvent:IBGInvocationEventShake];
     return YES;
 }
