@@ -27,14 +27,6 @@ $ pod install
 
 2. Extract it then drag & drop the Instabug.framework and Instabug.bundle files to your project, and make sure that the "Copy items if needed" checkbox is checked.
 
-3. Make sure your project links to the following system frameworks. You can add these under your project's Build Phases tab, under Link Binary With Libraries.
-	* AVFoundation.framework
-	* CoreGraphics.framework
-	* CoreMotion.framework
-	* CoreTelephony.framework
-	* SystemConfiguration.framework
-	* UIKit.framework
-
 ### Dynamic Framework
 
 [Instabug Dynamic Framework](https://github.com/Instabug/Instabug-iOS/tree/dynamic_framework)
