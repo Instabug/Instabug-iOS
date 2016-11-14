@@ -25,7 +25,6 @@
                        @"Invocation event",
                        @"Change theme",
                        @"Invoke with different modes...",
-                       @"Show start alert",
                        @"Set primary color",
                        @"Show intro message",
                        @"Show unread messages count"
@@ -62,12 +61,10 @@
     } else if (indexPath.row == 3) {
         [self showInvocationModesActionSheet];
     } else if (indexPath.row == 4) {
-        [Instabug showIntroMessage];
-    } else if (indexPath.row == 5) {
         [self showPrimaryColorSelectorActionSheet];
-    } else if (indexPath.row == 6) {
+    } else if (indexPath.row == 5) {
         [Instabug showIntroMessage];
-    } else if (indexPath.row == 7) {
+    } else if (indexPath.row == 6) {
         [self showUnreadMessagesCount];
     }
     
