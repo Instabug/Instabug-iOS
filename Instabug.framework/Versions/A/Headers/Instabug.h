@@ -5,12 +5,12 @@
 
  Copyright:  (c) 2013-2016 by Instabug, Inc., all rights reserved.
 
- Version:    6.0.4
+ Version:    6.1
  */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "IBGEnums.h"
+#import "IBGTypes.h"
 
 /**
  This is the API for using Instabug's SDK. For more details about the SDK integration,
@@ -18,6 +18,7 @@
  */
 
 NS_ASSUME_NONNULL_BEGIN
+
 @interface Instabug : NSObject
 
 /// ------------------------
@@ -483,6 +484,8 @@ OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
 /**
  @brief Overrides any of the strings shown in the SDK with custom ones.
  
+ @deprecated Use `setValue:forStringWithKey:` instead.
+ 
  @discussion Allows you to customize any of the strings shown to users in the SDK.
  
  @param value String value to override the default one.
@@ -490,7 +493,20 @@ OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  
  @see IBGString
  */
-+ (void)setString:(NSString*)value toKey:(IBGString)key;
++ (void)setString:(NSString*)value toKey:(IBGString)key DEPRECATED_MSG_ATTRIBUTE("Use setValue:forStringWithKey: instead.");
+
+/**
+ @brief Overrides any of the strings shown in the SDK with custom ones.
+ 
+ @discussion Allows you to customize any of the strings shown to users in the SDK.
+ 
+ @param value String value to override the default one.
+ @param forStringWithKey Key of string to override. Use predefined keys like IBGShakeStartAlertTextStringName, 
+ IBGEmailFieldPlaceholderStringName, etc.
+ 
+ @see IBGTypes
+ */
++ (void)setValue:(NSString *)value forStringWithKey:(NSString *)key;
 
 /**
  @brief Sets whether attachments in bug reporting and in-app messaging are enabled or not.
@@ -534,6 +550,19 @@ OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  @param chatEnabled A boolean to indicate whether chat is enabled or disabled.
  */
 + (void)setPromptOptionsEnabledWithBug:(BOOL)bugReportEnabled feedback:(BOOL)feedbackEnabled chat:(BOOL)chatEnabled;
+
+/**
+ @brief Sets an array of report categories to be shown for users to select from before reporting a bug or sending 
+ feedback.
+ 
+ @discussion Use this method to give users a list of choices of categories their bug report or feedback might be related
+ to. Selected category will be shown as a tag on your dashboard.
+
+ @param titles Array of titles to be shown in the list.
+ @param iconNames Array of names of icons to be shown along with titles. Use the same names you would use
+ with `+[UIImage imageNamed:]`.
+ */
++ (void)setReportCategoriesWithTitles:(NSArray<NSString *> *)titles iconNames:(nullable NSArray<NSString *> *)names;
 
 /// -------------------
 /// @name SDK Reporting

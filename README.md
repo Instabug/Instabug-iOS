@@ -34,6 +34,8 @@ $ pod install
 	* CoreTelephony.framework
 	* SystemConfiguration.framework
 	* UIKit.framework
+	* CoreMedia
+	* CoreVideo
 
 ### Dynamic Framework
 
@@ -57,13 +59,13 @@ $ pod install
 	
 	```swift
 	// Swift
-	Instabug.startWithToken("{{app_token}}", invocationEvent: IBGInvocationEvent.Shake)
+	Instabug.start(withToken: <#app token#>, invocationEvent: .shake)
 	```
 	```objective-c
 	// Objective-C
-	[Instabug startWithToken:@"{{app_token}}" invocationEvent:IBGInvocationEventShake];
+	[Instabug startWithToken:<#app token#> invocationEvent:IBGInvocationEventShake];
 	```
-	Make sure to replace `{{app_token}}` with your application token. Find it [here](https://instabug.com/app/sdk/).
+	Make sure to replace `app_token` with your application token. Find it [here](https://instabug.com/app/sdk/).
 
 ## Notes
 Instabug needs access to the microphone and photo library. Starting from iOS 10, apps that don’t provide a usage description for those 2 permissions would be rejected when submitted to the App Store.
