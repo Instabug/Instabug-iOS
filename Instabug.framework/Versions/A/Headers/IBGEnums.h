@@ -185,6 +185,8 @@ typedef NS_ENUM(NSInteger, IBGString) {
     IBGStringCancelButtonTitle,
     //"Thank you"
     IBGStringThankYouText,
+    //"We've received your feedback. Thank you for helping us make %@ better"
+    IBGStringThankYouAlertText,
     //"Audio"
     IBGStringAudio,
     //"Screen Recording"
