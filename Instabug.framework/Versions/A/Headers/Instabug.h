@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2013-2016 by Instabug, Inc., all rights reserved.
 
- Version:    6.1
+ Version:    6.1.1
  */
 
 #import <Foundation/Foundation.h>
@@ -190,7 +190,7 @@ OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
 /**
  @brief Sets a block of code to be executed right after the SDK's UI is dismissed.
  
- @deprecated Starting from v6.0, use `setPostInvocatioHandler:` instead.
+ @deprecated Starting from v6.0, use `setPostInvocationHandler:` instead.
  
  @discussion This block is executed on the UI thread. Could be used for performing any UI changes after the SDK's UI
  is dismissed.
@@ -206,7 +206,7 @@ OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  
  @see IBGIssueState, IBGFeedbackType
  */
-+ (void)setPostInvocationBlock:(void (^)(IBGIssueState issueState, IBGFeedbackType feedbackType))postInvocationBlock DEPRECATED_MSG_ATTRIBUTE("Starting from v6.0, use setPostInvocatioHandler: instead.");
++ (void)setPostInvocationBlock:(void (^)(IBGIssueState issueState, IBGFeedbackType feedbackType))postInvocationBlock DEPRECATED_MSG_ATTRIBUTE("Starting from v6.0, use setPostInvocationHandler: instead.");
 
 /**
  @brief Sets a block of code to be executed right after the SDK's UI is dismissed.
@@ -224,7 +224,7 @@ OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  
  @see IBGReportType, IBGDismissType
  */
-+ (void)setPostInvocatioHandler:(void (^)(IBGDismissType dismissType, IBGReportType reportType))postInvocationHandler;
++ (void)setPostInvocationHandler:(void (^)(IBGDismissType dismissType, IBGReportType reportType))postInvocationHandler;
 
 /**
  @brief Present a view that educates the user on how to invoke the SDK with the currently set invocation event.
