@@ -12,7 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Add your app token below. You can find the token at https://instabug.com/app/sdk/
-    [Instabug startWithToken:<#Instabug token#> invocationEvent:IBGInvocationEventShake];
+    [Instabug startWithToken:@"" invocationEvent:IBGInvocationEventShake];
     return YES;
 }
 
