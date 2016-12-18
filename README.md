@@ -25,11 +25,7 @@ $ pod install
 
 1. [Download the Instabug SDK](https://s3.amazonaws.com/instabug-pro/sdk_releases/Instabug.zip)
 
-2. Extract it then drag & drop the Instabug.framework and Instabug.bundle files to your project, and make sure that the "Copy items if needed" checkbox is checked.
-
-### Dynamic Framework
-
-[Instabug Dynamic Framework](https://github.com/Instabug/Instabug-iOS/tree/dynamic_framework)
+2. Extract it then drag & drop the Instabug.framework files to your project, and make sure that the "Copy items if needed" checkbox is checked
 
 ## Usage
 

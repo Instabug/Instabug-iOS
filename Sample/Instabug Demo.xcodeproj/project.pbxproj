@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		543D93D31DC8A9C8005A09E9 /* Instabug.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 543D93D11DC8A9C8005A09E9 /* Instabug.bundle */; };
-		543D93D41DC8A9C8005A09E9 /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543D93D21DC8A9C8005A09E9 /* Instabug.framework */; };
+		543A00CC1E06D436008FFB4F /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543A00CB1E06D436008FFB4F /* Instabug.framework */; };
+		543A00CE1E06D446008FFB4F /* Instabug.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 543A00CB1E06D436008FFB4F /* Instabug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54B011891D901660002AF597 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B011881D901660002AF597 /* main.m */; };
 		54B0118C1D901660002AF597 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0118B1D901660002AF597 /* AppDelegate.m */; };
 		54B0118F1D901660002AF597 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0118E1D901660002AF597 /* ViewController.m */; };
@@ -26,9 +26,22 @@
 		54B011C41D911199002AF597 /* UIAlertAction+DefaultAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		543A00CF1E06D446008FFB4F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				543A00CE1E06D446008FFB4F /* Instabug.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		543D93D11DC8A9C8005A09E9 /* Instabug.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Instabug.bundle; path = ../../Instabug.bundle; sourceTree = "<group>"; };
-		543D93D21DC8A9C8005A09E9 /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = ../../Instabug.framework; sourceTree = "<group>"; };
+		543A00CB1E06D436008FFB4F /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
 		54B011841D901660002AF597 /* Instabug Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instabug Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B011881D901660002AF597 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54B0118A1D901660002AF597 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,7 +73,7 @@
 				54B011BC1D902CA9002AF597 /* CoreMedia.framework in Frameworks */,
 				54B011B21D9018CB002AF597 /* UIKit.framework in Frameworks */,
 				54B011B01D9018C3002AF597 /* CoreGraphics.framework in Frameworks */,
-				543D93D41DC8A9C8005A09E9 /* Instabug.framework in Frameworks */,
+				543A00CC1E06D436008FFB4F /* Instabug.framework in Frameworks */,
 				54B011AE1D9018BD002AF597 /* SystemConfiguration.framework in Frameworks */,
 				54B011AC1D9018B5002AF597 /* CoreMotion.framework in Frameworks */,
 				54B011AA1D9018AE002AF597 /* CoreTelephony.framework in Frameworks */,
@@ -74,8 +87,7 @@
 		541FA2741DC888600037AA01 /* Instabug */ = {
 			isa = PBXGroup;
 			children = (
-				543D93D11DC8A9C8005A09E9 /* Instabug.bundle */,
-				543D93D21DC8A9C8005A09E9 /* Instabug.framework */,
+				543A00CB1E06D436008FFB4F /* Instabug.framework */,
 			);
 			name = Instabug;
 			sourceTree = "<group>";
@@ -158,6 +170,7 @@
 				54B011801D901660002AF597 /* Sources */,
 				54B011811D901660002AF597 /* Frameworks */,
 				54B011821D901660002AF597 /* Resources */,
+				543A00CF1E06D446008FFB4F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,7 +219,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				543D93D31DC8A9C8005A09E9 /* Instabug.bundle in Resources */,
 				54B011971D901660002AF597 /* LaunchScreen.storyboard in Resources */,
 				54B011941D901660002AF597 /* Assets.xcassets in Resources */,
 				54B011921D901660002AF597 /* Main.storyboard in Resources */,
@@ -349,6 +361,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../",
+					"$(PROJECT_DIR)/Instabug",
+					Demo,
 				);
 				INFOPLIST_FILE = "Instabug Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -365,6 +379,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../",
+					"$(PROJECT_DIR)/Instabug",
+					Demo,
 				);
 				INFOPLIST_FILE = "Instabug Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
