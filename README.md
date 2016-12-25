@@ -27,7 +27,8 @@ $ pod install
 
 2. Extract it then drag & drop the Instabug.framework files to your project, and make sure that the "Copy items if needed" checkbox is checked
 
-3. Create a new "Run Script Phase" in your project’s target "Build Phases" and add the following snippet `bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Instabug.framework/Instabug.bundle/strip-frameworks.sh"`
+3. Create a new "Run Script Phase" in your project’s target "Build Phases" and add the following snippet:
+`bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Instabug.framework/Instabug.bundle/strip-frameworks.sh"`
 
 ## Usage
 
