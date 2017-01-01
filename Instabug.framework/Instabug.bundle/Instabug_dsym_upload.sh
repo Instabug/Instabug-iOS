@@ -70,15 +70,43 @@ fi
 echo "Instabug: found DSYM_PATH=${DSYM_PATH}"
 
 # Check if UUIDs exists
-DSYM_UUIDs=$(dwarfdump --uuid "${DSYM_PATH}" | cut -d' ' -f2)
-DSYM_UUIDs_PATH="${TEMP_DIRECTORY}/UUIDs.dat"
-DSYM_UUIDs_TOKEN="${DSYM_UUIDs//$'\n'/-${APP_TOKEN}$'\n'}"-${APP_TOKEN}
+DSYMS_DIR="${TEMP_DIRECTORY}/dSYM"
 
-if [ -f "${DSYM_UUIDs_PATH}" ]; then
-    if grep -Fxq "${DSYM_UUIDs_TOKEN}" "${DSYM_UUIDs_PATH}"; then
-        exit 0
-    fi
+if [ -d "${DSYMS_DIR}" ]; then
+    rm -rf "${DSYMS_DIR}"
 fi
+
+mkdir "$DSYMS_DIR"
+DSYM_UUIDs=""
+SEPARATOR=$'\n'
+DSYM_UUIDs_PATH="${TEMP_DIRECTORY}/UUIDs.dat"
+
+
+find "${DWARF_DSYM_FOLDER_PATH}" -name "*.dSYM" | (while read -r file
+do
+    UUIDs=$(dwarfdump --uuid "${file}" | cut -d ' ' -f2)
+    if [ -f "${DSYM_UUIDs_PATH}" ]; then
+        for uuid in $UUIDs
+            do
+                UUIDTOKEN="${uuid}"-"${APP_TOKEN}"
+                if ! grep -w "${UUIDTOKEN}" "${DSYM_UUIDs_PATH}" ; then
+                    cp -r "${file}" "${DSYMS_DIR}"
+                    DSYM_UUIDs+=$uuid$SEPARATOR
+                fi
+        done
+    else
+        cp -r "${file}" "${DSYMS_DIR}"
+        DSYM_UUIDs+=${UUIDs}$SEPARATOR
+    fi
+done
+
+if [ -z $DSYM_UUIDs ]; then
+    rm -rf "${DSYMS_DIR}"
+    exit 0
+fi
+
+
+DSYM_UUIDs_TOKEN="${DSYM_UUIDs//${SEPARATOR}/-${APP_TOKEN}$'\n'}"
 
 # Create dSYM .zip file
 DSYM_PATH_ZIP="${TEMP_DIRECTORY}/$DWARF_DSYM_FILE_NAME.zip"
@@ -87,7 +115,7 @@ if [ ! -d "$DSYM_PATH" ]; then
   exit 0
 fi
 echo "Instabug: Compressing dSYM file..."
-(/usr/bin/zip --recurse-paths --quiet "${DSYM_PATH_ZIP}" "${DSYM_PATH}") || exit 0
+(/usr/bin/zip --recurse-paths --quiet "${DSYM_PATH_ZIP}" "${DSYMS_DIR}") || exit 0
 
 # Upload dSYM
 echo "Instabug: Uploading dSYM file..."
@@ -96,13 +124,14 @@ STATUS=$(curl "${ENDPOINT}" --write-out %{http_code} --silent --output /dev/null
 if [ $STATUS -ne 200 ]; then
   echo "Instabug: err: dSYM archive not succesfully uploaded."
   echo "Instabug: deleting temporary dSYM archive..."
-  /bin/rm -f "${DSYM_PATH_ZIP}"
+  rm -f "${DSYM_PATH_ZIP}"
   exit 0
 fi
 
-# Remove temp dSYM archive
+# Remove temp dSYM archive and dSYM DIR
 echo "Instabug: deleting temporary dSYM archive..."
-/bin/rm -f "${DSYM_PATH_ZIP}"
+rm -f "${DSYM_PATH_ZIP}"
+rm -rf "${DSYMS_DIR}"
 
 # Save UUIDs
 echo "${DSYM_UUIDs_TOKEN}" >> "${DSYM_UUIDs_PATH}"
@@ -113,3 +142,4 @@ if [ "$?" -ne 0 ]; then
   echo "Instabug: err: an error was encountered uploading dSYM"
   exit 0
 fi
+)

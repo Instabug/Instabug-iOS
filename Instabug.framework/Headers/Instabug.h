@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2013-2016 by Instabug, Inc., all rights reserved.
 
- Version:    6.2.1
+ Version:    6.3
  */
 
 #import <Foundation/Foundation.h>
@@ -72,13 +72,32 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @brief Attaches a file to each report being sent.
  
- @discussion A new copy of the file at fileLocation will be attached with each bug report being sent.
- Each call to this method overrides the file to be attached.
- The file has to be available locally at the provided path.
+ @deprecated Starting from v6.3, use `setFileAttachmentWithURL:` instead.
+ 
+ @discussion A new copy of the file at fileURL will be attached with each bug report being sent. The file is only copied
+ at the time of sending the report, so you could safely call this API whenever the file is available on disk, and the copy
+ attached to your bug reports will always contain that latest changes at the time of sending the report.
+ 
+ Each call to this method overrides the file to be attached, and the file has to be available locally at the provided
+ path when the report is being sent.
  
  @param fileLocation Path to a file that's going to be attached to each report.
  */
-+ (void)setFileAttachment:(NSString *)fileLocation;
++ (void)setFileAttachment:(NSString *)fileLocation DEPRECATED_MSG_ATTRIBUTE("Starting from v6.3, use setFileAttachmentWithURL: instead.");;
+
+/**
+ @brief Attaches a file to each report being sent.
+ 
+ @discussion A new copy of the file at fileURL will be attached with each bug report being sent. The file is only copied
+ at the time of sending the report, so you could safely call this API whenever the file is available on disk, and the copy
+ attached to your bug reports will always contain that latest changes at the time of sending the report.
+ 
+ Each call to this method overrides the file to be attached, and the file has to be available locally at the provided 
+ path when the report is being sent.
+ 
+ @param fileURL Path to a file that's going to be attached to each report.
+ */
++ (void)setFileAttachmentWithURL:(NSURL *)fileURL;
 
 /**
  @brief Attaches user data to each report being sent.
@@ -101,6 +120,38 @@ NS_ASSUME_NONNULL_BEGIN
  @param isUserStepsEnabled A boolean to set user steps tracking to being enabled or disabled.
  */
 + (void)setUserStepsEnabled:(BOOL)isUserStepsEnabled;
+
+/**
+ @brief Sets whether to log network requests or not.
+ 
+ @discussion When enabled, Instabug will automtically log all network requests and responses. Logs are attached to
+ each report being sent and are available on your Instabug dashboard.
+ 
+ Networking logging is enabled by default if it's available in your current plan.
+
+ @param isNetworkLoggingEnabled A boolean to set network logging to be enabled to disabled.
+ */
++ (void)setNetworkLoggingEnabled:(BOOL)isNetworkLoggingEnabled;
+
+/**
+ @brief Specify an NSPredicate to be used to omit certain requests from being logged.
+
+ @discussion Predicate will be matched against an `NSURLRequest`. This can be used to filter out requests to a specific
+ domain for example.
+ 
+ @param filterPredicate An NSPredicate to match against an NSURLRequest. Matching requests will be omitted.
+ */
++ (void)setNetworkLoggingFilterPredicate:(NSPredicate *)filterPredicate;
+
+/**
+ @brief Enable logging for network requests and responses on a custom NSURLSessionConfiguration.
+ 
+ @discussion Logging for network requests and responses may not work if you're using a custom `NSURLSession` object.
+ If this is the case, call this method passing in your custom NSURLSessions's configuration to enable logging for it.
+
+ @param URLSessionConfiguration The NSURLSessionConfiguration of your custom NSURLSession.
+ */
++ (void)enableLoggingForURLSessionConfiguration:(NSURLSessionConfiguration *)URLSessionConfiguration;
 
 /**
  @brief Sets whether to track and report crashes or not.
