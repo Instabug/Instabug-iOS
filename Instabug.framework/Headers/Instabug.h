@@ -3,7 +3,7 @@
 
  Contains:   API for using Instabug's SDK.
 
- Copyright:  (c) 2013-2016 by Instabug, Inc., all rights reserved.
+ Copyright:  (c) 2013-2017 by Instabug, Inc., all rights reserved.
 
  Version:    6.3
  */
@@ -428,6 +428,15 @@ NS_ASSUME_NONNULL_BEGIN
  @param isIntroMessageEnabled A boolean to indicate whether the intro message is enabled or not.
  */
 + (void)setIntroMessageEnabled:(BOOL)isIntroMessageEnabled;
+
+/**
+ @brief Sets whether to show a "Thank You" dialog after a bug report is sent or not.
+ 
+ @discussion Defaults to YES.
+ 
+ @param isPostSendingDialogEnabled A boolean to indicate whether the dialog is enabled or not.
+ */
++ (void)setPostSendingDialogEnabled:(BOOL)isPostSendingDialogEnabled;
 
 /**
  @brief Sets the color theme of the SDK's whole UI.
