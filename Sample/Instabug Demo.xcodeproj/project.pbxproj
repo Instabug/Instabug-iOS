@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		543A00CC1E06D436008FFB4F /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543A00CB1E06D436008FFB4F /* Instabug.framework */; };
-		543A00CE1E06D446008FFB4F /* Instabug.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 543A00CB1E06D436008FFB4F /* Instabug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		547E5E8A1E225BD60026D35A /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547E5E881E225B890026D35A /* Instabug.framework */; };
+		547E5E8B1E225BD60026D35A /* Instabug.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 547E5E881E225B890026D35A /* Instabug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54B011891D901660002AF597 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B011881D901660002AF597 /* main.m */; };
 		54B0118C1D901660002AF597 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0118B1D901660002AF597 /* AppDelegate.m */; };
 		54B0118F1D901660002AF597 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0118E1D901660002AF597 /* ViewController.m */; };
@@ -33,7 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				543A00CE1E06D446008FFB4F /* Instabug.framework in Embed Frameworks */,
+				547E5E8B1E225BD60026D35A /* Instabug.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,7 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		543A00CB1E06D436008FFB4F /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
+		547E5E881E225B890026D35A /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = ../../Instabug.framework; sourceTree = "<group>"; };
 		54B011841D901660002AF597 /* Instabug Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instabug Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B011881D901660002AF597 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54B0118A1D901660002AF597 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 				54B011BC1D902CA9002AF597 /* CoreMedia.framework in Frameworks */,
 				54B011B21D9018CB002AF597 /* UIKit.framework in Frameworks */,
 				54B011B01D9018C3002AF597 /* CoreGraphics.framework in Frameworks */,
-				543A00CC1E06D436008FFB4F /* Instabug.framework in Frameworks */,
+				547E5E8A1E225BD60026D35A /* Instabug.framework in Frameworks */,
 				54B011AE1D9018BD002AF597 /* SystemConfiguration.framework in Frameworks */,
 				54B011AC1D9018B5002AF597 /* CoreMotion.framework in Frameworks */,
 				54B011AA1D9018AE002AF597 /* CoreTelephony.framework in Frameworks */,
@@ -87,7 +87,7 @@
 		541FA2741DC888600037AA01 /* Instabug */ = {
 			isa = PBXGroup;
 			children = (
-				543A00CB1E06D436008FFB4F /* Instabug.framework */,
+				547E5E881E225B890026D35A /* Instabug.framework */,
 			);
 			name = Instabug;
 			sourceTree = "<group>";
