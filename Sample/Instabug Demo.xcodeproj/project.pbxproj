@@ -361,8 +361,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../",
-					"$(PROJECT_DIR)/Instabug",
-					Demo,
 				);
 				INFOPLIST_FILE = "Instabug Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -379,8 +377,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../",
-					"$(PROJECT_DIR)/Instabug",
-					Demo,
 				);
 				INFOPLIST_FILE = "Instabug Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

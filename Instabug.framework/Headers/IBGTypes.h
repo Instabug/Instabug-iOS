@@ -53,6 +53,10 @@ extern NSString * const kIBGScreenRecordingStringName;
 extern NSString * const kIBGImageStringName;
 extern NSString * const kIBGReachedMaximimNumberOfAttachmentsTitleStringName;
 extern NSString * const kIBGReachedMaximimNumberOfAttachmentsMessageStringName;
+extern NSString * const kIBGSurveyEnterYourAnswerTextPlaceholder;
+extern NSString * const kIBGSurveyNoAnswerTitle;
+extern NSString * const kIBGSurveyNoAnswerMessage;
+extern NSString * const kIBGSurveySubmitTitle;
 
 /// -----------
 /// @name Enums
@@ -150,6 +154,7 @@ typedef NS_ENUM(NSInteger, IBGLocale) {
     IBGLocaleChineseTraditional,
     IBGLocaleCzech,
     IBGLocaleDanish,
+    IBGLocaleDutch,
     IBGLocaleEnglish,
     IBGLocaleFrench,
     IBGLocaleGerman,
@@ -206,5 +211,9 @@ typedef NS_ENUM(NSInteger, IBGString) {
     IBGStringThankYouAlertText,
     IBGStringAudio,
     IBGStringScreenRecording,
-    IBGStringImage
+    IBGStringImage,
+    IBGStringSurveyEnterYourAnswerPlaceholder,
+    kIBGStringSurveyNoAnswerTitle,
+    kIBGStringSurveyNoAnswerMessage,
+    kIBGStringSurveySubmitTitle
 };

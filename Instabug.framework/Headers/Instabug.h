@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2013-2017 by Instabug, Inc., all rights reserved.
 
- Version:    6.3.1
+ Version:    6.4
  */
 
 #import <Foundation/Foundation.h>
@@ -83,7 +83,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param fileLocation Path to a file that's going to be attached to each report.
  */
-+ (void)setFileAttachment:(NSString *)fileLocation DEPRECATED_MSG_ATTRIBUTE("Starting from v6.3, use setFileAttachmentWithURL: instead.");;
++ (void)setFileAttachment:(NSString *)fileLocation DEPRECATED_MSG_ATTRIBUTE("Starting from v6.3, use setFileAttachmentWithURL: instead.");
 
 /**
  @brief Attaches a file to each report being sent.
@@ -120,38 +120,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param isUserStepsEnabled A boolean to set user steps tracking to being enabled or disabled.
  */
 + (void)setUserStepsEnabled:(BOOL)isUserStepsEnabled;
-
-/**
- @brief Sets whether to log network requests or not.
- 
- @discussion When enabled, Instabug will automtically log all network requests and responses. Logs are attached to
- each report being sent and are available on your Instabug dashboard.
- 
- Networking logging is enabled by default if it's available in your current plan.
-
- @param isNetworkLoggingEnabled A boolean to set network logging to be enabled to disabled.
- */
-+ (void)setNetworkLoggingEnabled:(BOOL)isNetworkLoggingEnabled;
-
-/**
- @brief Specify an NSPredicate to be used to omit certain requests from being logged.
-
- @discussion Predicate will be matched against an `NSURLRequest`. This can be used to filter out requests to a specific
- domain for example.
- 
- @param filterPredicate An NSPredicate to match against an NSURLRequest. Matching requests will be omitted.
- */
-+ (void)setNetworkLoggingFilterPredicate:(NSPredicate *)filterPredicate;
-
-/**
- @brief Enable logging for network requests and responses on a custom NSURLSessionConfiguration.
- 
- @discussion Logging for network requests and responses may not work if you're using a custom `NSURLSession` object.
- If this is the case, call this method passing in your custom NSURLSessions's configuration to enable logging for it.
-
- @param URLSessionConfiguration The NSURLSessionConfiguration of your custom NSURLSession.
- */
-+ (void)enableLoggingForURLSessionConfiguration:(NSURLSessionConfiguration *)URLSessionConfiguration;
 
 /**
  @brief Sets whether to track and report crashes or not.
@@ -704,9 +672,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)didReceiveRemoteNotification:(NSDictionary *)userInfo;
 
-/// -------------
-/// @name Logging
-/// -------------
+#pragma mark - IBGLog
 
 /**
  @brief Adds custom logs that will be sent with each report.
@@ -810,6 +776,86 @@ OBJC_EXTERN void IBGLogError(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  @param log Message to be logged.
  */
 + (void)logError:(NSString *)log;
+
+#pragma mark - Network Logging
+
+/**
+ @brief Sets whether to log network requests or not.
+ 
+ @discussion When enabled, Instabug will automtically log all network requests and responses. Logs are attached to
+ each report being sent and are available on your Instabug dashboard.
+ 
+ Networking logging is enabled by default if it's available in your current plan.
+ 
+ @param isNetworkLoggingEnabled A boolean to set network logging to be enabled to disabled.
+ */
++ (void)setNetworkLoggingEnabled:(BOOL)isNetworkLoggingEnabled;
+
+/**
+ @brief Specify an NSPredicate to be used to omit certain requests from being logged.
+ 
+ @deprecated Use `setNetworkLoggingRequestFilterPredicate:responseFilterPredicate:` instead.
+ 
+ @discussion Predicate will be matched against an `NSURLRequest`. This can be used to filter out requests to a specific
+ domain for example.
+ 
+ @param filterPredicate An NSPredicate to match against an NSURLRequest. Matching requests will be omitted.
+ */
++ (void)setNetworkLoggingFilterPredicate:(NSPredicate *)filterPredicate DEPRECATED_MSG_ATTRIBUTE("Use setNetworkLoggingRequestFilterPredicate:responseFilterPredicate: instead.");
+
+/**
+ @brief Specify NSPredicates to be used to omit certain network requests from being logged based on their request or
+ response objects.
+ 
+ @discussion `requestFilterPredicate` will be matched against an `NSURLRequest`. It can be used to filter out requests 
+ to a specific domain for example.
+ 
+ `responseFilterPredicate` will be matched against an `NSHTTPURLResponse`. It can be used to filter out responses that 
+ match specific status codes.
+ 
+ If both predicates are specified, `requestFilterPredicate` is evaluated first, if it matches, the request is omitted
+ from logging without evaluating `responseFilterPredicate`.
+ 
+ @param requestFilterPredicate An NSPredicate to match against an NSURLRequest. Matching requests will be omitted.
+ @param responseFilterPredicate An NSPredicate to match against an NSHTTPURLResponse. Matching responses will be omitted.
+ */
++ (void)setNetworkLoggingRequestFilterPredicate:(nullable NSPredicate *)requestFilterPredicate responseFilterPredicate:(nullable NSPredicate *)responseFilterPredicate;
+
+/**
+ @brief Enable logging for network requests and responses on a custom NSURLSessionConfiguration.
+ 
+ @discussion Logging for network requests and responses may not work if you're using a custom `NSURLSession` object.
+ If this is the case, call this method passing in your custom NSURLSessions's configuration to enable logging for it.
+ 
+ @param URLSessionConfiguration The NSURLSessionConfiguration of your custom NSURLSession.
+ */
++ (void)enableLoggingForURLSessionConfiguration:(NSURLSessionConfiguration *)URLSessionConfiguration;
+
+/**
+ @brief Set HTTP body of a POST request to be included in network logs.
+ 
+ @discussion Due to a bug in Foundation, it's not possible to retrieve the body of POST requests automatically. Use
+ this method to include the body of your POST requests in network logs.
+ 
+ If you'd like to exclude or obfuscate user sensitive data in the request body, this is also the place to do it.
+ 
+ @param body Body data of a POST request.
+ @param request The POST request that is being sent.
+ */
++ (void)logHTTPBody:(NSData *)body forRequest:(NSMutableURLRequest *)request;
+
+/**
+ @brief Use to obfuscate a URL that's going to be included in network logs.
+ 
+ @discussion Use this method if you make requests that include user sensitive data in the URL (like authentication tokens
+ for example), and you'd like to hide those from your network logs. 
+ 
+ The provided block will be called for every request. You should do whatever processing you need to do on the URL inside
+ that block, then return a URL to be included in network logs.
+
+ @param obfuscationHandler A block that obfuscates the passed URL and returns it.
+ */
++ (void)setNetworkLoggingURLObfuscationHandler:(nonnull NSURL * (^)(NSURL * _Nonnull url))obfuscationHandler;
 
 @end
 NS_ASSUME_NONNULL_END
