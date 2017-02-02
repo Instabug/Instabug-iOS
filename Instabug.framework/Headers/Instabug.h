@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2013-2017 by Instabug, Inc., all rights reserved.
 
- Version:    6.4.1
+ Version:    7.0
  */
 
 #import <Foundation/Foundation.h>
@@ -72,8 +72,8 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @brief Attaches a file to each report being sent.
  
- @deprecated Starting from v6.3, use `setFileAttachmentWithURL:` instead.
- 
+ @deprecated Use `addFileAttachmentWithURL:` instead.
+
  @discussion A new copy of the file at fileURL will be attached with each bug report being sent. The file is only copied
  at the time of sending the report, so you could safely call this API whenever the file is available on disk, and the copy
  attached to your bug reports will always contain that latest changes at the time of sending the report.
@@ -83,11 +83,13 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param fileLocation Path to a file that's going to be attached to each report.
  */
-+ (void)setFileAttachment:(NSString *)fileLocation DEPRECATED_MSG_ATTRIBUTE("Starting from v6.3, use setFileAttachmentWithURL: instead.");
++ (void)setFileAttachment:(NSString *)fileLocation DEPRECATED_MSG_ATTRIBUTE("Use addFileAttachmentWithURL: instead.");
 
 /**
  @brief Attaches a file to each report being sent.
  
+ @deprecated Use `addFileAttachmentWithURL:` instead.
+
  @discussion A new copy of the file at fileURL will be attached with each bug report being sent. The file is only copied
  at the time of sending the report, so you could safely call this API whenever the file is available on disk, and the copy
  attached to your bug reports will always contain that latest changes at the time of sending the report.
@@ -97,7 +99,31 @@ NS_ASSUME_NONNULL_BEGIN
  
  @param fileURL Path to a file that's going to be attached to each report.
  */
-+ (void)setFileAttachmentWithURL:(NSURL *)fileURL;
++ (void)setFileAttachmentWithURL:(NSURL *)fileURL DEPRECATED_MSG_ATTRIBUTE("Use addFileAttachmentWithURL: instead.");
+
+
+/**
+ @brief Add file to attached files with each report being sent.
+
+ @discussion A new copy of the file at fileURL will be attached with each bug report being sent. The file is only copied
+ at the time of sending the report, so you could safely call this API whenever the file is available on disk, and the copy
+ attached to your bug reports will always contain that latest changes at the time of sending the report.
+
+ Each call to this method adds the file to the files attached, until a maximum of 3 then it overrides the first file. 
+ The file has to be available locally at the provided path when the report is being sent.
+
+ @param fileURL Path to a file that's going to be attached to each report.
+ */
++ (void)addFileAttachmentWithURL:(NSURL *)fileURL;
+
+
+/**
+ @brief Clear list of files to be attached with each report.
+
+ @discussion This method doesn't delete any files from the file system. It will just removes them for the list of files
+ to be attached with each report.
+ */
++ (void)clearFileAttachments;
 
 /**
  @brief Attaches user data to each report being sent.
@@ -244,13 +270,30 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setWillTakeScreenshot:(BOOL)willTakeScreenshot DEPRECATED_MSG_ATTRIBUTE("Starting from v6.0, use setAttachmentTypesEnabledScreenShot:extraScreenShot:galleryImage:voiceNote:screenRecording: instead.");
 
 /**
- @brief Sets the default value of the user's email and hides the email field from the reporting UI.
+ @brief Sets the default value of the user's email and hides the email field from the reporting UI and set the user's name to be included with all reports.
  
+ @discussion It also reset the chats on device to that email and removes user attributes, user data and completed surveys.
+ 
+ @param email Email address to be set as the user's email.
+ @param name Name of the user to be set.
+ */
++ (void)identifyUserWithEmail:(NSString *)email name:(NSString *)name;
+
+/**
+ @brief Sets the default value of the user's email to nil and show email field and remove user name from all reports
+ 
+ @discussion It also reset the chats on device and removes user attributes, user data and completed surveys.
+ */
++ (void)logOut;
+
+/**
+ @brief Sets the default value of the user's email and hides the email field from the reporting UI.
+
  @discussion Defaults to an empty string.
 
  @param userEmail An email address to be set as the user's email.
  */
-+ (void)setUserEmail:(NSString *)userEmail;
++ (void)setUserEmail:(NSString *)userEmail DEPRECATED_MSG_ATTRIBUTE("Use identifyUserWithEmail:Name: instead.");
 
 /**
  @brief Sets the default value of the user's name to be included with all reports.
@@ -259,7 +302,16 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param userName Name of the user to be set.
  */
-+ (void)setUserName:(NSString *)userName;
++ (void)setUserName:(NSString *)userName DEPRECATED_MSG_ATTRIBUTE("Use identifyUserWithEmail:Name: instead.");
+
+/**
+ @brief Shows/Hides email field.
+
+ @discussion Defaults to show email field.
+
+ @param isShowingEmailField YES to show the email field, NO to hide it.
+ */
++ (void)setShowEmailField:(BOOL)isShowingEmailField;
 
 /**
  @brief Enables/disables screenshot view when reporting a bug/improvement.
@@ -609,6 +661,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (nullable NSDictionary *)userAttributes;
 
+/**
+ @brief Enables/disables inspect view hierarchy when reporting a bug/feedback.
+ 
+ @param viewHierarchyEnabled A boolean to set whether view hierarchy are enabled or disabled.
+ */
++ (void)setViewHierarchyEnabled:(BOOL)viewHierarchyEnabled;
+
 /// -------------------
 /// @name SDK Reporting
 /// -------------------
@@ -619,6 +678,13 @@ NS_ASSUME_NONNULL_BEGIN
  @param exception Exception to be reported.
  */
 + (void)reportException:(NSException *)exception;
+
+/**
+ @brief Report an error manually.
+ 
+ @param error error to be reported.
+ */
++ (void)reportError:(NSError *)error;
 
 /// --------------------------
 /// @name In-App Conversations
@@ -671,6 +737,25 @@ NS_ASSUME_NONNULL_BEGIN
  `-[UIApplicationDelegate application:didFinishLaunchingWithOptions:]`.
  */
 + (void)didReceiveRemoteNotification:(NSDictionary *)userInfo;
+
+/**
+ @brief Logs a user event that happens through the lifecycle of the application.
+ 
+ @discussion Logged user events are going to be sent with each report, as well as at the end of a session.
+ 
+ @param name Event name.
+ */
++ (void)logUserEventWithName:(NSString *)name;
+
+/**
+ @brief Logs a user event that happens through the lifecycle of the application.
+ 
+ @discussion Logged user events are going to be sent with each report, as well as at the end of a session.
+ 
+ @param name Event name.
+ @param params An optional dictionary or parameters to be associated with the event.
+ */
++ (void)logUserEventWithName:(NSString *)name params:(nullable NSDictionary *)params;
 
 #pragma mark - IBGLog
 
@@ -856,6 +941,15 @@ OBJC_EXTERN void IBGLogError(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  @param obfuscationHandler A block that obfuscates the passed URL and returns it.
  */
 + (void)setNetworkLoggingURLObfuscationHandler:(nonnull NSURL * (^)(NSURL * _Nonnull url))obfuscationHandler;
+
+#pragma mark - SDK Debugging
+
+/**
+ @brief Sets the verbosity level of logs used to debug the Instabug SDK itself.
+
+ @param level Logs verbosity level.
+ */
++ (void)setSDKDebugLogsLevel:(IBGSDKDebugLogsLevel)level;
 
 @end
 NS_ASSUME_NONNULL_END
