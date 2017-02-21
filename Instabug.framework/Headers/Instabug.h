@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2013-2017 by Instabug, Inc., all rights reserved.
 
- Version:    7.0.2
+ Version:    7.0.3
  */
 
 #import <Foundation/Foundation.h>
@@ -248,7 +248,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - dismissType: How the SDK was dismissed.
  - reportType: Type of report that has been sent. Will be set to IBGReportTypeBug in case the SDK has been dismissed
- without selecting a report type, so you might need to check issueState before reportType
+ without selecting a report type, so you might need to check dismissType before reportType.
  
  @see IBGReportType, IBGDismissType
  */
@@ -256,6 +256,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  @brief Present a view that educates the user on how to invoke the SDK with the currently set invocation event.
+ 
+ @discussion Does nothing if invocation event is set to anything other than IBGInvocationEventShake or IBGInvocationEventScreenshot.
  */
 + (void)showIntroMessage;
 
@@ -270,9 +272,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setWillTakeScreenshot:(BOOL)willTakeScreenshot DEPRECATED_MSG_ATTRIBUTE("Starting from v6.0, use setAttachmentTypesEnabledScreenShot:extraScreenShot:galleryImage:voiceNote:screenRecording: instead.");
 
 /**
- @brief Sets the default value of the user's email and hides the email field from the reporting UI and set the user's name to be included with all reports.
- 
- @discussion It also reset the chats on device to that email and removes user attributes, user data and completed surveys.
+ @brief Sets the user email and name for all sent reports. Also hides the email field from the reporting UI.
  
  @param email Email address to be set as the user's email.
  @param name Name of the user to be set.
@@ -282,7 +282,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @brief Sets the default value of the user's email to nil and show email field and remove user name from all reports
  
- @discussion It also reset the chats on device and removes user attributes, user data and completed surveys.
+ @discussion This method also resets all chats currently on the device and removes any set user attributes.
  */
 + (void)logOut;
 
