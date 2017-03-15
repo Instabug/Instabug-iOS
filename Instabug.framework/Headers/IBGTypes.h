@@ -238,3 +238,12 @@ typedef NS_ENUM(NSInteger, IBGString) {
     kIBGStringSurveySubmitTitle,
     kIBGStringVideoPressRecordTitle
 };
+
+/**
+ The prompt option selected in Instabug prompt.
+ */
+typedef NS_ENUM(NSInteger, IBGPromptOption) {
+    IBGPromptOptionChat,
+    IBGPromptOptionBug,
+    IBGPromptOptionFeedback
+};

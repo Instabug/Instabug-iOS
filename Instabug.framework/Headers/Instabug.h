@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2013-2017 by Instabug, Inc., all rights reserved.
 
- Version:    7.0.5
+ Version:    7.1
  */
 
 #import <Foundation/Foundation.h>
@@ -255,6 +255,16 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setPostInvocationHandler:(void (^)(IBGDismissType dismissType, IBGReportType reportType))postInvocationHandler;
 
 /**
+ @brief Sets a block of code to be executed when a prompt option is selected
+
+ @param didSelectPromptOptionHandler A block of code that gets executed when a prompt option is selected.
+ 
+ The block has the following parameters:
+ - prompOption: The option selected in prompt.
+*/
++ (void)setDidSelectPromptOptionHandler:(void (^)(IBGPromptOption promptOption))didSelectPromptOptionHandler;
+
+/**
  @brief Present a view that educates the user on how to invoke the SDK with the currently set invocation event.
  
  @discussion Does nothing if invocation event is set to anything other than IBGInvocationEventShake or IBGInvocationEventScreenshot.
@@ -272,12 +282,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setWillTakeScreenshot:(BOOL)willTakeScreenshot DEPRECATED_MSG_ATTRIBUTE("Starting from v6.0, use setAttachmentTypesEnabledScreenShot:extraScreenShot:galleryImage:voiceNote:screenRecording: instead.");
 
 /**
- @brief Sets the user email and name for all sent reports. Also hides the email field from the reporting UI.
+ @brief Sets the user email and name for all sent reports.
  
  @param email Email address to be set as the user's email.
  @param name Name of the user to be set.
  */
-+ (void)identifyUserWithEmail:(NSString *)email name:(NSString *)name;
++ (void)identifyUserWithEmail:(NSString *)email name:(nullable NSString *)name;
 
 /**
  @brief Sets the default value of the user's email to nil and show email field and remove user name from all reports
@@ -511,7 +521,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @deprecated Starting from v6.0, use `appendTags:` instead.
  
- @discussion This method is identical to `+[Instabug addtags:]`, but is meant to be used from Swift.
+ @discussion This method is identical to `+ [Instabug addtags:]`, but is meant to be used from Swift.
  
  To use this method from Swift, you will need to add the following code to the class that's going to call it.
  
@@ -541,6 +551,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  @brief Gets all tags of reported feedback, bug or crash.
+ 
+ @return An array of tags.
  */
 + (NSArray *)getTags;
 
@@ -623,7 +635,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param titles Array of titles to be shown in the list.
  @param names Array of names of icons to be shown along with titles. Use the same names you would use
- with `+[UIImage imageNamed:]`.
+ with `+ [UIImage imageNamed:]`.
  */
 + (void)setReportCategoriesWithTitles:(NSArray<NSString *> *)titles iconNames:(nullable NSArray<NSString *> *)names;
 
@@ -637,8 +649,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  @brief Returns the user attribute associated with a given key.
- aKey
- 
+
  @param key The key for which to return the corresponding value..
  
  @return The value associated with aKey, or nil if no value is associated with aKey.
@@ -764,9 +775,9 @@ NS_ASSUME_NONNULL_BEGIN
  
  @discussion Can be used in a similar fashion to NSLog. Logs are added with the debug log level.
  For usage in Swift, see `Instabug.ibgLog()`.
- *
- *  @param format Format string.
- *  @param ... Optional varargs arguments.
+ 
+ @param format Format string.
+ @param ... Optional varargs arguments.
  */
 OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
 
@@ -774,9 +785,9 @@ OBJC_EXTERN void IBGLog(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  @brief Adds custom logs with the verbose log level. Logs will be sent with each report.
  
  @discussion Can be used in a similar fashion to NSLog. For usage in Swift, see `Instabug.logVerbose()`.
- *
- *  @param format Format string.
- *  @param ... Optional varargs arguments.
+ 
+ @param format Format string.
+ @param ... Optional varargs arguments.
  */
 OBJC_EXTERN void IBGLogVerbose(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
 
@@ -784,9 +795,9 @@ OBJC_EXTERN void IBGLogVerbose(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  @brief Adds custom logs with the debug log level. Logs will be sent with each report.
  
  @discussion Can be used in a similar fashion to NSLog. For usage in Swift, see `Instabug.logDebug()`.
- *
- *  @param format Format string.
- *  @param ... Optional varargs arguments.
+ 
+ @param format Format string.
+ @param ... Optional varargs arguments.
  */
 OBJC_EXTERN void IBGLogDebug(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
 
@@ -794,9 +805,9 @@ OBJC_EXTERN void IBGLogDebug(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  @brief Adds custom logs with the info log level. Logs will be sent with each report.
  
  @discussion Can be used in a similar fashion to NSLog. For usage in Swift, see `Instabug.logInfo()`.
- *
- *  @param format Format string.
- *  @param ... Optional varargs arguments.
+ 
+ @param format Format string.
+ @param ... Optional varargs arguments.
  */
 OBJC_EXTERN void IBGLogInfo(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
 
@@ -804,9 +815,9 @@ OBJC_EXTERN void IBGLogInfo(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  @brief Adds custom logs with the warn log level. Logs will be sent with each report.
  
  @discussion Can be used in a similar fashion to NSLog. For usage in Swift, see `Instabug.logWarn()`.
- *
- *  @param format Format string.
- *  @param ... Optional varargs arguments.
+ 
+ @param format Format string.
+ @param ... Optional varargs arguments.
  */
 OBJC_EXTERN void IBGLogWarn(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
 
@@ -814,11 +825,21 @@ OBJC_EXTERN void IBGLogWarn(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  @brief Adds custom logs with the error log level. Logs will be sent with each report.
  
  @discussion Can be used in a similar fashion to NSLog. For usage in Swift, see `Instabug.logError()`.
- *
- *  @param format Format string.
- *  @param ... Optional varargs arguments.
+ 
+ @param format Format string.
+ @param ... Optional varargs arguments.
  */
 OBJC_EXTERN void IBGLogError(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
+
+/**
+ @brief Used to reroute all your NSLogs to Instabug to be able to automatically include them with reports.
+ 
+ @discussion For details on how to reroute your NSLogs to Instabug, see http://docs.instabug.com/docs/logging
+ 
+ @param format Format string.
+ @param args Arguments list.
+ */
+OBJC_EXTERN void IBGNSLog(NSString *format, va_list args);
 
 /**
  @brief Adds custom logs that will be sent with each report. Logs are added with the debug log level.
@@ -861,6 +882,15 @@ OBJC_EXTERN void IBGLogError(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  @param log Message to be logged.
  */
 + (void)logError:(NSString *)log;
+
+/**
+ @brief Sets whether IBGLog should also print to Xcode's console log or not.
+ 
+ @discussion Defaults to YES.
+ 
+ @param enabled A boolean to set whether printing to Xcode's console is enabled or not.
+ */
++ (void)setIBGLogPrintsToConsole:(BOOL)enabled;
 
 #pragma mark - Network Logging
 
@@ -918,7 +948,7 @@ OBJC_EXTERN void IBGLogError(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
 
 /**
  @brief Set HTTP body of a POST request to be included in network logs.
- 
+ @deprecated Now body of a POST request is captured automatcailly you don't have to log it manually
  @discussion Due to a bug in Foundation, it's not possible to retrieve the body of POST requests automatically. Use
  this method to include the body of your POST requests in network logs.
  
@@ -927,7 +957,7 @@ OBJC_EXTERN void IBGLogError(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  @param body Body data of a POST request.
  @param request The POST request that is being sent.
  */
-+ (void)logHTTPBody:(NSData *)body forRequest:(NSMutableURLRequest *)request;
++ (void)logHTTPBody:(NSData *)body forRequest:(NSMutableURLRequest *)request DEPRECATED_MSG_ATTRIBUTE("Request body is now captured automatically");
 
 /**
  @brief Use to obfuscate a URL that's going to be included in network logs.
@@ -941,6 +971,53 @@ OBJC_EXTERN void IBGLogError(NSString *format, ...) NS_FORMAT_FUNCTION(1, 2);
  @param obfuscationHandler A block that obfuscates the passed URL and returns it.
  */
 + (void)setNetworkLoggingURLObfuscationHandler:(nonnull NSURL * (^)(NSURL * _Nonnull url))obfuscationHandler;
+
+#pragma mark - Surveys
+
+/**
+ @brief Sets whether surveys are enabled or not.
+ 
+ @discussion If you disable surveys on the SDK but still have active surveys on your Instabug dashboard, those surveys are still going to be sent to the device, but are not going to be shown automatically.
+ 
+ To manually display any available surveys, call `+ [Instabug showPendingSurveys]`.
+ 
+ Defaults to YES.
+ 
+ @param surveysEnabled A boolean to indicate whether the surveys are enabled or not.
+ */
++ (void)setSurveysEnabled:(BOOL)surveysEnabled;
+
+/**
+ @brief Shows one of the surveys that were not shown before, that also have conditions that match the current device/user.
+ 
+ @discussion Does nothing if there are no available surveys or if a survey has already been shown in the current session.
+ */
++ (void)showSurveyIfAvailable;
+
+/**
+ @brief Returns true if there are any surveys that match the current device/user.
+ */
++ (BOOL)hasAvailableSurveys;
+
+/**
+ @brief Sets a block of code to be executed just before the survey's UI is presented.
+ 
+ @discussion This block is executed on the UI thread. Could be used for performing any UI changes before the survey's UI
+ is shown.
+ 
+ @param willShowSurveyHandler A block of code that gets executed before presenting the survey's UI.
+ */
++ (void)setWillShowSurveyHandler:(void (^)())willShowSurveyHandler;
+
+/**
+ @brief Sets a block of code to be executed right after the survey's UI is dismissed.
+ 
+ @discussion This block is executed on the UI thread. Could be used for performing any UI changes after the survey's UI
+ is dismissed.
+ 
+ @param didShowSurveyHandler A block of code that gets executed after the survey's UI is dismissed.
+ */
++ (void)setDidDismissSurveyHandler:(void (^)())didShowSurveyHandler;
 
 #pragma mark - SDK Debugging
 
