@@ -21,6 +21,22 @@ Then, run the following command:
 $ pod install
 ```
 
+### Carthage
+
+To integrate Instabug into your Xcode project using [Carthage](https://github.com/Carthage/Carthage), add it to your `Cartfile`:
+
+```
+binary "https://raw.githubusercontent.com/Instabug/Instabug-iOS/master/Carthage.json"
+```
+
+Then, run the following command:
+
+```bash
+$ carthage update
+```
+
+Then drag Instabug.framework into your Xcode project.
+
 ### Manually
 
 1. [Download the Instabug SDK](https://s3.amazonaws.com/instabug-pro/sdk_releases/Instabug.zip)
