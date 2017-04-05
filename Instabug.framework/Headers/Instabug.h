@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2013-2017 by Instabug, Inc., all rights reserved.
 
- Version:    7.1
+ Version:    7.2
  */
 
 #import <Foundation/Foundation.h>
@@ -20,6 +20,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Instabug : NSObject
+
+typedef void (^NetworkObfuscationCompletionBlock)(NSData *data, NSURLResponse *response);
 
 /// ------------------------
 /// @name SDK Initialization
@@ -970,7 +972,61 @@ OBJC_EXTERN void IBGNSLog(NSString *format, va_list args);
 
  @param obfuscationHandler A block that obfuscates the passed URL and returns it.
  */
-+ (void)setNetworkLoggingURLObfuscationHandler:(nonnull NSURL * (^)(NSURL * _Nonnull url))obfuscationHandler;
++ (void)setNetworkLoggingURLObfuscationHandler:(nonnull NSURL * (^)(NSURL * _Nonnull url))obfuscationHandler DEPRECATED_MSG_ATTRIBUTE("Use setNetworkLogRequestObfuscationHandler: instead");
+
+/**
+ @brief Use to obfuscate a request that's going to be included in network logs.
+ 
+ @discussion Use this method if you want to make any modifications to requests before it is added to the network log.
+ This won't be applied to already filtered requests
+ 
+ Note that thsese changes doesn't affect the actual request.
+ 
+ The provided block will be called for every request. You should do whatever processing you need to do on the request inside
+ that block, then return a request to be included in network logs.
+ 
+ This method usage overrides modifications made by `setNetworkLoggingURLObfuscationHandler:`.
+ 
+ @param obfuscationHandler A block that takes a request and returns a new modified one to be logged..
+ */
++ (void)setNetworkLogRequestObfuscationHandler:(nonnull NSURLRequest * (^)(NSURLRequest * _Nonnull request))obfuscationHandler;
+
+/**
+ @brief Use to obfuscate a request's response that's going to be included in network logs.
+ 
+ @discussion Use this method if you want to make any modifications to responses and its' data before it is added to the
+ network log.
+ This won't be applied to already filtered responses.
+ 
+ Note that thsese changes doesn't affect the actual response data.
+ 
+ The provided block will be called for every response. You should do whatever processing you need to do on the response
+ and data inside that block, then return a response to be included in network logs.
+ 
+ @param obfuscationHandler A block that takes the original response and it's data and a return block with the
+ new data and new response.
+ */
++ (void)setNetworkLogResponseObfuscationHandler:(void (^)(NSData * _Nullable responseData,
+                                                          NSURLResponse * _Nonnull response, NetworkObfuscationCompletionBlock returnBlock))obfuscationHandler;
+
+/**
+ @brief Used to ask whether your app is prepared to handle a particular authentication challenge. Can be called on any thread.
+ 
+ @discussion Set this block if your app implements SSL pinning and you have network logging enabled.
+ 
+ @param protectionSpaceHandler A block that takes the protection space for the authentication challenge and should return
+ true or false.
+ */
++ (void)setCanAuthenticateAgainstProtectionSpaceHandler:(BOOL(^)(NSURLProtectionSpace *protectionSpace))protectionSpaceHandler;
+
+/**
+ @brief Used to process an authentication challenge and return an NSURLCredential object.
+ 
+ @discussion Set this block if your app implements SSL pinning and you have network logging enabled.
+ 
+ @param reciveChallengeHandler A block that takes the authentication challenge and returns NSURLCredential.
+ */
++ (void)setDidReceiveAuthenticationChallengeHandler:(NSURLCredential* (^)(NSURLAuthenticationChallenge *challenge))reciveChallengeHandler;
 
 #pragma mark - Surveys
 
