@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2013-2017 by Instabug, Inc., all rights reserved.
 
- Version:    7.2.4
+ Version:    7.2.5
  */
 
 #import <Foundation/Foundation.h>
@@ -292,7 +292,7 @@ typedef void (^NetworkObfuscationCompletionBlock)(NSData *data, NSURLResponse *r
 + (void)identifyUserWithEmail:(NSString *)email name:(nullable NSString *)name;
 
 /**
- @brief Sets the default value of the user's email to nil and show email field and remove user name from all reports
+ @brief Resets the value of the user's email and name, previously set using `+ [Instabug identifyUserWithEmail:name:]`.
  
  @discussion This method also resets all chats currently on the device and removes any set user attributes.
  */
@@ -1006,8 +1006,20 @@ OBJC_EXTERN void IBGNSLog(NSString *format, va_list args);
  @param obfuscationHandler A block that takes the original response and it's data and a return block with the
  new data and new response.
  */
-+ (void)setNetworkLogResponseObfuscationHandler:(void (^)(NSData * _Nullable responseData,
-                                                          NSURLResponse * _Nonnull response, NetworkObfuscationCompletionBlock returnBlock))obfuscationHandler;
++ (void)setNetworkLogResponseObfuscationHandler:(void (^)(NSData * _Nullable responseData, NSURLResponse * _Nonnull response, NetworkObfuscationCompletionBlock returnBlock))obfuscationHandler;
+
+/**
+ @brief Use to get callbacks about progress of sending body content of a particular request when networking logging is
+ enabled.
+ 
+ @discussion The provided block will get periodical callbacks about the progress of sending the body content of a request.
+  
+ @param URL URL which will be attached with requestProgressHandler.
+ @param requestProgressHandler A block that will be called for the requestURL when SDK intercept that request.
+
+ */
++ (void)setProgressHandlerForRequestURL:(nonnull NSURL *)URL
+                        progressHandler:(nonnull void (^)(NSURLSessionTask *task, int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend))requestProgressHandler;
 
 /**
  @brief Used to ask whether your app is prepared to handle a particular authentication challenge. Can be called on any thread.
@@ -1035,7 +1047,7 @@ OBJC_EXTERN void IBGNSLog(NSString *format, va_list args);
  
  @discussion If you disable surveys on the SDK but still have active surveys on your Instabug dashboard, those surveys are still going to be sent to the device, but are not going to be shown automatically.
  
- To manually display any available surveys, call `+ [Instabug showPendingSurveys]`.
+ To manually display any available surveys, call `+ [Instabug showSurveyIfAvailable]`.
  
  Defaults to YES.
  
