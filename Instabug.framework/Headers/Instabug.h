@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2013-2017 by Instabug, Inc., all rights reserved.
 
- Version:    7.2.6
+ Version:    7.2.7
  */
 
 #import <Foundation/Foundation.h>
@@ -766,7 +766,7 @@ typedef void (^NetworkObfuscationCompletionBlock)(NSData *data, NSURLResponse *r
  @discussion Logged user events are going to be sent with each report, as well as at the end of a session.
  
  @param name Event name.
- @param params An optional dictionary or parameters to be associated with the event.
+ @param params An optional dictionary or parameters to be associated with the event. Make sure it's JSON serializable.
  */
 + (void)logUserEventWithName:(NSString *)name params:(nullable NSDictionary *)params;
 
@@ -994,17 +994,15 @@ OBJC_EXTERN void IBGNSLog(NSString *format, va_list args);
 /**
  @brief Use to obfuscate a request's response that's going to be included in network logs.
  
- @discussion Use this method if you want to make any modifications to responses and its' data before it is added to the
- network log.
- This won't be applied to already filtered responses.
- 
- Note that thsese changes doesn't affect the actual response data.
+ @discussion Use this method if you want to make any modifications to a request's respone and its data before it's 
+ added to network logs.
  
  The provided block will be called for every response. You should do whatever processing you need to do on the response
- and data inside that block, then return a response to be included in network logs.
+ and data inside that block, then return response and data to be included in network logs. Changes you make to the 
+ response and its data only affect network logs, not the actual response.
  
- @param obfuscationHandler A block that takes the original response and it's data and a return block with the
- new data and new response.
+ @param obfuscationHandler A block that takes the original response, its data and a return block as parameters. The 
+ return block should be called with the modified data and response.
  */
 + (void)setNetworkLogResponseObfuscationHandler:(void (^)(NSData * _Nullable responseData, NSURLResponse * _Nonnull response, NetworkObfuscationCompletionBlock returnBlock))obfuscationHandler;
 
