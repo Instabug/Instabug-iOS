@@ -5,7 +5,7 @@
 		<key>CFBundleDevelopmentRegion</key>
 		<string>English</string>
 		<key>CFBundleIdentifier</key>
-		<string>com.apple.xcode.dsym.com.Instabug</string>
+		<string>com.apple.xcode.dsym.com.Instabug.Instabug</string>
 		<key>CFBundleInfoDictionaryVersion</key>
 		<string>6.0</string>
 		<key>CFBundlePackageType</key>
@@ -13,8 +13,8 @@
 		<key>CFBundleSignature</key>
 		<string>????</string>
 		<key>CFBundleShortVersionString</key>
-		<string>7.2.8</string>
+		<string>7.2.7</string>
 		<key>CFBundleVersion</key>
-		<string>8289</string>
+		<string>8408</string>
 	</dict>
 </plist>

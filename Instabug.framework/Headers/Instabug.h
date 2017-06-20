@@ -5,12 +5,12 @@
 
  Copyright:  (c) 2013-2017 by Instabug, Inc., all rights reserved.
 
- Version:    7.2.8
+ Version:    7.2.7
  */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "IBGTypes.h"
+#import <InstabugCore/IBGTypes.h>
 
 /**
  This is the API for using Instabug's SDK. For more details about the SDK integration,
@@ -770,6 +770,26 @@ typedef void (^NetworkObfuscationCompletionBlock)(NSData *data, NSURLResponse *r
  */
 + (void)logUserEventWithName:(NSString *)name params:(nullable NSDictionary *)params;
 
+/**
+ @brief enables/disables auto screen recording for the current sesssion.
+ 
+ @discussion if enabled a screen recording for the current session will be sent with each bug/crash.
+ 
+  Defaults to YES.
+ 
+ @param enabled A boolean to set whether auto screen recording is enabled or disabled.
+= */
++ (void)setAutoScreenRecordingEnabled:(BOOL)enabled;
+
+/**
+ @brief set's auto screen recording duration. HINT: Max value is 30 sec.
+ 
+ Defaults to 30 sec.
+ 
+ @param duration auto screen recording duration.
+ */
++ (void)setAutoScreenRecordingDuration:(CGFloat)duration;
+
 #pragma mark - IBGLog
 
 /**
@@ -1095,4 +1115,6 @@ OBJC_EXTERN void IBGNSLog(NSString *format, va_list args);
 + (void)setSDKDebugLogsLevel:(IBGSDKDebugLogsLevel)level;
 
 @end
+
+
 NS_ASSUME_NONNULL_END
