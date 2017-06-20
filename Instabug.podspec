@@ -7,11 +7,20 @@ Pod::Spec.new do |s|
   s.author       = { "Instabug" => "contactus@instabug.com" }
   s.platform     = :ios, '8.0'
   s.source       = { :git => "https://github.com/Instabug/Instabug-iOS.git", :tag => s.version.to_s }
-  s.source_files = 'Instabug.framework/Headers/*.{h}'
-  s.preserve_paths =  'Instabug.framework/*'
   s.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
-  s.vendored_frameworks = 'Instabug.framework'
-  s.resource            = 'Instabug.framework/Instabug.bundle'
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
   s.requires_arc = true
+
+  s.subspec 'Instabug' do |sp|
+    sp.source_files = 'Instabug.framework/Headers/*.{h}'
+    sp.vendored_frameworks = 'Instabug.framework'
+    sp.preserve_paths =  'Instabug.framework/*'
+  end
+
+  s.subspec 'InstabugCore' do |sp|
+    sp.source_files = 'InstabugCore/InstabugCore.framework/Headers/*.{h}'
+    sp.vendored_frameworks = 'InstabugCore/InstabugCore.framework'
+    sp.preserve_paths =  'InstabugCore/InstabugCore.framework/*'
+    sp.resource = 'InstabugCore/InstabugCore.framework/Instabug.bundle'
+  end
 end
