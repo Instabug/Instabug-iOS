@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2013-2017 by Instabug, Inc., all rights reserved.
 
- Version:    7.2.8
+ Version:    7.2.9
  */
 
 #import <Foundation/Foundation.h>
@@ -183,7 +183,7 @@ typedef void (^NetworkObfuscationCompletionBlock)(NSData *data, NSURLResponse *r
  
  @param preSendingBlock A block of code that gets executed before sending each bug report.
  */
-+ (void)setPreSendingBlock:(void (^)())preSendingBlock DEPRECATED_MSG_ATTRIBUTE("Starting from v6.0, use setPreSendingHandler: instead.");
++ (void)setPreSendingBlock:(void (^)(void))preSendingBlock DEPRECATED_MSG_ATTRIBUTE("Starting from v6.0, use setPreSendingHandler: instead.");
 
 /**
  @brief Sets a block of code to be executed before sending each report.
@@ -193,7 +193,7 @@ typedef void (^NetworkObfuscationCompletionBlock)(NSData *data, NSURLResponse *r
  
  @param preSendingHandler A block of code that gets executed before sending each bug report.
  */
-+ (void)setPreSendingHandler:(void (^)())preSendingHandler;
++ (void)setPreSendingHandler:(void (^)(void))preSendingHandler;
 
 /**
  @brief Sets a block of code to be executed just before the SDK's UI is presented.
@@ -205,7 +205,7 @@ typedef void (^NetworkObfuscationCompletionBlock)(NSData *data, NSURLResponse *r
 
  @param preInvocationBlock A block of code that gets executed before presenting the SDK's UI.
  */
-+ (void)setPreInvocationBlock:(void (^)())preInvocationBlock DEPRECATED_MSG_ATTRIBUTE("Starting from v6.0, use setPreInvocationHandler: instead.");
++ (void)setPreInvocationBlock:(void (^)(void))preInvocationBlock DEPRECATED_MSG_ATTRIBUTE("Starting from v6.0, use setPreInvocationHandler: instead.");
 
 /**
  @brief Sets a block of code to be executed just before the SDK's UI is presented.
@@ -215,7 +215,7 @@ typedef void (^NetworkObfuscationCompletionBlock)(NSData *data, NSURLResponse *r
  
  @param preInvocationHandler A block of code that gets executed before presenting the SDK's UI.
  */
-+ (void)setPreInvocationHandler:(void (^)())preInvocationHandler;
++ (void)setPreInvocationHandler:(void (^)(void))preInvocationHandler;
 
 /**
  @brief Sets a block of code to be executed right after the SDK's UI is dismissed.
@@ -497,7 +497,7 @@ typedef void (^NetworkObfuscationCompletionBlock)(NSData *data, NSURLResponse *r
  
  @param screenshotCapturingBlock A block of code that's going to be used to capture screenshots.
  */
-+ (void)setScreenshotCapturingBlock:(UIImage *(^)())screenshotCapturingBlock DEPRECATED_MSG_ATTRIBUTE("Starting from v6.0, use setScreenshotCapturingHandler: instead.");
++ (void)setScreenshotCapturingBlock:(UIImage *(^)(void))screenshotCapturingBlock DEPRECATED_MSG_ATTRIBUTE("Starting from v6.0, use setScreenshotCapturingHandler: instead.");
 
 /**
  @brief Sets a block of code that is used to capture a screenshot.
@@ -506,7 +506,7 @@ typedef void (^NetworkObfuscationCompletionBlock)(NSData *data, NSURLResponse *r
  
  @param screenshotCapturingHandler A block of code that's going to be used to capture screenshots.
  */
-+ (void)setScreenshotCapturingHandler:(UIImage *(^)())screenshotCapturingHandler;
++ (void)setScreenshotCapturingHandler:(UIImage *(^)(void))screenshotCapturingHandler;
 
 /**
  @brief Appends a set of tags to previously added tags of reported feedback, bug or crash.
@@ -612,7 +612,7 @@ typedef void (^NetworkObfuscationCompletionBlock)(NSData *data, NSURLResponse *r
 
  @param onNewMessageHandler A block of code that gets executed when a new message is received.
  */
-+ (void)setOnNewMessageHandler:(void (^)())onNewMessageHandler;
++ (void)setOnNewMessageHandler:(void (^)(void))onNewMessageHandler;
 
 /**
  @brief Enables/disables prompt options when SDK is invoked.
@@ -1073,7 +1073,7 @@ OBJC_EXTERN void IBGNSLog(NSString *format, va_list args);
  
  @param willShowSurveyHandler A block of code that gets executed before presenting the survey's UI.
  */
-+ (void)setWillShowSurveyHandler:(void (^)())willShowSurveyHandler;
++ (void)setWillShowSurveyHandler:(void (^)(void))willShowSurveyHandler;
 
 /**
  @brief Sets a block of code to be executed right after the survey's UI is dismissed.
@@ -1083,7 +1083,7 @@ OBJC_EXTERN void IBGNSLog(NSString *format, va_list args);
  
  @param didShowSurveyHandler A block of code that gets executed after the survey's UI is dismissed.
  */
-+ (void)setDidDismissSurveyHandler:(void (^)())didShowSurveyHandler;
++ (void)setDidDismissSurveyHandler:(void (^)(void))didShowSurveyHandler;
 
 #pragma mark - SDK Debugging
 

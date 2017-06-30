@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Instabug"
-  s.version      = "7.2.8"
+  s.version      = "7.2.9"
   s.summary      = "Bug reporting for mobile apps. Learn more at http://instabug.com"
   s.homepage     = "http://instabug.com"
   s.license      = { :type => 'Commercial', :file => 'LICENSE.md' }
@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Instabug/Instabug-iOS.git", :tag => s.version.to_s }
   s.source_files = 'Instabug.framework/Headers/*.{h}'
   s.preserve_paths =  'Instabug.framework/*'
+  s.library = 'z'
   s.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
   s.vendored_frameworks = 'Instabug.framework'
   s.resource            = 'Instabug.framework/Instabug.bundle'
