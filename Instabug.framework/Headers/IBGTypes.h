@@ -62,6 +62,7 @@ extern NSString * const kIBGSurveySubmitTitle;
 extern NSString * const kIBGVideoPressRecordTitle;
 extern NSString * const kIBGLowDiskStorageTitle;
 extern NSString * const kIBGLowDiskStorageMessage;
+extern NSString * const kIBGCollectingDataText;
 
 /// -----------
 /// @name Enums
@@ -240,7 +241,8 @@ typedef NS_ENUM(NSInteger, IBGString) {
     kIBGStringSurveySubmitTitle,
     kIBGStringVideoPressRecordTitle,
     kIBGStringLowDiskStorageTitle,
-    kIBGStringLowDiskStorageMessage
+    kIBGStringLowDiskStorageMessage,
+    kIBGStringCollectingDataText
 };
 
 /**
