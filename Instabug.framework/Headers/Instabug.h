@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2013-2017 by Instabug, Inc., all rights reserved.
 
- Version:    7.3.1
+ Version:    7.3.2
  */
 
 #import <Foundation/Foundation.h>
@@ -893,6 +893,14 @@ OBJC_EXTERN void IBGNSLog(NSString *format, va_list args);
  @param enabled A boolean to set whether printing to Xcode's console is enabled or not.
  */
 + (void)setIBGLogPrintsToConsole:(BOOL)enabled;
+
+/**
+ @brief Clear all Logs.
+ 
+ @discussion Clear all Instabug logs, console logs, network logs and user steps.
+ 
+ */
++ (void)clearAllLogs;
 
 #pragma mark - Network Logging
 
