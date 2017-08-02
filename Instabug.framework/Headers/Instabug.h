@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2013-2017 by Instabug, Inc., all rights reserved.
 
- Version:    7.3.4
+ Version:    7.3.5
  */
 
 #import <Foundation/Foundation.h>
@@ -640,6 +640,24 @@ typedef void (^NetworkObfuscationCompletionBlock)(NSData *data, NSURLResponse *r
  with `+ [UIImage imageNamed:]`.
  */
 + (void)setReportCategoriesWithTitles:(NSArray<NSString *> *)titles iconNames:(nullable NSArray<NSString *> *)names;
+
+/**
+ @brief Sets an array of report categories to be shown for users to select from before reporting a bug or sending
+ feedback.
+ 
+ @discussion Use this method to give users a form after reporting a bug to be filled and sent inside description.
+ 
+ @param title extra field key.
+ @param required determine whether this field is required or not.
+ */
++ (void)addExtraReportFieldWithTitle:(NSString *)title required:(BOOL)required;
+
+/**
+ @brief Remove all extra fields.
+ 
+ @discussion Use this method to remove all added extra fields.
+  */
++ (void)removeExtraReportFields;
 
 /**
  @brief Set custom user attributes that are going to be sent with each feedback, bug or crash.
