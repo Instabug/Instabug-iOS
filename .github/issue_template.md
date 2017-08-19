@@ -1,8 +1,10 @@
+###Steps to reproduce the problem
+
 ###Expected behavior
 
 ###Actual behavior
 
-###Steps to reproduce the problem
+###Instabug integration code "Don't put your token publicly"
 
 ###SDK version
 
