@@ -2,10 +2,10 @@
 
 ###Actual behavior
 
+###Steps to reproduce the problem
+
 ###SDK version
 
 ###iOS Version
 
 ###Device
-
-###Steps to reproduce the problem
