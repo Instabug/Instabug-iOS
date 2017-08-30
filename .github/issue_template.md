@@ -1,13 +1,13 @@
-###Steps to reproduce the problem
+### Steps to reproduce the problem
 
-###Expected behavior
+### Expected behavior
 
-###Actual behavior
+### Actual behavior
 
-###Instabug integration code "Don't put your token publicly"
+### Instabug integration code "Don't put your token publicly"
 
-###SDK version
+### SDK version
 
-###iOS Version
+### iOS Version
 
-###Device
+### Device
