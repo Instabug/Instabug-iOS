@@ -27,7 +27,8 @@
                        @"Invoke with different modes...",
                        @"Set primary color",
                        @"Show intro message",
-                       @"Show unread messages count"
+                       @"Show unread messages count",
+                       @"Crash me"
                        ];
     }
     
@@ -66,6 +67,8 @@
         [Instabug showIntroMessage];
     } else if (indexPath.row == 6) {
         [self showUnreadMessagesCount];
+    } else if (indexPath.row == 7) {
+        [self crashMe];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -178,6 +181,10 @@
                                                        handler:nil];
     [alertController addAction:okayAction];
     [self presentViewController:alertController animated:YES completion:nil];
+}
+
+- (void)crashMe {
+    [[[NSArray alloc] init] objectAtIndex:100];
 }
 
 @end
