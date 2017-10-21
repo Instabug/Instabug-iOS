@@ -14,79 +14,79 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cYeYw8iGm465UKYu7TSM+0b5nMM=
+		GHqfXuCUoSldy/hkOH2d1lOmGVA=
 		</data>
 		<key>Instabug.bundle/IBGActionSheetCell.nib</key>
 		<data>
-		uaYgHjhawR8BZItRC3x5XA/31Hc=
+		8NIfdogHGC7kPge4QShruAc/6Zs=
 		</data>
 		<key>Instabug.bundle/IBGActionSheetVC-iPhone.nib</key>
 		<data>
-		n9cQf7JLOnIJEbqZqjRi92yi0So=
+		UPD69OP+HoX+o8Ce/hlr3WSr25w=
 		</data>
 		<key>Instabug.bundle/IBGAttachmentButton.nib</key>
 		<data>
-		ckYrMrtfiNG7oF+WCunGj3ycdrU=
+		3hJVMrLoASf2Blw/eFXsHhQEzFI=
 		</data>
 		<key>Instabug.bundle/IBGBugVC-iPhone.nib</key>
 		<data>
-		qHYdvHupeFm1qvNvjJz4Cv2S/Jo=
+		yVsDhrVzD03DF3RFGYZs8HN2g7A=
 		</data>
 		<key>Instabug.bundle/IBGChatCell.nib</key>
 		<data>
-		yVFF9iijXLpcEu/ea6BYMOkem9U=
+		QDRnMvlRHM1c+n+wK+/0wKMwFCI=
 		</data>
 		<key>Instabug.bundle/IBGChatVC-iPhone.nib</key>
 		<data>
-		tYVXDwzqM2WQ1N+za9GIxTcdsyg=
+		7hKvhsQOB4GyyYKV3cHh1WsVqzk=
 		</data>
 		<key>Instabug.bundle/IBGChatsVC-iPhone.nib</key>
 		<data>
-		RMs00ShgaRhQw9vzBx7KAkq2tng=
+		8aaRt43nopHBdkbh6V92JOkVmIY=
 		</data>
 		<key>Instabug.bundle/IBGFullScreenImageViewController.nib</key>
 		<data>
-		lr3Z+CB5OH1Z6ETPwNQS28mvc2k=
+		HUoCf6UnuEeJ+FV/L9yM2VEcQt0=
 		</data>
 		<key>Instabug.bundle/IBGMessagesView.nib</key>
 		<data>
-		hMBCInjdJGeBISO7qJ+ixM6qJfw=
+		Yf6P3v2ptfQHSbCTRjySHuXV0wU=
 		</data>
 		<key>Instabug.bundle/IBGPoweredByView.nib</key>
 		<data>
-		ZHr6OZCSGUl4JnQIVNxOzFBPgP4=
+		0m0CW/GvFFFMMataaITByoIhvKM=
 		</data>
 		<key>Instabug.bundle/IBGPromptCell.nib</key>
 		<data>
-		iZPZBQC8Qm9WXMsB8qNg649fB9Q=
+		yCa+s7hGxy9j7PO0mvncXhOHdoE=
 		</data>
 		<key>Instabug.bundle/IBGPromptVC-iPhone.nib</key>
 		<data>
-		G25+OXNBfXbXu9TDDGIUB/EfTh4=
+		TFdmn2bE0MpfJKdXQtAd5gbRBc0=
 		</data>
 		<key>Instabug.bundle/IBGReplyView-iPhone.nib</key>
 		<data>
-		xRNXM6z1tDrXIOUpBD4aud7BIvA=
+		8n3nePBdTd3uS55CytqAOkGN6eU=
 		</data>
 		<key>Instabug.bundle/IBGReportCategoriesVC-iPhone.nib</key>
 		<data>
-		kFJvQmZ6p5A13nhlNu9w2c0c1aQ=
+		RZ1TAVMTpDZLDLC6LVsHev3rW+M=
 		</data>
 		<key>Instabug.bundle/IBGScreenshotVC-iPhone.nib</key>
 		<data>
-		whMdPUCAFF+qBV/obekr1kLcaDY=
+		uANylQKaL5quY7E5WQCgDXLgkZ0=
 		</data>
 		<key>Instabug.bundle/IBGUnnotifiedMessagesAlertView.nib</key>
 		<data>
-		VUwLMyZd1wvJlrmcwAwavJ6xRDM=
+		RtqCKORq/qPvkNDWiAYR0+Srpjw=
 		</data>
 		<key>Instabug.bundle/IBGVideoPlaybackViewController.nib</key>
 		<data>
-		e7Y0jmCphxfoktnbt3vif7aNT64=
+		1T0XHISj2fxlnA9JjXOZOm7pzIo=
 		</data>
 		<key>Instabug.bundle/IBGVoiceNoteRecordingViewController-iPhone.nib</key>
 		<data>
-		4fbw7NNmnGhU4epYzUM9miqTm0s=
+		DfMYI9mRmWXNh0kkmXPw9XAoxPc=
 		</data>
 		<key>Instabug.bundle/InAppScreenshotPlaceholder.png</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Instabug.bundle/Instabug_dsym_strip.sh</key>
 		<data>
-		GLqXdVhWwZu4YmvMiidqRHUv2+I=
+		6a+K9BvI3vk2Py5uxpKC1PObkZs=
 		</data>
 		<key>Instabug.bundle/Instabug_dsym_upload.sh</key>
 		<data>
@@ -475,198 +475,198 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uaYgHjhawR8BZItRC3x5XA/31Hc=
+			8NIfdogHGC7kPge4QShruAc/6Zs=
 			</data>
 			<key>hash2</key>
 			<data>
-			coxPKmXJgk95tzmNpQYUEry8hu4xLOCUkQbVrhwxF6o=
+			9JcTgpTQwStAf793UsOBaeggJkfMrT6/oiMAMmAtU/o=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGActionSheetVC-iPhone.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n9cQf7JLOnIJEbqZqjRi92yi0So=
+			UPD69OP+HoX+o8Ce/hlr3WSr25w=
 			</data>
 			<key>hash2</key>
 			<data>
-			1/f/fnPReJzC5MszLCHDPluJgGqs4aMRhG5vSRqOL20=
+			cHYgb2qNMnkIRT8ne2nUAra06RsdWFrLWHXDRc6EDGw=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGAttachmentButton.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ckYrMrtfiNG7oF+WCunGj3ycdrU=
+			3hJVMrLoASf2Blw/eFXsHhQEzFI=
 			</data>
 			<key>hash2</key>
 			<data>
-			01g0wemYj+qoNoXR8PpztLNi0+xglDi8/6jna06N9bo=
+			vOYTSiI/vFTAm7B70AhRfg+uRdIpIXXV/Run0wR18vk=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGBugVC-iPhone.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qHYdvHupeFm1qvNvjJz4Cv2S/Jo=
+			yVsDhrVzD03DF3RFGYZs8HN2g7A=
 			</data>
 			<key>hash2</key>
 			<data>
-			r8v4MlRr9gSJ9/xXeFrhb6t33jgZCoYGkb2/fdJKfKk=
+			kq/opmbGovEiU8h9ATFjDC6V7iaUVfWHFBgvJ/qVE/k=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGChatCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yVFF9iijXLpcEu/ea6BYMOkem9U=
+			QDRnMvlRHM1c+n+wK+/0wKMwFCI=
 			</data>
 			<key>hash2</key>
 			<data>
-			mZ2GrSGSl6qEBEtVq2VmkoNdDPg3EINHUUUaa9DiAhk=
+			NJrKdygu3+HpfgcesomrLNiuus4TN9t8a9bzWr6v+iU=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGChatVC-iPhone.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tYVXDwzqM2WQ1N+za9GIxTcdsyg=
+			7hKvhsQOB4GyyYKV3cHh1WsVqzk=
 			</data>
 			<key>hash2</key>
 			<data>
-			5xhcmyw7agIiTGiOGxt8HMgmVh4EwGUlhnDPOX4UXRM=
+			AZPIRacR1rxMVCBu6iAmvm/WQoABvC3XJPRnIzZQamk=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGChatsVC-iPhone.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RMs00ShgaRhQw9vzBx7KAkq2tng=
+			8aaRt43nopHBdkbh6V92JOkVmIY=
 			</data>
 			<key>hash2</key>
 			<data>
-			L4TYBVrdPwOKLQoDH3XgHzLEo4/hf+EYrlfEwQuXhXg=
+			dyo7vicyCFoPyjl14O17nxi1xeYlLf/vAS/EjKj54sg=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGFullScreenImageViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lr3Z+CB5OH1Z6ETPwNQS28mvc2k=
+			HUoCf6UnuEeJ+FV/L9yM2VEcQt0=
 			</data>
 			<key>hash2</key>
 			<data>
-			UdAwcr8Dtx5DFq7bKfKtwN2hrBjVDXyslAoWGXQUsQ8=
+			29cvB0t0V8516niY4DkVTge8d2FurxFlUD/8F/CXN2Q=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGMessagesView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hMBCInjdJGeBISO7qJ+ixM6qJfw=
+			Yf6P3v2ptfQHSbCTRjySHuXV0wU=
 			</data>
 			<key>hash2</key>
 			<data>
-			kK5/oPIU3H3gGHN7jMTJK/mHiP4lVjXifXrg3kcpdyQ=
+			ALJi0StLwrs2kg1NlBunP9fm9Z7mfiC1l61gnoTcycE=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGPoweredByView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZHr6OZCSGUl4JnQIVNxOzFBPgP4=
+			0m0CW/GvFFFMMataaITByoIhvKM=
 			</data>
 			<key>hash2</key>
 			<data>
-			FJPJ24PB1l7DEYdSOWM0eLfXKM+amY9JOM/DihCKq70=
+			wfPvG3szuuySdJB0HPePAgFiUgBXAjsrZ9pHMdm2ayw=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGPromptCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iZPZBQC8Qm9WXMsB8qNg649fB9Q=
+			yCa+s7hGxy9j7PO0mvncXhOHdoE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fifng6DqhCxWpFMe1EQa8Yng95HHjd+hajl3o2EhTiI=
+			NanH6p1vO3+RN8PoeM+DSJUUKUIFzXyGLRvfCY3uKv8=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGPromptVC-iPhone.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			G25+OXNBfXbXu9TDDGIUB/EfTh4=
+			TFdmn2bE0MpfJKdXQtAd5gbRBc0=
 			</data>
 			<key>hash2</key>
 			<data>
-			e+/gkFiutkJxD9irAeB2MtnaBdUbMh5AcB2UmeLDj2U=
+			RG5XVVw0M7TJI36eHGCTLUhk64FnlY84sF6B6GtB1RY=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGReplyView-iPhone.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xRNXM6z1tDrXIOUpBD4aud7BIvA=
+			8n3nePBdTd3uS55CytqAOkGN6eU=
 			</data>
 			<key>hash2</key>
 			<data>
-			XE6lTxO7+Fs3kyEPyvTZkxEFVIfwKKe4Kfu0lMbeQdQ=
+			Bu5sjSPUvRuIxKBW/zKloccbFeIkVeXScbBZ9sCnE78=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGReportCategoriesVC-iPhone.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kFJvQmZ6p5A13nhlNu9w2c0c1aQ=
+			RZ1TAVMTpDZLDLC6LVsHev3rW+M=
 			</data>
 			<key>hash2</key>
 			<data>
-			uPtdHu4tb0FNv2S7Ub8lVrV/fY/ViRrtTg69Gw/urVM=
+			vaj2V+ARgugH9UggDhis4AizNjaZtV0Yx3dr4hbtqPc=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGScreenshotVC-iPhone.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			whMdPUCAFF+qBV/obekr1kLcaDY=
+			uANylQKaL5quY7E5WQCgDXLgkZ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			yCAbSoEpcd/8Q0r/yoPKtTBYdTGGydrocdhPXaRHJMY=
+			hkyhoFtT+fKHWGGNZcJv+Ta5LB0Z2K0XMu1XaSn/Xlo=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGUnnotifiedMessagesAlertView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VUwLMyZd1wvJlrmcwAwavJ6xRDM=
+			RtqCKORq/qPvkNDWiAYR0+Srpjw=
 			</data>
 			<key>hash2</key>
 			<data>
-			BAUVrWz98ISFshS7gs8IisBLZYczzInuK4Pki48GlGU=
+			jWwsEGzbzOLArUYDAOPNpOp+RqJiuA3+siAI2kWPoyc=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGVideoPlaybackViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e7Y0jmCphxfoktnbt3vif7aNT64=
+			1T0XHISj2fxlnA9JjXOZOm7pzIo=
 			</data>
 			<key>hash2</key>
 			<data>
-			+cPwZ5DqoxQCzPpWrk5jgxVhMniS5Jc76LZlETPsi50=
+			yXWNlkjXzjznShJYV18jnp/toFI0SFzkOfuFR4KedpU=
 			</data>
 		</dict>
 		<key>Instabug.bundle/IBGVoiceNoteRecordingViewController-iPhone.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4fbw7NNmnGhU4epYzUM9miqTm0s=
+			DfMYI9mRmWXNh0kkmXPw9XAoxPc=
 			</data>
 			<key>hash2</key>
 			<data>
-			GUJCM2nF/i00qmw/oqWvRZOxpjXXJFR0RzB5/Jva1t4=
+			hYtP8rkVCjFoyd/ztq2U3GLS229ezmtKfFDHgPfM6DQ=
 			</data>
 		</dict>
 		<key>Instabug.bundle/InAppScreenshotPlaceholder.png</key>
@@ -750,11 +750,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GLqXdVhWwZu4YmvMiidqRHUv2+I=
+			6a+K9BvI3vk2Py5uxpKC1PObkZs=
 			</data>
 			<key>hash2</key>
 			<data>
-			6T1AH6pTFMMQ6Dgu8L0UjP9FfjkBZiroPBxLIg9XiBo=
+			dsEDEV5rqDSP2zl9yOZwjS7VMmkWxUpuU+jJxqcVTEQ=
 			</data>
 		</dict>
 		<key>Instabug.bundle/Instabug_dsym_upload.sh</key>

@@ -36,4 +36,4 @@ else
     echo "Instabug: Did not find anything to strip"
 fi
 
-echo "Instabug: Finished post-archiving dsym strip script" >> $LOG_FILE
+echo "Instabug: Finished post-archiving dsym strip script"
