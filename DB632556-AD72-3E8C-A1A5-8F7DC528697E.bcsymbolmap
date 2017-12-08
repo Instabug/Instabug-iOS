@@ -1240,6 +1240,7 @@ _OBJC_IVAR_$_IBGResources._tutorialAlertGIF
 -[IBGViewController statusBarHeight]
 -[IBGViewController shouldAutorotate]
 -[IBGViewController preferredStatusBarStyle]
+-[IBGViewController prefersStatusBarHidden]
 /Users/distiller/ios/Instabug/View Controllers/IBGViewController.m
 -[IBGSurveyCache cacheDiskPath]
 -[IBGSurveyCache syncSurveys:]
