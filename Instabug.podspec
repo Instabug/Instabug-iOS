@@ -10,14 +10,8 @@ Pod::Spec.new do |s|
   s.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
   s.requires_arc = true
-
-  s.subspec 'Instabug' do |sp|
-    sp.source_files = 'Instabug.framework/Headers/*.{h}'
-    sp.vendored_frameworks = 'Instabug.framework'
-    sp.preserve_paths =  'Instabug.framework/*'
-    sp.dependency 'Instabug/InstabugCore'
-    sp.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
-  end
+  s.source_files = 'Instabug.framework/Headers/*.{h}'
+  s.dependency 'Instabug/InstabugCore'
 
   s.subspec 'InstabugCore' do |sp|
     sp.source_files = 'InstabugCore/InstabugCore.framework/Headers/*.{h}'
@@ -25,4 +19,5 @@ Pod::Spec.new do |s|
     sp.preserve_paths =  'InstabugCore/InstabugCore.framework/*'
     sp.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
   end
+
 end
