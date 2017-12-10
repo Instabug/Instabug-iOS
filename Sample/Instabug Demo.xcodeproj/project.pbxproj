@@ -24,6 +24,8 @@
 		54B011BC1D902CA9002AF597 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B011BB1D902CA9002AF597 /* CoreMedia.framework */; };
 		54B011C11D9110F5002AF597 /* UIViewController+DefaultAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B011C01D9110F5002AF597 /* UIViewController+DefaultAlertController.m */; };
 		54B011C41D911199002AF597 /* UIAlertAction+DefaultAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.m */; };
+		E18D79BB1FDDCEEF00D7C10E /* InstabugCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18D79BA1FDDCEEF00D7C10E /* InstabugCore.framework */; };
+		E18D79BC1FDDCEEF00D7C10E /* InstabugCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E18D79BA1FDDCEEF00D7C10E /* InstabugCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E18D79BC1FDDCEEF00D7C10E /* InstabugCore.framework in Embed Frameworks */,
 				547E5E8B1E225BD60026D35A /* Instabug.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -63,6 +66,7 @@
 		54B011C01D9110F5002AF597 /* UIViewController+DefaultAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DefaultAlertController.m"; sourceTree = "<group>"; };
 		54B011C21D911199002AF597 /* UIAlertAction+DefaultAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertAction+DefaultAction.h"; sourceTree = "<group>"; };
 		54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertAction+DefaultAction.m"; sourceTree = "<group>"; };
+		E18D79BA1FDDCEEF00D7C10E /* InstabugCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InstabugCore.framework; path = ../../InstabugCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54B011BC1D902CA9002AF597 /* CoreMedia.framework in Frameworks */,
+				E18D79BB1FDDCEEF00D7C10E /* InstabugCore.framework in Frameworks */,
 				54B011B21D9018CB002AF597 /* UIKit.framework in Frameworks */,
 				54B011B01D9018C3002AF597 /* CoreGraphics.framework in Frameworks */,
 				547E5E8A1E225BD60026D35A /* Instabug.framework in Frameworks */,
@@ -87,6 +92,7 @@
 		541FA2741DC888600037AA01 /* Instabug */ = {
 			isa = PBXGroup;
 			children = (
+				E18D79BA1FDDCEEF00D7C10E /* InstabugCore.framework */,
 				547E5E881E225B890026D35A /* Instabug.framework */,
 			);
 			name = Instabug;
