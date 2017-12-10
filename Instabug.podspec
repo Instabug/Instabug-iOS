@@ -17,9 +17,9 @@ Pod::Spec.new do |s|
     sp.preserve_paths =  'Instabug.framework/*'
   end
 
-  s.subspec 'InstabugCore' do |sp|
-    sp.source_files = 'InstabugCore/InstabugCore.framework/Headers/*.{h}'
-    sp.vendored_frameworks = 'InstabugCore/InstabugCore.framework'
-    sp.preserve_paths =  'InstabugCore/InstabugCore.framework/*'
+  s.subspec 'InstabugCore' do |spp|
+    spp.source_files = 'InstabugCore/InstabugCore.framework/Headers/*.{h}'
+    spp.vendored_frameworks = 'InstabugCore/InstabugCore.framework'
+    spp.preserve_paths =  'InstabugCore/InstabugCore.framework/*'
   end
 end
