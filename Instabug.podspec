@@ -15,11 +15,14 @@ Pod::Spec.new do |s|
     sp.source_files = 'Instabug.framework/Headers/*.{h}'
     sp.vendored_frameworks = 'Instabug.framework'
     sp.preserve_paths =  'Instabug.framework/*'
+    sp.dependency 'Instabug/InstabugCore'
+    sp.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
   end
 
-  s.subspec 'InstabugCore' do |spp|
-    spp.source_files = 'InstabugCore/InstabugCore.framework/Headers/*.{h}'
-    spp.vendored_frameworks = 'InstabugCore/InstabugCore.framework'
-    spp.preserve_paths =  'InstabugCore/InstabugCore.framework/*'
+  s.subspec 'InstabugCore' do |sp|
+    sp.source_files = 'InstabugCore/InstabugCore.framework/Headers/*.{h}'
+    sp.vendored_frameworks = 'InstabugCore/InstabugCore.framework'
+    sp.preserve_paths =  'InstabugCore/InstabugCore.framework/*'
+    sp.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
   end
 end
