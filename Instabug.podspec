@@ -22,5 +22,6 @@ Pod::Spec.new do |s|
     sp.source_files = 'Instabug.framework/Headers/*.{h}'
     sp.vendored_frameworks = 'Instabug.framework'
     sp.preserve_paths =  'Instabug.framework/*'
+    sp.dependency 'Instabug/InstabugCore'
   end
 end
