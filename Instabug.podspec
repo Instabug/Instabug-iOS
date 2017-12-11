@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'InstabugCore' do |sp|
-    sp.source_files = 'InstabugCore/InstabugCore.framework/Headers/*.{h}'
+    sp.source_files = 'InstabugCore.framework/Headers/*.{h}'
     sp.vendored_frameworks = 'InstabugCore/InstabugCore.framework'
     sp.preserve_paths =  'InstabugCore.framework/*'
     sp.resources = 'InstabugCore/**/*.{sh,png,xib,strings,plist}'
