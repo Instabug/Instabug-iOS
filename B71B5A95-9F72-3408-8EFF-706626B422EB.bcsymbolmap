@@ -1,0 +1,4083 @@
+BCSymbolMap Version: 2.0
++[IBGChatCell reuseIdentifier]
+-[IBGChatCell awakeFromNib]
+-[IBGChatCell prepareForReuse]
+-[IBGChatCell updateConstraints]
+-[IBGChatCell updateName:byline:date:type:read:unReadMessageCount:]
+-[IBGChatCell setName:]
+-[IBGChatCell setDate:]
+-[IBGChatCell setByline:]
+-[IBGChatCell applyTheme]
+-[IBGChatCell setAvatar:]
+-[IBGChatCell setCellSelectionView]
+-[IBGChatCell setUnreadMessageIcon]
+-[IBGChatCell avatarImageView]
+-[IBGChatCell setAvatarImageView:]
+-[IBGChatCell nameLabel]
+-[IBGChatCell setNameLabel:]
+-[IBGChatCell bylineLabel]
+-[IBGChatCell setBylineLabel:]
+-[IBGChatCell dateLabel]
+-[IBGChatCell setDateLabel:]
+-[IBGChatCell unreadMessageButton]
+-[IBGChatCell setUnreadMessageButton:]
+-[IBGChatCell seperatorView]
+-[IBGChatCell setSeperatorView:]
+-[IBGChatCell .cxx_destruct]
+_OBJC_IVAR_$_IBGChatCell._avatarImageView
+_OBJC_IVAR_$_IBGChatCell._nameLabel
+_OBJC_IVAR_$_IBGChatCell._bylineLabel
+_OBJC_IVAR_$_IBGChatCell._dateLabel
+_OBJC_IVAR_$_IBGChatCell._unreadMessageButton
+_OBJC_IVAR_$_IBGChatCell._seperatorView
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/IBGChatCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+-[IBGCrashCache cacheDiskPath]
+-[IBGCrashCache unpersistAll]
+-[IBGCrashCache sendAll]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Caching/IBGCrashCache.m
+-[IBGChatListVC init]
+-[IBGChatListVC viewDidLoad]
+-[IBGChatListVC viewWillAppear:]
+-[IBGChatListVC viewDidAppear:]
+-[IBGChatListVC viewDidDisappear:]
+-[IBGChatListVC supportedInterfaceOrientations]
+-[IBGChatListVC traitCollectionDidChange:]
+-[IBGChatListVC setSubTitle:]
+-[IBGChatListVC updateTable]
+-[IBGChatListVC dismiss]
+-[IBGChatListVC showViewController:]
+-[IBGChatListVC scrollToChatAtIndex:]
+___37-[IBGChatListVC scrollToChatAtIndex:]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+-[IBGChatListVC tableView:didSelectRowAtIndexPath:]
+-[IBGChatListVC tableView:heightForRowAtIndexPath:]
+-[IBGChatListVC cancelButtonPressed:]
+-[IBGChatListVC addNewConversationButtonTapped]
+-[IBGChatListVC keyboardWillShow:]
+-[IBGChatListVC keyboardWillHide:]
+-[IBGChatListVC adjustContentScrollViewToObscuringViewSize:]
+-[IBGChatListVC localizeView]
+-[IBGChatListVC applyTheme]
+-[IBGChatListVC addNavigationBarButtons]
+-[IBGChatListVC dealloc]
+-[IBGChatListVC presenter]
+-[IBGChatListVC setPresenter:]
+-[IBGChatListVC chatsTableView]
+-[IBGChatListVC setChatsTableView:]
+-[IBGChatListVC footerView]
+-[IBGChatListVC setFooterView:]
+-[IBGChatListVC contentView]
+-[IBGChatListVC setContentView:]
+-[IBGChatListVC footerViewHeightConstraint]
+-[IBGChatListVC setFooterViewHeightConstraint:]
+-[IBGChatListVC isUIExpanded]
+-[IBGChatListVC setIsUIExpanded:]
+-[IBGChatListVC viewsToThemeWithBackgroundColor]
+-[IBGChatListVC setViewsToThemeWithBackgroundColor:]
+-[IBGChatListVC .cxx_destruct]
+___block_descriptor_tmp
+_OBJC_IVAR_$_IBGChatListVC._presenter
+_OBJC_IVAR_$_IBGChatListVC._chatsTableView
+_OBJC_IVAR_$_IBGChatListVC._footerView
+_OBJC_IVAR_$_IBGChatListVC._contentView
+_OBJC_IVAR_$_IBGChatListVC._footerViewHeightConstraint
+_OBJC_IVAR_$_IBGChatListVC._isUIExpanded
+_OBJC_IVAR_$_IBGChatListVC._viewsToThemeWithBackgroundColor
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_PROTOCOL_$_UITableViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UITableViewDelegate
+l_OBJC_PROTOCOL_$_IBGChatListView
+l_OBJC_LABEL_PROTOCOL_$_IBGChatListView
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/View Controllers/IBGChatListVC.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/View Controllers/IBGChatListVC.h
+__destroy_helper_block_
+__copy_helper_block_
+__37-[IBGChatListVC scrollToChatAtIndex:]_block_invoke
++[InstabugChats sharedInstance]
+___31+[InstabugChats sharedInstance]_block_invoke
+-[InstabugChats initializationOperations]
+___41-[InstabugChats initializationOperations]_block_invoke
+___41-[InstabugChats initializationOperations]_block_invoke_2
+___copy_helper_block_.534
+___destroy_helper_block_.535
++[InstabugChats setChatNotificationEnabled:]
++[InstabugChats setOnNewMessageHandler:]
++[InstabugChats destroy]
+-[InstabugChats disableAutomaticShowingSurveys]
+-[InstabugChats setDisableAutomaticShowingSurveys:]
+-[InstabugChats initializationOperation]
+-[InstabugChats setInitializationOperation:]
+-[InstabugChats .cxx_destruct]
+_sharedInstance
+_onceToken
+___block_literal_global
+_OBJC_IVAR_$_InstabugChats._initializationOperation
+___block_descriptor_tmp.530
+___block_descriptor_tmp.536
+_OBJC_IVAR_$_InstabugChats._disableAutomaticShowingSurveys
+l_OBJC_PROTOCOL_$_InstabugFrameworks
+l_OBJC_LABEL_PROTOCOL_$_InstabugFrameworks
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/InstabugChats.m
+__41-[InstabugChats initializationOperations]_block_invoke_2
+__41-[InstabugChats initializationOperations]_block_invoke
+__31+[InstabugChats sharedInstance]_block_invoke
+_dispatch_once
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/dispatch/once.h
+-[IBGPromptController initWithSnapshot:]
+-[IBGPromptController cancelPressedInPromptView:]
+-[IBGPromptController bugPressedInPromptView:]
+-[IBGPromptController feedbackPressedInPromptView:]
+-[IBGPromptController chatPressedInPromptView:]
+-[IBGPromptController shouldDismissPromptAutomatically]
+-[IBGPromptController snapshot]
+-[IBGPromptController setSnapshot:]
+-[IBGPromptController .cxx_destruct]
+_OBJC_IVAR_$_IBGPromptController._snapshot
+l_OBJC_PROTOCOL_$_IBGPromptViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGPromptViewDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Controllers/IBGPromptController.m
+-[IBGVideoAttachmentView initWithFrame:]
+___40-[IBGVideoAttachmentView initWithFrame:]_block_invoke
+-[IBGVideoAttachmentView player]
+-[IBGVideoAttachmentView setContent:]
+-[IBGVideoAttachmentView didClickContentInChatWithTitle:]
+-[IBGVideoAttachmentView didDismiss]
+-[IBGVideoAttachmentView playerButton]
+-[IBGVideoAttachmentView setPlayerButton:]
+-[IBGVideoAttachmentView recording]
+-[IBGVideoAttachmentView setRecording:]
+-[IBGVideoAttachmentView setPlayer:]
+-[IBGVideoAttachmentView chatTitle]
+-[IBGVideoAttachmentView setChatTitle:]
+-[IBGVideoAttachmentView .cxx_destruct]
+_OBJC_IVAR_$_IBGVideoAttachmentView._player
+_OBJC_IVAR_$_IBGVideoAttachmentView._playerButton
+_OBJC_IVAR_$_IBGVideoAttachmentView._recording
+_OBJC_IVAR_$_IBGVideoAttachmentView._chatTitle
+l_OBJC_PROTOCOL_$_IBGVideoPlayerDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGVideoPlayerDelegate
+l_OBJC_PROTOCOL_$_IBGMessageContentHandler
+l_OBJC_LABEL_PROTOCOL_$_IBGMessageContentHandler
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGVideoAttachmentView.m
+__40-[IBGVideoAttachmentView initWithFrame:]_block_invoke
+-[IBGTempCrashCache cacheDiskPath]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Caching/IBGTempCrashCache.m
+-[IBGOutboundTextCell initWithStyle:reuseIdentifier:]
+-[IBGOutboundTextCell setContent:isSent:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundTextCell.m
++[IBGBugDataStore getInstance]
+___30+[IBGBugDataStore getInstance]_block_invoke
+-[IBGBugDataStore reportBugWithType:email:comment:image:]
+___57-[IBGBugDataStore reportBugWithType:email:comment:image:]_block_invoke
+-[IBGBugDataStore addExtraReportFieldWithTitle:required:]
+-[IBGBugDataStore removeExtraReportFields]
+-[IBGBugDataStore extraFields]
+-[IBGBugDataStore extraReportFields]
+-[IBGBugDataStore hasExtraReportFields]
+-[IBGBugDataStore bugRequestCreator]
+-[IBGBugDataStore isValidEmail:]
+-[IBGBugDataStore isValidComment:]
+-[IBGBugDataStore categoryTitles]
+-[IBGBugDataStore setCategoryTitles:]
+-[IBGBugDataStore categoryIcons]
+-[IBGBugDataStore setCategoryIcons:]
+-[IBGBugDataStore setExtraFields:]
+-[IBGBugDataStore .cxx_destruct]
+___block_descriptor_tmp.570
+_OBJC_IVAR_$_IBGBugDataStore._extraFields
+_OBJC_IVAR_$_IBGBugDataStore._categoryTitles
+_OBJC_IVAR_$_IBGBugDataStore._categoryIcons
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGBugDataStore.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGBugDataStore.h
+__57-[IBGBugDataStore reportBugWithType:email:comment:image:]_block_invoke
+__30+[IBGBugDataStore getInstance]_block_invoke
+-[IBGMessageAttachmentRequest initWithParameters:attachmentPath:chatID:messageID:delegate:]
+-[IBGMessageAttachmentRequest isExecuting]
+-[IBGMessageAttachmentRequest setIsExecuting:]
+-[IBGMessageAttachmentRequest attachmentURL]
+-[IBGMessageAttachmentRequest setAttachmentURL:]
+-[IBGMessageAttachmentRequest .cxx_destruct]
+_OBJC_IVAR_$_IBGMessageAttachmentRequest._isExecuting
+_OBJC_IVAR_$_IBGMessageAttachmentRequest._attachmentURL
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/IBGMessageAttachmentRequest.m
+/Users/khaledElMorabea/Library/Developer/Xcode/DerivedData/Instabug-cqbadbmomfjgsddklrlfomsvjpgj/Build/Intermediates.noindex/ArchiveIntermediates/Framework/BuildProductsPath/Release-iphoneos/InstabugCore.framework/Headers/IBGBaseRequest.h
+-[IBGOutboundVideoCell initWithStyle:reuseIdentifier:]
+-[IBGOutboundVideoCell setContent:isSent:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGOutboundVideoCell.m
+-[IBGChatRequest init]
+-[IBGChatRequest initWithLocalChatID:parameters:delegate:]
+-[IBGChatRequest executeNow]
+-[IBGChatRequest serverExecutionDone:statusCode:error:response:]
+-[IBGChatRequest getChatIDWithResponse:]
+-[IBGChatRequest isExecuting]
+-[IBGChatRequest setIsExecuting:]
+-[IBGChatRequest delegate]
+-[IBGChatRequest setDelegate:]
+-[IBGChatRequest dataServer]
+-[IBGChatRequest setDataServer:]
+-[IBGChatRequest dataUrl]
+-[IBGChatRequest setDataUrl:]
+-[IBGChatRequest failures]
+-[IBGChatRequest setFailures:]
+-[IBGChatRequest localChatID]
+-[IBGChatRequest setLocalChatID:]
+-[IBGChatRequest dataParameters]
+-[IBGChatRequest setDataParameters:]
+-[IBGChatRequest isSuccess]
+-[IBGChatRequest setIsSuccess:]
+-[IBGChatRequest .cxx_destruct]
+_OBJC_IVAR_$_IBGChatRequest._isExecuting
+_OBJC_IVAR_$_IBGChatRequest._delegate
+_OBJC_IVAR_$_IBGChatRequest._dataServer
+_OBJC_IVAR_$_IBGChatRequest._dataUrl
+_OBJC_IVAR_$_IBGChatRequest._failures
+_OBJC_IVAR_$_IBGChatRequest._localChatID
+_OBJC_IVAR_$_IBGChatRequest._dataParameters
+_OBJC_IVAR_$_IBGChatRequest._isSuccess
+l_OBJC_PROTOCOL_$_IBGServerRequestDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGServerRequestDelegate
+l_OBJC_PROTOCOL_$_IBGBaseRequest
+l_OBJC_LABEL_PROTOCOL_$_IBGBaseRequest
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/IBGChatRequest.m
+-[IBGMessageRequest initWithParameters:chatID:delegate:]
+-[IBGMessageRequest executeNow]
+-[IBGMessageRequest serverExecutionDone:statusCode:error:response:]
+-[IBGMessageRequest getMessageIDWithResponse:]
+-[IBGMessageRequest isExecuting]
+-[IBGMessageRequest setIsExecuting:]
+-[IBGMessageRequest delegate]
+-[IBGMessageRequest setDelegate:]
+-[IBGMessageRequest dataServer]
+-[IBGMessageRequest setDataServer:]
+-[IBGMessageRequest chatID]
+-[IBGMessageRequest setChatID:]
+-[IBGMessageRequest dataUrl]
+-[IBGMessageRequest setDataUrl:]
+-[IBGMessageRequest failures]
+-[IBGMessageRequest setFailures:]
+-[IBGMessageRequest dataParameters]
+-[IBGMessageRequest setDataParameters:]
+-[IBGMessageRequest isSuccess]
+-[IBGMessageRequest setIsSuccess:]
+-[IBGMessageRequest .cxx_destruct]
+_OBJC_IVAR_$_IBGMessageRequest._isExecuting
+_OBJC_IVAR_$_IBGMessageRequest._delegate
+_OBJC_IVAR_$_IBGMessageRequest._dataServer
+_OBJC_IVAR_$_IBGMessageRequest._chatID
+_OBJC_IVAR_$_IBGMessageRequest._dataUrl
+_OBJC_IVAR_$_IBGMessageRequest._failures
+_OBJC_IVAR_$_IBGMessageRequest._dataParameters
+_OBJC_IVAR_$_IBGMessageRequest._isSuccess
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/IBGMessageRequest.m
+-[IBGImageAttachmentView initWithFrame:]
+-[IBGImageAttachmentView setContent:]
+-[IBGImageAttachmentView widthLayoutConstraints]
+-[IBGImageAttachmentView heightLayoutConstraints]
+-[IBGImageAttachmentView size]
+-[IBGImageAttachmentView setSize:]
+-[IBGImageAttachmentView setWidthLayoutConstraints:]
+-[IBGImageAttachmentView setHeightLayoutConstraints:]
+-[IBGImageAttachmentView .cxx_destruct]
+_OBJC_IVAR_$_IBGImageAttachmentView._widthLayoutConstraints
+_OBJC_IVAR_$_IBGImageAttachmentView._heightLayoutConstraints
+_OBJC_IVAR_$_IBGImageAttachmentView._size
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGImageAttachmentView.m
+-[IBGBugRequest initWithParameters:delegate:]
+-[IBGBugRequest dataUrl]
+-[IBGBugRequest setDataUrl:]
+-[IBGBugRequest .cxx_destruct]
+_OBJC_IVAR_$_IBGBugRequest._dataUrl
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/ServerRequests/IBGBugRequest.m
++[IBGCrashFeatures getInstance]
+___31+[IBGCrashFeatures getInstance]_block_invoke
+-[IBGCrashFeatures init]
+-[IBGCrashFeatures didUpdateServerValueForFeature:withServerPermission:]
+-[IBGCrashFeatures crashReporting]
+-[IBGCrashFeatures setCrashReporting:]
+-[IBGCrashFeatures crashReportingFeature]
+-[IBGCrashFeatures setCrashReportingFeature:]
+-[IBGCrashFeatures .cxx_destruct]
+_getInstance.onceToken
+_getInstance.sharedInstance
+_OBJC_IVAR_$_IBGCrashFeatures._crashReportingFeature
+l_OBJC_PROTOCOL_$_IBGFeaturesDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGFeaturesDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Defaults/IBGCrashFeatures.m
+__31+[IBGCrashFeatures getInstance]_block_invoke
+-[IBGOutboundVoiceNoteCell initWithStyle:reuseIdentifier:]
+-[IBGOutboundVoiceNoteCell setContent:isSent:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundVoiceNoteCell.m
+-[IBGChatInteractor init]
+-[IBGChatInteractor initWithChat:]
+-[IBGChatInteractor sendMessageWithText:]
+-[IBGChatInteractor sendMessageAttachment:]
+-[IBGChatInteractor loadNextPage]
+-[IBGChatInteractor bubblesFromMessage:]
+-[IBGChatInteractor lastSenderName]
+-[IBGChatInteractor imageAttachmentPlaceholder]
+-[IBGChatInteractor messageCount]
+-[IBGChatInteractor bubbleCountForMessageeAtIndex:]
+-[IBGChatInteractor messageDirectionOfIndex:]
+-[IBGChatInteractor isMessageSendAtIndexPath:]
+-[IBGChatInteractor contentForMessageAtIndex:bubbleIndex:]
+-[IBGChatInteractor dateForMessageAtIndex:]
+-[IBGChatInteractor avatarForImageAtIndex:]
+-[IBGChatInteractor fetchAttachmentForMessageAtIndex:]
+___54-[IBGChatInteractor fetchAttachmentForMessageAtIndex:]_block_invoke
+___54-[IBGChatInteractor fetchAttachmentForMessageAtIndex:]_block_invoke_2
+___copy_helper_block_.621
+___destroy_helper_block_.622
+-[IBGChatInteractor isFirstMessageOfDayAtIndex:]
+-[IBGChatInteractor isMessageToday:]
+-[IBGChatInteractor chatCacheDidChange]
+-[IBGChatInteractor updateWithNewMessage:]
+-[IBGChatInteractor updateMessagesArray]
+-[IBGChatInteractor updateWithArray:]
+-[IBGChatInteractor areDatesOnTheSameDayDate1:Date2:]
+-[IBGChatInteractor isLoadingNextPage]
+-[IBGChatInteractor messageForWithMessageBody:direction:chat:messageId:date:]
+-[IBGChatInteractor messageWithAttachment:direction:chat:messageId:date:]
+-[IBGChatInteractor presenter]
+-[IBGChatInteractor setPresenter:]
+-[IBGChatInteractor observer]
+-[IBGChatInteractor setObserver:]
+-[IBGChatInteractor chat]
+-[IBGChatInteractor setChat:]
+-[IBGChatInteractor messages]
+-[IBGChatInteractor setMessages:]
+-[IBGChatInteractor messagesExpectedCount]
+-[IBGChatInteractor setMessagesExpectedCount:]
+-[IBGChatInteractor .cxx_destruct]
+___block_descriptor_tmp.624
+_OBJC_IVAR_$_IBGChatInteractor._presenter
+_OBJC_IVAR_$_IBGChatInteractor._observer
+_OBJC_IVAR_$_IBGChatInteractor._chat
+_OBJC_IVAR_$_IBGChatInteractor._messages
+_OBJC_IVAR_$_IBGChatInteractor._messagesExpectedCount
+l_OBJC_PROTOCOL_$_IBGChatCacheObserver
+l_OBJC_LABEL_PROTOCOL_$_IBGChatCacheObserver
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Interactors/IBGChatInteractor.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Interactors/IBGChatInteractor.h
+__54-[IBGChatInteractor fetchAttachmentForMessageAtIndex:]_block_invoke_2
+__54-[IBGChatInteractor fetchAttachmentForMessageAtIndex:]_block_invoke
+-[IBGChatVC initWithShouldShowCloseButton:]
+-[IBGChatVC viewDidLoad]
+-[IBGChatVC viewWillAppear:]
+-[IBGChatVC viewDidAppear:]
+-[IBGChatVC dealloc]
+-[IBGChatVC registerNotifications]
+-[IBGChatVC addNavigationBarButtons]
+-[IBGChatVC applyTheme]
+-[IBGChatVC cancelButtonPressed:]
+-[IBGChatVC setReplyText:]
+-[IBGChatVC presentView:]
+-[IBGChatVC dismissPresentedViewController]
+-[IBGChatVC pop]
+-[IBGChatVC dismiss]
+-[IBGChatVC dismissKeyboard]
+-[IBGChatVC setNavigationTitle:]
+-[IBGChatVC cellForRowAtIndexPath:]
+-[IBGChatVC updateWithBlock:]
+-[IBGChatVC showErrorWithMessage:]
+-[IBGChatVC didClickOnSendButton]
+-[IBGChatVC didClickOnVoiceButton:]
+-[IBGChatVC didClickOnVideoButton:]
+-[IBGChatVC didClickOnScreenShotButton]
+-[IBGChatVC didClickOnImageButton]
+-[IBGChatVC tableView:heightForRowAtIndexPath:]
+-[IBGChatVC tableView:didSelectRowAtIndexPath:]
+-[IBGChatVC tableView:heightForHeaderInSection:]
+-[IBGChatVC tableView:viewForHeaderInSection:]
+-[IBGChatVC tableView:willDisplayCell:forRowAtIndexPath:]
+___57-[IBGChatVC tableView:willDisplayCell:forRowAtIndexPath:]_block_invoke
+-[IBGChatVC headerHeight]
+-[IBGChatVC needsToFitReplyViewToText]
+-[IBGChatVC defaults]
+-[IBGChatVC updateReplyViewWithHeight:]
+-[IBGChatVC updateTableViewScrollViewWithOffset:]
+-[IBGChatVC traitCollectionDidChange:]
+-[IBGChatVC addReplyView]
+-[IBGChatVC addPoweredByView]
+-[IBGChatVC addChatTableView]
+-[IBGChatVC keyboardWillShow:]
+-[IBGChatVC keyboardWillDismiss:]
+-[IBGChatVC adjustMainViewConstraint:]
+-[IBGChatVC gestureRecognizer:shouldReceiveTouch:]
+-[IBGChatVC presenter]
+-[IBGChatVC setPresenter:]
+-[IBGChatVC currentSection]
+-[IBGChatVC setCurrentSection:]
+-[IBGChatVC totalNumberOfCells]
+-[IBGChatVC setTotalNumberOfCells:]
+-[IBGChatVC setDefaults:]
+-[IBGChatVC footerContainerView]
+-[IBGChatVC setFooterContainerView:]
+-[IBGChatVC chatContainerView]
+-[IBGChatVC setChatContainerView:]
+-[IBGChatVC conversationActionsView]
+-[IBGChatVC setConversationActionsView:]
+-[IBGChatVC replyViewHeightConstraint]
+-[IBGChatVC setReplyViewHeightConstraint:]
+-[IBGChatVC footerViewHeightConstraint]
+-[IBGChatVC setFooterViewHeightConstraint:]
+-[IBGChatVC replyView]
+-[IBGChatVC setReplyView:]
+-[IBGChatVC messagesView]
+-[IBGChatVC setMessagesView:]
+-[IBGChatVC mainViewBottomConstraint]
+-[IBGChatVC setMainViewBottomConstraint:]
+-[IBGChatVC linesToThemeWithLineColor]
+-[IBGChatVC setLinesToThemeWithLineColor:]
+-[IBGChatVC viewsToThemeWithBackgroundColor]
+-[IBGChatVC setViewsToThemeWithBackgroundColor:]
+-[IBGChatVC powerdByView]
+-[IBGChatVC setPowerdByView:]
+-[IBGChatVC originalMarginHeight]
+-[IBGChatVC setOriginalMarginHeight:]
+-[IBGChatVC shouldShowCloseButton]
+-[IBGChatVC setShouldShowCloseButton:]
+-[IBGChatVC navigtaionBar]
+-[IBGChatVC setNavigtaionBar:]
+-[IBGChatVC .cxx_destruct]
+_OBJC_IVAR_$_IBGChatVC._shouldShowCloseButton
+_OBJC_IVAR_$_IBGChatVC._presenter
+_OBJC_IVAR_$_IBGChatVC._currentSection
+_OBJC_IVAR_$_IBGChatVC._totalNumberOfCells
+_OBJC_IVAR_$_IBGChatVC._defaults
+_OBJC_IVAR_$_IBGChatVC._footerContainerView
+_OBJC_IVAR_$_IBGChatVC._chatContainerView
+_OBJC_IVAR_$_IBGChatVC._conversationActionsView
+_OBJC_IVAR_$_IBGChatVC._replyViewHeightConstraint
+_OBJC_IVAR_$_IBGChatVC._footerViewHeightConstraint
+_OBJC_IVAR_$_IBGChatVC._replyView
+_OBJC_IVAR_$_IBGChatVC._messagesView
+_OBJC_IVAR_$_IBGChatVC._mainViewBottomConstraint
+_OBJC_IVAR_$_IBGChatVC._linesToThemeWithLineColor
+_OBJC_IVAR_$_IBGChatVC._viewsToThemeWithBackgroundColor
+_OBJC_IVAR_$_IBGChatVC._powerdByView
+_OBJC_IVAR_$_IBGChatVC._originalMarginHeight
+_OBJC_IVAR_$_IBGChatVC._navigtaionBar
+l_OBJC_PROTOCOL_$_UIGestureRecognizerDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIGestureRecognizerDelegate
+l_OBJC_PROTOCOL_$_IBGReplyViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGReplyViewDelegate
+l_OBJC_PROTOCOL_$_UINavigationControllerDelegate
+l_OBJC_LABEL_PROTOCOL_$_UINavigationControllerDelegate
+l_OBJC_PROTOCOL_$_IBGChatView
+l_OBJC_LABEL_PROTOCOL_$_IBGChatView
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/View Controllers/IBGChatVC.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/View Controllers/IBGChatVC.h
+__57-[IBGChatVC tableView:willDisplayCell:forRowAtIndexPath:]_block_invoke
+-[IBGBugFlowController startBugReportingFlowWithSnapshot:withFadeAnimation:]
+-[IBGBugFlowController startFeedbackSendingFlowWithSnapshot:withFadeAnimation:]
+-[IBGBugFlowController showBugViewControllerWithScreenshot:reportType:animated:controller:withFadeAnimation:]
+-[IBGBugFlowController showScreenshotViewControllerForScreenshot:type:delegate:]
+-[IBGBugFlowController showExtraFieldViewControllerWithSendingController:]
+-[IBGBugFlowController dismissSDKAfterSubmittingReportOfType:]
+___62-[IBGBugFlowController dismissSDKAfterSubmittingReportOfType:]_block_invoke
+___62-[IBGBugFlowController dismissSDKAfterSubmittingReportOfType:]_block_invoke_2
+-[IBGBugFlowController startReportingFlowAndShowDialogIfNecessary:withSnapshot:withFadeAnimation:]
+-[IBGBugFlowController startReportingFlowForReportType:withSnapshot:withFadeAnimation:]
+-[IBGBugFlowController showReportCategoriesViewControllerForReportType:withSnapshot:withFadeAnimation:]
+___103-[IBGBugFlowController showReportCategoriesViewControllerForReportType:withSnapshot:withFadeAnimation:]_block_invoke
+___copy_helper_block_.589
+___destroy_helper_block_.590
+-[IBGBugFlowController screenshotViewControllerForReportType:screenshot:delegate:rightNavigationButtonType:]
+-[IBGBugFlowController shouldShowScreenshotViewForReportType:]
+___block_descriptor_tmp.559
+___block_descriptor_tmp.591
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Flow Controllers/IBGBugFlowController.m
+__103-[IBGBugFlowController showReportCategoriesViewControllerForReportType:withSnapshot:withFadeAnimation:]_block_invoke
+__62-[IBGBugFlowController dismissSDKAfterSubmittingReportOfType:]_block_invoke_2
+__62-[IBGBugFlowController dismissSDKAfterSubmittingReportOfType:]_block_invoke
+-[IBGExtraFieldViewController initWithController:]
+-[IBGExtraFieldViewController customizeUI]
+-[IBGExtraFieldViewController addNavigationBarButtons]
+-[IBGExtraFieldViewController dealloc]
+-[IBGExtraFieldViewController submitButtonPressed:]
+___51-[IBGExtraFieldViewController submitButtonPressed:]_block_invoke
+-[IBGExtraFieldViewController showRequiredExtraFieldValidation]
+-[IBGExtraFieldViewController alertWithTitle:message:action:]
+-[IBGExtraFieldViewController dismissKeyboard]
+-[IBGExtraFieldViewController backButtonPressed:]
+-[IBGExtraFieldViewController tableView]
+-[IBGExtraFieldViewController viewDidLoad]
+-[IBGExtraFieldViewController viewDidAppear:]
+-[IBGExtraFieldViewController keyboardDidShow:]
+-[IBGExtraFieldViewController keyboardDidHide:]
+-[IBGExtraFieldViewController tableView:heightForRowAtIndexPath:]
+-[IBGExtraFieldViewController textSampleViewCell]
+___49-[IBGExtraFieldViewController textSampleViewCell]_block_invoke
+___copy_helper_block_.173
+___destroy_helper_block_.174
+-[IBGExtraFieldViewController tableView:numberOfRowsInSection:]
+-[IBGExtraFieldViewController tableView:cellForRowAtIndexPath:]
+-[IBGExtraFieldViewController textViewDidBeginEditing:]
+-[IBGExtraFieldViewController updateCurrentTextAlignment]
+-[IBGExtraFieldViewController updateTextAlignment:]
+-[IBGExtraFieldViewController updateTextViewCursor:]
+-[IBGExtraFieldViewController textView:shouldChangeTextInRange:replacementText:]
+-[IBGExtraFieldViewController controller]
+-[IBGExtraFieldViewController setController:]
+-[IBGExtraFieldViewController setTableView:]
+-[IBGExtraFieldViewController currentTextView]
+-[IBGExtraFieldViewController setCurrentTextView:]
+-[IBGExtraFieldViewController firstTextView]
+-[IBGExtraFieldViewController setFirstTextView:]
+-[IBGExtraFieldViewController .cxx_destruct]
+_OBJC_IVAR_$_IBGExtraFieldViewController._tableView
+_textSampleViewCell.cell
+_textSampleViewCell.onceToken
+___block_descriptor_tmp.175
+_OBJC_IVAR_$_IBGExtraFieldViewController._controller
+_OBJC_IVAR_$_IBGExtraFieldViewController._currentTextView
+_OBJC_IVAR_$_IBGExtraFieldViewController._firstTextView
+l_OBJC_PROTOCOL_$_UITableViewDataSource
+l_OBJC_LABEL_PROTOCOL_$_UITableViewDataSource
+l_OBJC_PROTOCOL_$_UITextViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UITextViewDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/View Controllers/IBGExtraFieldViewController.m
+NSEqualRanges
+__49-[IBGExtraFieldViewController textSampleViewCell]_block_invoke
+__51-[IBGExtraFieldViewController submitButtonPressed:]_block_invoke
+-[IBGBugAttachmentRequestCreator logRequestWithId:parameters:delegate:]
+-[IBGBugAttachmentRequestCreator reportAttachmentRequestWithParameters:attachmentPath:reportId:localAttachment:]
+l_OBJC_PROTOCOL_$_IBGAttachmentRequestCreator
+l_OBJC_LABEL_PROTOCOL_$_IBGAttachmentRequestCreator
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/ServerRequests/RequestCreator/IBGBugAttachmentRequestCreator.m
+-[IBGBugResources startAlertGIF]
+-[IBGBugResources startAlertText]
+-[IBGBugResources shakeStartAlertGIF]
+-[IBGBugResources screenshotStartAlertGIF]
+-[IBGBugResources twoFingersSwipeAlertGIF]
+-[IBGBugResources convertToString:]
+-[IBGBugResources convertToStartAlertText:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGBugResources.m
+-[IBGMessageActions initWithMessage:]
+-[IBGMessageActions actions]
+-[IBGMessageActions setActions:]
+-[IBGMessageActions body]
+-[IBGMessageActions setBody:]
+-[IBGMessageActions .cxx_destruct]
+_OBJC_IVAR_$_IBGMessageActions._actions
+_OBJC_IVAR_$_IBGMessageActions._body
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGMessageActions.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGMessageActions.h
+-[IBGInboundTextCell initWithStyle:reuseIdentifier:]
+-[IBGInboundTextCell setContent:isSent:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundTextCell.m
+-[IBGVoiceNoteAttachmentView initWithFrame:]
+___44-[IBGVoiceNoteAttachmentView initWithFrame:]_block_invoke
+-[IBGVoiceNoteAttachmentView dealloc]
+-[IBGVoiceNoteAttachmentView unregisterNotifications]
+-[IBGVoiceNoteAttachmentView registerNotifications]
+-[IBGVoiceNoteAttachmentView voiceNoteWillPlay:]
+-[IBGVoiceNoteAttachmentView togglePlaying]
+___43-[IBGVoiceNoteAttachmentView togglePlaying]_block_invoke
+___copy_helper_block_.59
+___destroy_helper_block_.60
+-[IBGVoiceNoteAttachmentView createVoicePlayer]
+-[IBGVoiceNoteAttachmentView setContent:]
+-[IBGVoiceNoteAttachmentView didClickContent]
+-[IBGVoiceNoteAttachmentView playerButton]
+-[IBGVoiceNoteAttachmentView setPlayerButton:]
+-[IBGVoiceNoteAttachmentView voicePlayer]
+-[IBGVoiceNoteAttachmentView setVoicePlayer:]
+-[IBGVoiceNoteAttachmentView recording]
+-[IBGVoiceNoteAttachmentView setRecording:]
+-[IBGVoiceNoteAttachmentView .cxx_destruct]
+___block_descriptor_tmp.62
+_setContent:.placeholder
+_OBJC_IVAR_$_IBGVoiceNoteAttachmentView._playerButton
+_OBJC_IVAR_$_IBGVoiceNoteAttachmentView._voicePlayer
+_OBJC_IVAR_$_IBGVoiceNoteAttachmentView._recording
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGVoiceNoteAttachmentView.m
+__43-[IBGVoiceNoteAttachmentView togglePlaying]_block_invoke
+__44-[IBGVoiceNoteAttachmentView initWithFrame:]_block_invoke
+-[IBGBugInputView awakeFromNib]
+-[IBGBugInputView dealloc]
+-[IBGBugInputView applyTheme]
+-[IBGBugInputView getCommentViewHeight]
+-[IBGBugInputView updateTextViewWith:]
+-[IBGBugInputView setupInputViewWith:]
+-[IBGBugInputView setType:]
+-[IBGBugInputView show]
+-[IBGBugInputView showEmailKeyboard:]
+___37-[IBGBugInputView showEmailKeyboard:]_block_invoke
+-[IBGBugInputView activateEmailTextField]
+-[IBGBugInputView activateCommentTextView]
+-[IBGBugInputView commentTextViewBecomFirstResponder]
+-[IBGBugInputView dismissKeyboard]
+-[IBGBugInputView emailChanged:]
+-[IBGBugInputView textFieldDidBeginEditing:]
+-[IBGBugInputView textFieldShouldReturn:]
+-[IBGBugInputView textViewDidBeginEditing:]
+-[IBGBugInputView textViewDidChange:]
+-[IBGBugInputView updateTextAlignment]
+-[IBGBugInputView updateTextViewCursor:]
+-[IBGBugInputView type]
+-[IBGBugInputView email]
+-[IBGBugInputView setEmail:]
+-[IBGBugInputView comment]
+-[IBGBugInputView setComment:]
+-[IBGBugInputView delegate]
+-[IBGBugInputView setDelegate:]
+-[IBGBugInputView emailView]
+-[IBGBugInputView setEmailView:]
+-[IBGBugInputView commentView]
+-[IBGBugInputView setCommentView:]
+-[IBGBugInputView emailLine]
+-[IBGBugInputView setEmailLine:]
+-[IBGBugInputView textViewsLinesToThemeWithLineColor]
+-[IBGBugInputView setTextViewsLinesToThemeWithLineColor:]
+-[IBGBugInputView textInputViewHeightConstraint]
+-[IBGBugInputView setTextInputViewHeightConstraint:]
+-[IBGBugInputView emailContainerViewHeightConstraint]
+-[IBGBugInputView setEmailContainerViewHeightConstraint:]
+-[IBGBugInputView textViewsCursorToThemeWithPrimaryColor]
+-[IBGBugInputView setTextViewsCursorToThemeWithPrimaryColor:]
+-[IBGBugInputView .cxx_destruct]
+_OBJC_IVAR_$_IBGBugInputView._type
+_OBJC_IVAR_$_IBGBugInputView._email
+_OBJC_IVAR_$_IBGBugInputView._comment
+_OBJC_IVAR_$_IBGBugInputView._delegate
+_OBJC_IVAR_$_IBGBugInputView._emailView
+_OBJC_IVAR_$_IBGBugInputView._commentView
+_OBJC_IVAR_$_IBGBugInputView._emailLine
+_OBJC_IVAR_$_IBGBugInputView._textViewsLinesToThemeWithLineColor
+_OBJC_IVAR_$_IBGBugInputView._textInputViewHeightConstraint
+_OBJC_IVAR_$_IBGBugInputView._emailContainerViewHeightConstraint
+_OBJC_IVAR_$_IBGBugInputView._textViewsCursorToThemeWithPrimaryColor
+l_OBJC_PROTOCOL_$_UITextFieldDelegate
+l_OBJC_LABEL_PROTOCOL_$_UITextFieldDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Views/IBGBugInputView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Views/IBGBugInputView.h
+__37-[IBGBugInputView showEmailKeyboard:]_block_invoke
+-[IBGBugStrings init]
+-[IBGBugStrings setDefaultValues]
+___33-[IBGBugStrings setDefaultValues]_block_invoke
+___33-[IBGBugStrings setDefaultValues]_block_invoke.27
+___copy_helper_block_.28
+___destroy_helper_block_.29
+___33-[IBGBugStrings setDefaultValues]_block_invoke.31
+___copy_helper_block_.39
+___destroy_helper_block_.40
+___33-[IBGBugStrings setDefaultValues]_block_invoke.42
+___copy_helper_block_.43
+___destroy_helper_block_.44
+___33-[IBGBugStrings setDefaultValues]_block_invoke.46
+___copy_helper_block_.47
+___destroy_helper_block_.48
+-[IBGBugStrings HUDStringWithIntro:]
+-[IBGBugStrings localizedStringForKey:]
+-[IBGBugStrings valueForStringWithKey:]
+-[IBGBugStrings editableValueWithDefaultKey:]
+___45-[IBGBugStrings editableValueWithDefaultKey:]_block_invoke
+___copy_helper_block_.74
+___destroy_helper_block_.75
+-[IBGBugStrings localizedStrings]
+-[IBGBugStrings setLocalizedStrings:]
+-[IBGBugStrings localizationBundle]
+-[IBGBugStrings setLocalizationBundle:]
+-[IBGBugStrings localeAlignmentDirection]
+-[IBGBugStrings setLocaleAlignmentDirection:]
+-[IBGBugStrings .cxx_destruct]
+___block_descriptor_tmp.30
+___block_descriptor_tmp.41
+___block_descriptor_tmp.45
+___block_descriptor_tmp.49
+___block_descriptor_tmp.76
+_OBJC_IVAR_$_IBGBugStrings._localizedStrings
+_OBJC_IVAR_$_IBGBugStrings._localizationBundle
+_OBJC_IVAR_$_IBGBugStrings._localeAlignmentDirection
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGBugStrings.m
+__45-[IBGBugStrings editableValueWithDefaultKey:]_block_invoke
+__33-[IBGBugStrings setDefaultValues]_block_invoke.46
+__33-[IBGBugStrings setDefaultValues]_block_invoke.42
+__33-[IBGBugStrings setDefaultValues]_block_invoke.31
+__33-[IBGBugStrings setDefaultValues]_block_invoke.27
+__33-[IBGBugStrings setDefaultValues]_block_invoke
+-[IBGChat initWithLocalID]
+-[IBGChat initWithID:]
+-[IBGChat init]
+-[IBGChat coderNameForSelector:]
+-[IBGChat description]
+-[IBGChat lastMessage]
+-[IBGChat type]
+-[IBGChat lastMessageDate]
+-[IBGChat lastSenderName]
+-[IBGChat byline]
+-[IBGChat read]
+-[IBGChat avatarURL]
+-[IBGChat avatar]
+-[IBGChat setAvatar:]
+-[IBGChat setDate:]
+-[IBGChat updateWithMessage:]
+-[IBGChat addNewMessage:]
+___25-[IBGChat addNewMessage:]_block_invoke
+-[IBGChat duplicateMessage:existsInMessages:]
+-[IBGChat unreadMessagesCount]
+-[IBGChat syncedMessagesCount]
+-[IBGChat lastOutboundMessage]
+-[IBGChat lastSyncedMessage]
+-[IBGChat replaceMessage:withMessage:]
+-[IBGChat getMessagesSorted]
+-[IBGChat getMessages]
+-[IBGChat isNewChat]
+-[IBGChat sortedMessagesWithMessages:]
+___38-[IBGChat sortedMessagesWithMessages:]_block_invoke
+-[IBGChat markAllMessagesAsRead]
+-[IBGChat persistAndSend]
+-[IBGChat updatedAndPostMessages]
+-[IBGChat hasMessages]
+-[IBGChat removeFullySentMessages]
+-[IBGChat chatRequestDone:withChatID:isSuccess:error:]
+-[IBGChat dictionaryValue]
+-[IBGChat initWithDictionary:]
+-[IBGChat oldChatId]
+-[IBGChat isFullySent]
+-[IBGChat isSynced]
+-[IBGChat send]
+-[IBGChat chatRequestCreator]
+-[IBGChat mergeFrom:]
+-[IBGChat save]
+-[IBGChat remove]
+-[IBGChat removeIfFullySent]
+-[IBGChat attachmentRequestCreator]
+-[IBGChat isEqual:]
+-[IBGChat localAttachmentRequestSucceeded:]
+-[IBGChat prepareAttachmentAndSave]
+-[IBGChat hasAttachment]
+-[IBGChat sendAllAttachments]
+-[IBGChat identifier]
+-[IBGChat setIdentifier:]
+-[IBGChat date]
+-[IBGChat setIsSynced:]
+-[IBGChat isSent]
+-[IBGChat setIsSent:]
+-[IBGChat messages]
+-[IBGChat setMessages:]
+-[IBGChat snapshot]
+-[IBGChat setSnapshot:]
+-[IBGChat dataStoreSnapshot]
+-[IBGChat setDataStoreSnapshot:]
+-[IBGChat attachmentsObjects]
+-[IBGChat setAttachmentsObjects:]
+-[IBGChat .cxx_destruct]
+_OBJC_IVAR_$_IBGChat._date
+___block_descriptor_tmp.636
+___block_literal_global.637
+_OBJC_IVAR_$_IBGChat._identifier
+_OBJC_IVAR_$_IBGChat._isSynced
+_OBJC_IVAR_$_IBGChat._isSent
+_OBJC_IVAR_$_IBGChat._messages
+_OBJC_IVAR_$_IBGChat._snapshot
+_OBJC_IVAR_$_IBGChat._dataStoreSnapshot
+_OBJC_IVAR_$_IBGChat._attachmentsObjects
+l_OBJC_PROTOCOL_$_IBGChatRequestDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGChatRequestDelegate
+l_OBJC_PROTOCOL_$_IBGLocalAttachmentRequestDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGLocalAttachmentRequestDelegate
+l_OBJC_PROTOCOL_$_IBGCoding
+l_OBJC_LABEL_PROTOCOL_$_IBGCoding
+l_OBJC_PROTOCOL_$_IBGCachable
+l_OBJC_LABEL_PROTOCOL_$_IBGCachable
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGChat.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGChat.h
+/Users/khaledElMorabea/Library/Developer/Xcode/DerivedData/Instabug-cqbadbmomfjgsddklrlfomsvjpgj/Build/Intermediates.noindex/ArchiveIntermediates/Framework/BuildProductsPath/Release-iphoneos/InstabugCore.framework/Headers/IBGCachable.h
+__38-[IBGChat sortedMessagesWithMessages:]_block_invoke
+__25-[IBGChat addNewMessage:]_block_invoke
++[IBGReadQueueManager getInstance]
+___34+[IBGReadQueueManager getInstance]_block_invoke
+-[IBGReadQueueManager readMessagesReceipts]
+-[IBGReadQueueManager readQueue]
+-[IBGReadQueueManager init]
+-[IBGReadQueueManager dealloc]
+-[IBGReadQueueManager enqueueReadMessage:]
+-[IBGReadQueueManager removeReadReceipts:]
+-[IBGReadQueueManager readReceipt:belongsToMessage:]
+-[IBGReadQueueManager applicationWillEnterForegroundNotification]
+-[IBGReadQueueManager applicationDidEnterBackgroundNotification]
+-[IBGReadQueueManager registerNotifications]
+-[IBGReadQueueManager deregisterNotifications]
+-[IBGReadQueueManager updateReadQueueWithMessage:]
+-[IBGReadQueueManager persistReadQueue]
+-[IBGReadQueueManager fetchReadQueue]
+-[IBGReadQueueManager setReadMessagesReceipts:]
+-[IBGReadQueueManager lock]
+-[IBGReadQueueManager setLock:]
+-[IBGReadQueueManager setReadQueue:]
+-[IBGReadQueueManager .cxx_destruct]
+_OBJC_IVAR_$_IBGReadQueueManager._readMessagesReceipts
+_OBJC_IVAR_$_IBGReadQueueManager._readQueue
+_OBJC_IVAR_$_IBGReadQueueManager._lock
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Managers/IBGReadQueueManager.m
+__34+[IBGReadQueueManager getInstance]_block_invoke
+-[IBGOutboundCell initWithStyle:reuseIdentifier:]
+-[IBGOutboundCell setContent:isSent:]
+-[IBGOutboundCell updateConstraints]
+-[IBGOutboundCell applyTheme]
+-[IBGOutboundCell avatarImageView]
++[IBGOutboundCell chatSwoochForTheme:]
+-[IBGOutboundCell setAvatarImageView:]
+-[IBGOutboundCell .cxx_destruct]
+_OBJC_IVAR_$_IBGOutboundCell._avatarImageView
+_IBGLightOutBoundChatSwooch
+_IBGDarkOutBoundChatSwooch
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundCell.h
++[IBGSyncManager getInstance]
+___29+[IBGSyncManager getInstance]_block_invoke
+-[IBGSyncManager initializationOperation]
+___41-[IBGSyncManager initializationOperation]_block_invoke
+-[IBGSyncManager dealloc]
++[IBGSyncManager NSStringFromLastChatAtSelector]
+-[IBGSyncManager stopSync]
+-[IBGSyncManager sync]
+-[IBGSyncManager syncWithNumberOfMessages:readMessagesReceipts:lastMessageDate:]
+-[IBGSyncManager retrieveLastSecondsTillNextSync]
+-[IBGSyncManager setLastSecondsTillNextSync:]
+-[IBGSyncManager registerNotifications]
+-[IBGSyncManager deregisterNotifications]
+-[IBGSyncManager handleSyncResponseWithMessages:statusCode:]
+-[IBGSyncManager scheduleSyncAfterSeconds:]
+___43-[IBGSyncManager scheduleSyncAfterSeconds:]_block_invoke
+___copy_helper_block_.456
+___destroy_helper_block_.457
+-[IBGSyncManager cancelScheduledSyncRequests]
+-[IBGSyncManager shouldSync]
+-[IBGSyncManager observeValueForKeyPath:ofObject:change:context:]
+-[IBGSyncManager UIApplicationWillEnterForegroundNotification]
+-[IBGSyncManager UIApplicationDidEnterBackgroundNotification]
+-[IBGSyncManager syncRequestDone:messages:secondsTillNextSync:statusCode:error:UUID:]
++[IBGSyncManager destroy]
+-[IBGSyncManager setInitializationOperation:]
+-[IBGSyncManager isInForeground]
+-[IBGSyncManager setIsInForeground:]
+-[IBGSyncManager lastSecondsTillNextSync]
+-[IBGSyncManager lastReadMessagesReceipts]
+-[IBGSyncManager setLastReadMessagesReceipts:]
+-[IBGSyncManager syncRequest]
+-[IBGSyncManager setSyncRequest:]
+-[IBGSyncManager .cxx_destruct]
+_OBJC_IVAR_$_IBGSyncManager._initializationOperation
+___block_descriptor_tmp.365
+_NSStringFromLastChatAtSelector.selectorName
+_OBJC_IVAR_$_IBGSyncManager._lastSecondsTillNextSync
+___block_descriptor_tmp.458
+_OBJC_IVAR_$_IBGSyncManager._isInForeground
+_OBJC_IVAR_$_IBGSyncManager._lastReadMessagesReceipts
+_OBJC_IVAR_$_IBGSyncManager._syncRequest
+l_OBJC_PROTOCOL_$_IBGSyncRequestDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGSyncRequestDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Managers/IBGSyncManager.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Managers/IBGSyncManager.h
+__inline_isnand
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/math.h
+__43-[IBGSyncManager scheduleSyncAfterSeconds:]_block_invoke
+__41-[IBGSyncManager initializationOperation]_block_invoke
+__29+[IBGSyncManager getInstance]_block_invoke
++[IBGBugFeatures getInstance]
+___29+[IBGBugFeatures getInstance]_block_invoke
+-[IBGBugFeatures init]
+-[IBGBugFeatures didUpdateServerValueForFeature:withServerPermission:]
+-[IBGBugFeatures viewHierarchy]
+-[IBGBugFeatures setViewHierarchy:]
+-[IBGBugFeatures viewHierarchyFeature]
+-[IBGBugFeatures setViewHierarchyFeature:]
+-[IBGBugFeatures .cxx_destruct]
+_OBJC_IVAR_$_IBGBugFeatures._viewHierarchyFeature
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGBugFeatures.m
+__29+[IBGBugFeatures getInstance]_block_invoke
+-[IBGInvocationRightEdgePan initWithDelegate:]
+-[IBGInvocationRightEdgePan install]
+___36-[IBGInvocationRightEdgePan install]_block_invoke
+-[IBGInvocationRightEdgePan performInstall]
+-[IBGInvocationRightEdgePan isRTLPopGestureRecognizerNavigationContoler:]
+-[IBGInvocationRightEdgePan properEdgesForCurrentOrientationWithRTL:]
+-[IBGInvocationRightEdgePan getApplicationWindows]
+-[IBGInvocationRightEdgePan refresh]
+-[IBGInvocationRightEdgePan uninstall]
+-[IBGInvocationRightEdgePan invoke]
+-[IBGInvocationRightEdgePan gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:]
+-[IBGInvocationRightEdgePan startAlertText]
+-[IBGInvocationRightEdgePan startAlertGIF]
+-[IBGInvocationRightEdgePan delegate]
+-[IBGInvocationRightEdgePan setDelegate:]
+-[IBGInvocationRightEdgePan isInstalled]
+-[IBGInvocationRightEdgePan setIsInstalled:]
+-[IBGInvocationRightEdgePan gestureRecognizers]
+-[IBGInvocationRightEdgePan setGestureRecognizers:]
+-[IBGInvocationRightEdgePan delay]
+-[IBGInvocationRightEdgePan setDelay:]
+-[IBGInvocationRightEdgePan .cxx_destruct]
+_OBJC_IVAR_$_IBGInvocationRightEdgePan.isInstalled
+_OBJC_IVAR_$_IBGInvocationRightEdgePan._delegate
+_OBJC_IVAR_$_IBGInvocationRightEdgePan._gestureRecognizers
+_OBJC_IVAR_$_IBGInvocationRightEdgePan._delay
+l_OBJC_PROTOCOL_$_IBGInvocationBase
+l_OBJC_LABEL_PROTOCOL_$_IBGInvocationBase
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationRightEdgePan.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationBase.h
+__36-[IBGInvocationRightEdgePan install]_block_invoke
+-[IBGMessageActionView initWithMaximumWidth:]
+-[IBGMessageActionView initActions]
+-[IBGMessageActionView tapGestureRecognizer]
+-[IBGMessageActionView labels]
+-[IBGMessageActionView textView]
+-[IBGMessageActionView handleAction:]
+-[IBGMessageActionView updateConstraints]
+-[IBGMessageActionView configureLabel:]
+-[IBGMessageActionView fontSize]
+-[IBGMessageActionView prepareForReuse]
+-[IBGMessageActionView setContent:]
+-[IBGMessageActionView initWithActions:]
+-[IBGMessageActionView actionURLWithIndex:]
+-[IBGMessageActionView actionTitleWithIndex:]
+-[IBGMessageActionView getActionsCount]
+-[IBGMessageActionView getBody]
+-[IBGMessageActionView setLabels:]
+-[IBGMessageActionView maximumWidth]
+-[IBGMessageActionView setMaximumWidth:]
+-[IBGMessageActionView setTextView:]
+-[IBGMessageActionView actions]
+-[IBGMessageActionView setActions:]
+-[IBGMessageActionView setTapGestureRecognizer:]
+-[IBGMessageActionView .cxx_destruct]
+_OBJC_IVAR_$_IBGMessageActionView._tapGestureRecognizer
+_OBJC_IVAR_$_IBGMessageActionView._labels
+_OBJC_IVAR_$_IBGMessageActionView._textView
+_OBJC_IVAR_$_IBGMessageActionView._maximumWidth
+_OBJC_IVAR_$_IBGMessageActionView._actions
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGMessageActionView.m
+-[IBGInvocationFloatingButton initWithDelegate:]
+-[IBGInvocationFloatingButton install]
+___38-[IBGInvocationFloatingButton install]_block_invoke
+-[IBGInvocationFloatingButton refresh]
+-[IBGInvocationFloatingButton uninstall]
+-[IBGInvocationFloatingButton invoke]
+-[IBGInvocationFloatingButton hide]
+-[IBGInvocationFloatingButton show]
+-[IBGInvocationFloatingButton startAlertText]
+-[IBGInvocationFloatingButton startAlertGIF]
+-[IBGInvocationFloatingButton delegate]
+-[IBGInvocationFloatingButton setDelegate:]
+-[IBGInvocationFloatingButton isInstalled]
+-[IBGInvocationFloatingButton setIsInstalled:]
+-[IBGInvocationFloatingButton floatingButton]
+-[IBGInvocationFloatingButton setFloatingButton:]
+-[IBGInvocationFloatingButton .cxx_destruct]
+_OBJC_IVAR_$_IBGInvocationFloatingButton.isInstalled
+_OBJC_IVAR_$_IBGInvocationFloatingButton._delegate
+_OBJC_IVAR_$_IBGInvocationFloatingButton._floatingButton
+l_OBJC_PROTOCOL_$_IBGFloatingButtonWindowDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGFloatingButtonWindowDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationFloatingButton.m
+__38-[IBGInvocationFloatingButton install]_block_invoke
+-[IBGInboundCell initWithStyle:reuseIdentifier:]
+-[IBGInboundCell setContent:isSent:]
+-[IBGInboundCell updateConstraints]
+-[IBGInboundCell applyThemeWithIsSent:]
++[IBGInboundCell chatSwoochForTheme:isSent:]
+_IBGLightSentInBoundChatSwooch
+_IBGLightNotSentInBoundChatSwooch
+_IBGDarkSentInBoundChatSwooch
+_IBGDarkNotSentInBoundChatSwooch
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundCell.m
+-[IBGMessage init]
+-[IBGMessage initWithdirection:chat:messageId:date:]
+-[IBGMessage initWithMessageBody:direction:chat:messageId:date:]
+-[IBGMessage initWithAttachment:direction:chat:messageId:date:]
+-[IBGMessage coderNameForSelector:]
+-[IBGMessage description]
++[IBGMessage messageModelWithDictionary:]
++[IBGMessage normalizedSenderWithSender:]
++[IBGMessage messagesFromDictionary:]
++[IBGMessage attachmentsFromJSON:inMessage:]
++[IBGMessage actionsFromJSON:]
+-[IBGMessage setFeedbackTypeWithString:]
+-[IBGMessage setDirectionWithString:]
++[IBGMessage dateFormatter]
+-[IBGMessage setDateWithString:]
++[IBGMessage readDateFromString:]
+-[IBGMessage read]
+-[IBGMessage markAsRead]
+-[IBGMessage readTimeStampString]
+-[IBGMessage readReceipt]
+-[IBGMessage byline]
+-[IBGMessage getBodyFromMessageContents]
+-[IBGMessage sendAllAttachments]
+-[IBGMessage persistAndSend]
+-[IBGMessage fetchAttachmentsWithCompletionHandler:]
+___52-[IBGMessage fetchAttachmentsWithCompletionHandler:]_block_invoke
+-[IBGMessage fetchedAsset:ofURL:isSuccess:]
+-[IBGMessage messageRequestDone:withMessageID:isSuccess:error:]
+-[IBGMessage chatID]
+-[IBGMessage sender]
+-[IBGMessage addAttachmentsOfMessage:]
+-[IBGMessage hasAttachment]
+-[IBGMessage dictionaryValue]
+-[IBGMessage initWithDictionary:]
+-[IBGMessage oldMessageId]
+-[IBGMessage isFullySent]
+-[IBGMessage send]
+-[IBGMessage mergeFrom:]
+-[IBGMessage save]
+-[IBGMessage attachmentRequestCreator]
+-[IBGMessage diffIdentifer]
+-[IBGMessage diffSortingKey]
+-[IBGMessage isObjectUpdated:]
+-[IBGMessage attachmentsArray]
+-[IBGMessage attachments]
+-[IBGMessage isEqual:]
+-[IBGMessage copyWithZone:]
+-[IBGMessage identifier]
+-[IBGMessage setIdentifier:]
+-[IBGMessage chat]
+-[IBGMessage setChat:]
+-[IBGMessage setChatID:]
+-[IBGMessage date]
+-[IBGMessage setDate:]
+-[IBGMessage direction]
+-[IBGMessage setDirection:]
+-[IBGMessage setSender:]
+-[IBGMessage body]
+-[IBGMessage setBody:]
+-[IBGMessage avatarURL]
+-[IBGMessage setAvatarURL:]
+-[IBGMessage avatar]
+-[IBGMessage setAvatar:]
+-[IBGMessage reportType]
+-[IBGMessage setReportType:]
+-[IBGMessage isSent]
+-[IBGMessage setIsSent:]
+-[IBGMessage isSynced]
+-[IBGMessage setIsSynced:]
+-[IBGMessage actions]
+-[IBGMessage setActions:]
+-[IBGMessage email]
+-[IBGMessage setEmail:]
+-[IBGMessage name]
+-[IBGMessage setName:]
+-[IBGMessage completionHandler]
+-[IBGMessage setCompletionHandler:]
+-[IBGMessage readDate]
+-[IBGMessage setReadDate:]
+-[IBGMessage setRead:]
+-[IBGMessage setAttachmentsArray:]
+-[IBGMessage .cxx_destruct]
+_dateFormatter.formatter
+_OBJC_IVAR_$_IBGMessage._chatID
+_OBJC_IVAR_$_IBGMessage._attachmentsArray
+_OBJC_IVAR_$_IBGMessage._identifier
+_OBJC_IVAR_$_IBGMessage._date
+_OBJC_IVAR_$_IBGMessage._direction
+_OBJC_IVAR_$_IBGMessage._email
+_OBJC_IVAR_$_IBGMessage._name
+_OBJC_IVAR_$_IBGMessage._body
+_OBJC_IVAR_$_IBGMessage._avatarURL
+_OBJC_IVAR_$_IBGMessage._reportType
+_OBJC_IVAR_$_IBGMessage._isSent
+_OBJC_IVAR_$_IBGMessage._isSynced
+_OBJC_IVAR_$_IBGMessage._actions
+_OBJC_IVAR_$_IBGMessage._chat
+_OBJC_IVAR_$_IBGMessage._sender
+_OBJC_IVAR_$_IBGMessage._avatar
+_OBJC_IVAR_$_IBGMessage._completionHandler
+_OBJC_IVAR_$_IBGMessage._readDate
+_OBJC_IVAR_$_IBGMessage._read
+l_OBJC_PROTOCOL_$_IBGAssetManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGAssetManagerDelegate
+l_OBJC_PROTOCOL_$_IBGMessageRequestDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGMessageRequestDelegate
+l_OBJC_PROTOCOL_$_IBGDiffable
+l_OBJC_LABEL_PROTOCOL_$_IBGDiffable
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGMessage.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGMessage.h
+__52-[IBGMessage fetchAttachmentsWithCompletionHandler:]_block_invoke
+-[IBGMessageAttachmentRequestCreator reportAttachmentRequestWithParameters:attachmentPath:reportId:localAttachment:]
+-[IBGMessageAttachmentRequestCreator chatId]
+-[IBGMessageAttachmentRequestCreator setChatId:]
+-[IBGMessageAttachmentRequestCreator .cxx_destruct]
+_OBJC_IVAR_$_IBGMessageAttachmentRequestCreator._chatId
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/Request Creator/IBGMessageAttachmentRequestCreator.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/Request Creator/IBGMessageAttachmentRequestCreator.h
+-[IBGMessageDateHeader initWithFrame:]
+-[IBGMessageDateHeader layout]
+-[IBGMessageDateHeader setDate:]
+-[IBGMessageDateHeader dateLabel]
+-[IBGMessageDateHeader setDateLabel:]
+-[IBGMessageDateHeader .cxx_destruct]
+_OBJC_IVAR_$_IBGMessageDateHeader._dateLabel
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGMessageDateHeader.m
+-[IBGSendingBugController initWithSnapshot:email:comment:reportType:attachments:]
+-[IBGSendingBugController interruptViewHierarchy]
+-[IBGSendingBugController reportType]
+-[IBGSendingBugController addExtrafieldsToComment:]
+-[IBGSendingBugController captureViewHierarchyWithCompletionHandler:]
+___69-[IBGSendingBugController captureViewHierarchyWithCompletionHandler:]_block_invoke
+-[IBGSendingBugController captureScreenshotFrom:withCompletionHandler:]
+___71-[IBGSendingBugController captureScreenshotFrom:withCompletionHandler:]_block_invoke
+___copy_helper_block_.588
+___destroy_helper_block_.589
+-[IBGSendingBugController createBug]
+-[IBGSendingBugController sendBug]
+___34-[IBGSendingBugController sendBug]_block_invoke
+___copy_helper_block_.620
+___destroy_helper_block_.621
+___34-[IBGSendingBugController sendBug]_block_invoke.625
+___34-[IBGSendingBugController sendBug]_block_invoke_2
+___34-[IBGSendingBugController sendBug]_block_invoke_3
+___copy_helper_block_.632
+___destroy_helper_block_.633
+___copy_helper_block_.638
+___destroy_helper_block_.639
+___copy_helper_block_.643
+___destroy_helper_block_.644
+___34-[IBGSendingBugController sendBug]_block_invoke.646
+___34-[IBGSendingBugController sendBug]_block_invoke_2.647
+___copy_helper_block_.648
+___destroy_helper_block_.649
+___copy_helper_block_.651
+___destroy_helper_block_.652
+-[IBGSendingBugController attachVisualUserStepsWithDateString:]
+-[IBGSendingBugController prepareAndSendBug:]
+___45-[IBGSendingBugController prepareAndSendBug:]_block_invoke
+___copy_helper_block_.710
+___destroy_helper_block_.711
+-[IBGSendingBugController showActivityIndicator]
+-[IBGSendingBugController stopActivityIndicator]
+-[IBGSendingBugController snapshotHeadNode]
+-[IBGSendingBugController setSnapshotHeadNode:]
+-[IBGSendingBugController shouldInterruptViewHierarchy]
+-[IBGSendingBugController setShouldInterruptViewHierarchy:]
+-[IBGSendingBugController screenshotFilePaths]
+-[IBGSendingBugController setScreenshotFilePaths:]
+-[IBGSendingBugController snapshot]
+-[IBGSendingBugController setSnapshot:]
+-[IBGSendingBugController email]
+-[IBGSendingBugController setEmail:]
+-[IBGSendingBugController comment]
+-[IBGSendingBugController setComment:]
+-[IBGSendingBugController setReportType:]
+-[IBGSendingBugController attachments]
+-[IBGSendingBugController setAttachments:]
+-[IBGSendingBugController .cxx_destruct]
+_OBJC_IVAR_$_IBGSendingBugController._reportType
+___block_descriptor_tmp.622
+___block_descriptor_tmp.635
+___block_descriptor_tmp.640
+___block_descriptor_tmp.645
+___block_descriptor_tmp.650
+___block_descriptor_tmp.653
+___block_descriptor_tmp.712
+_OBJC_IVAR_$_IBGSendingBugController._snapshotHeadNode
+_OBJC_IVAR_$_IBGSendingBugController._shouldInterruptViewHierarchy
+_OBJC_IVAR_$_IBGSendingBugController._screenshotFilePaths
+_OBJC_IVAR_$_IBGSendingBugController._snapshot
+_OBJC_IVAR_$_IBGSendingBugController._email
+_OBJC_IVAR_$_IBGSendingBugController._comment
+_OBJC_IVAR_$_IBGSendingBugController._attachments
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Controllers/IBGSendingBugController.m
+__45-[IBGSendingBugController prepareAndSendBug:]_block_invoke
+__34-[IBGSendingBugController sendBug]_block_invoke_2.647
+__34-[IBGSendingBugController sendBug]_block_invoke.646
+__34-[IBGSendingBugController sendBug]_block_invoke_3
+__34-[IBGSendingBugController sendBug]_block_invoke_2
+__34-[IBGSendingBugController sendBug]_block_invoke.625
+__34-[IBGSendingBugController sendBug]_block_invoke
+__71-[IBGSendingBugController captureScreenshotFrom:withCompletionHandler:]_block_invoke
+__69-[IBGSendingBugController captureViewHierarchyWithCompletionHandler:]_block_invoke
++[IBGBugDefaults getInstance]
+___29+[IBGBugDefaults getInstance]_block_invoke
+-[IBGBugDefaults init]
+___22-[IBGBugDefaults init]_block_invoke
+-[IBGBugDefaults setShowEmail:]
+-[IBGBugDefaults disableAttachments]
+-[IBGBugDefaults enableAttachmentGalleryImage]
+-[IBGBugDefaults setShowStartAlert:]
+-[IBGBugDefaults showStartAlert]
+-[IBGBugDefaults setStartAlertShown:]
+-[IBGBugDefaults setLastBugAt:]
+-[IBGBugDefaults lastBugAt]
+-[IBGBugDefaults resources]
+-[IBGBugDefaults setResources:]
+-[IBGBugDefaults strings]
+-[IBGBugDefaults setStrings:]
+-[IBGBugDefaults startAlertShown]
+-[IBGBugDefaults showEmail]
+-[IBGBugDefaults emailIsRequired]
+-[IBGBugDefaults setEmailIsRequired:]
+-[IBGBugDefaults commentIsRequired]
+-[IBGBugDefaults setCommentIsRequired:]
+-[IBGBugDefaults showPostSendingDialog]
+-[IBGBugDefaults setShowPostSendingDialog:]
+-[IBGBugDefaults enableAttachmentExtraScreenShot]
+-[IBGBugDefaults setEnableAttachmentExtraScreenShot:]
+-[IBGBugDefaults setEnableAttachmentGalleryImage:]
+-[IBGBugDefaults enableAttachmentVoiceNote]
+-[IBGBugDefaults setEnableAttachmentVoiceNote:]
+-[IBGBugDefaults enableAttachmentScreenRecording]
+-[IBGBugDefaults setEnableAttachmentScreenRecording:]
+-[IBGBugDefaults .cxx_destruct]
+_OBJC_IVAR_$_IBGBugDefaults._showStartAlert
+_OBJC_IVAR_$_IBGBugDefaults._startAlertShown
+_OBJC_IVAR_$_IBGBugDefaults._showEmail
+_OBJC_IVAR_$_IBGBugDefaults._enableAttachmentGalleryImage
+_OBJC_IVAR_$_IBGBugDefaults._resources
+_OBJC_IVAR_$_IBGBugDefaults._strings
+_OBJC_IVAR_$_IBGBugDefaults._emailIsRequired
+_OBJC_IVAR_$_IBGBugDefaults._commentIsRequired
+_OBJC_IVAR_$_IBGBugDefaults._showPostSendingDialog
+_OBJC_IVAR_$_IBGBugDefaults._enableAttachmentExtraScreenShot
+_OBJC_IVAR_$_IBGBugDefaults._enableAttachmentVoiceNote
+_OBJC_IVAR_$_IBGBugDefaults._enableAttachmentScreenRecording
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGBugDefaults.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGBugDefaults.h
+__22-[IBGBugDefaults init]_block_invoke
+__29+[IBGBugDefaults getInstance]_block_invoke
++[IBGNotificationManager getInstance]
+___37+[IBGNotificationManager getInstance]_block_invoke
+-[IBGNotificationManager initializationOperation]
+___49-[IBGNotificationManager initializationOperation]_block_invoke
+___49-[IBGNotificationManager initializationOperation]_block_invoke_2
+___copy_helper_block_.526
+___destroy_helper_block_.527
+-[IBGNotificationManager registerNotifications]
+-[IBGNotificationManager alertWindowController]
+-[IBGNotificationManager dismissNotificationViewAnimated:]
+-[IBGNotificationManager showAlertWithMessages:]
+___48-[IBGNotificationManager showAlertWithMessages:]_block_invoke
+___copy_helper_block_.581
+___destroy_helper_block_.582
+-[IBGNotificationManager notifiableMessagesFromMessages:]
+-[IBGNotificationManager didAddNewMessages:]
+-[IBGNotificationManager notificationWindowTappedWithChat:]
+___59-[IBGNotificationManager notificationWindowTappedWithChat:]_block_invoke
+___copy_helper_block_.615
+___destroy_helper_block_.616
+-[IBGNotificationManager notificationControllerWindowWillDealloc]
+-[IBGNotificationManager dealloc]
++[IBGNotificationManager destroy]
+-[IBGNotificationManager setInitializationOperation:]
+-[IBGNotificationManager setAlertWindowController:]
+-[IBGNotificationManager .cxx_destruct]
+_OBJC_IVAR_$_IBGNotificationManager._initializationOperation
+___block_descriptor_tmp.523
+___block_descriptor_tmp.528
+_OBJC_IVAR_$_IBGNotificationManager._alertWindowController
+___block_descriptor_tmp.583
+___block_descriptor_tmp.617
+l_OBJC_PROTOCOL_$_IBGUnnotifiedMessagesHUDControllerDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGUnnotifiedMessagesHUDControllerDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/IBGNotificationManager.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/IBGNotificationManager.h
+__59-[IBGNotificationManager notificationWindowTappedWithChat:]_block_invoke
+__48-[IBGNotificationManager showAlertWithMessages:]_block_invoke
+__49-[IBGNotificationManager initializationOperation]_block_invoke_2
+__49-[IBGNotificationManager initializationOperation]_block_invoke
+__37+[IBGNotificationManager getInstance]_block_invoke
++[InstabugCrashReporting sharedInstance]
+___40+[InstabugCrashReporting sharedInstance]_block_invoke
+-[InstabugCrashReporting initializationOperations]
++[InstabugCrashReporting setCrashReportingEnabled:]
++[InstabugCrashReporting reportException:]
++[InstabugCrashReporting reportError:]
++[InstabugCrashReporting destory]
+-[InstabugCrashReporting setInitializationOperations:]
+-[InstabugCrashReporting .cxx_destruct]
+_OBJC_IVAR_$_InstabugCrashReporting._initializationOperations
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/InstabugCrashReporting.m
+__40+[InstabugCrashReporting sharedInstance]_block_invoke
+-[IBGUnnotifiedMessagesHUDController showWithMessages:]
+___55-[IBGUnnotifiedMessagesHUDController showWithMessages:]_block_invoke
+-[IBGUnnotifiedMessagesHUDController dismissWithAnimation:]
+-[IBGUnnotifiedMessagesHUDController initializeNotificationWindowForMessage:]
+-[IBGUnnotifiedMessagesHUDController initializeNotificationWindowForMultipleMessages:]
+-[IBGUnnotifiedMessagesHUDController getMessagesAlertWindowForSender:andByLine:]
+-[IBGUnnotifiedMessagesHUDController getMessagesAlertWindowForSender:number:]
+-[IBGUnnotifiedMessagesHUDController chatModelFromMessage:]
+-[IBGUnnotifiedMessagesHUDController fetchedAsset:ofURL:isSuccess:]
+-[IBGUnnotifiedMessagesHUDController didClickNotificationAlertWindow:]
+-[IBGUnnotifiedMessagesHUDController didDismissNotificationAlertWindow:]
+-[IBGUnnotifiedMessagesHUDController alertWindowWillDealloc]
+-[IBGUnnotifiedMessagesHUDController delegate]
+-[IBGUnnotifiedMessagesHUDController setDelegate:]
+-[IBGUnnotifiedMessagesHUDController notificationWindow]
+-[IBGUnnotifiedMessagesHUDController setNotificationWindow:]
+-[IBGUnnotifiedMessagesHUDController notificationChat]
+-[IBGUnnotifiedMessagesHUDController setNotificationChat:]
+-[IBGUnnotifiedMessagesHUDController .cxx_destruct]
+_OBJC_IVAR_$_IBGUnnotifiedMessagesHUDController._delegate
+_OBJC_IVAR_$_IBGUnnotifiedMessagesHUDController._notificationWindow
+_OBJC_IVAR_$_IBGUnnotifiedMessagesHUDController._notificationChat
+l_OBJC_PROTOCOL_$_IBGUnnotifiedMessagesAlertWindowDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGUnnotifiedMessagesAlertWindowDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Controllers/IBGUnnotifiedMessagesHUDController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Controllers/IBGUnnotifiedMessagesHUDController.h
+__55-[IBGUnnotifiedMessagesHUDController showWithMessages:]_block_invoke
+-[NSMutableArray(IBGMove) moveObjectFromIndex:toIndex:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Helpers/NSMutableArray+IBGMove.m
+-[IBGChatFlowController startChatFlowWithFadeAnimation:]
+-[IBGChatFlowController showChatViewControllerWithFadeAnimation:]
+-[IBGChatFlowController showChatsViewControllerForNotification]
+-[IBGChatFlowController showChatViewControllerForNotificationWithChat:]
+-[IBGChatFlowController showChatViewControllerWithChat:shouldShowCloseButton:shouldDismissSDKOnCancel:observer:byChatListView:]
+-[IBGChatFlowController dismissChatViewController:withBackButtonOfType:]
+-[IBGChatFlowController showChatsWithChat:isNotification:showChats:isFadeAnimation:]
+-[IBGChatFlowController chatsCount]
+-[IBGChatFlowController lastChat]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Flow Controllers/IBGChatFlowController.m
+-[IBGInvocationShake initWithDelegate:]
+-[IBGInvocationShake install]
+___29-[IBGInvocationShake install]_block_invoke
+-[IBGInvocationShake refresh]
+-[IBGInvocationShake uninstall]
+-[IBGInvocationShake invoke]
+-[IBGInvocationShake didAccelerate:]
+___36-[IBGInvocationShake didAccelerate:]_block_invoke
+___copy_helper_block_.57
+___destroy_helper_block_.58
+-[IBGInvocationShake startAlertText]
+-[IBGInvocationShake startAlertGIF]
+-[IBGInvocationShake delegate]
+-[IBGInvocationShake setDelegate:]
+-[IBGInvocationShake isInstalled]
+-[IBGInvocationShake setIsInstalled:]
+-[IBGInvocationShake motionManager]
+-[IBGInvocationShake setMotionManager:]
+-[IBGInvocationShake lastAcceleration]
+-[IBGInvocationShake setLastAcceleration:]
+-[IBGInvocationShake firstAcceleration]
+-[IBGInvocationShake setFirstAcceleration:]
+-[IBGInvocationShake excited]
+-[IBGInvocationShake setExcited:]
+-[IBGInvocationShake applicationMotionEnded]
+-[IBGInvocationShake setApplicationMotionEnded:]
+-[IBGInvocationShake .cxx_destruct]
+_OBJC_IVAR_$_IBGInvocationShake.isInstalled
+___block_descriptor_tmp.60
+_OBJC_IVAR_$_IBGInvocationShake._delegate
+_OBJC_IVAR_$_IBGInvocationShake._motionManager
+_OBJC_IVAR_$_IBGInvocationShake._lastAcceleration
+_OBJC_IVAR_$_IBGInvocationShake._firstAcceleration
+_OBJC_IVAR_$_IBGInvocationShake._excited
+_OBJC_IVAR_$_IBGInvocationShake._applicationMotionEnded
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationShake.m
+__36-[IBGInvocationShake didAccelerate:]_block_invoke
+__29-[IBGInvocationShake install]_block_invoke
+-[IBGCrash initWithSnapshot:]
+-[IBGCrash initWithTempCrash:]
+-[IBGCrash coderNameForSelector:]
+-[IBGCrash submit]
+-[IBGCrash addAttachment:]
+-[IBGCrash hasAttachment]
+-[IBGCrash sendAllAttachments]
+-[IBGCrash description]
+-[IBGCrash reportRequestDone:withReportID:isSuccess:error:]
+-[IBGCrash dictionaryValue]
+-[IBGCrash initWithDictionary:]
+-[IBGCrash oldCrashId]
+-[IBGCrash isFullySent]
+-[IBGCrash send]
+-[IBGCrash attachmentsCount]
+-[IBGCrash save]
+-[IBGCrash remove]
+-[IBGCrash removeIfFullySent]
+-[IBGCrash attachmentRequestCreator]
+-[IBGCrash localAttachmentRequestSucceeded:]
+-[IBGCrash isEqual:]
+-[IBGCrash identifier]
+-[IBGCrash setIdentifier:]
+-[IBGCrash comment]
+-[IBGCrash setComment:]
+-[IBGCrash email]
+-[IBGCrash setEmail:]
+-[IBGCrash isHandled]
+-[IBGCrash setIsHandled:]
+-[IBGCrash date]
+-[IBGCrash setDate:]
+-[IBGCrash autoScreenRecordingIdentifier]
+-[IBGCrash setAutoScreenRecordingIdentifier:]
+-[IBGCrash persistenceKey]
+-[IBGCrash setPersistenceKey:]
+-[IBGCrash dataStoreSnapshot]
+-[IBGCrash setDataStoreSnapshot:]
+-[IBGCrash attachmentsObjects]
+-[IBGCrash setAttachmentsObjects:]
+-[IBGCrash isSent]
+-[IBGCrash setIsSent:]
+-[IBGCrash .cxx_destruct]
+_OBJC_IVAR_$_IBGCrash._identifier
+_OBJC_IVAR_$_IBGCrash._comment
+_OBJC_IVAR_$_IBGCrash._email
+_OBJC_IVAR_$_IBGCrash._isHandled
+_OBJC_IVAR_$_IBGCrash._date
+_OBJC_IVAR_$_IBGCrash._autoScreenRecordingIdentifier
+_OBJC_IVAR_$_IBGCrash._persistenceKey
+_OBJC_IVAR_$_IBGCrash._dataStoreSnapshot
+_OBJC_IVAR_$_IBGCrash._attachmentsObjects
+_OBJC_IVAR_$_IBGCrash._isSent
+l_OBJC_PROTOCOL_$_IBGReportRequestDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGReportRequestDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Models/IBGCrash.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Models/IBGCrash.h
+-[IBGOutboundLoadingCell initWithStyle:reuseIdentifier:]
+-[IBGOutboundLoadingCell setContent:isSent:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundLoadingCell.m
+-[IBGTextViewCell initWithStyle:reuseIdentifier:]
+-[IBGTextViewCell separatorView]
+-[IBGTextViewCell textView]
+-[IBGTextViewCell updateConstraints]
+-[IBGTextViewCell setTextView:]
+-[IBGTextViewCell setSeparatorView:]
+-[IBGTextViewCell .cxx_destruct]
+_OBJC_IVAR_$_IBGTextViewCell._separatorView
+_OBJC_IVAR_$_IBGTextViewCell._textView
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Views/IBGTextViewCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Views/IBGTextViewCell.h
+-[IBGCrashReport reportStringForReportWithExcludingInstabugFrame:]
+-[IBGCrashReport generateFormattedStackForStackFrames:shouldExcludingInstabugFrame:]
+-[IBGCrashReport getAppImageNameForReport]
+-[IBGCrashReport getSystemVersionForReport]
+-[IBGCrashReport getSystemBuildForReport]
+-[IBGCrashReport getMachineArchForReport]
+-[IBGCrashReport getUUIDForImage:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Models/IBGCrashReport.m
+-[IBGBug initWithSnapshot:]
+-[IBGBug addAttachments:]
+-[IBGBug addAttachment:]
+-[IBGBug coderNameForSelector:]
+-[IBGBug attachments]
+-[IBGBug setAttachments:]
+-[IBGBug persistAndSend]
+___24-[IBGBug persistAndSend]_block_invoke
+-[IBGBug hasAttachment]
+-[IBGBug sendAllAttachments]
+-[IBGBug description]
+-[IBGBug reportRequestDone:withReportID:isSuccess:error:]
+-[IBGBug dictionaryValue]
+-[IBGBug initWithDictionary:]
+-[IBGBug oldBugId]
+-[IBGBug oldSnapshot]
+-[IBGBug isFullySent]
+-[IBGBug send]
+-[IBGBug attachmentsCount]
+-[IBGBug save]
+-[IBGBug remove]
+-[IBGBug removeIfFullySent]
+-[IBGBug attachmentRequestCreator]
+-[IBGBug localAttachmentRequestSucceeded:]
+-[IBGBug isEqual:]
+-[IBGBug identifier]
+-[IBGBug setIdentifier:]
+-[IBGBug comment]
+-[IBGBug setComment:]
+-[IBGBug email]
+-[IBGBug setEmail:]
+-[IBGBug type]
+-[IBGBug setType:]
+-[IBGBug date]
+-[IBGBug setDate:]
+-[IBGBug autoScreenRecordingIdentifier]
+-[IBGBug setAutoScreenRecordingIdentifier:]
+-[IBGBug snapshot]
+-[IBGBug setSnapshot:]
+-[IBGBug attachmentsObjects]
+-[IBGBug setAttachmentsObjects:]
+-[IBGBug isSent]
+-[IBGBug setIsSent:]
+-[IBGBug .cxx_destruct]
+_OBJC_IVAR_$_IBGBug._identifier
+_OBJC_IVAR_$_IBGBug._comment
+_OBJC_IVAR_$_IBGBug._email
+_OBJC_IVAR_$_IBGBug._type
+_OBJC_IVAR_$_IBGBug._date
+_OBJC_IVAR_$_IBGBug._autoScreenRecordingIdentifier
+_OBJC_IVAR_$_IBGBug._snapshot
+_OBJC_IVAR_$_IBGBug._attachmentsObjects
+_OBJC_IVAR_$_IBGBug._isSent
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Models/IBGBug.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Models/IBGBug.h
+__24-[IBGBug persistAndSend]_block_invoke
++[IBGChatsFeatures getInstance]
+___31+[IBGChatsFeatures getInstance]_block_invoke
+-[IBGChatsFeatures init]
+-[IBGChatsFeatures didUpdateServerValueForFeature:withServerPermission:]
+-[IBGChatsFeatures inAppMessaging]
+-[IBGChatsFeatures setInAppMessaging:]
+-[IBGChatsFeatures inAppMessagingFeature]
+-[IBGChatsFeatures setInAppMessagingFeature:]
+-[IBGChatsFeatures .cxx_destruct]
+_OBJC_IVAR_$_IBGChatsFeatures._inAppMessagingFeature
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Defaults/IBGChatsFeatures.m
+__31+[IBGChatsFeatures getInstance]_block_invoke
+-[IBGLastContactedAtMigration version]
+-[IBGLastContactedAtMigration shouldRun]
+-[IBGLastContactedAtMigration run]
+-[IBGLastContactedAtMigration syncRequestDone:messages:secondsTillNextSync:statusCode:error:UUID:]
+___98-[IBGLastContactedAtMigration syncRequestDone:messages:secondsTillNextSync:statusCode:error:UUID:]_block_invoke
+-[IBGLastContactedAtMigration delegate]
+-[IBGLastContactedAtMigration setDelegate:]
+-[IBGLastContactedAtMigration .cxx_destruct]
+_OBJC_IVAR_$_IBGLastContactedAtMigration._delegate
+l_OBJC_PROTOCOL_$_IBGMigration
+l_OBJC_LABEL_PROTOCOL_$_IBGMigration
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Migrations/IBGLastContactedAtMigration.m
+/Users/khaledElMorabea/Library/Developer/Xcode/DerivedData/Instabug-cqbadbmomfjgsddklrlfomsvjpgj/Build/Intermediates.noindex/ArchiveIntermediates/Framework/BuildProductsPath/Release-iphoneos/InstabugCore.framework/Headers/IBGMigrationManager.h
+__98-[IBGLastContactedAtMigration syncRequestDone:messages:secondsTillNextSync:statusCode:error:UUID:]_block_invoke
+-[IBGBugLogRequest initWithBugId:parameters:delegate:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/ServerRequests/IBGBugLogRequest.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/InstabugCrashReporting+TestPrivate.m
+-[IBGPromptCell awakeFromNib]
++[IBGPromptCell reuseIdentifier]
+-[IBGPromptCell applyTheme]
+-[IBGPromptCell iconImageView]
+-[IBGPromptCell setIconImageView:]
+-[IBGPromptCell notificationBubbleView]
+-[IBGPromptCell setNotificationBubbleView:]
+-[IBGPromptCell notificationCountLabel]
+-[IBGPromptCell setNotificationCountLabel:]
+-[IBGPromptCell titleLabel]
+-[IBGPromptCell setTitleLabel:]
+-[IBGPromptCell separatorView]
+-[IBGPromptCell setSeparatorView:]
+-[IBGPromptCell separatorViewHeightConstraint]
+-[IBGPromptCell setSeparatorViewHeightConstraint:]
+-[IBGPromptCell .cxx_destruct]
+_OBJC_IVAR_$_IBGPromptCell._iconImageView
+_OBJC_IVAR_$_IBGPromptCell._notificationBubbleView
+_OBJC_IVAR_$_IBGPromptCell._notificationCountLabel
+_OBJC_IVAR_$_IBGPromptCell._titleLabel
+_OBJC_IVAR_$_IBGPromptCell._separatorView
+_OBJC_IVAR_$_IBGPromptCell._separatorViewHeightConstraint
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Views/Table View Cells/IBGPromptCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Views/Table View Cells/IBGPromptCell.h
++[IBGReportInvocationManager sharedInstance]
+___44+[IBGReportInvocationManager sharedInstance]_block_invoke
+-[IBGReportInvocationManager init]
+-[IBGReportInvocationManager dealloc]
+-[IBGReportInvocationManager setInvocationEvent:]
+-[IBGReportInvocationManager setInvocationBlock:]
+-[IBGReportInvocationManager currentInvocationEvent]
+-[IBGReportInvocationManager setPreInvocationHandler:]
+-[IBGReportInvocationManager setPostInvocationHandler:]
+-[IBGReportInvocationManager eventRecognizerFromEvent:]
+-[IBGReportInvocationManager applicationDidChangeOrientation]
+-[IBGReportInvocationManager applicationDidBecomeActive]
+-[IBGReportInvocationManager applicationDidEnterBackground]
+-[IBGReportInvocationManager eventRecognized]
+-[IBGReportInvocationManager invoke]
+-[IBGReportInvocationManager didInvoke]
+-[IBGReportInvocationManager didDismissWithExtraParameters:]
+-[IBGReportInvocationManager didMinimizeWithExtraParameters:]
+-[IBGReportInvocationManager clearAutoScreenRecordingScreenshots]
+-[IBGReportInvocationManager didResetUserData]
+-[IBGReportInvocationManager invocationEventRecognizer]
+-[IBGReportInvocationManager invocationBlock]
+-[IBGReportInvocationManager preInocationHandler]
+-[IBGReportInvocationManager setPreInocationHandler:]
+-[IBGReportInvocationManager postInvocationHandler]
+-[IBGReportInvocationManager invocationEvent]
+-[IBGReportInvocationManager .cxx_destruct]
+_sharedInstance.onceToken
+_sharedInstance.sharedInstance
+_OBJC_IVAR_$_IBGReportInvocationManager._invocationEvent
+_OBJC_IVAR_$_IBGReportInvocationManager._invocationEventRecognizer
+_OBJC_IVAR_$_IBGReportInvocationManager._invocationBlock
+_OBJC_IVAR_$_IBGReportInvocationManager._preInocationHandler
+_OBJC_IVAR_$_IBGReportInvocationManager._postInvocationHandler
+l_OBJC_PROTOCOL_$_IBGSnapshotManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGSnapshotManagerDelegate
+l_OBJC_PROTOCOL_$_IBGPresentationManagerDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGPresentationManagerDelegate
+l_OBJC_PROTOCOL_$_IBGInvocationBaseDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGInvocationBaseDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/IBGReportInvocationManager.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/IBGReportInvocationManager.h
+__44+[IBGReportInvocationManager sharedInstance]_block_invoke
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGReportingAccessibilityIdentifiers.m
+-[IBGTextMessageView initWithFrame:]
+-[IBGTextMessageView configureTextView:]
+-[IBGTextMessageView fontSize]
+-[IBGTextMessageView setContent:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGTextMessageView.m
+-[IBGInvocationTwoFingersSwipeLeft initWithDelegate:]
+-[IBGInvocationTwoFingersSwipeLeft install]
+-[IBGInvocationTwoFingersSwipeLeft getApplicationWindows]
+-[IBGInvocationTwoFingersSwipeLeft addObservers]
+-[IBGInvocationTwoFingersSwipeLeft removeObservers]
+-[IBGInvocationTwoFingersSwipeLeft handleNewWindowBecomeVisible]
+-[IBGInvocationTwoFingersSwipeLeft refresh]
+-[IBGInvocationTwoFingersSwipeLeft uninstall]
+-[IBGInvocationTwoFingersSwipeLeft invoke]
+-[IBGInvocationTwoFingersSwipeLeft gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:]
+-[IBGInvocationTwoFingersSwipeLeft startAlertText]
+-[IBGInvocationTwoFingersSwipeLeft startAlertGIF]
+-[IBGInvocationTwoFingersSwipeLeft delegate]
+-[IBGInvocationTwoFingersSwipeLeft setDelegate:]
+-[IBGInvocationTwoFingersSwipeLeft isInstalled]
+-[IBGInvocationTwoFingersSwipeLeft setIsInstalled:]
+-[IBGInvocationTwoFingersSwipeLeft gestureRecognizers]
+-[IBGInvocationTwoFingersSwipeLeft setGestureRecognizers:]
+-[IBGInvocationTwoFingersSwipeLeft .cxx_destruct]
+_OBJC_IVAR_$_IBGInvocationTwoFingersSwipeLeft.isInstalled
+_OBJC_IVAR_$_IBGInvocationTwoFingersSwipeLeft._delegate
+_OBJC_IVAR_$_IBGInvocationTwoFingersSwipeLeft._gestureRecognizers
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationTwoFingersSwipeLeft.m
+-[IBGBugVC initWithType:shouldShowEmail:controller:]
+-[IBGBugVC viewDidLoad]
+-[IBGBugVC addNavigationBarButtons]
+-[IBGBugVC showSendButton]
+-[IBGBugVC addPoweredByView]
+-[IBGBugVC email]
+-[IBGBugVC comment]
+-[IBGBugVC reportType]
+-[IBGBugVC viewDidAppear:]
+-[IBGBugVC shouldAutorotateToInterfaceOrientation:]
+-[IBGBugVC didSelectAddScreenshotAttachmentButton]
+-[IBGBugVC didSelectAddImageAttachmentButton]
+-[IBGBugVC didSelectAddVoiceAttachmentButton]
+-[IBGBugVC didSelectAddScreenRecordingAttachmentButton]
+-[IBGBugVC submitButtonPressed:]
+___32-[IBGBugVC submitButtonPressed:]_block_invoke
+-[IBGBugVC cancelButtonPressed:]
+-[IBGBugVC showInvalidEmailAndCommentAlerts]
+___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke
+___copy_helper_block_.736
+___destroy_helper_block_.737
+___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.743
+___copy_helper_block_.746
+___destroy_helper_block_.747
+-[IBGBugVC alertWithTitle:message:action:]
+-[IBGBugVC didSelectAttachment:]
+-[IBGBugVC didSelectAudioAttachment:startedPlaying:]
+___52-[IBGBugVC didSelectAudioAttachment:startedPlaying:]_block_invoke
+___copy_helper_block_.781
+___destroy_helper_block_.782
+-[IBGBugVC didRemoveAttachment:]
+-[IBGBugVC nextTappedInScreenshotView:]
+-[IBGBugVC bugRequestCreator]
+-[IBGBugVC cancelPressedInScreenshotView:]
+-[IBGBugVC applyTheme]
+-[IBGBugVC keyboardWillShow:]
+-[IBGBugVC keyboardWillHide:]
+-[IBGBugVC orientationChanged]
+___30-[IBGBugVC orientationChanged]_block_invoke
+___copy_helper_block_.846
+___destroy_helper_block_.847
+-[IBGBugVC calculateTextViewHeightWithKeyboardSize:]
+-[IBGBugVC adjustContentScrollViewToObscuringViewSize:]
+-[IBGBugVC resetViewForNoObstruction]
+-[IBGBugVC attachmentAnalyticsType:]
+-[IBGBugVC replaceAttachment:withAttachment:]
+-[IBGBugVC multipleAttachmentsFeatureEnabled]
+-[IBGBugVC disableAttachments]
+-[IBGBugVC activateEmailTextField]
+-[IBGBugVC activateCommentTextField]
+-[IBGBugVC placeAttachments]
+-[IBGBugVC updateUI]
+-[IBGBugVC dismissKeyboard]
+-[IBGBugVC inputViewBecomeFirstResponsderAndAddAttachment:]
+-[IBGBugVC attachmentsToolbarItems]
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
+___copy_helper_block_.901
+___destroy_helper_block_.902
+___copy_helper_block_.906
+___destroy_helper_block_.907
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.915
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.916
+___copy_helper_block_.919
+___destroy_helper_block_.920
+___copy_helper_block_.922
+___destroy_helper_block_.923
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.927
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.928
+___copy_helper_block_.931
+___destroy_helper_block_.932
+___copy_helper_block_.934
+___destroy_helper_block_.935
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.939
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.940
+___copy_helper_block_.943
+___destroy_helper_block_.944
+___copy_helper_block_.946
+___destroy_helper_block_.947
+-[IBGBugVC maximumNumberOfAttachmentsAllowed]
+-[IBGBugVC performActionOrShowMaximumNumberOfAttachmentsAlert:]
+-[IBGBugVC dealloc]
+-[IBGBugVC attachmentController]
+-[IBGBugVC dismissedWithScreenshotImage:error:]
+-[IBGBugVC dismissedWithGallaryImage:error:]
+-[IBGBugVC dismissedWithAudio:error:]
+-[IBGBugVC dismissedWithVideo:error:]
+-[IBGBugVC updateScrollViewLayoutIfNeeded]
+-[IBGBugVC didDismiss]
+-[IBGBugVC videoPlayer]
+-[IBGBugVC voicePlayer]
+-[IBGBugVC setMainScreenshot:]
+-[IBGBugVC attachmentsToolbar]
+-[IBGBugVC type]
+-[IBGBugVC setEmail:]
+-[IBGBugVC setComment:]
+-[IBGBugVC mainScreenshot]
+-[IBGBugVC controller]
+-[IBGBugVC setController:]
+-[IBGBugVC shouldShowEmail]
+-[IBGBugVC setShouldShowEmail:]
+-[IBGBugVC attachmentBeingEdited]
+-[IBGBugVC setAttachmentBeingEdited:]
+-[IBGBugVC setVoicePlayer:]
+-[IBGBugVC setVideoPlayer:]
+-[IBGBugVC attachmentsContentView]
+-[IBGBugVC setAttachmentsContentView:]
+-[IBGBugVC setAttachmentsToolbar:]
+-[IBGBugVC galleryHelper]
+-[IBGBugVC setGalleryHelper:]
+-[IBGBugVC contentView]
+-[IBGBugVC setContentView:]
+-[IBGBugVC contentScrollView]
+-[IBGBugVC setContentScrollView:]
+-[IBGBugVC setAttachmentController:]
+-[IBGBugVC footerView]
+-[IBGBugVC setFooterView:]
+-[IBGBugVC attachmentsView]
+-[IBGBugVC setAttachmentsView:]
+-[IBGBugVC attachmentsToolbarContainerView]
+-[IBGBugVC setAttachmentsToolbarContainerView:]
+-[IBGBugVC attachmentsToolbarContainerViewHeightConstraint]
+-[IBGBugVC setAttachmentsToolbarContainerViewHeightConstraint:]
+-[IBGBugVC bugInputView]
+-[IBGBugVC setBugInputView:]
+-[IBGBugVC footerViewHeightConstraint]
+-[IBGBugVC setFooterViewHeightConstraint:]
+-[IBGBugVC viewsToThemeWithBackgroundColor]
+-[IBGBugVC setViewsToThemeWithBackgroundColor:]
+-[IBGBugVC inputViewsToThemeWithBackgroundColor]
+-[IBGBugVC setInputViewsToThemeWithBackgroundColor:]
+-[IBGBugVC viewsToCalculateContentHeiht]
+-[IBGBugVC setViewsToCalculateContentHeiht:]
+-[IBGBugVC emailLineHeightConstraint]
+-[IBGBugVC setEmailLineHeightConstraint:]
+-[IBGBugVC setBugRequestCreator:]
+-[IBGBugVC alert]
+-[IBGBugVC setAlert:]
+-[IBGBugVC .cxx_destruct]
+_OBJC_IVAR_$_IBGBugVC._controller
+_OBJC_IVAR_$_IBGBugVC._type
+_OBJC_IVAR_$_IBGBugVC._shouldShowEmail
+___block_descriptor_tmp.738
+___block_descriptor_tmp.748
+___block_descriptor_tmp.783
+_OBJC_IVAR_$_IBGBugVC._bugRequestCreator
+___block_descriptor_tmp.848
+___block_descriptor_tmp.903
+___block_descriptor_tmp.908
+___block_descriptor_tmp.921
+___block_descriptor_tmp.924
+___block_descriptor_tmp.933
+___block_descriptor_tmp.936
+___block_descriptor_tmp.945
+___block_descriptor_tmp.948
+_OBJC_IVAR_$_IBGBugVC._attachmentController
+_OBJC_IVAR_$_IBGBugVC._videoPlayer
+_OBJC_IVAR_$_IBGBugVC._voicePlayer
+_OBJC_IVAR_$_IBGBugVC._mainScreenshot
+_OBJC_IVAR_$_IBGBugVC._attachmentsToolbar
+_OBJC_IVAR_$_IBGBugVC._email
+_OBJC_IVAR_$_IBGBugVC._comment
+_OBJC_IVAR_$_IBGBugVC._attachmentBeingEdited
+_OBJC_IVAR_$_IBGBugVC._attachmentsContentView
+_OBJC_IVAR_$_IBGBugVC._galleryHelper
+_OBJC_IVAR_$_IBGBugVC._contentView
+_OBJC_IVAR_$_IBGBugVC._contentScrollView
+_OBJC_IVAR_$_IBGBugVC._footerView
+_OBJC_IVAR_$_IBGBugVC._attachmentsView
+_OBJC_IVAR_$_IBGBugVC._attachmentsToolbarContainerView
+_OBJC_IVAR_$_IBGBugVC._attachmentsToolbarContainerViewHeightConstraint
+_OBJC_IVAR_$_IBGBugVC._bugInputView
+_OBJC_IVAR_$_IBGBugVC._footerViewHeightConstraint
+_OBJC_IVAR_$_IBGBugVC._viewsToThemeWithBackgroundColor
+_OBJC_IVAR_$_IBGBugVC._inputViewsToThemeWithBackgroundColor
+_OBJC_IVAR_$_IBGBugVC._viewsToCalculateContentHeiht
+_OBJC_IVAR_$_IBGBugVC._emailLineHeightConstraint
+_OBJC_IVAR_$_IBGBugVC._alert
+l_OBJC_PROTOCOL_$_IBGScreenshotViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGScreenshotViewDelegate
+l_OBJC_PROTOCOL_$_IBGAttachmentsViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGAttachmentsViewDelegate
+l_OBJC_PROTOCOL_$_IBGAttachmentControllerDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGAttachmentControllerDelegate
+l_OBJC_PROTOCOL_$_IBGBugInputViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGBugInputViewDelegate
+l_OBJC_PROTOCOL_$_IBGBugControllerDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGBugControllerDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.h
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.940
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.939
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.928
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.927
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.916
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.915
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke
+__30-[IBGBugVC orientationChanged]_block_invoke
+__52-[IBGBugVC didSelectAudioAttachment:startedPlaying:]_block_invoke
+__44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.743
+__44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke
+__32-[IBGBugVC submitButtonPressed:]_block_invoke
+-[IBGInvocationScreenshot initWithDelegate:]
+-[IBGInvocationScreenshot install]
+-[IBGInvocationScreenshot refresh]
+-[IBGInvocationScreenshot uninstall]
+-[IBGInvocationScreenshot invoke]
+-[IBGInvocationScreenshot startAlertText]
+-[IBGInvocationScreenshot startAlertGIF]
+-[IBGInvocationScreenshot delegate]
+-[IBGInvocationScreenshot setDelegate:]
+-[IBGInvocationScreenshot isInstalled]
+-[IBGInvocationScreenshot setIsInstalled:]
+-[IBGInvocationScreenshot .cxx_destruct]
+_OBJC_IVAR_$_IBGInvocationScreenshot.isInstalled
+_OBJC_IVAR_$_IBGInvocationScreenshot._delegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationScreenshot.m
+-[IBGBubbleCell initWithStyle:reuseIdentifier:]
+-[IBGBubbleCell updateConstraints]
+-[IBGBubbleCell maximumBubbleWidth]
+-[IBGBubbleCell setContent:isSent:]
+-[IBGBubbleCell pointInside:withEvent:]
+-[IBGBubbleCell bubbleBackgroundView]
+-[IBGBubbleCell dateLabel]
+-[IBGBubbleCell chatSwoochView]
+-[IBGBubbleCell setContent:]
+-[IBGBubbleCell setAccessiblityLabelForCell]
+-[IBGBubbleCell loadingView]
+-[IBGBubbleCell contentHandlerView]
+-[IBGBubbleCell setContentHandlerView:]
+-[IBGBubbleCell setBubbleBackgroundView:]
+-[IBGBubbleCell setDateLabel:]
+-[IBGBubbleCell setChatSwoochView:]
+-[IBGBubbleCell setLoadingView:]
+-[IBGBubbleCell .cxx_destruct]
+_OBJC_IVAR_$_IBGBubbleCell._bubbleBackgroundView
+_OBJC_IVAR_$_IBGBubbleCell._dateLabel
+_OBJC_IVAR_$_IBGBubbleCell._chatSwoochView
+_OBJC_IVAR_$_IBGBubbleCell._loadingView
+_OBJC_IVAR_$_IBGBubbleCell._contentHandlerView
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/IBGBubbleCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/IBGBubbleCell.h
+-[IBGLoadingAttachmentView initWithFrame:]
+-[IBGLoadingAttachmentView layout]
+-[IBGLoadingAttachmentView setContent:]
+-[IBGLoadingAttachmentView loadingIndicator]
+-[IBGLoadingAttachmentView setLoadingIndicator:]
+-[IBGLoadingAttachmentView .cxx_destruct]
+_OBJC_IVAR_$_IBGLoadingAttachmentView._loadingIndicator
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGLoadingAttachmentView.m
+-[IBGTempCrash addAttachment:]
+-[IBGTempCrash attachmentsObjects]
+-[IBGTempCrash setAttachmentsObjects:]
+-[IBGTempCrash .cxx_destruct]
+_OBJC_IVAR_$_IBGTempCrash._attachmentsObjects
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Models/IBGTempCrash.m
++[IBGPushNotificationsManager getInstance]
+___42+[IBGPushNotificationsManager getInstance]_block_invoke
+-[IBGPushNotificationsManager initializationOperation]
+___54-[IBGPushNotificationsManager initializationOperation]_block_invoke
+-[IBGPushNotificationsManager dealloc]
+-[IBGPushNotificationsManager setEnabled:]
+-[IBGPushNotificationsManager enabled]
+-[IBGPushNotificationsManager isEnabledAndActive]
+-[IBGPushNotificationsManager setAPNToken:]
+-[IBGPushNotificationsManager handleReceivedRemoteNotification:]
++[IBGPushNotificationsManager deviceTokenFromData:]
+-[IBGPushNotificationsManager featureEnabled]
+-[IBGPushNotificationsManager addFeaturesKVO]
+-[IBGPushNotificationsManager removeFeaturesKVO]
+-[IBGPushNotificationsManager userCommunicationExist]
+-[IBGPushNotificationsManager APNSTokenExist]
+-[IBGPushNotificationsManager isIBGNotification:]
+-[IBGPushNotificationsManager handleNotification:]
+-[IBGPushNotificationsManager observeValueForKeyPath:ofObject:change:context:]
++[IBGPushNotificationsManager destroy]
+-[IBGPushNotificationsManager setInitializationOperation:]
+-[IBGPushNotificationsManager .cxx_destruct]
+_sharedManager
+_OBJC_IVAR_$_IBGPushNotificationsManager._initializationOperation
+___block_descriptor_tmp.368
+_OBJC_IVAR_$_IBGPushNotificationsManager._enabled
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Managers/IBGPushNotificationsManager.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Managers/IBGPushNotificationsManager.h
+_OSSwapInt32
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/libkern/arm/OSByteOrder.h
+__54-[IBGPushNotificationsManager initializationOperation]_block_invoke
+__42+[IBGPushNotificationsManager getInstance]_block_invoke
+-[IBGCrashAttachmentRequest initWithParameters:attachmentPath:reportID:delegate:]
+-[IBGCrashAttachmentRequest attachmentURL]
+-[IBGCrashAttachmentRequest setAttachmentURL:]
+-[IBGCrashAttachmentRequest .cxx_destruct]
+_OBJC_IVAR_$_IBGCrashAttachmentRequest._attachmentURL
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Server requests/IBGCrashAttachmentRequest.m
+-[IBGCrashLogRequest initWithCrashId:parameters:delegate:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Server requests/IBGCrashLogRequest.m
+-[IBGOutboundMessageActionCell initWithStyle:reuseIdentifier:]
+-[IBGOutboundMessageActionCell setContent:isSent:]
+-[IBGOutboundMessageActionCell actionMessageValue:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundMessageActionCell.m
+-[IBGCrashRequest initWithParameters:delegate:]
+-[IBGCrashRequest dataUrl]
+-[IBGCrashRequest setDataUrl:]
+-[IBGCrashRequest .cxx_destruct]
+_OBJC_IVAR_$_IBGCrashRequest._dataUrl
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Server requests/IBGCrashRequest.m
+-[IBGPromptItem initWithName:accessibilityIdentifier:image:hasNotification:handler:]
+-[IBGPromptItem accessibilityIdentifier]
+-[IBGPromptItem setAccessibilityIdentifier:]
+-[IBGPromptItem name]
+-[IBGPromptItem setName:]
+-[IBGPromptItem image]
+-[IBGPromptItem setImage:]
+-[IBGPromptItem hasNotification]
+-[IBGPromptItem setHasNotification:]
+-[IBGPromptItem handler]
+-[IBGPromptItem setHandler:]
+-[IBGPromptItem .cxx_destruct]
+_OBJC_IVAR_$_IBGPromptItem._accessibilityIdentifier
+_OBJC_IVAR_$_IBGPromptItem._name
+_OBJC_IVAR_$_IBGPromptItem._image
+_OBJC_IVAR_$_IBGPromptItem._hasNotification
+_OBJC_IVAR_$_IBGPromptItem._handler
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Models/IBGPromptItem.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Models/IBGPromptItem.h
++[IBGCrashManager getInstance]
+___30+[IBGCrashManager getInstance]_block_invoke
+-[IBGCrashManager init]
+-[IBGCrashManager initializationOperation]
+___42-[IBGCrashManager initializationOperation]_block_invoke
+-[IBGCrashManager handlePendingCrashesOperation]
+___48-[IBGCrashManager handlePendingCrashesOperation]_block_invoke
+___copy_helper_block_.544
+___destroy_helper_block_.545
+-[IBGCrashManager registerCrashCacheOperation]
+___46-[IBGCrashManager registerCrashCacheOperation]_block_invoke
+___46-[IBGCrashManager registerCrashCacheOperation]_block_invoke_2
+___copy_helper_block_.552
+___destroy_helper_block_.553
+___copy_helper_block_.557
+___destroy_helper_block_.558
+-[IBGCrashManager dealloc]
+-[IBGCrashManager observeValueForKeyPath:ofObject:change:context:]
+-[IBGCrashManager setIsTrackingCrashes:]
+-[IBGCrashManager initializeCrashReporterIfNeeded]
+_postCrashAction
+-[IBGCrashManager updateCrashReporterStatus]
+-[IBGCrashManager handlePendingCrashReportIfExists]
+-[IBGCrashManager crashFromTempCrash:]
+-[IBGCrashManager reportException:]
+___35-[IBGCrashManager reportException:]_block_invoke
+___copy_helper_block_.640
+___destroy_helper_block_.641
+___35-[IBGCrashManager reportException:]_block_invoke.643
+-[IBGCrashManager reportError:]
+-[IBGCrashManager assignUserInfoInsideUserData:]
+-[IBGCrashManager exceptionFromError:]
+-[IBGCrashManager sendExceptionAsCrash:withSnapshot:]
+___53-[IBGCrashManager sendExceptionAsCrash:withSnapshot:]_block_invoke
+___copy_helper_block_.687
+___destroy_helper_block_.688
+-[IBGCrashManager assignCrashData:toCrash:shouldExculdeInstabug:]
+-[IBGCrashManager sendCrash:data:]
+-[IBGCrashManager getCrashReportWithData:]
++[IBGCrashManager crashModelInstanceWithSnapshot:Handled:]
++[IBGCrashManager crashRequestCreator]
+-[IBGCrashManager removeFeaturesKVO]
+-[IBGCrashManager addFeaturesKVO]
++[IBGCrashManager addVideoRecordingIfEnabledToCrash:]
++[IBGCrashManager postCrashHandler]
+___35+[IBGCrashManager postCrashHandler]_block_invoke
++[IBGCrashManager destroy]
+-[IBGCrashManager setInitializationOperation:]
+-[IBGCrashManager setHandlePendingCrashesOperation:]
+-[IBGCrashManager setRegisterCrashCacheOperation:]
+-[IBGCrashManager crashReporter]
+-[IBGCrashManager setCrashReporter:]
+-[IBGCrashManager isTrackingCrashes]
+-[IBGCrashManager crashManagerQueue]
+-[IBGCrashManager setCrashManagerQueue:]
+-[IBGCrashManager .cxx_destruct]
+_OBJC_IVAR_$_IBGCrashManager._initializationOperation
+___block_descriptor_tmp.539
+_OBJC_IVAR_$_IBGCrashManager._handlePendingCrashesOperation
+___block_descriptor_tmp.546
+_OBJC_IVAR_$_IBGCrashManager._registerCrashCacheOperation
+___block_descriptor_tmp.554
+_OBJC_IVAR_$_IBGCrashManager._isTrackingCrashes
+___block_descriptor_tmp.642
+___block_descriptor_tmp.689
+___block_descriptor_tmp.767
+___block_literal_global.768
+_OBJC_IVAR_$_IBGCrashManager._crashReporter
+_OBJC_IVAR_$_IBGCrashManager._crashManagerQueue
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Managers/IBGCrashManager.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Managers/IBGCrashManager.h
+__35+[IBGCrashManager postCrashHandler]_block_invoke
+__53-[IBGCrashManager sendExceptionAsCrash:withSnapshot:]_block_invoke
+__35-[IBGCrashManager reportException:]_block_invoke.643
+__35-[IBGCrashManager reportException:]_block_invoke
+postCrashAction
+__46-[IBGCrashManager registerCrashCacheOperation]_block_invoke_2
+__46-[IBGCrashManager registerCrashCacheOperation]_block_invoke
+__48-[IBGCrashManager handlePendingCrashesOperation]_block_invoke
+__42-[IBGCrashManager initializationOperation]_block_invoke
+__30+[IBGCrashManager getInstance]_block_invoke
+-[IBGPromptVC initWithController:]
+-[IBGPromptVC shouldAutorotateToInterfaceOrientation:]
+-[IBGPromptVC viewDidLoad]
+-[IBGPromptVC viewWillDisappear:]
+-[IBGPromptVC addPoweredByView]
+-[IBGPromptVC adjustPromptTableViewHeight]
+-[IBGPromptVC viewWillAppear:]
+-[IBGPromptVC shouldHideNotificationButton]
+-[IBGPromptVC getNotificationCount]
+-[IBGPromptVC handlePan:]
+___25-[IBGPromptVC handlePan:]_block_invoke
+-[IBGPromptVC isViewOffScreen:withDismissOffset:]
+-[IBGPromptVC topOfView:isLowerThanBottomOfSuperViewWithOffset:]
+-[IBGPromptVC bottomOfView:isHigherThanTopOfSuperViewWithOffset:]
+-[IBGPromptVC applyTheme]
+-[IBGPromptVC show]
+___19-[IBGPromptVC show]_block_invoke
+___copy_helper_block_.696
+___destroy_helper_block_.697
+___19-[IBGPromptVC show]_block_invoke.699
+___copy_helper_block_.702
+___destroy_helper_block_.703
+-[IBGPromptVC dismissPromptAutomatically]
+-[IBGPromptVC dismissAuto]
+-[IBGPromptVC touchesEnded:withEvent:]
+-[IBGPromptVC cancelButtonPressed:]
+-[IBGPromptVC dismiss]
+___22-[IBGPromptVC dismiss]_block_invoke
+___copy_helper_block_.726
+___destroy_helper_block_.727
+___22-[IBGPromptVC dismiss]_block_invoke.729
+___copy_helper_block_.732
+___destroy_helper_block_.733
+-[IBGPromptVC tableView:numberOfRowsInSection:]
+-[IBGPromptVC tableView:cellForRowAtIndexPath:]
+-[IBGPromptVC tableView:didSelectRowAtIndexPath:]
+-[IBGPromptVC tableView:heightForRowAtIndexPath:]
+-[IBGPromptVC configureCell:forIndexPath:]
+-[IBGPromptVC registerCells]
+-[IBGPromptVC getNameForIndex:]
+-[IBGPromptVC getImageForIndex:]
+-[IBGPromptVC getPromptCount]
+-[IBGPromptVC generatePromptArray]
+___34-[IBGPromptVC generatePromptArray]_block_invoke
+___copy_helper_block_.802
+___destroy_helper_block_.803
+___34-[IBGPromptVC generatePromptArray]_block_invoke.811
+___copy_helper_block_.814
+___destroy_helper_block_.815
+___34-[IBGPromptVC generatePromptArray]_block_invoke.819
+___copy_helper_block_.822
+___destroy_helper_block_.823
+-[IBGPromptVC invokedUIValue]
+-[IBGPromptVC controller]
+-[IBGPromptVC setController:]
+-[IBGPromptVC shadeView]
+-[IBGPromptVC setShadeView:]
+-[IBGPromptVC promptTableView]
+-[IBGPromptVC setPromptTableView:]
+-[IBGPromptVC promptView]
+-[IBGPromptVC setPromptView:]
+-[IBGPromptVC cancelButton]
+-[IBGPromptVC setCancelButton:]
+-[IBGPromptVC headerLabel]
+-[IBGPromptVC setHeaderLabel:]
+-[IBGPromptVC headerSepratorView]
+-[IBGPromptVC setHeaderSepratorView:]
+-[IBGPromptVC headerView]
+-[IBGPromptVC setHeaderView:]
+-[IBGPromptVC contentView]
+-[IBGPromptVC setContentView:]
+-[IBGPromptVC footerView]
+-[IBGPromptVC setFooterView:]
+-[IBGPromptVC panRecognizer]
+-[IBGPromptVC setPanRecognizer:]
+-[IBGPromptVC promptArray]
+-[IBGPromptVC setPromptArray:]
+-[IBGPromptVC footerViewTopConstraint]
+-[IBGPromptVC setFooterViewTopConstraint:]
+-[IBGPromptVC promptTableHeightConstraint]
+-[IBGPromptVC setPromptTableHeightConstraint:]
+-[IBGPromptVC whiteLabelViewHeight]
+-[IBGPromptVC setWhiteLabelViewHeight:]
+-[IBGPromptVC .cxx_destruct]
+_OBJC_IVAR_$_IBGPromptVC._controller
+___block_descriptor_tmp.698
+___block_descriptor_tmp.705
+___block_descriptor_tmp.728
+___block_descriptor_tmp.734
+___block_descriptor_tmp.804
+___block_descriptor_tmp.816
+___block_descriptor_tmp.824
+_OBJC_IVAR_$_IBGPromptVC._shadeView
+_OBJC_IVAR_$_IBGPromptVC._promptTableView
+_OBJC_IVAR_$_IBGPromptVC._promptView
+_OBJC_IVAR_$_IBGPromptVC._cancelButton
+_OBJC_IVAR_$_IBGPromptVC._headerLabel
+_OBJC_IVAR_$_IBGPromptVC._headerSepratorView
+_OBJC_IVAR_$_IBGPromptVC._headerView
+_OBJC_IVAR_$_IBGPromptVC._contentView
+_OBJC_IVAR_$_IBGPromptVC._footerView
+_OBJC_IVAR_$_IBGPromptVC._panRecognizer
+_OBJC_IVAR_$_IBGPromptVC._promptArray
+_OBJC_IVAR_$_IBGPromptVC._footerViewTopConstraint
+_OBJC_IVAR_$_IBGPromptVC._promptTableHeightConstraint
+_OBJC_IVAR_$_IBGPromptVC._whiteLabelViewHeight
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/View Controllers/IBGPromptVC.m
+__34-[IBGPromptVC generatePromptArray]_block_invoke.819
+__34-[IBGPromptVC generatePromptArray]_block_invoke.811
+__34-[IBGPromptVC generatePromptArray]_block_invoke
+__22-[IBGPromptVC dismiss]_block_invoke.729
+__22-[IBGPromptVC dismiss]_block_invoke
+__19-[IBGPromptVC show]_block_invoke.699
+__19-[IBGPromptVC show]_block_invoke
+__25-[IBGPromptVC handlePan:]_block_invoke
++[IBGCrashDefaults getInstance]
+___31+[IBGCrashDefaults getInstance]_block_invoke
+-[IBGCrashDefaults setLastCrashAt:]
+-[IBGCrashDefaults lastCrashAt]
+-[IBGCrashDefaults exceptionUserInfo]
+-[IBGCrashDefaults setExceptionUserInfo:]
+-[IBGCrashDefaults .cxx_destruct]
+_OBJC_IVAR_$_IBGCrashDefaults._exceptionUserInfo
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Defaults/IBGCrashDefaults.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Defaults/IBGCrashDefaults.h
+__31+[IBGCrashDefaults getInstance]_block_invoke
+-[IBGChatAttachmentRequestCreator logRequestWithId:parameters:delegate:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/Request Creator/IBGChatAttachmentRequestCreator.m
+-[IBGReportCategoriesVC initWithReportType:actionHandler:]
+-[IBGReportCategoriesVC viewDidLoad]
+-[IBGReportCategoriesVC adjustSeparatorHeight]
+-[IBGReportCategoriesVC registerNotifications]
+-[IBGReportCategoriesVC applyTheme]
+-[IBGReportCategoriesVC addPoweredByView]
+-[IBGReportCategoriesVC adjustDialogViewHeight]
+-[IBGReportCategoriesVC didReceiveMemoryWarning]
+-[IBGReportCategoriesVC handlePan:]
+___35-[IBGReportCategoriesVC handlePan:]_block_invoke
+-[IBGReportCategoriesVC isViewOffScreen:withDismissOffset:]
+-[IBGReportCategoriesVC topOfView:isLowerThanBottomOfSuperViewWithOffset:]
+-[IBGReportCategoriesVC bottomOfView:isHigherThanTopOfSuperViewWithOffset:]
+-[IBGReportCategoriesVC registerCells]
+-[IBGReportCategoriesVC tableView:numberOfRowsInSection:]
+-[IBGReportCategoriesVC tableView:cellForRowAtIndexPath:]
+-[IBGReportCategoriesVC tableView:didSelectRowAtIndexPath:]
+-[IBGReportCategoriesVC tableView:heightForRowAtIndexPath:]
+-[IBGReportCategoriesVC configureCell:forIndexPath:]
+-[IBGReportCategoriesVC getNameForIndex:]
+-[IBGReportCategoriesVC getAccessibilityIdentifierNameForIndex:]
+-[IBGReportCategoriesVC getImageForIndex:]
+-[IBGReportCategoriesVC getDialogCount]
+-[IBGReportCategoriesVC touchesEnded:withEvent:]
+-[IBGReportCategoriesVC cancelButtonPressed:]
+-[IBGReportCategoriesVC dismiss]
+___32-[IBGReportCategoriesVC dismiss]_block_invoke
+___copy_helper_block_.748
+___destroy_helper_block_.749
+___32-[IBGReportCategoriesVC dismiss]_block_invoke.751
+___copy_helper_block_.754
+___destroy_helper_block_.755
+-[IBGReportCategoriesVC unregisterNotifications]
+-[IBGReportCategoriesVC dealloc]
+-[IBGReportCategoriesVC controller]
+-[IBGReportCategoriesVC setController:]
+-[IBGReportCategoriesVC titleHeader]
+-[IBGReportCategoriesVC setTitleHeader:]
+-[IBGReportCategoriesVC shadeView]
+-[IBGReportCategoriesVC setShadeView:]
+-[IBGReportCategoriesVC dialogTableView]
+-[IBGReportCategoriesVC setDialogTableView:]
+-[IBGReportCategoriesVC headerLabel]
+-[IBGReportCategoriesVC setHeaderLabel:]
+-[IBGReportCategoriesVC contentView]
+-[IBGReportCategoriesVC setContentView:]
+-[IBGReportCategoriesVC footerView]
+-[IBGReportCategoriesVC setFooterView:]
+-[IBGReportCategoriesVC dialogView]
+-[IBGReportCategoriesVC setDialogView:]
+-[IBGReportCategoriesVC cancelButton]
+-[IBGReportCategoriesVC setCancelButton:]
+-[IBGReportCategoriesVC panRecognizer]
+-[IBGReportCategoriesVC setPanRecognizer:]
+-[IBGReportCategoriesVC sepratorViews]
+-[IBGReportCategoriesVC setSepratorViews:]
+-[IBGReportCategoriesVC dialogHeightConstraint]
+-[IBGReportCategoriesVC setDialogHeightConstraint:]
+-[IBGReportCategoriesVC footerViewTopConstraint]
+-[IBGReportCategoriesVC setFooterViewTopConstraint:]
+-[IBGReportCategoriesVC headerSeparatorHeightConstraint]
+-[IBGReportCategoriesVC setHeaderSeparatorHeightConstraint:]
+-[IBGReportCategoriesVC footerSeparatorHeightConstraint]
+-[IBGReportCategoriesVC setFooterSeparatorHeightConstraint:]
+-[IBGReportCategoriesVC .cxx_destruct]
+_OBJC_IVAR_$_IBGReportCategoriesVC._controller
+_OBJC_IVAR_$_IBGReportCategoriesVC._titleHeader
+___block_descriptor_tmp.750
+___block_descriptor_tmp.757
+_OBJC_IVAR_$_IBGReportCategoriesVC._shadeView
+_OBJC_IVAR_$_IBGReportCategoriesVC._dialogTableView
+_OBJC_IVAR_$_IBGReportCategoriesVC._headerLabel
+_OBJC_IVAR_$_IBGReportCategoriesVC._contentView
+_OBJC_IVAR_$_IBGReportCategoriesVC._footerView
+_OBJC_IVAR_$_IBGReportCategoriesVC._dialogView
+_OBJC_IVAR_$_IBGReportCategoriesVC._cancelButton
+_OBJC_IVAR_$_IBGReportCategoriesVC._panRecognizer
+_OBJC_IVAR_$_IBGReportCategoriesVC._sepratorViews
+_OBJC_IVAR_$_IBGReportCategoriesVC._dialogHeightConstraint
+_OBJC_IVAR_$_IBGReportCategoriesVC._footerViewTopConstraint
+_OBJC_IVAR_$_IBGReportCategoriesVC._headerSeparatorHeightConstraint
+_OBJC_IVAR_$_IBGReportCategoriesVC._footerSeparatorHeightConstraint
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/View Controllers/IBGReportCategoriesVC.m
+__32-[IBGReportCategoriesVC dismiss]_block_invoke.751
+__32-[IBGReportCategoriesVC dismiss]_block_invoke
+__35-[IBGReportCategoriesVC handlePan:]_block_invoke
+-[IBGUnnotifiedMessagesAlertWindow initWithDelegate:senderName:byline:]
+-[IBGUnnotifiedMessagesAlertWindow initWithDelegate:senderNames:numberOfMessages:]
+-[IBGUnnotifiedMessagesAlertWindow initWithDelegate:title:body:]
+-[IBGUnnotifiedMessagesAlertWindow addConstraints]
+-[IBGUnnotifiedMessagesAlertWindow swipeGesture]
+-[IBGUnnotifiedMessagesAlertWindow handelSwipeGesture:]
+-[IBGUnnotifiedMessagesAlertWindow show]
+-[IBGUnnotifiedMessagesAlertWindow hide]
+-[IBGUnnotifiedMessagesAlertWindow hideAnimated:]
+___49-[IBGUnnotifiedMessagesAlertWindow hideAnimated:]_block_invoke
+-[IBGUnnotifiedMessagesAlertWindow hideAndNotifyDelegate]
+-[IBGUnnotifiedMessagesAlertWindow animateIn]
+-[IBGUnnotifiedMessagesAlertWindow animateOutWithCompletion:]
+-[IBGUnnotifiedMessagesAlertWindow animatePositionWithCompletion:]
+___66-[IBGUnnotifiedMessagesAlertWindow animatePositionWithCompletion:]_block_invoke
+___copy_helper_block_.141
+___destroy_helper_block_.142
+-[IBGUnnotifiedMessagesAlertWindow updateAnnotationViewTopConstraint]
+-[IBGUnnotifiedMessagesAlertWindow didFinishOrientation]
+-[IBGUnnotifiedMessagesAlertWindow setAvatar:]
+-[IBGUnnotifiedMessagesAlertWindow didClickView:]
+-[IBGUnnotifiedMessagesAlertWindow dealloc]
+-[IBGUnnotifiedMessagesAlertWindow hitTest:withEvent:]
+-[IBGUnnotifiedMessagesAlertWindow buttonDelegate]
+-[IBGUnnotifiedMessagesAlertWindow setButtonDelegate:]
+-[IBGUnnotifiedMessagesAlertWindow unnotifiedMessagesAlertView]
+-[IBGUnnotifiedMessagesAlertWindow setUnnotifiedMessagesAlertView:]
+-[IBGUnnotifiedMessagesAlertWindow top]
+-[IBGUnnotifiedMessagesAlertWindow setTop:]
+-[IBGUnnotifiedMessagesAlertWindow setSwipeGesture:]
+-[IBGUnnotifiedMessagesAlertWindow annotationTopCosntraint]
+-[IBGUnnotifiedMessagesAlertWindow setAnnotationTopCosntraint:]
+-[IBGUnnotifiedMessagesAlertWindow .cxx_destruct]
+_OBJC_IVAR_$_IBGUnnotifiedMessagesAlertWindow._swipeGesture
+___block_descriptor_tmp.144
+_OBJC_IVAR_$_IBGUnnotifiedMessagesAlertWindow._buttonDelegate
+_OBJC_IVAR_$_IBGUnnotifiedMessagesAlertWindow._unnotifiedMessagesAlertView
+_OBJC_IVAR_$_IBGUnnotifiedMessagesAlertWindow._top
+_OBJC_IVAR_$_IBGUnnotifiedMessagesAlertWindow._annotationTopCosntraint
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Window/IBGUnnotifiedMessagesAlertWindow.m
+__66-[IBGUnnotifiedMessagesAlertWindow animatePositionWithCompletion:]_block_invoke
+__49-[IBGUnnotifiedMessagesAlertWindow hideAnimated:]_block_invoke
++[IBGChatsDefaults getInstance]
+___31+[IBGChatsDefaults getInstance]_block_invoke
+-[IBGChatsDefaults init]
+-[IBGChatsDefaults setLastChatAt:]
+-[IBGChatsDefaults lastChatAt]
+-[IBGChatsDefaults chatNotificationEnabled]
+-[IBGChatsDefaults setChatNotificationEnabled:]
+_OBJC_IVAR_$_IBGChatsDefaults._chatNotificationEnabled
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Defaults/IBGChatsDefaults.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Defaults/IBGChatsDefaults.h
+__31+[IBGChatsDefaults getInstance]_block_invoke
+-[IBGBugCache cacheDiskPath]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Caching/IBGBugCache.m
+-[IBGUnnotifiedMessagesAlertView initWithTitle:body:]
+-[IBGUnnotifiedMessagesAlertView init]
+-[IBGUnnotifiedMessagesAlertView awakeFromNib]
+-[IBGUnnotifiedMessagesAlertView setAvatar:]
+-[IBGUnnotifiedMessagesAlertView applyTheme]
+-[IBGUnnotifiedMessagesAlertView addTouchUpInsideEventTarget:selector:]
+-[IBGUnnotifiedMessagesAlertView pointInside:withEvent:]
+-[IBGUnnotifiedMessagesAlertView avatarView]
+-[IBGUnnotifiedMessagesAlertView setAvatarView:]
+-[IBGUnnotifiedMessagesAlertView avatarImageView]
+-[IBGUnnotifiedMessagesAlertView setAvatarImageView:]
+-[IBGUnnotifiedMessagesAlertView nameLabel]
+-[IBGUnnotifiedMessagesAlertView setNameLabel:]
+-[IBGUnnotifiedMessagesAlertView bylineLabel]
+-[IBGUnnotifiedMessagesAlertView setBylineLabel:]
+-[IBGUnnotifiedMessagesAlertView disclosure]
+-[IBGUnnotifiedMessagesAlertView setDisclosure:]
+-[IBGUnnotifiedMessagesAlertView .cxx_destruct]
+___clang_at_available_requires_core_foundation_framework
+_OBJC_IVAR_$_IBGUnnotifiedMessagesAlertView._avatarView
+_OBJC_IVAR_$_IBGUnnotifiedMessagesAlertView._avatarImageView
+_OBJC_IVAR_$_IBGUnnotifiedMessagesAlertView._nameLabel
+_OBJC_IVAR_$_IBGUnnotifiedMessagesAlertView._bylineLabel
+_OBJC_IVAR_$_IBGUnnotifiedMessagesAlertView._disclosure
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGUnnotifiedMessagesAlertView.m
++[IBGChatMigrationManager getInstance]
+___38+[IBGChatMigrationManager getInstance]_block_invoke
+-[IBGChatMigrationManager initializationOperation]
+___50-[IBGChatMigrationManager initializationOperation]_block_invoke
+-[IBGChatMigrationManager currentVersion]
+-[IBGChatMigrationManager migrationNames]
+-[IBGChatMigrationManager versionMigrationsRanUntil]
+-[IBGChatMigrationManager updateManagerVersioningIfNeeded]
+-[IBGChatMigrationManager setInitializationOperation:]
+-[IBGChatMigrationManager .cxx_destruct]
+_OBJC_IVAR_$_IBGChatMigrationManager._initializationOperation
+___block_descriptor_tmp.9
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Managers/IBGChatMigrationManager.m
+-[IBGMigrationManager setInitializationOperation:]
+__50-[IBGChatMigrationManager initializationOperation]_block_invoke
+__38+[IBGChatMigrationManager getInstance]_block_invoke
+-[IBGChatListPresenter initWithShouldDisplayPrimary:shouldDisimssOnCancel:]
+-[IBGChatListPresenter initalize]
+-[IBGChatListPresenter updateUI]
+-[IBGChatListPresenter scrollToSelectedChat]
+-[IBGChatListPresenter viewDidAppear]
+-[IBGChatListPresenter viewDidDisappear]
+-[IBGChatListPresenter addNewChat]
+___34-[IBGChatListPresenter addNewChat]_block_invoke
+-[IBGChatListPresenter didSelectChatAtIndexPath:]
+___49-[IBGChatListPresenter didSelectChatAtIndexPath:]_block_invoke
+___copy_helper_block_.558
+___destroy_helper_block_.559
+-[IBGChatListPresenter closePressed]
+-[IBGChatListPresenter splitViewController:collapseSecondaryViewController:ontoPrimaryViewController:]
+-[IBGChatListPresenter tableView:numberOfRowsInSection:]
+-[IBGChatListPresenter tableView:cellForRowAtIndexPath:]
+-[IBGChatListPresenter fetchAvatars]
+-[IBGChatListPresenter fetchedAsset:ofURL:isSuccess:]
+___53-[IBGChatListPresenter fetchedAsset:ofURL:isSuccess:]_block_invoke
+___copy_helper_block_.642
+___destroy_helper_block_.643
+-[IBGChatListPresenter setInteractor:]
+-[IBGChatListPresenter chatAtIndexPath:]
+-[IBGChatListPresenter shouldShowNewChatCell]
+-[IBGChatListPresenter dealloc]
+-[IBGChatListPresenter view]
+-[IBGChatListPresenter setView:]
+-[IBGChatListPresenter interactor]
+-[IBGChatListPresenter shouldDisplayPrimary]
+-[IBGChatListPresenter setShouldDisplayPrimary:]
+-[IBGChatListPresenter shouldDismissOnCancel]
+-[IBGChatListPresenter setShouldDismissOnCancel:]
+-[IBGChatListPresenter .cxx_destruct]
+___block_descriptor_tmp.560
+___block_descriptor_tmp.644
+_OBJC_IVAR_$_IBGChatListPresenter._interactor
+_OBJC_IVAR_$_IBGChatListPresenter._view
+_OBJC_IVAR_$_IBGChatListPresenter._shouldDisplayPrimary
+_OBJC_IVAR_$_IBGChatListPresenter._shouldDismissOnCancel
+l_OBJC_PROTOCOL_$_UISplitViewControllerDelegate
+l_OBJC_LABEL_PROTOCOL_$_UISplitViewControllerDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Presenters/IBGChatListPresenter.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Presenters/IBGChatListPresenter.h
+__53-[IBGChatListPresenter fetchedAsset:ofURL:isSuccess:]_block_invoke
+__49-[IBGChatListPresenter didSelectChatAtIndexPath:]_block_invoke
+__34-[IBGChatListPresenter addNewChat]_block_invoke
+-[IBGChatCache init]
+-[IBGChatCache cacheDiskPath]
+-[IBGChatCache append:]
+-[IBGChatCache unreadMessagesCount]
+-[IBGChatCache messageCount]
+-[IBGChatCache replaceCachedMessagesWith:]
+-[IBGChatCache merge:]
+-[IBGChatCache appendCacheWithMessages:]
+-[IBGChatCache contains:]
+-[IBGChatCache clearCache]
+-[IBGChatCache remove:]
+-[IBGChatCache getToBeNotifiedMessages:]
+-[IBGChatCache chatWithID:]
+-[IBGChatCache messageWithID:andChatID:]
+-[IBGChatCache chats]
+-[IBGChatCache sortedChatsFromChats:]
+___37-[IBGChatCache sortedChatsFromChats:]_block_invoke
+-[IBGChatCache sortedMessages:]
+___31-[IBGChatCache sortedMessages:]_block_invoke
+-[IBGChatCache lastSyncedMessage]
+-[IBGChatCache getAllMessages]
+-[IBGChatCache addChatsToIgnoreList:]
+-[IBGChatCache removeChatsFromIgnoreList:]
+-[IBGChatCache createRemoteChats:]
+-[IBGChatCache newOrExistingChatWithID:inRemoteChats:]
+-[IBGChatCache getChatWithID:]
+-[IBGChatCache newOrExistingChatWithID:]
+-[IBGChatCache registerChangeObserver:]
+-[IBGChatCache unregisterChangeObserver:]
+-[IBGChatCache didAddMessagesNotification]
+-[IBGChatCache broadcastAddedMessages:]
+-[IBGChatCache broadcastChatCacheChanged]
+___41-[IBGChatCache broadcastChatCacheChanged]_block_invoke
+-[IBGChatCache unpersistAll]
+-[IBGChatCache chatsToIgnore]
+-[IBGChatCache setChatsToIgnore:]
+-[IBGChatCache onlyToBeSentModels]
+-[IBGChatCache setOnlyToBeSentModels:]
+-[IBGChatCache cachedModels]
+-[IBGChatCache setCachedModels:]
+-[IBGChatCache chatChangeObservers]
+-[IBGChatCache setChatChangeObservers:]
+-[IBGChatCache lock]
+-[IBGChatCache setLock:]
+-[IBGChatCache .cxx_destruct]
+___block_descriptor_tmp.450
+___block_literal_global.451
+___block_descriptor_tmp.489
+_OBJC_IVAR_$_IBGChatCache._chatsToIgnore
+_OBJC_IVAR_$_IBGChatCache._onlyToBeSentModels
+_OBJC_IVAR_$_IBGChatCache._cachedModels
+_OBJC_IVAR_$_IBGChatCache._chatChangeObservers
+_OBJC_IVAR_$_IBGChatCache._lock
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Caching/IBGChatCache.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Caching/IBGChatCache.h
+__41-[IBGChatCache broadcastChatCacheChanged]_block_invoke
+__31-[IBGChatCache sortedMessages:]_block_invoke
+__37-[IBGChatCache sortedChatsFromChats:]_block_invoke
++[InstabugBugReporting sharedInstance]
+___38+[InstabugBugReporting sharedInstance]_block_invoke
+-[InstabugBugReporting initializationOperations]
+___48-[InstabugBugReporting initializationOperations]_block_invoke
+___48-[InstabugBugReporting initializationOperations]_block_invoke_2
+___copy_helper_block_.536
+___destroy_helper_block_.537
++[InstabugBugReporting setShowEmailField:]
++[InstabugBugReporting setWillSkipScreenshotAnnotation:]
++[InstabugBugReporting setEmailFieldRequired:]
++[InstabugBugReporting setCommentFieldRequired:]
++[InstabugBugReporting setPostSendingDialogEnabled:]
++[InstabugBugReporting setScreenshotCapturingHandler:]
++[InstabugBugReporting setAttachmentTypesEnabledScreenShot:extraScreenShot:galleryImage:voiceNote:screenRecording:]
++[InstabugBugReporting setReportCategoriesWithTitles:iconNames:]
++[InstabugBugReporting setViewHierarchyEnabled:]
++[InstabugBugReporting reportBugWithEmail:comment:screenshot:]
++[InstabugBugReporting reportFeedBackWithEmail:comment:screenshot:]
++[InstabugBugReporting destroy]
+-[InstabugBugReporting initializationOperation]
+-[InstabugBugReporting setInitializationOperation:]
+-[InstabugBugReporting .cxx_destruct]
+_OBJC_IVAR_$_InstabugBugReporting._initializationOperation
+___block_descriptor_tmp.532
+___block_descriptor_tmp.538
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/InstabugBugReporting.m
+__48-[InstabugBugReporting initializationOperations]_block_invoke_2
+__48-[InstabugBugReporting initializationOperations]_block_invoke
+__38+[InstabugBugReporting sharedInstance]_block_invoke
+-[IBGDiffEngine diffBetweenObjects:newObjects:]
+-[IBGDiffEngine createDictionaryFromDiffableArray:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Diff Engine/IBGDiffEngine.m
+-[IBGChatNavigationController viewDidLoad]
+-[IBGChatNavigationController viewWillAppear:]
+-[IBGChatNavigationController preferredStatusBarStyle]
+-[IBGChatNavigationController gestureRecognizerShouldBegin:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/View Controllers/IBGChatNavigationController.m
+-[IBGCrashAttachmentRequestCreator logRequestWithId:parameters:delegate:]
+-[IBGCrashAttachmentRequestCreator reportAttachmentRequestWithParameters:attachmentPath:reportId:localAttachment:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Server requests/RequestCreator/IBGCrashAttachmentRequestCreator.m
+-[IBGSyncRequest initWithDelegate:numberOfmessages:readMessagesReceipts:lastMessageDate:]
+-[IBGSyncRequest executeNow]
+-[IBGSyncRequest serverExecutionDone:statusCode:error:response:]
+-[IBGSyncRequest isExecuting]
+-[IBGSyncRequest setIsExecuting:]
+-[IBGSyncRequest failures]
+-[IBGSyncRequest delegate]
+-[IBGSyncRequest setDelegate:]
+-[IBGSyncRequest dataRequest]
+-[IBGSyncRequest setDataRequest:]
+-[IBGSyncRequest numberOfMessages]
+-[IBGSyncRequest setNumberOfMessages:]
+-[IBGSyncRequest readMessagesReceipts]
+-[IBGSyncRequest setReadMessagesReceipts:]
+-[IBGSyncRequest lastMessageDate]
+-[IBGSyncRequest setLastMessageDate:]
+-[IBGSyncRequest isSuccess]
+-[IBGSyncRequest setIsSuccess:]
+-[IBGSyncRequest UUID]
+-[IBGSyncRequest setUUID:]
+-[IBGSyncRequest .cxx_destruct]
+_OBJC_IVAR_$_IBGSyncRequest._failures
+_OBJC_IVAR_$_IBGSyncRequest._isExecuting
+_OBJC_IVAR_$_IBGSyncRequest._delegate
+_OBJC_IVAR_$_IBGSyncRequest._dataRequest
+_OBJC_IVAR_$_IBGSyncRequest._numberOfMessages
+_OBJC_IVAR_$_IBGSyncRequest._readMessagesReceipts
+_OBJC_IVAR_$_IBGSyncRequest._lastMessageDate
+_OBJC_IVAR_$_IBGSyncRequest._isSuccess
+_OBJC_IVAR_$_IBGSyncRequest._UUID
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/IBGSyncRequest.m
+-[IBGChatsLogRequest initWithChatId:parameters:delegate:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/IBGChatsLogRequest.m
+-[IBGChatListInteractor initSelectedChat:]
+-[IBGChatListInteractor loadChats]
+-[IBGChatListInteractor createNewChat]
+-[IBGChatListInteractor chatAtIndex:]
+-[IBGChatListInteractor isChatListEmpty]
+-[IBGChatListInteractor chatsCount]
+-[IBGChatListInteractor isSelectedNew]
+-[IBGChatListInteractor chatsWithoutAvatars]
+-[IBGChatListInteractor chatsWithAvatarURL:]
+-[IBGChatListInteractor indexOfSelectedChat]
+-[IBGChatListInteractor ignoreCurrentChats]
+-[IBGChatListInteractor stopIgnoringCurrentChats]
+-[IBGChatListInteractor didAddNewMessage]
+-[IBGChatListInteractor chatCacheDidChange]
+-[IBGChatListInteractor dealloc]
+-[IBGChatListInteractor chatsExceptSelected]
+-[IBGChatListInteractor fetchChats]
+___35-[IBGChatListInteractor fetchChats]_block_invoke
+-[IBGChatListInteractor ignoreChatsFromNotiifcations:]
+-[IBGChatListInteractor removeChatsFromIgnoreList:]
+-[IBGChatListInteractor presenter]
+-[IBGChatListInteractor setPresenter:]
+-[IBGChatListInteractor selectedChat]
+-[IBGChatListInteractor setSelectedChat:]
+-[IBGChatListInteractor chats]
+-[IBGChatListInteractor setChats:]
+-[IBGChatListInteractor .cxx_destruct]
+_OBJC_IVAR_$_IBGChatListInteractor._presenter
+_OBJC_IVAR_$_IBGChatListInteractor._selectedChat
+_OBJC_IVAR_$_IBGChatListInteractor._chats
+l_OBJC_PROTOCOL_$_IBGChatObserver
+l_OBJC_LABEL_PROTOCOL_$_IBGChatObserver
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Interactors/IBGChatListInteractor.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Interactors/IBGChatListInteractor.h
+__35-[IBGChatListInteractor fetchChats]_block_invoke
+-[IBGExtraFieldController initWithSendController:]
+-[IBGExtraFieldController reportType]
+-[IBGExtraFieldController sendBug]
+-[IBGExtraFieldController extraFieldsCount]
+-[IBGExtraFieldController extraFieldTitleForIndex:]
+-[IBGExtraFieldController extraFieldValueForIndex:]
+-[IBGExtraFieldController setExtraFieldValue:forIndex:]
+-[IBGExtraFieldController isExtraFieldRequiredAtIndex:]
+-[IBGExtraFieldController isAllRequiredExtraFieldFilled]
+-[IBGExtraFieldController setTextAlignement:withIndexPath:]
+-[IBGExtraFieldController textAlignmentWithIndex:]
+-[IBGExtraFieldController firstRequiredExtraFieldTitle]
+-[IBGExtraFieldController extraFields]
+-[IBGExtraFieldController setExtraFields:]
+-[IBGExtraFieldController sendController]
+-[IBGExtraFieldController setSendController:]
+-[IBGExtraFieldController textAlignment]
+-[IBGExtraFieldController setTextAlignment:]
+-[IBGExtraFieldController .cxx_destruct]
+_OBJC_IVAR_$_IBGExtraFieldController._extraFields
+_OBJC_IVAR_$_IBGExtraFieldController._sendController
+_OBJC_IVAR_$_IBGExtraFieldController._textAlignment
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Controllers/IBGExtraFieldController.m
+-[IBGBugAttachmentRequest initWithParameters:attachmentPath:reportID:delegate:]
+-[IBGBugAttachmentRequest attachmentURL]
+-[IBGBugAttachmentRequest setAttachmentURL:]
+-[IBGBugAttachmentRequest .cxx_destruct]
+_OBJC_IVAR_$_IBGBugAttachmentRequest._attachmentURL
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/ServerRequests/IBGBugAttachmentRequest.m
+-[IBGBugController initWithSnapshot:]
+-[IBGBugController hasExtraReportFields]
+-[IBGBugController attachments]
+-[IBGBugController attachedObjects]
+-[IBGBugController addAttachedObject:]
+-[IBGBugController removeAttachment:]
+-[IBGBugController replaceAttachment:withAttachment:]
+-[IBGBugController attachmentsCount]
+-[IBGBugController clearAttachments]
+-[IBGBugController createBug]
+-[IBGBugController submitPressed]
+-[IBGBugController sendingControllerWithEmail:comment:reportType:]
+-[IBGBugController cancelPressed]
+-[IBGBugController addExtraAttachmentPressed]
+-[IBGBugController isValidEmail:]
+-[IBGBugController isValidComment:]
+-[IBGBugController nextTappedInScreenshotView:]
+-[IBGBugController cancelPressedInScreenshotView:]
+-[IBGBugController delegate]
+-[IBGBugController setDelegate:]
+-[IBGBugController snapshot]
+-[IBGBugController setSnapshot:]
+-[IBGBugController snapshotHeadNode]
+-[IBGBugController setSnapshotHeadNode:]
+-[IBGBugController sendingBugController]
+-[IBGBugController setSendingBugController:]
+-[IBGBugController shouldInterruptViewHierarchy]
+-[IBGBugController setShouldInterruptViewHierarchy:]
+-[IBGBugController setAttachments:]
+-[IBGBugController numberOfAttachmentsAdded]
+-[IBGBugController setNumberOfAttachmentsAdded:]
+-[IBGBugController .cxx_destruct]
+_OBJC_IVAR_$_IBGBugController._attachments
+_OBJC_IVAR_$_IBGBugController._delegate
+_OBJC_IVAR_$_IBGBugController._snapshot
+_OBJC_IVAR_$_IBGBugController._snapshotHeadNode
+_OBJC_IVAR_$_IBGBugController._sendingBugController
+_OBJC_IVAR_$_IBGBugController._shouldInterruptViewHierarchy
+_OBJC_IVAR_$_IBGBugController._numberOfAttachmentsAdded
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Controllers/IBGBugController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Controllers/IBGBugController.h
+-[IBGChatPresenter initWithShouldDismissSDKOnCancel:shouldDismissViewOnly:]
+-[IBGChatPresenter intialize]
+-[IBGChatPresenter didDisplayIndexPath:]
+-[IBGChatPresenter didTapOnSendWithReplyText:]
+-[IBGChatPresenter didTapOnVoiceNote]
+-[IBGChatPresenter didTapOnVideoButton]
+-[IBGChatPresenter didTapOnScreenshot]
+-[IBGChatPresenter didTapOnImage]
+-[IBGChatPresenter didTapOnMessageAtIndex:]
+-[IBGChatPresenter didTapOnClose]
+-[IBGChatPresenter processDiff:]
+___32-[IBGChatPresenter processDiff:]_block_invoke
+-[IBGChatPresenter heightForHeaderForSectionAtIndex:]
+-[IBGChatPresenter headerForSectionAtIndex:]
+-[IBGChatPresenter numberOfSectionsInTableView:]
+-[IBGChatPresenter tableView:numberOfRowsInSection:]
+-[IBGChatPresenter tableView:cellForRowAtIndexPath:]
+-[IBGChatPresenter dismissedWithScreenshotImage:error:]
+-[IBGChatPresenter dismissedWithGallaryImage:error:]
+-[IBGChatPresenter dismissedWithAudio:error:]
+-[IBGChatPresenter dismissedWithVideo:error:]
+-[IBGChatPresenter nextTappedInScreenshotView:]
+-[IBGChatPresenter cancelPressedInScreenshotView:]
+-[IBGChatPresenter dismissedWithImage:]
+-[IBGChatPresenter cellIdentifierForIndexPath:toContent:]
+-[IBGChatPresenter configureCell:forIndexPath:withContent:]
+-[IBGChatPresenter cellModeForContent:]
+-[IBGChatPresenter analyticsLogEventFromCellType:]
+-[IBGChatPresenter attachmentController]
+-[IBGChatPresenter setInteractor:]
+-[IBGChatPresenter dealloc]
+-[IBGChatPresenter view]
+-[IBGChatPresenter setView:]
+-[IBGChatPresenter interactor]
+-[IBGChatPresenter setAttachmentController:]
+-[IBGChatPresenter shouldDismissSDKOnCancel]
+-[IBGChatPresenter setShouldDismissSDKOnCancel:]
+-[IBGChatPresenter shouldDismissViewOnly]
+-[IBGChatPresenter setShouldDismissViewOnly:]
+-[IBGChatPresenter isLoadingNextPage]
+-[IBGChatPresenter setIsLoadingNextPage:]
+-[IBGChatPresenter hasFinishedFirstLoad]
+-[IBGChatPresenter setHasFinishedFirstLoad:]
+-[IBGChatPresenter .cxx_destruct]
+_OBJC_IVAR_$_IBGChatPresenter._attachmentController
+_OBJC_IVAR_$_IBGChatPresenter._interactor
+_OBJC_IVAR_$_IBGChatPresenter._view
+_OBJC_IVAR_$_IBGChatPresenter._shouldDismissSDKOnCancel
+_OBJC_IVAR_$_IBGChatPresenter._shouldDismissViewOnly
+_OBJC_IVAR_$_IBGChatPresenter._isLoadingNextPage
+_OBJC_IVAR_$_IBGChatPresenter._hasFinishedFirstLoad
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Presenters/IBGChatPresenter.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Presenters/IBGChatPresenter.h
+__32-[IBGChatPresenter processDiff:]_block_invoke
++[IBGChatsDataStore getInstance]
+___32+[IBGChatsDataStore getInstance]_block_invoke
+-[IBGChatsDataStore init]
+-[IBGChatsDataStore onNewMessageHandler]
+-[IBGChatsDataStore setOnNewMessageHandler:]
+-[IBGChatsDataStore .cxx_destruct]
+_OBJC_IVAR_$_IBGChatsDataStore._onNewMessageHandler
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Defaults/IBGChatsDataStore.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Defaults/IBGChatsDataStore.h
+__32+[IBGChatsDataStore getInstance]_block_invoke
+-[IBGMessagesView init]
+-[IBGMessagesView awakeFromNib]
+-[IBGMessagesView registerCells]
+-[IBGMessagesView registerNotifications]
+-[IBGMessagesView applyTheme]
+-[IBGMessagesView setDataSource:]
+-[IBGMessagesView setDelegate:]
+-[IBGMessagesView cellAtIndexPath:]
+-[IBGMessagesView offsetForNavigationBar:]
+-[IBGMessagesView updateChatTableViewScrollViewWithOffset:]
+-[IBGMessagesView initialLoad]
+-[IBGMessagesView updateWithBlock:]
+-[IBGMessagesView scrollToBottom]
+-[IBGMessagesView keyboardWillShow:]
+___36-[IBGMessagesView keyboardWillShow:]_block_invoke
+-[IBGMessagesView dealloc]
+-[IBGMessagesView messagesTableView]
+-[IBGMessagesView setMessagesTableView:]
+-[IBGMessagesView messageCellIdentifier]
+-[IBGMessagesView setMessageCellIdentifier:]
+-[IBGMessagesView message]
+-[IBGMessagesView setMessage:]
+-[IBGMessagesView firstTimeShowKeyboard]
+-[IBGMessagesView setFirstTimeShowKeyboard:]
+-[IBGMessagesView .cxx_destruct]
+_OBJC_IVAR_$_IBGMessagesView._messagesTableView
+_OBJC_IVAR_$_IBGMessagesView._messageCellIdentifier
+_OBJC_IVAR_$_IBGMessagesView._message
+_OBJC_IVAR_$_IBGMessagesView._firstTimeShowKeyboard
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGMessagesView.m
+__36-[IBGMessagesView keyboardWillShow:]_block_invoke
+_surveyIconBlock_block_invoke
++[IBGSurveysIcons imageWithName:color:flippedForRTLLayoutDirection:]
++[IBGSurveysIcons imageWithName:color:size:flippedForRTLLayoutDirection:]
++[IBGSurveysIcons convertStringToBlock:]
+_fillColor
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysIcons.m
+surveyIconBlock_block_invoke
+-[IBGReportCategoriesController initWithReportType:andActionHandler:]
+-[IBGReportCategoriesController createItemsWithActionHandler:]
+-[IBGReportCategoriesController dialogSelectedAtIndexPath:]
+-[IBGReportCategoriesController itemNameAtIndex:]
+-[IBGReportCategoriesController itemAccessibilityIdentifierAtIndex:]
+-[IBGReportCategoriesController itemImageAtIndex:]
+-[IBGReportCategoriesController itemsCount]
+-[IBGReportCategoriesController cancelButtonPressed]
+-[IBGReportCategoriesController addTagFromItemWithIndex:]
+-[IBGReportCategoriesController dialogVC]
+-[IBGReportCategoriesController setDialogVC:]
+-[IBGReportCategoriesController reportType]
+-[IBGReportCategoriesController setReportType:]
+-[IBGReportCategoriesController items]
+-[IBGReportCategoriesController setItems:]
+-[IBGReportCategoriesController type]
+-[IBGReportCategoriesController setType:]
+-[IBGReportCategoriesController .cxx_destruct]
+_OBJC_IVAR_$_IBGReportCategoriesController._dialogVC
+_OBJC_IVAR_$_IBGReportCategoriesController._reportType
+_OBJC_IVAR_$_IBGReportCategoriesController._items
+_OBJC_IVAR_$_IBGReportCategoriesController._type
+l_OBJC_PROTOCOL_$_IBGReportCategoriesVCDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGReportCategoriesVCDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Controllers/IBGReportCategoriesController.m
+-[IBGInboundVoiceNoteCell initWithStyle:reuseIdentifier:]
+-[IBGInboundVoiceNoteCell setContent:isSent:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundVoiceNoteCell.m
+-[IBGInboundLoadingCell initWithStyle:reuseIdentifier:]
+-[IBGInboundLoadingCell setContent:isSent:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundLoadingCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugI/Instabug+InstabugTestPrivate.m
++[Instabug afterInitializationQueue]
+___36+[Instabug afterInitializationQueue]_block_invoke
++[Instabug startWithToken:invocationEvent:]
++[Instabug intializeSDKStack]
+___29+[Instabug intializeSDKStack]_block_invoke
+___29+[Instabug intializeSDKStack]_block_invoke_2
++[Instabug prepareDependencies]
++[Instabug setFileAttachment:]
++[Instabug setFileAttachmentWithURL:]
++[Instabug addFileAttachmentWithURL:]
++[Instabug addFileAttachmentWithData:]
++[Instabug clearFileAttachments]
++[Instabug setUserData:]
+___24+[Instabug setUserData:]_block_invoke
+___copy_helper_block_.657
+___destroy_helper_block_.658
++[Instabug setUserStepsEnabled:]
++[Instabug setNetworkLoggingEnabled:]
++[Instabug setNetworkLoggingFilterPredicate:]
++[Instabug setNetworkLoggingRequestFilterPredicate:responseFilterPredicate:]
++[Instabug enableLoggingForURLSessionConfiguration:]
++[Instabug logHTTPBody:forRequest:]
++[Instabug setNetworkLoggingURLObfuscationHandler:]
++[Instabug setNetworkLogRequestObfuscationHandler:]
++[Instabug setNetworkLogResponseObfuscationHandler:]
++[Instabug setProgressHandlerForRequestURL:progressHandler:]
++[Instabug setCanAuthenticateAgainstProtectionSpaceHandler:]
++[Instabug setDidReceiveAuthenticationChallengeHandler:]
++[Instabug logUserEventWithName:params:]
+___40+[Instabug logUserEventWithName:params:]_block_invoke
+___copy_helper_block_.705
+___destroy_helper_block_.706
++[Instabug logUserEventWithName:]
+___33+[Instabug logUserEventWithName:]_block_invoke
+___copy_helper_block_.708
+___destroy_helper_block_.709
++[Instabug setAutoScreenRecordingEnabled:]
++[Instabug setAutoScreenRecordingDuration:]
++[Instabug setCrashReportingEnabled:]
++[Instabug setOnNewMessageHandler:]
++[Instabug setInAppConversationsEnabled:]
++[Instabug setPreSendingBlock:]
++[Instabug setPreSendingHandler:]
++[Instabug setPreInvocationBlock:]
++[Instabug setPreInvocationHandler:]
++[Instabug setPostInvocationBlock:]
+___35+[Instabug setPostInvocationBlock:]_block_invoke
+___copy_helper_block_.733
+___destroy_helper_block_.734
++[Instabug setPostInvocationHandler:]
++[Instabug setDidSelectPromptOptionHandler:]
++[Instabug showIntroMessage]
++[Instabug setWillTakeScreenshot:]
++[Instabug identifyUserWithEmail:name:]
+___39+[Instabug identifyUserWithEmail:name:]_block_invoke
+___copy_helper_block_.751
+___destroy_helper_block_.752
++[Instabug logOut]
+___18+[Instabug logOut]_block_invoke
++[Instabug setUserEmail:]
++[Instabug setShowEmailField:]
++[Instabug setUserName:]
++[Instabug setWillShowScreenshotView:]
++[Instabug setWillSkipScreenshotAnnotation:]
++[Instabug getUnreadMessagesCount]
++[Instabug setInvocationEvent:]
++[Instabug setDefaultInvocationMode:]
++[Instabug setPushNotificationsEnabled:]
++[Instabug setEmailFieldRequired:]
++[Instabug setCommentFieldRequired:]
++[Instabug setShakingThresholdForiPhone:foriPad:]
++[Instabug setFloatingButtonEdge:withTopOffset:]
++[Instabug setVideoRecordingFloatingButtonPosition:]
++[Instabug setLocale:]
++[Instabug setIntroMessageEnabled:]
++[Instabug setPostSendingDialogEnabled:]
++[Instabug setColorTheme:]
++[Instabug setPrimaryColor:]
++[Instabug setScreenshotCapturingBlock:]
++[Instabug setScreenshotCapturingHandler:]
++[Instabug appendTags:]
++[Instabug addTags:]
++[Instabug addTags:withArguments:]
++[Instabug getTags]
++[Instabug setString:toKey:]
++[Instabug setValue:forStringWithKey:]
++[Instabug setAttachmentTypesEnabledScreenShot:extraScreenShot:galleryImage:voiceNote:screenRecording:]
++[Instabug setChatNotificationEnabled:]
++[Instabug setPromptOptionsEnabledWithBug:feedback:chat:]
++[Instabug setReportCategoriesWithTitles:iconNames:]
++[Instabug addExtraReportFieldWithTitle:required:]
++[Instabug removeExtraReportFields]
++[Instabug setUserAttribute:withKey:]
+___37+[Instabug setUserAttribute:withKey:]_block_invoke
+___copy_helper_block_.939
+___destroy_helper_block_.940
++[Instabug userAttributeForKey:]
++[Instabug removeUserAttributeForKey:]
+___38+[Instabug removeUserAttributeForKey:]_block_invoke
++[Instabug userAttributes]
++[Instabug setViewHierarchyEnabled:]
++[Instabug setAutoShowingSurveysEnabled:]
++[Instabug setSurveysEnabled:]
++[Instabug showSurveyIfAvailable]
+___33+[Instabug showSurveyIfAvailable]_block_invoke
++[Instabug hasAvailableSurveys]
++[Instabug resetTags]
++[Instabug setWillShowSurveyHandler:]
++[Instabug setDidDismissSurveyHandler:]
++[Instabug invoke]
++[Instabug invokeWithInvocationMode:]
++[Instabug dismiss]
++[Instabug reportBugWithEmail:comment:screenshot:]
+___50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke
+___50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke_2
+___copy_helper_block_.991
+___destroy_helper_block_.992
+___copy_helper_block_.994
+___destroy_helper_block_.995
++[Instabug reportFeedBackWithEmail:comment:screenshot:]
+___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke
+___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke_2
+___copy_helper_block_.997
+___destroy_helper_block_.998
+___copy_helper_block_.1000
+___destroy_helper_block_.1001
++[Instabug reportException:]
+___28+[Instabug reportException:]_block_invoke
+___copy_helper_block_.1005
+___destroy_helper_block_.1006
++[Instabug reportError:]
+___24+[Instabug reportError:]_block_invoke
+___copy_helper_block_.1010
+___destroy_helper_block_.1011
++[Instabug invokeConversations]
++[Instabug isInstabugNotification:]
++[Instabug didRegisterForRemoteNotificationsWithDeviceToken:]
++[Instabug didReceiveRemoteNotification:]
++[Instabug IBGLog:]
++[Instabug logVerbose:]
++[Instabug logDebug:]
++[Instabug logInfo:]
++[Instabug logWarn:]
++[Instabug logError:]
++[Instabug setIBGLogPrintsToConsole:]
++[Instabug clearAllLogs]
++[Instabug setSDKDebugLogsLevel:]
++[Instabug logMessage:args:level:]
++[Instabug forceDisableWhiteLabel]
++[Instabug forceDisableInAppMessaging]
++[Instabug ibg_setShouldWaitCoreData]
+_afterInitializationQueue._queue
+_afterInitializationQueue.onceToken
+___block_descriptor_tmp.620
+___block_descriptor_tmp.659
+___block_descriptor_tmp.707
+___block_descriptor_tmp.710
+___block_descriptor_tmp.736
+___block_descriptor_tmp.753
+___block_descriptor_tmp.941
+___block_descriptor_tmp.967
+___block_descriptor_tmp.993
+___block_descriptor_tmp.996
+___block_descriptor_tmp.999
+___block_descriptor_tmp.1002
+___block_descriptor_tmp.1007
+___block_descriptor_tmp.1012
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugI/Instabug.m
+IBGNSLogWithLevel
+IBGNSLog
+IBGLogError
+IBGLogWarn
+IBGLogInfo
+IBGLogDebug
+IBGLogVerbose
+IBGLog
+__24+[Instabug reportError:]_block_invoke
+__28+[Instabug reportException:]_block_invoke
+__55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke_2
+__55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke
+__50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke_2
+__50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke
+__33+[Instabug showSurveyIfAvailable]_block_invoke
+__38+[Instabug removeUserAttributeForKey:]_block_invoke
+__37+[Instabug setUserAttribute:withKey:]_block_invoke
+__18+[Instabug logOut]_block_invoke
+__39+[Instabug identifyUserWithEmail:name:]_block_invoke
+__35+[Instabug setPostInvocationBlock:]_block_invoke
+__33+[Instabug logUserEventWithName:]_block_invoke
+__40+[Instabug logUserEventWithName:params:]_block_invoke
+__24+[Instabug setUserData:]_block_invoke
+__29+[Instabug intializeSDKStack]_block_invoke_2
+__29+[Instabug intializeSDKStack]_block_invoke
+__36+[Instabug afterInitializationQueue]_block_invoke
+-[IBGSurveyCache cacheDiskPath]
+-[IBGSurveyCache syncSurveys:]
+-[IBGSurveyCache clearAllSurveys]
+-[IBGSurveyCache surveys]
+-[IBGSurveyCache contains:]
+-[IBGSurveyCache removeUnAnsweredSurveys]
+-[IBGSurveyCache cachedModels]
+-[IBGSurveyCache setCachedModels:]
+-[IBGSurveyCache lock]
+-[IBGSurveyCache setLock:]
+-[IBGSurveyCache .cxx_destruct]
+_OBJC_IVAR_$_IBGSurveyCache._cachedModels
+_OBJC_IVAR_$_IBGSurveyCache._lock
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Caching/IBGSurveyCache.m
+-[IBGInboundVideoCell initWithStyle:reuseIdentifier:]
+-[IBGInboundVideoCell setContent:isSent:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundVideoCell.m
++[IBGSurveysDefaults sharedInstance]
+___36+[IBGSurveysDefaults sharedInstance]_block_invoke
+-[IBGSurveysDefaults init]
+-[IBGSurveysDefaults setLastSurveyAt:]
+-[IBGSurveysDefaults lastSurveyAt]
+-[IBGSurveysDefaults disableAutomaticShowingSurveys]
+-[IBGSurveysDefaults setDisableAutomaticShowingSurveys:]
+-[IBGSurveysDefaults surveysForceDisabled]
+-[IBGSurveysDefaults setSurveysForceDisabled:]
+_sharedInstance.surveysDefaultsInstance
+_OBJC_IVAR_$_IBGSurveysDefaults._disableAutomaticShowingSurveys
+_OBJC_IVAR_$_IBGSurveysDefaults._surveysForceDisabled
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysDefaults.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysDefaults.h
+__36+[IBGSurveysDefaults sharedInstance]_block_invoke
++[IBGMovedIndex movedIndexfromIndex:toIndex:]
+-[IBGMovedIndex description]
+-[IBGMovedIndex oldIndex]
+-[IBGMovedIndex setOldIndex:]
+-[IBGMovedIndex newIndex]
+-[IBGMovedIndex setNewIndex:]
+_OBJC_IVAR_$_IBGMovedIndex._oldIndex
+_OBJC_IVAR_$_IBGMovedIndex._newIndex
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Diff Engine/IBGMovedIndex.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Diff Engine/IBGMovedIndex.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Defaults/IBGSurveyAccessibilityIdentifiers.m
++[IBGSurveysFeatures sharedInstance]
+___36+[IBGSurveysFeatures sharedInstance]_block_invoke
+-[IBGSurveysFeatures init]
+-[IBGSurveysFeatures didUpdateServerValueForFeature:withServerPermission:]
+-[IBGSurveysFeatures surveys]
+-[IBGSurveysFeatures setSurveys:]
+-[IBGSurveysFeatures surveysFeature]
+-[IBGSurveysFeatures setSurveysFeature:]
+-[IBGSurveysFeatures .cxx_destruct]
+_sharedInstance.surveysFeaturesInstance
+_OBJC_IVAR_$_IBGSurveysFeatures._surveysFeature
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysFeatures.m
+__36+[IBGSurveysFeatures sharedInstance]_block_invoke
+-[UINavigationItem(Subtitle) setTitle:withSubtitle:]
+-[UINavigationItem(Subtitle) setupConstraintsForTitleLabel:andSubtitleLabel:forSuperview:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Extensions/UINavigationItem+Subtitle.m
+-[IBGInvocationFlowController showInitialViewController]
+___56-[IBGInvocationFlowController showInitialViewController]_block_invoke
+-[IBGInvocationFlowController showViewControllerForInvocationMode:]
+___67-[IBGInvocationFlowController showViewControllerForInvocationMode:]_block_invoke
+___copy_helper_block_.555
+___destroy_helper_block_.556
+-[IBGInvocationFlowController isChatRelatedWhileInAppMessagingDisabled:]
+-[IBGInvocationFlowController startBugReportingFlow]
+-[IBGInvocationFlowController startFeedbackReportingFlow]
+-[IBGInvocationFlowController showNewChatViewController]
+-[IBGInvocationFlowController showChatsViewController]
+-[IBGInvocationFlowController showPromptViewController]
+___block_descriptor_tmp.557
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Flow Controllers/IBGInvocationFlowController.m
+__67-[IBGInvocationFlowController showViewControllerForInvocationMode:]_block_invoke
+__56-[IBGInvocationFlowController showInitialViewController]_block_invoke
+-[IBGSplitViewController viewDidLoad]
+-[IBGSplitViewController preferredStatusBarStyle]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/View Controllers/IBGSplitViewController.m
+-[IBGSurveyFlowController showSurveyViewControllerWithSurvey:withDelegate:]
+___75-[IBGSurveyFlowController showSurveyViewControllerWithSurvey:withDelegate:]_block_invoke
+-[IBGSurveyFlowController dismissSurveyAfterSubmittingWithDismissKeyboard:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Flow Controllers/IBGSurveyFlowController.m
+__75-[IBGSurveyFlowController showSurveyViewControllerWithSurvey:withDelegate:]_block_invoke
++[IBGSurveyInvocaitonManager sharedInstance]
+___44+[IBGSurveyInvocaitonManager sharedInstance]_block_invoke
+-[IBGSurveyInvocaitonManager setInvocationBlock:]
+-[IBGSurveyInvocaitonManager setWillShowSurvey:]
+-[IBGSurveyInvocaitonManager setDidDismissSurvey:]
+-[IBGSurveyInvocaitonManager invoke]
+-[IBGSurveyInvocaitonManager didInvoke]
+-[IBGSurveyInvocaitonManager didDismissWithExtraParameters:]
+-[IBGSurveyInvocaitonManager clearAutoScreenRecordingScreenshots]
+-[IBGSurveyInvocaitonManager invocationBlock]
+-[IBGSurveyInvocaitonManager willShowSurveyHandler]
+-[IBGSurveyInvocaitonManager setWillShowSurveyHandler:]
+-[IBGSurveyInvocaitonManager didDismissSurveyHandler]
+-[IBGSurveyInvocaitonManager setDidDismissSurveyHandler:]
+-[IBGSurveyInvocaitonManager .cxx_destruct]
+_OBJC_IVAR_$_IBGSurveyInvocaitonManager._invocationBlock
+_OBJC_IVAR_$_IBGSurveyInvocaitonManager._willShowSurveyHandler
+_OBJC_IVAR_$_IBGSurveyInvocaitonManager._didDismissSurveyHandler
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Managers/IBGSurveyInvocaitonManager.m
+__44+[IBGSurveyInvocaitonManager sharedInstance]_block_invoke
++[IBGSurvey surveysFromResponseArray:]
+-[IBGSurvey setAnswer:]
+-[IBGSurvey description]
+-[IBGSurvey isAnswered]
+-[IBGSurvey isSent]
+-[IBGSurvey isFullySent]
+-[IBGSurvey send]
+-[IBGSurvey surveyAnswerRequestDone:isSucess:error:]
+-[IBGSurvey coderNameForSelector:]
+-[IBGSurvey save]
+-[IBGSurvey initWithDictionary:]
+-[IBGSurvey dictionaryValue]
+-[IBGSurvey oldSurveyId]
+-[IBGSurvey identifier]
+-[IBGSurvey setIdentifier:]
+-[IBGSurvey isCanceled]
+-[IBGSurvey setIsCanceled:]
+-[IBGSurvey isShowing]
+-[IBGSurvey setIsShowing:]
+-[IBGSurvey title]
+-[IBGSurvey setTitle:]
+-[IBGSurvey question]
+-[IBGSurvey setQuestion:]
+-[IBGSurvey conditions]
+-[IBGSurvey setConditions:]
+-[IBGSurvey surveyOperator]
+-[IBGSurvey setSurveyOperator:]
+-[IBGSurvey setIsSent:]
+-[IBGSurvey .cxx_destruct]
+_OBJC_IVAR_$_IBGSurvey._isSent
+_OBJC_IVAR_$_IBGSurvey._identifier
+_OBJC_IVAR_$_IBGSurvey._isCanceled
+_OBJC_IVAR_$_IBGSurvey._isShowing
+_OBJC_IVAR_$_IBGSurvey._title
+_OBJC_IVAR_$_IBGSurvey._question
+_OBJC_IVAR_$_IBGSurvey._conditions
+_OBJC_IVAR_$_IBGSurvey._surveyOperator
+l_OBJC_PROTOCOL_$_IBGSurveyAnswerRequestDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGSurveyAnswerRequestDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Models/IBGSurvey.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Models/IBGSurvey.h
+-[IBGStartHUDViewController init]
+-[IBGStartHUDViewController show]
++[IBGStartHUDViewController show]
+___33+[IBGStartHUDViewController show]_block_invoke
++[IBGStartHUDViewController forcedShow]
+___39+[IBGStartHUDViewController forcedShow]_block_invoke
+___block_descriptor_tmp.50
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Windows/HUDs/IBGStartHUDViewController.m
+__39+[IBGStartHUDViewController forcedShow]_block_invoke
+__33+[IBGStartHUDViewController show]_block_invoke
+-[IBGOutboundImageCell initWithStyle:reuseIdentifier:]
+-[IBGOutboundImageCell setContent:isSent:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundImageCell.m
++[IBGSurveyCondition conditionsFromConditionsDictionary:]
+-[IBGSurveyCondition initWithUserEventsResponseDictionary:]
+-[IBGSurveyCondition initWithResponseDictionary:]
+-[IBGSurveyCondition coderNameForSelector:]
+-[IBGSurveyCondition description]
+-[IBGSurveyCondition initWithDictionary:]
+-[IBGSurveyCondition dictionaryValue]
+-[IBGSurveyCondition key]
+-[IBGSurveyCondition setKey:]
+-[IBGSurveyCondition value]
+-[IBGSurveyCondition setValue:]
+-[IBGSurveyCondition conditionOperator]
+-[IBGSurveyCondition setConditionOperator:]
+-[IBGSurveyCondition type]
+-[IBGSurveyCondition setType:]
+-[IBGSurveyCondition .cxx_destruct]
+_OBJC_IVAR_$_IBGSurveyCondition._key
+_OBJC_IVAR_$_IBGSurveyCondition._value
+_OBJC_IVAR_$_IBGSurveyCondition._conditionOperator
+_OBJC_IVAR_$_IBGSurveyCondition._type
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Models/IBGSurveyCondition.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Models/IBGSurveyCondition.h
+-[IBGExtraField initWithTitle:isRequired:]
+-[IBGExtraField setTextAlignment:]
+-[IBGExtraField title]
+-[IBGExtraField setTitle:]
+-[IBGExtraField value]
+-[IBGExtraField setValue:]
+-[IBGExtraField isRequired]
+-[IBGExtraField setIsRequired:]
+-[IBGExtraField textAlignment]
+-[IBGExtraField isTextAlignmentAssigned]
+-[IBGExtraField setIsTextAlignmentAssigned:]
+-[IBGExtraField .cxx_destruct]
+_OBJC_IVAR_$_IBGExtraField._textAlignment
+_OBJC_IVAR_$_IBGExtraField._title
+_OBJC_IVAR_$_IBGExtraField._value
+_OBJC_IVAR_$_IBGExtraField._isRequired
+_OBJC_IVAR_$_IBGExtraField._isTextAlignmentAssigned
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Models/IBGExtraField.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Models/IBGExtraField.h
+-[IBGSurveyQuestion initWithResponseDictionary:]
+-[IBGSurveyQuestion description]
+-[IBGSurveyQuestion isAnswered]
+-[IBGSurveyQuestion setRecorderAnswer:]
+-[IBGSurveyQuestion coderNameForSelector:]
+-[IBGSurveyQuestion initWithDictionary:]
+-[IBGSurveyQuestion dictionaryValue]
+-[IBGSurveyQuestion respondDate]
+-[IBGSurveyQuestion title]
+-[IBGSurveyQuestion setTitle:]
+-[IBGSurveyQuestion type]
+-[IBGSurveyQuestion setType:]
+-[IBGSurveyQuestion answers]
+-[IBGSurveyQuestion setAnswers:]
+-[IBGSurveyQuestion recorderAnswer]
+-[IBGSurveyQuestion .cxx_destruct]
+_OBJC_IVAR_$_IBGSurveyQuestion._respondDate
+_OBJC_IVAR_$_IBGSurveyQuestion._recorderAnswer
+_OBJC_IVAR_$_IBGSurveyQuestion._title
+_OBJC_IVAR_$_IBGSurveyQuestion._type
+_OBJC_IVAR_$_IBGSurveyQuestion._answers
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Models/IBGSurveyQuestion.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Models/IBGSurveyQuestion.h
+-[IBGSurveyAnswerRequest initWithParameters:surveyID:andDelegate:]
+-[IBGSurveyAnswerRequest executeNow]
+-[IBGSurveyAnswerRequest serverExecutionDone:statusCode:error:response:]
+-[IBGSurveyAnswerRequest isExecuting]
+-[IBGSurveyAnswerRequest setIsExecuting:]
+-[IBGSurveyAnswerRequest delegate]
+-[IBGSurveyAnswerRequest setDelegate:]
+-[IBGSurveyAnswerRequest dataServer]
+-[IBGSurveyAnswerRequest setDataServer:]
+-[IBGSurveyAnswerRequest dataUrl]
+-[IBGSurveyAnswerRequest setDataUrl:]
+-[IBGSurveyAnswerRequest failures]
+-[IBGSurveyAnswerRequest setFailures:]
+-[IBGSurveyAnswerRequest isSuccess]
+-[IBGSurveyAnswerRequest setIsSuccess:]
+-[IBGSurveyAnswerRequest dataParameters]
+-[IBGSurveyAnswerRequest setDataParameters:]
+-[IBGSurveyAnswerRequest .cxx_destruct]
+_OBJC_IVAR_$_IBGSurveyAnswerRequest._isExecuting
+_OBJC_IVAR_$_IBGSurveyAnswerRequest._delegate
+_OBJC_IVAR_$_IBGSurveyAnswerRequest._dataServer
+_OBJC_IVAR_$_IBGSurveyAnswerRequest._dataUrl
+_OBJC_IVAR_$_IBGSurveyAnswerRequest._failures
+_OBJC_IVAR_$_IBGSurveyAnswerRequest._isSuccess
+_OBJC_IVAR_$_IBGSurveyAnswerRequest._dataParameters
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Server requests/IBGSurveyAnswerRequest.m
+-[IBGSurveysRequest initWithDelegate:]
+-[IBGSurveysRequest executeNow]
+-[IBGSurveysRequest serverExecutionDone:statusCode:error:response:]
+-[IBGSurveysRequest surveysFromResponse:]
+-[IBGSurveysRequest isExecuting]
+-[IBGSurveysRequest setIsExecuting:]
+-[IBGSurveysRequest delegate]
+-[IBGSurveysRequest setDelegate:]
+-[IBGSurveysRequest dataServer]
+-[IBGSurveysRequest setDataServer:]
+-[IBGSurveysRequest dataUrl]
+-[IBGSurveysRequest setDataUrl:]
+-[IBGSurveysRequest failures]
+-[IBGSurveysRequest setFailures:]
+-[IBGSurveysRequest isSuccess]
+-[IBGSurveysRequest setIsSuccess:]
+-[IBGSurveysRequest .cxx_destruct]
+_OBJC_IVAR_$_IBGSurveysRequest._isExecuting
+_OBJC_IVAR_$_IBGSurveysRequest._delegate
+_OBJC_IVAR_$_IBGSurveysRequest._dataServer
+_OBJC_IVAR_$_IBGSurveysRequest._dataUrl
+_OBJC_IVAR_$_IBGSurveysRequest._failures
+_OBJC_IVAR_$_IBGSurveysRequest._isSuccess
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Server requests/IBGSurveysRequest.m
+-[IBGDiff init]
+-[IBGDiff addDeletedIndex:]
+-[IBGDiff deleted]
+-[IBGDiff addMovedFromIndex:toIndex:]
+-[IBGDiff moved]
+-[IBGDiff addInsertedIndex:]
+-[IBGDiff inserted]
+-[IBGDiff addReloadedIndex:]
+-[IBGDiff reloaded]
+-[IBGDiff isEmpty]
+-[IBGDiff description]
+-[IBGDiff deletedIndcies]
+-[IBGDiff setDeletedIndcies:]
+-[IBGDiff insertedIndcies]
+-[IBGDiff setInsertedIndcies:]
+-[IBGDiff reloadedIndices]
+-[IBGDiff setReloadedIndices:]
+-[IBGDiff movedIndices]
+-[IBGDiff setMovedIndices:]
+-[IBGDiff .cxx_destruct]
+_OBJC_IVAR_$_IBGDiff._deletedIndcies
+_OBJC_IVAR_$_IBGDiff._insertedIndcies
+_OBJC_IVAR_$_IBGDiff._reloadedIndices
+_OBJC_IVAR_$_IBGDiff._movedIndices
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Diff Engine/IBGDiff.m
+-[IBGPaddingCell initWithStyle:reuseIdentifier:]
+-[IBGPaddingCell prepareForReuse]
+-[IBGPaddingCell emptyView]
+-[IBGPaddingCell setEmptyView:]
+-[IBGPaddingCell .cxx_destruct]
+_OBJC_IVAR_$_IBGPaddingCell._emptyView
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/IBGPaddingCell.m
+-[IBGInboundImageCell initWithStyle:reuseIdentifier:]
+-[IBGInboundImageCell setContent:isSent:]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundImageCell.m
+-[IBGSurveyViewController initWithSurvey:shouldDismissSDKOnCancel:delegate:]
+-[IBGSurveyViewController viewDidLoad]
+-[IBGSurveyViewController viewDidAppear:]
+-[IBGSurveyViewController viewWillLayoutSubviews]
+___49-[IBGSurveyViewController viewWillLayoutSubviews]_block_invoke
+-[IBGSurveyViewController dealloc]
+-[IBGSurveyViewController show]
+___31-[IBGSurveyViewController show]_block_invoke
+___copy_helper_block_.444
+___destroy_helper_block_.445
+-[IBGSurveyViewController registerNotifications]
+-[IBGSurveyViewController keyboardWillShow:]
+-[IBGSurveyViewController keyboardWillHide:]
+-[IBGSurveyViewController unregisterNotification]
+-[IBGSurveyViewController didChangeOrientation]
+-[IBGSurveyViewController updateConstraints]
+-[IBGSurveyViewController submitAction]
+-[IBGSurveyViewController closeAction]
+-[IBGSurveyViewController dismissAction]
+-[IBGSurveyViewController registerCells]
+-[IBGSurveyViewController numberOfSectionsInTableView:]
+-[IBGSurveyViewController tableView:numberOfRowsInSection:]
+-[IBGSurveyViewController tableView:cellForRowAtIndexPath:]
+-[IBGSurveyViewController tableView:heightForRowAtIndexPath:]
+-[IBGSurveyViewController tableView:didSelectRowAtIndexPath:]
+-[IBGSurveyViewController touchesBegan:withEvent:]
+-[IBGSurveyViewController configureCell:forIndexPath:]
+-[IBGSurveyViewController setupSurveyConstraints]
+-[IBGSurveyViewController updateViewSurveyViewConstraint]
+-[IBGSurveyViewController maxHeight]
+-[IBGSurveyViewController tableViewCellHeight]
+-[IBGSurveyViewController tableViewHeightIfKeyboardIsShown]
+-[IBGSurveyViewController surveyTopPadding]
+-[IBGSurveyViewController minTableViewCellHeight]
+-[IBGSurveyViewController maxTableViewCellHeight]
+-[IBGSurveyViewController maxPortraitTableViewHeight]
+-[IBGSurveyViewController maxLandscapeTableViewHeight]
+-[IBGSurveyViewController isValidSurveyAnswer:]
+-[IBGSurveyViewController surveyView]
+-[IBGSurveyViewController shadeView]
+-[IBGSurveyViewController delegate]
+-[IBGSurveyViewController setDelegate:]
+-[IBGSurveyViewController setSurveyView:]
+-[IBGSurveyViewController setShadeView:]
+-[IBGSurveyViewController survey]
+-[IBGSurveyViewController setSurvey:]
+-[IBGSurveyViewController surveyViewHeightContraints]
+-[IBGSurveyViewController setSurveyViewHeightContraints:]
+-[IBGSurveyViewController answer]
+-[IBGSurveyViewController setAnswer:]
+-[IBGSurveyViewController isKeyboardShown]
+-[IBGSurveyViewController setIsKeyboardShown:]
+-[IBGSurveyViewController keyboardHeight]
+-[IBGSurveyViewController setKeyboardHeight:]
+-[IBGSurveyViewController surveyTopConstraint]
+-[IBGSurveyViewController setSurveyTopConstraint:]
+-[IBGSurveyViewController surveyBottomConstraint]
+-[IBGSurveyViewController setSurveyBottomConstraint:]
+-[IBGSurveyViewController surveyHeightConstraint]
+-[IBGSurveyViewController setSurveyHeightConstraint:]
+-[IBGSurveyViewController .cxx_destruct]
+___block_descriptor_tmp.446
+_OBJC_IVAR_$_IBGSurveyViewController._surveyView
+_OBJC_IVAR_$_IBGSurveyViewController._shadeView
+_OBJC_IVAR_$_IBGSurveyViewController._delegate
+_OBJC_IVAR_$_IBGSurveyViewController._survey
+_OBJC_IVAR_$_IBGSurveyViewController._surveyViewHeightContraints
+_OBJC_IVAR_$_IBGSurveyViewController._answer
+_OBJC_IVAR_$_IBGSurveyViewController._isKeyboardShown
+_OBJC_IVAR_$_IBGSurveyViewController._keyboardHeight
+_OBJC_IVAR_$_IBGSurveyViewController._surveyTopConstraint
+_OBJC_IVAR_$_IBGSurveyViewController._surveyBottomConstraint
+_OBJC_IVAR_$_IBGSurveyViewController._surveyHeightConstraint
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyViewController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyViewController.h
+__31-[IBGSurveyViewController show]_block_invoke
+__49-[IBGSurveyViewController viewWillLayoutSubviews]_block_invoke
+-[IBGMCQSurveyTableViewCell initWithStyle:reuseIdentifier:]
+-[IBGMCQSurveyTableViewCell prepareForReuse]
+-[IBGMCQSurveyTableViewCell updateConstraints]
+-[IBGMCQSurveyTableViewCell dealloc]
+-[IBGMCQSurveyTableViewCell answerString]
+-[IBGMCQSurveyTableViewCell setSelected]
+-[IBGMCQSurveyTableViewCell setAnswerChoiceWithString:]
+-[IBGMCQSurveyTableViewCell didSelectedNotificationAction:]
+-[IBGMCQSurveyTableViewCell registerNotification]
+-[IBGMCQSurveyTableViewCell unregisterNotification]
+-[IBGMCQSurveyTableViewCell unselectTickView]
+-[IBGMCQSurveyTableViewCell containerView]
+-[IBGMCQSurveyTableViewCell tickContainerView]
+-[IBGMCQSurveyTableViewCell choiceLabel]
+-[IBGMCQSurveyTableViewCell tickImageView]
+-[IBGMCQSurveyTableViewCell setContainerView:]
+-[IBGMCQSurveyTableViewCell setTickContainerView:]
+-[IBGMCQSurveyTableViewCell setTickImageView:]
+-[IBGMCQSurveyTableViewCell setChoiceLabel:]
+-[IBGMCQSurveyTableViewCell .cxx_destruct]
+_OBJC_IVAR_$_IBGMCQSurveyTableViewCell._containerView
+_OBJC_IVAR_$_IBGMCQSurveyTableViewCell._tickContainerView
+_OBJC_IVAR_$_IBGMCQSurveyTableViewCell._choiceLabel
+_OBJC_IVAR_$_IBGMCQSurveyTableViewCell._tickImageView
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/Table View Cells/IBGMCQSurveyTableViewCell.m
+-[IBGTextViewSurveyTableViewCell initWithStyle:reuseIdentifier:]
+-[IBGTextViewSurveyTableViewCell updateConstraints]
+-[IBGTextViewSurveyTableViewCell getText]
+-[IBGTextViewSurveyTableViewCell containerView]
+-[IBGTextViewSurveyTableViewCell textView]
+-[IBGTextViewSurveyTableViewCell setContainerView:]
+-[IBGTextViewSurveyTableViewCell setTextView:]
+-[IBGTextViewSurveyTableViewCell .cxx_destruct]
+_OBJC_IVAR_$_IBGTextViewSurveyTableViewCell._containerView
+_OBJC_IVAR_$_IBGTextViewSurveyTableViewCell._textView
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/Table View Cells/IBGTextViewSurveyTableViewCell.m
+-[IBGSurveyView initWithFrame:]
+-[IBGSurveyView addingPoweredByView]
+-[IBGSurveyView setupLandscapeConstraints]
+-[IBGSurveyView setupPortraitConstraints]
+-[IBGSurveyView viewsDictinary]
+-[IBGSurveyView metricsDictinary]
+-[IBGSurveyView height]
+-[IBGSurveyView elementsHeight]
+-[IBGSurveyView topPosition]
+-[IBGSurveyView landscapeConstraints]
+-[IBGSurveyView portraitConstraints]
+-[IBGSurveyView registerNotification]
+-[IBGSurveyView unregisterNotification]
+-[IBGSurveyView dealloc]
+-[IBGSurveyView willChangeOrientation]
+-[IBGSurveyView surveyLabel]
+-[IBGSurveyView surveyTableView]
+-[IBGSurveyView surveyImageView]
+-[IBGSurveyView submitButton]
+-[IBGSurveyView surveyContainerView]
+-[IBGSurveyView surveyTableViewHeightConstraint]
+-[IBGSurveyView closeButton]
+-[IBGSurveyView setSurveyLabel:]
+-[IBGSurveyView setSurveyTableView:]
+-[IBGSurveyView setSurveyImageView:]
+-[IBGSurveyView setSubmitButton:]
+-[IBGSurveyView setCloseButton:]
+-[IBGSurveyView poweredByInstabugView]
+-[IBGSurveyView setPoweredByInstabugView:]
+-[IBGSurveyView setSurveyContainerView:]
+-[IBGSurveyView setSurveyTableViewHeightConstraint:]
+-[IBGSurveyView setLandscapeConstraints:]
+-[IBGSurveyView setPortraitConstraints:]
+-[IBGSurveyView .cxx_destruct]
+_OBJC_IVAR_$_IBGSurveyView._surveyContainerView
+_OBJC_IVAR_$_IBGSurveyView._submitButton
+_OBJC_IVAR_$_IBGSurveyView._surveyImageView
+_OBJC_IVAR_$_IBGSurveyView._surveyLabel
+_OBJC_IVAR_$_IBGSurveyView._landscapeConstraints
+_OBJC_IVAR_$_IBGSurveyView._portraitConstraints
+_OBJC_IVAR_$_IBGSurveyView._surveyTableView
+_OBJC_IVAR_$_IBGSurveyView._surveyTableViewHeightConstraint
+_OBJC_IVAR_$_IBGSurveyView._closeButton
+_OBJC_IVAR_$_IBGSurveyView._poweredByInstabugView
+l_OBJC_PROTOCOL_$_UITraitEnvironment
+l_OBJC_LABEL_PROTOCOL_$_UITraitEnvironment
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGSurveyView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGSurveyView.h
++[IBGMessageAction messageActionWithDictionary:]
+-[IBGMessageAction dictionaryValue]
+-[IBGMessageAction initWithDictionary:]
+-[IBGMessageAction coderNameForSelector:]
+-[IBGMessageAction description]
+-[IBGMessageAction URL]
+-[IBGMessageAction setURL:]
+-[IBGMessageAction title]
+-[IBGMessageAction setTitle:]
+-[IBGMessageAction actionType]
+-[IBGMessageAction setActionType:]
+-[IBGMessageAction .cxx_destruct]
+_OBJC_IVAR_$_IBGMessageAction._URL
+_OBJC_IVAR_$_IBGMessageAction._title
+_OBJC_IVAR_$_IBGMessageAction._actionType
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGMessageAction.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGMessageAction.h
++[InstabugSurveys(InstabugSurveysPrivate) setForceDisabled:]
++[InstabugSurveys(InstabugSurveysPrivate) destoryInstabugSurveys]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/InstabugSurveys+InstabugSurveysPrivate.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Defaults/IBGChatsAccessibilityIdentifiers.m
++[InstabugSurveys sharedInstance]
+___33+[InstabugSurveys sharedInstance]_block_invoke
++[InstabugSurveys setSurveysEnabled:]
+-[InstabugSurveys initializationOperations]
+___43-[InstabugSurveys initializationOperations]_block_invoke
+___43-[InstabugSurveys initializationOperations]_block_invoke_2
+-[InstabugSurveys setAutoShowingSurveysEnabled:]
+-[InstabugSurveys setSurveysEnabled:]
+-[InstabugSurveys hasAvailableSurveys]
+-[InstabugSurveys setWillShowSurveyHandler:]
+-[InstabugSurveys setDidDismissSurveyHandler:]
+-[InstabugSurveys updateHasPendingSurveys]
+-[InstabugSurveys pendingSurveyToShowWithCompletionHandler:]
+___60-[InstabugSurveys pendingSurveyToShowWithCompletionHandler:]_block_invoke
+___copy_helper_block_.614
+___destroy_helper_block_.615
+-[InstabugSurveys loadSurveys]
+-[InstabugSurveys surveysFeatureEnabled]
+-[InstabugSurveys showPendingSurveys]
+___37-[InstabugSurveys showPendingSurveys]_block_invoke
+-[InstabugSurveys fetchSurveys]
+-[InstabugSurveys showSurveyIfAvailable]
+___40-[InstabugSurveys showSurveyIfAvailable]_block_invoke
+___40-[InstabugSurveys showSurveyIfAvailable]_block_invoke_2
+___40-[InstabugSurveys showSurveyIfAvailable]_block_invoke_3
+___copy_helper_block_.686
+___destroy_helper_block_.687
+___copy_helper_block_.689
+___destroy_helper_block_.690
+___copy_helper_block_.693
+___destroy_helper_block_.694
+-[InstabugSurveys matchingValueWithPrimitiveTypes:condition:]
+-[InstabugSurveys surveysRequestDone:isSucess:error:withSurveys:]
+-[InstabugSurveys surveySubmited]
+-[InstabugSurveys didCancelSurvey]
+-[InstabugSurveys isCondition:matchingValue:]
+-[InstabugSurveys performSelector:withCondition:andValue:]
+-[InstabugSurveys equalWithCondition:andValue:]
+-[InstabugSurveys not_equalWithCondition:andValue:]
+-[InstabugSurveys less_thanWithCondition:andValue:]
+-[InstabugSurveys greater_thanWithCondition:andValue:]
+-[InstabugSurveys containWithCondition:andValue:]
+-[InstabugSurveys not_containWithCondition:andValue:]
+-[InstabugSurveys registerNotification]
+-[InstabugSurveys unregisterNotification]
+-[InstabugSurveys resetShowingSurveyFlag]
+-[InstabugSurveys applicationWillEnterForeground]
+-[InstabugSurveys addFeaturesKVO]
+-[InstabugSurveys observeValueForKeyPath:ofObject:change:context:]
+-[InstabugSurveys didResetUserData]
+-[InstabugSurveys dealloc]
++[InstabugSurveys destory]
+-[InstabugSurveys cachedSurveys]
+-[InstabugSurveys setCachedSurveys:]
+-[InstabugSurveys currentConditions]
+-[InstabugSurveys setCurrentConditions:]
+-[InstabugSurveys isSurveyShowInCurrentSession]
+-[InstabugSurveys setIsSurveyShowInCurrentSession:]
+-[InstabugSurveys isShowingSurvey]
+-[InstabugSurveys setIsShowingSurvey:]
+-[InstabugSurveys isTryingToShowingSurvey]
+-[InstabugSurveys setIsTryingToShowingSurvey:]
+-[InstabugSurveys hasPendingSurveys]
+-[InstabugSurveys setHasPendingSurveys:]
+-[InstabugSurveys initializationOperation]
+-[InstabugSurveys setInitializationOperation:]
+-[InstabugSurveys applicationEnterForegroundTime]
+-[InstabugSurveys setApplicationEnterForegroundTime:]
+-[InstabugSurveys .cxx_destruct]
+_InstabugSurveysInstance
+_OBJC_IVAR_$_InstabugSurveys._initializationOperation
+___block_descriptor_tmp.549
+___block_descriptor_tmp.688
+___block_descriptor_tmp.692
+___block_descriptor_tmp.695
+_OBJC_IVAR_$_InstabugSurveys._cachedSurveys
+_OBJC_IVAR_$_InstabugSurveys._currentConditions
+_OBJC_IVAR_$_InstabugSurveys._isSurveyShowInCurrentSession
+_OBJC_IVAR_$_InstabugSurveys._isShowingSurvey
+_OBJC_IVAR_$_InstabugSurveys._isTryingToShowingSurvey
+_OBJC_IVAR_$_InstabugSurveys._hasPendingSurveys
+_OBJC_IVAR_$_InstabugSurveys._applicationEnterForegroundTime
+l_OBJC_PROTOCOL_$_IBGSurveysRequestDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGSurveysRequestDelegate
+l_OBJC_PROTOCOL_$_IBGSurveyViewControllerDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGSurveyViewControllerDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/InstabugSurveys.m
+__40-[InstabugSurveys showSurveyIfAvailable]_block_invoke_3
+__40-[InstabugSurveys showSurveyIfAvailable]_block_invoke_2
+__40-[InstabugSurveys showSurveyIfAvailable]_block_invoke
+__37-[InstabugSurveys showPendingSurveys]_block_invoke
+__60-[InstabugSurveys pendingSurveyToShowWithCompletionHandler:]_block_invoke
+__43-[InstabugSurveys initializationOperations]_block_invoke_2
+__43-[InstabugSurveys initializationOperations]_block_invoke
+__33+[InstabugSurveys sharedInstance]_block_invoke
+/Users/khaledElMorabea/Library/Developer/Xcode/DerivedData/Instabug-cqbadbmomfjgsddklrlfomsvjpgj/Build/Intermediates.noindex/ArchiveIntermediates/Instabug/IntermediateBuildFilesPath/Instabug.build/Release-iphoneos/Instabug.build/DerivedSources/Instabug_vers.c
+__ZN3$_0D1Ev
+__ZL26internal_callback_iteratoriP9__siginfoP17__darwin_ucontextPv
++[IBGPLCrashSignalHandler initialize]
++[IBGPLCrashSignalHandler sharedHandler]
++[IBGPLCrashSignalHandler resetHandlers]
+-[IBGPLCrashSignalHandler init]
+-[IBGPLCrashSignalHandler registerHandlerWithSignal:error:]
+__ZL24previous_action_callbackiP9__siginfoP17__darwin_ucontextPvP28PLCrashSignalHandlerCallback
+-[IBGPLCrashSignalHandler registerHandlerForSignal:callback:context:error:]
+__GLOBAL__sub_I_PLCrashSignalHandler.mm
+__ZL22shared_handler_context
+__ZL13sharedHandler
+_OBJC_IVAR_$_IBGPLCrashSignalHandler._sigstk
+__ZZ59-[IBGPLCrashSignalHandler registerHandlerWithSignal:error:]E16registerHandlers
+_plcrash_writer_write_system_info
+_plcrash_writer_write_machine_info
+_plcrash_writer_write_app_info
+_plcrash_writer_write_process_info
+_plcrash_writer_write_thread
+_plcrash_writer_write_binary_image
+_plcrash_writer_write_exception
+_plcrash_writer_write_signal
+_plcrash_writer_write_processor_info
+_plcrash_writer_write_thread_frame
+_plcrash_writer_write_thread_frame_symbol_cb
+_plcrash_writer_write_mach_signal
+_plcr_swap16
+_plcr_swap32
+_plcr_swap64
+_plcr_nswap16
+_plcr_nswap32
+_plcr_nswap64
+_uint64_pack
++[IBGPLCrashReporter initialize]
++[IBGPLCrashReporter sharedReporter]
+-[IBGPLCrashReporter init]
+-[IBGPLCrashReporter initWithConfiguration:]
+-[IBGPLCrashReporter hasPendingCrashReport]
+-[IBGPLCrashReporter loadPendingCrashReportData]
+-[IBGPLCrashReporter loadPendingCrashReportDataAndReturnError:]
+-[IBGPLCrashReporter purgePendingCrashReport]
+-[IBGPLCrashReporter purgePendingCrashReportAndReturnError:]
+-[IBGPLCrashReporter enableCrashReporter]
+-[IBGPLCrashReporter enableCrashReporterAndReturnError:]
+_signal_handler_callback
+_mach_exception_callback
+_uncaught_exception_handler
+-[IBGPLCrashReporter generateLiveReportWithThread:]
+-[IBGPLCrashReporter generateLiveReportWithThread:error:]
+-[IBGPLCrashReporter generateLiveReportWithThread:exception:error:]
+_plcr_live_report_callback
+-[IBGPLCrashReporter generateLiveReport]
+-[IBGPLCrashReporter generateLiveReportAndReturnError:]
+-[IBGPLCrashReporter generateLiveReportWithException:error:]
+-[IBGPLCrashReporter setCrashCallbacks:]
+-[IBGPLCrashReporter(PrivateMethods) initWithApplicationIdentifier:appVersion:appMarketingVersion:configuration:]
+-[IBGPLCrashReporter(PrivateMethods) initWithBundle:configuration:]
+-[IBGPLCrashReporter(PrivateMethods) enableMachExceptionServerWithPreviousPortSet:callback:context:error:]
+-[IBGPLCrashReporter(PrivateMethods) dealloc]
+-[IBGPLCrashReporter(PrivateMethods) mapToAsyncSymbolicationStrategy:]
+-[IBGPLCrashReporter(PrivateMethods) populateCrashReportDirectoryAndReturnError:]
+-[IBGPLCrashReporter(PrivateMethods) crashReportDirectory]
+-[IBGPLCrashReporter(PrivateMethods) queuedCrashReportDirectory]
+-[IBGPLCrashReporter(PrivateMethods) crashReportPath]
+_plcrash_write_report
+_mach_exception_callback_live_cb
+_sharedReporter.onceLock
+_sharedReporter
+_enableCrashReporterAndReturnError:.enforceOne
+_OBJC_IVAR_$_IBGPLCrashReporter._enabled
+_signal_handler_context
+_OBJC_IVAR_$_IBGPLCrashReporter._applicationIdentifier
+_OBJC_IVAR_$_IBGPLCrashReporter._applicationVersion
+_OBJC_IVAR_$_IBGPLCrashReporter._applicationMarketingVersion
+_OBJC_IVAR_$_IBGPLCrashReporter._config
+_monitored_signals
+_OBJC_IVAR_$_IBGPLCrashReporter._previousMachPorts
+_OBJC_IVAR_$_IBGPLCrashReporter._machServer
+_crashCallbacks.1
+_crashCallbacks.2
+_OBJC_IVAR_$_IBGPLCrashReporter._crashReportDirectory
+-[IBGPLCrashReport initWithData:error:]
+_populate_nserror
+-[IBGPLCrashReport dealloc]
+-[IBGPLCrashReport imageForAddress:]
+-[IBGPLCrashReport hasMachineInfo]
+-[IBGPLCrashReport hasProcessInfo]
+-[IBGPLCrashReport hasExceptionInfo]
+-[IBGPLCrashReport systemInfo]
+-[IBGPLCrashReport machineInfo]
+-[IBGPLCrashReport applicationInfo]
+-[IBGPLCrashReport processInfo]
+-[IBGPLCrashReport signalInfo]
+-[IBGPLCrashReport machExceptionInfo]
+-[IBGPLCrashReport threads]
+-[IBGPLCrashReport images]
+-[IBGPLCrashReport exceptionInfo]
+-[IBGPLCrashReport uuidRef]
+-[IBGPLCrashReport(PrivateMethods) decodeCrashData:error:]
+-[IBGPLCrashReport(PrivateMethods) extractSystemInfo:processorInfo:error:]
+-[IBGPLCrashReport(PrivateMethods) extractProcessorInfo:error:]
+-[IBGPLCrashReport(PrivateMethods) synthesizeProcessorInfoFromArchitecture:error:]
+-[IBGPLCrashReport(PrivateMethods) extractMachineInfo:error:]
+-[IBGPLCrashReport(PrivateMethods) extractApplicationInfo:error:]
+-[IBGPLCrashReport(PrivateMethods) extractProcessInfo:error:]
+-[IBGPLCrashReport(PrivateMethods) extractSymbolInfo:error:]
+-[IBGPLCrashReport(PrivateMethods) extractStackFrameInfo:error:]
+-[IBGPLCrashReport(PrivateMethods) extractThreadInfo:error:]
+-[IBGPLCrashReport(PrivateMethods) extractImageInfo:error:]
+-[IBGPLCrashReport(PrivateMethods) extractExceptionInfo:error:]
+-[IBGPLCrashReport(PrivateMethods) extractSignalInfo:error:]
+-[IBGPLCrashReport(PrivateMethods) extractMachExceptionInfo:error:]
+_OBJC_IVAR_$_IBGPLCrashReport._decoder
+_OBJC_IVAR_$_IBGPLCrashReport._uuid
+_OBJC_IVAR_$_IBGPLCrashReport._machineInfo
+_OBJC_IVAR_$_IBGPLCrashReport._systemInfo
+_OBJC_IVAR_$_IBGPLCrashReport._applicationInfo
+_OBJC_IVAR_$_IBGPLCrashReport._processInfo
+_OBJC_IVAR_$_IBGPLCrashReport._signalInfo
+_OBJC_IVAR_$_IBGPLCrashReport._machExceptionInfo
+_OBJC_IVAR_$_IBGPLCrashReport._threads
+_OBJC_IVAR_$_IBGPLCrashReport._images
+_OBJC_IVAR_$_IBGPLCrashReport._exceptionInfo
+_IBGplcrash__crash_report__init.init_value
+_plcrash__crash_report__processor__type_encoding__value_ranges
+_plcrash__crash_report__processor__field_descriptors
+_plcrash__crash_report__processor__field_indices_by_name
+_plcrash__crash_report__processor__number_ranges
+_plcrash__crash_report__system_info__operating_system__value_ranges
+_plcrash__crash_report__system_info__field_descriptors
+_plcrash__crash_report__system_info__field_indices_by_name
+_plcrash__crash_report__system_info__number_ranges
+_plcrash__crash_report__application_info__field_descriptors
+_plcrash__crash_report__application_info__field_indices_by_name
+_plcrash__crash_report__application_info__number_ranges
+_plcrash__crash_report__symbol__field_descriptors
+_plcrash__crash_report__symbol__field_indices_by_name
+_plcrash__crash_report__symbol__number_ranges
+_plcrash__crash_report__thread__stack_frame__field_descriptors
+_plcrash__crash_report__thread__stack_frame__field_indices_by_name
+_plcrash__crash_report__thread__stack_frame__number_ranges
+_plcrash__crash_report__thread__register_value__field_descriptors
+_plcrash__crash_report__thread__register_value__field_indices_by_name
+_plcrash__crash_report__thread__register_value__number_ranges
+_plcrash__crash_report__thread__field_descriptors
+_plcrash__crash_report__thread__field_indices_by_name
+_plcrash__crash_report__thread__number_ranges
+_plcrash__crash_report__binary_image__field_descriptors
+_plcrash__crash_report__binary_image__field_indices_by_name
+_plcrash__crash_report__binary_image__number_ranges
+_plcrash__crash_report__exception__field_descriptors
+_plcrash__crash_report__exception__field_indices_by_name
+_plcrash__crash_report__exception__number_ranges
+_plcrash__crash_report__signal__mach_exception__field_descriptors
+_plcrash__crash_report__signal__mach_exception__field_indices_by_name
+_plcrash__crash_report__signal__mach_exception__number_ranges
+_plcrash__crash_report__signal__field_descriptors
+_plcrash__crash_report__signal__field_indices_by_name
+_plcrash__crash_report__signal__number_ranges
+_plcrash__crash_report__process_info__field_descriptors
+_plcrash__crash_report__process_info__field_indices_by_name
+_plcrash__crash_report__process_info__number_ranges
+_plcrash__crash_report__machine_info__field_descriptors
+_plcrash__crash_report__machine_info__field_indices_by_name
+_plcrash__crash_report__machine_info__number_ranges
+_plcrash__crash_report__report_info__field_descriptors
+_plcrash__crash_report__report_info__field_indices_by_name
+_plcrash__crash_report__report_info__number_ranges
+_plcrash__crash_report__field_descriptors
+_plcrash__crash_report__field_indices_by_name
+_plcrash__crash_report__number_ranges
+_plcrash__architecture__value_ranges
+_plcrash__crash_report__processor__encoding__default_value
+_plcrash__crash_report__system_info__operating_system__default_value
+_plcrash__crash_report__system_info__architecture__default_value
+_protobuf_c_out_of_memory_default
+_system_alloc
+_system_free
+_required_field_get_packed_size
+_required_field_pack
+_required_field_pack_to_buffer
+_service_machgen_invoke
+_tag_pack
+_parse_required_member
+_parse_uint64
+-[IBGPLCrashReportSystemInfo initWithOperatingSystem:operatingSystemVersion:architecture:timestamp:]
+-[IBGPLCrashReportSystemInfo initWithOperatingSystem:operatingSystemVersion:operatingSystemBuild:architecture:timestamp:]
+-[IBGPLCrashReportSystemInfo initWithOperatingSystem:operatingSystemVersion:operatingSystemBuild:architecture:processorInfo:timestamp:]
+-[IBGPLCrashReportSystemInfo dealloc]
+-[IBGPLCrashReportSystemInfo operatingSystem]
+-[IBGPLCrashReportSystemInfo operatingSystemVersion]
+-[IBGPLCrashReportSystemInfo operatingSystemBuild]
+-[IBGPLCrashReportSystemInfo architecture]
+-[IBGPLCrashReportSystemInfo timestamp]
+-[IBGPLCrashReportSystemInfo processorInfo]
+_OBJC_IVAR_$_IBGPLCrashReportSystemInfo._operatingSystem
+_OBJC_IVAR_$_IBGPLCrashReportSystemInfo._osVersion
+_OBJC_IVAR_$_IBGPLCrashReportSystemInfo._osBuild
+_OBJC_IVAR_$_IBGPLCrashReportSystemInfo._architecture
+_OBJC_IVAR_$_IBGPLCrashReportSystemInfo._processorInfo
+_OBJC_IVAR_$_IBGPLCrashReportSystemInfo._timestamp
+-[IBGPLCrashReportApplicationInfo initWithApplicationIdentifier:applicationVersion:applicationMarketingVersion:]
+-[IBGPLCrashReportApplicationInfo dealloc]
+-[IBGPLCrashReportApplicationInfo applicationIdentifier]
+-[IBGPLCrashReportApplicationInfo applicationVersion]
+-[IBGPLCrashReportApplicationInfo applicationMarketingVersion]
+_OBJC_IVAR_$_IBGPLCrashReportApplicationInfo._applicationIdentifier
+_OBJC_IVAR_$_IBGPLCrashReportApplicationInfo._applicationVersion
+_OBJC_IVAR_$_IBGPLCrashReportApplicationInfo._applicationMarketingVersion
+-[IBGPLCrashReportThreadInfo initWithThreadNumber:stackFrames:crashed:registers:]
+-[IBGPLCrashReportThreadInfo dealloc]
+-[IBGPLCrashReportThreadInfo threadNumber]
+-[IBGPLCrashReportThreadInfo stackFrames]
+-[IBGPLCrashReportThreadInfo crashed]
+-[IBGPLCrashReportThreadInfo registers]
+_OBJC_IVAR_$_IBGPLCrashReportThreadInfo._threadNumber
+_OBJC_IVAR_$_IBGPLCrashReportThreadInfo._stackFrames
+_OBJC_IVAR_$_IBGPLCrashReportThreadInfo._crashed
+_OBJC_IVAR_$_IBGPLCrashReportThreadInfo._registers
+-[IBGPLCrashReportBinaryImageInfo initWithCodeType:baseAddress:size:name:uuid:]
+-[IBGPLCrashReportBinaryImageInfo dealloc]
+-[IBGPLCrashReportBinaryImageInfo codeType]
+-[IBGPLCrashReportBinaryImageInfo imageBaseAddress]
+-[IBGPLCrashReportBinaryImageInfo imageSize]
+-[IBGPLCrashReportBinaryImageInfo imageName]
+-[IBGPLCrashReportBinaryImageInfo hasImageUUID]
+-[IBGPLCrashReportBinaryImageInfo imageUUID]
+_OBJC_IVAR_$_IBGPLCrashReportBinaryImageInfo._baseAddress
+_OBJC_IVAR_$_IBGPLCrashReportBinaryImageInfo._imageSize
+_OBJC_IVAR_$_IBGPLCrashReportBinaryImageInfo._imageName
+_OBJC_IVAR_$_IBGPLCrashReportBinaryImageInfo._processorInfo
+_OBJC_IVAR_$_IBGPLCrashReportBinaryImageInfo._hasImageUUID
+_initWithCodeType:baseAddress:size:name:uuid:.hex
+_OBJC_IVAR_$_IBGPLCrashReportBinaryImageInfo._imageUUID
+-[IBGPLCrashReportExceptionInfo initWithExceptionName:reason:]
+-[IBGPLCrashReportExceptionInfo initWithExceptionName:reason:stackFrames:]
+-[IBGPLCrashReportExceptionInfo dealloc]
+-[IBGPLCrashReportExceptionInfo exceptionName]
+-[IBGPLCrashReportExceptionInfo exceptionReason]
+-[IBGPLCrashReportExceptionInfo stackFrames]
+_OBJC_IVAR_$_IBGPLCrashReportExceptionInfo._name
+_OBJC_IVAR_$_IBGPLCrashReportExceptionInfo._reason
+_OBJC_IVAR_$_IBGPLCrashReportExceptionInfo._stackFrames
+_signal_codes
+_signal_names
+-[IBGPLCrashReportSignalInfo initWithSignalName:code:address:]
+-[IBGPLCrashReportSignalInfo dealloc]
+-[IBGPLCrashReportSignalInfo name]
+-[IBGPLCrashReportSignalInfo code]
+-[IBGPLCrashReportSignalInfo address]
+_OBJC_IVAR_$_IBGPLCrashReportSignalInfo._name
+_OBJC_IVAR_$_IBGPLCrashReportSignalInfo._code
+_OBJC_IVAR_$_IBGPLCrashReportSignalInfo._address
+-[IBGPLCrashReportProcessInfo initWithProcessName:processID:processPath:processStartTime:parentProcessName:parentProcessID:native:]
+-[IBGPLCrashReportProcessInfo dealloc]
+-[IBGPLCrashReportProcessInfo processName]
+-[IBGPLCrashReportProcessInfo processID]
+-[IBGPLCrashReportProcessInfo processPath]
+-[IBGPLCrashReportProcessInfo processStartTime]
+-[IBGPLCrashReportProcessInfo parentProcessName]
+-[IBGPLCrashReportProcessInfo parentProcessID]
+-[IBGPLCrashReportProcessInfo native]
+_OBJC_IVAR_$_IBGPLCrashReportProcessInfo._processName
+_OBJC_IVAR_$_IBGPLCrashReportProcessInfo._processID
+_OBJC_IVAR_$_IBGPLCrashReportProcessInfo._processPath
+_OBJC_IVAR_$_IBGPLCrashReportProcessInfo._processStartTime
+_OBJC_IVAR_$_IBGPLCrashReportProcessInfo._parentProcessName
+_OBJC_IVAR_$_IBGPLCrashReportProcessInfo._parentProcessID
+_OBJC_IVAR_$_IBGPLCrashReportProcessInfo._native
+-[IBGPLCrashReportProcessorInfo initWithTypeEncoding:type:subtype:]
+-[IBGPLCrashReportProcessorInfo typeEncoding]
+-[IBGPLCrashReportProcessorInfo type]
+-[IBGPLCrashReportProcessorInfo subtype]
+_OBJC_IVAR_$_IBGPLCrashReportProcessorInfo._typeEncoding
+_OBJC_IVAR_$_IBGPLCrashReportProcessorInfo._type
+_OBJC_IVAR_$_IBGPLCrashReportProcessorInfo._subtype
+-[IBGPLCrashReportMachineInfo initWithModelName:processorInfo:processorCount:logicalProcessorCount:]
+-[IBGPLCrashReportMachineInfo dealloc]
+-[IBGPLCrashReportMachineInfo modelName]
+-[IBGPLCrashReportMachineInfo processorInfo]
+-[IBGPLCrashReportMachineInfo processorCount]
+-[IBGPLCrashReportMachineInfo logicalProcessorCount]
+_OBJC_IVAR_$_IBGPLCrashReportMachineInfo._modelName
+_OBJC_IVAR_$_IBGPLCrashReportMachineInfo._processorInfo
+_OBJC_IVAR_$_IBGPLCrashReportMachineInfo._processorCount
+_OBJC_IVAR_$_IBGPLCrashReportMachineInfo._logicalProcessorCount
+_plcrash_async_macho_find_best_symbol
+__ZL20free_mapped_sectionsP24plcrash_async_objc_cache
+__ZL24plcrash_async_objc_parseP19plcrash_async_machoP24plcrash_async_objc_cachePFvbP26plcrash_async_macho_stringS4_mPvES5_
+__ZL41pl_async_objc_find_method_search_callbackbP26plcrash_async_macho_stringS0_mPv
+__ZL39pl_async_objc_find_method_call_callbackbP26plcrash_async_macho_stringS0_mPv
+____ZL37plcrash_async_image_objc_has_ios9_abiv_block_invoke
+__ZL25pl_async_parse_obj1_classP19plcrash_async_machoP14pl_objc1_classbPFvbP26plcrash_async_macho_stringS4_mPvES5_
+__ZL12map_sectionsP19plcrash_async_machoP24plcrash_async_objc_cache
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_mPvESC_
+__ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
+__ZL37pl_async_objc_parse_objc2_method_listP19plcrash_async_machoP24plcrash_async_objc_cacheP26plcrash_async_macho_stringbmPFvbS4_S4_mPvES5_
+__ZL9cache_setP24plcrash_async_objc_cachemm
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_mPvESC_
+__ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
+__GLOBAL__sub_I_PLCrashAsyncObjCSection.mm
+__ZZL37plcrash_async_image_objc_has_ios9_abivE9onceToken
+__ZZL37plcrash_async_image_objc_has_ios9_abivE7is_ios9
+_macho_symbol_callback
+_objc_symbol_callback
+_plcrash_async_macho_string_read
+-[IBGPLCrashReportStackFrameInfo initWithInstructionPointer:symbolInfo:]
+-[IBGPLCrashReportStackFrameInfo dealloc]
+-[IBGPLCrashReportStackFrameInfo instructionPointer]
+-[IBGPLCrashReportStackFrameInfo symbolInfo]
+_OBJC_IVAR_$_IBGPLCrashReportStackFrameInfo._instructionPointer
+_OBJC_IVAR_$_IBGPLCrashReportStackFrameInfo._symbolInfo
+-[IBGPLCrashReportRegisterInfo initWithRegisterName:registerValue:]
+-[IBGPLCrashReportRegisterInfo dealloc]
+-[IBGPLCrashReportRegisterInfo registerName]
+-[IBGPLCrashReportRegisterInfo registerValue]
+_OBJC_IVAR_$_IBGPLCrashReportRegisterInfo._registerName
+_OBJC_IVAR_$_IBGPLCrashReportRegisterInfo._registerValue
+-[IBGPLCrashReportSymbolInfo initWithSymbolName:startAddress:endAddress:]
+-[IBGPLCrashReportSymbolInfo dealloc]
+-[IBGPLCrashReportSymbolInfo symbolName]
+-[IBGPLCrashReportSymbolInfo startAddress]
+-[IBGPLCrashReportSymbolInfo endAddress]
+_OBJC_IVAR_$_IBGPLCrashReportSymbolInfo._symbolName
+_OBJC_IVAR_$_IBGPLCrashReportSymbolInfo._startAddress
+_OBJC_IVAR_$_IBGPLCrashReportSymbolInfo._endAddress
+-[IBGPLCrashMachExceptionServer initWithCallBack:context:error:]
+_exception_server_thread
+-[IBGPLCrashMachExceptionServer serverThread]
+-[IBGPLCrashMachExceptionServer copySendRightForServerAndReturningError:]
+-[IBGPLCrashMachExceptionServer exceptionPortWithMask:error:]
+-[IBGPLCrashMachExceptionServer dealloc]
+_exception_server_reply
+_OBJC_IVAR_$_IBGPLCrashMachExceptionServer._serverContext
+_arm_nonvolatile_registers
+_arm64_nonvolatile_registers
+_arm_dwarf_table
+_arm64_dwarf_table
+_plcrash_async_map_register_name
++[IBGPLCrashProcessInfo currentProcessInfo]
+-[IBGPLCrashProcessInfo initWithProcessID:]
+-[IBGPLCrashProcessInfo dealloc]
+-[IBGPLCrashProcessInfo processID]
+-[IBGPLCrashProcessInfo processName]
+-[IBGPLCrashProcessInfo parentProcessID]
+-[IBGPLCrashProcessInfo isTraced]
+-[IBGPLCrashProcessInfo startTime]
+_OBJC_IVAR_$_IBGPLCrashProcessInfo._traced
+_OBJC_IVAR_$_IBGPLCrashProcessInfo._processName
+_OBJC_IVAR_$_IBGPLCrashProcessInfo._processID
+_OBJC_IVAR_$_IBGPLCrashProcessInfo._parentProcessID
+_OBJC_IVAR_$_IBGPLCrashProcessInfo._startTime
++[IBGPLCrashHostInfo currentHostInfo]
+-[IBGPLCrashHostInfo init]
+-[IBGPLCrashHostInfo darwinVersion]
+_OBJC_IVAR_$_IBGPLCrashHostInfo._darwinVersion
++[IBGPLCrashMachExceptionPort exceptionPortsForTask:mask:error:]
++[IBGPLCrashMachExceptionPort exceptionPortsForThread:mask:error:]
+-[IBGPLCrashMachExceptionPort initWithServerPort:mask:behavior:flavor:]
+-[IBGPLCrashMachExceptionPort dealloc]
+-[IBGPLCrashMachExceptionPort registerForTask:previousPortSet:error:]
+-[IBGPLCrashMachExceptionPort registerForThread:previousPortSet:error:]
+-[IBGPLCrashMachExceptionPort server_port]
+-[IBGPLCrashMachExceptionPort mask]
+-[IBGPLCrashMachExceptionPort behavior]
+-[IBGPLCrashMachExceptionPort flavor]
+_OBJC_IVAR_$_IBGPLCrashMachExceptionPort._port
+_OBJC_IVAR_$_IBGPLCrashMachExceptionPort._mask
+_OBJC_IVAR_$_IBGPLCrashMachExceptionPort._behavior
+_OBJC_IVAR_$_IBGPLCrashMachExceptionPort._flavor
+-[IBGPLCrashMachExceptionPortSet initWithSet:]
+-[IBGPLCrashMachExceptionPortSet initWithAsyncSafeRepresentation:]
+-[IBGPLCrashMachExceptionPortSet dealloc]
+-[IBGPLCrashMachExceptionPortSet countByEnumeratingWithState:objects:count:]
+-[IBGPLCrashMachExceptionPortSet asyncSafeRepresentation]
+-[IBGPLCrashMachExceptionPortSet set]
+_OBJC_IVAR_$_IBGPLCrashMachExceptionPortSet._state_set
+_OBJC_IVAR_$_IBGPLCrashMachExceptionPortSet._asyncSafeRepresentation
+l_OBJC_PROTOCOL_$_NSFastEnumeration
+l_OBJC_LABEL_PROTOCOL_$_NSFastEnumeration
++[IBGPLCrashReporterConfig defaultConfiguration]
+-[IBGPLCrashReporterConfig init]
+-[IBGPLCrashReporterConfig initWithSignalHandlerType:symbolicationStrategy:]
+-[IBGPLCrashReporterConfig signalHandlerType]
+-[IBGPLCrashReporterConfig symbolicationStrategy]
+_OBJC_IVAR_$_IBGPLCrashReporterConfig._signalHandlerType
+_OBJC_IVAR_$_IBGPLCrashReporterConfig._symbolicationStrategy
+-[IBGPLCrashReportMachExceptionInfo initWithType:codes:]
+-[IBGPLCrashReportMachExceptionInfo dealloc]
+-[IBGPLCrashReportMachExceptionInfo type]
+-[IBGPLCrashReportMachExceptionInfo codes]
+_OBJC_IVAR_$_IBGPLCrashReportMachExceptionInfo._type
+_OBJC_IVAR_$_IBGPLCrashReportMachExceptionInfo._codes
+__ZL15__ARCLite__loadv
+__ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
+__ZL22add_image_hook_swiftV1PK11mach_headerl
+__ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
+__ZL13replaceMethodP10objc_classP13objc_selectorPFP11objc_objectS4_S2_zEPS6_
+__ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
+__ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
+__ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
+__ZL37__arclite_NSKKMS_fastIndexForKnownKeyP11objc_objectP13objc_selectorS0_
+__ZL28__arclite_NSKKMS_indexForKeyP11objc_objectP13objc_selectorS0_
+__ZL29__arclite_NSKKsD_objectForKeyP11objc_objectP13objc_selectorS0_
+__ZL35__arclite_NSKKsD_removeObjectForKeyP11objc_objectP13objc_selectorS0_
+__ZL33__arclite_NSKKsD_setObject_forKeyP11objc_objectP13objc_selectorS0_S0_
+__ZL41__arclite_NSKKsD_addEntriesFromDictionaryP11objc_objectP13objc_selectorP12NSDictionary
+__ZL28__arclite_objc_readClassPairP10objc_classPK15objc_image_info
+__ZL32__arclite_objc_allocateClassPairP10objc_classPKcm
+__ZL32__arclite_object_getIndexedIvarsP11objc_object
+__ZL23__arclite_objc_getClassPKc
+__ZL27__arclite_objc_getMetaClassPKc
+__ZL31__arclite_objc_getRequiredClassPKc
+__ZL26__arclite_objc_lookUpClassPKc
+__ZL26__arclite_objc_getProtocolPKc
+__ZL23__arclite_class_getNameP10objc_class
+__ZL26__arclite_protocol_getNameP8Protocol
+__ZL37__arclite_objc_copyClassNamesForImagePKcPj
+__ZL17transcribeMethodsP10objc_classP15glue_class_ro_t
+__ZL19transcribeProtocolsP10objc_classP15glue_class_ro_t
+__ZL20transcribePropertiesP10objc_classP15glue_class_ro_t
+__ZL14initialize_impP11objc_objectP13objc_selector
+__ZL18allocateMaybeSwiftP18glue_swift_class_tm
+__ZL22copySwiftV1MangledNamePKcb
+__ZL13demangledNamePKcb
+__ZL16scanMangledFieldRPKcS0_S1_Ri
+__ZL30arclite_uninitialized_functionv
+__ZL12cxxConstructP11objc_object
+__ZL20fixStringForCoreDataP11objc_object
+_OBJC_METACLASS_$___ARCLite__
+__ZL24OBJC_CLASS_$___ARCLite__
+__ZL31OBJC_METACLASS_RO_$___ARCLite__
+__non_lazy_classes
+__ZL27OBJC_CLASS_RO_$___ARCLite__
+__ZL11_class_name
+__ZL32OBJC_$_CLASS_METHODS___ARCLite__
+__ZL17_load_method_name
+__ZL17_load_method_type
+l_OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
+__ZL30NSUndoManagerProxy_targetClass
+__ZL29original_NSManagedObject_init
+__ZL40original_NSManagedObject_allocWithEntity
+__ZL35original_NSManagedObject_allocBatch
+__ZL25NSMutableDictionary_class
+__ZL22NSConstantString_class
+__ZL14NSString_class
+__ZL36original_NSKKMS_fastIndexForKnownKey
+__ZL27original_NSKKMS_indexForKey
+__ZL28original_NSKKsD_objectForKey
+__ZL34original_NSKKsD_removeObjectForKey
+__ZL32original_NSKKsD_setObject_forKey
+__ZL40original_NSKKsD_addEntriesFromDictionary
+__ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZL31original_objc_allocateClassPair
+__ZL31original_object_getIndexedIvars
+__ZL22original_objc_getClass
+__ZL26original_objc_getMetaClass
+__ZL30original_objc_getRequiredClass
+__ZL25original_objc_lookUpClass
+__ZL25original_objc_getProtocol
+__ZL22original_class_getName
+__ZL25original_protocol_getName
+__ZL36original_objc_copyClassNamesForImage
+__ZL12demangleLock
+__ZL9Demangled
+Apple LLVM version 9.0.0 (clang-900.0.39)
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.o -mlinker-version=305
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67/source/arclite.mm
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-67
+fixStringForCoreData
+cxxConstruct
+arclite_uninitialized_function
+scanMangledField
+isdigit
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.Internal.sdk/usr/include/ctype.h
+__isctype
+demangledName
+copySwiftV1DemangledName
+copySwiftV1MangledName
+allocateMaybeSwift
+word_align
+isSwift
+initialize_imp
+transcribeProperties
+property_list_nth
+transcribeProtocols
+transcribeMethods
+data
+method_list_nth
+__arclite_objc_copyClassNamesForImage
+__arclite_protocol_getName
+__arclite_class_getName
+__arclite_objc_getProtocol
+__arclite_objc_lookUpClass
+__arclite_objc_getRequiredClass
+__arclite_objc_getMetaClass
+__arclite_objc_getClass
+__arclite_object_getIndexedIvars
+__arclite_objc_allocateClassPair
+metaclass
+__arclite_objc_readClassPair
+transcribeIvars
+ivar_list_nth
+max
+alignment
+ro
+fastFlags
+__arclite_NSKKsD_addEntriesFromDictionary
+__arclite_NSKKsD_setObject_forKey
+__arclite_NSKKsD_removeObjectForKey
+__arclite_NSKKsD_objectForKey
+__arclite_NSKKMS_indexForKey
+__arclite_NSKKMS_fastIndexForKnownKey
+__arclite_NSManagedObject_allocBatch
+__arclite_NSManagedObject_allocWithEntity
+__arclite_NSManagedObject_init
+replaceMethod
+__arclite_NSUndoManagerProxy_isKindOfClass
+add_image_hook_swiftV1
+patch_lazy_pointers
+patch_t<const char **(const char *, unsigned int *)>
+patch_t<const char *(Protocol *)>
+patch_t<const char *(Class)>
+patch_t<Protocol *(const char *)>
+patch_t<Class (const char *)>
+patch_t<void *(id)>
+patch_t<Class (Class, const char *, unsigned long)>
+patch_t<Class (Class, const objc_image_info *)>
+__arclite_NSMutableDictionary__setObject_forKeyedSubscript
+__ARCLite__load
+install_swiftV1
+install_dict_nil_value
+addOrReplaceMethod
+keyedGetter
