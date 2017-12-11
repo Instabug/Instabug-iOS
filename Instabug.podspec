@@ -11,11 +11,11 @@ Pod::Spec.new do |s|
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
   s.requires_arc = true
 
-  s.subspec 'InstabugCore' do |sp|
-    sp.source_files = 'InstabugCore.framework/Headers/*.{h}'
-    sp.vendored_frameworks = 'InstabugCore.framework'
-    sp.preserve_paths =  'InstabugCore.framework/*'
-    sp.resources = 'InstabugCore.framework/**/*.{sh,png,xib,strings,plist}'
+  s.subspec 'InstabugCore' do |sc|
+    sc.source_files = 'InstabugCore.framework/Headers/*.{h}'
+    sc.vendored_frameworks = 'InstabugCore.framework'
+    sc.preserve_paths =  'InstabugCore.framework/*'
+    sc.resources = 'InstabugCore.framework/**/*.{sh,png,xib,strings,plist}'
   end
 
   s.subspec 'Instabug' do |sp|
