@@ -15,12 +15,13 @@ Pod::Spec.new do |s|
     sp.source_files = 'Instabug.framework/Headers/*.{h}'
     sp.vendored_frameworks = 'Instabug.framework'
     sp.preserve_paths =  'Instabug.framework/*'
+    sp.dependency 'InstabugCore'
   end
 
   s.subspec 'InstabugCore' do |sp|
-    sp.source_files = "InstabugCore", 'InstabugCore/**/*.{h,m,c,xcdatamodeld}',"InstabugCore/Models/InstabugDataModel.xcdatamodeld" 
-    sp.resources = ["InstabugCoreResources/**/*.{sh,png,xib,strings,plist}", 'InstabugCore/Models/InstabugDataModel.xcdatamodeld']
+    sp.source_files = 'InstabugCore/InstabugCore.framework/Headers/*.{h}'
     sp.vendored_frameworks = 'InstabugCore/InstabugCore.framework'
-    sp.preserve_paths =  'InstabugCore/InstabugCore.framework/*'
+    sp.preserve_paths =  'InstabugCore.framework/*'
+    sp.resources = 'InstabugCore/**/*.{sh,png,xib,strings,plist}'
   end
 end
