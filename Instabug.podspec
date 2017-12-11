@@ -10,13 +10,17 @@ Pod::Spec.new do |s|
   s.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
   s.requires_arc = true
-  s.source_files = 'Instabug.framework/Headers/*.{h}'
 
-  s.subspec 'InstabugCore' do |sp|
-    sp.source_files = 'InstabugCore/InstabugCore.framework/Headers/*.{h}'
-    sp.vendored_frameworks = 'InstabugCore/InstabugCore.framework'
-    sp.preserve_paths =  'InstabugCore/InstabugCore.framework/*'
-    sp.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
+  s.subspec 'Instabug' do |sp|
+    sp.source_files = 'Instabug.framework/Headers/*.{h}'
+    sp.vendored_frameworks = 'Instabug.framework'
+    sp.preserve_paths =  'Instabug.framework/*'
   end
 
+  s.subspec 'InstabugCore' do |sp|
+    sp.source_files = "InstabugCore", 'InstabugCore/**/*.{h,m,c,xcdatamodeld}',"InstabugCore/Models/InstabugDataModel.xcdatamodeld" 
+    sp.resources = ["InstabugCoreResources/**/*.{sh,png,xib,strings,plist}", 'InstabugCore/Models/InstabugDataModel.xcdatamodeld']
+    sp.vendored_frameworks = 'InstabugCore/InstabugCore.framework'
+    sp.preserve_paths =  'InstabugCore/InstabugCore.framework/*'
+  end
 end
