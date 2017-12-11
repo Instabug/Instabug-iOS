@@ -13,9 +13,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.subspec 'InstabugCore' do |sc|
-    sc.source_files = 'InstabugCore/InstabugCore.framework/Headers/*.{h}'
-    sc.vendored_frameworks = 'InstabugCore/InstabugCore.framework'
-    sc.preserve_paths =  'InstabugCore/InstabugCore.framework/*'
+    sc.source_files = 'InstabugCore.framework/Headers/*.{h}'
+    sc.vendored_frameworks = 'InstabugCore.framework'
+    sc.preserve_paths =  'InstabugCore.framework/*'
   end
 
   s.subspec 'Instabug' do |sp|
