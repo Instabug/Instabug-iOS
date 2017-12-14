@@ -5,7 +5,7 @@
 ### Actual Behavior
 
 ### Instabug integration code
-*Make sure you remove your app token.*
+*Make sure to remove your app token.*
 
 ### SDK Version
 
