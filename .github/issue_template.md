@@ -1,13 +1,14 @@
-### Steps to reproduce the problem
+### Steps to Reproduce the Problem
 
-### Expected behavior
+### Expected Behavior
 
-### Actual behavior
+### Actual Behavior
 
-### Instabug integration code "Don't put your token publicly"
+### Instabug integration code
+*Make sure to remove your app token.*
 
-### SDK version
+### SDK Version
 
 ### iOS Version
 
-### Device
+### Device Type
