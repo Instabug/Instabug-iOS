@@ -30,6 +30,7 @@ To integrate Instabug into your Xcode project using [Carthage](https://github.co
 
 ```
 binary "https://raw.githubusercontent.com/Instabug/Instabug-iOS/master/Carthage.json"
+binary "https://raw.githubusercontent.com/Instabug/Instabug-iOS/master/InstabugCore/Carthage.json"
 ```
 
 Then, run the following command:
