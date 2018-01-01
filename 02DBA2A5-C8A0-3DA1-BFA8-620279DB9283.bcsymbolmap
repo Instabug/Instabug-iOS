@@ -618,37 +618,40 @@ __46-[IBGEventLoggerContextProvider memoryContext]_block_invoke
 -[IBGURLSessionDemux init]
 -[IBGURLSessionDemux initWithConfiguration:]
 -[IBGURLSessionDemux dataTaskWithRequest:delegate:modes:]
+-[IBGURLSessionDemux setSessionConfiguration:]
 -[IBGURLSessionDemux taskInfoForTask:]
 -[IBGURLSessionDemux URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:]
 ___94-[IBGURLSessionDemux URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:]_block_invoke
 -[IBGURLSessionDemux URLSession:task:didReceiveChallenge:completionHandler:]
 ___76-[IBGURLSessionDemux URLSession:task:didReceiveChallenge:completionHandler:]_block_invoke
-___copy_helper_block_.97
-___destroy_helper_block_.98
+___copy_helper_block_.111
+___destroy_helper_block_.112
 -[IBGURLSessionDemux URLSession:task:needNewBodyStream:]
 ___56-[IBGURLSessionDemux URLSession:task:needNewBodyStream:]_block_invoke
-___copy_helper_block_.102
-___destroy_helper_block_.103
 -[IBGURLSessionDemux URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]
 ___94-[IBGURLSessionDemux URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]_block_invoke
-___copy_helper_block_.107
-___destroy_helper_block_.108
+___copy_helper_block_.121
+___destroy_helper_block_.122
 -[IBGURLSessionDemux URLSession:task:didCompleteWithError:]
 ___59-[IBGURLSessionDemux URLSession:task:didCompleteWithError:]_block_invoke
-___copy_helper_block_.117
-___destroy_helper_block_.118
+___copy_helper_block_.131
+___destroy_helper_block_.132
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]
 ___79-[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]_block_invoke
-___copy_helper_block_.122
-___destroy_helper_block_.123
+___copy_helper_block_.136
+___destroy_helper_block_.137
 -[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]
 ___64-[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]_block_invoke
-___copy_helper_block_.127
-___destroy_helper_block_.128
+___copy_helper_block_.141
+___destroy_helper_block_.142
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]
 ___57-[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]_block_invoke
+___copy_helper_block_.146
+___destroy_helper_block_.147
 -[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]
 ___78-[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]_block_invoke
+___copy_helper_block_.151
+___destroy_helper_block_.152
 -[IBGURLSessionDemux configuration]
 -[IBGURLSessionDemux session]
 -[IBGURLSessionDemux taskInfoByTaskID]
@@ -662,12 +665,13 @@ _OBJC_IVAR_$_IBGURLSessionDemux._configuration
 _OBJC_IVAR_$_IBGURLSessionDemux._taskInfoByTaskID
 _OBJC_IVAR_$_IBGURLSessionDemux._sessionDelegateQueue
 _OBJC_IVAR_$_IBGURLSessionDemux._session
-___block_descriptor_tmp.99
-___block_descriptor_tmp.104
-___block_descriptor_tmp.110
-___block_descriptor_tmp.119
+___block_descriptor_tmp.113
 ___block_descriptor_tmp.124
-___block_descriptor_tmp.129
+___block_descriptor_tmp.133
+___block_descriptor_tmp.138
+___block_descriptor_tmp.143
+___block_descriptor_tmp.148
+___block_descriptor_tmp.153
 l_OBJC_PROTOCOL_$_NSURLSessionDelegate
 l_OBJC_LABEL_PROTOCOL_$_NSURLSessionDelegate
 l_OBJC_PROTOCOL_$_NSURLSessionTaskDelegate
@@ -1021,6 +1025,7 @@ _OBJC_IVAR_$_IBGPostSendingSnapshot._eventsLog
 +[IBGURLProtocol canInitWithTask:]
 +[IBGURLProtocol canonicalRequestForRequest:]
 +[IBGURLProtocol requestIsCacheEquivalent:toRequest:]
++[IBGURLProtocol setSessionConfiguration:]
 -[IBGURLProtocol startLoading]
 -[IBGURLProtocol bodyOfRequest:]
 -[IBGURLProtocol stopLoading]
@@ -1035,17 +1040,17 @@ ___29+[IBGURLProtocol sharedDemux]_block_invoke
 -[IBGURLProtocol URLSession:task:didReceiveChallenge:completionHandler:]
 -[IBGURLProtocol didReceiveAuthenticationChallenge:completionHandler:]
 ___70-[IBGURLProtocol didReceiveAuthenticationChallenge:completionHandler:]_block_invoke
-___copy_helper_block_.702
-___destroy_helper_block_.703
+___copy_helper_block_.705
+___destroy_helper_block_.706
 -[IBGURLProtocol mainThreadDidReceiveAuthenticationChallenge:completionHandler:]
 -[IBGURLProtocol cancelPendingChallenge]
 ___40-[IBGURLProtocol cancelPendingChallenge]_block_invoke
-___copy_helper_block_.711
-___destroy_helper_block_.712
+___copy_helper_block_.714
+___destroy_helper_block_.715
 -[IBGURLProtocol clientThreadCancelAuthenticationChallenge:completionHandler:]
 ___78-[IBGURLProtocol clientThreadCancelAuthenticationChallenge:completionHandler:]_block_invoke
-___copy_helper_block_.716
-___destroy_helper_block_.717
+___copy_helper_block_.719
+___destroy_helper_block_.720
 -[IBGURLProtocol networkLogger]
 +[IBGURLProtocol setCanAuthenticateAgainstProtectionSpaceHandler:]
 +[IBGURLProtocol setDidReceiveAuthenticationChallengeHandler:]
@@ -1073,10 +1078,10 @@ ___destroy_helper_block_.717
 _sharedDemux.onceToken
 _sharedDemux.sDemux
 _protectionSpaceHandler
-___block_descriptor_tmp.704
+___block_descriptor_tmp.707
 _reciveAuthenticationChallengeHandler
-___block_descriptor_tmp.713
-___block_descriptor_tmp.718
+___block_descriptor_tmp.716
+___block_descriptor_tmp.721
 _OBJC_IVAR_$_IBGURLProtocol._networkLogger
 _OBJC_IVAR_$_IBGURLProtocol._task
 _OBJC_IVAR_$_IBGURLProtocol._loggedRequest
@@ -2771,6 +2776,7 @@ ___block_descriptor_tmp.95
 ___block_literal_global.96
 ___block_descriptor_tmp.97
 ___block_literal_global.98
+___block_descriptor_tmp.99
 ___block_literal_global.100
 ___block_descriptor_tmp.101
 ___block_literal_global.102
@@ -2782,12 +2788,12 @@ ___block_descriptor_tmp.107
 ___block_literal_global.108
 ___block_descriptor_tmp.109
 ___block_literal_global.110
-___block_descriptor_tmp.113
 ___block_literal_global.114
 ___block_descriptor_tmp.115
 ___block_literal_global.116
 ___block_descriptor_tmp.117
 ___block_literal_global.118
+___block_descriptor_tmp.119
 ___block_literal_global.120
 ___block_literal_global.122
 ___block_descriptor_tmp.123
@@ -2795,14 +2801,12 @@ ___block_literal_global.124
 ___block_literal_global.135
 ___block_descriptor_tmp.136
 ___block_literal_global.137
-___block_descriptor_tmp.138
 ___block_literal_global.139
 ___block_descriptor_tmp.142
 ___block_literal_global.143
 ___block_descriptor_tmp.144
 ___block_literal_global.145
 _IBGStrokeColor
-___block_descriptor_tmp.148
 ___block_literal_global.149
 ___block_descriptor_tmp.150
 ___block_literal_global.151
@@ -3189,18 +3193,18 @@ ___destroy_helper_block_.546
 -[IBGServerManager setupBackgroundSession]
 -[IBGServerManager executeServerRequest:]
 ___41-[IBGServerManager executeServerRequest:]_block_invoke
-___copy_helper_block_.582
-___destroy_helper_block_.583
+___copy_helper_block_.584
+___destroy_helper_block_.585
 -[IBGServerManager beginBackgroundTaskWithName:]
 ___48-[IBGServerManager beginBackgroundTaskWithName:]_block_invoke
 -[IBGServerManager endBackgroundTaskWithName:]
 -[IBGServerManager URLSession:task:didCompleteWithError:]
 ___57-[IBGServerManager URLSession:task:didCompleteWithError:]_block_invoke
 ___57-[IBGServerManager URLSession:task:didCompleteWithError:]_block_invoke_2
-___copy_helper_block_.620
-___destroy_helper_block_.621
-___copy_helper_block_.627
-___destroy_helper_block_.628
+___copy_helper_block_.622
+___destroy_helper_block_.623
+___copy_helper_block_.629
+___destroy_helper_block_.630
 -[IBGServerManager URLSession:dataTask:didReceiveData:]
 -[IBGServerManager pushRequest:withTaskIdentifeier:]
 -[IBGServerManager requestWithTaskIdentifeier:]
@@ -3232,6 +3236,8 @@ ___copy_helper_block_.695
 ___destroy_helper_block_.696
 -[IBGServerManager popRequest:]
 ___31-[IBGServerManager popRequest:]_block_invoke
+___copy_helper_block_.702
+___destroy_helper_block_.703
 -[IBGServerManager removeAttachmentDelegateAndRequest:]
 -[IBGServerManager serverRequests]
 -[IBGServerManager backgroundTaskIdentifiers]
@@ -3258,10 +3264,10 @@ ___31-[IBGServerManager popRequest:]_block_invoke
 _OBJC_IVAR_$_IBGServerManager._initializationOperation
 ___block_descriptor_tmp.542
 ___block_descriptor_tmp.547
-___block_descriptor_tmp.585
-___block_descriptor_tmp.593
-___block_descriptor_tmp.622
-___block_descriptor_tmp.630
+___block_descriptor_tmp.587
+___block_descriptor_tmp.595
+___block_descriptor_tmp.624
+___block_descriptor_tmp.632
 _OBJC_IVAR_$_IBGServerManager._attachmentRequests
 _OBJC_IVAR_$_IBGServerManager._attachmentRequestDelegates
 ___block_descriptor_tmp.665
@@ -3269,6 +3275,7 @@ ___block_descriptor_tmp.678
 ___block_descriptor_tmp.681
 ___block_descriptor_tmp.686
 ___block_descriptor_tmp.697
+___block_descriptor_tmp.704
 _OBJC_IVAR_$_IBGServerManager._serverRequests
 _OBJC_IVAR_$_IBGServerManager._backgroundTaskIdentifiers
 _OBJC_IVAR_$_IBGServerManager._servers
@@ -3863,12 +3870,13 @@ ___block_descriptor_tmp.137
 ___block_descriptor_tmp.157
 ___block_descriptor_tmp.158
 ___block_literal_global.159
-___block_descriptor_tmp.178
-___block_literal_global.179
+__customSessionConfiguration
+___block_descriptor_tmp.180
+___block_literal_global.181
 _requestProgressBlockDictionary.onceToken
 __requestProgressBlockDictionary
-___block_descriptor_tmp.183
-___block_literal_global.184
+___block_descriptor_tmp.185
+___block_literal_global.186
 _OBJC_IVAR_$_IBGNetworkLogger._loggedRequest
 _OBJC_IVAR_$_IBGNetworkLogger._tobeSavedBody
 _OBJC_IVAR_$_IBGNetworkLogger._loggedResponse
@@ -4138,6 +4146,8 @@ _OBJC_IVAR_$_IBGCoreDataPersistenceManager._managedObjectContext
 ___block_descriptor_tmp.135
 ___block_descriptor_tmp.146
 ___block_descriptor_tmp.149
+___block_descriptor_tmp.178
+___block_descriptor_tmp.183
 ___block_descriptor_tmp.197
 ___block_descriptor_tmp.200
 ___block_descriptor_tmp.206
@@ -4463,6 +4473,7 @@ ___destroy_helper_block_.626
 -[IBGEventLogger .cxx_destruct]
 ___block_descriptor_tmp.558
 ___block_descriptor_tmp.573
+___block_descriptor_tmp.585
 _OBJC_IVAR_$_IBGEventLogger._eventLoggerContextProvider
 ___block_descriptor_tmp.610
 ___block_literal_global.611
@@ -5119,6 +5130,8 @@ ___46-[IBGAudioVideoRecorder didFailRecordingVideo]_block_invoke
 -[IBGAudioVideoRecorder mergeAudioVideo]
 ___40-[IBGAudioVideoRecorder mergeAudioVideo]_block_invoke
 ___40-[IBGAudioVideoRecorder mergeAudioVideo]_block_invoke_2
+___copy_helper_block_.117
+___destroy_helper_block_.118
 ___copy_helper_block_.120
 ___destroy_helper_block_.121
 -[IBGAudioVideoRecorder clearAssets]
@@ -5347,6 +5360,8 @@ __51-[IBGScreenshotVC adjustScreenshotAnnotationsImage]_block_invoke
 -[IBGServerFileRequest prepareRequestWithCompletionHandler:]
 ___60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke
 ___60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke.458
+___copy_helper_block_.475
+___destroy_helper_block_.476
 -[IBGServerFileRequest sessionDataTaskWithRawRequest:]
 +[IBGServerFileRequest executeWithURL:filePath:fileInfo:delegate:]
 -[IBGServerFileRequest dataFromContentOfFilePath:]
@@ -5365,7 +5380,7 @@ ___60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke.4
 -[IBGServerFileRequest info]
 -[IBGServerFileRequest setInfo:]
 -[IBGServerFileRequest .cxx_destruct]
-___block_descriptor_tmp.464
+___block_descriptor_tmp.478
 _OBJC_IVAR_$_IBGServerFileRequest._delegate
 _OBJC_IVAR_$_IBGServerFileRequest._data
 _OBJC_IVAR_$_IBGServerFileRequest._filePath
@@ -5611,8 +5626,6 @@ ___destroy_helper_block_.616
 -[IBGLogLocalAttachment send]
 ___29-[IBGLogLocalAttachment send]_block_invoke
 ___29-[IBGLogLocalAttachment send]_block_invoke_2
-___copy_helper_block_.719
-___destroy_helper_block_.720
 ___copy_helper_block_.722
 ___destroy_helper_block_.723
 -[IBGLogLocalAttachment logRequestWithLogType:]
@@ -5644,7 +5657,6 @@ ___block_descriptor_tmp.589
 ___block_literal_global.590
 ___block_descriptor_tmp.609
 ___block_descriptor_tmp.617
-___block_descriptor_tmp.721
 ___block_descriptor_tmp.724
 _OBJC_IVAR_$_IBGLogLocalAttachment._consoleLog
 _OBJC_IVAR_$_IBGLogLocalAttachment._userStepsLog
@@ -5830,10 +5842,12 @@ ___73-[IBGUserStepsImagesLocalAttachment prepareAttachmentPathWithCompletion:]_b
 ___73-[IBGUserStepsImagesLocalAttachment prepareAttachmentPathWithCompletion:]_block_invoke_2
 ___copy_helper_block_.576
 ___destroy_helper_block_.577
+___copy_helper_block_.582
+___destroy_helper_block_.583
 -[IBGUserStepsImagesLocalAttachment prepareAttachmentAndSaveWithCompletion:]
 ___76-[IBGUserStepsImagesLocalAttachment prepareAttachmentAndSaveWithCompletion:]_block_invoke
-___copy_helper_block_.596
-___destroy_helper_block_.597
+___copy_helper_block_.598
+___destroy_helper_block_.599
 -[IBGUserStepsImagesLocalAttachment reportAttachmentRequestDone:isSuccess:error:]
 -[IBGUserStepsImagesLocalAttachment fileName]
 -[IBGUserStepsImagesLocalAttachment setFileName:]
@@ -5843,7 +5857,7 @@ ___destroy_helper_block_.597
 -[IBGUserStepsImagesLocalAttachment setSnapshot:]
 -[IBGUserStepsImagesLocalAttachment .cxx_destruct]
 ___block_descriptor_tmp.579
-___block_descriptor_tmp.598
+___block_descriptor_tmp.600
 _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment.fileName
 _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment._reportId
 _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment._snapshot
@@ -5903,6 +5917,8 @@ ___copy_helper_block_.91
 ___destroy_helper_block_.92
 ___copy_helper_block_.94
 ___destroy_helper_block_.95
+___copy_helper_block_.97
+___destroy_helper_block_.98
 ___copy_helper_block_.100
 ___destroy_helper_block_.101
 -[IBGVideoRecorder handleFrameEncodingDone]
@@ -6076,8 +6092,6 @@ ___destroy_helper_block_.854
 +[IBGInspector traverseView:]
 +[IBGInspector logViewHierarchyForAllWindows]
 ___45+[IBGInspector logViewHierarchyForAllWindows]_block_invoke
-___copy_helper_block_.869
-___destroy_helper_block_.870
 +[IBGInspector printSubviewsDescriptionForView:level:]
 +[IBGInspector processID]
 +[IBGInspector threadID]
@@ -6108,11 +6122,10 @@ ___block_descriptor_tmp.764
 ___block_descriptor_tmp.776
 ___block_literal_global.777
 ___block_descriptor_tmp.856
-___block_descriptor_tmp.872
 _sessionUUID.onceToken
 _sessionUUID
-___block_descriptor_tmp.924
-___block_literal_global.925
+___block_descriptor_tmp.922
+___block_literal_global.923
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGInspector.m
 __27+[IBGInspector sessionUUID]_block_invoke
 __45+[IBGInspector logViewHierarchyForAllWindows]_block_invoke
@@ -6664,27 +6677,54 @@ _OBJC_IVAR_$_IBGReachability._reachabilityRef
 _OBJC_IVAR_$_IBGReachability._alwaysReturnLocalWiFiStatus
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Reachability/IBGReachability.m
 ReachabilityCallback
++[IBGCache cacheModelsQueue]
+___28+[IBGCache cacheModelsQueue]_block_invoke
 -[IBGCache init]
 -[IBGCache initWithShouldForceWrite:]
 -[IBGCache append:]
+___19-[IBGCache append:]_block_invoke
 -[IBGCache remove:]
+___19-[IBGCache remove:]_block_invoke
+___copy_helper_block_.381
+___destroy_helper_block_.382
 -[IBGCache contains:]
+___21-[IBGCache contains:]_block_invoke
+___copy_helper_block_.386
+___destroy_helper_block_.387
 -[IBGCache persistAll]
 ___22-[IBGCache persistAll]_block_invoke
+___copy_helper_block_.395
+___destroy_helper_block_.396
+___22-[IBGCache persistAll]_block_invoke.404
+___22-[IBGCache persistAll]_block_invoke_2
+___copy_helper_block_.405
+___destroy_helper_block_.406
+___copy_helper_block_.408
+___destroy_helper_block_.409
 -[IBGCache forcePersistAll]
+___27-[IBGCache forcePersistAll]_block_invoke
+___copy_helper_block_.411
+___destroy_helper_block_.412
 -[IBGCache getWritingOperationTimeInterval]
 -[IBGCache unpersistAll]
+___24-[IBGCache unpersistAll]_block_invoke
+___copy_helper_block_.422
+___destroy_helper_block_.423
 -[IBGCache getLastObject]
+___25-[IBGCache getLastObject]_block_invoke
+___copy_helper_block_.427
+___destroy_helper_block_.428
 -[IBGCache getCache]
 -[IBGCache sendAll]
+___19-[IBGCache sendAll]_block_invoke
+___copy_helper_block_.438
+___destroy_helper_block_.439
 -[IBGCache cacheDiskPath]
 -[IBGCache writeModels:toPath:]
 -[IBGCache readModelsFromPath:]
 -[IBGCache getDataFromPath:]
 -[IBGCache cachedModels]
 -[IBGCache setCachedModels:]
--[IBGCache lock]
--[IBGCache setLock:]
 -[IBGCache shouldWriteToDisk]
 -[IBGCache setShouldWriteToDisk:]
 -[IBGCache shouldForceWrite]
@@ -6694,14 +6734,34 @@ ___22-[IBGCache persistAll]_block_invoke
 -[IBGCache isSent]
 -[IBGCache setIsSent:]
 -[IBGCache .cxx_destruct]
+_cacheModelsQueue.once
+__IBGCacheQueue
+___block_descriptor_tmp.383
+___block_descriptor_tmp.388
+___block_descriptor_tmp.397
+___block_descriptor_tmp.407
+___block_descriptor_tmp.410
+___block_descriptor_tmp.413
+___block_descriptor_tmp.424
+___block_descriptor_tmp.429
+___block_descriptor_tmp.440
 _OBJC_IVAR_$_IBGCache._cachedModels
-_OBJC_IVAR_$_IBGCache._lock
 _OBJC_IVAR_$_IBGCache._shouldWriteToDisk
 _OBJC_IVAR_$_IBGCache._shouldForceWrite
 _OBJC_IVAR_$_IBGCache._isUnPresisted
 _OBJC_IVAR_$_IBGCache._isSent
 /Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGCache.m
+__19-[IBGCache sendAll]_block_invoke
+__25-[IBGCache getLastObject]_block_invoke
+__24-[IBGCache unpersistAll]_block_invoke
+__27-[IBGCache forcePersistAll]_block_invoke
+__22-[IBGCache persistAll]_block_invoke_2
+__22-[IBGCache persistAll]_block_invoke.404
 __22-[IBGCache persistAll]_block_invoke
+__21-[IBGCache contains:]_block_invoke
+__19-[IBGCache remove:]_block_invoke
+__19-[IBGCache append:]_block_invoke
+__28+[IBGCache cacheModelsQueue]_block_invoke
 -[IBGAttachmentCell initWithFrame:]
 -[IBGAttachmentCell prepareForReuse]
 -[IBGAttachmentCell updateConstraints]
@@ -6879,10 +6939,8 @@ ___48-[IBGDiskIOManager writeData:toFile:completion:]_block_invoke
 -[IBGDiskIOManager forceWriteData:toFile:]
 -[IBGDiskIOManager readFileAtPath:error:]
 ___41-[IBGDiskIOManager readFileAtPath:error:]_block_invoke
-___copy_helper_block_.10
-___destroy_helper_block_.11
 _diskIOQueue
-___block_descriptor_tmp.12
+___block_descriptor_tmp.11
 /Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGDiskIOManager.m
 __41-[IBGDiskIOManager readFileAtPath:error:]_block_invoke
 __48-[IBGDiskIOManager writeData:toFile:completion:]_block_invoke

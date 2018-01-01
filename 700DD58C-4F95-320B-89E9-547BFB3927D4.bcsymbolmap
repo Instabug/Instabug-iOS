@@ -129,6 +129,7 @@ __75-[IBGSurveyFlowController dismissIntroViewControllerWithCompletionHandler:]_
 -[IBGSurveysNavigationController setCurrentQuestionAnswer:]
 -[IBGSurveysNavigationController submitSurvey]
 -[IBGSurveysNavigationController setSurveyCanceled:]
+-[IBGSurveysNavigationController clearRecordedAnswersForAllSurveys]
 -[IBGSurveysNavigationController surveyAnswerUpdated:shouldNavigateToNextQuestion:]
 -[IBGSurveysNavigationController delegate]
 -[IBGSurveysNavigationController setDelegate:]
@@ -963,6 +964,7 @@ ___38-[IBGChat sortedMessagesWithMessages:]_block_invoke
 -[IBGChat isEqual:]
 -[IBGChat localAttachmentRequestSucceeded:]
 -[IBGChat prepareAttachmentAndSave]
+___35-[IBGChat prepareAttachmentAndSave]_block_invoke
 -[IBGChat hasAttachment]
 -[IBGChat sendAllAttachments]
 -[IBGChat identifier]
@@ -983,6 +985,7 @@ ___38-[IBGChat sortedMessagesWithMessages:]_block_invoke
 _OBJC_IVAR_$_IBGChat._date
 ___block_descriptor_tmp.642
 ___block_literal_global.643
+___block_descriptor_tmp.744
 _OBJC_IVAR_$_IBGChat._identifier
 _OBJC_IVAR_$_IBGChat._isSynced
 _OBJC_IVAR_$_IBGChat._isSent
@@ -999,6 +1002,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGCachable
 /Users/distiller/ios/Instabug/InstabugChats/Models/IBGChat.m
 /Users/distiller/ios/Instabug/InstabugChats/Models/IBGChat.h
 /Users/distiller/Library/Developer/Xcode/DerivedData/Instabug-cjevizvyfkuqudglpxzowmiwjvbi/Build/Intermediates.noindex/ArchiveIntermediates/Framework/BuildProductsPath/Release-iphoneos/InstabugCore.framework/Headers/IBGCachable.h
+__35-[IBGChat prepareAttachmentAndSave]_block_invoke
 __38-[IBGChat sortedMessagesWithMessages:]_block_invoke
 __25-[IBGChat addNewMessage:]_block_invoke
 +[IBGReadQueueManager getInstance]
@@ -1267,8 +1271,11 @@ _IBGDarkNotSentInBoundChatSwooch
 -[IBGMessage getBodyFromMessageContents]
 -[IBGMessage sendAllAttachments]
 -[IBGMessage persistAndSend]
+___28-[IBGMessage persistAndSend]_block_invoke
 -[IBGMessage fetchAttachmentsWithCompletionHandler:]
 ___52-[IBGMessage fetchAttachmentsWithCompletionHandler:]_block_invoke
+___copy_helper_block_.749
+___destroy_helper_block_.750
 -[IBGMessage fetchedAsset:ofURL:isSuccess:]
 -[IBGMessage messageRequestDone:withMessageID:isSuccess:error:]
 -[IBGMessage chatID]
@@ -1326,6 +1333,7 @@ ___52-[IBGMessage fetchAttachmentsWithCompletionHandler:]_block_invoke
 -[IBGMessage setAttachmentsArray:]
 -[IBGMessage .cxx_destruct]
 _dateFormatter.formatter
+___block_descriptor_tmp.752
 _OBJC_IVAR_$_IBGMessage._chatID
 _OBJC_IVAR_$_IBGMessage._attachmentsArray
 _OBJC_IVAR_$_IBGMessage._identifier
@@ -1354,6 +1362,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGDiffable
 /Users/distiller/ios/Instabug/InstabugChats/Models/IBGMessage.m
 /Users/distiller/ios/Instabug/InstabugChats/Models/IBGMessage.h
 __52-[IBGMessage fetchAttachmentsWithCompletionHandler:]_block_invoke
+__28-[IBGMessage persistAndSend]_block_invoke
 +[InstabugSurveys(InstabugSurveysPrivate) setForceDisabled:]
 +[InstabugSurveys(InstabugSurveysPrivate) destoryInstabugSurveys]
 /Users/distiller/ios/Instabug/InstabugSurveys/InstabugSurveys+InstabugSurveysPrivate.m
@@ -1399,10 +1408,11 @@ ___destroy_helper_block_.690
 -[InstabugSurveys showSurveyWithToken:]
 -[InstabugSurveys hasRespondedToSurveyWithToken:]
 -[InstabugSurveys matchingValueWithPrimitiveTypes:condition:]
--[InstabugSurveys presentSurvey:]
-___33-[InstabugSurveys presentSurvey:]_block_invoke
-___copy_helper_block_.717
-___destroy_helper_block_.718
+-[InstabugSurveys presentSurvey:showIntroMessage:]
+___50-[InstabugSurveys presentSurvey:showIntroMessage:]_block_invoke
+___copy_helper_block_.723
+___destroy_helper_block_.724
+-[InstabugSurveys shouldShowSurvey:]
 -[InstabugSurveys surveysRequestDone:isSucess:error:withSurveys:]
 -[InstabugSurveys surveyDismissedWithType:]
 -[InstabugSurveys didCancelSurvey]
@@ -1449,7 +1459,7 @@ ___block_descriptor_tmp.627
 ___block_descriptor_tmp.661
 ___block_descriptor_tmp.688
 ___block_descriptor_tmp.691
-___block_descriptor_tmp.719
+___block_descriptor_tmp.725
 _OBJC_IVAR_$_InstabugSurveys._cachedSurveys
 _OBJC_IVAR_$_InstabugSurveys._currentConditions
 _OBJC_IVAR_$_InstabugSurveys._isSurveyShowInCurrentSession
@@ -1463,7 +1473,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGSurveysRequestDelegate
 l_OBJC_PROTOCOL_$_IBGSnapshotManagerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGSnapshotManagerDelegate
 /Users/distiller/ios/Instabug/InstabugSurveys/InstabugSurveys.m
-__33-[InstabugSurveys presentSurvey:]_block_invoke
+__50-[InstabugSurveys presentSurvey:showIntroMessage:]_block_invoke
 __40-[InstabugSurveys showSurveyIfAvailable]_block_invoke_2
 __40-[InstabugSurveys showSurveyIfAvailable]_block_invoke
 __37-[InstabugSurveys showPendingSurveys]_block_invoke
@@ -1754,6 +1764,7 @@ __29-[IBGInvocationShake install]_block_invoke
 -[IBGCrash coderNameForSelector:]
 -[IBGCrash submit]
 -[IBGCrash addAttachment:]
+___26-[IBGCrash addAttachment:]_block_invoke
 -[IBGCrash hasAttachment]
 -[IBGCrash sendAllAttachments]
 -[IBGCrash description]
@@ -1805,6 +1816,7 @@ l_OBJC_PROTOCOL_$_IBGReportRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGReportRequestDelegate
 /Users/distiller/ios/Instabug/InstabugCrashReporting/Models/IBGCrash.m
 /Users/distiller/ios/Instabug/InstabugCrashReporting/Models/IBGCrash.h
+__26-[IBGCrash addAttachment:]_block_invoke
 -[IBGSurveysViewFactory surveyViewControllerWithQuestion:delegate:Type:]
 -[IBGSurveysViewFactory surveyViewControllerWithType:question:delegate:]
 /Users/distiller/ios/Instabug/InstabugSurveys/Managers/IBGSurveysViewFactory.m
@@ -1885,6 +1897,9 @@ __44+[IBGSurveyInvocaitonManager sharedInstance]_block_invoke
 -[IBGBug setAttachments:]
 -[IBGBug persistAndSend]
 ___24-[IBGBug persistAndSend]_block_invoke
+___24-[IBGBug persistAndSend]_block_invoke_2
+___copy_helper_block_.572
+___destroy_helper_block_.573
 -[IBGBug hasAttachment]
 -[IBGBug sendAllAttachments]
 -[IBGBug description]
@@ -1921,6 +1936,7 @@ ___24-[IBGBug persistAndSend]_block_invoke
 -[IBGBug isSent]
 -[IBGBug setIsSent:]
 -[IBGBug .cxx_destruct]
+___block_descriptor_tmp.575
 _OBJC_IVAR_$_IBGBug._identifier
 _OBJC_IVAR_$_IBGBug._comment
 _OBJC_IVAR_$_IBGBug._email
@@ -1932,6 +1948,7 @@ _OBJC_IVAR_$_IBGBug._attachmentsObjects
 _OBJC_IVAR_$_IBGBug._isSent
 /Users/distiller/ios/Instabug/InstabugBugReporting/Models/IBGBug.m
 /Users/distiller/ios/Instabug/InstabugBugReporting/Models/IBGBug.h
+__24-[IBGBug persistAndSend]_block_invoke_2
 __24-[IBGBug persistAndSend]_block_invoke
 -[IBGSurveysNavigationFooter init]
 -[IBGSurveysNavigationFooter updateConstraints]
@@ -2257,7 +2274,6 @@ ___destroy_helper_block_.953
 _OBJC_IVAR_$_IBGBugVC._controller
 _OBJC_IVAR_$_IBGBugVC._type
 _OBJC_IVAR_$_IBGBugVC._shouldShowEmail
-___block_descriptor_tmp.744
 ___block_descriptor_tmp.754
 ___block_descriptor_tmp.789
 _OBJC_IVAR_$_IBGBugVC._bugRequestCreator
@@ -2737,6 +2753,7 @@ __30+[IBGCrashManager getInstance]_block_invoke
 +[IBGSurvey surveysFromResponseArray:]
 -[IBGSurvey hasToken]
 -[IBGSurvey dismissed]
+-[IBGSurvey hasTokenEqualToToken:]
 -[IBGSurvey description]
 -[IBGSurvey isSent]
 -[IBGSurvey isFullySent]
