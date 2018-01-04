@@ -2205,12 +2205,6 @@ ___copy_helper_block_.937
 ___destroy_helper_block_.938
 ___copy_helper_block_.940
 ___destroy_helper_block_.941
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.945
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.946
-___copy_helper_block_.949
-___destroy_helper_block_.950
-___copy_helper_block_.952
-___destroy_helper_block_.953
 -[IBGBugVC maximumNumberOfAttachmentsAllowed]
 -[IBGBugVC performActionOrShowMaximumNumberOfAttachmentsAlert:]
 -[IBGBugVC dealloc]
@@ -2284,8 +2278,6 @@ ___block_descriptor_tmp.927
 ___block_descriptor_tmp.930
 ___block_descriptor_tmp.939
 ___block_descriptor_tmp.942
-___block_descriptor_tmp.951
-___block_descriptor_tmp.954
 _OBJC_IVAR_$_IBGBugVC._attachmentController
 _OBJC_IVAR_$_IBGBugVC._videoPlayer
 _OBJC_IVAR_$_IBGBugVC._voicePlayer
@@ -2321,8 +2313,6 @@ l_OBJC_PROTOCOL_$_IBGBugControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGBugControllerDelegate
 /Users/distiller/ios/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.m
 /Users/distiller/ios/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.h
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.946
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.945
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.934
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke.933
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.922
@@ -3772,6 +3762,7 @@ ___18+[Instabug logOut]_block_invoke
 +[Instabug setString:toKey:]
 +[Instabug setValue:forStringWithKey:]
 +[Instabug setAttachmentTypesEnabledScreenShot:extraScreenShot:galleryImage:voiceNote:screenRecording:]
++[Instabug setEnabledAttachmentTypes:]
 +[Instabug setChatNotificationEnabled:]
 +[Instabug setPromptOptionsEnabledWithBug:feedback:chat:]
 +[Instabug setReportCategoriesWithTitles:iconNames:]

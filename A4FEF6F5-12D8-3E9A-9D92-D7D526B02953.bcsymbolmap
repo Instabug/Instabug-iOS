@@ -102,11 +102,8 @@ _OBJC_IVAR_$_IBGMagnifyControlPoints._initialCenter
 l_OBJC_PROTOCOL_$_IBGShapeControl
 l_OBJC_LABEL_PROTOCOL_$_IBGShapeControl
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGMagnifyControlPoints.m
-CGRectMake
-/Applications/Xcode-9.0.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 IBGCGPointGetDistance
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGGeomtryUtilities.h
-CGPointMake
 -[IBGInternalErrorLogRequest initWithCrashId:parameters:delegate:]
 /Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGInternalErrorLogRequest.m
 +[IBGSessionManager getInstance]
@@ -431,7 +428,6 @@ l_OBJC_LABEL_PROTOCOL_$_IBGReportAttachmentRequestDelegate
 _OBJC_IVAR_$_IBGArrowAnnotationView.path
 _OBJC_IVAR_$_IBGArrowAnnotationView._annotatingColor
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGArrowAnnotationView.m
-CGSizeMake
 -[IBGActionSheetVC initInSplitViewController:]
 -[IBGActionSheetVC init]
 -[IBGActionSheetVC registerNotifications]
@@ -634,24 +630,24 @@ ___copy_helper_block_.121
 ___destroy_helper_block_.122
 -[IBGURLSessionDemux URLSession:task:didCompleteWithError:]
 ___59-[IBGURLSessionDemux URLSession:task:didCompleteWithError:]_block_invoke
-___copy_helper_block_.131
-___destroy_helper_block_.132
+___copy_helper_block_.130
+___destroy_helper_block_.131
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]
 ___79-[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]_block_invoke
-___copy_helper_block_.136
-___destroy_helper_block_.137
+___copy_helper_block_.135
+___destroy_helper_block_.136
 -[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]
 ___64-[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]_block_invoke
-___copy_helper_block_.141
-___destroy_helper_block_.142
+___copy_helper_block_.140
+___destroy_helper_block_.141
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]
 ___57-[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]_block_invoke
-___copy_helper_block_.146
-___destroy_helper_block_.147
+___copy_helper_block_.145
+___destroy_helper_block_.146
 -[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]
 ___78-[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]_block_invoke
-___copy_helper_block_.151
-___destroy_helper_block_.152
+___copy_helper_block_.150
+___destroy_helper_block_.151
 -[IBGURLSessionDemux configuration]
 -[IBGURLSessionDemux session]
 -[IBGURLSessionDemux taskInfoByTaskID]
@@ -666,12 +662,11 @@ _OBJC_IVAR_$_IBGURLSessionDemux._taskInfoByTaskID
 _OBJC_IVAR_$_IBGURLSessionDemux._sessionDelegateQueue
 _OBJC_IVAR_$_IBGURLSessionDemux._session
 ___block_descriptor_tmp.113
-___block_descriptor_tmp.124
-___block_descriptor_tmp.133
-___block_descriptor_tmp.138
-___block_descriptor_tmp.143
-___block_descriptor_tmp.148
-___block_descriptor_tmp.153
+___block_descriptor_tmp.123
+___block_descriptor_tmp.132
+___block_descriptor_tmp.137
+___block_descriptor_tmp.142
+___block_descriptor_tmp.147
 l_OBJC_PROTOCOL_$_NSURLSessionDelegate
 l_OBJC_LABEL_PROTOCOL_$_NSURLSessionDelegate
 l_OBJC_PROTOCOL_$_NSURLSessionTaskDelegate
@@ -1453,8 +1448,6 @@ _OBJC_IVAR_$_IBGBaseHUDViewController._duration
 _OBJC_IVAR_$_IBGBaseHUDViewController._animation
 /Users/distiller/ios/InstabugCore/InstabugCore/Windows/HUDs/IBGBaseHUDViewController.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Windows/HUDs/IBGBaseHUDViewController.h
-NSMakeRange
-/Applications/Xcode-9.0.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __32-[IBGBaseHUDViewController hide]_block_invoke.89
 __32-[IBGBaseHUDViewController hide]_block_invoke
 __32-[IBGBaseHUDViewController show]_block_invoke
@@ -1472,22 +1465,22 @@ ___66-[IBGVideoEncoder videoEncodingUsingImage:atTime:withOrientation:]_block_in
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke_2
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke_3
-___copy_helper_block_.467
-___destroy_helper_block_.468
-___copy_helper_block_.474
-___destroy_helper_block_.475
-___copy_helper_block_.479
-___destroy_helper_block_.480
+___copy_helper_block_.465
+___destroy_helper_block_.466
+___copy_helper_block_.472
+___destroy_helper_block_.473
+___copy_helper_block_.477
+___destroy_helper_block_.478
 -[IBGVideoEncoder stopAutoRecordingCompletion]
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke_2
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke_3
-___copy_helper_block_.484
-___destroy_helper_block_.485
-___copy_helper_block_.487
-___destroy_helper_block_.488
-___copy_helper_block_.490
-___destroy_helper_block_.491
+___copy_helper_block_.482
+___destroy_helper_block_.483
+___copy_helper_block_.485
+___destroy_helper_block_.486
+___copy_helper_block_.488
+___destroy_helper_block_.489
 -[IBGVideoEncoder removeTempFilePath:]
 -[IBGVideoEncoder encodeVideo:]
 -[IBGVideoEncoder videoURL]
@@ -1526,12 +1519,12 @@ _OBJC_IVAR_$_IBGVideoEncoder._outputBufferPool
 _OBJC_IVAR_$_IBGVideoEncoder._videoWriter
 _OBJC_IVAR_$_IBGVideoEncoder._videoWriterInput
 _OBJC_IVAR_$_IBGVideoEncoder._avAdaptor
-___block_descriptor_tmp.469
-___block_descriptor_tmp.476
-___block_descriptor_tmp.481
-___block_descriptor_tmp.486
-___block_descriptor_tmp.489
-___block_descriptor_tmp.492
+___block_descriptor_tmp.467
+___block_descriptor_tmp.474
+___block_descriptor_tmp.479
+___block_descriptor_tmp.484
+___block_descriptor_tmp.487
+___block_descriptor_tmp.490
 _OBJC_IVAR_$_IBGVideoEncoder._delegate
 _OBJC_IVAR_$_IBGVideoEncoder._writeTimer
 _OBJC_IVAR_$_IBGVideoEncoder._timeStamp
@@ -2087,6 +2080,8 @@ __49+[IBGZipArchive _temporaryPathForDiscardableFile]_block_invoke
 -[NSURLRequest(Additions) ibg_cURLCommandWithBody:]
 -[NSURLRequest(Additions) ibg_InstabugcURLCommand]
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/NSURLRequest+Additions.m
+NSMakeRange
+/Applications/Xcode-9.0.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 -[IBGScreenshotCaptureWindow initWithDelegate:]
 -[IBGScreenshotCaptureWindow addCaptureButton]
 -[IBGScreenshotCaptureWindow captureScreenshot]
@@ -2296,8 +2291,6 @@ ___copy_helper_block_.480
 ___destroy_helper_block_.481
 -[IBGUserStepsLogger removeVisualUserStepsWithReportId:]
 ___56-[IBGUserStepsLogger removeVisualUserStepsWithReportId:]_block_invoke
-___copy_helper_block_.485
-___destroy_helper_block_.486
 -[IBGUserStepsLogger applicationSendEventEnabled:]
 -[IBGUserStepsLogger addStepWithEventType:view:date:legacyName:legacyType:]
 -[IBGUserStepsLogger addVisualUserStepWithEventType:view:date:]
@@ -2339,7 +2332,6 @@ _OBJC_IVAR_$_IBGUserStepsLogger._enabled
 ___block_descriptor_tmp.421
 ___block_descriptor_tmp.426
 ___block_descriptor_tmp.482
-___block_descriptor_tmp.487
 ___block_descriptor_tmp.550
 _dataLayerService.once
 _OBJC_IVAR_$_IBGUserStepsLogger._dataLayerService
@@ -2517,6 +2509,7 @@ _surveyDateConditionFromString:.dateFormater
 -[NSString(IBGClassTypeInjectiton) ibg_type]
 -[NSString(IBGClassTypeInjectiton) ibg_value]
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGNSStringFromConversions.m
+NSStringFromIBGAttachmentType
 NSStringFromIBGLogLevel
 NSStringFromNSString
 NSStringFromIBGSDKLogLevel
@@ -2796,17 +2789,17 @@ ___block_literal_global.118
 ___block_descriptor_tmp.119
 ___block_literal_global.120
 ___block_literal_global.122
-___block_descriptor_tmp.123
 ___block_literal_global.124
 ___block_literal_global.135
 ___block_descriptor_tmp.136
 ___block_literal_global.137
+___block_descriptor_tmp.138
 ___block_literal_global.139
-___block_descriptor_tmp.142
 ___block_literal_global.143
 ___block_descriptor_tmp.144
 ___block_literal_global.145
 _IBGStrokeColor
+___block_descriptor_tmp.148
 ___block_literal_global.149
 ___block_descriptor_tmp.150
 ___block_literal_global.151
@@ -3481,6 +3474,7 @@ _OBJC_IVAR_$_IBGFreeDrawingAnnotationView._needsFrameMapping
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGFreeDrawingAnnotationView.h
 midPointForPoints
 __CGPointEqualToPoint
+/Applications/Xcode-9.0.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[IBGLogLogger addIBGLogWithFormat:args:level:]
 -[IBGLogLogger addLog:level:date:]
 ___34-[IBGLogLogger addLog:level:date:]_block_invoke
@@ -3800,6 +3794,8 @@ ___destroy_helper_block_.465
 -[IBGAutoVideoRecorder cleanup]
 -[IBGAutoVideoRecorder didFinishRecordingVideoWithURL:]
 ___55-[IBGAutoVideoRecorder didFinishRecordingVideoWithURL:]_block_invoke
+___copy_helper_block_.487
+___destroy_helper_block_.488
 -[IBGAutoVideoRecorder didFailRecordingVideoEncoding]
 -[IBGAutoVideoRecorder .cxx_destruct]
 _sharedInstance.once
@@ -3809,6 +3805,7 @@ ___block_descriptor_tmp.460
 ___block_descriptor_tmp.463
 ___block_descriptor_tmp.466
 _kIBGVideoFrameRate
+___block_descriptor_tmp.489
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGAutoVideoRecorder.m
 __55-[IBGAutoVideoRecorder didFinishRecordingVideoWithURL:]_block_invoke
 __43-[IBGAutoVideoRecorder autoScreenRecording]_block_invoke_3
@@ -3826,8 +3823,6 @@ ___80-[IBGNetworkLogger saveLogWithRequest:body:resposne:data:withCompletionHand
 ___41-[IBGNetworkLogger loadLogsSynchronously]_block_invoke
 -[IBGNetworkLogger loadLogsAsynchronouslyWithCompletionHandler:]
 ___64-[IBGNetworkLogger loadLogsAsynchronouslyWithCompletionHandler:]_block_invoke
-___copy_helper_block_.135
-___destroy_helper_block_.136
 -[IBGNetworkLogger loadSnapshotSynchronously:withCompletionHandler:]
 -[IBGNetworkLogger purgeAllLogs]
 ___32-[IBGNetworkLogger purgeAllLogs]_block_invoke
@@ -3866,7 +3861,6 @@ __requestFilterPredicate
 __responseFilterPredicate
 __userRequestObfuscationBlock
 __userResponseObfuscationBlock
-___block_descriptor_tmp.137
 ___block_descriptor_tmp.157
 ___block_descriptor_tmp.158
 ___block_literal_global.159
@@ -4063,8 +4057,6 @@ ___copy_helper_block_.144
 ___destroy_helper_block_.145
 ___copy_helper_block_.147
 ___destroy_helper_block_.148
-___copy_helper_block_.150
-___destroy_helper_block_.151
 -[IBGCoreDataPersistenceManager destroyPersistent:storeAtURL:]
 -[IBGCoreDataPersistenceManager addCoreDataOperation:]
 ___54-[IBGCoreDataPersistenceManager addCoreDataOperation:]_block_invoke
@@ -4876,9 +4868,6 @@ ___destroy_helper_block_.220
 ___32-[IBGReplyView actionSheetItems]_block_invoke.224
 ___copy_helper_block_.227
 ___destroy_helper_block_.228
-___32-[IBGReplyView actionSheetItems]_block_invoke.232
-___copy_helper_block_.235
-___destroy_helper_block_.236
 -[IBGReplyView attributedStringForSendButtonTitle:forState:]
 -[IBGReplyView updateSendButtonState]
 -[IBGReplyView replyViewDelegate]
@@ -4914,7 +4903,6 @@ ___destroy_helper_block_.236
 -[IBGReplyView .cxx_destruct]
 ___block_descriptor_tmp.221
 ___block_descriptor_tmp.229
-___block_descriptor_tmp.237
 _OBJC_IVAR_$_IBGReplyView._replyViewDelegate
 _OBJC_IVAR_$_IBGReplyView._replyTextView
 _OBJC_IVAR_$_IBGReplyView._replyLineView
@@ -4934,7 +4922,6 @@ l_OBJC_PROTOCOL_$_UITextViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_UITextViewDelegate
 /Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGReplyView.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGReplyView.h
-__32-[IBGReplyView actionSheetItems]_block_invoke.232
 __32-[IBGReplyView actionSheetItems]_block_invoke.224
 __32-[IBGReplyView actionSheetItems]_block_invoke.216
 __32-[IBGReplyView actionSheetItems]_block_invoke
@@ -5057,6 +5044,8 @@ ___60-[IBGAttachmentsView collectionView:cellForItemAtIndexPath:]_block_invoke
 -[IBGAttachmentsView replaceAttachment:withAttachment:]
 -[IBGAttachmentsView stopPlayingAudioAttachment:]
 ___49-[IBGAttachmentsView stopPlayingAudioAttachment:]_block_invoke
+___copy_helper_block_.490
+___destroy_helper_block_.491
 -[IBGAttachmentsView collectionView]
 -[IBGAttachmentsView removeAttachment:]
 -[IBGAttachmentsView stopPlayingAudioAttachment:inCell:]
@@ -5347,7 +5336,6 @@ l_OBJC_PROTOCOL_$_IBGShapeDetectionOverlayProtocol
 l_OBJC_LABEL_PROTOCOL_$_IBGShapeDetectionOverlayProtocol
 /Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGScreenshotVC.m
 /Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGScreenshotVC.h
-__inline_isnanf
 __38-[IBGScreenshotVC startShapeDetection]_block_invoke_2
 __38-[IBGScreenshotVC startShapeDetection]_block_invoke
 __51-[IBGScreenshotVC adjustScreenshotAnnotationsImage]_block_invoke
@@ -6177,23 +6165,23 @@ ___45-[IBGSnapshotManager initializationOperation]_block_invoke
 -[IBGSnapshotManager captureDeviceState]
 -[IBGSnapshotManager takePreSendingSnapshotWithScreenShot:synchronously:shouldFetchLogs:]
 ___89-[IBGSnapshotManager takePreSendingSnapshotWithScreenShot:synchronously:shouldFetchLogs:]_block_invoke
-___copy_helper_block_.737
-___destroy_helper_block_.738
+___copy_helper_block_.735
+___destroy_helper_block_.736
 -[IBGSnapshotManager takePostSendingSnapshotSynchronously:]
 ___59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke
-___copy_helper_block_.756
-___destroy_helper_block_.757
-___59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.778
-___copy_helper_block_.779
-___destroy_helper_block_.780
-___59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.792
-___copy_helper_block_.793
-___destroy_helper_block_.794
+___copy_helper_block_.754
+___destroy_helper_block_.755
+___59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.776
+___copy_helper_block_.777
+___destroy_helper_block_.778
+___59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.790
+___copy_helper_block_.791
+___destroy_helper_block_.792
 -[IBGSnapshotManager clearConsoleLog]
 -[IBGSnapshotManager getSurveyConditionsWithCompletionHanlder:]
 ___63-[IBGSnapshotManager getSurveyConditionsWithCompletionHanlder:]_block_invoke
-___copy_helper_block_.818
-___destroy_helper_block_.819
+___copy_helper_block_.816
+___destroy_helper_block_.817
 -[IBGSnapshotManager registerUserDataResetObserver:]
 -[IBGSnapshotManager unregisterUserDataResetObserver:]
 -[IBGSnapshotManager logsFetchRequests]
@@ -6234,11 +6222,11 @@ ___destroy_helper_block_.819
 -[IBGSnapshotManager setScreenScale:]
 -[IBGSnapshotManager .cxx_destruct]
 _OBJC_IVAR_$_IBGSnapshotManager._initializationOperation
-___block_descriptor_tmp.740
-___block_descriptor_tmp.759
-___block_descriptor_tmp.781
-___block_descriptor_tmp.795
-___block_descriptor_tmp.820
+___block_descriptor_tmp.738
+___block_descriptor_tmp.757
+___block_descriptor_tmp.779
+___block_descriptor_tmp.793
+___block_descriptor_tmp.818
 _OBJC_IVAR_$_IBGSnapshotManager._sessionLogger
 _OBJC_IVAR_$_IBGSnapshotManager._logLogger
 _OBJC_IVAR_$_IBGSnapshotManager._networkLogger
@@ -6258,8 +6246,8 @@ _OBJC_IVAR_$_IBGSnapshotManager._screenScale
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGSnapshotManager.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGSnapshotManager.h
 __63-[IBGSnapshotManager getSurveyConditionsWithCompletionHanlder:]_block_invoke
-__59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.792
-__59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.778
+__59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.790
+__59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.776
 __59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke
 __89-[IBGSnapshotManager takePreSendingSnapshotWithScreenShot:synchronously:shouldFetchLogs:]_block_invoke
 __45-[IBGSnapshotManager initializationOperation]_block_invoke
@@ -6277,6 +6265,7 @@ __36+[IBGSnapshotManager sharedInstance]_block_invoke
 -[IBGAnnotationView(Transform) setAnchorPoint:]
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGAnnotationView+Transform.m
 -[IBGAnalyticsCache cacheDiskPath]
+-[IBGAnalyticsCache unpersistAll]
 -[IBGAnalyticsCache cachedModels]
 -[IBGAnalyticsCache setCachedModels:]
 -[IBGAnalyticsCache .cxx_destruct]
@@ -6518,7 +6507,6 @@ ___34+[IBGMethodsLogger sharedInstance]_block_invoke
 -[IBGMethodsLogger logLogMethodQueue]
 ___37-[IBGMethodsLogger logLogMethodQueue]_block_invoke
 -[IBGMethodsLogger logLogMethod:]
-___33-[IBGMethodsLogger logLogMethod:]_block_invoke
 -[IBGMethodsLogger logMethod:isDeprecated:params:]
 -[IBGMethodsLogger loadSnapshotSynchronously:withCompletionHandler:]
 -[IBGMethodsLogger allMethodsLog]
@@ -6538,12 +6526,10 @@ _logLogMethodQueue.sharedQueue
 _logLogMethodQueue.onceToken
 ___block_descriptor_tmp.541
 ___block_literal_global.542
-___block_descriptor_tmp.567
 _OBJC_IVAR_$_IBGMethodsLogger._delegate
 _OBJC_IVAR_$_IBGMethodsLogger._methodsLog
 _OBJC_IVAR_$_IBGMethodsLogger._logMethodsLog
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGMethodsLogger.m
-__33-[IBGMethodsLogger logLogMethod:]_block_invoke
 __37-[IBGMethodsLogger logLogMethodQueue]_block_invoke
 __34+[IBGMethodsLogger sharedInstance]_block_invoke
 -[IBGEmptyVC init]
@@ -6677,54 +6663,27 @@ _OBJC_IVAR_$_IBGReachability._reachabilityRef
 _OBJC_IVAR_$_IBGReachability._alwaysReturnLocalWiFiStatus
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Reachability/IBGReachability.m
 ReachabilityCallback
-+[IBGCache cacheModelsQueue]
-___28+[IBGCache cacheModelsQueue]_block_invoke
 -[IBGCache init]
 -[IBGCache initWithShouldForceWrite:]
 -[IBGCache append:]
-___19-[IBGCache append:]_block_invoke
 -[IBGCache remove:]
-___19-[IBGCache remove:]_block_invoke
-___copy_helper_block_.381
-___destroy_helper_block_.382
 -[IBGCache contains:]
-___21-[IBGCache contains:]_block_invoke
-___copy_helper_block_.386
-___destroy_helper_block_.387
 -[IBGCache persistAll]
 ___22-[IBGCache persistAll]_block_invoke
-___copy_helper_block_.395
-___destroy_helper_block_.396
-___22-[IBGCache persistAll]_block_invoke.404
-___22-[IBGCache persistAll]_block_invoke_2
-___copy_helper_block_.405
-___destroy_helper_block_.406
-___copy_helper_block_.408
-___destroy_helper_block_.409
 -[IBGCache forcePersistAll]
-___27-[IBGCache forcePersistAll]_block_invoke
-___copy_helper_block_.411
-___destroy_helper_block_.412
 -[IBGCache getWritingOperationTimeInterval]
 -[IBGCache unpersistAll]
-___24-[IBGCache unpersistAll]_block_invoke
-___copy_helper_block_.422
-___destroy_helper_block_.423
 -[IBGCache getLastObject]
-___25-[IBGCache getLastObject]_block_invoke
-___copy_helper_block_.427
-___destroy_helper_block_.428
 -[IBGCache getCache]
 -[IBGCache sendAll]
-___19-[IBGCache sendAll]_block_invoke
-___copy_helper_block_.438
-___destroy_helper_block_.439
 -[IBGCache cacheDiskPath]
 -[IBGCache writeModels:toPath:]
 -[IBGCache readModelsFromPath:]
 -[IBGCache getDataFromPath:]
 -[IBGCache cachedModels]
 -[IBGCache setCachedModels:]
+-[IBGCache lock]
+-[IBGCache setLock:]
 -[IBGCache shouldWriteToDisk]
 -[IBGCache setShouldWriteToDisk:]
 -[IBGCache shouldForceWrite]
@@ -6734,34 +6693,14 @@ ___destroy_helper_block_.439
 -[IBGCache isSent]
 -[IBGCache setIsSent:]
 -[IBGCache .cxx_destruct]
-_cacheModelsQueue.once
-__IBGCacheQueue
-___block_descriptor_tmp.383
-___block_descriptor_tmp.388
-___block_descriptor_tmp.397
-___block_descriptor_tmp.407
-___block_descriptor_tmp.410
-___block_descriptor_tmp.413
-___block_descriptor_tmp.424
-___block_descriptor_tmp.429
-___block_descriptor_tmp.440
 _OBJC_IVAR_$_IBGCache._cachedModels
+_OBJC_IVAR_$_IBGCache._lock
 _OBJC_IVAR_$_IBGCache._shouldWriteToDisk
 _OBJC_IVAR_$_IBGCache._shouldForceWrite
 _OBJC_IVAR_$_IBGCache._isUnPresisted
 _OBJC_IVAR_$_IBGCache._isSent
 /Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGCache.m
-__19-[IBGCache sendAll]_block_invoke
-__25-[IBGCache getLastObject]_block_invoke
-__24-[IBGCache unpersistAll]_block_invoke
-__27-[IBGCache forcePersistAll]_block_invoke
-__22-[IBGCache persistAll]_block_invoke_2
-__22-[IBGCache persistAll]_block_invoke.404
 __22-[IBGCache persistAll]_block_invoke
-__21-[IBGCache contains:]_block_invoke
-__19-[IBGCache remove:]_block_invoke
-__19-[IBGCache append:]_block_invoke
-__28+[IBGCache cacheModelsQueue]_block_invoke
 -[IBGAttachmentCell initWithFrame:]
 -[IBGAttachmentCell prepareForReuse]
 -[IBGAttachmentCell updateConstraints]
@@ -6833,7 +6772,6 @@ ___30+[IBGAnalytics sharedInstance]_block_invoke
 ___20-[IBGAnalytics send]_block_invoke
 -[IBGAnalytics analyticsRequestDone:isSuccess:]
 -[IBGAnalytics didLog]
-___22-[IBGAnalytics didLog]_block_invoke
 -[IBGAnalytics coderNameForSelector:]
 -[IBGAnalytics methodsLogger]
 -[IBGAnalytics eventsLogger]
@@ -6842,14 +6780,12 @@ _OBJC_IVAR_$_IBGAnalytics._methodsLogger
 _OBJC_IVAR_$_IBGAnalytics._eventsLogger
 ___block_descriptor_tmp.546
 ___block_literal_global.547
-___block_descriptor_tmp.560
 l_OBJC_PROTOCOL_$_IBGAnalyticsRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGAnalyticsRequestDelegate
 l_OBJC_PROTOCOL_$_IBGLogDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGLogDelegate
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGAnalytics.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGAnalytics.h
-__22-[IBGAnalytics didLog]_block_invoke
 __20-[IBGAnalytics send]_block_invoke
 __30+[IBGAnalytics sharedInstance]_block_invoke
 -[IBGVideoRecorderController initWithDelegate:]
@@ -7007,29 +6943,7 @@ _OBJC_IVAR_$_IBGToolbarItem._handler
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGToolbarItem.h
 /Users/distiller/Library/Developer/Xcode/DerivedData/InstabugCore-gvctpmulizaummctoicjugzlaxhs/Build/Intermediates.noindex/ArchiveIntermediates/InstabugCore/IntermediateBuildFilesPath/InstabugCore.build/Release-iphoneos/InstabugCore.build/DerivedSources/InstabugCore_vers.c
 __ZL15__ARCLite__loadv
-__ZL30add_image_hook_autoreleasepoolPK11mach_headerl
-__ZL34__arclite_objc_autoreleasePoolPushv
-__ZL33__arclite_objc_autoreleasePoolPopPv
-__ZL19patch_lazy_pointersPK11mach_headerP7patch_tm
-__ZL42__arclite_NSArray_objectAtIndexedSubscriptP7NSArrayP13objc_selectorj
-__ZL53__arclite_NSMutableArray_setObject_atIndexedSubscriptP14NSMutableArrayP13objc_selectorP11objc_objectj
-__ZL46__arclite_NSDictionary_objectForKeyedSubscriptP12NSDictionaryP13objc_selectorP11objc_object
-__ZL47__arclite_NSOrderedSet_objectAtIndexedSubscriptP12NSOrderedSetP13objc_selectorj
-__ZL58__arclite_NSMutableOrderedSet_setObject_atIndexedSubscriptP19NSMutableOrderedSetP13objc_selectorP11objc_objectj
 __ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
-__ZL18add_image_hook_ARCPK11mach_headerl
-__ZL36__arclite_object_setInstanceVariableP11objc_objectPKcPv
-__ZL24__arclite_object_setIvarP11objc_objectP9objc_ivarS0_
-__ZL21__arclite_object_copyP11objc_objectm
-__ZL21__arclite_objc_retainP11objc_object
-__ZL26__arclite_objc_retainBlockP11objc_object
-__ZL22__arclite_objc_releaseP11objc_object
-__ZL26__arclite_objc_autoreleaseP11objc_object
-__ZL32__arclite_objc_retainAutoreleaseP11objc_object
-__ZL37__arclite_objc_autoreleaseReturnValueP11objc_object
-__ZL43__arclite_objc_retainAutoreleaseReturnValueP11objc_object
-__ZL44__arclite_objc_retainAutoreleasedReturnValueP11objc_object
-__ZL26__arclite_objc_storeStrongPP11objc_objectS0_
 __ZL22add_image_hook_swiftV1PK11mach_headerl
 __ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
 __ZL13replaceMethodP10objc_classP13objc_selectorPFP11objc_objectS4_S2_zEPS6_
@@ -7073,17 +6987,9 @@ __ZL11_class_name
 __ZL32OBJC_$_CLASS_METHODS___ARCLite__
 __ZL17_load_method_name
 __ZL17_load_method_type
-__ZL23NSAutoreleasePool_class
-__ZZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
-__ZGVZL30add_image_hook_autoreleasepoolPK11mach_headerlE7patches
-l_OBJC_PROTOCOL_$___ARCLiteIndexedSubscripting__
-l_OBJC_LABEL_PROTOCOL_$___ARCLiteIndexedSubscripting__
-l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteIndexedSubscripting__
 l_OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
 l_OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
 l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
-__ZZL18add_image_hook_ARCPK11mach_headerlE7patches
-__ZGVZL18add_image_hook_ARCPK11mach_headerlE7patches
 __ZL30NSUndoManagerProxy_targetClass
 __ZL29original_NSManagedObject_init
 __ZL40original_NSManagedObject_allocWithEntity
@@ -7112,7 +7018,7 @@ __ZL36original_objc_copyClassNamesForImage
 __ZL12demangleLock
 __ZL9Demangled
 Apple LLVM version 9.0.0 (clang-900.0.35)
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/armv7 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=incomplete-umbrella -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-66/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/armv7/arclite.o -mlinker-version=302.3 -march=armv7a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=incomplete-umbrella -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-66/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.o -mlinker-version=302.3
 /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-66/source/arclite.mm
 /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-66
 fixStringForCoreData
@@ -7165,6 +7071,7 @@ __arclite_NSManagedObject_init
 replaceMethod
 __arclite_NSUndoManagerProxy_isKindOfClass
 add_image_hook_swiftV1
+patch_lazy_pointers
 patch_t<const char **(const char *, unsigned int *)>
 patch_t<const char *(Protocol *)>
 patch_t<const char *(Class)>
@@ -7173,51 +7080,9 @@ patch_t<Class (const char *)>
 patch_t<void *(id)>
 patch_t<Class (Class, const char *, unsigned long)>
 patch_t<Class (Class, const objc_image_info *)>
-__arclite_objc_storeStrong
-__arclite_objc_release
-__arclite_objc_retain
-__arclite_objc_retainAutoreleasedReturnValue
-__arclite_objc_retainAutoreleaseReturnValue
-__arclite_objc_autoreleaseReturnValue
-__arclite_objc_retainAutorelease
-__arclite_objc_autorelease
-__arclite_objc_retainBlock
-__arclite_object_copy
-fixupCopiedReferences
-_class_getInstanceStart
-alignedInstanceStart
-__arclite_class_usesAutomaticRetainRelease
-classOrSuperClassesUseARR
-__arclite_object_setIvar
-isScannedOffset
-_ivar_getClass
-__arclite_object_setInstanceVariable
-add_image_hook_ARC
-patch_t<void (id *, id)>
-patch_t<id (id)>
-patch_t<void (id)>
-patch_t<id (id, unsigned long)>
-patch_t<void (id, objc_ivar *, id)>
-patch_t<objc_ivar *(id, const char *, void *)>
 __arclite_NSMutableDictionary__setObject_forKeyedSubscript
-__arclite_NSMutableOrderedSet_setObject_atIndexedSubscript
-__arclite_NSOrderedSet_objectAtIndexedSubscript
-__arclite_NSDictionary_objectForKeyedSubscript
-__arclite_NSMutableArray_setObject_atIndexedSubscript
-__arclite_NSArray_objectAtIndexedSubscript
-patch_lazy_pointers
-__arclite_objc_autoreleasePoolPop
-__arclite_objc_autoreleasePoolPush
-add_image_hook_autoreleasepool
-patch_t<void (void *)>
-patch_t<void *()>
 __ARCLite__load
 install_swiftV1
-install_ARC
 install_dict_nil_value
 addOrReplaceMethod
 keyedGetter
-install_subscripting
-addMethod
-indexedGetter
-install_autoreleasepool
