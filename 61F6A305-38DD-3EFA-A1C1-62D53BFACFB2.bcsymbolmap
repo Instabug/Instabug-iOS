@@ -126,8 +126,8 @@ __75-[IBGSurveyFlowController dismissIntroViewControllerWithCompletionHandler:]_
 -[IBGSurveysNavigationController currentQuestionAnswer]
 -[IBGSurveysNavigationController setCurrentQuestionAnswer:]
 -[IBGSurveysNavigationController submitSurvey]
+-[IBGSurveysNavigationController surveyType]
 -[IBGSurveysNavigationController setSurveyCanceled:]
--[IBGSurveysNavigationController clearRecordedAnswersForAllSurveys]
 -[IBGSurveysNavigationController surveyAnswerUpdated:shouldNavigateToNextQuestion:]
 -[IBGSurveysNavigationController delegate]
 -[IBGSurveysNavigationController setDelegate:]
@@ -712,6 +712,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGAttachmentRequestCreator
 /Users/distiller/ios/Instabug/InstabugBugReporting/Defaults/IBGBugResources.m
 -[IBGSurveysNavigationHeader initWithCount:]
 -[IBGSurveysNavigationHeader autoLayout]
+-[IBGSurveysNavigationHeader setProgressViewHidden:]
 -[IBGSurveysNavigationHeader surveyProgress]
 -[IBGSurveysNavigationHeader setLeftButton:]
 -[IBGSurveysNavigationHeader setRightButton:]
@@ -1108,6 +1109,26 @@ ___29+[IBGBugFeatures getInstance]_block_invoke
 _OBJC_IVAR_$_IBGBugFeatures._viewHierarchyFeature
 /Users/distiller/ios/Instabug/InstabugBugReporting/Defaults/IBGBugFeatures.m
 __29+[IBGBugFeatures getInstance]_block_invoke
++[IBGSurveysDefaults sharedInstance]
+___36+[IBGSurveysDefaults sharedInstance]_block_invoke
+-[IBGSurveysDefaults init]
+-[IBGSurveysDefaults setLastSurveyAt:]
+-[IBGSurveysDefaults lastSurveyAt]
+-[IBGSurveysDefaults disableAutomaticShowingSurveys]
+-[IBGSurveysDefaults setDisableAutomaticShowingSurveys:]
+-[IBGSurveysDefaults surveysForceDisabled]
+-[IBGSurveysDefaults setSurveysForceDisabled:]
+-[IBGSurveysDefaults colors]
+-[IBGSurveysDefaults setColors:]
+-[IBGSurveysDefaults .cxx_destruct]
+_sharedInstance.onceToken
+_sharedInstance.surveysDefaultsInstance
+_OBJC_IVAR_$_IBGSurveysDefaults._disableAutomaticShowingSurveys
+_OBJC_IVAR_$_IBGSurveysDefaults._surveysForceDisabled
+_OBJC_IVAR_$_IBGSurveysDefaults._colors
+/Users/distiller/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysDefaults.m
+/Users/distiller/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysDefaults.h
+__36+[IBGSurveysDefaults sharedInstance]_block_invoke
 -[IBGInvocationRightEdgePan initWithDelegate:]
 -[IBGInvocationRightEdgePan install]
 ___36-[IBGInvocationRightEdgePan install]_block_invoke
@@ -1374,6 +1395,45 @@ __28-[IBGMessage persistAndSend]_block_invoke
 _OBJC_IVAR_$_IBGMessageAttachmentRequestCreator._chatId
 /Users/distiller/ios/Instabug/InstabugChats/ServerRequests/Request Creator/IBGMessageAttachmentRequestCreator.m
 /Users/distiller/ios/Instabug/InstabugChats/ServerRequests/Request Creator/IBGMessageAttachmentRequestCreator.h
+-[IBGSurveyRatingView initWithDelegate:]
+-[IBGSurveyRatingView updateConstraints]
+-[IBGSurveyRatingView traitCollectionDidChange:]
+-[IBGSurveyRatingView setRating:]
+-[IBGSurveyRatingView generatePortraitConstraints]
+-[IBGSurveyRatingView generateLandscapeConstraints]
+-[IBGSurveyRatingView generatRatingView]
+-[IBGSurveyRatingView rateButtonStringForIndex:]
+-[IBGSurveyRatingView setupLeastAndMostLikelyLabels]
+-[IBGSurveyRatingView ratingButtonTapped:]
+-[IBGSurveyRatingView containerView]
+-[IBGSurveyRatingView viewDictionary]
+-[IBGSurveyRatingView portraitConstraints]
+-[IBGSurveyRatingView landscapeConstraints]
+-[IBGSurveyRatingView leastLikeylyLabel]
+-[IBGSurveyRatingView mostLikeylyLabel]
+-[IBGSurveyRatingView rating]
+-[IBGSurveyRatingView setContainerView:]
+-[IBGSurveyRatingView delegate]
+-[IBGSurveyRatingView setDelegate:]
+-[IBGSurveyRatingView setViewDictionary:]
+-[IBGSurveyRatingView setPortraitConstraints:]
+-[IBGSurveyRatingView setLandscapeConstraints:]
+-[IBGSurveyRatingView selectedButton]
+-[IBGSurveyRatingView setSelectedButton:]
+-[IBGSurveyRatingView setLeastLikeylyLabel:]
+-[IBGSurveyRatingView setMostLikeylyLabel:]
+-[IBGSurveyRatingView .cxx_destruct]
+_OBJC_IVAR_$_IBGSurveyRatingView._containerView
+_OBJC_IVAR_$_IBGSurveyRatingView._viewDictionary
+_OBJC_IVAR_$_IBGSurveyRatingView._portraitConstraints
+_OBJC_IVAR_$_IBGSurveyRatingView._landscapeConstraints
+_OBJC_IVAR_$_IBGSurveyRatingView._leastLikeylyLabel
+_OBJC_IVAR_$_IBGSurveyRatingView._mostLikeylyLabel
+_OBJC_IVAR_$_IBGSurveyRatingView._rating
+_OBJC_IVAR_$_IBGSurveyRatingView._delegate
+_OBJC_IVAR_$_IBGSurveyRatingView._selectedButton
+/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGSurveyRatingView.m
+/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGSurveyRatingView.h
 +[InstabugSurveys sharedInstance]
 ___33+[InstabugSurveys sharedInstance]_block_invoke
 +[InstabugSurveys setSurveysEnabled:]
@@ -1666,7 +1726,6 @@ ___36+[IBGSurveysFeatures sharedInstance]_block_invoke
 -[IBGSurveysFeatures surveysFeature]
 -[IBGSurveysFeatures setSurveysFeature:]
 -[IBGSurveysFeatures .cxx_destruct]
-_sharedInstance.onceToken
 _sharedInstance.surveysFeaturesInstance
 _OBJC_IVAR_$_IBGSurveysFeatures._surveysFeature
 /Users/distiller/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysFeatures.m
@@ -2069,25 +2128,6 @@ l_OBJC_LABEL_PROTOCOL_$_IBGInvocationBaseDelegate
 /Users/distiller/ios/Instabug/InstabugReporting/IBGReportInvocationManager.m
 /Users/distiller/ios/Instabug/InstabugReporting/IBGReportInvocationManager.h
 __44+[IBGReportInvocationManager sharedInstance]_block_invoke
-+[IBGSurveysDefaults sharedInstance]
-___36+[IBGSurveysDefaults sharedInstance]_block_invoke
--[IBGSurveysDefaults init]
--[IBGSurveysDefaults setLastSurveyAt:]
--[IBGSurveysDefaults lastSurveyAt]
--[IBGSurveysDefaults disableAutomaticShowingSurveys]
--[IBGSurveysDefaults setDisableAutomaticShowingSurveys:]
--[IBGSurveysDefaults surveysForceDisabled]
--[IBGSurveysDefaults setSurveysForceDisabled:]
--[IBGSurveysDefaults colors]
--[IBGSurveysDefaults setColors:]
--[IBGSurveysDefaults .cxx_destruct]
-_sharedInstance.surveysDefaultsInstance
-_OBJC_IVAR_$_IBGSurveysDefaults._disableAutomaticShowingSurveys
-_OBJC_IVAR_$_IBGSurveysDefaults._surveysForceDisabled
-_OBJC_IVAR_$_IBGSurveysDefaults._colors
-/Users/distiller/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysDefaults.m
-/Users/distiller/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysDefaults.h
-__36+[IBGSurveysDefaults sharedInstance]_block_invoke
 -[IBGTextViewSurvey init]
 -[IBGTextViewSurvey updateConstraints]
 -[IBGTextViewSurvey getText]
@@ -2377,6 +2417,29 @@ _OBJC_IVAR_$_IBGSurveyAnswerRequest._failures
 _OBJC_IVAR_$_IBGSurveyAnswerRequest._isSuccess
 _OBJC_IVAR_$_IBGSurveyAnswerRequest._dataParameters
 /Users/distiller/ios/Instabug/InstabugSurveys/Server requests/IBGSurveyAnswerRequest.m
+-[IBGSurveyRatingViewController initWithQuestion:delegate:]
+-[IBGSurveyRatingViewController viewDidLoad]
+-[IBGSurveyRatingViewController setupConstraints]
+-[IBGSurveyRatingViewController questionAnswer]
+-[IBGSurveyRatingViewController reloadView]
+-[IBGSurveyRatingViewController didSelectRating:]
+-[IBGSurveyRatingViewController ratingView]
+-[IBGSurveyRatingViewController surveyView]
+-[IBGSurveyRatingViewController delegate]
+-[IBGSurveyRatingViewController setDelegate:]
+-[IBGSurveyRatingViewController setSurveyView:]
+-[IBGSurveyRatingViewController question]
+-[IBGSurveyRatingViewController setQuestion:]
+-[IBGSurveyRatingViewController setRatingView:]
+-[IBGSurveyRatingViewController answer]
+-[IBGSurveyRatingViewController setAnswer:]
+-[IBGSurveyRatingViewController .cxx_destruct]
+_OBJC_IVAR_$_IBGSurveyRatingViewController._ratingView
+_OBJC_IVAR_$_IBGSurveyRatingViewController._surveyView
+_OBJC_IVAR_$_IBGSurveyRatingViewController._delegate
+_OBJC_IVAR_$_IBGSurveyRatingViewController._question
+_OBJC_IVAR_$_IBGSurveyRatingViewController._answer
+/Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyRatingViewController.m
 -[IBGSurveysNavigationViewController initWithDataSource:delegate:]
 -[IBGSurveysNavigationViewController loadView]
 -[IBGSurveysNavigationViewController viewDidLoad]
@@ -2386,32 +2449,32 @@ ___52-[IBGSurveysNavigationViewController viewDidAppear:]_block_invoke
 -[IBGSurveysNavigationViewController dealloc]
 -[IBGSurveysNavigationViewController applicationDidRotate:]
 ___59-[IBGSurveysNavigationViewController applicationDidRotate:]_block_invoke
-___copy_helper_block_.438
-___destroy_helper_block_.439
+___copy_helper_block_.444
+___destroy_helper_block_.445
 -[IBGSurveysNavigationViewController updateBackgroundSnapshotImageView]
 ___71-[IBGSurveysNavigationViewController updateBackgroundSnapshotImageView]_block_invoke
-___copy_helper_block_.445
-___destroy_helper_block_.446
+___copy_helper_block_.451
+___destroy_helper_block_.452
 -[IBGSurveysNavigationViewController adjustSnapshotView]
 -[IBGSurveysNavigationViewController addInitalViewController]
 -[IBGSurveysNavigationViewController cycleFromViewContrller:toViewController:animationDirection:]
 ___97-[IBGSurveysNavigationViewController cycleFromViewContrller:toViewController:animationDirection:]_block_invoke
-___copy_helper_block_.484
-___destroy_helper_block_.485
-___97-[IBGSurveysNavigationViewController cycleFromViewContrller:toViewController:animationDirection:]_block_invoke.487
-___copy_helper_block_.490
-___destroy_helper_block_.491
+___copy_helper_block_.488
+___destroy_helper_block_.489
+___97-[IBGSurveysNavigationViewController cycleFromViewContrller:toViewController:animationDirection:]_block_invoke.491
+___copy_helper_block_.494
+___destroy_helper_block_.495
 -[IBGSurveysNavigationViewController didPressNext]
 -[IBGSurveysNavigationViewController didPressPrevious]
 -[IBGSurveysNavigationViewController dismissSurveyWithoutThankYouAlert]
 -[IBGSurveysNavigationViewController submitSurvey]
 -[IBGSurveysNavigationViewController dismissSurveyWithThankYouAlert:]
 ___69-[IBGSurveysNavigationViewController dismissSurveyWithThankYouAlert:]_block_invoke
-___copy_helper_block_.516
-___destroy_helper_block_.517
-___69-[IBGSurveysNavigationViewController dismissSurveyWithThankYouAlert:]_block_invoke.519
-___copy_helper_block_.526
-___destroy_helper_block_.527
+___copy_helper_block_.520
+___destroy_helper_block_.521
+___69-[IBGSurveysNavigationViewController dismissSurveyWithThankYouAlert:]_block_invoke.523
+___copy_helper_block_.530
+___destroy_helper_block_.531
 -[IBGSurveysNavigationViewController updateHeaderTitle]
 -[IBGSurveysNavigationViewController verifyAnswer]
 -[IBGSurveysNavigationViewController resetLayout]
@@ -2462,12 +2525,12 @@ ___destroy_helper_block_.527
 -[IBGSurveysNavigationViewController .cxx_destruct]
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._controller
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._delegate
-___block_descriptor_tmp.440
-___block_descriptor_tmp.447
-___block_descriptor_tmp.486
-___block_descriptor_tmp.493
-___block_descriptor_tmp.518
-___block_descriptor_tmp.528
+___block_descriptor_tmp.446
+___block_descriptor_tmp.453
+___block_descriptor_tmp.490
+___block_descriptor_tmp.497
+___block_descriptor_tmp.522
+___block_descriptor_tmp.532
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._backgroundDimmedView
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._headerView
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._footerView
@@ -2484,9 +2547,9 @@ _OBJC_IVAR_$_IBGSurveysNavigationViewController._footerBottomConstraint
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._currentViewController
 /Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveysNavigationViewController.m
 /Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveysNavigationViewController.h
-__69-[IBGSurveysNavigationViewController dismissSurveyWithThankYouAlert:]_block_invoke.519
+__69-[IBGSurveysNavigationViewController dismissSurveyWithThankYouAlert:]_block_invoke.523
 __69-[IBGSurveysNavigationViewController dismissSurveyWithThankYouAlert:]_block_invoke
-__97-[IBGSurveysNavigationViewController cycleFromViewContrller:toViewController:animationDirection:]_block_invoke.487
+__97-[IBGSurveysNavigationViewController cycleFromViewContrller:toViewController:animationDirection:]_block_invoke.491
 __97-[IBGSurveysNavigationViewController cycleFromViewContrller:toViewController:animationDirection:]_block_invoke
 __71-[IBGSurveysNavigationViewController updateBackgroundSnapshotImageView]_block_invoke
 __59-[IBGSurveysNavigationViewController applicationDidRotate:]_block_invoke
@@ -2948,6 +3011,16 @@ _OBJC_IVAR_$_IBGCrashDefaults._exceptionUserInfo
 __31+[IBGCrashDefaults getInstance]_block_invoke
 -[IBGChatAttachmentRequestCreator logRequestWithId:parameters:delegate:]
 /Users/distiller/ios/Instabug/InstabugChats/ServerRequests/Request Creator/IBGChatAttachmentRequestCreator.m
+-[IBGRatingButton initWithTitle:viewTag:]
+-[IBGRatingButton updateConstraints]
+-[IBGRatingButton toggleButton:]
+-[IBGRatingButton applySelectedTheme]
+-[IBGRatingButton applyNotSelectedTheme]
+-[IBGRatingButton ratingButton]
+-[IBGRatingButton setRatingButton:]
+-[IBGRatingButton .cxx_destruct]
+_OBJC_IVAR_$_IBGRatingButton._ratingButton
+/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGRatingButton.m
 -[IBGReportCategoriesVC initWithReportType:actionHandler:]
 -[IBGReportCategoriesVC viewDidLoad]
 -[IBGReportCategoriesVC adjustSeparatorHeight]
@@ -3570,6 +3643,7 @@ ___destroy_helper_block_.459
 -[IBGSurveyMCQViewController collectionView:didDeselectItemAtIndexPath:]
 -[IBGSurveyMCQViewController collectionView:layout:sizeForItemAtIndexPath:]
 -[IBGSurveyMCQViewController configureCell:forIndexPath:]
+-[IBGSurveyMCQViewController shouldAnswersBeInTwoColumns]
 -[IBGSurveyMCQViewController rectWithWidth:height:text:font:]
 -[IBGSurveyMCQViewController calculateCellSize]
 -[IBGSurveyMCQViewController isSurveyAnswerLargerThanScreenWidth]
@@ -3913,6 +3987,16 @@ __36+[Instabug afterInitializationQueue]_block_invoke
 -[IBGSurveysColors setSurveyGrayColor:]
 -[IBGSurveysColors titleForegroundColor]
 -[IBGSurveysColors setTitleForegroundColor:]
+-[IBGSurveysColors ratingButtonBackgroundColor]
+-[IBGSurveysColors setRatingButtonBackgroundColor:]
+-[IBGSurveysColors ratingButtonTitleColor]
+-[IBGSurveysColors setRatingButtonTitleColor:]
+-[IBGSurveysColors ratingLikelyTitleColor]
+-[IBGSurveysColors setRatingLikelyTitleColor:]
+-[IBGSurveysColors ratingButtonSelectedBackgroundColor]
+-[IBGSurveysColors setRatingButtonSelectedBackgroundColor:]
+-[IBGSurveysColors ratingButtonSelectedTitleColor]
+-[IBGSurveysColors setRatingButtonSelectedTitleColor:]
 -[IBGSurveysColors thankYouTitleColor]
 -[IBGSurveysColors setThankYouTitleColor:]
 -[IBGSurveysColors thankYouDescriptionColor]
@@ -3944,6 +4028,11 @@ _OBJC_IVAR_$_IBGSurveysColors._surveyTextViewTextColor
 _OBJC_IVAR_$_IBGSurveysColors._surveyTextViewBorderColor
 _OBJC_IVAR_$_IBGSurveysColors._surveyGrayColor
 _OBJC_IVAR_$_IBGSurveysColors._titleForegroundColor
+_OBJC_IVAR_$_IBGSurveysColors._ratingButtonBackgroundColor
+_OBJC_IVAR_$_IBGSurveysColors._ratingButtonTitleColor
+_OBJC_IVAR_$_IBGSurveysColors._ratingLikelyTitleColor
+_OBJC_IVAR_$_IBGSurveysColors._ratingButtonSelectedBackgroundColor
+_OBJC_IVAR_$_IBGSurveysColors._ratingButtonSelectedTitleColor
 _OBJC_IVAR_$_IBGSurveysColors._thankYouTitleColor
 _OBJC_IVAR_$_IBGSurveysColors._thankYouDescriptionColor
 _OBJC_IVAR_$_IBGSurveysColors._introTitleColor
