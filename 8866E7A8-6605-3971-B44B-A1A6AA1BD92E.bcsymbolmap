@@ -65,19 +65,24 @@ l_OBJC_LABEL_PROTOCOL_$_IBGBaseRequest
 -[IBGImageLocalAttachment prepareAttachmentPath]
 -[IBGImageLocalAttachment prepareAttachmentMetadata]
 -[IBGImageLocalAttachment prepareAttachmentAndSaveWithCompletion:]
+-[IBGImageLocalAttachment metadata]
 -[IBGImageLocalAttachment fetchAttachmentsWithCompletionHandler:]
 -[IBGImageLocalAttachment fileName]
 -[IBGImageLocalAttachment setFileName:]
+-[IBGImageLocalAttachment setMetadata:]
 -[IBGImageLocalAttachment isMainScreenshot]
 -[IBGImageLocalAttachment setIsMainScreenshot:]
 -[IBGImageLocalAttachment completionHandler]
 -[IBGImageLocalAttachment setCompletionHandler:]
 -[IBGImageLocalAttachment .cxx_destruct]
+_OBJC_IVAR_$_IBGImageLocalAttachment._metadata
 _OBJC_IVAR_$_IBGImageLocalAttachment.fileName
 _OBJC_IVAR_$_IBGImageLocalAttachment._isMainScreenshot
 _OBJC_IVAR_$_IBGImageLocalAttachment._completionHandler
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGImageLocalAttachment.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGImageLocalAttachment.h
+-[IBGAttachment setMetadata:]
+/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGAttachment.h
 -[IBGMagnifyControlPoints initWithAnnotationView:]
 -[IBGMagnifyControlPoints updateControlPoints]
 -[IBGMagnifyControlPoints showControlPoints]
@@ -116,8 +121,8 @@ ___44-[IBGSessionManager initializationOperation]_block_invoke
 ___44-[IBGSessionManager initializationOperation]_block_invoke_2
 ___copy_helper_block_
 ___destroy_helper_block_
-___copy_helper_block_.536
-___destroy_helper_block_.537
+___copy_helper_block_.538
+___destroy_helper_block_.539
 -[IBGSessionManager sendPreviousSessionIfExistThenInitializeNewOne]
 -[IBGSessionManager initializeSession]
 -[IBGSessionManager registerNotifications]
@@ -135,8 +140,8 @@ _onceToken
 ___block_descriptor_tmp
 ___block_literal_global
 _OBJC_IVAR_$_IBGSessionManager._initializationOperation
-___block_descriptor_tmp.533
-___block_descriptor_tmp.538
+___block_descriptor_tmp.535
+___block_descriptor_tmp.540
 _OBJC_IVAR_$_IBGSessionManager._currentSession
 /Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGSessionManager.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGSessionManager.h
@@ -154,6 +159,21 @@ _dispatch_once
 -[NSLayoutConstraint(Log) stringFromLayoutRelation:]
 -[NSLayoutConstraint(Log) stringFromLayoutAttribute:]
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/NSLayoutConstraint+Log.m
+-[IBGLiteVisualUserStep stepId]
+-[IBGLiteVisualUserStep setStepId:]
+-[IBGLiteVisualUserStep isParent]
+-[IBGLiteVisualUserStep setIsParent:]
+-[IBGLiteVisualUserStep childSteps]
+-[IBGLiteVisualUserStep setChildSteps:]
+-[IBGLiteVisualUserStep timeEpoch]
+-[IBGLiteVisualUserStep setTimeEpoch:]
+-[IBGLiteVisualUserStep .cxx_destruct]
+_OBJC_IVAR_$_IBGLiteVisualUserStep._stepId
+_OBJC_IVAR_$_IBGLiteVisualUserStep._isParent
+_OBJC_IVAR_$_IBGLiteVisualUserStep._childSteps
+_OBJC_IVAR_$_IBGLiteVisualUserStep._timeEpoch
+/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGLiteVisualUserStep.m
+/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGLiteVisualUserStep.h
 -[IBGColorSelectorView initWithColors:selectedAtIndex:centeredOnView:]
 -[IBGColorSelectorView setupColorSelectorView]
 -[IBGColorSelectorView updateConstraints]
@@ -382,13 +402,17 @@ __63-[IBGVideoRecordingViewController setupMenuRecordingMenuButton]_block_invoke
 __63-[IBGVideoRecordingViewController setupMenuRecordingMenuButton]_block_invoke
 -[IBGOldUserStepsLogger init]
 -[IBGOldUserStepsLogger intializeSteps]
--[IBGOldUserStepsLogger updateTopViewWithForced:date:]
+-[IBGOldUserStepsLogger updateTopViewWithForced:date:parentWindow:]
 -[IBGOldUserStepsLogger addStepWithMessage:type:date:]
 -[IBGOldUserStepsLogger userSteps]
+-[IBGOldUserStepsLogger clearUserSteps]
 -[IBGOldUserStepsLogger steps]
 -[IBGOldUserStepsLogger setSteps:]
+-[IBGOldUserStepsLogger topView]
+-[IBGOldUserStepsLogger setTopView:]
 -[IBGOldUserStepsLogger .cxx_destruct]
 _OBJC_IVAR_$_IBGOldUserStepsLogger._steps
+_OBJC_IVAR_$_IBGOldUserStepsLogger._topView
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGOldUserStepsLogger.m
 -[IBGLocalAttachment initWithAttachment:]
 -[IBGLocalAttachment coderNameForSelector:]
@@ -408,6 +432,8 @@ _OBJC_IVAR_$_IBGOldUserStepsLogger._steps
 -[IBGLocalAttachment setFileName:]
 -[IBGLocalAttachment delegate]
 -[IBGLocalAttachment setDelegate:]
+-[IBGLocalAttachment isPrepared]
+-[IBGLocalAttachment setIsPrepared:]
 -[IBGLocalAttachment setRequestCreator:]
 -[IBGLocalAttachment .cxx_destruct]
 _OBJC_IVAR_$_IBGLocalAttachment._requestCreator
@@ -415,6 +441,7 @@ _OBJC_IVAR_$_IBGLocalAttachment.attachment
 _OBJC_IVAR_$_IBGLocalAttachment._accessibilityIdentifier
 _OBJC_IVAR_$_IBGLocalAttachment._fileName
 _OBJC_IVAR_$_IBGLocalAttachment._delegate
+_OBJC_IVAR_$_IBGLocalAttachment._isPrepared
 l_OBJC_PROTOCOL_$_IBGReportAttachmentRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGReportAttachmentRequestDelegate
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGLocalAttachment.m
@@ -1040,17 +1067,17 @@ ___29+[IBGURLProtocol sharedDemux]_block_invoke
 -[IBGURLProtocol URLSession:task:didReceiveChallenge:completionHandler:]
 -[IBGURLProtocol didReceiveAuthenticationChallenge:completionHandler:]
 ___70-[IBGURLProtocol didReceiveAuthenticationChallenge:completionHandler:]_block_invoke
-___copy_helper_block_.705
-___destroy_helper_block_.706
+___copy_helper_block_.707
+___destroy_helper_block_.708
 -[IBGURLProtocol mainThreadDidReceiveAuthenticationChallenge:completionHandler:]
 -[IBGURLProtocol cancelPendingChallenge]
 ___40-[IBGURLProtocol cancelPendingChallenge]_block_invoke
-___copy_helper_block_.714
-___destroy_helper_block_.715
+___copy_helper_block_.716
+___destroy_helper_block_.717
 -[IBGURLProtocol clientThreadCancelAuthenticationChallenge:completionHandler:]
 ___78-[IBGURLProtocol clientThreadCancelAuthenticationChallenge:completionHandler:]_block_invoke
-___copy_helper_block_.719
-___destroy_helper_block_.720
+___copy_helper_block_.721
+___destroy_helper_block_.722
 -[IBGURLProtocol networkLogger]
 +[IBGURLProtocol setCanAuthenticateAgainstProtectionSpaceHandler:]
 +[IBGURLProtocol setDidReceiveAuthenticationChallengeHandler:]
@@ -1078,10 +1105,10 @@ ___destroy_helper_block_.720
 _sharedDemux.onceToken
 _sharedDemux.sDemux
 _protectionSpaceHandler
-___block_descriptor_tmp.707
+___block_descriptor_tmp.709
 _reciveAuthenticationChallengeHandler
-___block_descriptor_tmp.716
-___block_descriptor_tmp.721
+___block_descriptor_tmp.718
+___block_descriptor_tmp.723
 _OBJC_IVAR_$_IBGURLProtocol._networkLogger
 _OBJC_IVAR_$_IBGURLProtocol._task
 _OBJC_IVAR_$_IBGURLProtocol._loggedRequest
@@ -1472,22 +1499,22 @@ ___66-[IBGVideoEncoder videoEncodingUsingImage:atTime:withOrientation:]_block_in
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke_2
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke_3
-___copy_helper_block_.467
-___destroy_helper_block_.468
-___copy_helper_block_.474
-___destroy_helper_block_.475
-___copy_helper_block_.479
-___destroy_helper_block_.480
+___copy_helper_block_.469
+___destroy_helper_block_.470
+___copy_helper_block_.476
+___destroy_helper_block_.477
+___copy_helper_block_.481
+___destroy_helper_block_.482
 -[IBGVideoEncoder stopAutoRecordingCompletion]
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke_2
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke_3
-___copy_helper_block_.484
-___destroy_helper_block_.485
-___copy_helper_block_.487
-___destroy_helper_block_.488
-___copy_helper_block_.490
-___destroy_helper_block_.491
+___copy_helper_block_.486
+___destroy_helper_block_.487
+___copy_helper_block_.489
+___destroy_helper_block_.490
+___copy_helper_block_.492
+___destroy_helper_block_.493
 -[IBGVideoEncoder removeTempFilePath:]
 -[IBGVideoEncoder encodeVideo:]
 -[IBGVideoEncoder videoURL]
@@ -1526,12 +1553,12 @@ _OBJC_IVAR_$_IBGVideoEncoder._outputBufferPool
 _OBJC_IVAR_$_IBGVideoEncoder._videoWriter
 _OBJC_IVAR_$_IBGVideoEncoder._videoWriterInput
 _OBJC_IVAR_$_IBGVideoEncoder._avAdaptor
-___block_descriptor_tmp.469
-___block_descriptor_tmp.476
-___block_descriptor_tmp.481
-___block_descriptor_tmp.486
-___block_descriptor_tmp.489
-___block_descriptor_tmp.492
+___block_descriptor_tmp.471
+___block_descriptor_tmp.478
+___block_descriptor_tmp.483
+___block_descriptor_tmp.488
+___block_descriptor_tmp.491
+___block_descriptor_tmp.494
 _OBJC_IVAR_$_IBGVideoEncoder._delegate
 _OBJC_IVAR_$_IBGVideoEncoder._writeTimer
 _OBJC_IVAR_$_IBGVideoEncoder._timeStamp
@@ -1653,12 +1680,15 @@ ___50-[IBGUserStepsLoggerContextProvider memoryContext]_block_invoke
 -[IBGUserStepsLoggerContextProvider backgroundContext]
 ___54-[IBGUserStepsLoggerContextProvider backgroundContext]_block_invoke
 -[IBGUserStepsLoggerContextProvider queue]
+___42-[IBGUserStepsLoggerContextProvider queue]_block_invoke
 -[IBGUserStepsLoggerContextProvider setBackgroundContext:]
 -[IBGUserStepsLoggerContextProvider setMemoryContext:]
 -[IBGUserStepsLoggerContextProvider .cxx_destruct]
 _OBJC_IVAR_$_IBGUserStepsLoggerContextProvider._memoryContext
 _OBJC_IVAR_$_IBGUserStepsLoggerContextProvider._backgroundContext
+__userStepsLoggerQueue
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsLoggerContextProvider.m
+__42-[IBGUserStepsLoggerContextProvider queue]_block_invoke
 __54-[IBGUserStepsLoggerContextProvider backgroundContext]_block_invoke
 __50-[IBGUserStepsLoggerContextProvider memoryContext]_block_invoke
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGaes/IBGaescrypt.c
@@ -1826,9 +1856,9 @@ _OBJC_IVAR_$_IBGAnnotationOriginator._screenshotImage
 __60-[IBGAnnotationOriginator annotationViewsSortedByZPositioon]_block_invoke
 -[NSArray(Map) mapWithBlock:]
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/NSArray+Map.m
-+[IBGScreenshotCapturer takeScreenshotWithAnnotator:]
++[IBGScreenshotCapturer takeScreenshotWithAnnotator:shouldUseRenderInContext:]
 +[IBGScreenshotCapturer takeScreenshotFromView:]
-+[IBGScreenshotCapturer takeScreenshotInContext:]
++[IBGScreenshotCapturer takeScreenshotInContext:shouldUseRenderInContext:]
 +[IBGScreenshotCapturer getInterfaceOrientation]
 +[IBGScreenshotCapturer imageFromCurrentContext]
 +[IBGScreenshotCapturer addExcludedWindowType:]
@@ -1984,16 +2014,16 @@ ___68-[IBGDataStore excutePreSendingBlockSynchronized:completionHandler:]_block_
 -[IBGDataStore addFileAttachmentWithData:]
 -[IBGDataStore addFileAttachment:]
 ___34-[IBGDataStore addFileAttachment:]_block_invoke
-___copy_helper_block_.613
-___destroy_helper_block_.614
+___copy_helper_block_.615
+___destroy_helper_block_.616
 -[IBGDataStore clearAllFileAttachments]
 ___39-[IBGDataStore clearAllFileAttachments]_block_invoke
-___copy_helper_block_.618
-___destroy_helper_block_.619
+___copy_helper_block_.620
+___destroy_helper_block_.621
 -[IBGDataStore fileAttachments]
 ___31-[IBGDataStore fileAttachments]_block_invoke
-___copy_helper_block_.623
-___destroy_helper_block_.624
+___copy_helper_block_.625
+___destroy_helper_block_.626
 -[IBGDataStore setFileLocation:]
 -[IBGDataStore clear]
 -[IBGDataStore instabugInitialized]
@@ -2018,11 +2048,11 @@ ___destroy_helper_block_.624
 _dataStoreQueue
 _preSendingHandlerQueue
 _OBJC_IVAR_$_IBGDataStore._preSendingBlock
-___block_descriptor_tmp.588
+___block_descriptor_tmp.590
 _OBJC_IVAR_$_IBGDataStore._fileAttachments
-___block_descriptor_tmp.615
-___block_descriptor_tmp.620
-___block_descriptor_tmp.625
+___block_descriptor_tmp.617
+___block_descriptor_tmp.622
+___block_descriptor_tmp.627
 _OBJC_IVAR_$_IBGDataStore._fileLocation
 _OBJC_IVAR_$_IBGDataStore._wasInstabugInitialized
 _OBJC_IVAR_$_IBGDataStore._appToken
@@ -2131,30 +2161,30 @@ _OBJC_IVAR_$_IBGActionSheetCell._labelToIconLeadingConstraint
 _OBJC_IVAR_$_IBGActionSheetCell._labelToSuperViewLeadingConstraint
 /Users/distiller/ios/InstabugCore/InstabugCore/Views/Table View Cells/IBGActionSheetCell.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Views/Table View Cells/IBGActionSheetCell.h
--[IBGNewMethodSwizzler initWithSelector:forClass:withBlock:withInvocation:]
--[IBGNewMethodSwizzler setActive:]
--[IBGNewMethodSwizzler dealloc]
--[IBGNewMethodSwizzler description]
--[IBGNewMethodSwizzler active]
--[IBGNewMethodSwizzler original_selector]
--[IBGNewMethodSwizzler setOriginal_selector:]
--[IBGNewMethodSwizzler swizzlerInvocation]
--[IBGNewMethodSwizzler setSwizzlerInvocation:]
--[IBGNewMethodSwizzler original_Method_Imp]
--[IBGNewMethodSwizzler setOriginal_Method_Imp:]
--[IBGNewMethodSwizzler original_klass]
--[IBGNewMethodSwizzler setOriginal_klass:]
--[IBGNewMethodSwizzler swizzlerBlock]
--[IBGNewMethodSwizzler setSwizzlerBlock:]
--[IBGNewMethodSwizzler .cxx_destruct]
-_OBJC_IVAR_$_IBGNewMethodSwizzler._active
-_OBJC_IVAR_$_IBGNewMethodSwizzler._original_selector
-_OBJC_IVAR_$_IBGNewMethodSwizzler._swizzlerInvocation
-_OBJC_IVAR_$_IBGNewMethodSwizzler._original_Method_Imp
-_OBJC_IVAR_$_IBGNewMethodSwizzler._original_klass
-_OBJC_IVAR_$_IBGNewMethodSwizzler._swizzlerBlock
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGNewMethodSwizzler.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGNewMethodSwizzler.h
+-[IBGMethodSwizzler initWithSelector:forClass:withBlock:withInvocation:]
+-[IBGMethodSwizzler setActive:]
+-[IBGMethodSwizzler dealloc]
+-[IBGMethodSwizzler description]
+-[IBGMethodSwizzler active]
+-[IBGMethodSwizzler original_selector]
+-[IBGMethodSwizzler setOriginal_selector:]
+-[IBGMethodSwizzler swizzlerInvocation]
+-[IBGMethodSwizzler setSwizzlerInvocation:]
+-[IBGMethodSwizzler original_Method_Imp]
+-[IBGMethodSwizzler setOriginal_Method_Imp:]
+-[IBGMethodSwizzler original_klass]
+-[IBGMethodSwizzler setOriginal_klass:]
+-[IBGMethodSwizzler swizzlerBlock]
+-[IBGMethodSwizzler setSwizzlerBlock:]
+-[IBGMethodSwizzler .cxx_destruct]
+_OBJC_IVAR_$_IBGMethodSwizzler._active
+_OBJC_IVAR_$_IBGMethodSwizzler._original_selector
+_OBJC_IVAR_$_IBGMethodSwizzler._swizzlerInvocation
+_OBJC_IVAR_$_IBGMethodSwizzler._original_Method_Imp
+_OBJC_IVAR_$_IBGMethodSwizzler._original_klass
+_OBJC_IVAR_$_IBGMethodSwizzler._swizzlerBlock
+/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGMethodSwizzler.m
+/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGMethodSwizzler.h
 __IBGSwizzle_motionEnded
 __IBGSwizzle_resignKeyWindow
 __IBGSwizzle_becomeKeyWindow
@@ -2177,8 +2207,8 @@ ___38+[IBGReachabilityInstance getInstance]_block_invoke
 -[IBGReachabilityInstance initializationOperation]
 ___50-[IBGReachabilityInstance initializationOperation]_block_invoke
 ___50-[IBGReachabilityInstance initializationOperation]_block_invoke_2
-___copy_helper_block_.373
-___destroy_helper_block_.374
+___copy_helper_block_.375
+___destroy_helper_block_.376
 +[IBGReachabilityInstance isReachable]
 +[IBGReachabilityInstance destroy]
 -[IBGReachabilityInstance setInitializationOperation:]
@@ -2186,8 +2216,8 @@ ___destroy_helper_block_.374
 -[IBGReachabilityInstance setReachability:]
 -[IBGReachabilityInstance .cxx_destruct]
 _OBJC_IVAR_$_IBGReachabilityInstance._initializationOperation
-___block_descriptor_tmp.370
-___block_descriptor_tmp.375
+___block_descriptor_tmp.372
+___block_descriptor_tmp.377
 _OBJC_IVAR_$_IBGReachabilityInstance._reachability
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Reachability/IBGReachabilityInstance.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Reachability/IBGReachabilityInstance.h
@@ -2281,39 +2311,52 @@ ___36+[IBGUserStepsLogger sharedInstance]_block_invoke
 -[IBGUserStepsLogger purgeAllUserStepsLogs]
 ___43-[IBGUserStepsLogger purgeAllUserStepsLogs]_block_invoke
 -[IBGUserStepsLogger setEnabled:]
--[IBGUserStepsLogger loadUserStepsSynchronously:withCompletionHandler:]
--[IBGUserStepsLogger loadUserStepsSynchronouslyWithCompletionHandler:]
-___70-[IBGUserStepsLogger loadUserStepsSynchronouslyWithCompletionHandler:]_block_invoke
--[IBGUserStepsLogger loadUserStepsAsynchronouslyWithCompletionHandler:]
-___71-[IBGUserStepsLogger loadUserStepsAsynchronouslyWithCompletionHandler:]_block_invoke
-___copy_helper_block_.424
-___destroy_helper_block_.425
--[IBGUserStepsLogger loadUserStepsWithContext:completionHandler:]
--[IBGUserStepsLogger shouldAddUserStepWithScreenshot:]
--[IBGUserStepsLogger attachVisualUserStepsWithReportId:]
-___56-[IBGUserStepsLogger attachVisualUserStepsWithReportId:]_block_invoke
-___copy_helper_block_.480
-___destroy_helper_block_.481
--[IBGUserStepsLogger removeVisualUserStepsWithReportId:]
-___56-[IBGUserStepsLogger removeVisualUserStepsWithReportId:]_block_invoke
+-[IBGUserStepsLogger loadUserStepsJSONWithSessionId:Synchronously:withCompletionHandler:]
+-[IBGUserStepsLogger loadUserStepsWithSessionId:synchronously:withCompletionHandler:]
+-[IBGUserStepsLogger loadUserStepsSynchronouslyWithSessionId:completionHandler:]
+___80-[IBGUserStepsLogger loadUserStepsSynchronouslyWithSessionId:completionHandler:]_block_invoke
+-[IBGUserStepsLogger loadUserStepsAsynchronouslyWithSessionId:completionHandler:]
+___81-[IBGUserStepsLogger loadUserStepsAsynchronouslyWithSessionId:completionHandler:]_block_invoke
+___copy_helper_block_.435
+___destroy_helper_block_.436
+-[IBGUserStepsLogger loadUserStepsWithContext:sessionId:completionHandler:]
+-[IBGUserStepsLogger maxScreenshotsNumber]
+-[IBGUserStepsLogger loadUserStepsJSONSynchronouslyWithSessionId:completionHandler:]
+___84-[IBGUserStepsLogger loadUserStepsJSONSynchronouslyWithSessionId:completionHandler:]_block_invoke
 ___copy_helper_block_.485
 ___destroy_helper_block_.486
+-[IBGUserStepsLogger loadUserStepsJSONAsynchronouslyWithSessionId:completionHandler:]
+___85-[IBGUserStepsLogger loadUserStepsJSONAsynchronouslyWithSessionId:completionHandler:]_block_invoke
+___copy_helper_block_.488
+___destroy_helper_block_.489
+-[IBGUserStepsLogger loadUserStepsJSONWithContext:sessionId:completionHandler:shouldIcludeLastSteps:]
+-[IBGUserStepsLogger insertCrashStepInContext:crashStep:sessionId:]
+-[IBGUserStepsLogger attachVisualUserStepsWithReportId:]
+___56-[IBGUserStepsLogger attachVisualUserStepsWithReportId:]_block_invoke
+___copy_helper_block_.509
+___destroy_helper_block_.510
+-[IBGUserStepsLogger removeVisualUserStepsWithReportId:]
+___56-[IBGUserStepsLogger removeVisualUserStepsWithReportId:]_block_invoke
+___copy_helper_block_.516
+___destroy_helper_block_.517
 -[IBGUserStepsLogger applicationSendEventEnabled:]
 -[IBGUserStepsLogger addStepWithEventType:view:date:legacyName:legacyType:]
--[IBGUserStepsLogger addVisualUserStepWithEventType:view:date:]
--[IBGUserStepsLogger addStepWithEventType:parentScreenIdentifier:screenshotIdentifeir:screenIdentifier:view:screenshotData:date:oreintation:]
-___141-[IBGUserStepsLogger addStepWithEventType:parentScreenIdentifier:screenshotIdentifeir:screenIdentifier:view:screenshotData:date:oreintation:]_block_invoke
-___copy_helper_block_.548
-___destroy_helper_block_.549
--[IBGUserStepsLogger updateTopViewWithForced:eventName:]
+-[IBGUserStepsLogger isInsideInstabugWindow]
+-[IBGUserStepsLogger addStepWithEventType:parentScreenIdentifier:screenshotIdentifeir:screenIdentifier:view:screenshotData:date:oreintation:topViewName:isParent:]
+___162-[IBGUserStepsLogger addStepWithEventType:parentScreenIdentifier:screenshotIdentifeir:screenIdentifier:view:screenshotData:date:oreintation:topViewName:isParent:]_block_invoke
+___copy_helper_block_.583
+___destroy_helper_block_.584
+-[IBGUserStepsLogger updateTopViewWithForced:eventName:parentWindow:]
+-[IBGUserStepsLogger shouldTakeFirstScreenShot]
 -[IBGUserStepsLogger updateVisualUserStepsTopViewWithForced:eventName:date:]
--[IBGUserStepsLogger shouldTakeScreenShot:]
+-[IBGUserStepsLogger canTakeScreenShot:]
 -[IBGUserStepsLogger clearUserSteps]
+-[IBGUserStepsLogger resetUserSteps]
 +[IBGUserStepsLogger fetchRequest]
 -[IBGUserStepsLogger dataLayerService]
 ___38-[IBGUserStepsLogger dataLayerService]_block_invoke
-___copy_helper_block_.601
-___destroy_helper_block_.602
+___copy_helper_block_.654
+___destroy_helper_block_.655
 -[IBGUserStepsLogger clearUnAttachedUserSteps]
 -[IBGUserStepsLogger userSteps]
 -[IBGUserStepsLogger enabled]
@@ -2332,18 +2375,28 @@ ___destroy_helper_block_.602
 -[IBGUserStepsLogger setVisualUserStepsCount:]
 -[IBGUserStepsLogger nonVisualUserStepsCount]
 -[IBGUserStepsLogger setNonVisualUserStepsCount:]
+-[IBGUserStepsLogger didTakeFirstScreenshot]
+-[IBGUserStepsLogger setDidTakeFirstScreenshot:]
+-[IBGUserStepsLogger didCaptureFirstParent]
+-[IBGUserStepsLogger setDidCaptureFirstParent:]
+-[IBGUserStepsLogger didAddFirstStep]
+-[IBGUserStepsLogger setDidAddFirstStep:]
+-[IBGUserStepsLogger lastStep]
+-[IBGUserStepsLogger setLastStep:]
 -[IBGUserStepsLogger .cxx_destruct]
-___block_descriptor_tmp.411
-___block_literal_global.412
+___block_descriptor_tmp.418
+___block_literal_global.419
 _OBJC_IVAR_$_IBGUserStepsLogger._enabled
-___block_descriptor_tmp.421
-___block_descriptor_tmp.426
-___block_descriptor_tmp.482
+___block_descriptor_tmp.432
+___block_descriptor_tmp.437
 ___block_descriptor_tmp.487
-___block_descriptor_tmp.550
+___block_descriptor_tmp.490
+___block_descriptor_tmp.511
+___block_descriptor_tmp.518
+___block_descriptor_tmp.585
 _dataLayerService.once
 _OBJC_IVAR_$_IBGUserStepsLogger._dataLayerService
-___block_descriptor_tmp.603
+___block_descriptor_tmp.656
 _OBJC_IVAR_$_IBGUserStepsLogger._currentParentIdentifier
 _OBJC_IVAR_$_IBGUserStepsLogger._userStepsCount
 _OBJC_IVAR_$_IBGUserStepsLogger._listner
@@ -2351,17 +2404,23 @@ _OBJC_IVAR_$_IBGUserStepsLogger._testCompeltionHandler
 _OBJC_IVAR_$_IBGUserStepsLogger._oldUserStepsLogger
 _OBJC_IVAR_$_IBGUserStepsLogger._visualUserStepsCount
 _OBJC_IVAR_$_IBGUserStepsLogger._nonVisualUserStepsCount
+_OBJC_IVAR_$_IBGUserStepsLogger._didTakeFirstScreenshot
+_OBJC_IVAR_$_IBGUserStepsLogger._didCaptureFirstParent
+_OBJC_IVAR_$_IBGUserStepsLogger._didAddFirstStep
+_OBJC_IVAR_$_IBGUserStepsLogger._lastStep
 l_OBJC_PROTOCOL_$_IBGUserSetpsListenerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGUserSetpsListenerDelegate
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsLogger.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsLogger.h
 __38-[IBGUserStepsLogger dataLayerService]_block_invoke
 UIDeviceOrientationIsLandscape
-__141-[IBGUserStepsLogger addStepWithEventType:parentScreenIdentifier:screenshotIdentifeir:screenIdentifier:view:screenshotData:date:oreintation:]_block_invoke
+__162-[IBGUserStepsLogger addStepWithEventType:parentScreenIdentifier:screenshotIdentifeir:screenIdentifier:view:screenshotData:date:oreintation:topViewName:isParent:]_block_invoke
 __56-[IBGUserStepsLogger removeVisualUserStepsWithReportId:]_block_invoke
 __56-[IBGUserStepsLogger attachVisualUserStepsWithReportId:]_block_invoke
-__71-[IBGUserStepsLogger loadUserStepsAsynchronouslyWithCompletionHandler:]_block_invoke
-__70-[IBGUserStepsLogger loadUserStepsSynchronouslyWithCompletionHandler:]_block_invoke
+__85-[IBGUserStepsLogger loadUserStepsJSONAsynchronouslyWithSessionId:completionHandler:]_block_invoke
+__84-[IBGUserStepsLogger loadUserStepsJSONSynchronouslyWithSessionId:completionHandler:]_block_invoke
+__81-[IBGUserStepsLogger loadUserStepsAsynchronouslyWithSessionId:completionHandler:]_block_invoke
+__80-[IBGUserStepsLogger loadUserStepsSynchronouslyWithSessionId:completionHandler:]_block_invoke
 __43-[IBGUserStepsLogger purgeAllUserStepsLogs]_block_invoke
 __36+[IBGUserStepsLogger sharedInstance]_block_invoke
 -[IBGVisualUserStepsLog initWithScreenName:eventType:view:]
@@ -2517,6 +2576,7 @@ _surveyDateConditionFromString:.dateFormater
 -[NSString(IBGClassTypeInjectiton) ibg_type]
 -[NSString(IBGClassTypeInjectiton) ibg_value]
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGNSStringFromConversions.m
+NSStringFromIBGUserStepsMode
 NSStringFromIBGAttachmentType
 NSStringFromIBGLogLevel
 NSStringFromNSString
@@ -2595,6 +2655,7 @@ __48-[IBGBlurAnnotationView touches:withTouchState:]_block_invoke
 -[IBGAVAsset recordingDuration]
 -[IBGAVAsset isVideoAsset]
 -[IBGAVAsset videoThumbnailImage]
+-[IBGAVAsset dealloc]
 -[IBGAVAsset startedAt]
 -[IBGAVAsset setStartedAt:]
 -[IBGAVAsset setVideoThumbnailImage:]
@@ -2921,6 +2982,9 @@ ___19-[IBGFeatures init]_block_invoke
 -[IBGFeatures setUserLoggerInC:]
 -[IBGFeatures setInAppMessaging:]
 -[IBGFeatures inAppMessaging]
+-[IBGFeatures setUserStepsOption:]
+-[IBGFeatures visualUserStepsWithScreenshots]
+-[IBGFeatures setVisualUserStepsWithScreenshots:]
 -[IBGFeatures setUserEvents:]
 -[IBGFeatures whiteLabelFeature]
 -[IBGFeatures setWhiteLabelFeature:]
@@ -2952,6 +3016,7 @@ ___19-[IBGFeatures init]_block_invoke
 -[IBGFeatures setFeaturesRequestInProgress:]
 -[IBGFeatures .cxx_destruct]
 _OBJC_IVAR_$_IBGFeatures._recentFeatureResponse
+_OBJC_IVAR_$_IBGFeatures._visualUserStepsWithScreenshots
 _OBJC_IVAR_$_IBGFeatures._userEvents
 _OBJC_IVAR_$_IBGFeatures._whiteLabelFeature
 _OBJC_IVAR_$_IBGFeatures._pushNotificationsFeature
@@ -2972,96 +3037,6 @@ l_OBJC_LABEL_PROTOCOL_$_IBGFeaturesRequestDelegate
 /Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGFeatures.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGFeatures.h
 __19-[IBGFeatures init]_block_invoke
--[IBGUserStepsListener initWithDelegate:]
--[IBGUserStepsListener getLastTouchEvent]
--[IBGUserStepsListener startUserStepsLogger]
-___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke
-___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.411
-___copy_helper_block_.418
-___destroy_helper_block_.419
-___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.427
-___copy_helper_block_.430
-___destroy_helper_block_.431
-___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.438
-___copy_helper_block_.439
-___destroy_helper_block_.440
-___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.447
-___copy_helper_block_.448
-___destroy_helper_block_.449
-___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.456
-___copy_helper_block_.457
-___destroy_helper_block_.458
--[IBGUserStepsListener registerNotifications]
--[IBGUserStepsListener unRegisterNotifications]
--[IBGUserStepsListener setEnabled:]
--[IBGUserStepsListener applicationSendEventEnabled:]
--[IBGUserStepsListener updateTopViewChanged]
--[IBGUserStepsListener applicationDidEnterBackground]
--[IBGUserStepsListener applicationWillEnterForeground]
--[IBGUserStepsListener applicationWillResignActive]
--[IBGUserStepsListener applicationDidBecomeActive]
--[IBGUserStepsListener addAction:to:from:]
--[IBGUserStepsListener addEvent:]
--[IBGUserStepsListener viewWithTouch:]
--[IBGUserStepsListener isSupportGestureRecognizer:]
--[IBGUserStepsListener isForceTouch:]
--[IBGUserStepsListener getViewHierarchyFromTopView:]
--[IBGUserStepsListener getViewHierarchy:fromParent:]
--[IBGUserStepsListener getViewHierarchy:fromParent:withMaxDepth:]
--[IBGUserStepsListener isUserDefined:]
--[IBGUserStepsListener topView]
--[IBGUserStepsListener setTopView:]
--[IBGUserStepsListener enabled]
--[IBGUserStepsListener KBtouched]
--[IBGUserStepsListener setKBtouched:]
--[IBGUserStepsListener forceTouchOccured]
--[IBGUserStepsListener setForceTouchOccured:]
--[IBGUserStepsListener touchMoved]
--[IBGUserStepsListener setTouchMoved:]
--[IBGUserStepsListener lastTouchEvent]
--[IBGUserStepsListener setLastTouchEvent:]
--[IBGUserStepsListener applicationSendAction]
--[IBGUserStepsListener setApplicationSendAction:]
--[IBGUserStepsListener applicationSendEvent]
--[IBGUserStepsListener setApplicationSendEvent:]
--[IBGUserStepsListener viewControllerAppear]
--[IBGUserStepsListener setViewControllerAppear:]
--[IBGUserStepsListener viewControllerDisappear]
--[IBGUserStepsListener setViewControllerDisappear:]
--[IBGUserStepsListener windowBecomeKeyWindow]
--[IBGUserStepsListener setWindowBecomeKeyWindow:]
--[IBGUserStepsListener windowResignKeyWindow]
--[IBGUserStepsListener setWindowResignKeyWindow:]
--[IBGUserStepsListener delegate]
--[IBGUserStepsListener setDelegate:]
--[IBGUserStepsListener .cxx_destruct]
-___block_descriptor_tmp.433
-___block_descriptor_tmp.441
-___block_descriptor_tmp.451
-___block_descriptor_tmp.459
-_OBJC_IVAR_$_IBGUserStepsListener._enabled
-_OBJC_IVAR_$_IBGUserStepsListener._topView
-_OBJC_IVAR_$_IBGUserStepsListener._KBtouched
-_OBJC_IVAR_$_IBGUserStepsListener._forceTouchOccured
-_OBJC_IVAR_$_IBGUserStepsListener._touchMoved
-_OBJC_IVAR_$_IBGUserStepsListener._lastTouchEvent
-_OBJC_IVAR_$_IBGUserStepsListener._applicationSendAction
-_OBJC_IVAR_$_IBGUserStepsListener._applicationSendEvent
-_OBJC_IVAR_$_IBGUserStepsListener._viewControllerAppear
-_OBJC_IVAR_$_IBGUserStepsListener._viewControllerDisappear
-_OBJC_IVAR_$_IBGUserStepsListener._windowBecomeKeyWindow
-_OBJC_IVAR_$_IBGUserStepsListener._windowResignKeyWindow
-_OBJC_IVAR_$_IBGUserStepsListener._delegate
-l_OBJC_PROTOCOL_$_IBGUserStepsListenerProtocol
-l_OBJC_LABEL_PROTOCOL_$_IBGUserStepsListenerProtocol
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsListener.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsListenerProtocol.h
-__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.456
-__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.447
-__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.438
-__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.427
-__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.411
-__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke
 -[IBGVoiceNoteRecordingViewController initWithPresenter:delegate:]
 -[IBGVoiceNoteRecordingViewController viewDidLoad]
 -[IBGVoiceNoteRecordingViewController viewWillAppear:]
@@ -3189,23 +3164,23 @@ ___31+[IBGServerManager getInstance]_block_invoke
 -[IBGServerManager initializationOperation]
 ___43-[IBGServerManager initializationOperation]_block_invoke
 ___43-[IBGServerManager initializationOperation]_block_invoke_2
-___copy_helper_block_.545
-___destroy_helper_block_.546
+___copy_helper_block_.547
+___destroy_helper_block_.548
 -[IBGServerManager setupBackgroundSession]
 -[IBGServerManager executeServerRequest:]
 ___41-[IBGServerManager executeServerRequest:]_block_invoke
-___copy_helper_block_.584
-___destroy_helper_block_.585
+___copy_helper_block_.586
+___destroy_helper_block_.587
 -[IBGServerManager beginBackgroundTaskWithName:]
 ___48-[IBGServerManager beginBackgroundTaskWithName:]_block_invoke
 -[IBGServerManager endBackgroundTaskWithName:]
 -[IBGServerManager URLSession:task:didCompleteWithError:]
 ___57-[IBGServerManager URLSession:task:didCompleteWithError:]_block_invoke
 ___57-[IBGServerManager URLSession:task:didCompleteWithError:]_block_invoke_2
-___copy_helper_block_.622
-___destroy_helper_block_.623
-___copy_helper_block_.629
-___destroy_helper_block_.630
+___copy_helper_block_.624
+___destroy_helper_block_.625
+___copy_helper_block_.631
+___destroy_helper_block_.632
 -[IBGServerManager URLSession:dataTask:didReceiveData:]
 -[IBGServerManager pushRequest:withTaskIdentifeier:]
 -[IBGServerManager requestWithTaskIdentifeier:]
@@ -3216,29 +3191,29 @@ ___destroy_helper_block_.630
 -[IBGServerManager handleNetworkChange:]
 -[IBGServerManager refresh]
 ___27-[IBGServerManager refresh]_block_invoke
-___copy_helper_block_.663
-___destroy_helper_block_.664
+___copy_helper_block_.665
+___destroy_helper_block_.666
 -[IBGServerManager executeRequest:]
 -[IBGServerManager updateNetworkActivityIndicator]
 ___50-[IBGServerManager updateNetworkActivityIndicator]_block_invoke
-___copy_helper_block_.676
-___destroy_helper_block_.677
+___copy_helper_block_.678
+___destroy_helper_block_.679
 -[IBGServerManager isExecutingRequest]
 ___38-[IBGServerManager isExecutingRequest]_block_invoke
-___copy_helper_block_.679
-___destroy_helper_block_.680
+___copy_helper_block_.681
+___destroy_helper_block_.682
 -[IBGServerManager pushRequest:]
 ___32-[IBGServerManager pushRequest:]_block_invoke
-___copy_helper_block_.684
-___destroy_helper_block_.685
+___copy_helper_block_.686
+___destroy_helper_block_.687
 -[IBGServerManager handleRequest:]
 ___34-[IBGServerManager handleRequest:]_block_invoke
-___copy_helper_block_.695
-___destroy_helper_block_.696
+___copy_helper_block_.697
+___destroy_helper_block_.698
 -[IBGServerManager popRequest:]
 ___31-[IBGServerManager popRequest:]_block_invoke
-___copy_helper_block_.702
-___destroy_helper_block_.703
+___copy_helper_block_.704
+___destroy_helper_block_.705
 -[IBGServerManager removeAttachmentDelegateAndRequest:]
 -[IBGServerManager serverRequests]
 -[IBGServerManager backgroundTaskIdentifiers]
@@ -3263,20 +3238,20 @@ ___destroy_helper_block_.703
 -[IBGServerManager setBackgroundTaskIdentifiers:]
 -[IBGServerManager .cxx_destruct]
 _OBJC_IVAR_$_IBGServerManager._initializationOperation
-___block_descriptor_tmp.542
-___block_descriptor_tmp.547
-___block_descriptor_tmp.587
-___block_descriptor_tmp.595
-___block_descriptor_tmp.624
-___block_descriptor_tmp.632
+___block_descriptor_tmp.544
+___block_descriptor_tmp.549
+___block_descriptor_tmp.589
+___block_descriptor_tmp.597
+___block_descriptor_tmp.626
+___block_descriptor_tmp.634
 _OBJC_IVAR_$_IBGServerManager._attachmentRequests
 _OBJC_IVAR_$_IBGServerManager._attachmentRequestDelegates
-___block_descriptor_tmp.665
-___block_descriptor_tmp.678
-___block_descriptor_tmp.681
-___block_descriptor_tmp.686
-___block_descriptor_tmp.697
-___block_descriptor_tmp.704
+___block_descriptor_tmp.667
+___block_descriptor_tmp.680
+___block_descriptor_tmp.683
+___block_descriptor_tmp.688
+___block_descriptor_tmp.699
+___block_descriptor_tmp.706
 _OBJC_IVAR_$_IBGServerManager._serverRequests
 _OBJC_IVAR_$_IBGServerManager._backgroundTaskIdentifiers
 _OBJC_IVAR_$_IBGServerManager._servers
@@ -3485,19 +3460,19 @@ __CGPointEqualToPoint
 -[IBGLogLogger addIBGLogWithFormat:args:level:]
 -[IBGLogLogger addLog:level:date:]
 ___34-[IBGLogLogger addLog:level:date:]_block_invoke
-___34-[IBGLogLogger addLog:level:date:]_block_invoke.571
-___copy_helper_block_.572
-___destroy_helper_block_.573
+___34-[IBGLogLogger addLog:level:date:]_block_invoke.573
+___copy_helper_block_.574
+___destroy_helper_block_.575
 -[IBGLogLogger addLog:level:date:inManagedObjectContext:]
 -[IBGLogLogger loadLogsSynchronously]
 ___37-[IBGLogLogger loadLogsSynchronously]_block_invoke
-___copy_helper_block_.616
-___destroy_helper_block_.617
+___copy_helper_block_.618
+___destroy_helper_block_.619
 -[IBGLogLogger privateContext]
 -[IBGLogLogger loadLogsAsynchronouslyWithCompletionHandler:]
 ___60-[IBGLogLogger loadLogsAsynchronouslyWithCompletionHandler:]_block_invoke
-___copy_helper_block_.641
-___destroy_helper_block_.642
+___copy_helper_block_.643
+___destroy_helper_block_.644
 -[IBGLogLogger loadSnapshotSynchronously:withCompletionHandler:]
 -[IBGLogLogger purgeAllLogs]
 ___28-[IBGLogLogger purgeAllLogs]_block_invoke
@@ -3507,15 +3482,15 @@ ___28-[IBGLogLogger clearAllLogs]_block_invoke
 +[IBGLogLogger dataLayerService]
 ___32+[IBGLogLogger dataLayerService]_block_invoke
 +[IBGLogLogger defaultLogLevel]
-___block_descriptor_tmp.574
-___block_descriptor_tmp.618
-___block_descriptor_tmp.643
-___block_descriptor_tmp.663
-___block_descriptor_tmp.664
-___block_literal_global.665
+___block_descriptor_tmp.576
+___block_descriptor_tmp.620
+___block_descriptor_tmp.645
+___block_descriptor_tmp.665
+___block_descriptor_tmp.666
+___block_literal_global.667
 __dataLayerService
-___block_descriptor_tmp.673
-___block_literal_global.674
+___block_descriptor_tmp.675
+___block_literal_global.676
 l_OBJC_PROTOCOL_$_IBGSnapshotProtcol
 l_OBJC_LABEL_PROTOCOL_$_IBGSnapshotProtcol
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGLogLogger.m
@@ -3524,7 +3499,7 @@ __28-[IBGLogLogger clearAllLogs]_block_invoke
 __28-[IBGLogLogger purgeAllLogs]_block_invoke
 __60-[IBGLogLogger loadLogsAsynchronouslyWithCompletionHandler:]_block_invoke
 __37-[IBGLogLogger loadLogsSynchronously]_block_invoke
-__34-[IBGLogLogger addLog:level:date:]_block_invoke.571
+__34-[IBGLogLogger addLog:level:date:]_block_invoke.573
 __34-[IBGLogLogger addLog:level:date:]_block_invoke
 +[IBGValidationHelper isValidEmail:]
 +[IBGValidationHelper isValidInput:]
@@ -3674,92 +3649,105 @@ __37-[IBGShakeAnimation animateWithView:]_block_invoke
 +[IBGLog entityName]
 -[IBGLog description]
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGLog+CoreDataClass.m
--[IBGNewUserStepsListener initWithDelegate:]
--[IBGNewUserStepsListener getLastTouchEvent]
--[IBGNewUserStepsListener startUserStepsLogger]
-___47-[IBGNewUserStepsListener startUserStepsLogger]_block_invoke
-___47-[IBGNewUserStepsListener startUserStepsLogger]_block_invoke.411
-___47-[IBGNewUserStepsListener startUserStepsLogger]_block_invoke.427
-___copy_helper_block_.432
-___destroy_helper_block_.433
-___47-[IBGNewUserStepsListener startUserStepsLogger]_block_invoke.440
-___copy_helper_block_.441
-___destroy_helper_block_.442
-___47-[IBGNewUserStepsListener startUserStepsLogger]_block_invoke.449
-___copy_helper_block_.450
-___destroy_helper_block_.451
-___47-[IBGNewUserStepsListener startUserStepsLogger]_block_invoke.458
-___copy_helper_block_.459
-___destroy_helper_block_.460
--[IBGNewUserStepsListener registerNotifications]
--[IBGNewUserStepsListener unRegisterNotifications]
--[IBGNewUserStepsListener sendStatusBarUpdateNotification]
--[IBGNewUserStepsListener setEnabled:]
--[IBGNewUserStepsListener applicationSendEventEnabled:]
--[IBGNewUserStepsListener updateTopViewChanged]
--[IBGNewUserStepsListener applicationDidEnterBackground]
--[IBGNewUserStepsListener applicationWillEnterForeground]
--[IBGNewUserStepsListener applicationWillResignActive]
--[IBGNewUserStepsListener applicationDidBecomeActive]
--[IBGNewUserStepsListener addAction:to:from:]
--[IBGNewUserStepsListener addEvent:]
--[IBGNewUserStepsListener viewWithTouch:]
--[IBGNewUserStepsListener isSupportGestureRecognizer:]
--[IBGNewUserStepsListener isForceTouch:]
--[IBGNewUserStepsListener getViewHierarchyFromTopView:]
--[IBGNewUserStepsListener getViewHierarchy:fromParent:]
--[IBGNewUserStepsListener getViewHierarchy:fromParent:withMaxDepth:]
--[IBGNewUserStepsListener isUserDefined:]
--[IBGNewUserStepsListener topView]
--[IBGNewUserStepsListener setTopView:]
--[IBGNewUserStepsListener enabled]
--[IBGNewUserStepsListener KBtouched]
--[IBGNewUserStepsListener setKBtouched:]
--[IBGNewUserStepsListener forceTouchOccured]
--[IBGNewUserStepsListener setForceTouchOccured:]
--[IBGNewUserStepsListener touchMoved]
--[IBGNewUserStepsListener setTouchMoved:]
--[IBGNewUserStepsListener lastTouchEvent]
--[IBGNewUserStepsListener setLastTouchEvent:]
--[IBGNewUserStepsListener applicationSendAction]
--[IBGNewUserStepsListener setApplicationSendAction:]
--[IBGNewUserStepsListener applicationSendEvent]
--[IBGNewUserStepsListener setApplicationSendEvent:]
--[IBGNewUserStepsListener viewControllerAppear]
--[IBGNewUserStepsListener setViewControllerAppear:]
--[IBGNewUserStepsListener viewControllerDisappear]
--[IBGNewUserStepsListener setViewControllerDisappear:]
--[IBGNewUserStepsListener windowBecomeKeyWindow]
--[IBGNewUserStepsListener setWindowBecomeKeyWindow:]
--[IBGNewUserStepsListener windowResignKeyWindow]
--[IBGNewUserStepsListener setWindowResignKeyWindow:]
--[IBGNewUserStepsListener delegate]
--[IBGNewUserStepsListener setDelegate:]
--[IBGNewUserStepsListener .cxx_destruct]
-___block_descriptor_tmp.435
-___block_descriptor_tmp.443
-___block_descriptor_tmp.453
-___block_descriptor_tmp.461
-_OBJC_IVAR_$_IBGNewUserStepsListener._enabled
-_OBJC_IVAR_$_IBGNewUserStepsListener._topView
-_OBJC_IVAR_$_IBGNewUserStepsListener._KBtouched
-_OBJC_IVAR_$_IBGNewUserStepsListener._forceTouchOccured
-_OBJC_IVAR_$_IBGNewUserStepsListener._touchMoved
-_OBJC_IVAR_$_IBGNewUserStepsListener._lastTouchEvent
-_OBJC_IVAR_$_IBGNewUserStepsListener._applicationSendAction
-_OBJC_IVAR_$_IBGNewUserStepsListener._applicationSendEvent
-_OBJC_IVAR_$_IBGNewUserStepsListener._viewControllerAppear
-_OBJC_IVAR_$_IBGNewUserStepsListener._viewControllerDisappear
-_OBJC_IVAR_$_IBGNewUserStepsListener._windowBecomeKeyWindow
-_OBJC_IVAR_$_IBGNewUserStepsListener._windowResignKeyWindow
-_OBJC_IVAR_$_IBGNewUserStepsListener._delegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGNewUserStepsListener.m
-__47-[IBGNewUserStepsListener startUserStepsLogger]_block_invoke.458
-__47-[IBGNewUserStepsListener startUserStepsLogger]_block_invoke.449
-__47-[IBGNewUserStepsListener startUserStepsLogger]_block_invoke.440
-__47-[IBGNewUserStepsListener startUserStepsLogger]_block_invoke.427
-__47-[IBGNewUserStepsListener startUserStepsLogger]_block_invoke.411
-__47-[IBGNewUserStepsListener startUserStepsLogger]_block_invoke
+-[IBGUserStepsListener initWithDelegate:]
+-[IBGUserStepsListener getLastTouchEvent]
+-[IBGUserStepsListener startUserStepsLogger]
+___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke
+___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.417
+___copy_helper_block_.424
+___destroy_helper_block_.425
+___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.433
+___copy_helper_block_.438
+___destroy_helper_block_.439
+___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.446
+___copy_helper_block_.447
+___destroy_helper_block_.448
+___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.455
+___copy_helper_block_.456
+___destroy_helper_block_.457
+___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.464
+___copy_helper_block_.465
+___destroy_helper_block_.466
+-[IBGUserStepsListener registerNotifications]
+-[IBGUserStepsListener unRegisterNotifications]
+-[IBGUserStepsListener sendStatusBarUpdateNotification]
+-[IBGUserStepsListener setEnabled:]
+-[IBGUserStepsListener applicationSendEventEnabled:]
+-[IBGUserStepsListener updateTopViewChangedWithViewController:]
+-[IBGUserStepsListener applicationDidEnterBackground]
+-[IBGUserStepsListener applicationWillEnterForeground]
+-[IBGUserStepsListener applicationWillResignActive]
+-[IBGUserStepsListener applicationDidBecomeActive]
+-[IBGUserStepsListener addAction:to:from:]
+-[IBGUserStepsListener addEvent:]
+-[IBGUserStepsListener pointFromTouch:]
+-[IBGUserStepsListener viewWithTouch:]
+-[IBGUserStepsListener isSupportGestureRecognizer:]
+-[IBGUserStepsListener isForceTouch:]
+-[IBGUserStepsListener getViewHierarchyFromTopView:]
+-[IBGUserStepsListener getViewHierarchy:fromParent:]
+-[IBGUserStepsListener getViewHierarchy:fromParent:withMaxDepth:]
+-[IBGUserStepsListener isUserDefined:]
+-[IBGUserStepsListener topView]
+-[IBGUserStepsListener setTopView:]
+-[IBGUserStepsListener olderTopView]
+-[IBGUserStepsListener setOlderTopView:]
+-[IBGUserStepsListener enabled]
+-[IBGUserStepsListener KBtouched]
+-[IBGUserStepsListener setKBtouched:]
+-[IBGUserStepsListener forceTouchOccured]
+-[IBGUserStepsListener setForceTouchOccured:]
+-[IBGUserStepsListener touchMoved]
+-[IBGUserStepsListener setTouchMoved:]
+-[IBGUserStepsListener lastTouchEvent]
+-[IBGUserStepsListener setLastTouchEvent:]
+-[IBGUserStepsListener touchBeganPoint]
+-[IBGUserStepsListener setTouchBeganPoint:]
+-[IBGUserStepsListener applicationSendAction]
+-[IBGUserStepsListener setApplicationSendAction:]
+-[IBGUserStepsListener applicationSendEvent]
+-[IBGUserStepsListener setApplicationSendEvent:]
+-[IBGUserStepsListener viewControllerAppear]
+-[IBGUserStepsListener setViewControllerAppear:]
+-[IBGUserStepsListener viewControllerDisappear]
+-[IBGUserStepsListener setViewControllerDisappear:]
+-[IBGUserStepsListener windowBecomeKeyWindow]
+-[IBGUserStepsListener setWindowBecomeKeyWindow:]
+-[IBGUserStepsListener windowResignKeyWindow]
+-[IBGUserStepsListener setWindowResignKeyWindow:]
+-[IBGUserStepsListener delegate]
+-[IBGUserStepsListener setDelegate:]
+-[IBGUserStepsListener .cxx_destruct]
+___block_descriptor_tmp.427
+___block_descriptor_tmp.441
+___block_descriptor_tmp.449
+___block_descriptor_tmp.459
+___block_descriptor_tmp.467
+_OBJC_IVAR_$_IBGUserStepsListener._enabled
+_OBJC_IVAR_$_IBGUserStepsListener._topView
+_OBJC_IVAR_$_IBGUserStepsListener._olderTopView
+_OBJC_IVAR_$_IBGUserStepsListener._KBtouched
+_OBJC_IVAR_$_IBGUserStepsListener._forceTouchOccured
+_OBJC_IVAR_$_IBGUserStepsListener._touchMoved
+_OBJC_IVAR_$_IBGUserStepsListener._lastTouchEvent
+_OBJC_IVAR_$_IBGUserStepsListener._touchBeganPoint
+_OBJC_IVAR_$_IBGUserStepsListener._applicationSendAction
+_OBJC_IVAR_$_IBGUserStepsListener._applicationSendEvent
+_OBJC_IVAR_$_IBGUserStepsListener._viewControllerAppear
+_OBJC_IVAR_$_IBGUserStepsListener._viewControllerDisappear
+_OBJC_IVAR_$_IBGUserStepsListener._windowBecomeKeyWindow
+_OBJC_IVAR_$_IBGUserStepsListener._windowResignKeyWindow
+_OBJC_IVAR_$_IBGUserStepsListener._delegate
+l_OBJC_PROTOCOL_$_IBGUserStepsListenerProtocol
+l_OBJC_LABEL_PROTOCOL_$_IBGUserStepsListenerProtocol
+/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsListener.m
+/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsListenerProtocol.h
+__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.464
+__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.455
+__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.446
+__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.433
+__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.417
+__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGminizip/IBGmztools.c
 unzRepair
 -[IBGStatusBar setDefaultPrefersStatusBarHidden:preferredStatusBarStyle:applicationStatusBarHidden:]
@@ -3790,12 +3778,12 @@ ___38+[IBGAutoVideoRecorder sharedInstance]_block_invoke
 ___43-[IBGAutoVideoRecorder autoScreenRecording]_block_invoke
 ___43-[IBGAutoVideoRecorder autoScreenRecording]_block_invoke_2
 ___43-[IBGAutoVideoRecorder autoScreenRecording]_block_invoke_3
-___copy_helper_block_.458
-___destroy_helper_block_.459
-___copy_helper_block_.461
-___destroy_helper_block_.462
-___copy_helper_block_.464
-___destroy_helper_block_.465
+___copy_helper_block_.460
+___destroy_helper_block_.461
+___copy_helper_block_.463
+___destroy_helper_block_.464
+___copy_helper_block_.466
+___destroy_helper_block_.467
 -[IBGAutoVideoRecorder updateFrameRateForCapturingTime:]
 -[IBGAutoVideoRecorder initializeWriteTimer]
 -[IBGAutoVideoRecorder cleanup]
@@ -3806,9 +3794,9 @@ ___55-[IBGAutoVideoRecorder didFinishRecordingVideoWithURL:]_block_invoke
 _sharedInstance.once
 _OBJC_IVAR_$_IBGAutoVideoRecorder._draw_queue
 _OBJC_IVAR_$_IBGAutoVideoRecorder._videoEncoderQueue
-___block_descriptor_tmp.460
-___block_descriptor_tmp.463
-___block_descriptor_tmp.466
+___block_descriptor_tmp.462
+___block_descriptor_tmp.465
+___block_descriptor_tmp.468
 _kIBGVideoFrameRate
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGAutoVideoRecorder.m
 __55-[IBGAutoVideoRecorder didFinishRecordingVideoWithURL:]_block_invoke
@@ -3822,13 +3810,16 @@ __38+[IBGAutoVideoRecorder sharedInstance]_block_invoke
 -[IBGNetworkLogger loggedResponse:data:]
 ___40-[IBGNetworkLogger loggedResponse:data:]_block_invoke
 -[IBGNetworkLogger saveLogWithRequest:body:resposne:data:withCompletionHandler:]
-___80-[IBGNetworkLogger saveLogWithRequest:body:resposne:data:withCompletionHandler:]_block_invoke
+-[IBGNetworkLogger saveLogWithRequest:body:resposne:data:withCompletionHandler:date:]
+___85-[IBGNetworkLogger saveLogWithRequest:body:resposne:data:withCompletionHandler:date:]_block_invoke
+___copy_helper_block_.91
+___destroy_helper_block_.92
 -[IBGNetworkLogger loadLogsSynchronously]
 ___41-[IBGNetworkLogger loadLogsSynchronously]_block_invoke
 -[IBGNetworkLogger loadLogsAsynchronouslyWithCompletionHandler:]
 ___64-[IBGNetworkLogger loadLogsAsynchronouslyWithCompletionHandler:]_block_invoke
-___copy_helper_block_.135
-___destroy_helper_block_.136
+___copy_helper_block_.140
+___destroy_helper_block_.141
 -[IBGNetworkLogger loadSnapshotSynchronously:withCompletionHandler:]
 -[IBGNetworkLogger purgeAllLogs]
 ___32-[IBGNetworkLogger purgeAllLogs]_block_invoke
@@ -3867,17 +3858,17 @@ __requestFilterPredicate
 __responseFilterPredicate
 __userRequestObfuscationBlock
 __userResponseObfuscationBlock
-___block_descriptor_tmp.137
-___block_descriptor_tmp.157
-___block_descriptor_tmp.158
-___block_literal_global.159
+___block_descriptor_tmp.94
+___block_descriptor_tmp.162
+___block_descriptor_tmp.163
+___block_literal_global.164
 __customSessionConfiguration
-___block_descriptor_tmp.180
-___block_literal_global.181
-_requestProgressBlockDictionary.onceToken
-__requestProgressBlockDictionary
 ___block_descriptor_tmp.185
 ___block_literal_global.186
+_requestProgressBlockDictionary.onceToken
+__requestProgressBlockDictionary
+___block_descriptor_tmp.190
+___block_literal_global.191
 _OBJC_IVAR_$_IBGNetworkLogger._loggedRequest
 _OBJC_IVAR_$_IBGNetworkLogger._tobeSavedBody
 _OBJC_IVAR_$_IBGNetworkLogger._loggedResponse
@@ -3889,7 +3880,7 @@ __32-[IBGNetworkLogger clearAllLogs]_block_invoke
 __32-[IBGNetworkLogger purgeAllLogs]_block_invoke
 __64-[IBGNetworkLogger loadLogsAsynchronouslyWithCompletionHandler:]_block_invoke
 __41-[IBGNetworkLogger loadLogsSynchronously]_block_invoke
-__80-[IBGNetworkLogger saveLogWithRequest:body:resposne:data:withCompletionHandler:]_block_invoke
+__85-[IBGNetworkLogger saveLogWithRequest:body:resposne:data:withCompletionHandler:date:]_block_invoke
 __40-[IBGNetworkLogger loggedResponse:data:]_block_invoke
 -[IBGServerDataRequest initWithURL:HTTPMethod:payload:headers:delegate:]
 -[IBGServerDataRequest GETURLFromParamaters]
@@ -4262,20 +4253,20 @@ _OBJC_IVAR_$_IBGAnalyticsEventsLogger._intermediateEvents
 +[IBGStringUtilities validStringOfAppVersion:]
 +[IBGStringUtilities randomStringWithLength:]
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGStringUtilities.m
-+[IBGNewMethodSwizzlerManager getInstance]
-___42+[IBGNewMethodSwizzlerManager getInstance]_block_invoke
--[IBGNewMethodSwizzlerManager init]
--[IBGNewMethodSwizzlerManager addSwizzler:]
--[IBGNewMethodSwizzlerManager removeSwizzler:]
--[IBGNewMethodSwizzlerManager getSwizzlerWithSelector:]
--[IBGNewMethodSwizzlerManager numberOfOccurrencesOfString:inString:]
--[IBGNewMethodSwizzlerManager destroy]
--[IBGNewMethodSwizzlerManager swizzlers]
--[IBGNewMethodSwizzlerManager setSwizzlers:]
--[IBGNewMethodSwizzlerManager .cxx_destruct]
-_OBJC_IVAR_$_IBGNewMethodSwizzlerManager._swizzlers
-/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGNewMethodSwizzlerManager.m
-__42+[IBGNewMethodSwizzlerManager getInstance]_block_invoke
++[IBGMethodSwizzlerManager getInstance]
+___39+[IBGMethodSwizzlerManager getInstance]_block_invoke
+-[IBGMethodSwizzlerManager init]
+-[IBGMethodSwizzlerManager addSwizzler:]
+-[IBGMethodSwizzlerManager removeSwizzler:]
+-[IBGMethodSwizzlerManager getSwizzlerWithSelector:]
+-[IBGMethodSwizzlerManager numberOfOccurrencesOfString:inString:]
++[IBGMethodSwizzlerManager destroy]
+-[IBGMethodSwizzlerManager swizzlers]
+-[IBGMethodSwizzlerManager setSwizzlers:]
+-[IBGMethodSwizzlerManager .cxx_destruct]
+_OBJC_IVAR_$_IBGMethodSwizzlerManager._swizzlers
+/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGMethodSwizzlerManager.m
+__39+[IBGMethodSwizzlerManager getInstance]_block_invoke
 -[IBGScreenshot initWithIdentifier:timpStamp:andDate:]
 -[IBGScreenshot updateScreenshotTimeStamp:]
 -[IBGScreenshot coderNameForSelector:]
@@ -4443,46 +4434,46 @@ __41+[IBGSDKInternalLogManager sharedManager]_block_invoke
 ___32+[IBGEventLogger sharedInstance]_block_invoke
 -[IBGEventLogger purgeAllLogs]
 -[IBGEventLogger addEventLogWithName:params:]
-___45-[IBGEventLogger addEventLogWithName:params:]_block_invoke
-___45-[IBGEventLogger addEventLogWithName:params:]_block_invoke.563
-___copy_helper_block_.571
-___destroy_helper_block_.572
+-[IBGEventLogger addEventLogWithName:params:date:]
+___50-[IBGEventLogger addEventLogWithName:params:date:]_block_invoke
+___50-[IBGEventLogger addEventLogWithName:params:date:]_block_invoke.567
+___copy_helper_block_.575
+___destroy_helper_block_.576
 -[IBGEventLogger loadSnapshotSynchronously:withCompletionHandler:]
 ___66-[IBGEventLogger loadSnapshotSynchronously:withCompletionHandler:]_block_invoke
-___copy_helper_block_.583
-___destroy_helper_block_.584
+___copy_helper_block_.587
+___destroy_helper_block_.588
 -[IBGEventLogger clearAllStateEventLogs]
 -[IBGEventLogger clearAllLogs]
 ___30-[IBGEventLogger clearAllLogs]_block_invoke
+___copy_helper_block_.605
+___destroy_helper_block_.606
 -[IBGEventLogger eventLoggerContextProvider]
 -[IBGEventLogger stateLogs]
 ___27-[IBGEventLogger stateLogs]_block_invoke
 ___27-[IBGEventLogger stateLogs]_block_invoke_2
-___copy_helper_block_.614
-___destroy_helper_block_.615
 -[IBGEventLogger stateEventLogs]
 -[IBGEventLogger eventLogsQueue]
 -[IBGEventLogger dataLayerService]
 ___34-[IBGEventLogger dataLayerService]_block_invoke
-___copy_helper_block_.625
-___destroy_helper_block_.626
+___copy_helper_block_.629
+___destroy_helper_block_.630
 -[IBGEventLogger context]
 -[IBGEventLogger setEventLoggerContextProvider:]
 -[IBGEventLogger setDataLayerService:]
 -[IBGEventLogger setStateEventLogs:]
 -[IBGEventLogger setEventLogsQueue:]
 -[IBGEventLogger .cxx_destruct]
-___block_descriptor_tmp.558
-___block_descriptor_tmp.573
-___block_descriptor_tmp.585
+___block_descriptor_tmp.562
+___block_descriptor_tmp.577
+___block_descriptor_tmp.607
 _OBJC_IVAR_$_IBGEventLogger._eventLoggerContextProvider
-___block_descriptor_tmp.610
-___block_literal_global.611
-___block_descriptor_tmp.616
+___block_descriptor_tmp.614
+___block_literal_global.615
 _OBJC_IVAR_$_IBGEventLogger._stateEventLogs
 _OBJC_IVAR_$_IBGEventLogger._eventLogsQueue
 _OBJC_IVAR_$_IBGEventLogger._dataLayerService
-___block_descriptor_tmp.627
+___block_descriptor_tmp.631
 _OBJC_IVAR_$_IBGEventLogger._context
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGEventLogger.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGEventLogger.h
@@ -4491,8 +4482,8 @@ __27-[IBGEventLogger stateLogs]_block_invoke_2
 __27-[IBGEventLogger stateLogs]_block_invoke
 __30-[IBGEventLogger clearAllLogs]_block_invoke
 __66-[IBGEventLogger loadSnapshotSynchronously:withCompletionHandler:]_block_invoke
-__45-[IBGEventLogger addEventLogWithName:params:]_block_invoke.563
-__45-[IBGEventLogger addEventLogWithName:params:]_block_invoke
+__50-[IBGEventLogger addEventLogWithName:params:date:]_block_invoke.567
+__50-[IBGEventLogger addEventLogWithName:params:date:]_block_invoke
 __32+[IBGEventLogger sharedInstance]_block_invoke
 -[IBGFullActivityIndicatorView init]
 +[IBGFullActivityIndicatorView show]
@@ -4517,7 +4508,7 @@ _OBJC_IVAR_$_IBGFullActivityIndicatorView._collectingDataLabel
 /Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGFullActivityIndicatorView.m
 +[IBGNetworkLog logsFetchRequestWithMaxCount:sessionId:]
 +[IBGNetworkLog entityName]
--[IBGNetworkLog saveRequest:body:sessionId:]
+-[IBGNetworkLog saveRequest:body:sessionId:date:]
 -[IBGNetworkLog saveResponse:data:]
 -[IBGNetworkLog toDictionary]
 -[IBGNetworkLog description]
@@ -4534,14 +4525,15 @@ ___42-[IBGCacheManager initializationOperation]_block_invoke
 -[IBGCacheManager forcePersistAll]
 -[IBGCacheManager registerCache:forClass:withCompletionHandler:]
 ___64-[IBGCacheManager registerCache:forClass:withCompletionHandler:]_block_invoke
-___copy_helper_block_.569
-___destroy_helper_block_.570
+___copy_helper_block_.571
+___destroy_helper_block_.572
 -[IBGCacheManager send]
 -[IBGCacheManager unpersistAndSendPendingCache]
 -[IBGCacheManager getCacheWithClass:]
 -[IBGCacheManager unpersistAllCache]
 -[IBGCacheManager saveCacheModel:]
 -[IBGCacheManager removeCacheModel:]
+-[IBGCacheManager clearAll]
 +[IBGCacheManager destroy]
 -[IBGCacheManager setInitializationOperation:]
 -[IBGCacheManager cacheManagers]
@@ -4550,8 +4542,8 @@ ___destroy_helper_block_.570
 -[IBGCacheManager setCacheManagerQueue:]
 -[IBGCacheManager .cxx_destruct]
 _OBJC_IVAR_$_IBGCacheManager._initializationOperation
-___block_descriptor_tmp.551
-___block_descriptor_tmp.571
+___block_descriptor_tmp.553
+___block_descriptor_tmp.573
 _OBJC_IVAR_$_IBGCacheManager._cacheManagers
 _OBJC_IVAR_$_IBGCacheManager._cacheManagerQueue
 /Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGCacheManager.m
@@ -4585,7 +4577,6 @@ _OBJC_IVAR_$_IBGLineLimitedString._syncLock
 -[IBGAttachment save]
 -[IBGAttachment attachment]
 -[IBGAttachment metadata]
--[IBGAttachment setMetadata:]
 -[IBGAttachment isSent]
 -[IBGAttachment setIsSent:]
 -[IBGAttachment byline]
@@ -4596,10 +4587,10 @@ _OBJC_IVAR_$_IBGAttachment._metadata
 _OBJC_IVAR_$_IBGAttachment._isSent
 _OBJC_IVAR_$_IBGAttachment._byline
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGAttachment.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGAttachment.h
 +[IBGDiskPersistenceManager getInstance]
 ___40+[IBGDiskPersistenceManager getInstance]_block_invoke
 -[IBGDiskPersistenceManager init]
+-[IBGDiskPersistenceManager getdateFormatter]
 -[IBGDiskPersistenceManager clearTempDirectory]
 -[IBGDiskPersistenceManager clearDirectoryAtPath:]
 -[IBGDiskPersistenceManager clearViewHierarchyTempDirectory]
@@ -4645,10 +4636,11 @@ ___71-[IBGDiskPersistenceManager persistDataInTempDirectory:withCompletion:]_blo
 -[IBGDiskPersistenceManager tempDirectory]
 -[IBGDiskPersistenceManager setTempDirectory:]
 -[IBGDiskPersistenceManager setScreenshotsRecordingDirectory:]
+-[IBGDiskPersistenceManager setDateFormatter:]
 -[IBGDiskPersistenceManager .cxx_destruct]
+_OBJC_IVAR_$_IBGDiskPersistenceManager._dateFormatter
 _OBJC_IVAR_$_IBGDiskPersistenceManager._screenshotsRecordingDirectory
-_randomName.dateFormatter
-___block_descriptor_tmp.505
+___block_descriptor_tmp.509
 _OBJC_IVAR_$_IBGDiskPersistenceManager._cacheDirectory
 _OBJC_IVAR_$_IBGDiskPersistenceManager._fileManager
 _OBJC_IVAR_$_IBGDiskPersistenceManager._tempDirectory
@@ -4687,8 +4679,8 @@ ___49-[IBGPresentationManager initializationOperation]_block_invoke
 -[IBGPresentationManager captureFirstResponderView]
 -[IBGPresentationManager dismissKeyboard]
 ___41-[IBGPresentationManager dismissKeyboard]_block_invoke
-___copy_helper_block_.683
-___destroy_helper_block_.684
+___copy_helper_block_.685
+___destroy_helper_block_.686
 -[IBGPresentationManager nativeSharePresent]
 -[IBGPresentationManager presentNavigationControllerWithViewController:animated:completion:]
 -[IBGPresentationManager dismissViewControllerAnimated:completion:]
@@ -4710,11 +4702,11 @@ ___destroy_helper_block_.684
 -[IBGPresentationManager setUserFirstResponderView:]
 -[IBGPresentationManager .cxx_destruct]
 _OBJC_IVAR_$_IBGPresentationManager._initializationOperation
-___block_descriptor_tmp.555
+___block_descriptor_tmp.557
 _OBJC_IVAR_$_IBGPresentationManager._window
 __didSelectPromptOptionHandler
 _OBJC_IVAR_$_IBGPresentationManager._SDKPresent
-___block_descriptor_tmp.685
+___block_descriptor_tmp.687
 _OBJC_IVAR_$_IBGPresentationManager._windowLevel
 _OBJC_IVAR_$_IBGPresentationManager._screenshotCapturingHandler
 _OBJC_IVAR_$_IBGPresentationManager._delegates
@@ -4982,48 +4974,6 @@ _OBJC_IVAR_$_IBGSnapshotView._index
 -[UIView(Inspect) ibg_inspectInsideWindow:]
 -[UIView(Inspect) ibg_isProtected]
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/UIView+Inspect.m
--[IBGMethodSwizzler initWithSelector:forClass:withBlock:withInvocation:]
--[IBGMethodSwizzler setActive:]
--[IBGMethodSwizzler originalImplementationExist]
--[IBGMethodSwizzler dealloc]
--[IBGMethodSwizzler sendAction:to:from:forEvent:]
--[IBGMethodSwizzler sendEvent:]
--[IBGMethodSwizzler viewDidAppear:]
--[IBGMethodSwizzler viewDidDisappear:]
--[IBGMethodSwizzler motionEnded:withEvent:]
--[IBGMethodSwizzler becomeKeyWindow]
--[IBGMethodSwizzler resignKeyWindow]
-+[IBGMethodSwizzler methodImplementedWithSelector:inClass:]
--[IBGMethodSwizzler description]
--[IBGMethodSwizzler block]
--[IBGMethodSwizzler setBlock:]
--[IBGMethodSwizzler invocation]
--[IBGMethodSwizzler setInvocation:]
--[IBGMethodSwizzler selector]
--[IBGMethodSwizzler setSelector:]
--[IBGMethodSwizzler klass]
--[IBGMethodSwizzler setKlass:]
--[IBGMethodSwizzler active]
--[IBGMethodSwizzler oldMethod]
--[IBGMethodSwizzler setOldMethod:]
--[IBGMethodSwizzler newMethod]
--[IBGMethodSwizzler setNewMethod:]
--[IBGMethodSwizzler oldImplementation]
--[IBGMethodSwizzler setOldImplementation:]
--[IBGMethodSwizzler newImplementation]
--[IBGMethodSwizzler setNewImplementation:]
--[IBGMethodSwizzler .cxx_destruct]
-_OBJC_IVAR_$_IBGMethodSwizzler._active
-_OBJC_IVAR_$_IBGMethodSwizzler._block
-_OBJC_IVAR_$_IBGMethodSwizzler._invocation
-_OBJC_IVAR_$_IBGMethodSwizzler._selector
-_OBJC_IVAR_$_IBGMethodSwizzler._klass
-_OBJC_IVAR_$_IBGMethodSwizzler._oldMethod
-_OBJC_IVAR_$_IBGMethodSwizzler._newMethod
-_OBJC_IVAR_$_IBGMethodSwizzler._oldImplementation
-_OBJC_IVAR_$_IBGMethodSwizzler._newImplementation
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGMethodSwizzler.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGMethodSwizzler.h
 -[IBGPoweredByView initWithBlackBackground:]
 -[IBGPoweredByView applyTheme]
 -[IBGPoweredByView hideInstabugIcon]
@@ -5070,7 +5020,7 @@ ___49-[IBGAttachmentsView stopPlayingAudioAttachment:]_block_invoke
 -[IBGAttachmentsView attachments]
 -[IBGAttachmentsView setAttachments:]
 -[IBGAttachmentsView .cxx_destruct]
-___block_descriptor_tmp.493
+___block_descriptor_tmp.495
 _OBJC_IVAR_$_IBGAttachmentsView._collectionView
 _OBJC_IVAR_$_IBGAttachmentsView._delegate
 _OBJC_IVAR_$_IBGAttachmentsView._currentlyPlayingAudioAttachmentTimer
@@ -5200,10 +5150,10 @@ ___51-[IBGScreenshotVC adjustScreenshotAnnotationsImage]_block_invoke
 -[IBGScreenshotVC startShapeDetection]
 ___38-[IBGScreenshotVC startShapeDetection]_block_invoke
 ___38-[IBGScreenshotVC startShapeDetection]_block_invoke_2
-___copy_helper_block_.864
-___destroy_helper_block_.865
-___copy_helper_block_.867
-___destroy_helper_block_.868
+___copy_helper_block_.866
+___destroy_helper_block_.867
+___copy_helper_block_.869
+___destroy_helper_block_.870
 -[IBGScreenshotVC shapeTypeFromAnnotationViewType:]
 -[IBGScreenshotVC showOverlayWithOriginalImage:detectedImage:]
 -[IBGScreenshotVC adjustImagesStrokeColor:]
@@ -5307,8 +5257,8 @@ _OBJC_IVAR_$_IBGScreenshotVC._currentAnnotationViewType
 _OBJC_IVAR_$_IBGScreenshotVC._touchPoints
 _OBJC_IVAR_$_IBGScreenshotVC._tapGesture
 _OBJC_IVAR_$_IBGScreenshotVC._panGesture
-___block_descriptor_tmp.866
-___block_descriptor_tmp.870
+___block_descriptor_tmp.868
+___block_descriptor_tmp.872
 _OBJC_IVAR_$_IBGScreenshotVC._recognizer
 _OBJC_IVAR_$_IBGScreenshotVC._colorSelectorViewWidthConstraint
 _OBJC_IVAR_$_IBGScreenshotVC._points
@@ -5349,15 +5299,30 @@ __38-[IBGScreenshotVC startShapeDetection]_block_invoke
 __51-[IBGScreenshotVC adjustScreenshotAnnotationsImage]_block_invoke
 -[NSString(MD5) MD5String]
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/NSString+MD5.m
+-[IBGUserStepsTrimmer init]
+-[IBGUserStepsTrimmer getUserStepsFrom:maxScreenShots:maxSteps:]
+-[IBGUserStepsTrimmer validIdentiferFromTrimmedNodes:]
+-[IBGUserStepsTrimmer sortNodesUsingParentNodesTimeEpoch]
+-[IBGUserStepsTrimmer trimStepsWithMaxParentNumber:maxChilds:]
+-[IBGUserStepsTrimmer addParentNodeWithStepId:timeEpoch:]
+-[IBGUserStepsTrimmer parentNodeWithIdentifier:]
+-[IBGUserStepsTrimmer parentNodes]
+-[IBGUserStepsTrimmer setParentNodes:]
+-[IBGUserStepsTrimmer currentChildNumber]
+-[IBGUserStepsTrimmer setCurrentChildNumber:]
+-[IBGUserStepsTrimmer .cxx_destruct]
+_OBJC_IVAR_$_IBGUserStepsTrimmer._parentNodes
+_OBJC_IVAR_$_IBGUserStepsTrimmer._currentChildNumber
+/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsTrimmer.m
 -[IBGServerFileRequest initWithURL:filePath:fileInfo:delegate:]
 -[IBGServerFileRequest mimeTypeFromFile:]
 -[IBGServerFileRequest setRequestData:]
 -[IBGServerFileRequest requestData]
 -[IBGServerFileRequest prepareRequestWithCompletionHandler:]
 ___60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke
-___60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke.458
-___copy_helper_block_.475
-___destroy_helper_block_.476
+___60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke.470
+___copy_helper_block_.487
+___destroy_helper_block_.488
 -[IBGServerFileRequest sessionDataTaskWithRawRequest:]
 +[IBGServerFileRequest executeWithURL:filePath:fileInfo:delegate:]
 -[IBGServerFileRequest dataFromContentOfFilePath:]
@@ -5376,7 +5341,6 @@ ___destroy_helper_block_.476
 -[IBGServerFileRequest info]
 -[IBGServerFileRequest setInfo:]
 -[IBGServerFileRequest .cxx_destruct]
-___block_descriptor_tmp.478
 _OBJC_IVAR_$_IBGServerFileRequest._delegate
 _OBJC_IVAR_$_IBGServerFileRequest._data
 _OBJC_IVAR_$_IBGServerFileRequest._filePath
@@ -5386,7 +5350,7 @@ _OBJC_IVAR_$_IBGServerFileRequest._url
 _OBJC_IVAR_$_IBGServerFileRequest._info
 /Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Generic Requests/IBGServerFileRequest.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Generic Requests/IBGServerFileRequest.h
-__60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke.458
+__60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke.470
 __60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke
 -[IBGFeature initWithDefaultValue:]
 +[IBGFeature featureWithDefaultValue:]
@@ -5597,18 +5561,20 @@ _OBJC_IVAR_$_IBGCircleAnnotationView._circleLineWidth
 -[IBGLogLocalAttachment initWithDelegate:logType:snapShot:isSynchronouslyFetch:]
 -[IBGLogLocalAttachment fetchLogs]
 ___34-[IBGLogLocalAttachment fetchLogs]_block_invoke
-___34-[IBGLogLocalAttachment fetchLogs]_block_invoke.556
-___copy_helper_block_.567
-___destroy_helper_block_.568
-___34-[IBGLogLocalAttachment fetchLogs]_block_invoke.572
+___34-[IBGLogLocalAttachment fetchLogs]_block_invoke.558
+___copy_helper_block_.561
+___destroy_helper_block_.562
+___34-[IBGLogLocalAttachment fetchLogs]_block_invoke.566
 ___34-[IBGLogLocalAttachment fetchLogs]_block_invoke_2
-___34-[IBGLogLocalAttachment fetchLogs]_block_invoke.588
-___34-[IBGLogLocalAttachment fetchLogs]_block_invoke_2.595
-___copy_helper_block_.607
-___destroy_helper_block_.608
-___34-[IBGLogLocalAttachment fetchLogs]_block_invoke.612
-___copy_helper_block_.615
-___destroy_helper_block_.616
+___copy_helper_block_.577
+___destroy_helper_block_.578
+___34-[IBGLogLocalAttachment fetchLogs]_block_invoke.582
+___34-[IBGLogLocalAttachment fetchLogs]_block_invoke_2.589
+___copy_helper_block_.601
+___destroy_helper_block_.602
+___34-[IBGLogLocalAttachment fetchLogs]_block_invoke.606
+___copy_helper_block_.609
+___destroy_helper_block_.610
 -[IBGLogLocalAttachment jsonStringFrom:]
 -[IBGLogLocalAttachment viewHierarchyString]
 -[IBGLogLocalAttachment getViewHierarchyDictWithViewsHeirarchies:]
@@ -5622,8 +5588,10 @@ ___destroy_helper_block_.616
 -[IBGLogLocalAttachment send]
 ___29-[IBGLogLocalAttachment send]_block_invoke
 ___29-[IBGLogLocalAttachment send]_block_invoke_2
-___copy_helper_block_.722
-___destroy_helper_block_.723
+___copy_helper_block_.723
+___destroy_helper_block_.724
+___copy_helper_block_.726
+___destroy_helper_block_.727
 -[IBGLogLocalAttachment logRequestWithLogType:]
 -[IBGLogLocalAttachment logRequestDone:isSuccess:error:]
 -[IBGLogLocalAttachment consoleLog]
@@ -5647,13 +5615,15 @@ ___destroy_helper_block_.723
 -[IBGLogLocalAttachment snapshot]
 -[IBGLogLocalAttachment setSnapshot:]
 -[IBGLogLocalAttachment .cxx_destruct]
-___block_descriptor_tmp.569
-___block_descriptor_tmp.576
-___block_descriptor_tmp.589
-___block_literal_global.590
-___block_descriptor_tmp.609
-___block_descriptor_tmp.617
-___block_descriptor_tmp.724
+___block_descriptor_tmp.563
+___block_descriptor_tmp.570
+___block_descriptor_tmp.579
+___block_descriptor_tmp.583
+___block_literal_global.584
+___block_descriptor_tmp.603
+___block_descriptor_tmp.611
+___block_descriptor_tmp.725
+___block_descriptor_tmp.728
 _OBJC_IVAR_$_IBGLogLocalAttachment._consoleLog
 _OBJC_IVAR_$_IBGLogLocalAttachment._userStepsLog
 _OBJC_IVAR_$_IBGLogLocalAttachment._nonVisualUserStepsLog
@@ -5667,22 +5637,22 @@ _OBJC_IVAR_$_IBGLogLocalAttachment._snapshot
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGLogLocalAttachment.m
 __29-[IBGLogLocalAttachment send]_block_invoke_2
 __29-[IBGLogLocalAttachment send]_block_invoke
-__34-[IBGLogLocalAttachment fetchLogs]_block_invoke.612
-__34-[IBGLogLocalAttachment fetchLogs]_block_invoke_2.595
-__34-[IBGLogLocalAttachment fetchLogs]_block_invoke.588
+__34-[IBGLogLocalAttachment fetchLogs]_block_invoke.606
+__34-[IBGLogLocalAttachment fetchLogs]_block_invoke_2.589
+__34-[IBGLogLocalAttachment fetchLogs]_block_invoke.582
 __34-[IBGLogLocalAttachment fetchLogs]_block_invoke_2
-__34-[IBGLogLocalAttachment fetchLogs]_block_invoke.572
-__34-[IBGLogLocalAttachment fetchLogs]_block_invoke.556
+__34-[IBGLogLocalAttachment fetchLogs]_block_invoke.566
+__34-[IBGLogLocalAttachment fetchLogs]_block_invoke.558
 __34-[IBGLogLocalAttachment fetchLogs]_block_invoke
 -[IBGAttachmentRequest initWithURL:delegate:]
 -[IBGAttachmentRequest executeNow]
 ___34-[IBGAttachmentRequest executeNow]_block_invoke
 ___34-[IBGAttachmentRequest executeNow]_block_invoke_2
 ___34-[IBGAttachmentRequest executeNow]_block_invoke_3
-___copy_helper_block_.406
-___destroy_helper_block_.407
-___copy_helper_block_.412
-___destroy_helper_block_.413
+___copy_helper_block_.408
+___destroy_helper_block_.409
+___copy_helper_block_.414
+___destroy_helper_block_.415
 -[IBGAttachmentRequest isExecuting]
 -[IBGAttachmentRequest setIsExecuting:]
 -[IBGAttachmentRequest failures]
@@ -5694,8 +5664,8 @@ ___destroy_helper_block_.413
 -[IBGAttachmentRequest setIsSuccess:]
 -[IBGAttachmentRequest .cxx_destruct]
 _OBJC_IVAR_$_IBGAttachmentRequest._failures
-___block_descriptor_tmp.409
-___block_descriptor_tmp.415
+___block_descriptor_tmp.411
+___block_descriptor_tmp.417
 _OBJC_IVAR_$_IBGAttachmentRequest._isExecuting
 _OBJC_IVAR_$_IBGAttachmentRequest._URL
 _OBJC_IVAR_$_IBGAttachmentRequest._delegate
@@ -5826,42 +5796,47 @@ _OBJC_IVAR_$_IBGScreenshotGestureAnnotator._delegate
 _OBJC_IVAR_$_IBGScreenshotGestureAnnotator._touchImage
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGScreenshotGestureAnnotator.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGScreenshotGestureAnnotator.h
--[IBGUserStepsImagesLocalAttachment initWithSnapshot:reportId:]
+-[IBGUserStepsImagesLocalAttachment initWithSnapshot:sessionId:reportDate:]
 -[IBGUserStepsImagesLocalAttachment prepareAttachmentMetadata]
 -[IBGUserStepsImagesLocalAttachment compressFiles:withCompletion:]
 ___66-[IBGUserStepsImagesLocalAttachment compressFiles:withCompletion:]_block_invoke
-___66-[IBGUserStepsImagesLocalAttachment compressFiles:withCompletion:]_block_invoke.564
-___copy_helper_block_.568
-___destroy_helper_block_.569
+___66-[IBGUserStepsImagesLocalAttachment compressFiles:withCompletion:]_block_invoke.568
+___copy_helper_block_.572
+___destroy_helper_block_.573
 -[IBGUserStepsImagesLocalAttachment prepareAttachmentPathWithCompletion:]
 ___73-[IBGUserStepsImagesLocalAttachment prepareAttachmentPathWithCompletion:]_block_invoke
 ___73-[IBGUserStepsImagesLocalAttachment prepareAttachmentPathWithCompletion:]_block_invoke_2
-___copy_helper_block_.576
-___destroy_helper_block_.577
-___copy_helper_block_.582
-___destroy_helper_block_.583
+___copy_helper_block_.581
+___destroy_helper_block_.582
+-[IBGUserStepsImagesLocalAttachment coderNameForSelector:]
 -[IBGUserStepsImagesLocalAttachment prepareAttachmentAndSaveWithCompletion:]
 ___76-[IBGUserStepsImagesLocalAttachment prepareAttachmentAndSaveWithCompletion:]_block_invoke
-___copy_helper_block_.598
-___destroy_helper_block_.599
+___copy_helper_block_.607
+___destroy_helper_block_.608
+-[IBGUserStepsImagesLocalAttachment dictionaryValue]
+-[IBGUserStepsImagesLocalAttachment initWithDictionary:]
 -[IBGUserStepsImagesLocalAttachment reportAttachmentRequestDone:isSuccess:error:]
 -[IBGUserStepsImagesLocalAttachment fileName]
 -[IBGUserStepsImagesLocalAttachment setFileName:]
--[IBGUserStepsImagesLocalAttachment reportId]
--[IBGUserStepsImagesLocalAttachment setReportId:]
+-[IBGUserStepsImagesLocalAttachment sessionId]
+-[IBGUserStepsImagesLocalAttachment setSessionId:]
+-[IBGUserStepsImagesLocalAttachment reportDate]
+-[IBGUserStepsImagesLocalAttachment setReportDate:]
 -[IBGUserStepsImagesLocalAttachment snapshot]
 -[IBGUserStepsImagesLocalAttachment setSnapshot:]
 -[IBGUserStepsImagesLocalAttachment .cxx_destruct]
-___block_descriptor_tmp.579
-___block_descriptor_tmp.600
+___block_descriptor_tmp.575
+___block_descriptor_tmp.584
+___block_descriptor_tmp.610
 _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment.fileName
-_OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment._reportId
+_OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment._sessionId
+_OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment._reportDate
 _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment._snapshot
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGUserStepsImagesLocalAttachment.m
 __76-[IBGUserStepsImagesLocalAttachment prepareAttachmentAndSaveWithCompletion:]_block_invoke
 __73-[IBGUserStepsImagesLocalAttachment prepareAttachmentPathWithCompletion:]_block_invoke_2
 __73-[IBGUserStepsImagesLocalAttachment prepareAttachmentPathWithCompletion:]_block_invoke
-__66-[IBGUserStepsImagesLocalAttachment compressFiles:withCompletion:]_block_invoke.564
+__66-[IBGUserStepsImagesLocalAttachment compressFiles:withCompletion:]_block_invoke.568
 __66-[IBGUserStepsImagesLocalAttachment compressFiles:withCompletion:]_block_invoke
 -[IBGTextView initWithCoder:]
 -[IBGTextView initWithFrame:]
@@ -5909,8 +5884,6 @@ ___35-[IBGVideoRecorder writeVideoFrame]_block_invoke
 ___35-[IBGVideoRecorder writeVideoFrame]_block_invoke_2
 ___35-[IBGVideoRecorder writeVideoFrame]_block_invoke_3
 ___35-[IBGVideoRecorder writeVideoFrame]_block_invoke_4
-___copy_helper_block_.91
-___destroy_helper_block_.92
 ___copy_helper_block_.94
 ___destroy_helper_block_.95
 ___copy_helper_block_.97
@@ -5987,20 +5960,6 @@ __35-[IBGVideoRecorder writeVideoFrame]_block_invoke_3
 __35-[IBGVideoRecorder writeVideoFrame]_block_invoke_2
 __35-[IBGVideoRecorder writeVideoFrame]_block_invoke
 __34+[IBGVideoRecorder sharedInstance]_block_invoke
-+[IBGMethodSwizzlerManager getInstance]
-___39+[IBGMethodSwizzlerManager getInstance]_block_invoke
--[IBGMethodSwizzlerManager init]
--[IBGMethodSwizzlerManager addSwizzler:]
--[IBGMethodSwizzlerManager removeSwizzler:]
--[IBGMethodSwizzlerManager getSwizzlerWithSelector:forClass:]
--[IBGMethodSwizzlerManager numberOfOccurrencesOfString:inString:]
-+[IBGMethodSwizzlerManager destroy]
--[IBGMethodSwizzlerManager swizzlers]
--[IBGMethodSwizzlerManager setSwizzlers:]
--[IBGMethodSwizzlerManager .cxx_destruct]
-_OBJC_IVAR_$_IBGMethodSwizzlerManager._swizzlers
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGMethodSwizzlerManager.m
-__39+[IBGMethodSwizzlerManager getInstance]_block_invoke
 -[IBGLogLoggerContextProvider context]
 -[IBGLogLoggerContextProvider memoryContext]
 ___44-[IBGLogLoggerContextProvider memoryContext]_block_invoke
@@ -6058,8 +6017,8 @@ ___38+[IBGInspector IBGNSLog:withLogLevel:]_block_invoke
 +[IBGInspector shouldUseOSLog]
 +[IBGInspector getConsoleLog]
 ___29+[IBGInspector getConsoleLog]_block_invoke
-___copy_helper_block_.762
-___destroy_helper_block_.763
+___copy_helper_block_.764
+___destroy_helper_block_.765
 +[IBGInspector fetchConsoleLogFromASL]
 +[IBGInspector clearConsoleLog]
 ___31+[IBGInspector clearConsoleLog]_block_invoke
@@ -6083,8 +6042,8 @@ ___31+[IBGInspector clearConsoleLog]_block_invoke
 +[IBGInspector topEffectiveStatusBarStyleViewControllerInWindow:]
 +[IBGInspector currentFirstResponderView]
 ___41+[IBGInspector currentFirstResponderView]_block_invoke
-___copy_helper_block_.853
-___destroy_helper_block_.854
+___copy_helper_block_.855
+___destroy_helper_block_.856
 +[IBGInspector traverseView:]
 +[IBGInspector logViewHierarchyForAllWindows]
 ___45+[IBGInspector logViewHierarchyForAllWindows]_block_invoke
@@ -6093,6 +6052,8 @@ ___45+[IBGInspector logViewHierarchyForAllWindows]_block_invoke
 +[IBGInspector threadID]
 +[IBGInspector applicationWindow]
 +[IBGInspector isNotInstabugWindow:]
++[IBGInspector isSystemWindow:]
++[IBGInspector systemWindows]
 +[IBGInspector applicationWindows]
 +[IBGInspector tabBarInView:]
 +[IBGInspector isPhotoLibraryUsageDescriptionAdded]
@@ -6113,15 +6074,15 @@ _inspectorQueue.once
 __inspectorQueue
 _consoleLogs
 _isOSLogAvailabile
-___block_descriptor_tmp.752
-___block_descriptor_tmp.764
-___block_descriptor_tmp.776
-___block_literal_global.777
-___block_descriptor_tmp.856
+___block_descriptor_tmp.754
+___block_descriptor_tmp.766
+___block_descriptor_tmp.778
+___block_literal_global.779
+___block_descriptor_tmp.858
 _sessionUUID.onceToken
 _sessionUUID
-___block_descriptor_tmp.922
-___block_literal_global.923
+___block_descriptor_tmp.928
+___block_literal_global.929
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGInspector.m
 __27+[IBGInspector sessionUUID]_block_invoke
 __45+[IBGInspector logViewHierarchyForAllWindows]_block_invoke
@@ -6160,6 +6121,9 @@ _OBJC_IVAR_$_IBGAspectRatioRectControlPoints._initialCenter
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGAspectRatioRectControlPoints.m
 +[IBGUserStep entityName]
 -[IBGUserStep dictionaryRepresentation]
+-[IBGUserStep userStepId]
++[IBGUserStep dictionaryRepresentationFrom:parentScreenIdentifier:view:screenName:timeEpoch:]
+-[IBGUserStep assignUserStepDataFromDict:sessionId:]
 -[IBGUserStep hasScreenshot]
 +[IBGUserStep userStepslogFetchRequestWithID:]
 +[IBGUserStep userStepslogFetchRequestWithReportId:]
@@ -6171,30 +6135,31 @@ ___36+[IBGSnapshotManager sharedInstance]_block_invoke
 ___45-[IBGSnapshotManager initializationOperation]_block_invoke
 -[IBGSnapshotManager init]
 -[IBGSnapshotManager captureDeviceState]
--[IBGSnapshotManager takePreSendingSnapshotWithScreenShot:synchronously:shouldFetchLogs:]
-___89-[IBGSnapshotManager takePreSendingSnapshotWithScreenShot:synchronously:shouldFetchLogs:]_block_invoke
-___copy_helper_block_.735
-___destroy_helper_block_.736
+-[IBGSnapshotManager takePreSendingSnapshotWithScreenShot:synchronously:shouldFetchLogs:shouldFetchVisualUserSteps:]
+___116-[IBGSnapshotManager takePreSendingSnapshotWithScreenShot:synchronously:shouldFetchLogs:shouldFetchVisualUserSteps:]_block_invoke
+___copy_helper_block_.739
+___destroy_helper_block_.740
 -[IBGSnapshotManager takePostSendingSnapshotSynchronously:]
 ___59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke
-___copy_helper_block_.754
-___destroy_helper_block_.755
-___59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.776
-___copy_helper_block_.777
-___destroy_helper_block_.778
-___59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.790
-___copy_helper_block_.791
-___destroy_helper_block_.792
+___copy_helper_block_.756
+___destroy_helper_block_.757
+___59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.777
+___copy_helper_block_.778
+___destroy_helper_block_.779
+___59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.791
+___copy_helper_block_.792
+___destroy_helper_block_.793
 -[IBGSnapshotManager clearConsoleLog]
 -[IBGSnapshotManager getSurveyConditionsWithCompletionHanlder:]
 ___63-[IBGSnapshotManager getSurveyConditionsWithCompletionHanlder:]_block_invoke
-___copy_helper_block_.816
-___destroy_helper_block_.817
+___copy_helper_block_.817
+___destroy_helper_block_.818
 -[IBGSnapshotManager registerUserDataResetObserver:]
 -[IBGSnapshotManager unregisterUserDataResetObserver:]
 -[IBGSnapshotManager logsFetchRequests]
 -[IBGSnapshotManager clearAllLogs]
 -[IBGSnapshotManager resetUserData]
+-[IBGSnapshotManager addExtraDataToSnapShot:]
 -[IBGSnapshotManager setInitializationOperation:]
 -[IBGSnapshotManager sessionLogger]
 -[IBGSnapshotManager setSessionLogger:]
@@ -6230,11 +6195,11 @@ ___destroy_helper_block_.817
 -[IBGSnapshotManager setScreenScale:]
 -[IBGSnapshotManager .cxx_destruct]
 _OBJC_IVAR_$_IBGSnapshotManager._initializationOperation
-___block_descriptor_tmp.738
-___block_descriptor_tmp.757
-___block_descriptor_tmp.779
-___block_descriptor_tmp.793
-___block_descriptor_tmp.818
+___block_descriptor_tmp.742
+___block_descriptor_tmp.758
+___block_descriptor_tmp.780
+___block_descriptor_tmp.794
+___block_descriptor_tmp.819
 _OBJC_IVAR_$_IBGSnapshotManager._sessionLogger
 _OBJC_IVAR_$_IBGSnapshotManager._logLogger
 _OBJC_IVAR_$_IBGSnapshotManager._networkLogger
@@ -6254,10 +6219,10 @@ _OBJC_IVAR_$_IBGSnapshotManager._screenScale
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGSnapshotManager.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGSnapshotManager.h
 __63-[IBGSnapshotManager getSurveyConditionsWithCompletionHanlder:]_block_invoke
-__59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.790
-__59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.776
+__59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.791
+__59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.777
 __59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke
-__89-[IBGSnapshotManager takePreSendingSnapshotWithScreenShot:synchronously:shouldFetchLogs:]_block_invoke
+__116-[IBGSnapshotManager takePreSendingSnapshotWithScreenShot:synchronously:shouldFetchLogs:shouldFetchVisualUserSteps:]_block_invoke
 __45-[IBGSnapshotManager initializationOperation]_block_invoke
 __36+[IBGSnapshotManager sharedInstance]_block_invoke
 -[IBGAnnotationView(Transform) offsetPointToParentCoordinate:]
@@ -6532,8 +6497,8 @@ ___37-[IBGMethodsLogger logLogMethodQueue]_block_invoke
 -[IBGMethodsLogger .cxx_destruct]
 _logLogMethodQueue.sharedQueue
 _logLogMethodQueue.onceToken
-___block_descriptor_tmp.541
-___block_literal_global.542
+___block_descriptor_tmp.543
+___block_literal_global.544
 _OBJC_IVAR_$_IBGMethodsLogger._delegate
 _OBJC_IVAR_$_IBGMethodsLogger._methodsLog
 _OBJC_IVAR_$_IBGMethodsLogger._logMethodsLog
@@ -6592,14 +6557,17 @@ __34-[IBGCountLimitedArray addObject:]_block_invoke
 -[IBGFileLocalAttachment prepareAttachmentPath]
 -[IBGFileLocalAttachment prepareAttachmentMetadata]
 -[IBGFileLocalAttachment prepareAttachmentAndSaveWithCompletion:]
+-[IBGFileLocalAttachment metadata]
 -[IBGFileLocalAttachment dictionaryValue]
 -[IBGFileLocalAttachment initWithDictionary:]
 -[IBGFileLocalAttachment coderNameForSelector:]
 -[IBGFileLocalAttachment fileName]
 -[IBGFileLocalAttachment setFileName:]
+-[IBGFileLocalAttachment setMetadata:]
 -[IBGFileLocalAttachment localFilePath]
 -[IBGFileLocalAttachment setLocalFilePath:]
 -[IBGFileLocalAttachment .cxx_destruct]
+_OBJC_IVAR_$_IBGFileLocalAttachment._metadata
 _OBJC_IVAR_$_IBGFileLocalAttachment.fileName
 _OBJC_IVAR_$_IBGFileLocalAttachment._localFilePath
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGFileLocalAttachment.m
@@ -6684,6 +6652,7 @@ ___22-[IBGCache persistAll]_block_invoke
 -[IBGCache getLastObject]
 -[IBGCache getCache]
 -[IBGCache sendAll]
+-[IBGCache clearAll]
 -[IBGCache cacheDiskPath]
 -[IBGCache writeModels:toPath:]
 -[IBGCache readModelsFromPath:]
@@ -6786,8 +6755,8 @@ ___20-[IBGAnalytics send]_block_invoke
 -[IBGAnalytics .cxx_destruct]
 _OBJC_IVAR_$_IBGAnalytics._methodsLogger
 _OBJC_IVAR_$_IBGAnalytics._eventsLogger
-___block_descriptor_tmp.546
-___block_literal_global.547
+___block_descriptor_tmp.548
+___block_literal_global.549
 l_OBJC_PROTOCOL_$_IBGAnalyticsRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGAnalyticsRequestDelegate
 l_OBJC_PROTOCOL_$_IBGLogDelegate
