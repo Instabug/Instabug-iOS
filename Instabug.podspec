@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
   s.requires_arc = true
+  s.script_phase :name => 'Instabug_dsym_upload', :script => "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstabugCore.framework/Instabug_dsym_upload.sh"
 
   s.subspec 'InstabugCore' do |sc|
     sc.source_files = 'InstabugCore.framework/Headers/*.{h}'
