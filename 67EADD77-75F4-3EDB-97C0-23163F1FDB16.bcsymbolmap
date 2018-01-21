@@ -2,7 +2,7 @@ BCSymbolMap Version: 2.0
 -[IBGCrashCache cacheDiskPath]
 -[IBGCrashCache unpersistAll]
 -[IBGCrashCache sendAll]
-Apple LLVM version 9.0.0 (clang-900.0.38)
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
 /Users/distiller/ios/Instabug/InstabugCrashReporting/Caching/IBGCrashCache.m
 /Users/distiller/ios/Instabug
 +[IBGChatCell reuseIdentifier]
@@ -37,8 +37,6 @@ _OBJC_IVAR_$_IBGChatCell._dateLabel
 _OBJC_IVAR_$_IBGChatCell._unreadMessageButton
 _OBJC_IVAR_$_IBGChatCell._seperatorView
 /Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/IBGChatCell.m
-NSMakeRange
-/Applications/Xcode-9.0.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 -[IBGChatListVC init]
 -[IBGChatListVC viewDidLoad]
 -[IBGChatListVC viewWillAppear:]
@@ -185,7 +183,7 @@ __41-[InstabugChats initializationOperations]_block_invoke_2
 __41-[InstabugChats initializationOperations]_block_invoke
 __31+[InstabugChats sharedInstance]_block_invoke
 _dispatch_once
-/Applications/Xcode-9.0.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/usr/include/dispatch/once.h
+/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/dispatch/once.h
 -[IBGSurveyIntroView init]
 -[IBGSurveyIntroView present]
 ___29-[IBGSurveyIntroView present]_block_invoke
@@ -481,8 +479,8 @@ __31+[IBGCrashFeatures getInstance]_block_invoke
 -[IBGChatInteractor fetchAttachmentForMessageAtIndex:]
 ___54-[IBGChatInteractor fetchAttachmentForMessageAtIndex:]_block_invoke
 ___54-[IBGChatInteractor fetchAttachmentForMessageAtIndex:]_block_invoke_2
-___copy_helper_block_.629
-___destroy_helper_block_.630
+___copy_helper_block_.626
+___destroy_helper_block_.627
 -[IBGChatInteractor isFirstMessageOfDayAtIndex:]
 -[IBGChatInteractor isMessageToday:]
 -[IBGChatInteractor chatCacheDidChange]
@@ -504,7 +502,7 @@ ___destroy_helper_block_.630
 -[IBGChatInteractor messagesExpectedCount]
 -[IBGChatInteractor setMessagesExpectedCount:]
 -[IBGChatInteractor .cxx_destruct]
-___block_descriptor_tmp.632
+___block_descriptor_tmp.629
 _OBJC_IVAR_$_IBGChatInteractor._presenter
 _OBJC_IVAR_$_IBGChatInteractor._observer
 _OBJC_IVAR_$_IBGChatInteractor._chat
@@ -624,6 +622,8 @@ l_OBJC_LABEL_PROTOCOL_$_IBGChatView
 /Users/distiller/ios/Instabug/InstabugChats/View Controllers/IBGChatVC.m
 /Users/distiller/ios/Instabug/InstabugChats/View Controllers/IBGChatVC.h
 __57-[IBGChatVC tableView:willDisplayCell:forRowAtIndexPath:]_block_invoke
+CGRectMake
+/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[IBGBugFlowController startBugReportingFlowWithSnapshot:withFadeAnimation:]
 -[IBGBugFlowController startFeedbackSendingFlowWithSnapshot:withFadeAnimation:]
 -[IBGBugFlowController showBugViewControllerWithScreenshot:reportType:animated:controller:withFadeAnimation:]
@@ -694,6 +694,7 @@ l_OBJC_PROTOCOL_$_UITextViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_UITextViewDelegate
 /Users/distiller/ios/Instabug/InstabugBugReporting/View Controllers/IBGExtraFieldViewController.m
 NSEqualRanges
+/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __49-[IBGExtraFieldViewController textSampleViewCell]_block_invoke
 __51-[IBGExtraFieldViewController submitButtonPressed:]_block_invoke
 -[IBGBugAttachmentRequestCreator logRequestWithId:parameters:delegate:]
@@ -872,27 +873,29 @@ l_OBJC_LABEL_PROTOCOL_$_UITextFieldDelegate
 /Users/distiller/ios/Instabug/InstabugBugReporting/Views/IBGBugInputView.h
 __37-[IBGBugInputView showEmailKeyboard:]_block_invoke
 -[IBGBugStrings init]
+-[IBGBugStrings setValue:forStringWithKey:]
 -[IBGBugStrings setDefaultValues]
 ___33-[IBGBugStrings setDefaultValues]_block_invoke
-___33-[IBGBugStrings setDefaultValues]_block_invoke.27
-___copy_helper_block_.28
-___destroy_helper_block_.29
-___33-[IBGBugStrings setDefaultValues]_block_invoke.31
+___33-[IBGBugStrings setDefaultValues]_block_invoke.38
 ___copy_helper_block_.39
 ___destroy_helper_block_.40
 ___33-[IBGBugStrings setDefaultValues]_block_invoke.42
-___copy_helper_block_.43
-___destroy_helper_block_.44
-___33-[IBGBugStrings setDefaultValues]_block_invoke.46
-___copy_helper_block_.47
-___destroy_helper_block_.48
+___copy_helper_block_.50
+___destroy_helper_block_.51
+___33-[IBGBugStrings setDefaultValues]_block_invoke.53
+___copy_helper_block_.54
+___destroy_helper_block_.55
+___33-[IBGBugStrings setDefaultValues]_block_invoke.57
+___copy_helper_block_.58
+___destroy_helper_block_.59
 -[IBGBugStrings HUDStringWithIntro:]
 -[IBGBugStrings localizedStringForKey:]
 -[IBGBugStrings valueForStringWithKey:]
 -[IBGBugStrings editableValueWithDefaultKey:]
 ___45-[IBGBugStrings editableValueWithDefaultKey:]_block_invoke
-___copy_helper_block_.74
-___destroy_helper_block_.75
+___copy_helper_block_.81
+___destroy_helper_block_.82
+-[IBGBugStrings setLocale:]
 -[IBGBugStrings localizedStrings]
 -[IBGBugStrings setLocalizedStrings:]
 -[IBGBugStrings localizationBundle]
@@ -900,20 +903,20 @@ ___destroy_helper_block_.75
 -[IBGBugStrings localeAlignmentDirection]
 -[IBGBugStrings setLocaleAlignmentDirection:]
 -[IBGBugStrings .cxx_destruct]
-___block_descriptor_tmp.30
 ___block_descriptor_tmp.41
-___block_descriptor_tmp.45
-___block_descriptor_tmp.49
-___block_descriptor_tmp.76
+___block_descriptor_tmp.52
+___block_descriptor_tmp.56
+___block_descriptor_tmp.60
+___block_descriptor_tmp.83
 _OBJC_IVAR_$_IBGBugStrings._localizedStrings
 _OBJC_IVAR_$_IBGBugStrings._localizationBundle
 _OBJC_IVAR_$_IBGBugStrings._localeAlignmentDirection
 /Users/distiller/ios/Instabug/InstabugBugReporting/Defaults/IBGBugStrings.m
 __45-[IBGBugStrings editableValueWithDefaultKey:]_block_invoke
-__33-[IBGBugStrings setDefaultValues]_block_invoke.46
+__33-[IBGBugStrings setDefaultValues]_block_invoke.57
+__33-[IBGBugStrings setDefaultValues]_block_invoke.53
 __33-[IBGBugStrings setDefaultValues]_block_invoke.42
-__33-[IBGBugStrings setDefaultValues]_block_invoke.31
-__33-[IBGBugStrings setDefaultValues]_block_invoke.27
+__33-[IBGBugStrings setDefaultValues]_block_invoke.38
 __33-[IBGBugStrings setDefaultValues]_block_invoke
 -[IBGChat initWithLocalID]
 -[IBGChat initWithID:]
@@ -1092,7 +1095,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGSyncRequestDelegate
 /Users/distiller/ios/Instabug/InstabugChats/Managers/IBGSyncManager.m
 /Users/distiller/ios/Instabug/InstabugChats/Managers/IBGSyncManager.h
 __inline_isnand
-/Applications/Xcode-9.0.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/usr/include/math.h
+/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/math.h
 __43-[IBGSyncManager scheduleSyncAfterSeconds:]_block_invoke
 __41-[IBGSyncManager initializationOperation]_block_invoke
 __29+[IBGSyncManager getInstance]_block_invoke
@@ -1449,8 +1452,6 @@ ___destroy_helper_block_.566
 -[InstabugSurveys updateHasPendingSurveys]
 -[InstabugSurveys pendingSurveyToShowWithCompletionHandler:]
 ___60-[InstabugSurveys pendingSurveyToShowWithCompletionHandler:]_block_invoke
-___copy_helper_block_.626
-___destroy_helper_block_.627
 -[InstabugSurveys loadSurveys]
 -[InstabugSurveys surveysFeatureEnabled]
 -[InstabugSurveys showPendingSurveys]
@@ -1515,7 +1516,6 @@ ___destroy_helper_block_.726
 _InstabugSurveysInstance
 _OBJC_IVAR_$_InstabugSurveys._initializationOperation
 ___block_descriptor_tmp.559
-___block_descriptor_tmp.629
 ___block_descriptor_tmp.663
 ___block_descriptor_tmp.690
 ___block_descriptor_tmp.693
@@ -1659,6 +1659,7 @@ ___22-[IBGBugDefaults init]_block_invoke
 -[IBGBugDefaults .cxx_destruct]
 _OBJC_IVAR_$_IBGBugDefaults._showStartAlert
 _OBJC_IVAR_$_IBGBugDefaults._startAlertShown
+___block_descriptor_tmp.45
 _OBJC_IVAR_$_IBGBugDefaults._showEmail
 _OBJC_IVAR_$_IBGBugDefaults._enableAttachmentGalleryImage
 _OBJC_IVAR_$_IBGBugDefaults._resources
@@ -1806,7 +1807,6 @@ ___destroy_helper_block_.58
 -[IBGInvocationShake setApplicationMotionEnded:]
 -[IBGInvocationShake .cxx_destruct]
 _OBJC_IVAR_$_IBGInvocationShake.isInstalled
-___block_descriptor_tmp.60
 _OBJC_IVAR_$_IBGInvocationShake._delegate
 _OBJC_IVAR_$_IBGInvocationShake._motionManager
 _OBJC_IVAR_$_IBGInvocationShake._lastAcceleration
@@ -2140,7 +2140,7 @@ _OBJC_IVAR_$_IBGTextViewSurvey._textView
 _OBJC_IVAR_$_IBGTextViewSurvey._containerBottomConstraint
 /Users/distiller/ios/Instabug/InstabugSurveys/Views/Table View Cells/IBGTextViewSurvey.m
 UI_USER_INTERFACE_IDIOM
-/Applications/Xcode-9.0.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
 /Users/distiller/ios/Instabug/InstabugBugReporting/Defaults/IBGReportingAccessibilityIdentifiers.m
 -[IBGTextMessageView initWithFrame:]
 -[IBGTextMessageView configureTextView:]
@@ -2227,22 +2227,22 @@ ___destroy_helper_block_.855
 -[IBGBugVC attachmentsToolbarItems]
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
-___copy_helper_block_.909
-___destroy_helper_block_.910
-___copy_helper_block_.914
-___destroy_helper_block_.915
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.923
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.924
+___copy_helper_block_.906
+___destroy_helper_block_.907
+___copy_helper_block_.911
+___destroy_helper_block_.912
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.920
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.921
+___copy_helper_block_.924
+___destroy_helper_block_.925
 ___copy_helper_block_.927
 ___destroy_helper_block_.928
-___copy_helper_block_.930
-___destroy_helper_block_.931
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.935
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.936
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.932
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.933
+___copy_helper_block_.936
+___destroy_helper_block_.937
 ___copy_helper_block_.939
 ___destroy_helper_block_.940
-___copy_helper_block_.942
-___destroy_helper_block_.943
 -[IBGBugVC maximumNumberOfAttachmentsAllowed]
 -[IBGBugVC performActionOrShowMaximumNumberOfAttachmentsAlert:]
 -[IBGBugVC dealloc]
@@ -2311,12 +2311,12 @@ ___block_descriptor_tmp.756
 ___block_descriptor_tmp.791
 _OBJC_IVAR_$_IBGBugVC._bugRequestCreator
 ___block_descriptor_tmp.856
-___block_descriptor_tmp.911
-___block_descriptor_tmp.916
+___block_descriptor_tmp.908
+___block_descriptor_tmp.913
+___block_descriptor_tmp.926
 ___block_descriptor_tmp.929
-___block_descriptor_tmp.932
+___block_descriptor_tmp.938
 ___block_descriptor_tmp.941
-___block_descriptor_tmp.944
 _OBJC_IVAR_$_IBGBugVC._attachmentController
 _OBJC_IVAR_$_IBGBugVC._videoPlayer
 _OBJC_IVAR_$_IBGBugVC._voicePlayer
@@ -2352,12 +2352,14 @@ l_OBJC_PROTOCOL_$_IBGBugControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGBugControllerDelegate
 /Users/distiller/ios/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.m
 /Users/distiller/ios/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.h
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.936
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.935
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.924
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.923
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.933
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.932
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.921
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.920
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke
+UIEdgeInsetsMake
+/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGeometry.h
 __30-[IBGBugVC orientationChanged]_block_invoke
 __52-[IBGBugVC didSelectAudioAttachment:startedPlaying:]_block_invoke
 __44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.751
@@ -2657,7 +2659,7 @@ _OBJC_IVAR_$_IBGPushNotificationsManager._enabled
 /Users/distiller/ios/Instabug/InstabugReporting/Managers/IBGPushNotificationsManager.m
 /Users/distiller/ios/Instabug/InstabugReporting/Managers/IBGPushNotificationsManager.h
 _OSSwapInt32
-/Applications/Xcode-9.0.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/usr/include/libkern/arm/OSByteOrder.h
+/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/libkern/arm/OSByteOrder.h
 __54-[IBGPushNotificationsManager initializationOperation]_block_invoke
 __42+[IBGPushNotificationsManager getInstance]_block_invoke
 -[IBGCrashAttachmentRequest initWithParameters:attachmentPath:reportID:delegate:]
@@ -2786,8 +2788,8 @@ ___block_descriptor_tmp.562
 _OBJC_IVAR_$_IBGCrashManager._isTrackingCrashes
 ___block_descriptor_tmp.650
 ___block_descriptor_tmp.697
-___block_descriptor_tmp.790
-___block_literal_global.791
+___block_descriptor_tmp.781
+___block_literal_global.782
 _OBJC_IVAR_$_IBGCrashManager._crashReporter
 _OBJC_IVAR_$_IBGCrashManager._crashManagerQueue
 /Users/distiller/ios/Instabug/InstabugCrashReporting/Managers/IBGCrashManager.m
@@ -2972,6 +2974,7 @@ __22-[IBGPromptVC dismiss]_block_invoke
 __19-[IBGPromptVC show]_block_invoke.707
 __19-[IBGPromptVC show]_block_invoke
 __25-[IBGPromptVC handlePan:]_block_invoke
+CGPointMake
 -[IBGStarRatingSurveyView initWithDelegate:]
 -[IBGStarRatingSurveyView updateConstraints]
 -[IBGStarRatingSurveyView setRating:]
@@ -3679,6 +3682,7 @@ l_OBJC_LABEL_PROTOCOL_$_UICollectionViewDelegate
 l_OBJC_PROTOCOL_$_UICollectionViewDataSource
 l_OBJC_LABEL_PROTOCOL_$_UICollectionViewDataSource
 /Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyMCQViewController.m
+CGSizeMake
 __50-[IBGSurveyMCQViewController didChangeOrientation]_block_invoke
 __40-[IBGSurveyMCQViewController reloadView]_block_invoke
 __45-[IBGSurveyMCQViewController viewWillAppear:]_block_invoke
@@ -3753,8 +3757,8 @@ ___36+[Instabug afterInitializationQueue]_block_invoke
 +[Instabug intializeSDKStack]
 ___29+[Instabug intializeSDKStack]_block_invoke
 ___29+[Instabug intializeSDKStack]_block_invoke_2
-___copy_helper_block_.631
-___destroy_helper_block_.632
+___copy_helper_block_.640
+___destroy_helper_block_.641
 +[Instabug prepareDependencies]
 +[Instabug setFileAttachment:]
 +[Instabug setFileAttachmentWithURL:]
@@ -3763,8 +3767,8 @@ ___destroy_helper_block_.632
 +[Instabug clearFileAttachments]
 +[Instabug setUserData:]
 ___24+[Instabug setUserData:]_block_invoke
-___copy_helper_block_.665
-___destroy_helper_block_.666
+___copy_helper_block_.669
+___destroy_helper_block_.670
 +[Instabug setUserStepsEnabled:]
 +[Instabug setReproStepsMode:]
 +[Instabug setNetworkLoggingEnabled:]
@@ -3780,12 +3784,12 @@ ___destroy_helper_block_.666
 +[Instabug setDidReceiveAuthenticationChallengeHandler:]
 +[Instabug logUserEventWithName:params:]
 ___40+[Instabug logUserEventWithName:params:]_block_invoke
-___copy_helper_block_.717
-___destroy_helper_block_.718
+___copy_helper_block_.721
+___destroy_helper_block_.722
 +[Instabug logUserEventWithName:]
 ___33+[Instabug logUserEventWithName:]_block_invoke
-___copy_helper_block_.720
-___destroy_helper_block_.721
+___copy_helper_block_.724
+___destroy_helper_block_.725
 +[Instabug setAutoScreenRecordingEnabled:]
 +[Instabug setAutoScreenRecordingDuration:]
 +[Instabug setCrashReportingEnabled:]
@@ -3797,16 +3801,16 @@ ___destroy_helper_block_.721
 +[Instabug setPreInvocationHandler:]
 +[Instabug setPostInvocationBlock:]
 ___35+[Instabug setPostInvocationBlock:]_block_invoke
-___copy_helper_block_.745
-___destroy_helper_block_.746
+___copy_helper_block_.749
+___destroy_helper_block_.750
 +[Instabug setPostInvocationHandler:]
 +[Instabug setDidSelectPromptOptionHandler:]
 +[Instabug showIntroMessage]
 +[Instabug setWillTakeScreenshot:]
 +[Instabug identifyUserWithEmail:name:]
 ___39+[Instabug identifyUserWithEmail:name:]_block_invoke
-___copy_helper_block_.763
-___destroy_helper_block_.764
+___copy_helper_block_.767
+___destroy_helper_block_.768
 +[Instabug logOut]
 ___18+[Instabug logOut]_block_invoke
 +[Instabug setUserEmail:]
@@ -3845,13 +3849,13 @@ ___18+[Instabug logOut]_block_invoke
 +[Instabug removeExtraReportFields]
 +[Instabug setUserAttribute:withKey:]
 ___37+[Instabug setUserAttribute:withKey:]_block_invoke
-___copy_helper_block_.952
-___destroy_helper_block_.953
+___copy_helper_block_.956
+___destroy_helper_block_.957
 +[Instabug userAttributeForKey:]
 +[Instabug removeUserAttributeForKey:]
 ___38+[Instabug removeUserAttributeForKey:]_block_invoke
-___copy_helper_block_.959
-___destroy_helper_block_.960
+___copy_helper_block_.963
+___destroy_helper_block_.964
 +[Instabug userAttributes]
 +[Instabug setViewHierarchyEnabled:]
 +[Instabug setAutoShowingSurveysEnabled:]
@@ -3860,8 +3864,8 @@ ___destroy_helper_block_.960
 ___33+[Instabug showSurveyIfAvailable]_block_invoke
 +[Instabug showSurveyWithToken:]
 ___32+[Instabug showSurveyWithToken:]_block_invoke
-___copy_helper_block_.983
-___destroy_helper_block_.984
+___copy_helper_block_.987
+___destroy_helper_block_.988
 +[Instabug hasRespondedToSurveyWithToken:]
 +[Instabug hasAvailableSurveys]
 +[Instabug resetTags]
@@ -3873,25 +3877,25 @@ ___destroy_helper_block_.984
 +[Instabug reportBugWithEmail:comment:screenshot:]
 ___50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke
 ___50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke_2
-___copy_helper_block_.1011
-___destroy_helper_block_.1012
-___copy_helper_block_.1014
-___destroy_helper_block_.1015
+___copy_helper_block_.1015
+___destroy_helper_block_.1016
+___copy_helper_block_.1018
+___destroy_helper_block_.1019
 +[Instabug reportFeedBackWithEmail:comment:screenshot:]
 ___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke
 ___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke_2
-___copy_helper_block_.1017
-___destroy_helper_block_.1018
-___copy_helper_block_.1020
-___destroy_helper_block_.1021
+___copy_helper_block_.1021
+___destroy_helper_block_.1022
+___copy_helper_block_.1024
+___destroy_helper_block_.1025
 +[Instabug reportException:]
 ___28+[Instabug reportException:]_block_invoke
-___copy_helper_block_.1025
-___destroy_helper_block_.1026
+___copy_helper_block_.1029
+___destroy_helper_block_.1030
 +[Instabug reportError:]
 ___24+[Instabug reportError:]_block_invoke
-___copy_helper_block_.1030
-___destroy_helper_block_.1031
+___copy_helper_block_.1034
+___destroy_helper_block_.1035
 +[Instabug invokeConversations]
 +[Instabug isInstabugNotification:]
 +[Instabug didRegisterForRemoteNotificationsWithDeviceToken:]
@@ -3910,23 +3914,24 @@ ___destroy_helper_block_.1031
 +[Instabug forceDisableInAppMessaging]
 _afterInitializationQueue._queue
 _afterInitializationQueue.onceToken
-___block_descriptor_tmp.630
-___block_descriptor_tmp.634
-___block_descriptor_tmp.667
-___block_descriptor_tmp.719
-___block_descriptor_tmp.722
-___block_descriptor_tmp.748
+___block_descriptor_tmp.639
+___block_descriptor_tmp.643
+___block_descriptor_tmp.671
+___block_descriptor_tmp.723
+___block_descriptor_tmp.726
+___block_descriptor_tmp.752
 ___block_descriptor_tmp.769
-___block_descriptor_tmp.954
-___block_descriptor_tmp.961
-___block_descriptor_tmp.980
-___block_descriptor_tmp.985
-___block_descriptor_tmp.1013
-___block_descriptor_tmp.1016
-___block_descriptor_tmp.1019
-___block_descriptor_tmp.1022
-___block_descriptor_tmp.1027
-___block_descriptor_tmp.1032
+___block_descriptor_tmp.773
+___block_descriptor_tmp.958
+___block_descriptor_tmp.965
+___block_descriptor_tmp.984
+___block_descriptor_tmp.989
+___block_descriptor_tmp.1017
+___block_descriptor_tmp.1020
+___block_descriptor_tmp.1023
+___block_descriptor_tmp.1026
+___block_descriptor_tmp.1031
+___block_descriptor_tmp.1036
 /Users/distiller/ios/Instabug/InstabugI/Instabug.m
 IBGNSLogWithLevel
 IBGNSLog
@@ -4433,17 +4438,17 @@ _OBJC_IVAR_$_IBGPLCrashReportMachineInfo._processorCount
 _OBJC_IVAR_$_IBGPLCrashReportMachineInfo._logicalProcessorCount
 _plcrash_async_macho_find_best_symbol
 __ZL20free_mapped_sectionsP24plcrash_async_objc_cache
-__ZL24plcrash_async_objc_parseP19plcrash_async_machoP24plcrash_async_objc_cachePFvbP26plcrash_async_macho_stringS4_mPvES5_
-__ZL41pl_async_objc_find_method_search_callbackbP26plcrash_async_macho_stringS0_mPv
-__ZL39pl_async_objc_find_method_call_callbackbP26plcrash_async_macho_stringS0_mPv
+__ZL24plcrash_async_objc_parseP19plcrash_async_machoP24plcrash_async_objc_cachePFvbP26plcrash_async_macho_stringS4_jPvES5_
+__ZL41pl_async_objc_find_method_search_callbackbP26plcrash_async_macho_stringS0_jPv
+__ZL39pl_async_objc_find_method_call_callbackbP26plcrash_async_macho_stringS0_jPv
 ____ZL37plcrash_async_image_objc_has_ios9_abiv_block_invoke
-__ZL25pl_async_parse_obj1_classP19plcrash_async_machoP14pl_objc1_classbPFvbP26plcrash_async_macho_stringS4_mPvES5_
+__ZL25pl_async_parse_obj1_classP19plcrash_async_machoP14pl_objc1_classbPFvbP26plcrash_async_macho_stringS4_jPvES5_
 __ZL12map_sectionsP19plcrash_async_machoP24plcrash_async_objc_cache
-__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_mPvESC_
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_jPvESC_
 __ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
-__ZL37pl_async_objc_parse_objc2_method_listP19plcrash_async_machoP24plcrash_async_objc_cacheP26plcrash_async_macho_stringbmPFvbS4_S4_mPvES5_
-__ZL9cache_setP24plcrash_async_objc_cachemm
-__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_mPvESC_
+__ZL37pl_async_objc_parse_objc2_method_listP19plcrash_async_machoP24plcrash_async_objc_cacheP26plcrash_async_macho_stringbjPFvbS4_S4_jPvES5_
+__ZL9cache_setP24plcrash_async_objc_cachejj
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_jPvESC_
 __ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
 __GLOBAL__sub_I_PLCrashAsyncObjCSection.mm
 __ZZL37plcrash_async_image_objc_has_ios9_abivE9onceToken
@@ -4483,7 +4488,6 @@ _arm_nonvolatile_registers
 _arm64_nonvolatile_registers
 _arm_dwarf_table
 _arm64_dwarf_table
-_plcrash_async_map_register_name
 +[IBGPLCrashProcessInfo currentProcessInfo]
 -[IBGPLCrashProcessInfo initWithProcessID:]
 -[IBGPLCrashProcessInfo dealloc]
@@ -4538,147 +4542,3 @@ _OBJC_IVAR_$_IBGPLCrashReporterConfig._symbolicationStrategy
 -[IBGPLCrashReportMachExceptionInfo codes]
 _OBJC_IVAR_$_IBGPLCrashReportMachExceptionInfo._type
 _OBJC_IVAR_$_IBGPLCrashReportMachExceptionInfo._codes
-__ZL15__ARCLite__loadv
-__ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
-__ZL22add_image_hook_swiftV1PK11mach_headerl
-__ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
-__ZL13replaceMethodP10objc_classP13objc_selectorPFP11objc_objectS4_S2_zEPS6_
-__ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
-__ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
-__ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
-__ZL37__arclite_NSKKMS_fastIndexForKnownKeyP11objc_objectP13objc_selectorS0_
-__ZL28__arclite_NSKKMS_indexForKeyP11objc_objectP13objc_selectorS0_
-__ZL29__arclite_NSKKsD_objectForKeyP11objc_objectP13objc_selectorS0_
-__ZL35__arclite_NSKKsD_removeObjectForKeyP11objc_objectP13objc_selectorS0_
-__ZL33__arclite_NSKKsD_setObject_forKeyP11objc_objectP13objc_selectorS0_S0_
-__ZL41__arclite_NSKKsD_addEntriesFromDictionaryP11objc_objectP13objc_selectorP12NSDictionary
-__ZL28__arclite_objc_readClassPairP10objc_classPK15objc_image_info
-__ZL32__arclite_objc_allocateClassPairP10objc_classPKcm
-__ZL32__arclite_object_getIndexedIvarsP11objc_object
-__ZL23__arclite_objc_getClassPKc
-__ZL27__arclite_objc_getMetaClassPKc
-__ZL31__arclite_objc_getRequiredClassPKc
-__ZL26__arclite_objc_lookUpClassPKc
-__ZL26__arclite_objc_getProtocolPKc
-__ZL23__arclite_class_getNameP10objc_class
-__ZL26__arclite_protocol_getNameP8Protocol
-__ZL37__arclite_objc_copyClassNamesForImagePKcPj
-__ZL17transcribeMethodsP10objc_classP15glue_class_ro_t
-__ZL19transcribeProtocolsP10objc_classP15glue_class_ro_t
-__ZL20transcribePropertiesP10objc_classP15glue_class_ro_t
-__ZL14initialize_impP11objc_objectP13objc_selector
-__ZL18allocateMaybeSwiftP18glue_swift_class_tm
-__ZL22copySwiftV1MangledNamePKcb
-__ZL13demangledNamePKcb
-__ZL16scanMangledFieldRPKcS0_S1_Ri
-__ZL30arclite_uninitialized_functionv
-__ZL12cxxConstructP11objc_object
-__ZL20fixStringForCoreDataP11objc_object
-_OBJC_METACLASS_$___ARCLite__
-__ZL24OBJC_CLASS_$___ARCLite__
-__ZL31OBJC_METACLASS_RO_$___ARCLite__
-__non_lazy_classes
-__ZL27OBJC_CLASS_RO_$___ARCLite__
-__ZL11_class_name
-__ZL32OBJC_$_CLASS_METHODS___ARCLite__
-__ZL17_load_method_name
-__ZL17_load_method_type
-l_OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
-l_OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
-l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
-__ZL30NSUndoManagerProxy_targetClass
-__ZL29original_NSManagedObject_init
-__ZL40original_NSManagedObject_allocWithEntity
-__ZL35original_NSManagedObject_allocBatch
-__ZL25NSMutableDictionary_class
-__ZL22NSConstantString_class
-__ZL14NSString_class
-__ZL36original_NSKKMS_fastIndexForKnownKey
-__ZL27original_NSKKMS_indexForKey
-__ZL28original_NSKKsD_objectForKey
-__ZL34original_NSKKsD_removeObjectForKey
-__ZL32original_NSKKsD_setObject_forKey
-__ZL40original_NSKKsD_addEntriesFromDictionary
-__ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
-__ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
-__ZL31original_objc_allocateClassPair
-__ZL31original_object_getIndexedIvars
-__ZL22original_objc_getClass
-__ZL26original_objc_getMetaClass
-__ZL30original_objc_getRequiredClass
-__ZL25original_objc_lookUpClass
-__ZL25original_objc_getProtocol
-__ZL22original_class_getName
-__ZL25original_protocol_getName
-__ZL36original_objc_copyClassNamesForImage
-__ZL12demangleLock
-__ZL9Demangled
-Apple LLVM version 9.0.0 (clang-900.0.35)
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch arm64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -miphoneos-version-min=4.3 -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=incomplete-umbrella -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-66/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.o -mlinker-version=302.3
-/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-66/source/arclite.mm
-/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-66
-fixStringForCoreData
-cxxConstruct
-arclite_uninitialized_function
-scanMangledField
-isdigit
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.Internal.sdk/usr/include/ctype.h
-__isctype
-demangledName
-copySwiftV1DemangledName
-copySwiftV1MangledName
-allocateMaybeSwift
-word_align
-isSwift
-initialize_imp
-transcribeProperties
-property_list_nth
-transcribeProtocols
-transcribeMethods
-data
-method_list_nth
-__arclite_objc_copyClassNamesForImage
-__arclite_protocol_getName
-__arclite_class_getName
-__arclite_objc_getProtocol
-__arclite_objc_lookUpClass
-__arclite_objc_getRequiredClass
-__arclite_objc_getMetaClass
-__arclite_objc_getClass
-__arclite_object_getIndexedIvars
-__arclite_objc_allocateClassPair
-metaclass
-__arclite_objc_readClassPair
-transcribeIvars
-ivar_list_nth
-max
-alignment
-ro
-fastFlags
-__arclite_NSKKsD_addEntriesFromDictionary
-__arclite_NSKKsD_setObject_forKey
-__arclite_NSKKsD_removeObjectForKey
-__arclite_NSKKsD_objectForKey
-__arclite_NSKKMS_indexForKey
-__arclite_NSKKMS_fastIndexForKnownKey
-__arclite_NSManagedObject_allocBatch
-__arclite_NSManagedObject_allocWithEntity
-__arclite_NSManagedObject_init
-replaceMethod
-__arclite_NSUndoManagerProxy_isKindOfClass
-add_image_hook_swiftV1
-patch_lazy_pointers
-patch_t<const char **(const char *, unsigned int *)>
-patch_t<const char *(Protocol *)>
-patch_t<const char *(Class)>
-patch_t<Protocol *(const char *)>
-patch_t<Class (const char *)>
-patch_t<void *(id)>
-patch_t<Class (Class, const char *, unsigned long)>
-patch_t<Class (Class, const objc_image_info *)>
-__arclite_NSMutableDictionary__setObject_forKeyedSubscript
-__ARCLite__load
-install_swiftV1
-install_dict_nil_value
-addOrReplaceMethod
-keyedGetter
