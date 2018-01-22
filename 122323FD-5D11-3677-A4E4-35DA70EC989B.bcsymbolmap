@@ -6457,7 +6457,7 @@ _OBJC_IVAR_$_IBGButtonContainer._buttonFrame
 -[IBGMainWindow pushViewController:animated:withFadeAnimation:]
 -[IBGMainWindow showViewControllerWithFadeAnimation:]
 ___53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke
-___53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke.106
+___53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke.108
 -[IBGMainWindow presentViewController:withcompletion:]
 -[IBGMainWindow clearRootViewController]
 -[IBGMainWindow popViewControllerWithAnimation:completion:]
@@ -6478,12 +6478,12 @@ ___53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke.106
 -[IBGMainWindow setPreviousKeyWindow:]
 -[IBGMainWindow .cxx_destruct]
 _OBJC_IVAR_$_IBGMainWindow._navigationController
-___block_descriptor_tmp.108
+___block_descriptor_tmp.110
 _OBJC_IVAR_$_IBGMainWindow._parentViewController
 _OBJC_IVAR_$_IBGMainWindow._style
 _OBJC_IVAR_$_IBGMainWindow._previousKeyWindow
 /Users/distiller/ios/InstabugCore/InstabugCore/Windows/IBGMainWindow.m
-__53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke.106
+__53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke.108
 __53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke
 +[IBGMethodsLogger sharedInstance]
 ___34+[IBGMethodsLogger sharedInstance]_block_invoke
