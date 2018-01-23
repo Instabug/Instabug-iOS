@@ -2338,8 +2338,8 @@ ___destroy_helper_block_.517
 -[IBGUserStepsLogger isInsideInstabugWindow]
 -[IBGUserStepsLogger addStepWithEventType:parentScreenIdentifier:screenshotIdentifeir:screenIdentifier:view:screenshotData:date:oreintation:topViewName:isParent:]
 ___162-[IBGUserStepsLogger addStepWithEventType:parentScreenIdentifier:screenshotIdentifeir:screenIdentifier:view:screenshotData:date:oreintation:topViewName:isParent:]_block_invoke
-___copy_helper_block_.583
-___destroy_helper_block_.584
+___copy_helper_block_.585
+___destroy_helper_block_.586
 -[IBGUserStepsLogger updateTopViewWithForced:eventName:parentWindow:]
 -[IBGUserStepsLogger shouldTakeFirstScreenShot]
 -[IBGUserStepsLogger updateVisualUserStepsTopViewWithForced:eventName:date:]
@@ -2349,8 +2349,8 @@ ___destroy_helper_block_.584
 +[IBGUserStepsLogger fetchRequest]
 -[IBGUserStepsLogger dataLayerService]
 ___38-[IBGUserStepsLogger dataLayerService]_block_invoke
-___copy_helper_block_.654
-___destroy_helper_block_.655
+___copy_helper_block_.656
+___destroy_helper_block_.657
 -[IBGUserStepsLogger clearUnAttachedUserSteps]
 -[IBGUserStepsLogger userSteps]
 -[IBGUserStepsLogger enabled]
@@ -2387,10 +2387,10 @@ ___block_descriptor_tmp.487
 ___block_descriptor_tmp.490
 ___block_descriptor_tmp.511
 ___block_descriptor_tmp.518
-___block_descriptor_tmp.585
+___block_descriptor_tmp.587
 _dataLayerService.once
 _OBJC_IVAR_$_IBGUserStepsLogger._dataLayerService
-___block_descriptor_tmp.656
+___block_descriptor_tmp.658
 _OBJC_IVAR_$_IBGUserStepsLogger._currentParentIdentifier
 _OBJC_IVAR_$_IBGUserStepsLogger._userStepsCount
 _OBJC_IVAR_$_IBGUserStepsLogger._listner
@@ -4029,6 +4029,15 @@ zipGoToFirstDisk
 zip64local_SearchCentralDir64
 zip64local_SearchCentralDir
 init_linkedlist
++[IBGUserStep entityName]
+-[IBGUserStep dictionaryRepresentation]
+-[IBGUserStep userStepId]
++[IBGUserStep dictionaryRepresentationFrom:parentScreenIdentifier:view:screenName:timeEpoch:]
+-[IBGUserStep assignUserStepDataFromDict:sessionId:]
+-[IBGUserStep hasScreenshot]
++[IBGUserStep userStepslogFetchRequestWithID:]
++[IBGUserStep userStepslogFetchRequestWithReportId:]
+/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGUserStep+CoreDataClass.m
 +[IBGCoreDataPersistenceManager sharedManager]
 ___46+[IBGCoreDataPersistenceManager sharedManager]_block_invoke
 -[IBGCoreDataPersistenceManager init]
@@ -4107,8 +4116,8 @@ ___destroy_helper_block_.233
 -[IBGCoreDataPersistenceManager endBackgroundTask]
 -[IBGCoreDataPersistenceManager copyObject:toContext:]
 ___54-[IBGCoreDataPersistenceManager copyObject:toContext:]_block_invoke
-___copy_helper_block_.258
-___destroy_helper_block_.259
+___copy_helper_block_.262
+___destroy_helper_block_.263
 +[IBGCoreDataPersistenceManager coordinator]
 +[IBGCoreDataPersistenceManager destroy]
 -[IBGCoreDataPersistenceManager managedObjectContext]
@@ -4154,7 +4163,7 @@ ___block_descriptor_tmp.213
 ___block_descriptor_tmp.216
 ___block_descriptor_tmp.226
 ___block_descriptor_tmp.234
-___block_descriptor_tmp.260
+___block_descriptor_tmp.264
 _OBJC_IVAR_$_IBGCoreDataPersistenceManager._privateContext
 _OBJC_IVAR_$_IBGCoreDataPersistenceManager._isInMemeoryObjectMigrated
 _OBJC_IVAR_$_IBGCoreDataPersistenceManager._addedPersistentStore
@@ -4571,8 +4580,6 @@ _OBJC_IVAR_$_IBGLineLimitedString._lines
 _OBJC_IVAR_$_IBGLineLimitedString._linesLimit
 _OBJC_IVAR_$_IBGLineLimitedString._syncLock
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGLineLimitedString.m
-+[IBGUserStep(CoreDataProperties) fetchRequest]
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGUserStep+CoreDataProperties.m
 -[IBGAttachment coderNameForSelector:]
 -[IBGAttachment fetchAttachmentsWithCompletionHandler:]
 -[IBGAttachment dictionaryValue]
@@ -6123,15 +6130,6 @@ _OBJC_IVAR_$_IBGAspectRatioRectControlPoints._initialFrame
 _OBJC_IVAR_$_IBGAspectRatioRectControlPoints._initialDistance
 _OBJC_IVAR_$_IBGAspectRatioRectControlPoints._initialCenter
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGAspectRatioRectControlPoints.m
-+[IBGUserStep entityName]
--[IBGUserStep dictionaryRepresentation]
--[IBGUserStep userStepId]
-+[IBGUserStep dictionaryRepresentationFrom:parentScreenIdentifier:view:screenName:timeEpoch:]
--[IBGUserStep assignUserStepDataFromDict:sessionId:]
--[IBGUserStep hasScreenshot]
-+[IBGUserStep userStepslogFetchRequestWithID:]
-+[IBGUserStep userStepslogFetchRequestWithReportId:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGUserStep+CoreDataClass.m
 +[IBGSnapshotManager sharedInstance]
 ___36+[IBGSnapshotManager sharedInstance]_block_invoke
 +[IBGSnapshotManager startLoggers]
@@ -6394,6 +6392,8 @@ ___19-[IBGDefaults init]_block_invoke
 -[IBGDefaults setWillSkipScreenShot:]
 -[IBGDefaults startAlertTextIsSet]
 -[IBGDefaults setStartAlertTextIsSet:]
+-[IBGDefaults UUID]
+-[IBGDefaults setUUID:]
 -[IBGDefaults .cxx_destruct]
 _OBJC_IVAR_$_IBGDefaults._name
 _OBJC_IVAR_$_IBGDefaults._issueTags
@@ -6431,6 +6431,7 @@ _OBJC_IVAR_$_IBGDefaults._captureButtonDefaultPostion
 _OBJC_IVAR_$_IBGDefaults._videoRecordingCaptureButtonDefaultPostion
 _OBJC_IVAR_$_IBGDefaults._willSkipScreenShot
 _OBJC_IVAR_$_IBGDefaults._startAlertTextIsSet
+_OBJC_IVAR_$_IBGDefaults._UUID
 /Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGDefaults.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGDefaults.h
 __19-[IBGDefaults init]_block_invoke
@@ -6829,6 +6830,8 @@ _OBJC_IVAR_$_IBGFullScreenImageViewController._scrollView
 _OBJC_IVAR_$_IBGFullScreenImageViewController._imageView
 _OBJC_IVAR_$_IBGFullScreenImageViewController._image
 /Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGFullScreenImageViewController.m
++[IBGUserStep(CoreDataProperties) fetchRequest]
+/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGUserStep+CoreDataProperties.m
 -[IBGArrowControlPoints initWithAnnotationView:]
 -[IBGArrowControlPoints updateControlPoints]
 -[IBGArrowControlPoints showControlPoints]
