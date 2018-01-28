@@ -3762,8 +3762,8 @@ ___destroy_helper_block_.641
 +[Instabug clearFileAttachments]
 +[Instabug setUserData:]
 ___24+[Instabug setUserData:]_block_invoke
-___copy_helper_block_.669
-___destroy_helper_block_.670
+___copy_helper_block_.671
+___destroy_helper_block_.672
 +[Instabug setUserStepsEnabled:]
 +[Instabug setReproStepsMode:]
 +[Instabug setNetworkLoggingEnabled:]
@@ -3779,12 +3779,12 @@ ___destroy_helper_block_.670
 +[Instabug setDidReceiveAuthenticationChallengeHandler:]
 +[Instabug logUserEventWithName:params:]
 ___40+[Instabug logUserEventWithName:params:]_block_invoke
-___copy_helper_block_.721
-___destroy_helper_block_.722
+___copy_helper_block_.723
+___destroy_helper_block_.724
 +[Instabug logUserEventWithName:]
 ___33+[Instabug logUserEventWithName:]_block_invoke
-___copy_helper_block_.724
-___destroy_helper_block_.725
+___copy_helper_block_.726
+___destroy_helper_block_.727
 +[Instabug setAutoScreenRecordingEnabled:]
 +[Instabug setAutoScreenRecordingDuration:]
 +[Instabug setCrashReportingEnabled:]
@@ -3796,16 +3796,14 @@ ___destroy_helper_block_.725
 +[Instabug setPreInvocationHandler:]
 +[Instabug setPostInvocationBlock:]
 ___35+[Instabug setPostInvocationBlock:]_block_invoke
-___copy_helper_block_.749
-___destroy_helper_block_.750
 +[Instabug setPostInvocationHandler:]
 +[Instabug setDidSelectPromptOptionHandler:]
 +[Instabug showIntroMessage]
 +[Instabug setWillTakeScreenshot:]
 +[Instabug identifyUserWithEmail:name:]
 ___39+[Instabug identifyUserWithEmail:name:]_block_invoke
-___copy_helper_block_.767
-___destroy_helper_block_.768
+___copy_helper_block_.769
+___destroy_helper_block_.770
 +[Instabug logOut]
 ___18+[Instabug logOut]_block_invoke
 +[Instabug setUserEmail:]
@@ -3844,13 +3842,13 @@ ___18+[Instabug logOut]_block_invoke
 +[Instabug removeExtraReportFields]
 +[Instabug setUserAttribute:withKey:]
 ___37+[Instabug setUserAttribute:withKey:]_block_invoke
-___copy_helper_block_.956
-___destroy_helper_block_.957
+___copy_helper_block_.958
+___destroy_helper_block_.959
 +[Instabug userAttributeForKey:]
 +[Instabug removeUserAttributeForKey:]
 ___38+[Instabug removeUserAttributeForKey:]_block_invoke
-___copy_helper_block_.963
-___destroy_helper_block_.964
+___copy_helper_block_.965
+___destroy_helper_block_.966
 +[Instabug userAttributes]
 +[Instabug setViewHierarchyEnabled:]
 +[Instabug setAutoShowingSurveysEnabled:]
@@ -3859,8 +3857,8 @@ ___destroy_helper_block_.964
 ___33+[Instabug showSurveyIfAvailable]_block_invoke
 +[Instabug showSurveyWithToken:]
 ___32+[Instabug showSurveyWithToken:]_block_invoke
-___copy_helper_block_.987
-___destroy_helper_block_.988
+___copy_helper_block_.989
+___destroy_helper_block_.990
 +[Instabug hasRespondedToSurveyWithToken:]
 +[Instabug hasAvailableSurveys]
 +[Instabug resetTags]
@@ -3872,25 +3870,25 @@ ___destroy_helper_block_.988
 +[Instabug reportBugWithEmail:comment:screenshot:]
 ___50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke
 ___50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke_2
-___copy_helper_block_.1015
-___destroy_helper_block_.1016
-___copy_helper_block_.1018
-___destroy_helper_block_.1019
+___copy_helper_block_.1017
+___destroy_helper_block_.1018
+___copy_helper_block_.1020
+___destroy_helper_block_.1021
 +[Instabug reportFeedBackWithEmail:comment:screenshot:]
 ___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke
 ___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke_2
-___copy_helper_block_.1021
-___destroy_helper_block_.1022
-___copy_helper_block_.1024
-___destroy_helper_block_.1025
+___copy_helper_block_.1023
+___destroy_helper_block_.1024
+___copy_helper_block_.1026
+___destroy_helper_block_.1027
 +[Instabug reportException:]
 ___28+[Instabug reportException:]_block_invoke
-___copy_helper_block_.1029
-___destroy_helper_block_.1030
+___copy_helper_block_.1031
+___destroy_helper_block_.1032
 +[Instabug reportError:]
 ___24+[Instabug reportError:]_block_invoke
-___copy_helper_block_.1034
-___destroy_helper_block_.1035
+___copy_helper_block_.1036
+___destroy_helper_block_.1037
 +[Instabug invokeConversations]
 +[Instabug isInstabugNotification:]
 +[Instabug didRegisterForRemoteNotificationsWithDeviceToken:]
@@ -3904,6 +3902,8 @@ ___destroy_helper_block_.1035
 +[Instabug setIBGLogPrintsToConsole:]
 +[Instabug clearAllLogs]
 +[Instabug setSDKDebugLogsLevel:]
++[Instabug checkSDKInitializeAndLogErrorMessageIfNot]
++[Instabug logInstabugInitializeErrorMessage]
 +[Instabug logMessage:args:level:]
 +[Instabug forceDisableWhiteLabel]
 +[Instabug forceDisableInAppMessaging]
@@ -3911,22 +3911,21 @@ _afterInitializationQueue._queue
 _afterInitializationQueue.onceToken
 ___block_descriptor_tmp.639
 ___block_descriptor_tmp.643
-___block_descriptor_tmp.671
-___block_descriptor_tmp.723
-___block_descriptor_tmp.726
-___block_descriptor_tmp.752
-___block_descriptor_tmp.769
-___block_descriptor_tmp.773
-___block_descriptor_tmp.958
-___block_descriptor_tmp.965
-___block_descriptor_tmp.984
-___block_descriptor_tmp.989
-___block_descriptor_tmp.1017
-___block_descriptor_tmp.1020
-___block_descriptor_tmp.1023
-___block_descriptor_tmp.1026
-___block_descriptor_tmp.1031
-___block_descriptor_tmp.1036
+___block_descriptor_tmp.673
+___block_descriptor_tmp.725
+___block_descriptor_tmp.728
+___block_descriptor_tmp.771
+___block_descriptor_tmp.775
+___block_descriptor_tmp.960
+___block_descriptor_tmp.967
+___block_descriptor_tmp.986
+___block_descriptor_tmp.991
+___block_descriptor_tmp.1019
+___block_descriptor_tmp.1022
+___block_descriptor_tmp.1025
+___block_descriptor_tmp.1028
+___block_descriptor_tmp.1033
+___block_descriptor_tmp.1038
 /Users/distiller/ios/Instabug/InstabugI/Instabug.m
 IBGNSLogWithLevel
 IBGNSLog

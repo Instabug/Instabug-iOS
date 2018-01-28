@@ -60,6 +60,78 @@ l_OBJC_PROTOCOL_$_IBGBaseRequest
 l_OBJC_LABEL_PROTOCOL_$_IBGBaseRequest
 /Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGAnalyticsRequest.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGBaseRequest.h
+-[IBGZZOldArchiveEntry initWithCentralFileHeader:localFileHeader:]
+__ZN22IBGZZCentralFileHeader10extraFieldI24IBGZZWinZipAESExtraFieldEEPT_v
+-[IBGZZOldArchiveEntry fileData]
+__ZN20IBGZZLocalFileHeader10extraFieldI24IBGZZWinZipAESExtraFieldEEPT_v
+-[IBGZZOldArchiveEntry compressionMethod]
+-[IBGZZOldArchiveEntry compressed]
+-[IBGZZOldArchiveEntry encrypted]
+-[IBGZZOldArchiveEntry lastModified]
+-[IBGZZOldArchiveEntry crc32]
+-[IBGZZOldArchiveEntry compressedSize]
+-[IBGZZOldArchiveEntry uncompressedSize]
+-[IBGZZOldArchiveEntry fileMode]
+-[IBGZZOldArchiveEntry rawFileName]
+-[IBGZZOldArchiveEntry encoding]
+-[IBGZZOldArchiveEntry check:]
+-[IBGZZOldArchiveEntry fileNameWithEncoding:]
+-[IBGZZOldArchiveEntry checkEncryptionAndCompression:]
+-[IBGZZOldArchiveEntry streamForData:withPassword:error:]
+-[IBGZZOldArchiveEntry newStreamWithPassword:error:]
+-[IBGZZOldArchiveEntry newDataWithPassword:error:]
+___50-[IBGZZOldArchiveEntry newDataWithPassword:error:]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+-[IBGZZOldArchiveEntry newDataProviderWithPassword:error:]
+__ZN17IBGZZDataProvider6createEU13block_pointerFP13NSInputStreamvE
+___58-[IBGZZOldArchiveEntry newDataProviderWithPassword:error:]_block_invoke
+___copy_helper_block_.69
+___destroy_helper_block_.70
+-[IBGZZOldArchiveEntry newWriterCanSkipLocalFile:]
+__ZN15IBGZZScopeGuardD2Ev
+___clang_call_terminate
+__ZZN17IBGZZDataProvider6createEU13block_pointerFP13NSInputStreamvEENUlPvS4_mE_8__invokeES4_S4_m
+__ZN17IBGZZDataProvider8getBytesEPvm
+__ZZN17IBGZZDataProvider6createEU13block_pointerFP13NSInputStreamvEENUlPvxE_8__invokeES4_x
+__ZN17IBGZZDataProvider16skipForwardBytesEx
+__ZZN17IBGZZDataProvider6createEU13block_pointerFP13NSInputStreamvEENUlPvE_8__invokeES4_
+__ZZN17IBGZZDataProvider6createEU13block_pointerFP13NSInputStreamvEENUlPvE0_8__invokeES4_
+__ZN17IBGZZDataProviderD2Ev
+_OBJC_IVAR_$_IBGZZOldArchiveEntry._centralFileHeader
+_OBJC_IVAR_$_IBGZZOldArchiveEntry._localFileHeader
+_OBJC_IVAR_$_IBGZZOldArchiveEntry._encryptionMode
+___block_descriptor_tmp
+___block_descriptor_tmp.72
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZOldArchiveEntry.mm
+~IBGZZDataProvider
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDataProvider.h
+__invoke
+operator()
+rewind
+skipForwardBytes
+getBytes
+~IBGZZScopeGuard
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZScopeGuard.h
+__destroy_helper_block_
+__copy_helper_block_
+__58-[IBGZZOldArchiveEntry newDataProviderWithPassword:error:]_block_invoke
+create
+IBGZZDataProvider
+__50-[IBGZZOldArchiveEntry newDataWithPassword:error:]_block_invoke
+IBGZZScopeGuard
+fileData
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZHeaders.h
+lastExtraField
+firstExtraField
+fileName
+operator&
+IBGZZRaiseErrorNo
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZError.h
+dataDescriptor
+extraField<IBGZZWinZipAESExtraField>
+nextExtraField
+getSaltLength
 -[IBGImageLocalAttachment initWithImage:isMainScreenShot:]
 -[IBGImageLocalAttachment byline]
 -[IBGImageLocalAttachment prepareAttachmentPath]
@@ -119,8 +191,6 @@ ___32+[IBGSessionManager getInstance]_block_invoke
 -[IBGSessionManager initializationOperation]
 ___44-[IBGSessionManager initializationOperation]_block_invoke
 ___44-[IBGSessionManager initializationOperation]_block_invoke_2
-___copy_helper_block_
-___destroy_helper_block_
 ___copy_helper_block_.538
 ___destroy_helper_block_.539
 -[IBGSessionManager sendPreviousSessionIfExistThenInitializeNewOne]
@@ -137,7 +207,6 @@ ___destroy_helper_block_.539
 -[IBGSessionManager .cxx_destruct]
 _sharedInstance
 _onceToken
-___block_descriptor_tmp
 ___block_literal_global
 _OBJC_IVAR_$_IBGSessionManager._initializationOperation
 ___block_descriptor_tmp.535
@@ -145,8 +214,6 @@ ___block_descriptor_tmp.540
 _OBJC_IVAR_$_IBGSessionManager._currentSession
 /Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGSessionManager.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGSessionManager.h
-__destroy_helper_block_
-__copy_helper_block_
 __44-[IBGSessionManager initializationOperation]_block_invoke_2
 __44-[IBGSessionManager initializationOperation]_block_invoke
 __32+[IBGSessionManager getInstance]_block_invoke
@@ -338,12 +405,6 @@ _OBJC_IVAR_$_IBGAnnotationMemento._superViewFrame
 _OBJC_IVAR_$_IBGAnnotationMemento._angle
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGAnnotationMemento.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGAnnotationMemento.h
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGaes/IBGsha1.c
-sha1
-sha1_begin
-sha1_end
-sha1_hash
-sha1_compile
 -[IBGVideoRecordingViewController initWithDelegate:]
 -[IBGVideoRecordingViewController viewDidLoad]
 -[IBGVideoRecordingViewController didReceiveMemoryWarning]
@@ -400,6 +461,7 @@ __63-[IBGVideoRecordingViewController setupMenuRecordingMenuButton]_block_invoke
 __63-[IBGVideoRecordingViewController setupMenuRecordingMenuButton]_block_invoke.96
 __63-[IBGVideoRecordingViewController setupMenuRecordingMenuButton]_block_invoke_2
 __63-[IBGVideoRecordingViewController setupMenuRecordingMenuButton]_block_invoke
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZConstants.m
 -[IBGOldUserStepsLogger init]
 -[IBGOldUserStepsLogger intializeSteps]
 -[IBGOldUserStepsLogger updateTopViewWithForced:date:parentWindow:]
@@ -446,6 +508,25 @@ l_OBJC_PROTOCOL_$_IBGReportAttachmentRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGReportAttachmentRequestDelegate
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGLocalAttachment.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGLocalAttachment.h
+-[IBGZZDeflateOutputStream initWithChannelOutput:compressionLevel:]
+-[IBGZZDeflateOutputStream compressedSize]
+-[IBGZZDeflateOutputStream uncompressedSize]
+-[IBGZZDeflateOutputStream streamStatus]
+-[IBGZZDeflateOutputStream streamError]
+-[IBGZZDeflateOutputStream open]
+-[IBGZZDeflateOutputStream close]
+-[IBGZZDeflateOutputStream write:maxLength:]
+-[IBGZZDeflateOutputStream hasSpaceAvailable]
+-[IBGZZDeflateOutputStream crc32]
+-[IBGZZDeflateOutputStream .cxx_destruct]
+_OBJC_IVAR_$_IBGZZDeflateOutputStream._channelOutput
+_OBJC_IVAR_$_IBGZZDeflateOutputStream._compressionLevel
+_OBJC_IVAR_$_IBGZZDeflateOutputStream._status
+_OBJC_IVAR_$_IBGZZDeflateOutputStream._error
+_OBJC_IVAR_$_IBGZZDeflateOutputStream._crc32
+_OBJC_IVAR_$_IBGZZDeflateOutputStream._stream
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDeflateOutputStream.m
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDeflateOutputStream.h
 -[IBGArrowAnnotationView initWithFrame:zPosition:originator:annotatingColor:angle:]
 -[IBGArrowAnnotationView drawRect:]
 +[IBGArrowAnnotationView minimumArrowSize]
@@ -631,6 +712,31 @@ l_OBJC_LABEL_PROTOCOL_$_IBGContextProviderProtocol
 __38-[IBGEventLoggerContextProvider queue]_block_invoke
 __50-[IBGEventLoggerContextProvider backgroundContext]_block_invoke
 __46-[IBGEventLoggerContextProvider memoryContext]_block_invoke
++[IBGZZArchiveEntry archiveEntryWithFileName:compress:dataBlock:]
++[IBGZZArchiveEntry archiveEntryWithFileName:compress:streamBlock:]
++[IBGZZArchiveEntry archiveEntryWithFileName:compress:dataConsumerBlock:]
++[IBGZZArchiveEntry archiveEntryWithDirectoryName:]
++[IBGZZArchiveEntry archiveEntryWithFileName:fileMode:lastModified:compressionLevel:dataBlock:streamBlock:dataConsumerBlock:]
+-[IBGZZArchiveEntry compressed]
+-[IBGZZArchiveEntry encrypted]
+-[IBGZZArchiveEntry lastModified]
+-[IBGZZArchiveEntry crc32]
+-[IBGZZArchiveEntry compressedSize]
+-[IBGZZArchiveEntry uncompressedSize]
+-[IBGZZArchiveEntry fileMode]
+-[IBGZZArchiveEntry fileName]
+-[IBGZZArchiveEntry rawFileName]
+-[IBGZZArchiveEntry encoding]
+-[IBGZZArchiveEntry newStreamWithError:]
+-[IBGZZArchiveEntry newStreamWithPassword:error:]
+-[IBGZZArchiveEntry check:]
+-[IBGZZArchiveEntry fileNameWithEncoding:]
+-[IBGZZArchiveEntry newDataWithError:]
+-[IBGZZArchiveEntry newDataWithPassword:error:]
+-[IBGZZArchiveEntry newDataProviderWithError:]
+-[IBGZZArchiveEntry newDataProviderWithPassword:error:]
+-[IBGZZArchiveEntry newWriterCanSkipLocalFile:]
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZArchiveEntry.m
 -[IBGURLSessionDemuxTaskInfo initWithTask:delegate:modes:]
 -[IBGURLSessionDemuxTaskInfo performBlock:]
 -[IBGURLSessionDemuxTaskInfo performBlockOnClientThread:]
@@ -724,14 +830,6 @@ __94-[IBGURLSessionDemux URLSession:task:willPerformHTTPRedirection:newRequest:c
 -[IBGUser logOut]
 +[IBGUser generateNewUUIDForTest]
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUser.m
-_update_pool
-_prng_mix
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGaes/IBGprng.c
-prng_end
-prng_rand
-prng_mix
-update_pool
-prng_init
 +[IBGSessionLogger sharedInstance]
 ___34+[IBGSessionLogger sharedInstance]_block_invoke
 -[IBGSessionLogger init]
@@ -1401,6 +1499,20 @@ _OBJC_IVAR_$_IBGColors._surveyTextViewBorderColor
 _OBJC_IVAR_$_IBGColors._primaryColorWasSet
 /Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGColors.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGColors.h
+-[IBGZZOldArchiveEntryWriter initWithCentralFileHeader:localFileHeader:shouldSkipLocalFile:]
+-[IBGZZOldArchiveEntryWriter offsetToLocalFileEnd]
+-[IBGZZOldArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]
+-[IBGZZOldArchiveEntryWriter writeCentralFileHeaderToChannelOutput:error:]
+-[IBGZZOldArchiveEntryWriter .cxx_destruct]
+_OBJC_IVAR_$_IBGZZOldArchiveEntryWriter._localFileLength
+_OBJC_IVAR_$_IBGZZOldArchiveEntryWriter._centralFileHeader
+_OBJC_IVAR_$_IBGZZOldArchiveEntryWriter._localFile
+l_OBJC_PROTOCOL_$_IBGZZArchiveEntryWriter
+l_OBJC_LABEL_PROTOCOL_$_IBGZZArchiveEntryWriter
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZOldArchiveEntryWriter.mm
+nextLocalFileHeader
+nextCentralFileHeader
+fileComment
 -[UIView(IBGProtect) protectViewinContext:]
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/UIView+IBGProtect.m
 -[IBGInternalErrorRequest initWithParameters:delegate:]
@@ -1689,9 +1801,6 @@ __userStepsLoggerQueue
 __42-[IBGUserStepsLoggerContextProvider queue]_block_invoke
 __54-[IBGUserStepsLoggerContextProvider backgroundContext]_block_invoke
 __50-[IBGUserStepsLoggerContextProvider memoryContext]_block_invoke
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGaes/IBGaescrypt.c
-aes_decrypt
-aes_encrypt
 -[IBGProgress initWithParent:]
 -[IBGProgress init]
 -[IBGProgress addCompletionHandler:]
@@ -1866,6 +1975,7 @@ __excludedWindowTypes
 -[IBGViewHierarchyLocalAttachment getScale]
 -[IBGViewHierarchyLocalAttachment resizeImagesWithFilePaths:]
 -[IBGViewHierarchyLocalAttachment compressFiles:]
+___49-[IBGViewHierarchyLocalAttachment compressFiles:]_block_invoke
 -[IBGViewHierarchyLocalAttachment prepareAttachmentPath]
 -[IBGViewHierarchyLocalAttachment prepareAttachmentMetadata]
 -[IBGViewHierarchyLocalAttachment fileName]
@@ -1879,6 +1989,7 @@ _OBJC_IVAR_$_IBGViewHierarchyLocalAttachment.fileName
 _OBJC_IVAR_$_IBGViewHierarchyLocalAttachment.localFilePath
 _OBJC_IVAR_$_IBGViewHierarchyLocalAttachment._filePaths
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGViewHierarchyLocalAttachment.m
+__49-[IBGViewHierarchyLocalAttachment compressFiles:]_block_invoke
 -[UIAlertController(Private) setAlertWindow:]
 -[UIAlertController(Private) alertWindow]
 -[UIAlertController(Window) show]
@@ -1920,6 +2031,7 @@ _OBJC_IVAR_$_IBGDeletedAnnotationMemento._superView
 -[IBGViewController statusBarHeight]
 -[IBGViewController shouldAutorotate]
 -[IBGViewController preferredStatusBarStyle]
+-[IBGViewController prefersStatusBarHidden]
 /Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGViewController.m
 -[IBGAlertWindow init]
 -[IBGAlertWindow initWithFrame:]
@@ -1932,8 +2044,6 @@ _OBJC_IVAR_$_IBGAlertWindow._duration
 /Users/distiller/ios/InstabugCore/InstabugCore/Windows/IBGAlertWindow.h
 -[IBGTouchCircleView drawRect:]
 /Users/distiller/ios/InstabugCore/InstabugCore/Windows/HUDs/Animations/Decorating Views/IBGTouchCircleView.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGaes/IBGaestab.c
-aes_init
 +[IBGEventLog eventlogFetchRequestWithName:]
 +[IBGEventLog eventlogsFetchRequestWithMaxCount:]
 +[IBGEventLog eventlogsFetchRequest]
@@ -1987,6 +2097,7 @@ _OBJC_IVAR_$_IBGAttachmentButton._secondsElapsed
 _OBJC_IVAR_$_IBGAttachmentButton._dimmedView
 /Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGAttachmentButton.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGAttachmentButton.h
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStandardCryptoEngine.cpp
 -[IBGEditableValue initWithDefaultValueBlock:]
 -[IBGEditableValue value]
 -[IBGEditableValue setValue:]
@@ -2068,46 +2179,44 @@ __39-[IBGDataStore clearAllFileAttachments]_block_invoke
 __34-[IBGDataStore addFileAttachment:]_block_invoke
 __68-[IBGDataStore excutePreSendingBlockSynchronized:completionHandler:]_block_invoke
 __27+[IBGDataStore getInstance]_block_invoke
-+[IBGZipArchive ibg_isFilePasswordProtectedAtPath:]
-+[IBGZipArchive ibg_unzipFileAtPath:toDestination:]
-+[IBGZipArchive ibg_unzipFileAtPath:toDestination:overwrite:password:error:]
-+[IBGZipArchive ibg_unzipFileAtPath:toDestination:delegate:]
-+[IBGZipArchive ibg_unzipFileAtPath:toDestination:overwrite:password:error:delegate:]
-+[IBGZipArchive ibg_unzipFileAtPath:toDestination:overwrite:password:progressHandler:completionHandler:]
-+[IBGZipArchive ibg_unzipFileAtPath:toDestination:progressHandler:completionHandler:]
-+[IBGZipArchive ibg_unzipFileAtPath:toDestination:preserveAttributes:overwrite:password:error:delegate:]
-+[IBGZipArchive ibg_unzipFileAtPath:toDestination:preserveAttributes:overwrite:password:error:delegate:progressHandler:completionHandler:]
-+[IBGZipArchive ibg_createZipFileAtPath:withFilesAtPaths:]
-+[IBGZipArchive ibg_createZipFileAtPath:withContentsOfDirectory:]
-+[IBGZipArchive ibg_createZipFileAtPath:withContentsOfDirectory:keepParentDirectory:]
-+[IBGZipArchive ibg_createZipFileAtPath:withFilesAtPaths:withPassword:]
-+[IBGZipArchive ibg_createZipFileAtPath:withContentsOfDirectory:withPassword:]
-+[IBGZipArchive ibg_createZipFileAtPath:withContentsOfDirectory:keepParentDirectory:withPassword:]
--[IBGZipArchive initWithPath:]
--[IBGZipArchive open]
--[IBGZipArchive ibg_zipInfo:setDate:]
--[IBGZipArchive ibg_writeFolderAtPath:withFolderName:withPassword:]
--[IBGZipArchive ibg_writeFile:withPassword:]
--[IBGZipArchive ibg_writeFileAtPath:withFileName:withPassword:]
--[IBGZipArchive ibg_writeData:filename:withPassword:]
--[IBGZipArchive close]
-+[IBGZipArchive _temporaryPathForDiscardableFile]
-___49+[IBGZipArchive _temporaryPathForDiscardableFile]_block_invoke
-+[IBGZipArchive _dateWithMSDOSFormat:]
-___38+[IBGZipArchive _dateWithMSDOSFormat:]_block_invoke
--[IBGZipArchive .cxx_destruct]
-_OBJC_IVAR_$_IBGZipArchive._path
-_OBJC_IVAR_$_IBGZipArchive._zip
-__temporaryPathForDiscardableFile.kIBGdiscardableFilePath
-__temporaryPathForDiscardableFile.onceToken
-__dateWithMSDOSFormat:.kIBGGregorian
-__dateWithMSDOSFormat:.onceToken
-___block_descriptor_tmp.214
-___block_literal_global.215
-_OBJC_IVAR_$_IBGZipArchive._filename
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGZipArchive.m
-__38+[IBGZipArchive _dateWithMSDOSFormat:]_block_invoke
-__49+[IBGZipArchive _temporaryPathForDiscardableFile]_block_invoke
++[IBGZZArchive archiveWithURL:error:]
++[IBGZZArchive archiveWithData:error:]
+-[IBGZZArchive initWithURL:options:error:]
+-[IBGZZArchive initWithData:options:error:]
+-[IBGZZArchive initWithChannel:options:error:]
+-[IBGZZArchive URL]
+-[IBGZZArchive loadCanMiss:error:]
+-[IBGZZArchive updateEntries:error:]
+___36-[IBGZZArchive updateEntries:error:]_block_invoke
+___36-[IBGZZArchive updateEntries:error:]_block_invoke.56
+___copy_helper_block_.59
+___destroy_helper_block_.60
+___36-[IBGZZArchive updateEntries:error:]_block_invoke.65
+___copy_helper_block_.68
+___destroy_helper_block_.69
+___36-[IBGZZArchive updateEntries:error:]_block_invoke.82
+___copy_helper_block_.83
+___destroy_helper_block_.84
+-[IBGZZArchive contents]
+-[IBGZZArchive entries]
+-[IBGZZArchive .cxx_destruct]
+_OBJC_IVAR_$_IBGZZArchive._channel
+_OBJC_IVAR_$_IBGZZArchive._contents
+_OBJC_IVAR_$_IBGZZArchive._entries
+___block_descriptor_tmp.70
+___block_descriptor_tmp.85
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZArchive.mm
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZArchive.h
+__36-[IBGZZArchive updateEntries:error:]_block_invoke.82
+__36-[IBGZZArchive updateEntries:error:]_block_invoke.65
+__36-[IBGZZArchive updateEntries:error:]_block_invoke.56
+__36-[IBGZZArchive updateEntries:error:]_block_invoke
+min<unsigned int>
+/Applications/Xcode-9.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm
+min<unsigned int, std::__1::__less<unsigned int, unsigned int> >
+find_end<const unsigned char *, const unsigned char *>
+find_end<const unsigned char *, const unsigned char *, std::__1::__equal_to<unsigned char, unsigned char> >
+__find_end<std::__1::__equal_to<unsigned char, unsigned char> &, const unsigned char *, const unsigned char *>
 -[NSURL(Additions) ibg_isInstabugURL]
 -[NSURL(Additions) ibg_isHTTPURL]
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/NSURL+Additions.m
@@ -2245,63 +2354,6 @@ _OBJC_IVAR_$_IBGShapeDetectionOverlay._delegate
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/UIView+AnchorPoint.m
 __CGPointApplyAffineTransform
 /Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGAffineTransform.h
-_unzOpenInternal
-_unz64local_GetCurrentFileInfoInternal
-_unzGoToNextDisk
-_unz64local_getLong
-_unz64local_getShort
-_unz64local_getLong64
-_unz64local_getByte
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGminizip/IBGunzip.c
-unz64local_getByte
-unz64local_getLong64
-unz64local_getShort
-unz64local_getLong
-IBGunzeof
-IBGunztell64
-IBGunztell
-IBGunzSetOffset64
-IBGunzSetOffset
-IBGunzGetOffset64
-IBGunzGetOffset
-IBGunzGoToFilePos64
-IBGunzGoToFilePos
-IBGunzGetFilePos64
-IBGunzGetFilePos
-IBGunzLocateFile
-IBGunzGoToFirstFile2
-IBGunzGoToNextFile
-IBGunzGoToNextFile2
-IBGunzGoToFirstFile
-IBGunzGetLocalExtrafield
-IBGunzGetCurrentFileZStreamPos64
-unzGoToNextDisk
-IBGunzReadCurrentFile
-update_keys
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGminizip/IBGcrypt.h
-decrypt_byte
-IBGunzOpenCurrentFile2
-IBGunzOpenCurrentFilePassword
-IBGunzOpenCurrentFile
-IBGunzOpenCurrentFile3
-init_keys
-unz64local_CheckCurrentFileCoherencyHeader
-IBGunzGetCurrentFileInfo64
-unz64local_GetCurrentFileInfoInternal
-unz64local_DosDateToTmuDate
-IBGunzGetCurrentFileInfo
-IBGunzGetGlobalComment
-IBGunzGetGlobalInfo64
-IBGunzGetGlobalInfo
-IBGunzCloseCurrentFile
-IBGunzClose
-IBGunzOpen64
-IBGunzOpen
-IBGunzOpen2_64
-unzOpenInternal
-unz64local_SearchCentralDir64
-unz64local_SearchCentralDir
-IBGunzOpen2
 +[IBGUserStepsLogger sharedInstance]
 ___36+[IBGUserStepsLogger sharedInstance]_block_invoke
 -[IBGUserStepsLogger init]
@@ -2497,6 +2549,27 @@ l_OBJC_LABEL_PROTOCOL_$_IBGReportRequestDelegate
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGInternalError.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGInternalError.h
 __34-[IBGInternalError addAttachment:]_block_invoke
+-[IBGZZStandardDecryptInputStream initWithStream:password:header:check:version:error:]
+__ZN25IBGZZStandardCryptoEngine8initKeysEPh
+__ZN25IBGZZStandardCryptoEngine10updateKeysEh
+-[IBGZZStandardDecryptInputStream streamStatus]
+-[IBGZZStandardDecryptInputStream streamError]
+-[IBGZZStandardDecryptInputStream open]
+-[IBGZZStandardDecryptInputStream close]
+-[IBGZZStandardDecryptInputStream read:maxLength:]
+-[IBGZZStandardDecryptInputStream getBuffer:length:]
+-[IBGZZStandardDecryptInputStream hasBytesAvailable]
+-[IBGZZStandardDecryptInputStream .cxx_destruct]
+-[IBGZZStandardDecryptInputStream .cxx_construct]
+_OBJC_IVAR_$_IBGZZStandardDecryptInputStream._upstream
+_OBJC_IVAR_$_IBGZZStandardDecryptInputStream._crypto
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStandardDecryptInputStream.mm
+updateKeys
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStandardCryptoEngine.h
+crc32
+decryptByte
+initKeys
+IBGZZRaiseErrorNil
 -[NSData(IBGGZIP) ibg_dataByGZipCompressingWithError:]
 -[NSData(IBGGZIP) ibg_dataByGZipCompressingAtLevel:windowSize:memoryLevel:strategy:error:]
 -[NSData(IBGGZIP) ibg_dataByGZipDecompressingDataWithError:]
@@ -2626,6 +2699,22 @@ _OBJC_IVAR_$_IBGVoiceRecorder._shouldKeepAttachmentInTemp
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVoiceRecorder.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVoiceRecorder.h
 __39-[IBGVoiceRecorder checkUserPermission]_block_invoke
++[IBGZZInflateInputStream decompressData:withUncompressedSize:]
+-[IBGZZInflateInputStream initWithStream:]
+-[IBGZZInflateInputStream streamStatus]
+-[IBGZZInflateInputStream streamError]
+-[IBGZZInflateInputStream open]
+-[IBGZZInflateInputStream close]
+-[IBGZZInflateInputStream read:maxLength:]
+-[IBGZZInflateInputStream getBuffer:length:]
+-[IBGZZInflateInputStream hasBytesAvailable]
+-[IBGZZInflateInputStream .cxx_destruct]
+_OBJC_IVAR_$_IBGZZInflateInputStream._upstream
+_OBJC_IVAR_$_IBGZZInflateInputStream._readBuffer
+_OBJC_IVAR_$_IBGZZInflateInputStream._status
+_OBJC_IVAR_$_IBGZZInflateInputStream._error
+_OBJC_IVAR_$_IBGZZInflateInputStream._stream
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZInflateInputStream.m
 -[IBGBlurAnnotationView initWithFrame:zPosition:originator:screenshotSize:angle:bluredScreenshotImage:]
 -[IBGBlurAnnotationView draw]
 -[IBGBlurAnnotationView saveState]
@@ -2824,7 +2913,6 @@ ___block_descriptor_tmp.81
 ___block_literal_global.82
 ___block_descriptor_tmp.83
 ___block_literal_global.84
-___block_descriptor_tmp.85
 ___block_literal_global.86
 ___block_descriptor_tmp.87
 ___block_literal_global.88
@@ -2926,6 +3014,18 @@ _getInstance.onceToken
 _OBJC_IVAR_$_IBGIntializationManager._queue
 /Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGIntializationManager.m
 __38+[IBGIntializationManager getInstance]_block_invoke
+-[IBGZZDataChannel initWithData:]
+-[IBGZZDataChannel URL]
+-[IBGZZDataChannel temporaryChannel:]
+-[IBGZZDataChannel replaceWithChannel:error:]
+-[IBGZZDataChannel removeAsTemporary]
+-[IBGZZDataChannel newInput:]
+-[IBGZZDataChannel newOutput:]
+-[IBGZZDataChannel .cxx_destruct]
+_OBJC_IVAR_$_IBGZZDataChannel._allData
+l_OBJC_PROTOCOL_$_IBGZZChannel
+l_OBJC_LABEL_PROTOCOL_$_IBGZZChannel
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDataChannel.m
 -[IBGAppStateReactor init]
 -[IBGAppStateReactor addingNotificationsObserver]
 -[IBGAppStateReactor removeNotificationObserver]
@@ -3121,40 +3221,6 @@ _shapeRecogentionQueue
 _OBJC_IVAR_$_IBGShapeRecognizer._recgonizingEngine
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Shape Recognizer/IBGShapeRecognizer.m
 __62-[IBGShapeRecognizer recognizeDrawing:points:withReturnBlock:]_block_invoke
-_IBGfopen_file_func
-_IBGfopendisk_file_func
-_IBGfread_file_func
-_IBGfwrite_file_func
-_IBGftell_file_func
-_IBGfseek_file_func
-_IBGfclose_file_func
-_IBGferror_file_func
-_IBGfopen64_file_func
-_IBGfopendisk64_file_func
-_IBGftell64_file_func
-_IBGfseek64_file_func
-_IBGfile_build_ioposix
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGminizip/IBGioapi.c
-IBGfile_build_ioposix
-IBGfseek64_file_func
-IBGftell64_file_func
-IBGfopendisk64_file_func
-IBGfopen64_file_func
-fill_fopen64_filefunc
-IBGferror_file_func
-IBGfclose_file_func
-IBGfseek_file_func
-IBGftell_file_func
-IBGfwrite_file_func
-IBGfread_file_func
-IBGfopendisk_file_func
-IBGfopen_file_func
-fill_fopen_filefunc
-fill_zlib_filefunc64_32_def_from_filefunc32
-call_ztell64
-call_zseek64
-call_zopendisk64
-call_zopen64
 -[IBGShapeRecognitionEngine lock]
 -[IBGShapeRecognitionEngine recognizeDrawing:points:withReturnBlock:]
 -[IBGShapeRecognitionEngine validPoints:]
@@ -3406,12 +3472,6 @@ _OBJC_IVAR_$_IBGViewHeirarchy._viewHeirarchy
 _OBJC_IVAR_$_IBGViewHeirarchy._snapshotViews
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGViewHeirarchy.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGViewHeirarchy.h
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGaes/IBGhmac.c
-hmac_sha
-hmac_sha_begin
-hmac_sha_end
-hmac_sha_data
-hmac_sha_key
 -[IBGNoneAnimation animateWithView:]
 /Users/distiller/ios/InstabugCore/InstabugCore/Windows/HUDs/Animations/IBGNoneAnimation.m
 +[IBGTimedDispatcher sharedDispatcher]
@@ -3761,8 +3821,6 @@ __44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.446
 __44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.433
 __44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.417
 __44-[IBGUserStepsListener startUserStepsLogger]_block_invoke
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGminizip/IBGmztools.c
-unzRepair
 -[IBGStatusBar setDefaultPrefersStatusBarHidden:preferredStatusBarStyle:applicationStatusBarHidden:]
 -[IBGStatusBar prefersStatusBarHidden]
 -[IBGStatusBar preferredStatusBarStyle]
@@ -3956,6 +4014,7 @@ _OBJC_IVAR_$_IBGFeaturesRequest._dataUrl
 _OBJC_IVAR_$_IBGFeaturesRequest._failures
 _OBJC_IVAR_$_IBGFeaturesRequest._isSuccess
 /Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGFeaturesRequest.m
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZError.m
 -[IBGNetworkLoggerContextProvider context]
 -[IBGNetworkLoggerContextProvider memoryContext]
 ___48-[IBGNetworkLoggerContextProvider memoryContext]_block_invoke
@@ -3976,59 +4035,6 @@ __48-[IBGNetworkLoggerContextProvider memoryContext]_block_invoke
 +[IBGCacheDecoder getModelsFrom:]
 +[IBGCacheDecoder getDicationaryFromModels:]
 /Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGCacheDecoder.m
-_zip64local_getLong
-_zip64local_getShort
-_zip64local_getLong64
-_add_data_in_datablock
-_zip64local_putValue
-_zipGoToNextDisk
-_zip64FlushWriteBuffer
-_zipGoToSpecificDisk
-_zip64local_getByte
-_init_keys
-_update_keys
-_crypthead.calls
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGminizip/IBGzip.c
-zip64local_getByte
-IBGzipClose
-free_linkedlist
-free_datablock
-IBGzipCloseFileInZip
-IBGzipCloseFileInZipRaw
-zipGoToSpecificDisk
-IBGzipCloseFileInZipRaw64
-zip64local_putValue_inmemory
-zip64FlushWriteBuffer
-zipGetDiskSizeAvailable
-IBGzipWriteInFileInZip
-IBGzipOpenNewFileInZip
-IBGzipOpenNewFileInZip64
-IBGzipOpenNewFileInZip2_64
-IBGzipOpenNewFileInZip2
-IBGzipOpenNewFileInZip3_64
-IBGzipOpenNewFileInZip3
-IBGzipOpenNewFileInZip4
-zipGoToNextDisk
-zip64local_putValue
-IBGzipOpenNewFileInZip4_64
-crypthead
-zip64local_TmzDateToDosDate
-IBGzipOpen64
-IBGzipOpen3
-IBGzipOpen
-IBGzipOpen3_64
-IBGzipOpen2_64
-IBGzipOpen2
-add_data_in_datablock
-allocate_new_datablock
-zip64local_getLong64
-zip64local_getShort
-zip64local_getLong
-IBGzipOpen4
-zipGoToFirstDisk
-zip64local_SearchCentralDir64
-zip64local_SearchCentralDir
-init_linkedlist
 +[IBGCoreDataPersistenceManager sharedManager]
 ___46+[IBGCoreDataPersistenceManager sharedManager]_block_invoke
 -[IBGCoreDataPersistenceManager init]
@@ -4052,8 +4058,6 @@ ___destroy_helper_block_.46
 -[IBGCoreDataPersistenceManager dealloc]
 -[IBGCoreDataPersistenceManager coreDataQueue]
 ___46-[IBGCoreDataPersistenceManager coreDataQueue]_block_invoke
-___copy_helper_block_.68
-___destroy_helper_block_.69
 -[IBGCoreDataPersistenceManager initializeCoreData]
 ___51-[IBGCoreDataPersistenceManager initializeCoreData]_block_invoke
 ___51-[IBGCoreDataPersistenceManager initializeCoreData]_block_invoke_2
@@ -4141,7 +4145,6 @@ ___block_descriptor_tmp.48
 _privateMemoryContext
 _coreDataQueue.onceToken
 _OBJC_IVAR_$_IBGCoreDataPersistenceManager._coreDataQueue
-___block_descriptor_tmp.70
 _OBJC_IVAR_$_IBGCoreDataPersistenceManager._managedObjectContext
 ___block_descriptor_tmp.135
 ___block_descriptor_tmp.149
@@ -4299,8 +4302,18 @@ _OBJC_IVAR_$_IBGScreenshot._date
 _OBJC_IVAR_$_IBGScreenshot._path
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGScreenshot.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGScreenshot.h
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGaes/IBGpwd2key.c
-derive_key
+-[IBGZZDataChannelOutput initWithData:]
+-[IBGZZDataChannelOutput offset]
+-[IBGZZDataChannelOutput seekToOffset:error:]
+-[IBGZZDataChannelOutput writeData:error:]
+-[IBGZZDataChannelOutput truncateAtOffset:error:]
+-[IBGZZDataChannelOutput close]
+-[IBGZZDataChannelOutput .cxx_destruct]
+_OBJC_IVAR_$_IBGZZDataChannelOutput._allData
+_OBJC_IVAR_$_IBGZZDataChannelOutput._offset
+l_OBJC_PROTOCOL_$_IBGZZChannelOutput
+l_OBJC_LABEL_PROTOCOL_$_IBGZZChannelOutput
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDataChannelOutput.m
 +[IBGMigrationManager getInstance]
 ___34+[IBGMigrationManager getInstance]_block_invoke
 -[IBGMigrationManager initializationOperation]
@@ -4524,6 +4537,52 @@ _OBJC_IVAR_$_IBGFullActivityIndicatorView._collectingDataLabel
 _OBJC_IVAR_$_IBGNetworkLog.contentType
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGNetworkLog+CoreDataClass.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGNetworkLog+CoreDataClass.h
+-[IBGZZNewArchiveEntryWriter initWithFileName:fileMode:lastModified:compressionLevel:dataBlock:streamBlock:dataConsumerBlock:]
+-[IBGZZNewArchiveEntryWriter centralFileHeader]
+-[IBGZZNewArchiveEntryWriter localFileHeader]
+-[IBGZZNewArchiveEntryWriter offsetToLocalFileEnd]
+-[IBGZZNewArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]
+___82-[IBGZZNewArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]_block_invoke
+___82-[IBGZZNewArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]_block_invoke_2
+___82-[IBGZZNewArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]_block_invoke.53
+___82-[IBGZZNewArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]_block_invoke_2.65
+___82-[IBGZZNewArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]_block_invoke.69
+-[IBGZZNewArchiveEntryWriter writeCentralFileHeaderToChannelOutput:error:]
+-[IBGZZNewArchiveEntryWriter .cxx_destruct]
+__ZN17IBGZZDataConsumerL8putBytesEPvPKvm
+_OBJC_IVAR_$_IBGZZNewArchiveEntryWriter._centralFileHeader
+_OBJC_IVAR_$_IBGZZNewArchiveEntryWriter._localFileHeader
+_OBJC_IVAR_$_IBGZZNewArchiveEntryWriter._compressionLevel
+_OBJC_IVAR_$_IBGZZNewArchiveEntryWriter._dataBlock
+_OBJC_IVAR_$_IBGZZNewArchiveEntryWriter._streamBlock
+_OBJC_IVAR_$_IBGZZNewArchiveEntryWriter._dataConsumerBlock
+__ZN17IBGZZDataConsumerL9callbacksE
+___block_descriptor_tmp.71
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZNewArchiveEntryWriter.mm
+putBytes
+__82-[IBGZZNewArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]_block_invoke.69
+__82-[IBGZZNewArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]_block_invoke_2.65
+__82-[IBGZZNewArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]_block_invoke.53
+__82-[IBGZZNewArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]_block_invoke_2
+__82-[IBGZZNewArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]_block_invoke
+operator|
+-[IBGZZNewArchiveEntry initWithFileName:fileMode:lastModified:compressionLevel:dataBlock:streamBlock:dataConsumerBlock:]
+-[IBGZZNewArchiveEntry compressed]
+-[IBGZZNewArchiveEntry lastModified]
+-[IBGZZNewArchiveEntry fileMode]
+-[IBGZZNewArchiveEntry rawFileName]
+-[IBGZZNewArchiveEntry encoding]
+-[IBGZZNewArchiveEntry newWriterCanSkipLocalFile:]
+-[IBGZZNewArchiveEntry fileNameWithEncoding:]
+-[IBGZZNewArchiveEntry .cxx_destruct]
+_OBJC_IVAR_$_IBGZZNewArchiveEntry._fileName
+_OBJC_IVAR_$_IBGZZNewArchiveEntry._fileMode
+_OBJC_IVAR_$_IBGZZNewArchiveEntry._lastModified
+_OBJC_IVAR_$_IBGZZNewArchiveEntry._compressionLevel
+_OBJC_IVAR_$_IBGZZNewArchiveEntry._dataBlock
+_OBJC_IVAR_$_IBGZZNewArchiveEntry._streamBlock
+_OBJC_IVAR_$_IBGZZNewArchiveEntry._dataConsumerBlock
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZNewArchiveEntry.mm
 +[IBGCacheManager getInstance]
 ___30+[IBGCacheManager getInstance]_block_invoke
 -[IBGCacheManager init]
@@ -5130,6 +5189,24 @@ __39+[IBGAudioVideoRecorder sharedInstance]_block_invoke
 -[IBGNullableMutableDictionary .cxx_destruct]
 _OBJC_IVAR_$_IBGNullableMutableDictionary._dictionary
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGNullableMutableDictionary.m
+-[IBGZZAESDecryptInputStream initWithStream:password:header:strength:error:]
+-[IBGZZAESDecryptInputStream streamStatus]
+-[IBGZZAESDecryptInputStream streamError]
+-[IBGZZAESDecryptInputStream open]
+-[IBGZZAESDecryptInputStream close]
+-[IBGZZAESDecryptInputStream read:maxLength:]
+-[IBGZZAESDecryptInputStream getBuffer:length:]
+-[IBGZZAESDecryptInputStream hasBytesAvailable]
+-[IBGZZAESDecryptInputStream dealloc]
+-[IBGZZAESDecryptInputStream .cxx_destruct]
+_OBJC_IVAR_$_IBGZZAESDecryptInputStream._upstream
+_OBJC_IVAR_$_IBGZZAESDecryptInputStream._counterNonce
+_OBJC_IVAR_$_IBGZZAESDecryptInputStream._keystreamPos
+_OBJC_IVAR_$_IBGZZAESDecryptInputStream._aes
+_OBJC_IVAR_$_IBGZZAESDecryptInputStream._keystream
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZAESDecryptInputStream.mm
+getMacLength
+getKeyLength
 -[IBGScreenshotVC initWithTitle:screenshot:reportType:delegate:rightNavigationButtonType:]
 -[IBGScreenshotVC shouldAutorotateToInterfaceOrientation:]
 -[IBGScreenshotVC viewDidLoad]
@@ -5507,8 +5584,6 @@ _OBJC_IVAR_$_IBGLinkedListNode._nextNode
 -[NSObject(Description) ibg_description]
 -[NSObject(Description) ibg_descriptionExcludingProperties:]
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/NSObject+Description.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGaes/IBGentropy.c
-entropy_fun
 -[IBGMatchingInfo init]
 -[IBGMatchingInfo value]
 -[IBGMatchingInfo setValue:]
@@ -5806,19 +5881,18 @@ _OBJC_IVAR_$_IBGScreenshotGestureAnnotator._touchImage
 -[IBGUserStepsImagesLocalAttachment prepareAttachmentMetadata]
 -[IBGUserStepsImagesLocalAttachment compressFiles:withCompletion:]
 ___66-[IBGUserStepsImagesLocalAttachment compressFiles:withCompletion:]_block_invoke
-___66-[IBGUserStepsImagesLocalAttachment compressFiles:withCompletion:]_block_invoke.568
-___copy_helper_block_.572
-___destroy_helper_block_.573
 -[IBGUserStepsImagesLocalAttachment prepareAttachmentPathWithCompletion:]
 ___73-[IBGUserStepsImagesLocalAttachment prepareAttachmentPathWithCompletion:]_block_invoke
 ___73-[IBGUserStepsImagesLocalAttachment prepareAttachmentPathWithCompletion:]_block_invoke_2
-___copy_helper_block_.581
-___destroy_helper_block_.582
+___copy_helper_block_.594
+___destroy_helper_block_.595
+___copy_helper_block_.600
+___destroy_helper_block_.601
 -[IBGUserStepsImagesLocalAttachment coderNameForSelector:]
 -[IBGUserStepsImagesLocalAttachment prepareAttachmentAndSaveWithCompletion:]
 ___76-[IBGUserStepsImagesLocalAttachment prepareAttachmentAndSaveWithCompletion:]_block_invoke
-___copy_helper_block_.607
-___destroy_helper_block_.608
+___copy_helper_block_.620
+___destroy_helper_block_.621
 -[IBGUserStepsImagesLocalAttachment dictionaryValue]
 -[IBGUserStepsImagesLocalAttachment initWithDictionary:]
 -[IBGUserStepsImagesLocalAttachment reportAttachmentRequestDone:isSuccess:error:]
@@ -5831,10 +5905,7 @@ ___destroy_helper_block_.608
 -[IBGUserStepsImagesLocalAttachment snapshot]
 -[IBGUserStepsImagesLocalAttachment setSnapshot:]
 -[IBGUserStepsImagesLocalAttachment .cxx_destruct]
-___block_descriptor_tmp.575
-___block_descriptor_tmp.584
-___block_descriptor_tmp.590
-___block_descriptor_tmp.610
+___block_descriptor_tmp.623
 _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment.fileName
 _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment._sessionId
 _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment._reportDate
@@ -5843,7 +5914,6 @@ _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment._snapshot
 __76-[IBGUserStepsImagesLocalAttachment prepareAttachmentAndSaveWithCompletion:]_block_invoke
 __73-[IBGUserStepsImagesLocalAttachment prepareAttachmentPathWithCompletion:]_block_invoke_2
 __73-[IBGUserStepsImagesLocalAttachment prepareAttachmentPathWithCompletion:]_block_invoke
-__66-[IBGUserStepsImagesLocalAttachment compressFiles:withCompletion:]_block_invoke.568
 __66-[IBGUserStepsImagesLocalAttachment compressFiles:withCompletion:]_block_invoke
 -[IBGTextView initWithCoder:]
 -[IBGTextView initWithFrame:]
@@ -5870,13 +5940,6 @@ _OBJC_IVAR_$_IBGTextView._placeholderTextView
 _OBJC_IVAR_$_IBGTextView._placeholder
 /Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGTextView.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGTextView.h
-_encr_data
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGaes/IBGfileenc.c
-fcrypt_end
-fcrypt_decrypt
-encr_data
-fcrypt_encrypt
-fcrypt_init
 +[IBGVideoRecorder sharedInstance]
 ___34+[IBGVideoRecorder sharedInstance]_block_invoke
 -[IBGVideoRecorder init]
@@ -6251,15 +6314,6 @@ __36+[IBGSnapshotManager sharedInstance]_block_invoke
 -[IBGAnalyticsCache .cxx_destruct]
 _OBJC_IVAR_$_IBGAnalyticsCache._cachedModels
 /Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGAnalyticsCache.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGZipArchive/IBGaes/IBGaeskey.c
-aes_decrypt_key
-aes_decrypt_key256
-aes_decrypt_key192
-aes_decrypt_key128
-aes_encrypt_key
-aes_encrypt_key256
-aes_encrypt_key192
-aes_encrypt_key128
 -[IBGMenuButtonItem init]
 -[IBGMenuButtonItem pressedImageName]
 -[IBGMenuButtonItem pressedIconColor]
@@ -6397,6 +6451,8 @@ ___19-[IBGDefaults init]_block_invoke
 -[IBGDefaults setWillSkipScreenShot:]
 -[IBGDefaults startAlertTextIsSet]
 -[IBGDefaults setStartAlertTextIsSet:]
+-[IBGDefaults UUID]
+-[IBGDefaults setUUID:]
 -[IBGDefaults .cxx_destruct]
 _OBJC_IVAR_$_IBGDefaults._name
 _OBJC_IVAR_$_IBGDefaults._issueTags
@@ -6434,6 +6490,7 @@ _OBJC_IVAR_$_IBGDefaults._captureButtonDefaultPostion
 _OBJC_IVAR_$_IBGDefaults._videoRecordingCaptureButtonDefaultPostion
 _OBJC_IVAR_$_IBGDefaults._willSkipScreenShot
 _OBJC_IVAR_$_IBGDefaults._startAlertTextIsSet
+_OBJC_IVAR_$_IBGDefaults._UUID
 /Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGDefaults.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGDefaults.h
 __19-[IBGDefaults init]_block_invoke
@@ -6460,7 +6517,7 @@ _OBJC_IVAR_$_IBGButtonContainer._buttonFrame
 -[IBGMainWindow pushViewController:animated:withFadeAnimation:]
 -[IBGMainWindow showViewControllerWithFadeAnimation:]
 ___53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke
-___53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke.106
+___53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke.108
 -[IBGMainWindow presentViewController:withcompletion:]
 -[IBGMainWindow clearRootViewController]
 -[IBGMainWindow popViewControllerWithAnimation:completion:]
@@ -6481,12 +6538,12 @@ ___53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke.106
 -[IBGMainWindow setPreviousKeyWindow:]
 -[IBGMainWindow .cxx_destruct]
 _OBJC_IVAR_$_IBGMainWindow._navigationController
-___block_descriptor_tmp.108
+___block_descriptor_tmp.110
 _OBJC_IVAR_$_IBGMainWindow._parentViewController
 _OBJC_IVAR_$_IBGMainWindow._style
 _OBJC_IVAR_$_IBGMainWindow._previousKeyWindow
 /Users/distiller/ios/InstabugCore/InstabugCore/Windows/IBGMainWindow.m
-__53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke.106
+__53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke.108
 __53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke
 +[IBGMethodsLogger sharedInstance]
 ___34+[IBGMethodsLogger sharedInstance]_block_invoke
@@ -6568,6 +6625,16 @@ _OBJC_IVAR_$_IBGCountLimitedArray._queue
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGCountLimitedArray.m
 __31-[IBGCountLimitedArray objects]_block_invoke
 __34-[IBGCountLimitedArray addObject:]_block_invoke
+-[IBGZZFileChannel initWithURL:]
+-[IBGZZFileChannel URL]
+-[IBGZZFileChannel temporaryChannel:]
+-[IBGZZFileChannel replaceWithChannel:error:]
+-[IBGZZFileChannel removeAsTemporary]
+-[IBGZZFileChannel newInput:]
+-[IBGZZFileChannel newOutput:]
+-[IBGZZFileChannel .cxx_destruct]
+_OBJC_IVAR_$_IBGZZFileChannel._URL
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZFileChannel.m
 -[IBGFileLocalAttachment initWithLocalFilePath:]
 -[IBGFileLocalAttachment prepareAttachmentPath]
 -[IBGFileLocalAttachment prepareAttachmentMetadata]
@@ -6859,6 +6926,17 @@ _OBJC_IVAR_$_IBGArrowControlPoints._bottomView
 _OBJC_IVAR_$_IBGScreenshotAnnotationsView._delegate
 /Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGScreenshotAnnotationsView.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGScreenshotAnnotationsView.h
+-[IBGZZFileChannelOutput initWithFileDescriptor:]
+-[IBGZZFileChannelOutput offset]
+-[IBGZZFileChannelOutput seekToOffset:error:]
+-[IBGZZFileChannelOutput writeData:error:]
+-[IBGZZFileChannelOutput truncateAtOffset:error:]
+-[IBGZZFileChannelOutput close]
+-[IBGZZFileChannelOutput setOffset:]
+_OBJC_IVAR_$_IBGZZFileChannelOutput._fileDescriptor
+_OBJC_IVAR_$_IBGZZFileChannelOutput._offset
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZFileChannelOutput.m
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZFileChannelOutput.h
 +[IBGDiskIOManager getInstance]
 ___31+[IBGDiskIOManager getInstance]_block_invoke
 -[IBGDiskIOManager init]
@@ -6897,6 +6975,23 @@ _OBJC_IVAR_$_IBGRectControlPoints._topRightView
 _OBJC_IVAR_$_IBGRectControlPoints._bottomLeftView
 _OBJC_IVAR_$_IBGRectControlPoints._bottomRightView
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGRectControlPoints.m
+-[IBGZZStoreOutputStream initWithChannelOutput:]
+-[IBGZZStoreOutputStream streamStatus]
+-[IBGZZStoreOutputStream streamError]
+-[IBGZZStoreOutputStream open]
+-[IBGZZStoreOutputStream close]
+-[IBGZZStoreOutputStream write:maxLength:]
+-[IBGZZStoreOutputStream hasSpaceAvailable]
+-[IBGZZStoreOutputStream crc32]
+-[IBGZZStoreOutputStream size]
+-[IBGZZStoreOutputStream .cxx_destruct]
+_OBJC_IVAR_$_IBGZZStoreOutputStream._channelOutput
+_OBJC_IVAR_$_IBGZZStoreOutputStream._status
+_OBJC_IVAR_$_IBGZZStoreOutputStream._error
+_OBJC_IVAR_$_IBGZZStoreOutputStream._crc32
+_OBJC_IVAR_$_IBGZZStoreOutputStream._size
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStoreOutputStream.m
+/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStoreOutputStream.h
 -[IBGVideoPlaybackViewController awakeFromNib]
 -[IBGVideoPlaybackViewController initWithTitle:player:delegate:]
 -[IBGVideoPlaybackViewController viewDidLoad]
