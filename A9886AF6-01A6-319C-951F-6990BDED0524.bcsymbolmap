@@ -310,7 +310,7 @@ ___57-[IBGBugDataStore reportBugWithType:email:comment:image:]_block_invoke
 -[IBGBugDataStore setCategoryIcons:]
 -[IBGBugDataStore setExtraFields:]
 -[IBGBugDataStore .cxx_destruct]
-___block_descriptor_tmp.578
+___block_descriptor_tmp.588
 _OBJC_IVAR_$_IBGBugDataStore._extraFields
 _OBJC_IVAR_$_IBGBugDataStore._categoryTitles
 _OBJC_IVAR_$_IBGBugDataStore._categoryIcons
@@ -636,12 +636,12 @@ ___62-[IBGBugFlowController dismissSDKAfterSubmittingReportOfType:]_block_invoke
 -[IBGBugFlowController startReportingFlowForReportType:withSnapshot:withFadeAnimation:]
 -[IBGBugFlowController showReportCategoriesViewControllerForReportType:withSnapshot:withFadeAnimation:]
 ___103-[IBGBugFlowController showReportCategoriesViewControllerForReportType:withSnapshot:withFadeAnimation:]_block_invoke
-___copy_helper_block_.597
-___destroy_helper_block_.598
+___copy_helper_block_.607
+___destroy_helper_block_.608
 -[IBGBugFlowController screenshotViewControllerForReportType:screenshot:delegate:rightNavigationButtonType:]
 -[IBGBugFlowController shouldShowScreenshotViewForReportType:]
-___block_descriptor_tmp.567
-___block_descriptor_tmp.599
+___block_descriptor_tmp.577
+___block_descriptor_tmp.609
 /Users/distiller/ios/Instabug/InstabugBugReporting/Flow Controllers/IBGBugFlowController.m
 __103-[IBGBugFlowController showReportCategoriesViewControllerForReportType:withSnapshot:withFadeAnimation:]_block_invoke
 __62-[IBGBugFlowController dismissSDKAfterSubmittingReportOfType:]_block_invoke_2
@@ -986,9 +986,9 @@ ___35-[IBGChat prepareAttachmentAndSave]_block_invoke
 -[IBGChat setAttachmentsObjects:]
 -[IBGChat .cxx_destruct]
 _OBJC_IVAR_$_IBGChat._date
-___block_descriptor_tmp.644
-___block_literal_global.645
-___block_descriptor_tmp.741
+___block_descriptor_tmp.654
+___block_literal_global.655
+___block_descriptor_tmp.751
 _OBJC_IVAR_$_IBGChat._identifier
 _OBJC_IVAR_$_IBGChat._isSynced
 _OBJC_IVAR_$_IBGChat._isSent
@@ -1229,15 +1229,15 @@ l_OBJC_LABEL_PROTOCOL_$_UITraitEnvironment
 ___56-[IBGInvocationFlowController showInitialViewController]_block_invoke
 -[IBGInvocationFlowController showViewControllerForInvocationMode:]
 ___67-[IBGInvocationFlowController showViewControllerForInvocationMode:]_block_invoke
-___copy_helper_block_.563
-___destroy_helper_block_.564
+___copy_helper_block_.573
+___destroy_helper_block_.574
 -[IBGInvocationFlowController isChatRelatedWhileInAppMessagingDisabled:]
 -[IBGInvocationFlowController startBugReportingFlow]
 -[IBGInvocationFlowController startFeedbackReportingFlow]
 -[IBGInvocationFlowController showNewChatViewController]
 -[IBGInvocationFlowController showChatsViewController]
 -[IBGInvocationFlowController showPromptViewController]
-___block_descriptor_tmp.565
+___block_descriptor_tmp.575
 /Users/distiller/ios/Instabug/InstabugReporting/Flow Controllers/IBGInvocationFlowController.m
 __67-[IBGInvocationFlowController showViewControllerForInvocationMode:]_block_invoke
 __56-[IBGInvocationFlowController showInitialViewController]_block_invoke
@@ -1446,8 +1446,8 @@ ___33+[InstabugSurveys sharedInstance]_block_invoke
 -[InstabugSurveys initializationOperations]
 ___43-[InstabugSurveys initializationOperations]_block_invoke
 ___43-[InstabugSurveys initializationOperations]_block_invoke_2
-___copy_helper_block_.565
-___destroy_helper_block_.566
+___copy_helper_block_.575
+___destroy_helper_block_.576
 -[InstabugSurveys setAutoShowingSurveysEnabled:]
 -[InstabugSurveys setSurveysEnabled:]
 -[InstabugSurveys hasAvailableSurveys]
@@ -1456,27 +1456,29 @@ ___destroy_helper_block_.566
 -[InstabugSurveys updateHasPendingSurveys]
 -[InstabugSurveys pendingSurveyToShowWithCompletionHandler:]
 ___60-[InstabugSurveys pendingSurveyToShowWithCompletionHandler:]_block_invoke
+___copy_helper_block_.636
+___destroy_helper_block_.637
 -[InstabugSurveys loadSurveys]
 -[InstabugSurveys surveysFeatureEnabled]
 -[InstabugSurveys showPendingSurveys]
 ___37-[InstabugSurveys showPendingSurveys]_block_invoke
-___copy_helper_block_.661
-___destroy_helper_block_.662
+___copy_helper_block_.671
+___destroy_helper_block_.672
 -[InstabugSurveys fetchSurveys]
 -[InstabugSurveys showSurveyIfAvailable]
 ___40-[InstabugSurveys showSurveyIfAvailable]_block_invoke
 ___40-[InstabugSurveys showSurveyIfAvailable]_block_invoke_2
-___copy_helper_block_.687
-___destroy_helper_block_.688
-___copy_helper_block_.691
-___destroy_helper_block_.692
+___copy_helper_block_.697
+___destroy_helper_block_.698
+___copy_helper_block_.701
+___destroy_helper_block_.702
 -[InstabugSurveys showSurveyWithToken:]
 -[InstabugSurveys hasRespondedToSurveyWithToken:]
 -[InstabugSurveys matchingValueWithPrimitiveTypes:condition:]
 -[InstabugSurveys presentSurvey:showIntroMessage:]
 ___50-[InstabugSurveys presentSurvey:showIntroMessage:]_block_invoke
-___copy_helper_block_.725
-___destroy_helper_block_.726
+___copy_helper_block_.735
+___destroy_helper_block_.736
 -[InstabugSurveys shouldShowSurvey:]
 -[InstabugSurveys surveysRequestDone:isSucess:error:withSurveys:]
 -[InstabugSurveys surveyDismissedWithType:]
@@ -1519,11 +1521,12 @@ ___destroy_helper_block_.726
 -[InstabugSurveys .cxx_destruct]
 _InstabugSurveysInstance
 _OBJC_IVAR_$_InstabugSurveys._initializationOperation
-___block_descriptor_tmp.559
-___block_descriptor_tmp.663
-___block_descriptor_tmp.690
-___block_descriptor_tmp.693
-___block_descriptor_tmp.727
+___block_descriptor_tmp.569
+___block_descriptor_tmp.639
+___block_descriptor_tmp.673
+___block_descriptor_tmp.700
+___block_descriptor_tmp.703
+___block_descriptor_tmp.737
 _OBJC_IVAR_$_InstabugSurveys._cachedSurveys
 _OBJC_IVAR_$_InstabugSurveys._currentConditions
 _OBJC_IVAR_$_InstabugSurveys._isSurveyShowInCurrentSession
@@ -1561,31 +1564,31 @@ _OBJC_IVAR_$_IBGMessageDateHeader._dateLabel
 ___69-[IBGSendingBugController captureViewHierarchyWithCompletionHandler:]_block_invoke
 -[IBGSendingBugController captureScreenshotFrom:withCompletionHandler:]
 ___71-[IBGSendingBugController captureScreenshotFrom:withCompletionHandler:]_block_invoke
-___copy_helper_block_.601
-___destroy_helper_block_.602
+___copy_helper_block_.611
+___destroy_helper_block_.612
 -[IBGSendingBugController createBug]
 -[IBGSendingBugController sendBug]
 ___34-[IBGSendingBugController sendBug]_block_invoke
-___copy_helper_block_.633
-___destroy_helper_block_.634
-___34-[IBGSendingBugController sendBug]_block_invoke.638
+___copy_helper_block_.643
+___destroy_helper_block_.644
+___34-[IBGSendingBugController sendBug]_block_invoke.648
 ___34-[IBGSendingBugController sendBug]_block_invoke_2
 ___34-[IBGSendingBugController sendBug]_block_invoke_3
-___copy_helper_block_.645
-___destroy_helper_block_.646
-___copy_helper_block_.651
-___destroy_helper_block_.652
-___copy_helper_block_.656
-___destroy_helper_block_.657
-___34-[IBGSendingBugController sendBug]_block_invoke.659
-___34-[IBGSendingBugController sendBug]_block_invoke_2.660
-___copy_helper_block_.664
-___destroy_helper_block_.665
+___copy_helper_block_.655
+___destroy_helper_block_.656
+___copy_helper_block_.661
+___destroy_helper_block_.662
+___copy_helper_block_.666
+___destroy_helper_block_.667
+___34-[IBGSendingBugController sendBug]_block_invoke.669
+___34-[IBGSendingBugController sendBug]_block_invoke_2.670
+___copy_helper_block_.674
+___destroy_helper_block_.675
 -[IBGSendingBugController attachVisualUserStepsWithDateString:]
 -[IBGSendingBugController prepareAndSendBug:]
 ___45-[IBGSendingBugController prepareAndSendBug:]_block_invoke
-___copy_helper_block_.729
-___destroy_helper_block_.730
+___copy_helper_block_.739
+___destroy_helper_block_.740
 -[IBGSendingBugController showActivityIndicator]
 -[IBGSendingBugController stopActivityIndicator]
 -[IBGSendingBugController snapshotHeadNode]
@@ -1605,13 +1608,13 @@ ___destroy_helper_block_.730
 -[IBGSendingBugController setAttachments:]
 -[IBGSendingBugController .cxx_destruct]
 _OBJC_IVAR_$_IBGSendingBugController._reportType
-___block_descriptor_tmp.604
-___block_descriptor_tmp.635
-___block_descriptor_tmp.648
-___block_descriptor_tmp.653
+___block_descriptor_tmp.614
+___block_descriptor_tmp.645
 ___block_descriptor_tmp.658
-___block_descriptor_tmp.666
-___block_descriptor_tmp.731
+___block_descriptor_tmp.663
+___block_descriptor_tmp.668
+___block_descriptor_tmp.676
+___block_descriptor_tmp.741
 _OBJC_IVAR_$_IBGSendingBugController._snapshotHeadNode
 _OBJC_IVAR_$_IBGSendingBugController._shouldInterruptViewHierarchy
 _OBJC_IVAR_$_IBGSendingBugController._screenshotFilePaths
@@ -1621,11 +1624,11 @@ _OBJC_IVAR_$_IBGSendingBugController._comment
 _OBJC_IVAR_$_IBGSendingBugController._attachments
 /Users/distiller/ios/Instabug/InstabugBugReporting/Controllers/IBGSendingBugController.m
 __45-[IBGSendingBugController prepareAndSendBug:]_block_invoke
-__34-[IBGSendingBugController sendBug]_block_invoke_2.660
-__34-[IBGSendingBugController sendBug]_block_invoke.659
+__34-[IBGSendingBugController sendBug]_block_invoke_2.670
+__34-[IBGSendingBugController sendBug]_block_invoke.669
 __34-[IBGSendingBugController sendBug]_block_invoke_3
 __34-[IBGSendingBugController sendBug]_block_invoke_2
-__34-[IBGSendingBugController sendBug]_block_invoke.638
+__34-[IBGSendingBugController sendBug]_block_invoke.648
 __34-[IBGSendingBugController sendBug]_block_invoke
 __71-[IBGSendingBugController captureScreenshotFrom:withCompletionHandler:]_block_invoke
 __69-[IBGSendingBugController captureViewHierarchyWithCompletionHandler:]_block_invoke
@@ -1997,7 +2000,6 @@ ___destroy_helper_block_.575
 -[IBGBug isSent]
 -[IBGBug setIsSent:]
 -[IBGBug .cxx_destruct]
-___block_descriptor_tmp.577
 _OBJC_IVAR_$_IBGBug._identifier
 _OBJC_IVAR_$_IBGBug._comment
 _OBJC_IVAR_$_IBGBug._email
@@ -2733,13 +2735,13 @@ ___30+[IBGCrashManager getInstance]_block_invoke
 ___42-[IBGCrashManager initializationOperation]_block_invoke
 -[IBGCrashManager handlePendingCrashesOperation]
 ___48-[IBGCrashManager handlePendingCrashesOperation]_block_invoke
-___copy_helper_block_.552
-___destroy_helper_block_.553
+___copy_helper_block_.562
+___destroy_helper_block_.563
 -[IBGCrashManager registerCrashCacheOperation]
 ___46-[IBGCrashManager registerCrashCacheOperation]_block_invoke
 ___46-[IBGCrashManager registerCrashCacheOperation]_block_invoke_2
-___copy_helper_block_.560
-___destroy_helper_block_.561
+___copy_helper_block_.570
+___destroy_helper_block_.571
 -[IBGCrashManager dealloc]
 -[IBGCrashManager observeValueForKeyPath:ofObject:change:context:]
 -[IBGCrashManager setIsTrackingCrashes:]
@@ -2750,16 +2752,16 @@ _postCrashAction
 -[IBGCrashManager crashFromTempCrash:]
 -[IBGCrashManager reportException:]
 ___35-[IBGCrashManager reportException:]_block_invoke
-___copy_helper_block_.648
-___destroy_helper_block_.649
-___35-[IBGCrashManager reportException:]_block_invoke.651
+___copy_helper_block_.658
+___destroy_helper_block_.659
+___35-[IBGCrashManager reportException:]_block_invoke.661
 -[IBGCrashManager reportError:]
 -[IBGCrashManager assignUserInfoInsideUserData:]
 -[IBGCrashManager exceptionFromError:]
 -[IBGCrashManager sendExceptionAsCrash:withSnapshot:]
 ___53-[IBGCrashManager sendExceptionAsCrash:withSnapshot:]_block_invoke
-___copy_helper_block_.695
-___destroy_helper_block_.696
+___copy_helper_block_.705
+___destroy_helper_block_.706
 -[IBGCrashManager assignCrashData:toCrash:shouldExculdeInstabug:]
 -[IBGCrashManager sendCrash:data:]
 -[IBGCrashManager getCrashReportWithData:]
@@ -2781,23 +2783,22 @@ ___35+[IBGCrashManager postCrashHandler]_block_invoke
 -[IBGCrashManager setCrashManagerQueue:]
 -[IBGCrashManager .cxx_destruct]
 _OBJC_IVAR_$_IBGCrashManager._initializationOperation
-___block_descriptor_tmp.547
+___block_descriptor_tmp.557
 _OBJC_IVAR_$_IBGCrashManager._handlePendingCrashesOperation
-___block_descriptor_tmp.554
+___block_descriptor_tmp.564
 _OBJC_IVAR_$_IBGCrashManager._registerCrashCacheOperation
-___block_descriptor_tmp.562
+___block_descriptor_tmp.572
 _OBJC_IVAR_$_IBGCrashManager._isTrackingCrashes
-___block_descriptor_tmp.650
-___block_descriptor_tmp.697
-___block_descriptor_tmp.781
-___block_literal_global.782
+___block_descriptor_tmp.660
+___block_descriptor_tmp.707
+___block_literal_global.792
 _OBJC_IVAR_$_IBGCrashManager._crashReporter
 _OBJC_IVAR_$_IBGCrashManager._crashManagerQueue
 /Users/distiller/ios/Instabug/InstabugCrashReporting/Managers/IBGCrashManager.m
 /Users/distiller/ios/Instabug/InstabugCrashReporting/Managers/IBGCrashManager.h
 __35+[IBGCrashManager postCrashHandler]_block_invoke
 __53-[IBGCrashManager sendExceptionAsCrash:withSnapshot:]_block_invoke
-__35-[IBGCrashManager reportException:]_block_invoke.651
+__35-[IBGCrashManager reportException:]_block_invoke.661
 __35-[IBGCrashManager reportException:]_block_invoke
 postCrashAction
 __46-[IBGCrashManager registerCrashCacheOperation]_block_invoke_2
@@ -3766,8 +3767,6 @@ ___destroy_helper_block_.641
 +[Instabug clearFileAttachments]
 +[Instabug setUserData:]
 ___24+[Instabug setUserData:]_block_invoke
-___copy_helper_block_.671
-___destroy_helper_block_.672
 +[Instabug setUserStepsEnabled:]
 +[Instabug setReproStepsMode:]
 +[Instabug setNetworkLoggingEnabled:]
@@ -3913,9 +3912,7 @@ ___destroy_helper_block_.1037
 +[Instabug forceDisableInAppMessaging]
 _afterInitializationQueue._queue
 _afterInitializationQueue.onceToken
-___block_descriptor_tmp.639
 ___block_descriptor_tmp.643
-___block_descriptor_tmp.673
 ___block_descriptor_tmp.725
 ___block_descriptor_tmp.728
 ___block_descriptor_tmp.771
@@ -4061,6 +4058,9 @@ _OBJC_IVAR_$_IBGMovedIndex._newIndex
 /Users/distiller/ios/Instabug/InstabugChats/Views/Extensions/UINavigationItem+Subtitle.m
 -[IBGSplitViewController viewDidLoad]
 -[IBGSplitViewController preferredStatusBarStyle]
+-[IBGSplitViewController getVisibileViewController]
+-[IBGSplitViewController shouldAutorotate]
+-[IBGSplitViewController prefersStatusBarHidden]
 /Users/distiller/ios/Instabug/InstabugChats/View Controllers/IBGSplitViewController.m
 -[IBGStartHUDViewController init]
 -[IBGStartHUDViewController show]
