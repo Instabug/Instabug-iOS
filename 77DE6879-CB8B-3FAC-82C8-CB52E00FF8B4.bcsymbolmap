@@ -3,8 +3,8 @@ BCSymbolMap Version: 2.0
 -[IBGCrashCache unpersistAll]
 -[IBGCrashCache sendAll]
 Apple LLVM version 9.0.0 (clang-900.0.39.2)
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Caching/IBGCrashCache.m
-/Users/distiller/ios/Instabug
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Caching/IBGCrashCache.m
+/Users/khaledElMorabea/Documents/ios/Instabug
 +[IBGChatCell reuseIdentifier]
 -[IBGChatCell awakeFromNib]
 -[IBGChatCell prepareForReuse]
@@ -36,9 +36,7 @@ _OBJC_IVAR_$_IBGChatCell._bylineLabel
 _OBJC_IVAR_$_IBGChatCell._dateLabel
 _OBJC_IVAR_$_IBGChatCell._unreadMessageButton
 _OBJC_IVAR_$_IBGChatCell._seperatorView
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/IBGChatCell.m
-NSMakeRange
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/IBGChatCell.m
 -[IBGChatListVC init]
 -[IBGChatListVC viewDidLoad]
 -[IBGChatListVC viewWillAppear:]
@@ -96,8 +94,8 @@ l_OBJC_PROTOCOL_$_UITableViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_UITableViewDelegate
 l_OBJC_PROTOCOL_$_IBGChatListView
 l_OBJC_LABEL_PROTOCOL_$_IBGChatListView
-/Users/distiller/ios/Instabug/InstabugChats/View Controllers/IBGChatListVC.m
-/Users/distiller/ios/Instabug/InstabugChats/View Controllers/IBGChatListVC.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/View Controllers/IBGChatListVC.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/View Controllers/IBGChatListVC.h
 __destroy_helper_block_
 __copy_helper_block_
 __37-[IBGChatListVC scrollToChatAtIndex:]_block_invoke
@@ -106,17 +104,17 @@ __37-[IBGChatListVC scrollToChatAtIndex:]_block_invoke
 ___75-[IBGSurveyFlowController dismissIntroViewControllerWithCompletionHandler:]_block_invoke
 -[IBGSurveyFlowController showSurveyViewControllerWithSurvey:showIntroMessage:withDelegate:]
 ___92-[IBGSurveyFlowController showSurveyViewControllerWithSurvey:showIntroMessage:withDelegate:]_block_invoke
-___copy_helper_block_.382
-___destroy_helper_block_.383
-___92-[IBGSurveyFlowController showSurveyViewControllerWithSurvey:showIntroMessage:withDelegate:]_block_invoke.389
-___copy_helper_block_.390
-___destroy_helper_block_.391
+___copy_helper_block_.384
+___destroy_helper_block_.385
+___92-[IBGSurveyFlowController showSurveyViewControllerWithSurvey:showIntroMessage:withDelegate:]_block_invoke.391
+___copy_helper_block_.392
+___destroy_helper_block_.393
 -[IBGSurveyFlowController showSurveyThankYouViewController]
 -[IBGSurveyFlowController dismissSurveyWithThankYouAlert:]
-___block_descriptor_tmp.384
-___block_descriptor_tmp.392
-/Users/distiller/ios/Instabug/InstabugSurveys/Flow Controllers/IBGSurveyFlowController.m
-__92-[IBGSurveyFlowController showSurveyViewControllerWithSurvey:showIntroMessage:withDelegate:]_block_invoke.389
+___block_descriptor_tmp.386
+___block_descriptor_tmp.394
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Flow Controllers/IBGSurveyFlowController.m
+__92-[IBGSurveyFlowController showSurveyViewControllerWithSurvey:showIntroMessage:withDelegate:]_block_invoke.391
 __92-[IBGSurveyFlowController showSurveyViewControllerWithSurvey:showIntroMessage:withDelegate:]_block_invoke
 __75-[IBGSurveyFlowController dismissIntroViewControllerWithCompletionHandler:]_block_invoke
 -[IBGSurveysNavigationController initWithSurvey:]
@@ -154,15 +152,15 @@ l_OBJC_PROTOCOL_$_IBGSurveyViewControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGSurveyViewControllerDelegate
 l_OBJC_PROTOCOL_$_IBGSurveysNavigationDataSource
 l_OBJC_LABEL_PROTOCOL_$_IBGSurveysNavigationDataSource
-/Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveysNavigationController.m
-/Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveysNavigationController.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveysNavigationController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveysNavigationController.h
 +[InstabugChats sharedInstance]
 ___31+[InstabugChats sharedInstance]_block_invoke
 -[InstabugChats initializationOperations]
 ___41-[InstabugChats initializationOperations]_block_invoke
 ___41-[InstabugChats initializationOperations]_block_invoke_2
-___copy_helper_block_.542
-___destroy_helper_block_.543
+___copy_helper_block_.544
+___destroy_helper_block_.545
 +[InstabugChats setChatNotificationEnabled:]
 +[InstabugChats setOnNewMessageHandler:]
 +[InstabugChats destroy]
@@ -175,17 +173,17 @@ _sharedInstance
 _onceToken
 ___block_literal_global
 _OBJC_IVAR_$_InstabugChats._initializationOperation
-___block_descriptor_tmp.538
-___block_descriptor_tmp.544
+___block_descriptor_tmp.540
+___block_descriptor_tmp.546
 _OBJC_IVAR_$_InstabugChats._disableAutomaticShowingSurveys
 l_OBJC_PROTOCOL_$_InstabugFrameworks
 l_OBJC_LABEL_PROTOCOL_$_InstabugFrameworks
-/Users/distiller/ios/Instabug/InstabugChats/InstabugChats.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/InstabugChats.m
 __41-[InstabugChats initializationOperations]_block_invoke_2
 __41-[InstabugChats initializationOperations]_block_invoke
 __31+[InstabugChats sharedInstance]_block_invoke
 _dispatch_once
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/dispatch/once.h
 -[IBGSurveyIntroView init]
 -[IBGSurveyIntroView present]
 ___29-[IBGSurveyIntroView present]_block_invoke
@@ -221,7 +219,7 @@ _OBJC_IVAR_$_IBGSurveyIntroView._dismissButton
 _OBJC_IVAR_$_IBGSurveyIntroView._poweredByView
 _OBJC_IVAR_$_IBGSurveyIntroView._dismissCompletionBlock
 _OBJC_IVAR_$_IBGSurveyIntroView._containerTransform
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGSurveyIntroView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGSurveyIntroView.m
 __51-[IBGSurveyIntroView dismissWithCompletionHandler:]_block_invoke
 __29-[IBGSurveyIntroView present]_block_invoke
 +[IBGSurveyCondition conditionsFromConditionsDictionary:]
@@ -246,8 +244,8 @@ _OBJC_IVAR_$_IBGSurveyCondition._conditionOperator
 _OBJC_IVAR_$_IBGSurveyCondition._type
 l_OBJC_PROTOCOL_$_IBGCoding
 l_OBJC_LABEL_PROTOCOL_$_IBGCoding
-/Users/distiller/ios/Instabug/InstabugSurveys/Models/IBGSurveyCondition.m
-/Users/distiller/ios/Instabug/InstabugSurveys/Models/IBGSurveyCondition.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Models/IBGSurveyCondition.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Models/IBGSurveyCondition.h
 -[IBGPromptController initWithSnapshot:]
 -[IBGPromptController cancelPressedInPromptView:]
 -[IBGPromptController bugPressedInPromptView:]
@@ -260,9 +258,9 @@ l_OBJC_LABEL_PROTOCOL_$_IBGCoding
 _OBJC_IVAR_$_IBGPromptController._snapshot
 l_OBJC_PROTOCOL_$_IBGPromptViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGPromptViewDelegate
-/Users/distiller/ios/Instabug/InstabugReporting/Controllers/IBGPromptController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Controllers/IBGPromptController.m
 -[IBGBugCache cacheDiskPath]
-/Users/distiller/ios/Instabug/InstabugBugReporting/Caching/IBGBugCache.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Caching/IBGBugCache.m
 -[IBGVideoAttachmentView initWithFrame:]
 ___40-[IBGVideoAttachmentView initWithFrame:]_block_invoke
 -[IBGVideoAttachmentView player]
@@ -285,13 +283,13 @@ l_OBJC_PROTOCOL_$_IBGVideoPlayerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGVideoPlayerDelegate
 l_OBJC_PROTOCOL_$_IBGMessageContentHandler
 l_OBJC_LABEL_PROTOCOL_$_IBGMessageContentHandler
-/Users/distiller/ios/Instabug/InstabugChats/Views/IBGVideoAttachmentView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGVideoAttachmentView.m
 __40-[IBGVideoAttachmentView initWithFrame:]_block_invoke
 -[IBGTempCrashCache cacheDiskPath]
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Caching/IBGTempCrashCache.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Caching/IBGTempCrashCache.m
 -[IBGOutboundTextCell initWithStyle:reuseIdentifier:]
 -[IBGOutboundTextCell setContent:isSent:]
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundTextCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundTextCell.m
 +[IBGBugDataStore getInstance]
 ___30+[IBGBugDataStore getInstance]_block_invoke
 -[IBGBugDataStore reportBugWithType:email:comment:image:]
@@ -310,12 +308,12 @@ ___57-[IBGBugDataStore reportBugWithType:email:comment:image:]_block_invoke
 -[IBGBugDataStore setCategoryIcons:]
 -[IBGBugDataStore setExtraFields:]
 -[IBGBugDataStore .cxx_destruct]
-___block_descriptor_tmp.588
+___block_descriptor_tmp.590
 _OBJC_IVAR_$_IBGBugDataStore._extraFields
 _OBJC_IVAR_$_IBGBugDataStore._categoryTitles
 _OBJC_IVAR_$_IBGBugDataStore._categoryIcons
-/Users/distiller/ios/Instabug/InstabugBugReporting/Defaults/IBGBugDataStore.m
-/Users/distiller/ios/Instabug/InstabugBugReporting/Defaults/IBGBugDataStore.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGBugDataStore.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGBugDataStore.h
 __57-[IBGBugDataStore reportBugWithType:email:comment:image:]_block_invoke
 __30+[IBGBugDataStore getInstance]_block_invoke
 -[IBGMessageAttachmentRequest initWithParameters:attachmentPath:chatID:messageID:delegate:]
@@ -326,11 +324,11 @@ __30+[IBGBugDataStore getInstance]_block_invoke
 -[IBGMessageAttachmentRequest .cxx_destruct]
 _OBJC_IVAR_$_IBGMessageAttachmentRequest._isExecuting
 _OBJC_IVAR_$_IBGMessageAttachmentRequest._attachmentURL
-/Users/distiller/ios/Instabug/InstabugChats/ServerRequests/IBGMessageAttachmentRequest.m
-/Users/distiller/Library/Developer/Xcode/DerivedData/Instabug-cjevizvyfkuqudglpxzowmiwjvbi/Build/Intermediates.noindex/ArchiveIntermediates/Framework/BuildProductsPath/Release-iphoneos/InstabugCore.framework/Headers/IBGBaseRequest.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/IBGMessageAttachmentRequest.m
+/Users/khaledElMorabea/Library/Developer/Xcode/DerivedData/Instabug-cqbadbmomfjgsddklrlfomsvjpgj/Build/Intermediates.noindex/ArchiveIntermediates/Framework/BuildProductsPath/Release-iphoneos/InstabugCore.framework/Headers/IBGBaseRequest.h
 -[IBGOutboundVideoCell initWithStyle:reuseIdentifier:]
 -[IBGOutboundVideoCell setContent:isSent:]
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGOutboundVideoCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGOutboundVideoCell.m
 -[IBGChatRequest init]
 -[IBGChatRequest initWithLocalChatID:parameters:delegate:]
 -[IBGChatRequest executeNow]
@@ -365,7 +363,7 @@ l_OBJC_PROTOCOL_$_IBGServerRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGServerRequestDelegate
 l_OBJC_PROTOCOL_$_IBGBaseRequest
 l_OBJC_LABEL_PROTOCOL_$_IBGBaseRequest
-/Users/distiller/ios/Instabug/InstabugChats/ServerRequests/IBGChatRequest.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/IBGChatRequest.m
 -[IBGMCQSurveyTableViewCell initWithFrame:]
 -[IBGMCQSurveyTableViewCell prepareForReuse]
 -[IBGMCQSurveyTableViewCell updateConstraints]
@@ -380,7 +378,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGBaseRequest
 -[IBGMCQSurveyTableViewCell .cxx_destruct]
 _OBJC_IVAR_$_IBGMCQSurveyTableViewCell._containerView
 _OBJC_IVAR_$_IBGMCQSurveyTableViewCell._choiceLabel
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/Table View Cells/IBGMCQSurveyTableViewCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/Table View Cells/IBGMCQSurveyTableViewCell.m
 -[IBGSurveyProgressview initWithCount:]
 -[IBGSurveyProgressview setCurrentIndex:]
 -[IBGSurveyProgressview autoLayout]
@@ -393,8 +391,8 @@ _OBJC_IVAR_$_IBGMCQSurveyTableViewCell._choiceLabel
 _OBJC_IVAR_$_IBGSurveyProgressview._currentIndex
 _OBJC_IVAR_$_IBGSurveyProgressview._countLabel
 _OBJC_IVAR_$_IBGSurveyProgressview._total
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGSurveyProgressview.m
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGSurveyProgressview.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGSurveyProgressview.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGSurveyProgressview.h
 -[IBGMessageRequest initWithParameters:chatID:delegate:]
 -[IBGMessageRequest executeNow]
 -[IBGMessageRequest serverExecutionDone:statusCode:error:response:]
@@ -424,7 +422,7 @@ _OBJC_IVAR_$_IBGMessageRequest._dataUrl
 _OBJC_IVAR_$_IBGMessageRequest._failures
 _OBJC_IVAR_$_IBGMessageRequest._dataParameters
 _OBJC_IVAR_$_IBGMessageRequest._isSuccess
-/Users/distiller/ios/Instabug/InstabugChats/ServerRequests/IBGMessageRequest.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/IBGMessageRequest.m
 -[IBGImageAttachmentView initWithFrame:]
 -[IBGImageAttachmentView setContent:]
 -[IBGImageAttachmentView widthLayoutConstraints]
@@ -437,13 +435,13 @@ _OBJC_IVAR_$_IBGMessageRequest._isSuccess
 _OBJC_IVAR_$_IBGImageAttachmentView._widthLayoutConstraints
 _OBJC_IVAR_$_IBGImageAttachmentView._heightLayoutConstraints
 _OBJC_IVAR_$_IBGImageAttachmentView._size
-/Users/distiller/ios/Instabug/InstabugChats/Views/IBGImageAttachmentView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGImageAttachmentView.m
 -[IBGBugRequest initWithParameters:delegate:]
 -[IBGBugRequest dataUrl]
 -[IBGBugRequest setDataUrl:]
 -[IBGBugRequest .cxx_destruct]
 _OBJC_IVAR_$_IBGBugRequest._dataUrl
-/Users/distiller/ios/Instabug/InstabugBugReporting/ServerRequests/IBGBugRequest.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/ServerRequests/IBGBugRequest.m
 +[IBGCrashFeatures getInstance]
 ___31+[IBGCrashFeatures getInstance]_block_invoke
 -[IBGCrashFeatures init]
@@ -458,11 +456,11 @@ _getInstance.sharedInstance
 _OBJC_IVAR_$_IBGCrashFeatures._crashReportingFeature
 l_OBJC_PROTOCOL_$_IBGFeaturesDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGFeaturesDelegate
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Defaults/IBGCrashFeatures.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Defaults/IBGCrashFeatures.m
 __31+[IBGCrashFeatures getInstance]_block_invoke
 -[IBGOutboundVoiceNoteCell initWithStyle:reuseIdentifier:]
 -[IBGOutboundVoiceNoteCell setContent:isSent:]
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundVoiceNoteCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundVoiceNoteCell.m
 -[IBGChatInteractor init]
 -[IBGChatInteractor initWithChat:]
 -[IBGChatInteractor sendMessageWithText:]
@@ -481,8 +479,8 @@ __31+[IBGCrashFeatures getInstance]_block_invoke
 -[IBGChatInteractor fetchAttachmentForMessageAtIndex:]
 ___54-[IBGChatInteractor fetchAttachmentForMessageAtIndex:]_block_invoke
 ___54-[IBGChatInteractor fetchAttachmentForMessageAtIndex:]_block_invoke_2
-___copy_helper_block_.626
-___destroy_helper_block_.627
+___copy_helper_block_.628
+___destroy_helper_block_.629
 -[IBGChatInteractor isFirstMessageOfDayAtIndex:]
 -[IBGChatInteractor isMessageToday:]
 -[IBGChatInteractor chatCacheDidChange]
@@ -504,7 +502,7 @@ ___destroy_helper_block_.627
 -[IBGChatInteractor messagesExpectedCount]
 -[IBGChatInteractor setMessagesExpectedCount:]
 -[IBGChatInteractor .cxx_destruct]
-___block_descriptor_tmp.629
+___block_descriptor_tmp.631
 _OBJC_IVAR_$_IBGChatInteractor._presenter
 _OBJC_IVAR_$_IBGChatInteractor._observer
 _OBJC_IVAR_$_IBGChatInteractor._chat
@@ -512,8 +510,8 @@ _OBJC_IVAR_$_IBGChatInteractor._messages
 _OBJC_IVAR_$_IBGChatInteractor._messagesExpectedCount
 l_OBJC_PROTOCOL_$_IBGChatCacheObserver
 l_OBJC_LABEL_PROTOCOL_$_IBGChatCacheObserver
-/Users/distiller/ios/Instabug/InstabugChats/Interactors/IBGChatInteractor.m
-/Users/distiller/ios/Instabug/InstabugChats/Interactors/IBGChatInteractor.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Interactors/IBGChatInteractor.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Interactors/IBGChatInteractor.h
 __54-[IBGChatInteractor fetchAttachmentForMessageAtIndex:]_block_invoke_2
 __54-[IBGChatInteractor fetchAttachmentForMessageAtIndex:]_block_invoke
 -[IBGChatVC initWithShouldShowCloseButton:]
@@ -621,9 +619,11 @@ l_OBJC_PROTOCOL_$_UINavigationControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_UINavigationControllerDelegate
 l_OBJC_PROTOCOL_$_IBGChatView
 l_OBJC_LABEL_PROTOCOL_$_IBGChatView
-/Users/distiller/ios/Instabug/InstabugChats/View Controllers/IBGChatVC.m
-/Users/distiller/ios/Instabug/InstabugChats/View Controllers/IBGChatVC.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/View Controllers/IBGChatVC.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/View Controllers/IBGChatVC.h
 __57-[IBGChatVC tableView:willDisplayCell:forRowAtIndexPath:]_block_invoke
+CGRectMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[IBGBugFlowController startBugReportingFlowWithSnapshot:withFadeAnimation:]
 -[IBGBugFlowController startFeedbackSendingFlowWithSnapshot:withFadeAnimation:]
 -[IBGBugFlowController showBugViewControllerWithScreenshot:reportType:animated:controller:withFadeAnimation:]
@@ -636,13 +636,13 @@ ___62-[IBGBugFlowController dismissSDKAfterSubmittingReportOfType:]_block_invoke
 -[IBGBugFlowController startReportingFlowForReportType:withSnapshot:withFadeAnimation:]
 -[IBGBugFlowController showReportCategoriesViewControllerForReportType:withSnapshot:withFadeAnimation:]
 ___103-[IBGBugFlowController showReportCategoriesViewControllerForReportType:withSnapshot:withFadeAnimation:]_block_invoke
-___copy_helper_block_.607
-___destroy_helper_block_.608
+___copy_helper_block_.609
+___destroy_helper_block_.610
 -[IBGBugFlowController screenshotViewControllerForReportType:screenshot:delegate:rightNavigationButtonType:]
 -[IBGBugFlowController shouldShowScreenshotViewForReportType:]
-___block_descriptor_tmp.577
-___block_descriptor_tmp.609
-/Users/distiller/ios/Instabug/InstabugBugReporting/Flow Controllers/IBGBugFlowController.m
+___block_descriptor_tmp.579
+___block_descriptor_tmp.611
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Flow Controllers/IBGBugFlowController.m
 __103-[IBGBugFlowController showReportCategoriesViewControllerForReportType:withSnapshot:withFadeAnimation:]_block_invoke
 __62-[IBGBugFlowController dismissSDKAfterSubmittingReportOfType:]_block_invoke_2
 __62-[IBGBugFlowController dismissSDKAfterSubmittingReportOfType:]_block_invoke
@@ -692,15 +692,16 @@ l_OBJC_PROTOCOL_$_UITableViewDataSource
 l_OBJC_LABEL_PROTOCOL_$_UITableViewDataSource
 l_OBJC_PROTOCOL_$_UITextViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_UITextViewDelegate
-/Users/distiller/ios/Instabug/InstabugBugReporting/View Controllers/IBGExtraFieldViewController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/View Controllers/IBGExtraFieldViewController.m
 NSEqualRanges
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __49-[IBGExtraFieldViewController textSampleViewCell]_block_invoke
 __51-[IBGExtraFieldViewController submitButtonPressed:]_block_invoke
 -[IBGBugAttachmentRequestCreator logRequestWithId:parameters:delegate:]
 -[IBGBugAttachmentRequestCreator reportAttachmentRequestWithParameters:attachmentPath:reportId:localAttachment:]
 l_OBJC_PROTOCOL_$_IBGAttachmentRequestCreator
 l_OBJC_LABEL_PROTOCOL_$_IBGAttachmentRequestCreator
-/Users/distiller/ios/Instabug/InstabugBugReporting/ServerRequests/RequestCreator/IBGBugAttachmentRequestCreator.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/ServerRequests/RequestCreator/IBGBugAttachmentRequestCreator.m
 -[IBGBugResources startAlertGIF]
 -[IBGBugResources startAlertText]
 -[IBGBugResources shakeStartAlertGIF]
@@ -708,7 +709,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGAttachmentRequestCreator
 -[IBGBugResources twoFingersSwipeAlertGIF]
 -[IBGBugResources convertToString:]
 -[IBGBugResources convertToStartAlertText:]
-/Users/distiller/ios/Instabug/InstabugBugReporting/Defaults/IBGBugResources.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGBugResources.m
 -[IBGSurveysNavigationHeader initWithCount:]
 -[IBGSurveysNavigationHeader autoLayout]
 -[IBGSurveysNavigationHeader setProgressViewHidden:]
@@ -728,8 +729,8 @@ _OBJC_IVAR_$_IBGSurveysNavigationHeader._leftButton
 _OBJC_IVAR_$_IBGSurveysNavigationHeader._rightButton
 _OBJC_IVAR_$_IBGSurveysNavigationHeader._headerSepratorView
 _OBJC_IVAR_$_IBGSurveysNavigationHeader._total
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGSurveysNavigationHeader.m
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGSurveysNavigationHeader.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGSurveysNavigationHeader.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGSurveysNavigationHeader.h
 -[IBGSurveyTextViewController initWithQuestion:delegate:]
 -[IBGSurveyTextViewController viewDidLoad]
 -[IBGSurveyTextViewController viewDidAppear:]
@@ -754,7 +755,7 @@ _OBJC_IVAR_$_IBGSurveyTextViewController._question
 _OBJC_IVAR_$_IBGSurveyTextViewController._answer
 l_OBJC_PROTOCOL_$_IBGSurveyTypeViewControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGSurveyTypeViewControllerDelegate
-/Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyTextViewController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyTextViewController.m
 -[IBGSurveyCache init]
 -[IBGSurveyCache cacheDiskPath]
 -[IBGSurveyCache syncSurveys:]
@@ -770,7 +771,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGSurveyTypeViewControllerDelegate
 -[IBGSurveyCache .cxx_destruct]
 _OBJC_IVAR_$_IBGSurveyCache._cachedModels
 _OBJC_IVAR_$_IBGSurveyCache._lock
-/Users/distiller/ios/Instabug/InstabugSurveys/Caching/IBGSurveyCache.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Caching/IBGSurveyCache.m
 -[IBGMessageActions initWithMessage:]
 -[IBGMessageActions actions]
 -[IBGMessageActions setActions:]
@@ -779,11 +780,11 @@ _OBJC_IVAR_$_IBGSurveyCache._lock
 -[IBGMessageActions .cxx_destruct]
 _OBJC_IVAR_$_IBGMessageActions._actions
 _OBJC_IVAR_$_IBGMessageActions._body
-/Users/distiller/ios/Instabug/InstabugChats/Models/IBGMessageActions.m
-/Users/distiller/ios/Instabug/InstabugChats/Models/IBGMessageActions.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGMessageActions.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGMessageActions.h
 -[IBGInboundTextCell initWithStyle:reuseIdentifier:]
 -[IBGInboundTextCell setContent:isSent:]
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundTextCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundTextCell.m
 -[IBGVoiceNoteAttachmentView initWithFrame:]
 ___44-[IBGVoiceNoteAttachmentView initWithFrame:]_block_invoke
 -[IBGVoiceNoteAttachmentView dealloc]
@@ -809,7 +810,7 @@ _setContent:.placeholder
 _OBJC_IVAR_$_IBGVoiceNoteAttachmentView._playerButton
 _OBJC_IVAR_$_IBGVoiceNoteAttachmentView._voicePlayer
 _OBJC_IVAR_$_IBGVoiceNoteAttachmentView._recording
-/Users/distiller/ios/Instabug/InstabugChats/Views/IBGVoiceNoteAttachmentView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGVoiceNoteAttachmentView.m
 __43-[IBGVoiceNoteAttachmentView togglePlaying]_block_invoke
 __44-[IBGVoiceNoteAttachmentView initWithFrame:]_block_invoke
 -[IBGBugInputView awakeFromNib]
@@ -868,8 +869,8 @@ _OBJC_IVAR_$_IBGBugInputView._emailContainerViewHeightConstraint
 _OBJC_IVAR_$_IBGBugInputView._textViewsCursorToThemeWithPrimaryColor
 l_OBJC_PROTOCOL_$_UITextFieldDelegate
 l_OBJC_LABEL_PROTOCOL_$_UITextFieldDelegate
-/Users/distiller/ios/Instabug/InstabugBugReporting/Views/IBGBugInputView.m
-/Users/distiller/ios/Instabug/InstabugBugReporting/Views/IBGBugInputView.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Views/IBGBugInputView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Views/IBGBugInputView.h
 __37-[IBGBugInputView showEmailKeyboard:]_block_invoke
 -[IBGBugStrings init]
 -[IBGBugStrings setValue:forStringWithKey:]
@@ -910,7 +911,7 @@ ___block_descriptor_tmp.83
 _OBJC_IVAR_$_IBGBugStrings._localizedStrings
 _OBJC_IVAR_$_IBGBugStrings._localizationBundle
 _OBJC_IVAR_$_IBGBugStrings._localeAlignmentDirection
-/Users/distiller/ios/Instabug/InstabugBugReporting/Defaults/IBGBugStrings.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGBugStrings.m
 __45-[IBGBugStrings editableValueWithDefaultKey:]_block_invoke
 __33-[IBGBugStrings setDefaultValues]_block_invoke.57
 __33-[IBGBugStrings setDefaultValues]_block_invoke.53
@@ -986,9 +987,9 @@ ___35-[IBGChat prepareAttachmentAndSave]_block_invoke
 -[IBGChat setAttachmentsObjects:]
 -[IBGChat .cxx_destruct]
 _OBJC_IVAR_$_IBGChat._date
-___block_descriptor_tmp.654
-___block_literal_global.655
-___block_descriptor_tmp.751
+___block_descriptor_tmp.656
+___block_literal_global.657
+___block_descriptor_tmp.753
 _OBJC_IVAR_$_IBGChat._identifier
 _OBJC_IVAR_$_IBGChat._isSynced
 _OBJC_IVAR_$_IBGChat._isSent
@@ -1002,9 +1003,9 @@ l_OBJC_PROTOCOL_$_IBGLocalAttachmentRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGLocalAttachmentRequestDelegate
 l_OBJC_PROTOCOL_$_IBGCachable
 l_OBJC_LABEL_PROTOCOL_$_IBGCachable
-/Users/distiller/ios/Instabug/InstabugChats/Models/IBGChat.m
-/Users/distiller/ios/Instabug/InstabugChats/Models/IBGChat.h
-/Users/distiller/Library/Developer/Xcode/DerivedData/Instabug-cjevizvyfkuqudglpxzowmiwjvbi/Build/Intermediates.noindex/ArchiveIntermediates/Framework/BuildProductsPath/Release-iphoneos/InstabugCore.framework/Headers/IBGCachable.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGChat.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGChat.h
+/Users/khaledElMorabea/Library/Developer/Xcode/DerivedData/Instabug-cqbadbmomfjgsddklrlfomsvjpgj/Build/Intermediates.noindex/ArchiveIntermediates/Framework/BuildProductsPath/Release-iphoneos/InstabugCore.framework/Headers/IBGCachable.h
 __35-[IBGChat prepareAttachmentAndSave]_block_invoke
 __38-[IBGChat sortedMessagesWithMessages:]_block_invoke
 __25-[IBGChat addNewMessage:]_block_invoke
@@ -1032,7 +1033,7 @@ ___34+[IBGReadQueueManager getInstance]_block_invoke
 _OBJC_IVAR_$_IBGReadQueueManager._readMessagesReceipts
 _OBJC_IVAR_$_IBGReadQueueManager._readQueue
 _OBJC_IVAR_$_IBGReadQueueManager._lock
-/Users/distiller/ios/Instabug/InstabugChats/Managers/IBGReadQueueManager.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Managers/IBGReadQueueManager.m
 __34+[IBGReadQueueManager getInstance]_block_invoke
 -[IBGOutboundCell initWithStyle:reuseIdentifier:]
 -[IBGOutboundCell setContent:isSent:]
@@ -1045,15 +1046,15 @@ __34+[IBGReadQueueManager getInstance]_block_invoke
 _OBJC_IVAR_$_IBGOutboundCell._avatarImageView
 _IBGLightOutBoundChatSwooch
 _IBGDarkOutBoundChatSwooch
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundCell.m
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundCell.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundCell.h
 +[IBGSyncManager getInstance]
 ___29+[IBGSyncManager getInstance]_block_invoke
 -[IBGSyncManager initializationOperation]
 ___41-[IBGSyncManager initializationOperation]_block_invoke
 ___41-[IBGSyncManager initializationOperation]_block_invoke_2
-___copy_helper_block_.374
-___destroy_helper_block_.375
+___copy_helper_block_.376
+___destroy_helper_block_.377
 -[IBGSyncManager dealloc]
 +[IBGSyncManager NSStringFromLastChatAtSelector]
 -[IBGSyncManager stopSync]
@@ -1066,8 +1067,8 @@ ___destroy_helper_block_.375
 -[IBGSyncManager handleSyncResponseWithMessages:statusCode:]
 -[IBGSyncManager scheduleSyncAfterSeconds:]
 ___43-[IBGSyncManager scheduleSyncAfterSeconds:]_block_invoke
-___copy_helper_block_.467
-___destroy_helper_block_.468
+___copy_helper_block_.469
+___destroy_helper_block_.470
 -[IBGSyncManager cancelScheduledSyncRequests]
 -[IBGSyncManager shouldSync]
 -[IBGSyncManager observeValueForKeyPath:ofObject:change:context:]
@@ -1085,20 +1086,20 @@ ___destroy_helper_block_.468
 -[IBGSyncManager setSyncRequest:]
 -[IBGSyncManager .cxx_destruct]
 _OBJC_IVAR_$_IBGSyncManager._initializationOperation
-___block_descriptor_tmp.371
-___block_descriptor_tmp.376
+___block_descriptor_tmp.373
+___block_descriptor_tmp.378
 _NSStringFromLastChatAtSelector.selectorName
 _OBJC_IVAR_$_IBGSyncManager._lastSecondsTillNextSync
-___block_descriptor_tmp.469
+___block_descriptor_tmp.471
 _OBJC_IVAR_$_IBGSyncManager._isInForeground
 _OBJC_IVAR_$_IBGSyncManager._lastReadMessagesReceipts
 _OBJC_IVAR_$_IBGSyncManager._syncRequest
 l_OBJC_PROTOCOL_$_IBGSyncRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGSyncRequestDelegate
-/Users/distiller/ios/Instabug/InstabugChats/Managers/IBGSyncManager.m
-/Users/distiller/ios/Instabug/InstabugChats/Managers/IBGSyncManager.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Managers/IBGSyncManager.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Managers/IBGSyncManager.h
 __inline_isnand
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/math.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/math.h
 __43-[IBGSyncManager scheduleSyncAfterSeconds:]_block_invoke
 __41-[IBGSyncManager initializationOperation]_block_invoke_2
 __41-[IBGSyncManager initializationOperation]_block_invoke
@@ -1113,7 +1114,7 @@ ___29+[IBGBugFeatures getInstance]_block_invoke
 -[IBGBugFeatures setViewHierarchyFeature:]
 -[IBGBugFeatures .cxx_destruct]
 _OBJC_IVAR_$_IBGBugFeatures._viewHierarchyFeature
-/Users/distiller/ios/Instabug/InstabugBugReporting/Defaults/IBGBugFeatures.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGBugFeatures.m
 __29+[IBGBugFeatures getInstance]_block_invoke
 +[IBGSurveysDefaults sharedInstance]
 ___36+[IBGSurveysDefaults sharedInstance]_block_invoke
@@ -1132,8 +1133,8 @@ _sharedInstance.surveysDefaultsInstance
 _OBJC_IVAR_$_IBGSurveysDefaults._disableAutomaticShowingSurveys
 _OBJC_IVAR_$_IBGSurveysDefaults._surveysForceDisabled
 _OBJC_IVAR_$_IBGSurveysDefaults._colors
-/Users/distiller/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysDefaults.m
-/Users/distiller/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysDefaults.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysDefaults.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysDefaults.h
 __36+[IBGSurveysDefaults sharedInstance]_block_invoke
 -[IBGInvocationRightEdgePan initWithDelegate:]
 -[IBGInvocationRightEdgePan install]
@@ -1163,8 +1164,8 @@ _OBJC_IVAR_$_IBGInvocationRightEdgePan._gestureRecognizers
 _OBJC_IVAR_$_IBGInvocationRightEdgePan._delay
 l_OBJC_PROTOCOL_$_IBGInvocationBase
 l_OBJC_LABEL_PROTOCOL_$_IBGInvocationBase
-/Users/distiller/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationRightEdgePan.m
-/Users/distiller/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationBase.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationRightEdgePan.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationBase.h
 __36-[IBGInvocationRightEdgePan install]_block_invoke
 -[IBGMessageActionView initWithMaximumWidth:]
 -[IBGMessageActionView initActions]
@@ -1195,7 +1196,7 @@ _OBJC_IVAR_$_IBGMessageActionView._labels
 _OBJC_IVAR_$_IBGMessageActionView._textView
 _OBJC_IVAR_$_IBGMessageActionView._maximumWidth
 _OBJC_IVAR_$_IBGMessageActionView._actions
-/Users/distiller/ios/Instabug/InstabugChats/Views/IBGMessageActionView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGMessageActionView.m
 -[IBGSurveyView init]
 -[IBGSurveyView setupLandscapeConstraints]
 -[IBGSurveyView setupPortraitConstraints]
@@ -1223,22 +1224,22 @@ _OBJC_IVAR_$_IBGSurveyView._surveyAnswerView
 _OBJC_IVAR_$_IBGSurveyView._surveyTableViewHeightConstraint
 l_OBJC_PROTOCOL_$_UITraitEnvironment
 l_OBJC_LABEL_PROTOCOL_$_UITraitEnvironment
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGSurveyView.m
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGSurveyView.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGSurveyView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGSurveyView.h
 -[IBGInvocationFlowController showInitialViewController]
 ___56-[IBGInvocationFlowController showInitialViewController]_block_invoke
 -[IBGInvocationFlowController showViewControllerForInvocationMode:]
 ___67-[IBGInvocationFlowController showViewControllerForInvocationMode:]_block_invoke
-___copy_helper_block_.573
-___destroy_helper_block_.574
+___copy_helper_block_.575
+___destroy_helper_block_.576
 -[IBGInvocationFlowController isChatRelatedWhileInAppMessagingDisabled:]
 -[IBGInvocationFlowController startBugReportingFlow]
 -[IBGInvocationFlowController startFeedbackReportingFlow]
 -[IBGInvocationFlowController showNewChatViewController]
 -[IBGInvocationFlowController showChatsViewController]
 -[IBGInvocationFlowController showPromptViewController]
-___block_descriptor_tmp.575
-/Users/distiller/ios/Instabug/InstabugReporting/Flow Controllers/IBGInvocationFlowController.m
+___block_descriptor_tmp.577
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Flow Controllers/IBGInvocationFlowController.m
 __67-[IBGInvocationFlowController showViewControllerForInvocationMode:]_block_invoke
 __56-[IBGInvocationFlowController showInitialViewController]_block_invoke
 -[IBGInvocationFloatingButton initWithDelegate:]
@@ -1263,7 +1264,7 @@ _OBJC_IVAR_$_IBGInvocationFloatingButton._delegate
 _OBJC_IVAR_$_IBGInvocationFloatingButton._floatingButton
 l_OBJC_PROTOCOL_$_IBGFloatingButtonWindowDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGFloatingButtonWindowDelegate
-/Users/distiller/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationFloatingButton.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationFloatingButton.m
 __38-[IBGInvocationFloatingButton install]_block_invoke
 -[IBGInboundCell initWithStyle:reuseIdentifier:]
 -[IBGInboundCell setContent:isSent:]
@@ -1274,7 +1275,7 @@ _IBGLightSentInBoundChatSwooch
 _IBGLightNotSentInBoundChatSwooch
 _IBGDarkSentInBoundChatSwooch
 _IBGDarkNotSentInBoundChatSwooch
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundCell.m
 -[IBGMessage init]
 -[IBGMessage initWithdirection:chat:messageId:date:]
 -[IBGMessage initWithMessageBody:direction:chat:messageId:date:]
@@ -1302,8 +1303,8 @@ _IBGDarkNotSentInBoundChatSwooch
 ___28-[IBGMessage persistAndSend]_block_invoke
 -[IBGMessage fetchAttachmentsWithCompletionHandler:]
 ___52-[IBGMessage fetchAttachmentsWithCompletionHandler:]_block_invoke
-___copy_helper_block_.751
-___destroy_helper_block_.752
+___copy_helper_block_.753
+___destroy_helper_block_.754
 -[IBGMessage fetchedAsset:ofURL:isSuccess:]
 -[IBGMessage messageRequestDone:withMessageID:isSuccess:error:]
 -[IBGMessage chatID]
@@ -1361,7 +1362,7 @@ ___destroy_helper_block_.752
 -[IBGMessage setAttachmentsArray:]
 -[IBGMessage .cxx_destruct]
 _dateFormatter.formatter
-___block_descriptor_tmp.754
+___block_descriptor_tmp.756
 _OBJC_IVAR_$_IBGMessage._chatID
 _OBJC_IVAR_$_IBGMessage._attachmentsArray
 _OBJC_IVAR_$_IBGMessage._identifier
@@ -1387,20 +1388,20 @@ l_OBJC_PROTOCOL_$_IBGMessageRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGMessageRequestDelegate
 l_OBJC_PROTOCOL_$_IBGDiffable
 l_OBJC_LABEL_PROTOCOL_$_IBGDiffable
-/Users/distiller/ios/Instabug/InstabugChats/Models/IBGMessage.m
-/Users/distiller/ios/Instabug/InstabugChats/Models/IBGMessage.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGMessage.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGMessage.h
 __52-[IBGMessage fetchAttachmentsWithCompletionHandler:]_block_invoke
 __28-[IBGMessage persistAndSend]_block_invoke
 +[InstabugSurveys(InstabugSurveysPrivate) setForceDisabled:]
 +[InstabugSurveys(InstabugSurveysPrivate) destoryInstabugSurveys]
-/Users/distiller/ios/Instabug/InstabugSurveys/InstabugSurveys+InstabugSurveysPrivate.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/InstabugSurveys+InstabugSurveysPrivate.m
 -[IBGMessageAttachmentRequestCreator reportAttachmentRequestWithParameters:attachmentPath:reportId:localAttachment:]
 -[IBGMessageAttachmentRequestCreator chatId]
 -[IBGMessageAttachmentRequestCreator setChatId:]
 -[IBGMessageAttachmentRequestCreator .cxx_destruct]
 _OBJC_IVAR_$_IBGMessageAttachmentRequestCreator._chatId
-/Users/distiller/ios/Instabug/InstabugChats/ServerRequests/Request Creator/IBGMessageAttachmentRequestCreator.m
-/Users/distiller/ios/Instabug/InstabugChats/ServerRequests/Request Creator/IBGMessageAttachmentRequestCreator.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/Request Creator/IBGMessageAttachmentRequestCreator.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/Request Creator/IBGMessageAttachmentRequestCreator.h
 -[IBGSurveyRatingView initWithDelegate:]
 -[IBGSurveyRatingView updateConstraints]
 -[IBGSurveyRatingView traitCollectionDidChange:]
@@ -1438,16 +1439,16 @@ _OBJC_IVAR_$_IBGSurveyRatingView._mostLikeylyLabel
 _OBJC_IVAR_$_IBGSurveyRatingView._rating
 _OBJC_IVAR_$_IBGSurveyRatingView._delegate
 _OBJC_IVAR_$_IBGSurveyRatingView._selectedButton
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGSurveyRatingView.m
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGSurveyRatingView.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGSurveyRatingView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGSurveyRatingView.h
 +[InstabugSurveys sharedInstance]
 ___33+[InstabugSurveys sharedInstance]_block_invoke
 +[InstabugSurveys setSurveysEnabled:]
 -[InstabugSurveys initializationOperations]
 ___43-[InstabugSurveys initializationOperations]_block_invoke
 ___43-[InstabugSurveys initializationOperations]_block_invoke_2
-___copy_helper_block_.575
-___destroy_helper_block_.576
+___copy_helper_block_.577
+___destroy_helper_block_.578
 -[InstabugSurveys setAutoShowingSurveysEnabled:]
 -[InstabugSurveys setSurveysEnabled:]
 -[InstabugSurveys hasAvailableSurveys]
@@ -1456,29 +1457,29 @@ ___destroy_helper_block_.576
 -[InstabugSurveys updateHasPendingSurveys]
 -[InstabugSurveys pendingSurveyToShowWithCompletionHandler:]
 ___60-[InstabugSurveys pendingSurveyToShowWithCompletionHandler:]_block_invoke
-___copy_helper_block_.636
-___destroy_helper_block_.637
+___copy_helper_block_.638
+___destroy_helper_block_.639
 -[InstabugSurveys loadSurveys]
 -[InstabugSurveys surveysFeatureEnabled]
 -[InstabugSurveys showPendingSurveys]
 ___37-[InstabugSurveys showPendingSurveys]_block_invoke
-___copy_helper_block_.671
-___destroy_helper_block_.672
+___copy_helper_block_.673
+___destroy_helper_block_.674
 -[InstabugSurveys fetchSurveys]
 -[InstabugSurveys showSurveyIfAvailable]
 ___40-[InstabugSurveys showSurveyIfAvailable]_block_invoke
 ___40-[InstabugSurveys showSurveyIfAvailable]_block_invoke_2
-___copy_helper_block_.697
-___destroy_helper_block_.698
-___copy_helper_block_.701
-___destroy_helper_block_.702
+___copy_helper_block_.699
+___destroy_helper_block_.700
+___copy_helper_block_.703
+___destroy_helper_block_.704
 -[InstabugSurveys showSurveyWithToken:]
 -[InstabugSurveys hasRespondedToSurveyWithToken:]
 -[InstabugSurveys matchingValueWithPrimitiveTypes:condition:]
 -[InstabugSurveys presentSurvey:showIntroMessage:]
 ___50-[InstabugSurveys presentSurvey:showIntroMessage:]_block_invoke
-___copy_helper_block_.735
-___destroy_helper_block_.736
+___copy_helper_block_.737
+___destroy_helper_block_.738
 -[InstabugSurveys shouldShowSurvey:]
 -[InstabugSurveys surveysRequestDone:isSucess:error:withSurveys:]
 -[InstabugSurveys surveyDismissedWithType:]
@@ -1521,12 +1522,12 @@ ___destroy_helper_block_.736
 -[InstabugSurveys .cxx_destruct]
 _InstabugSurveysInstance
 _OBJC_IVAR_$_InstabugSurveys._initializationOperation
-___block_descriptor_tmp.569
-___block_descriptor_tmp.639
-___block_descriptor_tmp.673
-___block_descriptor_tmp.700
-___block_descriptor_tmp.703
-___block_descriptor_tmp.737
+___block_descriptor_tmp.571
+___block_descriptor_tmp.641
+___block_descriptor_tmp.675
+___block_descriptor_tmp.702
+___block_descriptor_tmp.705
+___block_descriptor_tmp.739
 _OBJC_IVAR_$_InstabugSurveys._cachedSurveys
 _OBJC_IVAR_$_InstabugSurveys._currentConditions
 _OBJC_IVAR_$_InstabugSurveys._isSurveyShowInCurrentSession
@@ -1539,7 +1540,7 @@ l_OBJC_PROTOCOL_$_IBGSurveysRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGSurveysRequestDelegate
 l_OBJC_PROTOCOL_$_IBGSnapshotManagerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGSnapshotManagerDelegate
-/Users/distiller/ios/Instabug/InstabugSurveys/InstabugSurveys.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/InstabugSurveys.m
 __50-[InstabugSurveys presentSurvey:showIntroMessage:]_block_invoke
 __40-[InstabugSurveys showSurveyIfAvailable]_block_invoke_2
 __40-[InstabugSurveys showSurveyIfAvailable]_block_invoke
@@ -1555,7 +1556,7 @@ __33+[InstabugSurveys sharedInstance]_block_invoke
 -[IBGMessageDateHeader setDateLabel:]
 -[IBGMessageDateHeader .cxx_destruct]
 _OBJC_IVAR_$_IBGMessageDateHeader._dateLabel
-/Users/distiller/ios/Instabug/InstabugChats/Views/IBGMessageDateHeader.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGMessageDateHeader.m
 -[IBGSendingBugController initWithSnapshot:email:comment:reportType:attachments:]
 -[IBGSendingBugController interruptViewHierarchy]
 -[IBGSendingBugController reportType]
@@ -1564,31 +1565,31 @@ _OBJC_IVAR_$_IBGMessageDateHeader._dateLabel
 ___69-[IBGSendingBugController captureViewHierarchyWithCompletionHandler:]_block_invoke
 -[IBGSendingBugController captureScreenshotFrom:withCompletionHandler:]
 ___71-[IBGSendingBugController captureScreenshotFrom:withCompletionHandler:]_block_invoke
-___copy_helper_block_.611
-___destroy_helper_block_.612
+___copy_helper_block_.613
+___destroy_helper_block_.614
 -[IBGSendingBugController createBug]
 -[IBGSendingBugController sendBug]
 ___34-[IBGSendingBugController sendBug]_block_invoke
-___copy_helper_block_.643
-___destroy_helper_block_.644
-___34-[IBGSendingBugController sendBug]_block_invoke.648
+___copy_helper_block_.645
+___destroy_helper_block_.646
+___34-[IBGSendingBugController sendBug]_block_invoke.650
 ___34-[IBGSendingBugController sendBug]_block_invoke_2
 ___34-[IBGSendingBugController sendBug]_block_invoke_3
-___copy_helper_block_.655
-___destroy_helper_block_.656
-___copy_helper_block_.661
-___destroy_helper_block_.662
-___copy_helper_block_.666
-___destroy_helper_block_.667
-___34-[IBGSendingBugController sendBug]_block_invoke.669
-___34-[IBGSendingBugController sendBug]_block_invoke_2.670
-___copy_helper_block_.674
-___destroy_helper_block_.675
+___copy_helper_block_.657
+___destroy_helper_block_.658
+___copy_helper_block_.663
+___destroy_helper_block_.664
+___copy_helper_block_.668
+___destroy_helper_block_.669
+___34-[IBGSendingBugController sendBug]_block_invoke.671
+___34-[IBGSendingBugController sendBug]_block_invoke_2.672
+___copy_helper_block_.676
+___destroy_helper_block_.677
 -[IBGSendingBugController attachVisualUserStepsWithDateString:]
 -[IBGSendingBugController prepareAndSendBug:]
 ___45-[IBGSendingBugController prepareAndSendBug:]_block_invoke
-___copy_helper_block_.739
-___destroy_helper_block_.740
+___copy_helper_block_.741
+___destroy_helper_block_.742
 -[IBGSendingBugController showActivityIndicator]
 -[IBGSendingBugController stopActivityIndicator]
 -[IBGSendingBugController snapshotHeadNode]
@@ -1608,13 +1609,13 @@ ___destroy_helper_block_.740
 -[IBGSendingBugController setAttachments:]
 -[IBGSendingBugController .cxx_destruct]
 _OBJC_IVAR_$_IBGSendingBugController._reportType
-___block_descriptor_tmp.614
-___block_descriptor_tmp.645
-___block_descriptor_tmp.658
-___block_descriptor_tmp.663
-___block_descriptor_tmp.668
-___block_descriptor_tmp.676
-___block_descriptor_tmp.741
+___block_descriptor_tmp.616
+___block_descriptor_tmp.647
+___block_descriptor_tmp.660
+___block_descriptor_tmp.665
+___block_descriptor_tmp.670
+___block_descriptor_tmp.678
+___block_descriptor_tmp.743
 _OBJC_IVAR_$_IBGSendingBugController._snapshotHeadNode
 _OBJC_IVAR_$_IBGSendingBugController._shouldInterruptViewHierarchy
 _OBJC_IVAR_$_IBGSendingBugController._screenshotFilePaths
@@ -1622,13 +1623,13 @@ _OBJC_IVAR_$_IBGSendingBugController._snapshot
 _OBJC_IVAR_$_IBGSendingBugController._email
 _OBJC_IVAR_$_IBGSendingBugController._comment
 _OBJC_IVAR_$_IBGSendingBugController._attachments
-/Users/distiller/ios/Instabug/InstabugBugReporting/Controllers/IBGSendingBugController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Controllers/IBGSendingBugController.m
 __45-[IBGSendingBugController prepareAndSendBug:]_block_invoke
-__34-[IBGSendingBugController sendBug]_block_invoke_2.670
-__34-[IBGSendingBugController sendBug]_block_invoke.669
+__34-[IBGSendingBugController sendBug]_block_invoke_2.672
+__34-[IBGSendingBugController sendBug]_block_invoke.671
 __34-[IBGSendingBugController sendBug]_block_invoke_3
 __34-[IBGSendingBugController sendBug]_block_invoke_2
-__34-[IBGSendingBugController sendBug]_block_invoke.648
+__34-[IBGSendingBugController sendBug]_block_invoke.650
 __34-[IBGSendingBugController sendBug]_block_invoke
 __71-[IBGSendingBugController captureScreenshotFrom:withCompletionHandler:]_block_invoke
 __69-[IBGSendingBugController captureViewHierarchyWithCompletionHandler:]_block_invoke
@@ -1677,8 +1678,8 @@ _OBJC_IVAR_$_IBGBugDefaults._showPostSendingDialog
 _OBJC_IVAR_$_IBGBugDefaults._enableAttachmentExtraScreenShot
 _OBJC_IVAR_$_IBGBugDefaults._enableAttachmentVoiceNote
 _OBJC_IVAR_$_IBGBugDefaults._enableAttachmentScreenRecording
-/Users/distiller/ios/Instabug/InstabugBugReporting/Defaults/IBGBugDefaults.m
-/Users/distiller/ios/Instabug/InstabugBugReporting/Defaults/IBGBugDefaults.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGBugDefaults.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGBugDefaults.h
 __22-[IBGBugDefaults init]_block_invoke
 __29+[IBGBugDefaults getInstance]_block_invoke
 +[IBGNotificationManager getInstance]
@@ -1686,21 +1687,21 @@ ___37+[IBGNotificationManager getInstance]_block_invoke
 -[IBGNotificationManager initializationOperation]
 ___49-[IBGNotificationManager initializationOperation]_block_invoke
 ___49-[IBGNotificationManager initializationOperation]_block_invoke_2
-___copy_helper_block_.534
-___destroy_helper_block_.535
+___copy_helper_block_.536
+___destroy_helper_block_.537
 -[IBGNotificationManager registerNotifications]
 -[IBGNotificationManager alertWindowController]
 -[IBGNotificationManager dismissNotificationViewAnimated:]
 -[IBGNotificationManager showAlertWithMessages:]
 ___48-[IBGNotificationManager showAlertWithMessages:]_block_invoke
-___copy_helper_block_.589
-___destroy_helper_block_.590
+___copy_helper_block_.591
+___destroy_helper_block_.592
 -[IBGNotificationManager notifiableMessagesFromMessages:]
 -[IBGNotificationManager didAddNewMessages:]
 -[IBGNotificationManager notificationWindowTappedWithChat:]
 ___59-[IBGNotificationManager notificationWindowTappedWithChat:]_block_invoke
-___copy_helper_block_.623
-___destroy_helper_block_.624
+___copy_helper_block_.625
+___destroy_helper_block_.626
 -[IBGNotificationManager notificationControllerWindowWillDealloc]
 -[IBGNotificationManager dealloc]
 +[IBGNotificationManager destroy]
@@ -1708,15 +1709,15 @@ ___destroy_helper_block_.624
 -[IBGNotificationManager setAlertWindowController:]
 -[IBGNotificationManager .cxx_destruct]
 _OBJC_IVAR_$_IBGNotificationManager._initializationOperation
-___block_descriptor_tmp.531
-___block_descriptor_tmp.536
+___block_descriptor_tmp.533
+___block_descriptor_tmp.538
 _OBJC_IVAR_$_IBGNotificationManager._alertWindowController
-___block_descriptor_tmp.591
-___block_descriptor_tmp.625
+___block_descriptor_tmp.593
+___block_descriptor_tmp.627
 l_OBJC_PROTOCOL_$_IBGUnnotifiedMessagesHUDControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGUnnotifiedMessagesHUDControllerDelegate
-/Users/distiller/ios/Instabug/InstabugReporting/IBGNotificationManager.m
-/Users/distiller/ios/Instabug/InstabugReporting/IBGNotificationManager.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/IBGNotificationManager.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/IBGNotificationManager.h
 __59-[IBGNotificationManager notificationWindowTappedWithChat:]_block_invoke
 __48-[IBGNotificationManager showAlertWithMessages:]_block_invoke
 __49-[IBGNotificationManager initializationOperation]_block_invoke_2
@@ -1733,7 +1734,7 @@ ___36+[IBGSurveysFeatures sharedInstance]_block_invoke
 -[IBGSurveysFeatures .cxx_destruct]
 _sharedInstance.surveysFeaturesInstance
 _OBJC_IVAR_$_IBGSurveysFeatures._surveysFeature
-/Users/distiller/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysFeatures.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysFeatures.m
 __36+[IBGSurveysFeatures sharedInstance]_block_invoke
 +[InstabugCrashReporting sharedInstance]
 ___40+[InstabugCrashReporting sharedInstance]_block_invoke
@@ -1745,7 +1746,7 @@ ___40+[InstabugCrashReporting sharedInstance]_block_invoke
 -[InstabugCrashReporting setInitializationOperations:]
 -[InstabugCrashReporting .cxx_destruct]
 _OBJC_IVAR_$_InstabugCrashReporting._initializationOperations
-/Users/distiller/ios/Instabug/InstabugCrashReporting/InstabugCrashReporting.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/InstabugCrashReporting.m
 __40+[InstabugCrashReporting sharedInstance]_block_invoke
 -[IBGUnnotifiedMessagesHUDController showWithMessages:]
 ___55-[IBGUnnotifiedMessagesHUDController showWithMessages:]_block_invoke
@@ -1771,11 +1772,11 @@ _OBJC_IVAR_$_IBGUnnotifiedMessagesHUDController._notificationWindow
 _OBJC_IVAR_$_IBGUnnotifiedMessagesHUDController._notificationChat
 l_OBJC_PROTOCOL_$_IBGUnnotifiedMessagesAlertWindowDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGUnnotifiedMessagesAlertWindowDelegate
-/Users/distiller/ios/Instabug/InstabugChats/Controllers/IBGUnnotifiedMessagesHUDController.m
-/Users/distiller/ios/Instabug/InstabugChats/Controllers/IBGUnnotifiedMessagesHUDController.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Controllers/IBGUnnotifiedMessagesHUDController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Controllers/IBGUnnotifiedMessagesHUDController.h
 __55-[IBGUnnotifiedMessagesHUDController showWithMessages:]_block_invoke
 -[NSMutableArray(IBGMove) moveObjectFromIndex:toIndex:]
-/Users/distiller/ios/Instabug/InstabugChats/Helpers/NSMutableArray+IBGMove.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Helpers/NSMutableArray+IBGMove.m
 -[IBGChatFlowController startChatFlowWithFadeAnimation:]
 -[IBGChatFlowController showChatViewControllerWithFadeAnimation:]
 -[IBGChatFlowController showChatsViewControllerForNotification]
@@ -1785,7 +1786,7 @@ __55-[IBGUnnotifiedMessagesHUDController showWithMessages:]_block_invoke
 -[IBGChatFlowController showChatsWithChat:isNotification:showChats:isFadeAnimation:]
 -[IBGChatFlowController chatsCount]
 -[IBGChatFlowController lastChat]
-/Users/distiller/ios/Instabug/InstabugChats/Flow Controllers/IBGChatFlowController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Flow Controllers/IBGChatFlowController.m
 -[IBGInvocationShake initWithDelegate:]
 -[IBGInvocationShake install]
 ___29-[IBGInvocationShake install]_block_invoke
@@ -1820,7 +1821,7 @@ _OBJC_IVAR_$_IBGInvocationShake._lastAcceleration
 _OBJC_IVAR_$_IBGInvocationShake._firstAcceleration
 _OBJC_IVAR_$_IBGInvocationShake._excited
 _OBJC_IVAR_$_IBGInvocationShake._applicationMotionEnded
-/Users/distiller/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationShake.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationShake.m
 __36-[IBGInvocationShake didAccelerate:]_block_invoke
 __29-[IBGInvocationShake install]_block_invoke
 -[IBGCrash initWithSnapshot:]
@@ -1878,15 +1879,15 @@ _OBJC_IVAR_$_IBGCrash._attachmentsObjects
 _OBJC_IVAR_$_IBGCrash._isSent
 l_OBJC_PROTOCOL_$_IBGReportRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGReportRequestDelegate
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Models/IBGCrash.m
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Models/IBGCrash.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Models/IBGCrash.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Models/IBGCrash.h
 __30-[IBGCrash sendAllAttachments]_block_invoke
 -[IBGSurveysViewFactory surveyViewControllerWithQuestion:delegate:Type:]
 -[IBGSurveysViewFactory surveyViewControllerWithType:question:delegate:]
-/Users/distiller/ios/Instabug/InstabugSurveys/Managers/IBGSurveysViewFactory.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Managers/IBGSurveysViewFactory.m
 -[IBGOutboundLoadingCell initWithStyle:reuseIdentifier:]
 -[IBGOutboundLoadingCell setContent:isSent:]
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundLoadingCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundLoadingCell.m
 -[IBGTextViewCell initWithStyle:reuseIdentifier:]
 -[IBGTextViewCell separatorView]
 -[IBGTextViewCell textView]
@@ -1896,8 +1897,8 @@ __30-[IBGCrash sendAllAttachments]_block_invoke
 -[IBGTextViewCell .cxx_destruct]
 _OBJC_IVAR_$_IBGTextViewCell._separatorView
 _OBJC_IVAR_$_IBGTextViewCell._textView
-/Users/distiller/ios/Instabug/InstabugBugReporting/Views/IBGTextViewCell.m
-/Users/distiller/ios/Instabug/InstabugBugReporting/Views/IBGTextViewCell.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Views/IBGTextViewCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Views/IBGTextViewCell.h
 -[IBGCrashReport reportStringForReportWithExcludingInstabugFrame:]
 -[IBGCrashReport generateFormattedStackForStackFrames:shouldExcludingInstabugFrame:]
 -[IBGCrashReport getAppImageNameForReport]
@@ -1905,15 +1906,15 @@ _OBJC_IVAR_$_IBGTextViewCell._textView
 -[IBGCrashReport getSystemBuildForReport]
 -[IBGCrashReport getMachineArchForReport]
 -[IBGCrashReport getUUIDForImage:]
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Models/IBGCrashReport.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Models/IBGCrashReport.m
 -[IBGSurveyIntroViewController viewDidLoad]
 -[IBGSurveyIntroViewController viewDidAppear:]
 -[IBGSurveyIntroViewController dismissIntroVC]
 ___46-[IBGSurveyIntroViewController dismissIntroVC]_block_invoke
 -[IBGSurveyIntroViewController takeSurveyAction]
 ___48-[IBGSurveyIntroViewController takeSurveyAction]_block_invoke
-___copy_helper_block_.397
-___destroy_helper_block_.398
+___copy_helper_block_.399
+___destroy_helper_block_.400
 -[IBGSurveyIntroViewController setupConstraints]
 -[IBGSurveyIntroViewController surveyIntroView]
 -[IBGSurveyIntroViewController delegate]
@@ -1922,12 +1923,12 @@ ___destroy_helper_block_.398
 -[IBGSurveyIntroViewController setSurvey:]
 -[IBGSurveyIntroViewController setSurveyIntroView:]
 -[IBGSurveyIntroViewController .cxx_destruct]
-___block_descriptor_tmp.399
+___block_descriptor_tmp.401
 _OBJC_IVAR_$_IBGSurveyIntroViewController._surveyIntroView
 _OBJC_IVAR_$_IBGSurveyIntroViewController._delegate
 _OBJC_IVAR_$_IBGSurveyIntroViewController._survey
-/Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyIntroViewController.m
-/Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyIntroViewController.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyIntroViewController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyIntroViewController.h
 __48-[IBGSurveyIntroViewController takeSurveyAction]_block_invoke
 __46-[IBGSurveyIntroViewController dismissIntroVC]_block_invoke
 +[IBGSurveyInvocaitonManager sharedInstance]
@@ -1951,7 +1952,7 @@ _OBJC_IVAR_$_IBGSurveyInvocaitonManager._willShowSurveyHandler
 _OBJC_IVAR_$_IBGSurveyInvocaitonManager._didDismissSurveyHandler
 l_OBJC_PROTOCOL_$_IBGPresentationManagerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGPresentationManagerDelegate
-/Users/distiller/ios/Instabug/InstabugSurveys/Managers/IBGSurveyInvocaitonManager.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Managers/IBGSurveyInvocaitonManager.m
 __44+[IBGSurveyInvocaitonManager sharedInstance]_block_invoke
 -[IBGBug initWithSnapshot:]
 -[IBGBug addAttachments:]
@@ -1962,8 +1963,8 @@ __44+[IBGSurveyInvocaitonManager sharedInstance]_block_invoke
 -[IBGBug persistAndSend]
 ___24-[IBGBug persistAndSend]_block_invoke
 ___24-[IBGBug persistAndSend]_block_invoke_2
-___copy_helper_block_.574
-___destroy_helper_block_.575
+___copy_helper_block_.576
+___destroy_helper_block_.577
 -[IBGBug hasAttachment]
 -[IBGBug sendAllAttachments]
 -[IBGBug description]
@@ -2009,8 +2010,8 @@ _OBJC_IVAR_$_IBGBug._autoScreenRecordingIdentifier
 _OBJC_IVAR_$_IBGBug._snapshot
 _OBJC_IVAR_$_IBGBug._attachmentsObjects
 _OBJC_IVAR_$_IBGBug._isSent
-/Users/distiller/ios/Instabug/InstabugBugReporting/Models/IBGBug.m
-/Users/distiller/ios/Instabug/InstabugBugReporting/Models/IBGBug.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Models/IBGBug.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Models/IBGBug.h
 __24-[IBGBug persistAndSend]_block_invoke_2
 __24-[IBGBug persistAndSend]_block_invoke
 -[IBGSurveysNavigationFooter init]
@@ -2020,7 +2021,7 @@ __24-[IBGBug persistAndSend]_block_invoke
 -[IBGSurveysNavigationFooter setPoweredByView:]
 -[IBGSurveysNavigationFooter .cxx_destruct]
 _OBJC_IVAR_$_IBGSurveysNavigationFooter._poweredByView
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGSurveysNavigationFooter.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGSurveysNavigationFooter.m
 +[IBGChatsFeatures getInstance]
 ___31+[IBGChatsFeatures getInstance]_block_invoke
 -[IBGChatsFeatures init]
@@ -2031,7 +2032,7 @@ ___31+[IBGChatsFeatures getInstance]_block_invoke
 -[IBGChatsFeatures setInAppMessagingFeature:]
 -[IBGChatsFeatures .cxx_destruct]
 _OBJC_IVAR_$_IBGChatsFeatures._inAppMessagingFeature
-/Users/distiller/ios/Instabug/InstabugChats/Defaults/IBGChatsFeatures.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Defaults/IBGChatsFeatures.m
 __31+[IBGChatsFeatures getInstance]_block_invoke
 -[IBGLastContactedAtMigration version]
 -[IBGLastContactedAtMigration shouldRun]
@@ -2044,11 +2045,11 @@ ___98-[IBGLastContactedAtMigration syncRequestDone:messages:secondsTillNextSync:
 _OBJC_IVAR_$_IBGLastContactedAtMigration._delegate
 l_OBJC_PROTOCOL_$_IBGMigration
 l_OBJC_LABEL_PROTOCOL_$_IBGMigration
-/Users/distiller/ios/Instabug/InstabugChats/Migrations/IBGLastContactedAtMigration.m
-/Users/distiller/Library/Developer/Xcode/DerivedData/Instabug-cjevizvyfkuqudglpxzowmiwjvbi/Build/Intermediates.noindex/ArchiveIntermediates/Framework/BuildProductsPath/Release-iphoneos/InstabugCore.framework/Headers/IBGMigrationManager.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Migrations/IBGLastContactedAtMigration.m
+/Users/khaledElMorabea/Library/Developer/Xcode/DerivedData/Instabug-cqbadbmomfjgsddklrlfomsvjpgj/Build/Intermediates.noindex/ArchiveIntermediates/Framework/BuildProductsPath/Release-iphoneos/InstabugCore.framework/Headers/IBGMigrationManager.h
 __98-[IBGLastContactedAtMigration syncRequestDone:messages:secondsTillNextSync:statusCode:error:UUID:]_block_invoke
 -[IBGBugLogRequest initWithBugId:parameters:delegate:]
-/Users/distiller/ios/Instabug/InstabugBugReporting/ServerRequests/IBGBugLogRequest.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/ServerRequests/IBGBugLogRequest.m
 -[IBGSurveyViewController initWithSurveyQuestion:shouldDismissSDKOnCancel:delegate:]
 -[IBGSurveyViewController viewDidLoad]
 -[IBGSurveyViewController loadView]
@@ -2067,9 +2068,9 @@ _OBJC_IVAR_$_IBGSurveyViewController._surveyView
 _OBJC_IVAR_$_IBGSurveyViewController._delegate
 _OBJC_IVAR_$_IBGSurveyViewController._surveyQuestion
 _OBJC_IVAR_$_IBGSurveyViewController._answer
-/Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyViewController.m
-/Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyViewController.h
-/Users/distiller/ios/Instabug/InstabugCrashReporting/InstabugCrashReporting+TestPrivate.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyViewController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyViewController.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/InstabugCrashReporting+TestPrivate.m
 -[IBGPromptCell awakeFromNib]
 +[IBGPromptCell reuseIdentifier]
 -[IBGPromptCell applyTheme]
@@ -2092,8 +2093,8 @@ _OBJC_IVAR_$_IBGPromptCell._notificationCountLabel
 _OBJC_IVAR_$_IBGPromptCell._titleLabel
 _OBJC_IVAR_$_IBGPromptCell._separatorView
 _OBJC_IVAR_$_IBGPromptCell._separatorViewHeightConstraint
-/Users/distiller/ios/Instabug/InstabugReporting/Views/Table View Cells/IBGPromptCell.m
-/Users/distiller/ios/Instabug/InstabugReporting/Views/Table View Cells/IBGPromptCell.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Views/Table View Cells/IBGPromptCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Views/Table View Cells/IBGPromptCell.h
 +[IBGReportInvocationManager sharedInstance]
 ___44+[IBGReportInvocationManager sharedInstance]_block_invoke
 -[IBGReportInvocationManager init]
@@ -2128,8 +2129,8 @@ _OBJC_IVAR_$_IBGReportInvocationManager._preInocationHandler
 _OBJC_IVAR_$_IBGReportInvocationManager._postInvocationHandler
 l_OBJC_PROTOCOL_$_IBGInvocationBaseDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGInvocationBaseDelegate
-/Users/distiller/ios/Instabug/InstabugReporting/IBGReportInvocationManager.m
-/Users/distiller/ios/Instabug/InstabugReporting/IBGReportInvocationManager.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/IBGReportInvocationManager.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/IBGReportInvocationManager.h
 __44+[IBGReportInvocationManager sharedInstance]_block_invoke
 -[IBGTextViewSurvey init]
 -[IBGTextViewSurvey updateConstraints]
@@ -2144,15 +2145,15 @@ __44+[IBGReportInvocationManager sharedInstance]_block_invoke
 _OBJC_IVAR_$_IBGTextViewSurvey._containerView
 _OBJC_IVAR_$_IBGTextViewSurvey._textView
 _OBJC_IVAR_$_IBGTextViewSurvey._containerBottomConstraint
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/Table View Cells/IBGTextViewSurvey.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/Table View Cells/IBGTextViewSurvey.m
 UI_USER_INTERFACE_IDIOM
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
-/Users/distiller/ios/Instabug/InstabugBugReporting/Defaults/IBGReportingAccessibilityIdentifiers.m
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Defaults/IBGReportingAccessibilityIdentifiers.m
 -[IBGTextMessageView initWithFrame:]
 -[IBGTextMessageView configureTextView:]
 -[IBGTextMessageView fontSize]
 -[IBGTextMessageView setContent:]
-/Users/distiller/ios/Instabug/InstabugChats/Views/IBGTextMessageView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGTextMessageView.m
 -[IBGInvocationTwoFingersSwipeLeft initWithDelegate:]
 -[IBGInvocationTwoFingersSwipeLeft install]
 -[IBGInvocationTwoFingersSwipeLeft getApplicationWindows]
@@ -2175,7 +2176,7 @@ UI_USER_INTERFACE_IDIOM
 _OBJC_IVAR_$_IBGInvocationTwoFingersSwipeLeft.isInstalled
 _OBJC_IVAR_$_IBGInvocationTwoFingersSwipeLeft._delegate
 _OBJC_IVAR_$_IBGInvocationTwoFingersSwipeLeft._gestureRecognizers
-/Users/distiller/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationTwoFingersSwipeLeft.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationTwoFingersSwipeLeft.m
 -[IBGBugVC initWithType:shouldShowEmail:controller:]
 -[IBGBugVC viewDidLoad]
 -[IBGBugVC addNavigationBarButtons]
@@ -2195,17 +2196,17 @@ ___32-[IBGBugVC submitButtonPressed:]_block_invoke
 -[IBGBugVC cancelButtonPressed:]
 -[IBGBugVC showInvalidEmailAndCommentAlerts]
 ___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke
-___copy_helper_block_.744
-___destroy_helper_block_.745
-___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.751
-___copy_helper_block_.754
-___destroy_helper_block_.755
+___copy_helper_block_.746
+___destroy_helper_block_.747
+___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.753
+___copy_helper_block_.756
+___destroy_helper_block_.757
 -[IBGBugVC alertWithTitle:message:action:]
 -[IBGBugVC didSelectAttachment:]
 -[IBGBugVC didSelectAudioAttachment:startedPlaying:]
 ___52-[IBGBugVC didSelectAudioAttachment:startedPlaying:]_block_invoke
-___copy_helper_block_.789
-___destroy_helper_block_.790
+___copy_helper_block_.791
+___destroy_helper_block_.792
 -[IBGBugVC didRemoveAttachment:]
 -[IBGBugVC nextTappedInScreenshotView:]
 -[IBGBugVC bugRequestCreator]
@@ -2215,8 +2216,8 @@ ___destroy_helper_block_.790
 -[IBGBugVC keyboardWillHide:]
 -[IBGBugVC orientationChanged]
 ___30-[IBGBugVC orientationChanged]_block_invoke
-___copy_helper_block_.854
-___destroy_helper_block_.855
+___copy_helper_block_.856
+___destroy_helper_block_.857
 -[IBGBugVC calculateTextViewHeightWithKeyboardSize:]
 -[IBGBugVC adjustContentScrollViewToObscuringViewSize:]
 -[IBGBugVC resetViewForNoObstruction]
@@ -2233,22 +2234,22 @@ ___destroy_helper_block_.855
 -[IBGBugVC attachmentsToolbarItems]
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
-___copy_helper_block_.906
-___destroy_helper_block_.907
-___copy_helper_block_.911
-___destroy_helper_block_.912
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.920
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.921
-___copy_helper_block_.924
-___destroy_helper_block_.925
-___copy_helper_block_.927
-___destroy_helper_block_.928
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.932
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.933
-___copy_helper_block_.936
-___destroy_helper_block_.937
-___copy_helper_block_.939
-___destroy_helper_block_.940
+___copy_helper_block_.908
+___destroy_helper_block_.909
+___copy_helper_block_.913
+___destroy_helper_block_.914
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.922
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.923
+___copy_helper_block_.926
+___destroy_helper_block_.927
+___copy_helper_block_.929
+___destroy_helper_block_.930
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.934
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.935
+___copy_helper_block_.938
+___destroy_helper_block_.939
+___copy_helper_block_.941
+___destroy_helper_block_.942
 -[IBGBugVC maximumNumberOfAttachmentsAllowed]
 -[IBGBugVC performActionOrShowMaximumNumberOfAttachmentsAlert:]
 -[IBGBugVC dealloc]
@@ -2312,17 +2313,17 @@ ___destroy_helper_block_.940
 _OBJC_IVAR_$_IBGBugVC._controller
 _OBJC_IVAR_$_IBGBugVC._type
 _OBJC_IVAR_$_IBGBugVC._shouldShowEmail
-___block_descriptor_tmp.746
-___block_descriptor_tmp.756
-___block_descriptor_tmp.791
+___block_descriptor_tmp.748
+___block_descriptor_tmp.758
+___block_descriptor_tmp.793
 _OBJC_IVAR_$_IBGBugVC._bugRequestCreator
-___block_descriptor_tmp.856
-___block_descriptor_tmp.908
-___block_descriptor_tmp.913
-___block_descriptor_tmp.926
-___block_descriptor_tmp.929
-___block_descriptor_tmp.938
-___block_descriptor_tmp.941
+___block_descriptor_tmp.858
+___block_descriptor_tmp.910
+___block_descriptor_tmp.915
+___block_descriptor_tmp.928
+___block_descriptor_tmp.931
+___block_descriptor_tmp.940
+___block_descriptor_tmp.943
 _OBJC_IVAR_$_IBGBugVC._attachmentController
 _OBJC_IVAR_$_IBGBugVC._videoPlayer
 _OBJC_IVAR_$_IBGBugVC._voicePlayer
@@ -2356,17 +2357,19 @@ l_OBJC_PROTOCOL_$_IBGBugInputViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGBugInputViewDelegate
 l_OBJC_PROTOCOL_$_IBGBugControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGBugControllerDelegate
-/Users/distiller/ios/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.m
-/Users/distiller/ios/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.h
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.933
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.932
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.921
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.920
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.h
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.935
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.934
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.923
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.922
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke
+UIEdgeInsetsMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGeometry.h
 __30-[IBGBugVC orientationChanged]_block_invoke
 __52-[IBGBugVC didSelectAudioAttachment:startedPlaying:]_block_invoke
-__44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.751
+__44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.753
 __44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke
 __32-[IBGBugVC submitButtonPressed:]_block_invoke
 -[IBGSurveyStarRatingViewController initWithQuestion:delegate:]
@@ -2392,7 +2395,7 @@ _OBJC_IVAR_$_IBGSurveyStarRatingViewController._question
 _OBJC_IVAR_$_IBGSurveyStarRatingViewController._answer
 l_OBJC_PROTOCOL_$_IBGStarRatingSurveyViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGStarRatingSurveyViewDelegate
-/Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyStarRatingViewController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyStarRatingViewController.m
 -[IBGSurveyAnswerRequest initWithParameters:surveyID:andDelegate:]
 -[IBGSurveyAnswerRequest executeNow]
 -[IBGSurveyAnswerRequest serverExecutionDone:statusCode:error:response:]
@@ -2418,7 +2421,7 @@ _OBJC_IVAR_$_IBGSurveyAnswerRequest._dataUrl
 _OBJC_IVAR_$_IBGSurveyAnswerRequest._failures
 _OBJC_IVAR_$_IBGSurveyAnswerRequest._isSuccess
 _OBJC_IVAR_$_IBGSurveyAnswerRequest._dataParameters
-/Users/distiller/ios/Instabug/InstabugSurveys/Server requests/IBGSurveyAnswerRequest.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Server requests/IBGSurveyAnswerRequest.m
 -[IBGSurveyRatingViewController initWithQuestion:delegate:]
 -[IBGSurveyRatingViewController viewDidLoad]
 -[IBGSurveyRatingViewController setupConstraints]
@@ -2441,7 +2444,7 @@ _OBJC_IVAR_$_IBGSurveyRatingViewController._surveyView
 _OBJC_IVAR_$_IBGSurveyRatingViewController._delegate
 _OBJC_IVAR_$_IBGSurveyRatingViewController._question
 _OBJC_IVAR_$_IBGSurveyRatingViewController._answer
-/Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyRatingViewController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyRatingViewController.m
 -[IBGSurveysNavigationViewController initWithDataSource:delegate:]
 -[IBGSurveysNavigationViewController loadView]
 -[IBGSurveysNavigationViewController viewDidLoad]
@@ -2451,32 +2454,32 @@ ___52-[IBGSurveysNavigationViewController viewDidAppear:]_block_invoke
 -[IBGSurveysNavigationViewController dealloc]
 -[IBGSurveysNavigationViewController applicationDidRotate:]
 ___59-[IBGSurveysNavigationViewController applicationDidRotate:]_block_invoke
-___copy_helper_block_.446
-___destroy_helper_block_.447
+___copy_helper_block_.448
+___destroy_helper_block_.449
 -[IBGSurveysNavigationViewController updateBackgroundSnapshotImageView]
 ___71-[IBGSurveysNavigationViewController updateBackgroundSnapshotImageView]_block_invoke
-___copy_helper_block_.453
-___destroy_helper_block_.454
+___copy_helper_block_.455
+___destroy_helper_block_.456
 -[IBGSurveysNavigationViewController adjustSnapshotView]
 -[IBGSurveysNavigationViewController addInitalViewController]
 -[IBGSurveysNavigationViewController cycleFromViewContrller:toViewController:animationDirection:]
 ___97-[IBGSurveysNavigationViewController cycleFromViewContrller:toViewController:animationDirection:]_block_invoke
-___copy_helper_block_.490
-___destroy_helper_block_.491
-___97-[IBGSurveysNavigationViewController cycleFromViewContrller:toViewController:animationDirection:]_block_invoke.493
-___copy_helper_block_.496
-___destroy_helper_block_.497
+___copy_helper_block_.492
+___destroy_helper_block_.493
+___97-[IBGSurveysNavigationViewController cycleFromViewContrller:toViewController:animationDirection:]_block_invoke.495
+___copy_helper_block_.498
+___destroy_helper_block_.499
 -[IBGSurveysNavigationViewController didPressNext]
 -[IBGSurveysNavigationViewController didPressPrevious]
 -[IBGSurveysNavigationViewController dismissSurveyWithoutThankYouAlert]
 -[IBGSurveysNavigationViewController submitSurvey]
 -[IBGSurveysNavigationViewController dismissSurveyWithThankYouAlert:]
 ___69-[IBGSurveysNavigationViewController dismissSurveyWithThankYouAlert:]_block_invoke
-___copy_helper_block_.522
-___destroy_helper_block_.523
-___69-[IBGSurveysNavigationViewController dismissSurveyWithThankYouAlert:]_block_invoke.525
-___copy_helper_block_.532
-___destroy_helper_block_.533
+___copy_helper_block_.524
+___destroy_helper_block_.525
+___69-[IBGSurveysNavigationViewController dismissSurveyWithThankYouAlert:]_block_invoke.527
+___copy_helper_block_.534
+___destroy_helper_block_.535
 -[IBGSurveysNavigationViewController updateHeaderTitle]
 -[IBGSurveysNavigationViewController verifyAnswer]
 -[IBGSurveysNavigationViewController resetLayout]
@@ -2527,12 +2530,12 @@ ___destroy_helper_block_.533
 -[IBGSurveysNavigationViewController .cxx_destruct]
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._controller
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._delegate
-___block_descriptor_tmp.448
-___block_descriptor_tmp.455
-___block_descriptor_tmp.492
-___block_descriptor_tmp.499
-___block_descriptor_tmp.524
-___block_descriptor_tmp.534
+___block_descriptor_tmp.450
+___block_descriptor_tmp.457
+___block_descriptor_tmp.494
+___block_descriptor_tmp.501
+___block_descriptor_tmp.526
+___block_descriptor_tmp.536
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._backgroundDimmedView
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._headerView
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._footerView
@@ -2547,11 +2550,11 @@ _OBJC_IVAR_$_IBGSurveysNavigationViewController._snapshotImageViewHeightConstrai
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._footerTopConstraint
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._footerBottomConstraint
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._currentViewController
-/Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveysNavigationViewController.m
-/Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveysNavigationViewController.h
-__69-[IBGSurveysNavigationViewController dismissSurveyWithThankYouAlert:]_block_invoke.525
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveysNavigationViewController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveysNavigationViewController.h
+__69-[IBGSurveysNavigationViewController dismissSurveyWithThankYouAlert:]_block_invoke.527
 __69-[IBGSurveysNavigationViewController dismissSurveyWithThankYouAlert:]_block_invoke
-__97-[IBGSurveysNavigationViewController cycleFromViewContrller:toViewController:animationDirection:]_block_invoke.493
+__97-[IBGSurveysNavigationViewController cycleFromViewContrller:toViewController:animationDirection:]_block_invoke.495
 __97-[IBGSurveysNavigationViewController cycleFromViewContrller:toViewController:animationDirection:]_block_invoke
 __71-[IBGSurveysNavigationViewController updateBackgroundSnapshotImageView]_block_invoke
 __59-[IBGSurveysNavigationViewController applicationDidRotate:]_block_invoke
@@ -2579,7 +2582,7 @@ _OBJC_IVAR_$_IBGSurveysRequest._dataServer
 _OBJC_IVAR_$_IBGSurveysRequest._dataUrl
 _OBJC_IVAR_$_IBGSurveysRequest._failures
 _OBJC_IVAR_$_IBGSurveysRequest._isSuccess
-/Users/distiller/ios/Instabug/InstabugSurveys/Server requests/IBGSurveysRequest.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Server requests/IBGSurveysRequest.m
 -[IBGInvocationScreenshot initWithDelegate:]
 -[IBGInvocationScreenshot install]
 -[IBGInvocationScreenshot refresh]
@@ -2594,7 +2597,7 @@ _OBJC_IVAR_$_IBGSurveysRequest._isSuccess
 -[IBGInvocationScreenshot .cxx_destruct]
 _OBJC_IVAR_$_IBGInvocationScreenshot.isInstalled
 _OBJC_IVAR_$_IBGInvocationScreenshot._delegate
-/Users/distiller/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationScreenshot.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Invocation Events/IBGInvocationScreenshot.m
 -[IBGBubbleCell initWithStyle:reuseIdentifier:]
 -[IBGBubbleCell updateConstraints]
 -[IBGBubbleCell maximumBubbleWidth]
@@ -2618,8 +2621,8 @@ _OBJC_IVAR_$_IBGBubbleCell._dateLabel
 _OBJC_IVAR_$_IBGBubbleCell._chatSwoochView
 _OBJC_IVAR_$_IBGBubbleCell._loadingView
 _OBJC_IVAR_$_IBGBubbleCell._contentHandlerView
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/IBGBubbleCell.m
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/IBGBubbleCell.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/IBGBubbleCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/IBGBubbleCell.h
 -[IBGLoadingAttachmentView initWithFrame:]
 -[IBGLoadingAttachmentView layout]
 -[IBGLoadingAttachmentView setContent:]
@@ -2627,22 +2630,26 @@ _OBJC_IVAR_$_IBGBubbleCell._contentHandlerView
 -[IBGLoadingAttachmentView setLoadingIndicator:]
 -[IBGLoadingAttachmentView .cxx_destruct]
 _OBJC_IVAR_$_IBGLoadingAttachmentView._loadingIndicator
-/Users/distiller/ios/Instabug/InstabugChats/Views/IBGLoadingAttachmentView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGLoadingAttachmentView.m
 -[IBGTempCrash addAttachment:]
 -[IBGTempCrash attachmentsObjects]
 -[IBGTempCrash setAttachmentsObjects:]
 -[IBGTempCrash .cxx_destruct]
 _OBJC_IVAR_$_IBGTempCrash._attachmentsObjects
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Models/IBGTempCrash.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Models/IBGTempCrash.m
 +[IBGPushNotificationsManager getInstance]
 ___42+[IBGPushNotificationsManager getInstance]_block_invoke
+-[IBGPushNotificationsManager init]
 -[IBGPushNotificationsManager initializationOperation]
 ___54-[IBGPushNotificationsManager initializationOperation]_block_invoke
 -[IBGPushNotificationsManager dealloc]
 -[IBGPushNotificationsManager setEnabled:]
 -[IBGPushNotificationsManager enabled]
 -[IBGPushNotificationsManager isEnabledAndActive]
--[IBGPushNotificationsManager setAPNToken:]
+-[IBGPushNotificationsManager setAPNSTokenData:]
+-[IBGPushNotificationsManager setAPNSToken:]
+-[IBGPushNotificationsManager handleAPNSTokenWithData:]
+-[IBGPushNotificationsManager handleAPNSTokenWithString:]
 -[IBGPushNotificationsManager handleReceivedRemoteNotification:]
 +[IBGPushNotificationsManager deviceTokenFromData:]
 -[IBGPushNotificationsManager featureEnabled]
@@ -2654,15 +2661,22 @@ ___54-[IBGPushNotificationsManager initializationOperation]_block_invoke
 -[IBGPushNotificationsManager handleNotification:]
 -[IBGPushNotificationsManager observeValueForKeyPath:ofObject:change:context:]
 +[IBGPushNotificationsManager destroy]
+-[IBGPushNotificationsManager pushNotificationRegisterationRequestDone:isSuccess:error:]
 -[IBGPushNotificationsManager setInitializationOperation:]
+-[IBGPushNotificationsManager invocations]
+-[IBGPushNotificationsManager setInvocations:]
 -[IBGPushNotificationsManager .cxx_destruct]
 _sharedManager
 _OBJC_IVAR_$_IBGPushNotificationsManager._initializationOperation
+___block_descriptor_tmp.553
 _OBJC_IVAR_$_IBGPushNotificationsManager._enabled
-/Users/distiller/ios/Instabug/InstabugReporting/Managers/IBGPushNotificationsManager.m
-/Users/distiller/ios/Instabug/InstabugReporting/Managers/IBGPushNotificationsManager.h
+_OBJC_IVAR_$_IBGPushNotificationsManager._invocations
+l_OBJC_PROTOCOL_$_IBGPushNotificationRegisterationRequestDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGPushNotificationRegisterationRequestDelegate
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Managers/IBGPushNotificationsManager.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Managers/IBGPushNotificationsManager.h
 _OSSwapInt32
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/libkern/arm/OSByteOrder.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/libkern/arm/OSByteOrder.h
 __54-[IBGPushNotificationsManager initializationOperation]_block_invoke
 __42+[IBGPushNotificationsManager getInstance]_block_invoke
 -[IBGCrashAttachmentRequest initWithParameters:attachmentPath:reportID:delegate:]
@@ -2670,9 +2684,9 @@ __42+[IBGPushNotificationsManager getInstance]_block_invoke
 -[IBGCrashAttachmentRequest setAttachmentURL:]
 -[IBGCrashAttachmentRequest .cxx_destruct]
 _OBJC_IVAR_$_IBGCrashAttachmentRequest._attachmentURL
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Server requests/IBGCrashAttachmentRequest.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Server requests/IBGCrashAttachmentRequest.m
 -[IBGCrashLogRequest initWithCrashId:parameters:delegate:]
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Server requests/IBGCrashLogRequest.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Server requests/IBGCrashLogRequest.m
 +[IBGSurveyQuestion questionsFromResponseArray:]
 -[IBGSurveyQuestion initWithResponseDictionary:]
 -[IBGSurveyQuestion description]
@@ -2697,18 +2711,18 @@ _OBJC_IVAR_$_IBGSurveyQuestion._recorderAnswer
 _OBJC_IVAR_$_IBGSurveyQuestion._title
 _OBJC_IVAR_$_IBGSurveyQuestion._type
 _OBJC_IVAR_$_IBGSurveyQuestion._answers
-/Users/distiller/ios/Instabug/InstabugSurveys/Models/IBGSurveyQuestion.m
-/Users/distiller/ios/Instabug/InstabugSurveys/Models/IBGSurveyQuestion.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Models/IBGSurveyQuestion.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Models/IBGSurveyQuestion.h
 -[IBGOutboundMessageActionCell initWithStyle:reuseIdentifier:]
 -[IBGOutboundMessageActionCell setContent:isSent:]
 -[IBGOutboundMessageActionCell actionMessageValue:]
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundMessageActionCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundMessageActionCell.m
 -[IBGCrashRequest initWithParameters:delegate:]
 -[IBGCrashRequest dataUrl]
 -[IBGCrashRequest setDataUrl:]
 -[IBGCrashRequest .cxx_destruct]
 _OBJC_IVAR_$_IBGCrashRequest._dataUrl
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Server requests/IBGCrashRequest.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Server requests/IBGCrashRequest.m
 -[IBGPromptItem initWithName:accessibilityIdentifier:image:hasNotification:handler:]
 -[IBGPromptItem accessibilityIdentifier]
 -[IBGPromptItem setAccessibilityIdentifier:]
@@ -2726,8 +2740,8 @@ _OBJC_IVAR_$_IBGPromptItem._name
 _OBJC_IVAR_$_IBGPromptItem._image
 _OBJC_IVAR_$_IBGPromptItem._hasNotification
 _OBJC_IVAR_$_IBGPromptItem._handler
-/Users/distiller/ios/Instabug/InstabugReporting/Models/IBGPromptItem.m
-/Users/distiller/ios/Instabug/InstabugReporting/Models/IBGPromptItem.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Models/IBGPromptItem.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/Models/IBGPromptItem.h
 +[IBGCrashManager getInstance]
 ___30+[IBGCrashManager getInstance]_block_invoke
 -[IBGCrashManager init]
@@ -2735,13 +2749,13 @@ ___30+[IBGCrashManager getInstance]_block_invoke
 ___42-[IBGCrashManager initializationOperation]_block_invoke
 -[IBGCrashManager handlePendingCrashesOperation]
 ___48-[IBGCrashManager handlePendingCrashesOperation]_block_invoke
-___copy_helper_block_.562
-___destroy_helper_block_.563
+___copy_helper_block_.564
+___destroy_helper_block_.565
 -[IBGCrashManager registerCrashCacheOperation]
 ___46-[IBGCrashManager registerCrashCacheOperation]_block_invoke
 ___46-[IBGCrashManager registerCrashCacheOperation]_block_invoke_2
-___copy_helper_block_.570
-___destroy_helper_block_.571
+___copy_helper_block_.572
+___destroy_helper_block_.573
 -[IBGCrashManager dealloc]
 -[IBGCrashManager observeValueForKeyPath:ofObject:change:context:]
 -[IBGCrashManager setIsTrackingCrashes:]
@@ -2752,16 +2766,16 @@ _postCrashAction
 -[IBGCrashManager crashFromTempCrash:]
 -[IBGCrashManager reportException:]
 ___35-[IBGCrashManager reportException:]_block_invoke
-___copy_helper_block_.658
-___destroy_helper_block_.659
-___35-[IBGCrashManager reportException:]_block_invoke.661
+___copy_helper_block_.660
+___destroy_helper_block_.661
+___35-[IBGCrashManager reportException:]_block_invoke.663
 -[IBGCrashManager reportError:]
 -[IBGCrashManager assignUserInfoInsideUserData:]
 -[IBGCrashManager exceptionFromError:]
 -[IBGCrashManager sendExceptionAsCrash:withSnapshot:]
 ___53-[IBGCrashManager sendExceptionAsCrash:withSnapshot:]_block_invoke
-___copy_helper_block_.705
-___destroy_helper_block_.706
+___copy_helper_block_.707
+___destroy_helper_block_.708
 -[IBGCrashManager assignCrashData:toCrash:shouldExculdeInstabug:]
 -[IBGCrashManager sendCrash:data:]
 -[IBGCrashManager getCrashReportWithData:]
@@ -2783,22 +2797,22 @@ ___35+[IBGCrashManager postCrashHandler]_block_invoke
 -[IBGCrashManager setCrashManagerQueue:]
 -[IBGCrashManager .cxx_destruct]
 _OBJC_IVAR_$_IBGCrashManager._initializationOperation
-___block_descriptor_tmp.557
+___block_descriptor_tmp.559
 _OBJC_IVAR_$_IBGCrashManager._handlePendingCrashesOperation
-___block_descriptor_tmp.564
+___block_descriptor_tmp.566
 _OBJC_IVAR_$_IBGCrashManager._registerCrashCacheOperation
-___block_descriptor_tmp.572
+___block_descriptor_tmp.574
 _OBJC_IVAR_$_IBGCrashManager._isTrackingCrashes
-___block_descriptor_tmp.660
-___block_descriptor_tmp.707
-___block_literal_global.792
+___block_descriptor_tmp.662
+___block_descriptor_tmp.709
+___block_literal_global.794
 _OBJC_IVAR_$_IBGCrashManager._crashReporter
 _OBJC_IVAR_$_IBGCrashManager._crashManagerQueue
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Managers/IBGCrashManager.m
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Managers/IBGCrashManager.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Managers/IBGCrashManager.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Managers/IBGCrashManager.h
 __35+[IBGCrashManager postCrashHandler]_block_invoke
 __53-[IBGCrashManager sendExceptionAsCrash:withSnapshot:]_block_invoke
-__35-[IBGCrashManager reportException:]_block_invoke.661
+__35-[IBGCrashManager reportException:]_block_invoke.663
 __35-[IBGCrashManager reportException:]_block_invoke
 postCrashAction
 __46-[IBGCrashManager registerCrashCacheOperation]_block_invoke_2
@@ -2858,8 +2872,8 @@ _OBJC_IVAR_$_IBGSurvey._token
 _OBJC_IVAR_$_IBGSurvey._dismissDate
 l_OBJC_PROTOCOL_$_IBGSurveyAnswerRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGSurveyAnswerRequestDelegate
-/Users/distiller/ios/Instabug/InstabugSurveys/Models/IBGSurvey.m
-/Users/distiller/ios/Instabug/InstabugSurveys/Models/IBGSurvey.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Models/IBGSurvey.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Models/IBGSurvey.h
 __17-[IBGSurvey send]_block_invoke
 -[IBGPromptVC initWithController:]
 -[IBGPromptVC shouldAutorotateToInterfaceOrientation:]
@@ -2878,22 +2892,22 @@ ___25-[IBGPromptVC handlePan:]_block_invoke
 -[IBGPromptVC applyTheme]
 -[IBGPromptVC show]
 ___19-[IBGPromptVC show]_block_invoke
-___copy_helper_block_.704
-___destroy_helper_block_.705
-___19-[IBGPromptVC show]_block_invoke.707
-___copy_helper_block_.710
-___destroy_helper_block_.711
+___copy_helper_block_.706
+___destroy_helper_block_.707
+___19-[IBGPromptVC show]_block_invoke.709
+___copy_helper_block_.712
+___destroy_helper_block_.713
 -[IBGPromptVC dismissPromptAutomatically]
 -[IBGPromptVC dismissAuto]
 -[IBGPromptVC touchesEnded:withEvent:]
 -[IBGPromptVC cancelButtonPressed:]
 -[IBGPromptVC dismiss]
 ___22-[IBGPromptVC dismiss]_block_invoke
-___copy_helper_block_.734
-___destroy_helper_block_.735
-___22-[IBGPromptVC dismiss]_block_invoke.737
-___copy_helper_block_.740
-___destroy_helper_block_.741
+___copy_helper_block_.736
+___destroy_helper_block_.737
+___22-[IBGPromptVC dismiss]_block_invoke.739
+___copy_helper_block_.742
+___destroy_helper_block_.743
 -[IBGPromptVC tableView:numberOfRowsInSection:]
 -[IBGPromptVC tableView:cellForRowAtIndexPath:]
 -[IBGPromptVC tableView:didSelectRowAtIndexPath:]
@@ -2905,14 +2919,14 @@ ___destroy_helper_block_.741
 -[IBGPromptVC getPromptCount]
 -[IBGPromptVC generatePromptArray]
 ___34-[IBGPromptVC generatePromptArray]_block_invoke
-___copy_helper_block_.810
-___destroy_helper_block_.811
-___34-[IBGPromptVC generatePromptArray]_block_invoke.819
-___copy_helper_block_.822
-___destroy_helper_block_.823
-___34-[IBGPromptVC generatePromptArray]_block_invoke.827
-___copy_helper_block_.830
-___destroy_helper_block_.831
+___copy_helper_block_.812
+___destroy_helper_block_.813
+___34-[IBGPromptVC generatePromptArray]_block_invoke.821
+___copy_helper_block_.824
+___destroy_helper_block_.825
+___34-[IBGPromptVC generatePromptArray]_block_invoke.829
+___copy_helper_block_.832
+___destroy_helper_block_.833
 -[IBGPromptVC invokedUIValue]
 -[IBGPromptVC controller]
 -[IBGPromptVC setController:]
@@ -2946,13 +2960,13 @@ ___destroy_helper_block_.831
 -[IBGPromptVC setWhiteLabelViewHeight:]
 -[IBGPromptVC .cxx_destruct]
 _OBJC_IVAR_$_IBGPromptVC._controller
-___block_descriptor_tmp.706
-___block_descriptor_tmp.713
-___block_descriptor_tmp.736
-___block_descriptor_tmp.742
-___block_descriptor_tmp.812
-___block_descriptor_tmp.824
-___block_descriptor_tmp.832
+___block_descriptor_tmp.708
+___block_descriptor_tmp.715
+___block_descriptor_tmp.738
+___block_descriptor_tmp.744
+___block_descriptor_tmp.814
+___block_descriptor_tmp.826
+___block_descriptor_tmp.834
 _OBJC_IVAR_$_IBGPromptVC._shadeView
 _OBJC_IVAR_$_IBGPromptVC._promptTableView
 _OBJC_IVAR_$_IBGPromptVC._promptView
@@ -2967,15 +2981,16 @@ _OBJC_IVAR_$_IBGPromptVC._promptArray
 _OBJC_IVAR_$_IBGPromptVC._footerViewTopConstraint
 _OBJC_IVAR_$_IBGPromptVC._promptTableHeightConstraint
 _OBJC_IVAR_$_IBGPromptVC._whiteLabelViewHeight
-/Users/distiller/ios/Instabug/InstabugReporting/View Controllers/IBGPromptVC.m
-__34-[IBGPromptVC generatePromptArray]_block_invoke.827
-__34-[IBGPromptVC generatePromptArray]_block_invoke.819
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugReporting/View Controllers/IBGPromptVC.m
+__34-[IBGPromptVC generatePromptArray]_block_invoke.829
+__34-[IBGPromptVC generatePromptArray]_block_invoke.821
 __34-[IBGPromptVC generatePromptArray]_block_invoke
-__22-[IBGPromptVC dismiss]_block_invoke.737
+__22-[IBGPromptVC dismiss]_block_invoke.739
 __22-[IBGPromptVC dismiss]_block_invoke
-__19-[IBGPromptVC show]_block_invoke.707
+__19-[IBGPromptVC show]_block_invoke.709
 __19-[IBGPromptVC show]_block_invoke
 __25-[IBGPromptVC handlePan:]_block_invoke
+CGPointMake
 -[IBGStarRatingSurveyView initWithDelegate:]
 -[IBGStarRatingSurveyView updateConstraints]
 -[IBGStarRatingSurveyView setRating:]
@@ -2995,8 +3010,8 @@ _OBJC_IVAR_$_IBGStarRatingSurveyView._containerView
 _OBJC_IVAR_$_IBGStarRatingSurveyView._viewDictionary
 _OBJC_IVAR_$_IBGStarRatingSurveyView._rating
 _OBJC_IVAR_$_IBGStarRatingSurveyView._delegate
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGStarRatingSurveyView.m
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGStarRatingSurveyView.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGStarRatingSurveyView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGStarRatingSurveyView.h
 +[IBGCrashDefaults getInstance]
 ___31+[IBGCrashDefaults getInstance]_block_invoke
 -[IBGCrashDefaults setLastCrashAt:]
@@ -3005,11 +3020,11 @@ ___31+[IBGCrashDefaults getInstance]_block_invoke
 -[IBGCrashDefaults setExceptionUserInfo:]
 -[IBGCrashDefaults .cxx_destruct]
 _OBJC_IVAR_$_IBGCrashDefaults._exceptionUserInfo
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Defaults/IBGCrashDefaults.m
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Defaults/IBGCrashDefaults.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Defaults/IBGCrashDefaults.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Defaults/IBGCrashDefaults.h
 __31+[IBGCrashDefaults getInstance]_block_invoke
 -[IBGChatAttachmentRequestCreator logRequestWithId:parameters:delegate:]
-/Users/distiller/ios/Instabug/InstabugChats/ServerRequests/Request Creator/IBGChatAttachmentRequestCreator.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/Request Creator/IBGChatAttachmentRequestCreator.m
 -[IBGRatingButton initWithTitle:viewTag:]
 -[IBGRatingButton updateConstraints]
 -[IBGRatingButton toggleButton:]
@@ -3019,7 +3034,7 @@ __31+[IBGCrashDefaults getInstance]_block_invoke
 -[IBGRatingButton setRatingButton:]
 -[IBGRatingButton .cxx_destruct]
 _OBJC_IVAR_$_IBGRatingButton._ratingButton
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGRatingButton.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGRatingButton.m
 -[IBGReportCategoriesVC initWithReportType:actionHandler:]
 -[IBGReportCategoriesVC viewDidLoad]
 -[IBGReportCategoriesVC adjustSeparatorHeight]
@@ -3047,11 +3062,11 @@ ___35-[IBGReportCategoriesVC handlePan:]_block_invoke
 -[IBGReportCategoriesVC cancelButtonPressed:]
 -[IBGReportCategoriesVC dismiss]
 ___32-[IBGReportCategoriesVC dismiss]_block_invoke
-___copy_helper_block_.756
-___destroy_helper_block_.757
-___32-[IBGReportCategoriesVC dismiss]_block_invoke.759
-___copy_helper_block_.762
-___destroy_helper_block_.763
+___copy_helper_block_.758
+___destroy_helper_block_.759
+___32-[IBGReportCategoriesVC dismiss]_block_invoke.761
+___copy_helper_block_.764
+___destroy_helper_block_.765
 -[IBGReportCategoriesVC unregisterNotifications]
 -[IBGReportCategoriesVC dealloc]
 -[IBGReportCategoriesVC controller]
@@ -3087,8 +3102,8 @@ ___destroy_helper_block_.763
 -[IBGReportCategoriesVC .cxx_destruct]
 _OBJC_IVAR_$_IBGReportCategoriesVC._controller
 _OBJC_IVAR_$_IBGReportCategoriesVC._titleHeader
-___block_descriptor_tmp.758
-___block_descriptor_tmp.765
+___block_descriptor_tmp.760
+___block_descriptor_tmp.767
 _OBJC_IVAR_$_IBGReportCategoriesVC._shadeView
 _OBJC_IVAR_$_IBGReportCategoriesVC._dialogTableView
 _OBJC_IVAR_$_IBGReportCategoriesVC._headerLabel
@@ -3102,8 +3117,8 @@ _OBJC_IVAR_$_IBGReportCategoriesVC._dialogHeightConstraint
 _OBJC_IVAR_$_IBGReportCategoriesVC._footerViewTopConstraint
 _OBJC_IVAR_$_IBGReportCategoriesVC._headerSeparatorHeightConstraint
 _OBJC_IVAR_$_IBGReportCategoriesVC._footerSeparatorHeightConstraint
-/Users/distiller/ios/Instabug/InstabugBugReporting/View Controllers/IBGReportCategoriesVC.m
-__32-[IBGReportCategoriesVC dismiss]_block_invoke.759
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/View Controllers/IBGReportCategoriesVC.m
+__32-[IBGReportCategoriesVC dismiss]_block_invoke.761
 __32-[IBGReportCategoriesVC dismiss]_block_invoke
 __35-[IBGReportCategoriesVC handlePan:]_block_invoke
 -[IBGUnnotifiedMessagesAlertWindow initWithDelegate:senderName:byline:]
@@ -3145,7 +3160,7 @@ _OBJC_IVAR_$_IBGUnnotifiedMessagesAlertWindow._buttonDelegate
 _OBJC_IVAR_$_IBGUnnotifiedMessagesAlertWindow._unnotifiedMessagesAlertView
 _OBJC_IVAR_$_IBGUnnotifiedMessagesAlertWindow._top
 _OBJC_IVAR_$_IBGUnnotifiedMessagesAlertWindow._annotationTopCosntraint
-/Users/distiller/ios/Instabug/InstabugChats/Window/IBGUnnotifiedMessagesAlertWindow.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Window/IBGUnnotifiedMessagesAlertWindow.m
 __66-[IBGUnnotifiedMessagesAlertWindow animatePositionWithCompletion:]_block_invoke
 __49-[IBGUnnotifiedMessagesAlertWindow hideAnimated:]_block_invoke
 -[IBGSurveyThankYouView init]
@@ -3174,7 +3189,7 @@ _OBJC_IVAR_$_IBGSurveyThankYouView._tickImageView
 _OBJC_IVAR_$_IBGSurveyThankYouView._thankYouLabel
 _OBJC_IVAR_$_IBGSurveyThankYouView._thankYouDescriptionLabel
 _OBJC_IVAR_$_IBGSurveyThankYouView._dismissCompletionBlock
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGSurveyThankYouView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGSurveyThankYouView.m
 __54-[IBGSurveyThankYouView dismissWithCompletionHandler:]_block_invoke
 __32-[IBGSurveyThankYouView present]_block_invoke
 -[IBGRoundedCornerView drawRect:]
@@ -3188,8 +3203,8 @@ __32-[IBGSurveyThankYouView present]_block_invoke
 _OBJC_IVAR_$_IBGRoundedCornerView._viewColor
 _OBJC_IVAR_$_IBGRoundedCornerView._cornerRadius
 _OBJC_IVAR_$_IBGRoundedCornerView._roundedCorners
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGRoundedCornerView.m
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGRoundedCornerView.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGRoundedCornerView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGRoundedCornerView.h
 +[IBGChatsDefaults getInstance]
 ___31+[IBGChatsDefaults getInstance]_block_invoke
 -[IBGChatsDefaults init]
@@ -3198,8 +3213,8 @@ ___31+[IBGChatsDefaults getInstance]_block_invoke
 -[IBGChatsDefaults chatNotificationEnabled]
 -[IBGChatsDefaults setChatNotificationEnabled:]
 _OBJC_IVAR_$_IBGChatsDefaults._chatNotificationEnabled
-/Users/distiller/ios/Instabug/InstabugChats/Defaults/IBGChatsDefaults.m
-/Users/distiller/ios/Instabug/InstabugChats/Defaults/IBGChatsDefaults.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Defaults/IBGChatsDefaults.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Defaults/IBGChatsDefaults.h
 __31+[IBGChatsDefaults getInstance]_block_invoke
 -[IBGUnnotifiedMessagesAlertView initWithTitle:body:]
 -[IBGUnnotifiedMessagesAlertView init]
@@ -3225,7 +3240,7 @@ _OBJC_IVAR_$_IBGUnnotifiedMessagesAlertView._avatarImageView
 _OBJC_IVAR_$_IBGUnnotifiedMessagesAlertView._nameLabel
 _OBJC_IVAR_$_IBGUnnotifiedMessagesAlertView._bylineLabel
 _OBJC_IVAR_$_IBGUnnotifiedMessagesAlertView._disclosure
-/Users/distiller/ios/Instabug/InstabugChats/Views/IBGUnnotifiedMessagesAlertView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGUnnotifiedMessagesAlertView.m
 +[IBGChatMigrationManager getInstance]
 ___38+[IBGChatMigrationManager getInstance]_block_invoke
 -[IBGChatMigrationManager initializationOperation]
@@ -3238,7 +3253,7 @@ ___50-[IBGChatMigrationManager initializationOperation]_block_invoke
 -[IBGChatMigrationManager .cxx_destruct]
 _OBJC_IVAR_$_IBGChatMigrationManager._initializationOperation
 ___block_descriptor_tmp.9
-/Users/distiller/ios/Instabug/InstabugChats/Managers/IBGChatMigrationManager.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Managers/IBGChatMigrationManager.m
 -[IBGMigrationManager setInitializationOperation:]
 __50-[IBGChatMigrationManager initializationOperation]_block_invoke
 __38+[IBGChatMigrationManager getInstance]_block_invoke
@@ -3249,7 +3264,7 @@ __38+[IBGChatMigrationManager getInstance]_block_invoke
 -[IBGStarView setStarImageView:]
 -[IBGStarView .cxx_destruct]
 _OBJC_IVAR_$_IBGStarView._starImageView
-/Users/distiller/ios/Instabug/InstabugSurveys/Views/IBGStarView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Views/IBGStarView.m
 -[IBGChatListPresenter initWithShouldDisplayPrimary:shouldDisimssOnCancel:]
 -[IBGChatListPresenter initalize]
 -[IBGChatListPresenter updateUI]
@@ -3260,8 +3275,8 @@ _OBJC_IVAR_$_IBGStarView._starImageView
 ___34-[IBGChatListPresenter addNewChat]_block_invoke
 -[IBGChatListPresenter didSelectChatAtIndexPath:]
 ___49-[IBGChatListPresenter didSelectChatAtIndexPath:]_block_invoke
-___copy_helper_block_.566
-___destroy_helper_block_.567
+___copy_helper_block_.568
+___destroy_helper_block_.569
 -[IBGChatListPresenter closePressed]
 -[IBGChatListPresenter splitViewController:collapseSecondaryViewController:ontoPrimaryViewController:]
 -[IBGChatListPresenter tableView:numberOfRowsInSection:]
@@ -3269,8 +3284,8 @@ ___destroy_helper_block_.567
 -[IBGChatListPresenter fetchAvatars]
 -[IBGChatListPresenter fetchedAsset:ofURL:isSuccess:]
 ___53-[IBGChatListPresenter fetchedAsset:ofURL:isSuccess:]_block_invoke
-___copy_helper_block_.650
-___destroy_helper_block_.651
+___copy_helper_block_.652
+___destroy_helper_block_.653
 -[IBGChatListPresenter setInteractor:]
 -[IBGChatListPresenter chatAtIndexPath:]
 -[IBGChatListPresenter shouldShowNewChatCell]
@@ -3283,16 +3298,16 @@ ___destroy_helper_block_.651
 -[IBGChatListPresenter shouldDismissOnCancel]
 -[IBGChatListPresenter setShouldDismissOnCancel:]
 -[IBGChatListPresenter .cxx_destruct]
-___block_descriptor_tmp.568
-___block_descriptor_tmp.652
+___block_descriptor_tmp.570
+___block_descriptor_tmp.654
 _OBJC_IVAR_$_IBGChatListPresenter._interactor
 _OBJC_IVAR_$_IBGChatListPresenter._view
 _OBJC_IVAR_$_IBGChatListPresenter._shouldDisplayPrimary
 _OBJC_IVAR_$_IBGChatListPresenter._shouldDismissOnCancel
 l_OBJC_PROTOCOL_$_UISplitViewControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_UISplitViewControllerDelegate
-/Users/distiller/ios/Instabug/InstabugChats/Presenters/IBGChatListPresenter.m
-/Users/distiller/ios/Instabug/InstabugChats/Presenters/IBGChatListPresenter.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Presenters/IBGChatListPresenter.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Presenters/IBGChatListPresenter.h
 __53-[IBGChatListPresenter fetchedAsset:ofURL:isSuccess:]_block_invoke
 __49-[IBGChatListPresenter didSelectChatAtIndexPath:]_block_invoke
 __34-[IBGChatListPresenter addNewChat]_block_invoke
@@ -3341,16 +3356,16 @@ ___41-[IBGChatCache broadcastChatCacheChanged]_block_invoke
 -[IBGChatCache lock]
 -[IBGChatCache setLock:]
 -[IBGChatCache .cxx_destruct]
-___block_descriptor_tmp.458
-___block_literal_global.459
-___block_descriptor_tmp.497
+___block_descriptor_tmp.460
+___block_literal_global.461
+___block_descriptor_tmp.499
 _OBJC_IVAR_$_IBGChatCache._chatsToIgnore
 _OBJC_IVAR_$_IBGChatCache._onlyToBeSentModels
 _OBJC_IVAR_$_IBGChatCache._cachedModels
 _OBJC_IVAR_$_IBGChatCache._chatChangeObservers
 _OBJC_IVAR_$_IBGChatCache._lock
-/Users/distiller/ios/Instabug/InstabugChats/Caching/IBGChatCache.m
-/Users/distiller/ios/Instabug/InstabugChats/Caching/IBGChatCache.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Caching/IBGChatCache.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Caching/IBGChatCache.h
 __41-[IBGChatCache broadcastChatCacheChanged]_block_invoke
 __31-[IBGChatCache sortedMessages:]_block_invoke
 __37-[IBGChatCache sortedChatsFromChats:]_block_invoke
@@ -3359,8 +3374,8 @@ ___38+[InstabugBugReporting sharedInstance]_block_invoke
 -[InstabugBugReporting initializationOperations]
 ___48-[InstabugBugReporting initializationOperations]_block_invoke
 ___48-[InstabugBugReporting initializationOperations]_block_invoke_2
-___copy_helper_block_.544
-___destroy_helper_block_.545
+___copy_helper_block_.546
+___destroy_helper_block_.547
 +[InstabugBugReporting setShowEmailField:]
 +[InstabugBugReporting setWillSkipScreenshotAnnotation:]
 +[InstabugBugReporting setEmailFieldRequired:]
@@ -3377,9 +3392,9 @@ ___destroy_helper_block_.545
 -[InstabugBugReporting setInitializationOperation:]
 -[InstabugBugReporting .cxx_destruct]
 _OBJC_IVAR_$_InstabugBugReporting._initializationOperation
-___block_descriptor_tmp.540
-___block_descriptor_tmp.546
-/Users/distiller/ios/Instabug/InstabugBugReporting/InstabugBugReporting.m
+___block_descriptor_tmp.542
+___block_descriptor_tmp.548
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/InstabugBugReporting.m
 __48-[InstabugBugReporting initializationOperations]_block_invoke_2
 __48-[InstabugBugReporting initializationOperations]_block_invoke
 __38+[InstabugBugReporting sharedInstance]_block_invoke
@@ -3392,7 +3407,7 @@ ___50-[IBGSurveyThankYouViewController dismissThankYou]_block_invoke
 -[IBGSurveyThankYouViewController setThankYouView:]
 -[IBGSurveyThankYouViewController .cxx_destruct]
 _OBJC_IVAR_$_IBGSurveyThankYouViewController._thankYouView
-/Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyThankYouViewController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyThankYouViewController.m
 __50-[IBGSurveyThankYouViewController dismissThankYou]_block_invoke
 _starRatingIcon_block_invoke
 _tickThankYouBlock_block_invoke_2
@@ -3402,20 +3417,20 @@ _tickThankYouBlock_block_invoke_2
 _fillColor
 ___block_descriptor_tmp.23
 ___block_literal_global.24
-/Users/distiller/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysIcons.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysIcons.m
 tickThankYouBlock_block_invoke_2
 starRatingIcon_block_invoke
 -[IBGDiffEngine diffBetweenObjects:newObjects:]
 -[IBGDiffEngine createDictionaryFromDiffableArray:]
-/Users/distiller/ios/Instabug/InstabugChats/Diff Engine/IBGDiffEngine.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Diff Engine/IBGDiffEngine.m
 -[IBGChatNavigationController viewDidLoad]
 -[IBGChatNavigationController viewWillAppear:]
 -[IBGChatNavigationController preferredStatusBarStyle]
 -[IBGChatNavigationController gestureRecognizerShouldBegin:]
-/Users/distiller/ios/Instabug/InstabugChats/View Controllers/IBGChatNavigationController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/View Controllers/IBGChatNavigationController.m
 -[IBGCrashAttachmentRequestCreator logRequestWithId:parameters:delegate:]
 -[IBGCrashAttachmentRequestCreator reportAttachmentRequestWithParameters:attachmentPath:reportId:localAttachment:]
-/Users/distiller/ios/Instabug/InstabugCrashReporting/Server requests/RequestCreator/IBGCrashAttachmentRequestCreator.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCrashReporting/Server requests/RequestCreator/IBGCrashAttachmentRequestCreator.m
 -[IBGSyncRequest initWithDelegate:numberOfmessages:readMessagesReceipts:lastMessageDate:]
 -[IBGSyncRequest executeNow]
 -[IBGSyncRequest serverExecutionDone:statusCode:error:response:]
@@ -3446,9 +3461,9 @@ _OBJC_IVAR_$_IBGSyncRequest._readMessagesReceipts
 _OBJC_IVAR_$_IBGSyncRequest._lastMessageDate
 _OBJC_IVAR_$_IBGSyncRequest._isSuccess
 _OBJC_IVAR_$_IBGSyncRequest._UUID
-/Users/distiller/ios/Instabug/InstabugChats/ServerRequests/IBGSyncRequest.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/IBGSyncRequest.m
 -[IBGChatsLogRequest initWithChatId:parameters:delegate:]
-/Users/distiller/ios/Instabug/InstabugChats/ServerRequests/IBGChatsLogRequest.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/ServerRequests/IBGChatsLogRequest.m
 -[IBGChatListInteractor initSelectedChat:]
 -[IBGChatListInteractor loadChats]
 -[IBGChatListInteractor createNewChat]
@@ -3481,8 +3496,8 @@ _OBJC_IVAR_$_IBGChatListInteractor._selectedChat
 _OBJC_IVAR_$_IBGChatListInteractor._chats
 l_OBJC_PROTOCOL_$_IBGChatObserver
 l_OBJC_LABEL_PROTOCOL_$_IBGChatObserver
-/Users/distiller/ios/Instabug/InstabugChats/Interactors/IBGChatListInteractor.m
-/Users/distiller/ios/Instabug/InstabugChats/Interactors/IBGChatListInteractor.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Interactors/IBGChatListInteractor.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Interactors/IBGChatListInteractor.h
 __35-[IBGChatListInteractor fetchChats]_block_invoke
 -[IBGExtraFieldController initWithSendController:]
 -[IBGExtraFieldController reportType]
@@ -3506,13 +3521,13 @@ __35-[IBGChatListInteractor fetchChats]_block_invoke
 _OBJC_IVAR_$_IBGExtraFieldController._extraFields
 _OBJC_IVAR_$_IBGExtraFieldController._sendController
 _OBJC_IVAR_$_IBGExtraFieldController._textAlignment
-/Users/distiller/ios/Instabug/InstabugBugReporting/Controllers/IBGExtraFieldController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Controllers/IBGExtraFieldController.m
 -[IBGBugAttachmentRequest initWithParameters:attachmentPath:reportID:delegate:]
 -[IBGBugAttachmentRequest attachmentURL]
 -[IBGBugAttachmentRequest setAttachmentURL:]
 -[IBGBugAttachmentRequest .cxx_destruct]
 _OBJC_IVAR_$_IBGBugAttachmentRequest._attachmentURL
-/Users/distiller/ios/Instabug/InstabugBugReporting/ServerRequests/IBGBugAttachmentRequest.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/ServerRequests/IBGBugAttachmentRequest.m
 -[IBGBugController initWithSnapshot:]
 -[IBGBugController hasExtraReportFields]
 -[IBGBugController attachments]
@@ -3552,8 +3567,8 @@ _OBJC_IVAR_$_IBGBugController._snapshotHeadNode
 _OBJC_IVAR_$_IBGBugController._sendingBugController
 _OBJC_IVAR_$_IBGBugController._shouldInterruptViewHierarchy
 _OBJC_IVAR_$_IBGBugController._numberOfAttachmentsAdded
-/Users/distiller/ios/Instabug/InstabugBugReporting/Controllers/IBGBugController.m
-/Users/distiller/ios/Instabug/InstabugBugReporting/Controllers/IBGBugController.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Controllers/IBGBugController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Controllers/IBGBugController.h
 -[IBGChatPresenter initWithShouldDismissSDKOnCancel:shouldDismissViewOnly:]
 -[IBGChatPresenter intialize]
 -[IBGChatPresenter didDisplayIndexPath:]
@@ -3605,8 +3620,8 @@ _OBJC_IVAR_$_IBGChatPresenter._shouldDismissSDKOnCancel
 _OBJC_IVAR_$_IBGChatPresenter._shouldDismissViewOnly
 _OBJC_IVAR_$_IBGChatPresenter._isLoadingNextPage
 _OBJC_IVAR_$_IBGChatPresenter._hasFinishedFirstLoad
-/Users/distiller/ios/Instabug/InstabugChats/Presenters/IBGChatPresenter.m
-/Users/distiller/ios/Instabug/InstabugChats/Presenters/IBGChatPresenter.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Presenters/IBGChatPresenter.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Presenters/IBGChatPresenter.h
 __32-[IBGChatPresenter processDiff:]_block_invoke
 +[IBGChatsDataStore getInstance]
 ___32+[IBGChatsDataStore getInstance]_block_invoke
@@ -3615,8 +3630,8 @@ ___32+[IBGChatsDataStore getInstance]_block_invoke
 -[IBGChatsDataStore setOnNewMessageHandler:]
 -[IBGChatsDataStore .cxx_destruct]
 _OBJC_IVAR_$_IBGChatsDataStore._onNewMessageHandler
-/Users/distiller/ios/Instabug/InstabugChats/Defaults/IBGChatsDataStore.m
-/Users/distiller/ios/Instabug/InstabugChats/Defaults/IBGChatsDataStore.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Defaults/IBGChatsDataStore.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Defaults/IBGChatsDataStore.h
 __32+[IBGChatsDataStore getInstance]_block_invoke
 -[IBGSurveyMCQViewController initWithQuestion:delegate:]
 -[IBGSurveyMCQViewController viewDidLoad]
@@ -3627,14 +3642,14 @@ ___45-[IBGSurveyMCQViewController viewWillAppear:]_block_invoke
 -[IBGSurveyMCQViewController dealloc]
 -[IBGSurveyMCQViewController reloadView]
 ___40-[IBGSurveyMCQViewController reloadView]_block_invoke
-___copy_helper_block_.448
-___destroy_helper_block_.449
+___copy_helper_block_.450
+___destroy_helper_block_.451
 -[IBGSurveyMCQViewController registerNotification]
 -[IBGSurveyMCQViewController unregisterNotification]
 -[IBGSurveyMCQViewController didChangeOrientation]
 ___50-[IBGSurveyMCQViewController didChangeOrientation]_block_invoke
-___copy_helper_block_.460
-___destroy_helper_block_.461
+___copy_helper_block_.462
+___destroy_helper_block_.463
 -[IBGSurveyMCQViewController numberOfSectionsInCollectionView:]
 -[IBGSurveyMCQViewController collectionView:numberOfItemsInSection:]
 -[IBGSurveyMCQViewController collectionView:cellForItemAtIndexPath:]
@@ -3667,8 +3682,8 @@ ___destroy_helper_block_.461
 -[IBGSurveyMCQViewController selectedAnswerIndex]
 -[IBGSurveyMCQViewController setSelectedAnswerIndex:]
 -[IBGSurveyMCQViewController .cxx_destruct]
-___block_descriptor_tmp.450
-___block_descriptor_tmp.462
+___block_descriptor_tmp.452
+___block_descriptor_tmp.464
 _OBJC_IVAR_$_IBGSurveyMCQViewController._surveyCollectionView
 _OBJC_IVAR_$_IBGSurveyMCQViewController._topSepratorView
 _OBJC_IVAR_$_IBGSurveyMCQViewController._bottomSepratorView
@@ -3682,7 +3697,8 @@ l_OBJC_PROTOCOL_$_UICollectionViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_UICollectionViewDelegate
 l_OBJC_PROTOCOL_$_UICollectionViewDataSource
 l_OBJC_LABEL_PROTOCOL_$_UICollectionViewDataSource
-/Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyMCQViewController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyMCQViewController.m
+CGSizeMake
 __50-[IBGSurveyMCQViewController didChangeOrientation]_block_invoke
 __40-[IBGSurveyMCQViewController reloadView]_block_invoke
 __45-[IBGSurveyMCQViewController viewWillAppear:]_block_invoke
@@ -3715,7 +3731,7 @@ _OBJC_IVAR_$_IBGMessagesView._messagesTableView
 _OBJC_IVAR_$_IBGMessagesView._messageCellIdentifier
 _OBJC_IVAR_$_IBGMessagesView._message
 _OBJC_IVAR_$_IBGMessagesView._firstTimeShowKeyboard
-/Users/distiller/ios/Instabug/InstabugChats/Views/IBGMessagesView.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/IBGMessagesView.m
 __36-[IBGMessagesView keyboardWillShow:]_block_invoke
 -[IBGReportCategoriesController initWithReportType:andActionHandler:]
 -[IBGReportCategoriesController createItemsWithActionHandler:]
@@ -3741,24 +3757,24 @@ _OBJC_IVAR_$_IBGReportCategoriesController._items
 _OBJC_IVAR_$_IBGReportCategoriesController._type
 l_OBJC_PROTOCOL_$_IBGReportCategoriesVCDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGReportCategoriesVCDelegate
-/Users/distiller/ios/Instabug/InstabugBugReporting/Controllers/IBGReportCategoriesController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Controllers/IBGReportCategoriesController.m
 -[IBGInboundVoiceNoteCell initWithStyle:reuseIdentifier:]
 -[IBGInboundVoiceNoteCell setContent:isSent:]
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundVoiceNoteCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundVoiceNoteCell.m
 -[IBGInboundLoadingCell initWithStyle:reuseIdentifier:]
 -[IBGInboundLoadingCell setContent:isSent:]
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundLoadingCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundLoadingCell.m
 +[Instabug(InstabugTestPrivate) generateNewUUID]
 +[Instabug(InstabugTestPrivate) clearAllCache]
-/Users/distiller/ios/Instabug/InstabugI/Instabug+InstabugTestPrivate.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugI/Instabug+InstabugTestPrivate.m
 +[Instabug afterInitializationQueue]
 ___36+[Instabug afterInitializationQueue]_block_invoke
 +[Instabug startWithToken:invocationEvent:]
 +[Instabug intializeSDKStack]
 ___29+[Instabug intializeSDKStack]_block_invoke
 ___29+[Instabug intializeSDKStack]_block_invoke_2
-___copy_helper_block_.640
-___destroy_helper_block_.641
+___copy_helper_block_.642
+___destroy_helper_block_.643
 +[Instabug prepareDependencies]
 +[Instabug setFileAttachment:]
 +[Instabug setFileAttachmentWithURL:]
@@ -3782,12 +3798,12 @@ ___24+[Instabug setUserData:]_block_invoke
 +[Instabug setDidReceiveAuthenticationChallengeHandler:]
 +[Instabug logUserEventWithName:params:]
 ___40+[Instabug logUserEventWithName:params:]_block_invoke
-___copy_helper_block_.723
-___destroy_helper_block_.724
+___copy_helper_block_.725
+___destroy_helper_block_.726
 +[Instabug logUserEventWithName:]
 ___33+[Instabug logUserEventWithName:]_block_invoke
-___copy_helper_block_.726
-___destroy_helper_block_.727
+___copy_helper_block_.728
+___destroy_helper_block_.729
 +[Instabug setAutoScreenRecordingEnabled:]
 +[Instabug setAutoScreenRecordingDuration:]
 +[Instabug setCrashReportingEnabled:]
@@ -3805,8 +3821,8 @@ ___35+[Instabug setPostInvocationBlock:]_block_invoke
 +[Instabug setWillTakeScreenshot:]
 +[Instabug identifyUserWithEmail:name:]
 ___39+[Instabug identifyUserWithEmail:name:]_block_invoke
-___copy_helper_block_.769
-___destroy_helper_block_.770
+___copy_helper_block_.771
+___destroy_helper_block_.772
 +[Instabug logOut]
 ___18+[Instabug logOut]_block_invoke
 +[Instabug setUserEmail:]
@@ -3845,13 +3861,13 @@ ___18+[Instabug logOut]_block_invoke
 +[Instabug removeExtraReportFields]
 +[Instabug setUserAttribute:withKey:]
 ___37+[Instabug setUserAttribute:withKey:]_block_invoke
-___copy_helper_block_.958
-___destroy_helper_block_.959
+___copy_helper_block_.964
+___destroy_helper_block_.965
 +[Instabug userAttributeForKey:]
 +[Instabug removeUserAttributeForKey:]
 ___38+[Instabug removeUserAttributeForKey:]_block_invoke
-___copy_helper_block_.965
-___destroy_helper_block_.966
+___copy_helper_block_.971
+___destroy_helper_block_.972
 +[Instabug userAttributes]
 +[Instabug setViewHierarchyEnabled:]
 +[Instabug setAutoShowingSurveysEnabled:]
@@ -3860,8 +3876,8 @@ ___destroy_helper_block_.966
 ___33+[Instabug showSurveyIfAvailable]_block_invoke
 +[Instabug showSurveyWithToken:]
 ___32+[Instabug showSurveyWithToken:]_block_invoke
-___copy_helper_block_.989
-___destroy_helper_block_.990
+___copy_helper_block_.995
+___destroy_helper_block_.996
 +[Instabug hasRespondedToSurveyWithToken:]
 +[Instabug hasAvailableSurveys]
 +[Instabug resetTags]
@@ -3873,25 +3889,25 @@ ___destroy_helper_block_.990
 +[Instabug reportBugWithEmail:comment:screenshot:]
 ___50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke
 ___50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke_2
-___copy_helper_block_.1017
-___destroy_helper_block_.1018
-___copy_helper_block_.1020
-___destroy_helper_block_.1021
-+[Instabug reportFeedBackWithEmail:comment:screenshot:]
-___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke
-___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke_2
 ___copy_helper_block_.1023
 ___destroy_helper_block_.1024
 ___copy_helper_block_.1026
 ___destroy_helper_block_.1027
++[Instabug reportFeedBackWithEmail:comment:screenshot:]
+___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke
+___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke_2
+___copy_helper_block_.1029
+___destroy_helper_block_.1030
+___copy_helper_block_.1032
+___destroy_helper_block_.1033
 +[Instabug reportException:]
 ___28+[Instabug reportException:]_block_invoke
-___copy_helper_block_.1031
-___destroy_helper_block_.1032
+___copy_helper_block_.1037
+___destroy_helper_block_.1038
 +[Instabug reportError:]
 ___24+[Instabug reportError:]_block_invoke
-___copy_helper_block_.1036
-___destroy_helper_block_.1037
+___copy_helper_block_.1042
+___destroy_helper_block_.1043
 +[Instabug invokeConversations]
 +[Instabug isInstabugNotification:]
 +[Instabug didRegisterForRemoteNotificationsWithDeviceToken:]
@@ -3912,22 +3928,22 @@ ___destroy_helper_block_.1037
 +[Instabug forceDisableInAppMessaging]
 _afterInitializationQueue._queue
 _afterInitializationQueue.onceToken
-___block_descriptor_tmp.643
-___block_descriptor_tmp.725
-___block_descriptor_tmp.728
-___block_descriptor_tmp.771
-___block_descriptor_tmp.775
-___block_descriptor_tmp.960
-___block_descriptor_tmp.967
-___block_descriptor_tmp.986
-___block_descriptor_tmp.991
-___block_descriptor_tmp.1019
-___block_descriptor_tmp.1022
+___block_descriptor_tmp.645
+___block_descriptor_tmp.727
+___block_descriptor_tmp.730
+___block_descriptor_tmp.773
+___block_descriptor_tmp.777
+___block_descriptor_tmp.966
+___block_descriptor_tmp.973
+___block_descriptor_tmp.992
+___block_descriptor_tmp.997
 ___block_descriptor_tmp.1025
 ___block_descriptor_tmp.1028
-___block_descriptor_tmp.1033
-___block_descriptor_tmp.1038
-/Users/distiller/ios/Instabug/InstabugI/Instabug.m
+___block_descriptor_tmp.1031
+___block_descriptor_tmp.1034
+___block_descriptor_tmp.1039
+___block_descriptor_tmp.1044
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugI/Instabug.m
 IBGNSLogWithLevel
 IBGNSLog
 IBGLogError
@@ -4038,11 +4054,11 @@ _OBJC_IVAR_$_IBGSurveysColors._introDismissButtonTitleColor
 _OBJC_IVAR_$_IBGSurveysColors._starColor
 _OBJC_IVAR_$_IBGSurveysColors._selectedStarColor
 _OBJC_IVAR_$_IBGSurveysColors._primaryColorWasSet
-/Users/distiller/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysColors.m
-/Users/distiller/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysColors.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysColors.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Defaults/IBGSurveysColors.h
 -[IBGInboundVideoCell initWithStyle:reuseIdentifier:]
 -[IBGInboundVideoCell setContent:isSent:]
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundVideoCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundVideoCell.m
 +[IBGMovedIndex movedIndexfromIndex:toIndex:]
 -[IBGMovedIndex description]
 -[IBGMovedIndex oldIndex]
@@ -4051,17 +4067,17 @@ _OBJC_IVAR_$_IBGSurveysColors._primaryColorWasSet
 -[IBGMovedIndex setNewIndex:]
 _OBJC_IVAR_$_IBGMovedIndex._oldIndex
 _OBJC_IVAR_$_IBGMovedIndex._newIndex
-/Users/distiller/ios/Instabug/InstabugChats/Diff Engine/IBGMovedIndex.m
-/Users/distiller/ios/Instabug/InstabugChats/Diff Engine/IBGMovedIndex.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Diff Engine/IBGMovedIndex.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Diff Engine/IBGMovedIndex.h
 -[UINavigationItem(Subtitle) setTitle:withSubtitle:]
 -[UINavigationItem(Subtitle) setupConstraintsForTitleLabel:andSubtitleLabel:forSuperview:]
-/Users/distiller/ios/Instabug/InstabugChats/Views/Extensions/UINavigationItem+Subtitle.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Extensions/UINavigationItem+Subtitle.m
 -[IBGSplitViewController viewDidLoad]
 -[IBGSplitViewController preferredStatusBarStyle]
 -[IBGSplitViewController getVisibileViewController]
 -[IBGSplitViewController shouldAutorotate]
 -[IBGSplitViewController prefersStatusBarHidden]
-/Users/distiller/ios/Instabug/InstabugChats/View Controllers/IBGSplitViewController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/View Controllers/IBGSplitViewController.m
 -[IBGStartHUDViewController init]
 -[IBGStartHUDViewController show]
 +[IBGStartHUDViewController show]
@@ -4069,12 +4085,12 @@ ___33+[IBGStartHUDViewController show]_block_invoke
 +[IBGStartHUDViewController forcedShow]
 ___39+[IBGStartHUDViewController forcedShow]_block_invoke
 ___block_descriptor_tmp.50
-/Users/distiller/ios/Instabug/InstabugBugReporting/Windows/HUDs/IBGStartHUDViewController.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Windows/HUDs/IBGStartHUDViewController.m
 __39+[IBGStartHUDViewController forcedShow]_block_invoke
 __33+[IBGStartHUDViewController show]_block_invoke
 -[IBGOutboundImageCell initWithStyle:reuseIdentifier:]
 -[IBGOutboundImageCell setContent:isSent:]
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundImageCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Outbound Cells/IBGOutboundImageCell.m
 -[IBGExtraField initWithTitle:isRequired:]
 -[IBGExtraField setTextAlignment:]
 -[IBGExtraField title]
@@ -4092,8 +4108,8 @@ _OBJC_IVAR_$_IBGExtraField._title
 _OBJC_IVAR_$_IBGExtraField._value
 _OBJC_IVAR_$_IBGExtraField._isRequired
 _OBJC_IVAR_$_IBGExtraField._isTextAlignmentAssigned
-/Users/distiller/ios/Instabug/InstabugBugReporting/Models/IBGExtraField.m
-/Users/distiller/ios/Instabug/InstabugBugReporting/Models/IBGExtraField.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Models/IBGExtraField.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugBugReporting/Models/IBGExtraField.h
 -[IBGDiff init]
 -[IBGDiff addDeletedIndex:]
 -[IBGDiff deleted]
@@ -4118,17 +4134,17 @@ _OBJC_IVAR_$_IBGDiff._deletedIndcies
 _OBJC_IVAR_$_IBGDiff._insertedIndcies
 _OBJC_IVAR_$_IBGDiff._reloadedIndices
 _OBJC_IVAR_$_IBGDiff._movedIndices
-/Users/distiller/ios/Instabug/InstabugChats/Diff Engine/IBGDiff.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Diff Engine/IBGDiff.m
 -[IBGPaddingCell initWithStyle:reuseIdentifier:]
 -[IBGPaddingCell prepareForReuse]
 -[IBGPaddingCell emptyView]
 -[IBGPaddingCell setEmptyView:]
 -[IBGPaddingCell .cxx_destruct]
 _OBJC_IVAR_$_IBGPaddingCell._emptyView
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/IBGPaddingCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/IBGPaddingCell.m
 -[IBGInboundImageCell initWithStyle:reuseIdentifier:]
 -[IBGInboundImageCell setContent:isSent:]
-/Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundImageCell.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Views/Table View Cell/Chat Detail cells/Inbound Cells/IBGInboundImageCell.m
 +[IBGMessageAction messageActionWithDictionary:]
 -[IBGMessageAction dictionaryValue]
 -[IBGMessageAction initWithDictionary:]
@@ -4144,10 +4160,10 @@ _OBJC_IVAR_$_IBGPaddingCell._emptyView
 _OBJC_IVAR_$_IBGMessageAction._URL
 _OBJC_IVAR_$_IBGMessageAction._title
 _OBJC_IVAR_$_IBGMessageAction._actionType
-/Users/distiller/ios/Instabug/InstabugChats/Models/IBGMessageAction.m
-/Users/distiller/ios/Instabug/InstabugChats/Models/IBGMessageAction.h
-/Users/distiller/ios/Instabug/InstabugChats/Defaults/IBGChatsAccessibilityIdentifiers.m
-/Users/distiller/Library/Developer/Xcode/DerivedData/Instabug-cjevizvyfkuqudglpxzowmiwjvbi/Build/Intermediates.noindex/ArchiveIntermediates/Instabug/IntermediateBuildFilesPath/Instabug.build/Release-iphoneos/Instabug.build/DerivedSources/Instabug_vers.c
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGMessageAction.m
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Models/IBGMessageAction.h
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugChats/Defaults/IBGChatsAccessibilityIdentifiers.m
+/Users/khaledElMorabea/Library/Developer/Xcode/DerivedData/Instabug-cqbadbmomfjgsddklrlfomsvjpgj/Build/Intermediates.noindex/ArchiveIntermediates/Instabug/IntermediateBuildFilesPath/Instabug.build/Release-iphoneos/Instabug.build/DerivedSources/Instabug_vers.c
 __ZN3$_0D1Ev
 __ZL26internal_callback_iteratoriP9__siginfoP17__darwin_ucontextPv
 +[IBGPLCrashSignalHandler initialize]
@@ -4436,17 +4452,17 @@ _OBJC_IVAR_$_IBGPLCrashReportMachineInfo._processorCount
 _OBJC_IVAR_$_IBGPLCrashReportMachineInfo._logicalProcessorCount
 _plcrash_async_macho_find_best_symbol
 __ZL20free_mapped_sectionsP24plcrash_async_objc_cache
-__ZL24plcrash_async_objc_parseP19plcrash_async_machoP24plcrash_async_objc_cachePFvbP26plcrash_async_macho_stringS4_mPvES5_
-__ZL41pl_async_objc_find_method_search_callbackbP26plcrash_async_macho_stringS0_mPv
-__ZL39pl_async_objc_find_method_call_callbackbP26plcrash_async_macho_stringS0_mPv
+__ZL24plcrash_async_objc_parseP19plcrash_async_machoP24plcrash_async_objc_cachePFvbP26plcrash_async_macho_stringS4_jPvES5_
+__ZL41pl_async_objc_find_method_search_callbackbP26plcrash_async_macho_stringS0_jPv
+__ZL39pl_async_objc_find_method_call_callbackbP26plcrash_async_macho_stringS0_jPv
 ____ZL37plcrash_async_image_objc_has_ios9_abiv_block_invoke
-__ZL25pl_async_parse_obj1_classP19plcrash_async_machoP14pl_objc1_classbPFvbP26plcrash_async_macho_stringS4_mPvES5_
+__ZL25pl_async_parse_obj1_classP19plcrash_async_machoP14pl_objc1_classbPFvbP26plcrash_async_macho_stringS4_jPvES5_
 __ZL12map_sectionsP19plcrash_async_machoP24plcrash_async_objc_cache
-__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_mPvESC_
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_jPvESC_
 __ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
-__ZL37pl_async_objc_parse_objc2_method_listP19plcrash_async_machoP24plcrash_async_objc_cacheP26plcrash_async_macho_stringbmPFvbS4_S4_mPvES5_
-__ZL9cache_setP24plcrash_async_objc_cachemm
-__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_mPvESC_
+__ZL37pl_async_objc_parse_objc2_method_listP19plcrash_async_machoP24plcrash_async_objc_cacheP26plcrash_async_macho_stringbjPFvbS4_S4_jPvES5_
+__ZL9cache_setP24plcrash_async_objc_cachejj
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_jPvESC_
 __ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
 __GLOBAL__sub_I_PLCrashAsyncObjCSection.mm
 __ZZL37plcrash_async_image_objc_has_ios9_abivE9onceToken
@@ -4486,7 +4502,6 @@ _arm_nonvolatile_registers
 _arm64_nonvolatile_registers
 _arm_dwarf_table
 _arm64_dwarf_table
-_plcrash_async_map_register_name
 +[IBGPLCrashProcessInfo currentProcessInfo]
 -[IBGPLCrashProcessInfo initWithProcessID:]
 -[IBGPLCrashProcessInfo dealloc]
