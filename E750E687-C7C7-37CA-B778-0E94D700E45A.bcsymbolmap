@@ -22,15 +22,15 @@ l_OBJC_LABEL_PROTOCOL_$_NSObject
 l_OBJC_PROTOCOL_$_AVAudioPlayerDelegate
 l_OBJC_LABEL_PROTOCOL_$_AVAudioPlayerDelegate
 Apple LLVM version 9.0.0 (clang-900.0.39.2)
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVoicePlayer.m
-/Users/distiller/ios/InstabugCore
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVoicePlayer.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVoicePlayer.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVoicePlayer.h
 -[IBGNavigationController viewWillAppear:]
 -[IBGNavigationController preferredStatusBarStyle]
 -[IBGNavigationController getVisibileViewController]
 -[IBGNavigationController shouldAutorotate]
 -[IBGNavigationController prefersStatusBarHidden]
-/Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGNavigationController.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/View Controllers/IBGNavigationController.m
 -[IBGAnalyticsRequest initWithMethodsLog:eventsLog:delegate:]
 -[IBGAnalyticsRequest executeNow]
 -[IBGAnalyticsRequest serverExecutionDone:statusCode:error:response:]
@@ -61,8 +61,8 @@ l_OBJC_PROTOCOL_$_IBGServerRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGServerRequestDelegate
 l_OBJC_PROTOCOL_$_IBGBaseRequest
 l_OBJC_LABEL_PROTOCOL_$_IBGBaseRequest
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGAnalyticsRequest.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGBaseRequest.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGAnalyticsRequest.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGBaseRequest.h
 -[IBGZZOldArchiveEntry initWithCentralFileHeader:localFileHeader:]
 __ZN22IBGZZCentralFileHeader10extraFieldI24IBGZZWinZipAESExtraFieldEEPT_v
 -[IBGZZOldArchiveEntry fileData]
@@ -106,16 +106,16 @@ _OBJC_IVAR_$_IBGZZOldArchiveEntry._localFileHeader
 _OBJC_IVAR_$_IBGZZOldArchiveEntry._encryptionMode
 ___block_descriptor_tmp
 ___block_descriptor_tmp.72
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZOldArchiveEntry.mm
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZOldArchiveEntry.mm
 ~IBGZZDataProvider
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDataProvider.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDataProvider.h
 __invoke
 operator()
 rewind
 skipForwardBytes
 getBytes
 ~IBGZZScopeGuard
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZScopeGuard.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZScopeGuard.h
 __destroy_helper_block_
 __copy_helper_block_
 __58-[IBGZZOldArchiveEntry newDataProviderWithPassword:error:]_block_invoke
@@ -124,13 +124,13 @@ IBGZZDataProvider
 __50-[IBGZZOldArchiveEntry newDataWithPassword:error:]_block_invoke
 IBGZZScopeGuard
 fileData
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZHeaders.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZHeaders.h
 lastExtraField
 firstExtraField
 fileName
 operator&
 IBGZZRaiseErrorNo
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZError.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZError.h
 dataDescriptor
 extraField<IBGZZWinZipAESExtraField>
 nextExtraField
@@ -154,10 +154,10 @@ _OBJC_IVAR_$_IBGImageLocalAttachment._metadata
 _OBJC_IVAR_$_IBGImageLocalAttachment.fileName
 _OBJC_IVAR_$_IBGImageLocalAttachment._isMainScreenshot
 _OBJC_IVAR_$_IBGImageLocalAttachment._completionHandler
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGImageLocalAttachment.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGImageLocalAttachment.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGImageLocalAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGImageLocalAttachment.h
 -[IBGAttachment setMetadata:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGAttachment.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGAttachment.h
 -[IBGMagnifyControlPoints initWithAnnotationView:]
 -[IBGMagnifyControlPoints updateControlPoints]
 -[IBGMagnifyControlPoints showControlPoints]
@@ -181,11 +181,14 @@ _OBJC_IVAR_$_IBGMagnifyControlPoints._initialDistance
 _OBJC_IVAR_$_IBGMagnifyControlPoints._initialCenter
 l_OBJC_PROTOCOL_$_IBGShapeControl
 l_OBJC_LABEL_PROTOCOL_$_IBGShapeControl
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGMagnifyControlPoints.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGMagnifyControlPoints.m
+CGRectMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 IBGCGPointGetDistance
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGGeomtryUtilities.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGGeomtryUtilities.h
+CGPointMake
 -[IBGInternalErrorLogRequest initWithCrashId:parameters:delegate:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGInternalErrorLogRequest.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGInternalErrorLogRequest.m
 +[IBGSessionManager getInstance]
 ___32+[IBGSessionManager getInstance]_block_invoke
 -[IBGSessionManager initializationOperation]
@@ -212,20 +215,20 @@ _OBJC_IVAR_$_IBGSessionManager._initializationOperation
 ___block_descriptor_tmp.537
 ___block_descriptor_tmp.542
 _OBJC_IVAR_$_IBGSessionManager._currentSession
-/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGSessionManager.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGSessionManager.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Managers/IBGSessionManager.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Managers/IBGSessionManager.h
 __44-[IBGSessionManager initializationOperation]_block_invoke_2
 __44-[IBGSessionManager initializationOperation]_block_invoke
 __32+[IBGSessionManager getInstance]_block_invoke
 _dispatch_once
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/dispatch/once.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/dispatch/once.h
 -[NSLayoutConstraint(Log) ibg_firstAttributeString]
 -[NSLayoutConstraint(Log) ibg_secondAttributeString]
 -[NSLayoutConstraint(Log) ibg_layoutRelation]
 -[NSLayoutConstraint(Log) ibg_containsSecondItem]
 -[NSLayoutConstraint(Log) stringFromLayoutRelation:]
 -[NSLayoutConstraint(Log) stringFromLayoutAttribute:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/NSLayoutConstraint+Log.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Categories/NSLayoutConstraint+Log.m
 -[IBGLiteVisualUserStep stepId]
 -[IBGLiteVisualUserStep setStepId:]
 -[IBGLiteVisualUserStep isParent]
@@ -239,8 +242,8 @@ _OBJC_IVAR_$_IBGLiteVisualUserStep._stepId
 _OBJC_IVAR_$_IBGLiteVisualUserStep._isParent
 _OBJC_IVAR_$_IBGLiteVisualUserStep._childSteps
 _OBJC_IVAR_$_IBGLiteVisualUserStep._timeEpoch
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGLiteVisualUserStep.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGLiteVisualUserStep.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGLiteVisualUserStep.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGLiteVisualUserStep.h
 -[IBGColorSelectorView initWithColors:selectedAtIndex:centeredOnView:]
 -[IBGColorSelectorView setupColorSelectorView]
 -[IBGColorSelectorView updateConstraints]
@@ -286,9 +289,9 @@ _OBJC_IVAR_$_IBGColorSelectorView._cornerRadious
 _OBJC_IVAR_$_IBGColorSelectorView._colorTickView
 _OBJC_IVAR_$_IBGColorSelectorView._colorSelectorCenterXConstraint
 _OBJC_IVAR_$_IBGColorSelectorView._colorSelectorCenterYConstraint
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGColorSelectorView.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGColorSelectorView.h
-/Users/distiller/ios/InstabugCore/InstabugCore/InstabugCore.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGColorSelectorView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGColorSelectorView.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/InstabugCore.m
 +[IBGUserAttributesLogger sharedInstance]
 ___41+[IBGUserAttributesLogger sharedInstance]_block_invoke
 -[IBGUserAttributesLogger init]
@@ -335,7 +338,7 @@ ___block_descriptor_tmp.41
 ___block_descriptor_tmp.46
 ___block_descriptor_tmp.51
 _OBJC_IVAR_$_IBGUserAttributesLogger._userAttributesLogsQueue
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserAttributesLogger.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGUserAttributesLogger.m
 __44-[IBGUserAttributesLogger getUserAttributes]_block_invoke
 __53-[IBGUserAttributesLogger removeUserAttributeForKey:]_block_invoke
 __47-[IBGUserAttributesLogger userAttributeForKey:]_block_invoke
@@ -363,8 +366,8 @@ l_OBJC_PROTOCOL_$_IBGDictionaryProtocol
 l_OBJC_LABEL_PROTOCOL_$_IBGDictionaryProtocol
 l_OBJC_PROTOCOL_$_IBGCoding
 l_OBJC_LABEL_PROTOCOL_$_IBGCoding
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGStateEventLog.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGStateEventLog.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGStateEventLog.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGStateEventLog.h
 -[IBGSessionRequest initWithParameters:delegate:]
 -[IBGSessionRequest executeNow]
 -[IBGSessionRequest serverExecutionDone:statusCode:error:response:]
@@ -387,14 +390,14 @@ _OBJC_IVAR_$_IBGSessionRequest._dataRequest
 _OBJC_IVAR_$_IBGSessionRequest._failures
 _OBJC_IVAR_$_IBGSessionRequest._parameters
 _OBJC_IVAR_$_IBGSessionRequest._isSuccess
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGSessionRequest.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGSessionRequest.m
 -[IBGColorView initWithColor:]
 -[IBGColorView updateConstraints]
 -[IBGColorView colorView]
 -[IBGColorView setColorView:]
 -[IBGColorView .cxx_destruct]
 _OBJC_IVAR_$_IBGColorView._colorView
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGColorView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGColorView.m
 -[IBGAnnotationMemento initWithFrame:superViewFrame:zPosition:angel:]
 -[IBGAnnotationMemento zPosition]
 -[IBGAnnotationMemento frame]
@@ -404,8 +407,8 @@ _OBJC_IVAR_$_IBGAnnotationMemento._frame
 _OBJC_IVAR_$_IBGAnnotationMemento._zPosition
 _OBJC_IVAR_$_IBGAnnotationMemento._superViewFrame
 _OBJC_IVAR_$_IBGAnnotationMemento._angle
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGAnnotationMemento.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGAnnotationMemento.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGAnnotationMemento.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGAnnotationMemento.h
 -[IBGVideoRecordingViewController initWithDelegate:]
 -[IBGVideoRecordingViewController viewDidLoad]
 -[IBGVideoRecordingViewController didReceiveMemoryWarning]
@@ -456,13 +459,13 @@ _OBJC_IVAR_$_IBGVideoRecordingViewController._startedRecording
 _OBJC_IVAR_$_IBGVideoRecordingViewController._videoRecorderPopover
 l_OBJC_PROTOCOL_$_IBGButtonTappedDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGButtonTappedDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGVideoRecordingViewController.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/View Controllers/IBGVideoRecordingViewController.m
 __50-[IBGVideoRecordingViewController buttonTappedOn:]_block_invoke
 __63-[IBGVideoRecordingViewController setupMenuRecordingMenuButton]_block_invoke_2.107
 __63-[IBGVideoRecordingViewController setupMenuRecordingMenuButton]_block_invoke.96
 __63-[IBGVideoRecordingViewController setupMenuRecordingMenuButton]_block_invoke_2
 __63-[IBGVideoRecordingViewController setupMenuRecordingMenuButton]_block_invoke
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZConstants.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZConstants.m
 -[IBGOldUserStepsLogger init]
 -[IBGOldUserStepsLogger intializeSteps]
 -[IBGOldUserStepsLogger updateTopViewWithForced:date:parentWindow:]
@@ -476,7 +479,7 @@ __63-[IBGVideoRecordingViewController setupMenuRecordingMenuButton]_block_invoke
 -[IBGOldUserStepsLogger .cxx_destruct]
 _OBJC_IVAR_$_IBGOldUserStepsLogger._steps
 _OBJC_IVAR_$_IBGOldUserStepsLogger._topView
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGOldUserStepsLogger.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGOldUserStepsLogger.m
 -[IBGLocalAttachment initWithAttachment:]
 -[IBGLocalAttachment coderNameForSelector:]
 -[IBGLocalAttachment prepareAttachmentAndSaveWithCompletion:]
@@ -507,8 +510,8 @@ _OBJC_IVAR_$_IBGLocalAttachment._delegate
 _OBJC_IVAR_$_IBGLocalAttachment._isPrepared
 l_OBJC_PROTOCOL_$_IBGReportAttachmentRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGReportAttachmentRequestDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGLocalAttachment.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGLocalAttachment.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGLocalAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGLocalAttachment.h
 -[IBGZZDeflateOutputStream initWithChannelOutput:compressionLevel:]
 -[IBGZZDeflateOutputStream compressedSize]
 -[IBGZZDeflateOutputStream uncompressedSize]
@@ -526,8 +529,8 @@ _OBJC_IVAR_$_IBGZZDeflateOutputStream._status
 _OBJC_IVAR_$_IBGZZDeflateOutputStream._error
 _OBJC_IVAR_$_IBGZZDeflateOutputStream._crc32
 _OBJC_IVAR_$_IBGZZDeflateOutputStream._stream
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDeflateOutputStream.m
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDeflateOutputStream.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDeflateOutputStream.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDeflateOutputStream.h
 -[IBGArrowAnnotationView initWithFrame:zPosition:originator:annotatingColor:angle:]
 -[IBGArrowAnnotationView drawRect:]
 +[IBGArrowAnnotationView minimumArrowSize]
@@ -539,7 +542,8 @@ _OBJC_IVAR_$_IBGZZDeflateOutputStream._stream
 -[IBGArrowAnnotationView .cxx_destruct]
 _OBJC_IVAR_$_IBGArrowAnnotationView.path
 _OBJC_IVAR_$_IBGArrowAnnotationView._annotatingColor
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGArrowAnnotationView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGArrowAnnotationView.m
+CGSizeMake
 -[IBGActionSheetVC initInSplitViewController:]
 -[IBGActionSheetVC init]
 -[IBGActionSheetVC registerNotifications]
@@ -644,12 +648,12 @@ l_OBJC_PROTOCOL_$_UITableViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_UITableViewDelegate
 l_OBJC_PROTOCOL_$_UITableViewDataSource
 l_OBJC_LABEL_PROTOCOL_$_UITableViewDataSource
-/Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGActionSheetVC.m
-/Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGActionSheetVC.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/View Controllers/IBGActionSheetVC.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/View Controllers/IBGActionSheetVC.h
 __41-[IBGActionSheetVC hideWithSelectedItem:]_block_invoke.140
 __41-[IBGActionSheetVC hideWithSelectedItem:]_block_invoke
 UI_USER_INTERFACE_IDIOM
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
 __34-[IBGActionSheetVC viewDidAppear:]_block_invoke
 __71-[IBGActionSheetVC willAnimateRotationToInterfaceOrientation:duration:]_block_invoke
 -[IBGSDKVersionRequest initWithDelegate:]
@@ -671,7 +675,7 @@ _OBJC_IVAR_$_IBGSDKVersionRequest._dataUrl
 _OBJC_IVAR_$_IBGSDKVersionRequest._delegate
 _OBJC_IVAR_$_IBGSDKVersionRequest._failures
 _OBJC_IVAR_$_IBGSDKVersionRequest._isSuccess
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGSDKVersionRequest.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGSDKVersionRequest.m
 -[IBGVideoLocalAttachment initWithVideo:]
 -[IBGVideoLocalAttachment byline]
 -[IBGVideoLocalAttachment prepareAttachmentPath]
@@ -685,7 +689,7 @@ _OBJC_IVAR_$_IBGSDKVersionRequest._isSuccess
 -[IBGVideoLocalAttachment .cxx_destruct]
 _OBJC_IVAR_$_IBGVideoLocalAttachment.fileName
 _OBJC_IVAR_$_IBGVideoLocalAttachment._completionHandler
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGVideoLocalAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGVideoLocalAttachment.m
 -[IBGEventLoggerContextProvider context]
 -[IBGEventLoggerContextProvider memoryContext]
 ___46-[IBGEventLoggerContextProvider memoryContext]_block_invoke
@@ -708,7 +712,7 @@ ___block_descriptor_tmp.19
 __eventLoggerQueue
 l_OBJC_PROTOCOL_$_IBGContextProviderProtocol
 l_OBJC_LABEL_PROTOCOL_$_IBGContextProviderProtocol
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGEventLoggerContextProvider.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGEventLoggerContextProvider.m
 __38-[IBGEventLoggerContextProvider queue]_block_invoke
 __50-[IBGEventLoggerContextProvider backgroundContext]_block_invoke
 __46-[IBGEventLoggerContextProvider memoryContext]_block_invoke
@@ -736,7 +740,7 @@ __46-[IBGEventLoggerContextProvider memoryContext]_block_invoke
 -[IBGZZArchiveEntry newDataProviderWithError:]
 -[IBGZZArchiveEntry newDataProviderWithPassword:error:]
 -[IBGZZArchiveEntry newWriterCanSkipLocalFile:]
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZArchiveEntry.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZArchiveEntry.m
 -[IBGURLSessionDemuxTaskInfo initWithTask:delegate:modes:]
 -[IBGURLSessionDemuxTaskInfo performBlock:]
 -[IBGURLSessionDemuxTaskInfo performBlockOnClientThread:]
@@ -767,24 +771,24 @@ ___copy_helper_block_.121
 ___destroy_helper_block_.122
 -[IBGURLSessionDemux URLSession:task:didCompleteWithError:]
 ___59-[IBGURLSessionDemux URLSession:task:didCompleteWithError:]_block_invoke
-___copy_helper_block_.130
-___destroy_helper_block_.131
+___copy_helper_block_.131
+___destroy_helper_block_.132
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]
 ___79-[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]_block_invoke
-___copy_helper_block_.135
-___destroy_helper_block_.136
+___copy_helper_block_.136
+___destroy_helper_block_.137
 -[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]
 ___64-[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]_block_invoke
-___copy_helper_block_.140
-___destroy_helper_block_.141
+___copy_helper_block_.141
+___destroy_helper_block_.142
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]
 ___57-[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]_block_invoke
-___copy_helper_block_.145
-___destroy_helper_block_.146
+___copy_helper_block_.146
+___destroy_helper_block_.147
 -[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]
 ___78-[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]_block_invoke
-___copy_helper_block_.150
-___destroy_helper_block_.151
+___copy_helper_block_.151
+___destroy_helper_block_.152
 -[IBGURLSessionDemux configuration]
 -[IBGURLSessionDemux session]
 -[IBGURLSessionDemux taskInfoByTaskID]
@@ -799,19 +803,20 @@ _OBJC_IVAR_$_IBGURLSessionDemux._taskInfoByTaskID
 _OBJC_IVAR_$_IBGURLSessionDemux._sessionDelegateQueue
 _OBJC_IVAR_$_IBGURLSessionDemux._session
 ___block_descriptor_tmp.113
-___block_descriptor_tmp.123
-___block_descriptor_tmp.132
-___block_descriptor_tmp.137
-___block_descriptor_tmp.142
-___block_descriptor_tmp.147
+___block_descriptor_tmp.124
+___block_descriptor_tmp.133
+___block_descriptor_tmp.138
+___block_descriptor_tmp.143
+___block_descriptor_tmp.148
+___block_descriptor_tmp.153
 l_OBJC_PROTOCOL_$_NSURLSessionDelegate
 l_OBJC_LABEL_PROTOCOL_$_NSURLSessionDelegate
 l_OBJC_PROTOCOL_$_NSURLSessionTaskDelegate
 l_OBJC_LABEL_PROTOCOL_$_NSURLSessionTaskDelegate
 l_OBJC_PROTOCOL_$_NSURLSessionDataDelegate
 l_OBJC_LABEL_PROTOCOL_$_NSURLSessionDataDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGURLSessionDemux.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGURLSessionDemux.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGURLSessionDemux.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGURLSessionDemux.h
 __78-[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]_block_invoke
 __57-[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]_block_invoke
 __64-[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]_block_invoke
@@ -828,7 +833,7 @@ __94-[IBGURLSessionDemux URLSession:task:willPerformHTTPRedirection:newRequest:c
 -[IBGUser migrationWithOldUUID:newUUID:newEmail:newName:]
 -[IBGUser logOut]
 +[IBGUser generateNewUUIDForTest]
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUser.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGUser.m
 +[IBGSessionLogger sharedInstance]
 ___34+[IBGSessionLogger sharedInstance]_block_invoke
 -[IBGSessionLogger init]
@@ -842,7 +847,7 @@ ___34+[IBGSessionLogger sharedInstance]_block_invoke
 -[IBGSessionLogger .cxx_destruct]
 _OBJC_IVAR_$_IBGSessionLogger._appStart
 _OBJC_IVAR_$_IBGSessionLogger._oldDuration
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGSessionLogger.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGSessionLogger.m
 __34+[IBGSessionLogger sharedInstance]_block_invoke
 -[IBGTwoFingersSipeAnimation animateWithView:]
 ___46-[IBGTwoFingersSipeAnimation animateWithView:]_block_invoke
@@ -867,7 +872,7 @@ l_OBJC_PROTOCOL_$_UIGestureRecognizerDelegate
 l_OBJC_LABEL_PROTOCOL_$_UIGestureRecognizerDelegate
 l_OBJC_PROTOCOL_$_IBGBaseAnimation
 l_OBJC_LABEL_PROTOCOL_$_IBGBaseAnimation
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/HUDs/Animations/IBGTwoFingersSipeAnimation.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/HUDs/Animations/IBGTwoFingersSipeAnimation.m
 __46-[IBGTwoFingersSipeAnimation animateWithView:]_block_invoke.32
 __46-[IBGTwoFingersSipeAnimation animateWithView:]_block_invoke.28
 __46-[IBGTwoFingersSipeAnimation animateWithView:]_block_invoke.24
@@ -875,7 +880,7 @@ __46-[IBGTwoFingersSipeAnimation animateWithView:]_block_invoke_3
 __46-[IBGTwoFingersSipeAnimation animateWithView:]_block_invoke_2
 __46-[IBGTwoFingersSipeAnimation animateWithView:]_block_invoke
 -[NSURLResponse(Additions) ibg_contentType]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/NSURLResponse+Additions.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/NSURLResponse+Additions.m
 -[IBGRemoteAttachment initWithURL:]
 -[IBGRemoteAttachment urlByRemovingQueryString:]
 -[IBGRemoteAttachment coderNameForSelector:]
@@ -901,8 +906,8 @@ _OBJC_IVAR_$_IBGRemoteAttachment._attachmentURL
 _OBJC_IVAR_$_IBGRemoteAttachment.attachment
 _OBJC_IVAR_$_IBGRemoteAttachment._completionHandler
 _OBJC_IVAR_$_IBGRemoteAttachment._delegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGRemoteAttachment.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGRemoteAttachment.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGRemoteAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGRemoteAttachment.h
 -[IBGSurveyEventLog initWithName:count:]
 -[IBGSurveyEventLog compare:]
 -[IBGSurveyEventLog isEqual:]
@@ -919,8 +924,8 @@ _OBJC_IVAR_$_IBGSurveyEventLog._name
 _OBJC_IVAR_$_IBGSurveyEventLog._count
 l_OBJC_PROTOCOL_$_NSCopying
 l_OBJC_LABEL_PROTOCOL_$_NSCopying
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGSurveyEventLog.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGSurveyEventLog.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGSurveyEventLog.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGSurveyEventLog.h
 -[IBGFloatingButton initWithFrame:]
 -[IBGFloatingButton initWithFrame:andDelegate:]
 -[IBGFloatingButton setupConstraintsWithDefaultPosition:]
@@ -1030,7 +1035,7 @@ _OBJC_IVAR_$_IBGFloatingButton._topInset
 _OBJC_IVAR_$_IBGFloatingButton._bottomInset
 _OBJC_IVAR_$_IBGFloatingButton._rightInset
 _OBJC_IVAR_$_IBGFloatingButton._leftInset
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGFloatingButton.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGFloatingButton.m
 __35-[IBGFloatingButton animateToEdges]_block_invoke
 __41-[IBGFloatingButton moveByDeltaX:deltaY:]_block_invoke
 __52-[IBGFloatingButton applicationDidChangeOrientation]_block_invoke
@@ -1095,7 +1100,7 @@ _OBJC_IVAR_$_IBGDALService._coreDataPersistenceManager
 _OBJC_IVAR_$_IBGDALService._contextProvider
 l_OBJC_PROTOCOL_$_IBGDALProtocol
 l_OBJC_LABEL_PROTOCOL_$_IBGDALProtocol
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGDALService.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/Core Data/IBGDALService.m
 __43-[IBGDALService readASync:completionBlock:]_block_invoke.63
 __43-[IBGDALService readASync:completionBlock:]_block_invoke.59
 __43-[IBGDALService readASync:completionBlock:]_block_invoke_3
@@ -1119,8 +1124,8 @@ __27-[IBGDALService writeSync:]_block_invoke
 -[IBGToolbarCell .cxx_destruct]
 _OBJC_IVAR_$_IBGToolbarCell._titleLabel
 _OBJC_IVAR_$_IBGToolbarCell._iconImageView
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/Collection View Cells/IBGToolbarCell.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/Collection View Cells/IBGToolbarCell.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/Collection View Cells/IBGToolbarCell.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/Collection View Cells/IBGToolbarCell.h
 -[IBGPostSendingSnapshot isSnapshotReady]
 -[IBGPostSendingSnapshot snapShotProgress]
 -[IBGPostSendingSnapshot setSnapShotProgress:]
@@ -1141,8 +1146,8 @@ _OBJC_IVAR_$_IBGPostSendingSnapshot._ibgLog
 _OBJC_IVAR_$_IBGPostSendingSnapshot._networkLog
 _OBJC_IVAR_$_IBGPostSendingSnapshot._userData
 _OBJC_IVAR_$_IBGPostSendingSnapshot._eventsLog
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGPostSendingSnapshot.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGPostSendingSnapshot.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGPostSendingSnapshot.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGPostSendingSnapshot.h
 +[IBGURLProtocol canInitWithRequest:]
 +[IBGURLProtocol canInitWithTask:]
 +[IBGURLProtocol canonicalRequestForRequest:]
@@ -1213,7 +1218,7 @@ _OBJC_IVAR_$_IBGURLProtocol._response
 _OBJC_IVAR_$_IBGURLProtocol._clientThread
 _OBJC_IVAR_$_IBGURLProtocol._modes
 _OBJC_IVAR_$_IBGURLProtocol._pendingChallenge
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGURLProtocol.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGURLProtocol.m
 __78-[IBGURLProtocol clientThreadCancelAuthenticationChallenge:completionHandler:]_block_invoke
 __40-[IBGURLProtocol cancelPendingChallenge]_block_invoke
 __70-[IBGURLProtocol didReceiveAuthenticationChallenge:completionHandler:]_block_invoke
@@ -1263,10 +1268,10 @@ _OBJC_IVAR_$_IBGFloatingButtonView._startTouchPoint
 _OBJC_IVAR_$_IBGFloatingButtonView._buttonImageView
 _OBJC_IVAR_$_IBGFloatingButtonView._keyboardHeight
 _OBJC_IVAR_$_IBGFloatingButtonView._rootViewController
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGFloatingButtonView.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGFloatingButtonView.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGFloatingButtonView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGFloatingButtonView.h
 UIEdgeInsetsInsetRect
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGeometry.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGeometry.h
 __39-[IBGFloatingButtonView animateToEdges]_block_invoke
 __45-[IBGFloatingButtonView moveByDeltaX:deltaY:]_block_invoke
 -[IBGColors init]
@@ -1496,8 +1501,8 @@ _OBJC_IVAR_$_IBGColors._surveyTextViewBackgroundColor
 _OBJC_IVAR_$_IBGColors._surveyTextViewPlaceholderColor
 _OBJC_IVAR_$_IBGColors._surveyTextViewBorderColor
 _OBJC_IVAR_$_IBGColors._primaryColorWasSet
-/Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGColors.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGColors.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Defaults/IBGColors.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Defaults/IBGColors.h
 -[IBGZZOldArchiveEntryWriter initWithCentralFileHeader:localFileHeader:shouldSkipLocalFile:]
 -[IBGZZOldArchiveEntryWriter offsetToLocalFileEnd]
 -[IBGZZOldArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]
@@ -1508,7 +1513,7 @@ _OBJC_IVAR_$_IBGZZOldArchiveEntryWriter._centralFileHeader
 _OBJC_IVAR_$_IBGZZOldArchiveEntryWriter._localFile
 l_OBJC_PROTOCOL_$_IBGZZArchiveEntryWriter
 l_OBJC_LABEL_PROTOCOL_$_IBGZZArchiveEntryWriter
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZOldArchiveEntryWriter.mm
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZOldArchiveEntryWriter.mm
 nextLocalFileHeader
 nextCentralFileHeader
 fileComment
@@ -1531,16 +1536,16 @@ _OBJC_IVAR_$_IBGPushNotificationRegisterationRequest._isSuccess
 _OBJC_IVAR_$_IBGPushNotificationRegisterationRequest._failures
 _OBJC_IVAR_$_IBGPushNotificationRegisterationRequest._isExecuting
 _OBJC_IVAR_$_IBGPushNotificationRegisterationRequest._dataRequest
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGPushNotificationRegisterationRequest.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGPushNotificationRegisterationRequest.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGPushNotificationRegisterationRequest.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGPushNotificationRegisterationRequest.h
 -[UIView(IBGProtect) protectViewinContext:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/UIView+IBGProtect.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Categories/UIView+IBGProtect.m
 -[IBGInternalErrorRequest initWithParameters:delegate:]
 -[IBGInternalErrorRequest dataUrl]
 -[IBGInternalErrorRequest setDataUrl:]
 -[IBGInternalErrorRequest .cxx_destruct]
 _OBJC_IVAR_$_IBGInternalErrorRequest._dataUrl
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGInternalErrorRequest.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGInternalErrorRequest.m
 -[IBGBaseHUDViewController viewDidLoad]
 -[IBGBaseHUDViewController viewWillAppear:]
 -[IBGBaseHUDViewController addLayoutConstraints]
@@ -1608,8 +1613,10 @@ _OBJC_IVAR_$_IBGBaseHUDViewController._fontSize
 _OBJC_IVAR_$_IBGBaseHUDViewController._labelText
 _OBJC_IVAR_$_IBGBaseHUDViewController._duration
 _OBJC_IVAR_$_IBGBaseHUDViewController._animation
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/HUDs/IBGBaseHUDViewController.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/HUDs/IBGBaseHUDViewController.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/HUDs/IBGBaseHUDViewController.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/HUDs/IBGBaseHUDViewController.h
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __32-[IBGBaseHUDViewController hide]_block_invoke.89
 __32-[IBGBaseHUDViewController hide]_block_invoke
 __32-[IBGBaseHUDViewController show]_block_invoke
@@ -1627,22 +1634,22 @@ ___50-[IBGVideoEncoder videoEncodingUsingImage:atTime:]_block_invoke
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke_2
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke_3
-___copy_helper_block_.482
-___destroy_helper_block_.483
-___copy_helper_block_.493
-___destroy_helper_block_.494
-___copy_helper_block_.498
-___destroy_helper_block_.499
+___copy_helper_block_.484
+___destroy_helper_block_.485
+___copy_helper_block_.495
+___destroy_helper_block_.496
+___copy_helper_block_.500
+___destroy_helper_block_.501
 -[IBGVideoEncoder stopAutoRecordingCompletion]
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke_2
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke_3
-___copy_helper_block_.503
-___destroy_helper_block_.504
-___copy_helper_block_.506
-___destroy_helper_block_.507
-___copy_helper_block_.509
-___destroy_helper_block_.510
+___copy_helper_block_.505
+___destroy_helper_block_.506
+___copy_helper_block_.508
+___destroy_helper_block_.509
+___copy_helper_block_.511
+___destroy_helper_block_.512
 -[IBGVideoEncoder removeTempFilePath:]
 -[IBGVideoEncoder encodeVideo:]
 -[IBGVideoEncoder videoURL]
@@ -1682,12 +1689,12 @@ _OBJC_IVAR_$_IBGVideoEncoder._outputBufferPool
 _OBJC_IVAR_$_IBGVideoEncoder._videoWriter
 _OBJC_IVAR_$_IBGVideoEncoder._videoWriterInput
 _OBJC_IVAR_$_IBGVideoEncoder._avAdaptor
-___block_descriptor_tmp.484
-___block_descriptor_tmp.495
-___block_descriptor_tmp.500
-___block_descriptor_tmp.505
-___block_descriptor_tmp.508
-___block_descriptor_tmp.511
+___block_descriptor_tmp.486
+___block_descriptor_tmp.497
+___block_descriptor_tmp.502
+___block_descriptor_tmp.507
+___block_descriptor_tmp.510
+___block_descriptor_tmp.513
 _OBJC_IVAR_$_IBGVideoEncoder._delegate
 _OBJC_IVAR_$_IBGVideoEncoder._writeTimer
 _OBJC_IVAR_$_IBGVideoEncoder._timeStamp
@@ -1695,8 +1702,8 @@ _OBJC_IVAR_$_IBGVideoEncoder._outputBufferPoolAuxAttributes
 _OBJC_IVAR_$_IBGVideoEncoder._firstTimeStamp
 _OBJC_IVAR_$_IBGVideoEncoder._video
 _OBJC_IVAR_$_IBGVideoEncoder._shouldKeepAttachmentInTemp
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVideoEncoder.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVideoEncoder.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVideoEncoder.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVideoEncoder.h
 __46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke_3
 __46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke_2
 __46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke
@@ -1708,7 +1715,7 @@ __50-[IBGVideoEncoder videoEncodingUsingImage:atTime:]_block_invoke
 -[IBGControlPointView pointInside:withEvent:]
 -[IBGControlPointView actionAreaRect]
 -[IBGControlPointView drawRect:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGControlPointView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGControlPointView.m
 -[IBGUUIDFromEmailMigration version]
 -[IBGUUIDFromEmailMigration shouldRun]
 -[IBGUUIDFromEmailMigration run]
@@ -1718,8 +1725,8 @@ __50-[IBGVideoEncoder videoEncodingUsingImage:atTime:]_block_invoke
 _OBJC_IVAR_$_IBGUUIDFromEmailMigration._delegate
 l_OBJC_PROTOCOL_$_IBGMigration
 l_OBJC_LABEL_PROTOCOL_$_IBGMigration
-/Users/distiller/ios/InstabugCore/InstabugCore/Migrations/IBGUUIDFromEmailMigration.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Migrations/IBGMigrationManager.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Migrations/IBGUUIDFromEmailMigration.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Migrations/IBGMigrationManager.h
 -[IBGStrings init]
 -[IBGStrings setLocale:]
 -[IBGStrings localizedStrings]
@@ -1743,20 +1750,20 @@ ___42-[IBGStrings editableValueWithDefaultKey:]_block_invoke
 _OBJC_IVAR_$_IBGStrings._localizedStrings
 _OBJC_IVAR_$_IBGStrings._localizationBundle
 _OBJC_IVAR_$_IBGStrings._localeAlignmentDirection
-/Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGStrings.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Defaults/IBGStrings.m
 __42-[IBGStrings editableValueWithDefaultKey:]_block_invoke
 +[IBGSDKDebugInfoLogger log:arguments:]
 +[IBGSDKDebugInfoLogger internalLog:arguments:]
 +[IBGSDKDebugInfoLogger level]
 +[IBGSDKDebugInfoLogger setLevel:]
 __level
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGSDKDebugInfoLogger.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGSDKDebugInfoLogger.m
 IBGSDKLogInternalError
 IBGSDKLogError
 IBGSDKLogDebug
 IBGSDKLogVerbose
 -[NSMutableString(Additions) ibg_appendCommandLineArgument:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/NSMutableString+Additions.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Categories/NSMutableString+Additions.m
 -[IBGScreenshotAnimation animateWithView:]
 ___42-[IBGScreenshotAnimation animateWithView:]_block_invoke
 ___42-[IBGScreenshotAnimation animateWithView:]_block_invoke_2
@@ -1769,7 +1776,7 @@ ___destroy_helper_block_.21
 -[IBGScreenshotAnimation .cxx_destruct]
 ___block_descriptor_tmp.22
 _OBJC_IVAR_$_IBGScreenshotAnimation._screenView
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/HUDs/Animations/IBGScreenshotAnimation.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/HUDs/Animations/IBGScreenshotAnimation.m
 __42-[IBGScreenshotAnimation animateWithView:]_block_invoke.14
 __42-[IBGScreenshotAnimation animateWithView:]_block_invoke_2
 __42-[IBGScreenshotAnimation animateWithView:]_block_invoke
@@ -1797,8 +1804,8 @@ _OBJC_IVAR_$_IBGLogRequest._delegate
 _OBJC_IVAR_$_IBGLogRequest._dataServer
 _OBJC_IVAR_$_IBGLogRequest._isSuccess
 _OBJC_IVAR_$_IBGLogRequest._parameters
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGLogRequest.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGLogRequest.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGLogRequest.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGLogRequest.h
 -[IBGUserStepsLoggerContextProvider context]
 -[IBGUserStepsLoggerContextProvider memoryContext]
 ___50-[IBGUserStepsLoggerContextProvider memoryContext]_block_invoke
@@ -1812,7 +1819,7 @@ ___42-[IBGUserStepsLoggerContextProvider queue]_block_invoke
 _OBJC_IVAR_$_IBGUserStepsLoggerContextProvider._memoryContext
 _OBJC_IVAR_$_IBGUserStepsLoggerContextProvider._backgroundContext
 __userStepsLoggerQueue
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsLoggerContextProvider.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsLoggerContextProvider.m
 __42-[IBGUserStepsLoggerContextProvider queue]_block_invoke
 __54-[IBGUserStepsLoggerContextProvider backgroundContext]_block_invoke
 __50-[IBGUserStepsLoggerContextProvider memoryContext]_block_invoke
@@ -1842,8 +1849,8 @@ _OBJC_IVAR_$_IBGProgress._completionHandlers
 _OBJC_IVAR_$_IBGProgress._parent
 _OBJC_IVAR_$_IBGProgress._children
 _OBJC_IVAR_$_IBGProgress._value
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGProgress.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGProgress.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGProgress.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGProgress.h
 -[IBGVideo initWithIdentifier:]
 -[IBGVideo addScreenshot:]
 -[IBGVideo videoScreenshots]
@@ -1872,9 +1879,9 @@ _OBJC_IVAR_$_IBGVideo._orientation
 _OBJC_IVAR_$_IBGVideo._screenshots
 l_OBJC_PROTOCOL_$_IBGCachable
 l_OBJC_LABEL_PROTOCOL_$_IBGCachable
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGVideo.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGVideo.h
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGCachable.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGVideo.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGVideo.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGCachable.h
 -[IBGAnnotationStack init]
 -[IBGAnnotationStack pushCommand:]
 -[IBGAnnotationStack popCommand]
@@ -1883,10 +1890,10 @@ l_OBJC_LABEL_PROTOCOL_$_IBGCachable
 -[IBGAnnotationStack setCommands:]
 -[IBGAnnotationStack .cxx_destruct]
 _OBJC_IVAR_$_IBGAnnotationStack._commands
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Undo-Redo/IBGAnnotationStack.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Undo-Redo/IBGAnnotationStack.m
 -[IBGSuccessHUDViewController init]
 +[IBGSuccessHUDViewController showWithCompletionHandler:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/HUDs/IBGSuccessHUDViewController.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/HUDs/IBGSuccessHUDViewController.m
 -[IBGToolbar initWithItems:]
 -[IBGToolbar updateConstraints]
 -[IBGToolbar setSelectedItemIndex:animated:]
@@ -1938,8 +1945,8 @@ l_OBJC_PROTOCOL_$_UICollectionViewDataSource
 l_OBJC_LABEL_PROTOCOL_$_UICollectionViewDataSource
 l_OBJC_PROTOCOL_$_UICollectionViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_UICollectionViewDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGToolbar.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGToolbar.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGToolbar.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGToolbar.h
 __59-[IBGToolbar collectionView:layout:sizeForItemAtIndexPath:]_block_invoke
 __44-[IBGToolbar setSelectedItemIndex:animated:]_block_invoke.55
 __44-[IBGToolbar setSelectedItemIndex:animated:]_block_invoke_2
@@ -1976,11 +1983,11 @@ _OBJC_IVAR_$_IBGAnnotationOriginator._annotationsPreviousState
 _OBJC_IVAR_$_IBGAnnotationOriginator._bluredImage
 _OBJC_IVAR_$_IBGAnnotationOriginator._annotationStack
 _OBJC_IVAR_$_IBGAnnotationOriginator._screenshotImage
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGAnnotationOriginator.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGAnnotationOriginator.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGAnnotationOriginator.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGAnnotationOriginator.h
 __60-[IBGAnnotationOriginator annotationViewsSortedByZPositioon]_block_invoke
 -[NSArray(Map) mapWithBlock:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/NSArray+Map.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/NSArray+Map.m
 +[IBGScreenshotCapturer takeScreenshotWithAnnotator:shouldUseRenderInContext:]
 +[IBGScreenshotCapturer takeScreenshotFromView:]
 +[IBGScreenshotCapturer takeScreenshotInContext:shouldUseRenderInContext:]
@@ -1988,9 +1995,9 @@ __60-[IBGAnnotationOriginator annotationViewsSortedByZPositioon]_block_invoke
 +[IBGScreenshotCapturer imageFromCurrentContext]
 +[IBGScreenshotCapturer addExcludedWindowType:]
 __excludedWindowTypes
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGScreenshotCapturer.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGScreenshotCapturer.m
 UIInterfaceOrientationIsLandscape
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h
 -[IBGViewHierarchyLocalAttachment initWithScreenshotFilePaths:]
 -[IBGViewHierarchyLocalAttachment getScale]
 -[IBGViewHierarchyLocalAttachment resizeImagesWithFilePaths:]
@@ -2008,7 +2015,7 @@ ___49-[IBGViewHierarchyLocalAttachment compressFiles:]_block_invoke
 _OBJC_IVAR_$_IBGViewHierarchyLocalAttachment.fileName
 _OBJC_IVAR_$_IBGViewHierarchyLocalAttachment.localFilePath
 _OBJC_IVAR_$_IBGViewHierarchyLocalAttachment._filePaths
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGViewHierarchyLocalAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGViewHierarchyLocalAttachment.m
 __49-[IBGViewHierarchyLocalAttachment compressFiles:]_block_invoke
 -[UIAlertController(Private) setAlertWindow:]
 -[UIAlertController(Private) alertWindow]
@@ -2016,7 +2023,7 @@ __49-[IBGViewHierarchyLocalAttachment compressFiles:]_block_invoke
 -[UIAlertController(Window) show:]
 -[UIAlertController(Window) viewDidDisappear:]
 -[UIAlertController(Window) getMaxWindowLevel]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/UIAlertController+Window.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Categories/UIAlertController+Window.m
 -[IBGVideoRecorderPopover initWithShouldflip:]
 -[IBGVideoRecorderPopover updateConstraints]
 -[IBGVideoRecorderPopover pressRecordLabel]
@@ -2032,15 +2039,15 @@ _OBJC_IVAR_$_IBGVideoRecorderPopover._pressRecordLabel
 _OBJC_IVAR_$_IBGVideoRecorderPopover._tipView
 _OBJC_IVAR_$_IBGVideoRecorderPopover._containerView
 _OBJC_IVAR_$_IBGVideoRecorderPopover._shouldFlip
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGVideoRecorderPopover.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGVideoRecorderPopover.m
 +[IBGEventLog(CoreDataProperties) fetchRequest]
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGEventLog+CoreDataProperties.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/Core Data/IBGEventLog+CoreDataProperties.m
 -[IBGDeletedAnnotationMemento superView]
 -[IBGDeletedAnnotationMemento setSuperView:]
 -[IBGDeletedAnnotationMemento .cxx_destruct]
 _OBJC_IVAR_$_IBGDeletedAnnotationMemento._superView
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGDeletedAnnotationMemento.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGDeletedAnnotationMemento.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGDeletedAnnotationMemento.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGDeletedAnnotationMemento.h
 -[IBGViewController viewDidLoad]
 -[IBGViewController getBarButtonItemWithImage:selector:accessibilityIdentifier:]
 -[IBGViewController orientation]
@@ -2052,7 +2059,7 @@ _OBJC_IVAR_$_IBGDeletedAnnotationMemento._superView
 -[IBGViewController shouldAutorotate]
 -[IBGViewController preferredStatusBarStyle]
 -[IBGViewController prefersStatusBarHidden]
-/Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGViewController.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/View Controllers/IBGViewController.m
 -[IBGAlertWindow init]
 -[IBGAlertWindow initWithFrame:]
 -[IBGAlertWindow show]
@@ -2060,17 +2067,17 @@ _OBJC_IVAR_$_IBGDeletedAnnotationMemento._superView
 -[IBGAlertWindow duration]
 -[IBGAlertWindow setDuration:]
 _OBJC_IVAR_$_IBGAlertWindow._duration
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/IBGAlertWindow.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/IBGAlertWindow.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/IBGAlertWindow.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/IBGAlertWindow.h
 -[IBGTouchCircleView drawRect:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/HUDs/Animations/Decorating Views/IBGTouchCircleView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/HUDs/Animations/Decorating Views/IBGTouchCircleView.m
 +[IBGEventLog eventlogFetchRequestWithName:]
 +[IBGEventLog eventlogsFetchRequestWithMaxCount:]
 +[IBGEventLog eventlogsFetchRequest]
 +[IBGEventLog entityName]
 -[IBGEventLog toSurveyEventLog]
 -[IBGEventLog description]
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGEventLog+CoreDataClass.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/Core Data/IBGEventLog+CoreDataClass.m
 -[IBGAttachmentButton initWithType:]
 -[IBGAttachmentButton setMainImage:]
 -[IBGAttachmentButton setIsPlaying:]
@@ -2115,9 +2122,9 @@ _OBJC_IVAR_$_IBGAttachmentButton._attachmentGraphic
 _OBJC_IVAR_$_IBGAttachmentButton._playingTimer
 _OBJC_IVAR_$_IBGAttachmentButton._secondsElapsed
 _OBJC_IVAR_$_IBGAttachmentButton._dimmedView
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGAttachmentButton.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGAttachmentButton.h
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStandardCryptoEngine.cpp
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGAttachmentButton.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGAttachmentButton.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStandardCryptoEngine.cpp
 -[IBGEditableValue initWithDefaultValueBlock:]
 -[IBGEditableValue value]
 -[IBGEditableValue setValue:]
@@ -2130,8 +2137,8 @@ _OBJC_IVAR_$_IBGAttachmentButton._dimmedView
 _OBJC_IVAR_$_IBGEditableValue._value
 _OBJC_IVAR_$_IBGEditableValue._isSet
 _OBJC_IVAR_$_IBGEditableValue._defaultValueBlock
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGEditableValue.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGEditableValue.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGEditableValue.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGEditableValue.h
 +[IBGDataStore getInstance]
 ___27+[IBGDataStore getInstance]_block_invoke
 -[IBGDataStore init]
@@ -2192,8 +2199,8 @@ _OBJC_IVAR_$_IBGDataStore._viewHierarchyLog
 _OBJC_IVAR_$_IBGDataStore._kIBGBackgroundQueue
 l_OBJC_PROTOCOL_$_IBGSDKVersionRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGSDKVersionRequestDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGDataStore.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGDataStore.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGDataStore.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGDataStore.h
 __31-[IBGDataStore fileAttachments]_block_invoke
 __39-[IBGDataStore clearAllFileAttachments]_block_invoke
 __34-[IBGDataStore addFileAttachment:]_block_invoke
@@ -2225,28 +2232,26 @@ _OBJC_IVAR_$_IBGZZArchive._contents
 _OBJC_IVAR_$_IBGZZArchive._entries
 ___block_descriptor_tmp.70
 ___block_descriptor_tmp.85
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZArchive.mm
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZArchive.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZArchive.mm
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZArchive.h
 __36-[IBGZZArchive updateEntries:error:]_block_invoke.82
 __36-[IBGZZArchive updateEntries:error:]_block_invoke.65
 __36-[IBGZZArchive updateEntries:error:]_block_invoke.56
 __36-[IBGZZArchive updateEntries:error:]_block_invoke
-min<unsigned long>
-/Applications/Xcode-9.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm
-min<unsigned long, std::__1::__less<unsigned long, unsigned long> >
+min<unsigned int>
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm
+min<unsigned int, std::__1::__less<unsigned int, unsigned int> >
 find_end<const unsigned char *, const unsigned char *>
 find_end<const unsigned char *, const unsigned char *, std::__1::__equal_to<unsigned char, unsigned char> >
 __find_end<std::__1::__equal_to<unsigned char, unsigned char> &, const unsigned char *, const unsigned char *>
 -[NSURL(Additions) ibg_isInstabugURL]
 -[NSURL(Additions) ibg_isHTTPURL]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/NSURL+Additions.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Categories/NSURL+Additions.m
 -[NSURLRequest(Additions) ibg_HTTPBodyString]
 -[NSURLRequest(Additions) ibg_isWebViewRequest]
 -[NSURLRequest(Additions) ibg_cURLCommandWithBody:]
 -[NSURLRequest(Additions) ibg_InstabugcURLCommand]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/NSURLRequest+Additions.m
-NSMakeRange
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Categories/NSURLRequest+Additions.m
 -[IBGScreenshotCaptureWindow initWithDelegate:]
 -[IBGScreenshotCaptureWindow addCaptureButton]
 -[IBGScreenshotCaptureWindow captureScreenshot]
@@ -2260,8 +2265,8 @@ NSMakeRange
 -[IBGScreenshotCaptureWindow .cxx_destruct]
 _OBJC_IVAR_$_IBGScreenshotCaptureWindow._captureButton
 _OBJC_IVAR_$_IBGScreenshotCaptureWindow._buttonDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/IBGScreenshotCaptureWindow.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/IBGScreenshotCaptureWindow.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/IBGScreenshotCaptureWindow.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/IBGScreenshotCaptureWindow.h
 -[IBGActionSheetCell awakeFromNib]
 +[IBGActionSheetCell reuseIdentifier]
 -[IBGActionSheetCell adjustSeparatorLayout]
@@ -2289,8 +2294,8 @@ _OBJC_IVAR_$_IBGActionSheetCell._separatorViewHeightConstraint
 _OBJC_IVAR_$_IBGActionSheetCell._hasActionSheetIcon
 _OBJC_IVAR_$_IBGActionSheetCell._labelToIconLeadingConstraint
 _OBJC_IVAR_$_IBGActionSheetCell._labelToSuperViewLeadingConstraint
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/Table View Cells/IBGActionSheetCell.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/Table View Cells/IBGActionSheetCell.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/Table View Cells/IBGActionSheetCell.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/Table View Cells/IBGActionSheetCell.h
 -[IBGMethodSwizzler initWithSelector:forClass:withBlock:withInvocation:]
 -[IBGMethodSwizzler setActive:]
 -[IBGMethodSwizzler dealloc]
@@ -2313,8 +2318,8 @@ _OBJC_IVAR_$_IBGMethodSwizzler._swizzlerInvocation
 _OBJC_IVAR_$_IBGMethodSwizzler._original_Method_Imp
 _OBJC_IVAR_$_IBGMethodSwizzler._original_klass
 _OBJC_IVAR_$_IBGMethodSwizzler._swizzlerBlock
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGMethodSwizzler.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGMethodSwizzler.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGMethodSwizzler.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGMethodSwizzler.h
 __IBGSwizzle_motionEnded
 __IBGSwizzle_resignKeyWindow
 __IBGSwizzle_becomeKeyWindow
@@ -2330,7 +2335,7 @@ setOriginalMethodImplementation
 getOriginalMethodImplementation
 getSwizzlerInvocation
 +[IBGLog(CoreDataProperties) fetchRequest]
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGLog+CoreDataProperties.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/Core Data/IBGLog+CoreDataProperties.m
 +[IBGReachabilityInstance getInstance]
 ___38+[IBGReachabilityInstance getInstance]_block_invoke
 -[IBGReachabilityInstance init]
@@ -2349,8 +2354,8 @@ _OBJC_IVAR_$_IBGReachabilityInstance._initializationOperation
 ___block_descriptor_tmp.374
 ___block_descriptor_tmp.379
 _OBJC_IVAR_$_IBGReachabilityInstance._reachability
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Reachability/IBGReachabilityInstance.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Reachability/IBGReachabilityInstance.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Reachability/IBGReachabilityInstance.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Reachability/IBGReachabilityInstance.h
 __50-[IBGReachabilityInstance initializationOperation]_block_invoke_2
 __50-[IBGReachabilityInstance initializationOperation]_block_invoke
 __38+[IBGReachabilityInstance getInstance]_block_invoke
@@ -2371,11 +2376,11 @@ _OBJC_IVAR_$_IBGShapeDetectionOverlay._overlayBackgroundView
 _OBJC_IVAR_$_IBGShapeDetectionOverlay._originalShapeButton
 _OBJC_IVAR_$_IBGShapeDetectionOverlay._detectedShapeButton
 _OBJC_IVAR_$_IBGShapeDetectionOverlay._delegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/IBGShapeDetectionOverlay.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/IBGShapeDetectionOverlay.m
 -[UIView(AnchorPoint) setAnchorPoint:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/UIView+AnchorPoint.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/UIView+AnchorPoint.m
 __CGPointApplyAffineTransform
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGAffineTransform.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGAffineTransform.h
 +[IBGUserStepsLogger sharedInstance]
 ___36+[IBGUserStepsLogger sharedInstance]_block_invoke
 -[IBGUserStepsLogger init]
@@ -2406,8 +2411,6 @@ ___destroy_helper_block_.491
 -[IBGUserStepsLogger insertCrashStepInContext:crashStep:sessionId:]
 -[IBGUserStepsLogger attachVisualUserStepsWithReportId:]
 ___56-[IBGUserStepsLogger attachVisualUserStepsWithReportId:]_block_invoke
-___copy_helper_block_.511
-___destroy_helper_block_.512
 -[IBGUserStepsLogger removeVisualUserStepsWithReportId:]
 ___56-[IBGUserStepsLogger removeVisualUserStepsWithReportId:]_block_invoke
 ___copy_helper_block_.518
@@ -2464,7 +2467,6 @@ ___block_descriptor_tmp.434
 ___block_descriptor_tmp.439
 ___block_descriptor_tmp.489
 ___block_descriptor_tmp.492
-___block_descriptor_tmp.513
 ___block_descriptor_tmp.520
 ___block_descriptor_tmp.587
 _dataLayerService.once
@@ -2483,8 +2485,8 @@ _OBJC_IVAR_$_IBGUserStepsLogger._didAddFirstStep
 _OBJC_IVAR_$_IBGUserStepsLogger._lastStep
 l_OBJC_PROTOCOL_$_IBGUserSetpsListenerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGUserSetpsListenerDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsLogger.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsLogger.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsLogger.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsLogger.h
 __38-[IBGUserStepsLogger dataLayerService]_block_invoke
 UIDeviceOrientationIsLandscape
 __162-[IBGUserStepsLogger addStepWithEventType:parentScreenIdentifier:screenshotIdentifeir:screenIdentifier:view:screenshotData:date:oreintation:topViewName:isParent:]_block_invoke
@@ -2520,8 +2522,8 @@ _OBJC_IVAR_$_IBGVisualUserStepsLog._screenName
 _OBJC_IVAR_$_IBGVisualUserStepsLog._timeEpoch
 _OBJC_IVAR_$_IBGVisualUserStepsLog._view
 _OBJC_IVAR_$_IBGVisualUserStepsLog._eventType
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGVisualUserStepsLog.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGVisualUserStepsLog.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGVisualUserStepsLog.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGVisualUserStepsLog.h
 -[IBGInternalError initWithStackTrace:]
 -[IBGInternalError coderNameForSelector:]
 -[IBGInternalError submit]
@@ -2568,8 +2570,8 @@ l_OBJC_PROTOCOL_$_IBGLocalAttachmentRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGLocalAttachmentRequestDelegate
 l_OBJC_PROTOCOL_$_IBGReportRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGReportRequestDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGInternalError.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGInternalError.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGInternalError.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGInternalError.h
 __34-[IBGInternalError addAttachment:]_block_invoke
 -[IBGZZStandardDecryptInputStream initWithStream:password:header:check:version:error:]
 __ZN25IBGZZStandardCryptoEngine8initKeysEPh
@@ -2585,9 +2587,9 @@ __ZN25IBGZZStandardCryptoEngine10updateKeysEh
 -[IBGZZStandardDecryptInputStream .cxx_construct]
 _OBJC_IVAR_$_IBGZZStandardDecryptInputStream._upstream
 _OBJC_IVAR_$_IBGZZStandardDecryptInputStream._crypto
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStandardDecryptInputStream.mm
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStandardDecryptInputStream.mm
 updateKeys
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStandardCryptoEngine.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStandardCryptoEngine.h
 crc32
 decryptByte
 initKeys
@@ -2596,8 +2598,8 @@ IBGZZRaiseErrorNil
 -[NSData(IBGGZIP) ibg_dataByGZipCompressingAtLevel:windowSize:memoryLevel:strategy:error:]
 -[NSData(IBGGZIP) ibg_dataByGZipDecompressingDataWithError:]
 -[NSData(IBGGZIP) ibg_dataByGZipDecompressingDataWithWindowSize:error:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/NSData+IBGGZIP.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGEmptyAnnotationMemento.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Categories/NSData+IBGGZIP.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGEmptyAnnotationMemento.m
 -[IBGVideoRecorderWindow initWithDelegate:]
 -[IBGVideoRecorderWindow touchTargetIsRecordButton:withEvent:]
 -[IBGVideoRecorderWindow hitTest:withEvent:]
@@ -2618,9 +2620,9 @@ _OBJC_IVAR_$_IBGVideoRecorderWindow._dimmedView
 _OBJC_IVAR_$_IBGVideoRecorderWindow._audioRecordingButton
 _OBJC_IVAR_$_IBGVideoRecorderWindow._stopVideoRecordingButton
 _OBJC_IVAR_$_IBGVideoRecorderWindow._videoRecordingViewController
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/IBGVideoRecorderWindow.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/IBGVideoRecorderWindow.m
 -[NSString(FileNameAdditions) ibg_stringByAppendingFileNameSuffix:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/NSString+FileNameAdditions.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Categories/NSString+FileNameAdditions.m
 -[IBGDrawingToolbarView updateConstraints]
 -[IBGDrawingToolbarView setViewConstraintsWidthAndHeightConstraints:equalsTo:]
 -[IBGDrawingToolbarView toogleButton:]
@@ -2659,17 +2661,17 @@ _OBJC_IVAR_$_IBGDrawingToolbarView._buttonsWrappView
 _OBJC_IVAR_$_IBGDrawingToolbarView._delegate
 _OBJC_IVAR_$_IBGDrawingToolbarView._selectedButton
 _OBJC_IVAR_$_IBGDrawingToolbarView._brushColorIndicator
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGDrawingToolbarView.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGDrawingToolbarView.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGDrawingToolbarView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGDrawingToolbarView.h
 -[NSString(Additions) localizationNotNeeded]
 +[NSString(Additions) surveyDateConditionFromString:]
 +[NSString(Additions) timerFromTimeInterval:]
 _surveyDateConditionFromString:.dateFormater
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/NSString+Additions.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Categories/NSString+Additions.m
 -[NSString(IBGClassTypeInjectiton) ibg_ofType:]
 -[NSString(IBGClassTypeInjectiton) ibg_type]
 -[NSString(IBGClassTypeInjectiton) ibg_value]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGNSStringFromConversions.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGNSStringFromConversions.m
 NSStringFromIBGUserStepsMode
 NSStringFromIBGAttachmentType
 NSStringFromIBGLogLevel
@@ -2718,8 +2720,8 @@ _OBJC_IVAR_$_IBGVoiceRecorder._audioRecorder
 _OBJC_IVAR_$_IBGVoiceRecorder._session
 _OBJC_IVAR_$_IBGVoiceRecorder._startedAt
 _OBJC_IVAR_$_IBGVoiceRecorder._shouldKeepAttachmentInTemp
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVoiceRecorder.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVoiceRecorder.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVoiceRecorder.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVoiceRecorder.h
 __39-[IBGVoiceRecorder checkUserPermission]_block_invoke
 +[IBGZZInflateInputStream decompressData:withUncompressedSize:]
 -[IBGZZInflateInputStream initWithStream:]
@@ -2736,7 +2738,7 @@ _OBJC_IVAR_$_IBGZZInflateInputStream._readBuffer
 _OBJC_IVAR_$_IBGZZInflateInputStream._status
 _OBJC_IVAR_$_IBGZZInflateInputStream._error
 _OBJC_IVAR_$_IBGZZInflateInputStream._stream
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZInflateInputStream.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZInflateInputStream.m
 -[IBGBlurAnnotationView initWithFrame:zPosition:originator:screenshotSize:angle:bluredScreenshotImage:]
 -[IBGBlurAnnotationView draw]
 -[IBGBlurAnnotationView saveState]
@@ -2760,7 +2762,7 @@ _OBJC_IVAR_$_IBGBlurAnnotationView._enableStroke
 _OBJC_IVAR_$_IBGBlurAnnotationView._angle
 l_OBJC_PROTOCOL_$_IBGAnnotationDrawable
 l_OBJC_LABEL_PROTOCOL_$_IBGAnnotationDrawable
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGBlurAnnotationView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGBlurAnnotationView.m
 __48-[IBGBlurAnnotationView touches:withTouchState:]_block_invoke
 -[IBGAVAsset recordingDuration]
 -[IBGAVAsset isVideoAsset]
@@ -2771,12 +2773,12 @@ __48-[IBGBlurAnnotationView touches:withTouchState:]_block_invoke
 -[IBGAVAsset .cxx_destruct]
 _OBJC_IVAR_$_IBGAVAsset._videoThumbnailImage
 _OBJC_IVAR_$_IBGAVAsset._startedAt
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGAVAsset.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGAVAsset.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGAVAsset.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGAVAsset.h
 -[NSData(Additions) ibg_UTF8String]
 -[NSData(Additions) ibg_JSONOrUTF8String]
 -[NSData(Additions) ibg_sizeInMegabytes]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/NSData+Additions.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Categories/NSData+Additions.m
 -[IBGImageRemoteAttachment fetchedAsset:ofURL:isSuccess:]
 -[IBGImageRemoteAttachment byline]
 -[IBGImageRemoteAttachment fetchAttachmentsWithCompletionHandler:]
@@ -2787,8 +2789,8 @@ _OBJC_IVAR_$_IBGAVAsset._startedAt
 _OBJC_IVAR_$_IBGImageRemoteAttachment._attachment
 l_OBJC_PROTOCOL_$_IBGAssetManagerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGAssetManagerDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGImageRemoteAttachment.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGVideoRecorderView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGImageRemoteAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGVideoRecorderView.m
 -[IBGSnapshot isSnapshotReady]
 -[IBGSnapshot getSDKInternalLogFeedbackParams]
 -[IBGSnapshot getFeedbackParams]
@@ -2888,10 +2890,10 @@ _OBJC_IVAR_$_IBGSnapshot._visualUserSteps
 _OBJC_IVAR_$_IBGSnapshot._nonVisualUserSteps
 _OBJC_IVAR_$_IBGSnapshot._logsSnapShot
 _OBJC_IVAR_$_IBGSnapshot._tags
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGSnapshot.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGSnapshot.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGSnapshot.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGSnapshot.h
 +[IBGNetworkLog(CoreDataProperties) fetchRequest]
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGNetworkLog+CoreDataProperties.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/Core Data/IBGNetworkLog+CoreDataProperties.m
 _blurIconBlock_block_invoke
 _brushIconBlock_block_invoke_2
 _magnifyIconBlock_block_invoke_3
@@ -2967,12 +2969,12 @@ ___block_literal_global.118
 ___block_descriptor_tmp.119
 ___block_literal_global.120
 ___block_literal_global.122
+___block_descriptor_tmp.123
 ___block_literal_global.124
 ___block_descriptor_tmp.125
 ___block_literal_global.126
 ___block_descriptor_tmp.136
 ___block_literal_global.137
-___block_descriptor_tmp.138
 ___block_literal_global.139
 ___block_descriptor_tmp.140
 ___block_literal_global.141
@@ -2986,7 +2988,7 @@ ___block_literal_global.151
 ___block_literal_global.153
 ___block_descriptor_tmp.154
 ___block_literal_global.155
-/Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGIcons.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Defaults/IBGIcons.m
 IBGImageWithDrawingBlock
 chatCloseIconBlock_block_invoke_31
 chatBackIconBlock_block_invoke_30
@@ -3020,7 +3022,7 @@ magnifyIconBlock_block_invoke_3
 brushIconBlock_block_invoke_2
 blurIconBlock_block_invoke
 -[IBGResponseParser prepareResponseWithData:error:rawResponse:completionHandler:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/IBGResponseParser.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/IBGResponseParser.m
 +[IBGIntializationManager getInstance]
 ___38+[IBGIntializationManager getInstance]_block_invoke
 -[IBGIntializationManager init]
@@ -3033,7 +3035,7 @@ ___38+[IBGIntializationManager getInstance]_block_invoke
 _getInstance.sharedInstance
 _getInstance.onceToken
 _OBJC_IVAR_$_IBGIntializationManager._queue
-/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGIntializationManager.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Managers/IBGIntializationManager.m
 __38+[IBGIntializationManager getInstance]_block_invoke
 -[IBGZZDataChannel initWithData:]
 -[IBGZZDataChannel URL]
@@ -3046,7 +3048,7 @@ __38+[IBGIntializationManager getInstance]_block_invoke
 _OBJC_IVAR_$_IBGZZDataChannel._allData
 l_OBJC_PROTOCOL_$_IBGZZChannel
 l_OBJC_LABEL_PROTOCOL_$_IBGZZChannel
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDataChannel.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDataChannel.m
 -[IBGAppStateReactor init]
 -[IBGAppStateReactor addingNotificationsObserver]
 -[IBGAppStateReactor removeNotificationObserver]
@@ -3059,8 +3061,8 @@ l_OBJC_LABEL_PROTOCOL_$_IBGZZChannel
 -[IBGAppStateReactor setDelegate:]
 -[IBGAppStateReactor .cxx_destruct]
 _OBJC_IVAR_$_IBGAppStateReactor._delegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGAppStateReactor.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGAppStateReactor.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/Core Data/IBGAppStateReactor.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/Core Data/IBGAppStateReactor.h
 -[IBGFeatures init]
 -[IBGFeatures registerFeature:delegate:]
 ___40-[IBGFeatures registerFeature:delegate:]_block_invoke
@@ -3169,8 +3171,8 @@ _OBJC_IVAR_$_IBGFeatures._serverValueDelegates
 _OBJC_IVAR_$_IBGFeatures._featuresRequestInProgress
 l_OBJC_PROTOCOL_$_IBGFeaturesRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGFeaturesRequestDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGFeatures.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGFeatures.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Defaults/IBGFeatures.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Defaults/IBGFeatures.h
 __60-[IBGFeatures featuresRequestDone:isSuccess:response:error:]_block_invoke
 __28-[IBGFeatures checkFeatures]_block_invoke
 __40-[IBGFeatures registerFeature:delegate:]_block_invoke
@@ -3228,13 +3230,13 @@ _OBJC_IVAR_$_IBGVoiceNoteRecordingViewController._timerLabel
 _OBJC_IVAR_$_IBGVoiceNoteRecordingViewController._recordingViewWidthConstraint
 l_OBJC_PROTOCOL_$_UIActionSheetDelegate
 l_OBJC_LABEL_PROTOCOL_$_UIActionSheetDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGVoiceNoteRecordingViewController.m
-/Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGVoiceNoteRecordingViewController.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/View Controllers/IBGVoiceNoteRecordingViewController.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/View Controllers/IBGVoiceNoteRecordingViewController.h
 -[IBGVideoRemoteAttachment fetchAttachmentsWithCompletionHandler:]
 -[IBGVideoRemoteAttachment byline]
 -[IBGVideoRemoteAttachment fetchedAsset:ofURL:isSuccess:]
 -[IBGVideoRemoteAttachment status]
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGVideoRemoteAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGVideoRemoteAttachment.m
 -[IBGShapeRecognizer init]
 -[IBGShapeRecognizer recognizeDrawing:points:withReturnBlock:]
 ___62-[IBGShapeRecognizer recognizeDrawing:points:withReturnBlock:]_block_invoke
@@ -3243,7 +3245,7 @@ ___62-[IBGShapeRecognizer recognizeDrawing:points:withReturnBlock:]_block_invoke
 -[IBGShapeRecognizer .cxx_destruct]
 _shapeRecogentionQueue
 _OBJC_IVAR_$_IBGShapeRecognizer._recgonizingEngine
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Shape Recognizer/IBGShapeRecognizer.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Shape Recognizer/IBGShapeRecognizer.m
 __62-[IBGShapeRecognizer recognizeDrawing:points:withReturnBlock:]_block_invoke
 -[IBGShapeRecognitionEngine lock]
 -[IBGShapeRecognitionEngine recognizeDrawing:points:withReturnBlock:]
@@ -3259,7 +3261,7 @@ ___73-[IBGShapeRecognitionEngine matchingInfoForPath:withShape:andSharedInfo:]_b
 -[IBGShapeRecognitionEngine CpointsOfImage:]
 -[IBGShapeRecognitionEngine uncompressGZip:]
 __lock
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Shape Recognizer/IBGShapeRecognitionEngine.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Shape Recognizer/IBGShapeRecognitionEngine.m
 __73-[IBGShapeRecognitionEngine matchingInfoForPath:withShape:andSharedInfo:]_block_invoke
 +[IBGServerManager getInstance]
 ___31+[IBGServerManager getInstance]_block_invoke
@@ -3363,8 +3365,8 @@ _OBJC_IVAR_$_IBGServerManager._shouldDisableServerManager
 _OBJC_IVAR_$_IBGServerManager._serverManagerQueue
 l_OBJC_PROTOCOL_$_IBGAttachmentRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGAttachmentRequestDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/IBGServerManager.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/IBGServerManager.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/IBGServerManager.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/IBGServerManager.h
 __31-[IBGServerManager popRequest:]_block_invoke
 __34-[IBGServerManager handleRequest:]_block_invoke
 __32-[IBGServerManager pushRequest:]_block_invoke
@@ -3392,8 +3394,8 @@ __31+[IBGServerManager getInstance]_block_invoke
 -[IBGResources setResourcesBundle:]
 -[IBGResources .cxx_destruct]
 _OBJC_IVAR_$_IBGResources._resourcesBundle
-/Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGResources.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGResources.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Defaults/IBGResources.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Defaults/IBGResources.h
 -[IBGReportAttachmentRequest initWithParameters:attachmentPath:reportID:delegate:]
 -[IBGReportAttachmentRequest executeNow]
 -[IBGReportAttachmentRequest serverExecutionDone:statusCode:error:response:]
@@ -3422,7 +3424,7 @@ _OBJC_IVAR_$_IBGReportAttachmentRequest._attachmentURL
 _OBJC_IVAR_$_IBGReportAttachmentRequest._attachmentPath
 _OBJC_IVAR_$_IBGReportAttachmentRequest._fileRequest
 _OBJC_IVAR_$_IBGReportAttachmentRequest._isSuccess
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGReportAttachmentRequest.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGReportAttachmentRequest.m
 -[IBGUUIDMigration initWithOldUUID:newUUID:newEmail:newName:]
 -[IBGUUIDMigration persistAndSend]
 -[IBGUUIDMigration initWithDictionary:]
@@ -3450,8 +3452,8 @@ _OBJC_IVAR_$_IBGUUIDMigration._theNewName
 _OBJC_IVAR_$_IBGUUIDMigration._isSent
 l_OBJC_PROTOCOL_$_IBGUUIDMigrationRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGUUIDMigrationRequestDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGUUIDMigration.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGUUIDMigration.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGUUIDMigration.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGUUIDMigration.h
 -[IBGGalleryHelper initWithController:delegate:]
 -[IBGGalleryHelper initGallery]
 -[IBGGalleryHelper showGallery]
@@ -3484,7 +3486,7 @@ l_OBJC_PROTOCOL_$_UIImagePickerControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_UIImagePickerControllerDelegate
 l_OBJC_PROTOCOL_$_UINavigationControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_UINavigationControllerDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGGalleryHelper.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGGalleryHelper.m
 __72-[IBGGalleryHelper imagePickerController:didFinishPickingMediaWithInfo:]_block_invoke
 __51-[IBGGalleryHelper properlyDismissLandscapeGallery]_block_invoke
 __31-[IBGGalleryHelper showGallery]_block_invoke
@@ -3494,10 +3496,10 @@ __31-[IBGGalleryHelper showGallery]_block_invoke
 -[IBGViewHeirarchy .cxx_destruct]
 _OBJC_IVAR_$_IBGViewHeirarchy._viewHeirarchy
 _OBJC_IVAR_$_IBGViewHeirarchy._snapshotViews
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGViewHeirarchy.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGViewHeirarchy.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGViewHeirarchy.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGViewHeirarchy.h
 -[IBGNoneAnimation animateWithView:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/HUDs/Animations/IBGNoneAnimation.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/HUDs/Animations/IBGNoneAnimation.m
 +[IBGTimedDispatcher sharedDispatcher]
 ___38+[IBGTimedDispatcher sharedDispatcher]_block_invoke
 -[IBGTimedDispatcher init]
@@ -3508,7 +3510,7 @@ ___48-[IBGTimedDispatcher dispatchAfter:On:ID:block:]_block_invoke
 -[IBGTimedDispatcher .cxx_destruct]
 ___block_descriptor_tmp.14
 _OBJC_IVAR_$_IBGTimedDispatcher._toBeDispatchedBlocks
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGTimedDispatcher.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGTimedDispatcher.m
 __48-[IBGTimedDispatcher dispatchAfter:On:ID:block:]_block_invoke
 __38+[IBGTimedDispatcher sharedDispatcher]_block_invoke
 -[IBGFreeDrawingAnnotationView initWithFrame:zPosition:originator:annotatingColor:angle:]
@@ -3550,11 +3552,10 @@ _OBJC_IVAR_$_IBGFreeDrawingAnnotationView._isDetectingShape
 _OBJC_IVAR_$_IBGFreeDrawingAnnotationView._freeDrawingLineWidth
 _OBJC_IVAR_$_IBGFreeDrawingAnnotationView._annotatingColor
 _OBJC_IVAR_$_IBGFreeDrawingAnnotationView._needsFrameMapping
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGFreeDrawingAnnotationView.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGFreeDrawingAnnotationView.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGFreeDrawingAnnotationView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGFreeDrawingAnnotationView.h
 midPointForPoints
 __CGPointEqualToPoint
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[IBGLogLogger addIBGLogWithFormat:args:level:]
 -[IBGLogLogger addLog:level:date:]
 ___34-[IBGLogLogger addLog:level:date:]_block_invoke
@@ -3591,7 +3592,7 @@ ___block_literal_global.669
 __dataLayerService
 l_OBJC_PROTOCOL_$_IBGSnapshotProtcol
 l_OBJC_LABEL_PROTOCOL_$_IBGSnapshotProtcol
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGLogLogger.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGLogLogger.m
 __32+[IBGLogLogger dataLayerService]_block_invoke
 __28-[IBGLogLogger clearAllLogs]_block_invoke
 __28-[IBGLogLogger purgeAllLogs]_block_invoke
@@ -3601,7 +3602,7 @@ __34-[IBGLogLogger addLog:level:date:]_block_invoke.575
 __34-[IBGLogLogger addLog:level:date:]_block_invoke
 +[IBGValidationHelper isValidEmail:]
 +[IBGValidationHelper isValidInput:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGValidationHelper.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGValidationHelper.m
 -[IBGAudioLocalAttachment initWithAudio:]
 -[IBGAudioLocalAttachment byline]
 -[IBGAudioLocalAttachment prepareAttachmentPath]
@@ -3615,7 +3616,7 @@ __34-[IBGLogLogger addLog:level:date:]_block_invoke
 -[IBGAudioLocalAttachment .cxx_destruct]
 _OBJC_IVAR_$_IBGAudioLocalAttachment.fileName
 _OBJC_IVAR_$_IBGAudioLocalAttachment._completionHandler
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGAudioLocalAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGAudioLocalAttachment.m
 -[IBGInternalLogLocalAttachment initWithDelegate:logType:stackTrace:]
 -[IBGInternalLogLocalAttachment prepareLogData]
 -[IBGInternalLogLocalAttachment fetchLogs]
@@ -3635,14 +3636,14 @@ _OBJC_IVAR_$_IBGInternalLogLocalAttachment._userData
 _OBJC_IVAR_$_IBGInternalLogLocalAttachment._logType
 l_OBJC_PROTOCOL_$_IBGLogRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGLogRequestDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGInternalLogLocalAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGInternalLogLocalAttachment.m
 __42-[IBGInternalLogLocalAttachment fetchLogs]_block_invoke
 -[IBGButton pointInside:withEvent:]
 -[IBGButton resetUI]
 -[IBGButton switchState]
 -[IBGButton setSwitchState:]
 _OBJC_IVAR_$_IBGButton._switchState
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGButton.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGButton.m
 -[IBGVoiceNoteRecordingController initWithDelegate:]
 -[IBGVoiceNoteRecordingController didHoldDownRecordButton:]
 -[IBGVoiceNoteRecordingController didReleaseRecordButton:]
@@ -3662,7 +3663,7 @@ _OBJC_IVAR_$_IBGVoiceNoteRecordingController._voiceRecorder
 _OBJC_IVAR_$_IBGVoiceNoteRecordingController._startedRecording
 l_OBJC_PROTOCOL_$_IBGVoiceNoteRecordingViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGVoiceNoteRecordingViewDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Controllers/IBGVoiceNoteRecordingController.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Controllers/IBGVoiceNoteRecordingController.m
 __60-[IBGVoiceNoteRecordingController alertUserAboutPermissions]_block_invoke
 +[IBGUserDataLogger sharedInstance]
 ___35+[IBGUserDataLogger sharedInstance]_block_invoke
@@ -3679,8 +3680,8 @@ ___35+[IBGUserDataLogger sharedInstance]_block_invoke
 -[IBGUserDataLogger .cxx_destruct]
 _OBJC_IVAR_$_IBGUserDataLogger._data
 _OBJC_IVAR_$_IBGUserDataLogger._extraUserData
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserDataLogger.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserDataLogger.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGUserDataLogger.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGUserDataLogger.h
 __35+[IBGUserDataLogger sharedInstance]_block_invoke
 -[IBGReportRequest init]
 -[IBGReportRequest initWithParameters:delegate:]
@@ -3715,7 +3716,7 @@ _OBJC_IVAR_$_IBGReportRequest._attachmentUrl
 _OBJC_IVAR_$_IBGReportRequest._responseParserLock
 _OBJC_IVAR_$_IBGReportRequest._failures
 _OBJC_IVAR_$_IBGReportRequest._isSuccess
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGReportRequest.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGReportRequest.m
 -[IBGShakeAnimation animateWithView:]
 ___37-[IBGShakeAnimation animateWithView:]_block_invoke
 ___37-[IBGShakeAnimation animateWithView:]_block_invoke_2
@@ -3734,19 +3735,19 @@ ___destroy_helper_block_.24
 -[IBGShakeAnimation extraGifHeight]
 ___block_descriptor_tmp.10
 ___block_descriptor_tmp.25
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/HUDs/Animations/IBGShakeAnimation.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/HUDs/Animations/IBGShakeAnimation.m
 __37-[IBGShakeAnimation animateWithView:]_block_invoke.19
 __37-[IBGShakeAnimation animateWithView:]_block_invoke.15
 __37-[IBGShakeAnimation animateWithView:]_block_invoke.11
 __37-[IBGShakeAnimation animateWithView:]_block_invoke.7
 __37-[IBGShakeAnimation animateWithView:]_block_invoke_2
 __37-[IBGShakeAnimation animateWithView:]_block_invoke
-/Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGCoreAccessibilityIdentifiers.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Defaults/IBGCoreAccessibilityIdentifiers.m
 -[IBGLog toDictionary]
 +[IBGLog logsFetchRequestWithMaxCount:sessionId:]
 +[IBGLog entityName]
 -[IBGLog description]
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGLog+CoreDataClass.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/Core Data/IBGLog+CoreDataClass.m
 -[IBGUserStepsListener initWithDelegate:]
 -[IBGUserStepsListener getLastTouchEvent]
 -[IBGUserStepsListener startUserStepsLogger]
@@ -3838,8 +3839,8 @@ _OBJC_IVAR_$_IBGUserStepsListener._windowResignKeyWindow
 _OBJC_IVAR_$_IBGUserStepsListener._delegate
 l_OBJC_PROTOCOL_$_IBGUserStepsListenerProtocol
 l_OBJC_LABEL_PROTOCOL_$_IBGUserStepsListenerProtocol
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsListener.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsListenerProtocol.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsListener.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsListenerProtocol.h
 __44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.466
 __44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.457
 __44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.448
@@ -3861,7 +3862,7 @@ _OBJC_IVAR_$_IBGStatusBar._defaultPrefersStatusBarHidden
 _OBJC_IVAR_$_IBGStatusBar._defaultPreferredStatusBarStyle
 _OBJC_IVAR_$_IBGStatusBar._defaultApplicationStatusBarHidden
 _OBJC_IVAR_$_IBGStatusBar._hidden
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGStatusBar.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGStatusBar.m
 +[IBGAutoVideoRecorder sharedInstance]
 ___38+[IBGAutoVideoRecorder sharedInstance]_block_invoke
 -[IBGAutoVideoRecorder init]
@@ -3915,7 +3916,7 @@ ___block_descriptor_tmp.491
 ___block_descriptor_tmp.494
 ___block_descriptor_tmp.509
 _kIBGVideoFrameRate
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGAutoVideoRecorder.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGAutoVideoRecorder.m
 __69-[IBGAutoVideoRecorder screenshotModelWithImg:withCompletionHandler:]_block_invoke
 __43-[IBGAutoVideoRecorder autoScreenRecording]_block_invoke_4
 __43-[IBGAutoVideoRecorder autoScreenRecording]_block_invoke_3
@@ -3927,7 +3928,7 @@ __38-[IBGAutoVideoRecorder startRecording]_block_invoke
 __41-[IBGAutoVideoRecorder stopAutoRecording]_block_invoke
 __38+[IBGAutoVideoRecorder sharedInstance]_block_invoke
 -[IBGInternalErrorCache cacheDiskPath]
-/Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGInternalErrorCache.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Caching/IBGInternalErrorCache.m
 -[IBGNetworkLogger loggedRequestFromOriginalRequest:body:]
 -[IBGNetworkLogger loggedResponse:data:]
 ___40-[IBGNetworkLogger loggedResponse:data:]_block_invoke
@@ -3979,7 +3980,6 @@ __responseFilterPredicate
 __userRequestObfuscationBlock
 __userResponseObfuscationBlock
 ___block_descriptor_tmp.94
-___block_descriptor_tmp.124
 ___block_descriptor_tmp.160
 ___block_literal_global.161
 __customSessionConfiguration
@@ -3993,7 +3993,7 @@ _OBJC_IVAR_$_IBGNetworkLogger._loggedRequest
 _OBJC_IVAR_$_IBGNetworkLogger._tobeSavedBody
 _OBJC_IVAR_$_IBGNetworkLogger._loggedResponse
 _OBJC_IVAR_$_IBGNetworkLogger._loggedResponseData
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGNetworkLogger.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGNetworkLogger.m
 __50+[IBGNetworkLogger requestProgressBlockDictionary]_block_invoke
 __36+[IBGNetworkLogger dataLayerService]_block_invoke
 __32-[IBGNetworkLogger clearAllLogs]_block_invoke
@@ -4036,8 +4036,8 @@ _OBJC_IVAR_$_IBGServerDataRequest._data
 _OBJC_IVAR_$_IBGServerDataRequest._filePath
 l_OBJC_PROTOCOL_$_IBGServerProtocol
 l_OBJC_LABEL_PROTOCOL_$_IBGServerProtocol
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Generic Requests/IBGServerDataRequest.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Generic Requests/IBGServerProtocol.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Generic Requests/IBGServerDataRequest.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Generic Requests/IBGServerProtocol.h
 __60-[IBGServerDataRequest prepareRequestWithCompletionHandler:]_block_invoke
 -[IBGFeaturesRequest init]
 -[IBGFeaturesRequest initWithParameters:delegate:]
@@ -4065,8 +4065,8 @@ _OBJC_IVAR_$_IBGFeaturesRequest._dataParameters
 _OBJC_IVAR_$_IBGFeaturesRequest._dataUrl
 _OBJC_IVAR_$_IBGFeaturesRequest._failures
 _OBJC_IVAR_$_IBGFeaturesRequest._isSuccess
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGFeaturesRequest.m
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZError.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGFeaturesRequest.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZError.m
 -[IBGNetworkLoggerContextProvider context]
 -[IBGNetworkLoggerContextProvider memoryContext]
 ___48-[IBGNetworkLoggerContextProvider memoryContext]_block_invoke
@@ -4080,13 +4080,13 @@ ___40-[IBGNetworkLoggerContextProvider queue]_block_invoke
 _OBJC_IVAR_$_IBGNetworkLoggerContextProvider._memoryContext
 _OBJC_IVAR_$_IBGNetworkLoggerContextProvider._backgroundContext
 __networkLoggerQueue
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGNetworkLoggerContextProvider.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGNetworkLoggerContextProvider.m
 __40-[IBGNetworkLoggerContextProvider queue]_block_invoke
 __52-[IBGNetworkLoggerContextProvider backgroundContext]_block_invoke
 __48-[IBGNetworkLoggerContextProvider memoryContext]_block_invoke
 +[IBGCacheDecoder getModelsFrom:]
 +[IBGCacheDecoder getDicationaryFromModels:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGCacheDecoder.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Caching/IBGCacheDecoder.m
 +[IBGCoreDataPersistenceManager sharedManager]
 ___46+[IBGCoreDataPersistenceManager sharedManager]_block_invoke
 -[IBGCoreDataPersistenceManager init]
@@ -4121,6 +4121,8 @@ ___copy_helper_block_.144
 ___destroy_helper_block_.145
 ___copy_helper_block_.147
 ___destroy_helper_block_.148
+___copy_helper_block_.150
+___destroy_helper_block_.151
 -[IBGCoreDataPersistenceManager destroyPersistent:storeAtURL:]
 -[IBGCoreDataPersistenceManager addCoreDataOperation:]
 ___54-[IBGCoreDataPersistenceManager addCoreDataOperation:]_block_invoke
@@ -4219,8 +4221,8 @@ _OBJC_IVAR_$_IBGCoreDataPersistenceManager._appStateReactor
 _OBJC_IVAR_$_IBGCoreDataPersistenceManager._isApplicationProtectedDataAvailable
 l_OBJC_PROTOCOL_$_IBGAppStateReactorDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGAppStateReactorDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGCoreDataPersistenceManager.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGCoreDataPersistenceManager.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Managers/IBGCoreDataPersistenceManager.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Managers/IBGCoreDataPersistenceManager.h
 __54-[IBGCoreDataPersistenceManager copyObject:toContext:]_block_invoke
 __65-[IBGCoreDataPersistenceManager registerBackgroundTaskWithBlock:]_block_invoke
 __93-[IBGCoreDataPersistenceManager removeManagedObjectWithFetchRequests:inManagedObjectContext:]_block_invoke
@@ -4245,7 +4247,7 @@ __56-[IBGCoreDataPersistenceManager initializationOperation]_block_invoke_2
 __56-[IBGCoreDataPersistenceManager initializationOperation]_block_invoke
 __46+[IBGCoreDataPersistenceManager sharedManager]_block_invoke
 -[IBGUUIDMigrationCache cacheDiskPath]
-/Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGUUIDMigrationCache.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Caching/IBGUUIDMigrationCache.m
 -[IBGAttachmentController initWithDelegate:]
 -[IBGAttachmentController takeImageFromGallaryFromPresenter:]
 -[IBGAttachmentController takeScreenShot]
@@ -4280,14 +4282,14 @@ l_OBJC_PROTOCOL_$_IBGVoiceNoteRecordingViewControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGVoiceNoteRecordingViewControllerDelegate
 l_OBJC_PROTOCOL_$_IBGVideoRecorderControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGVideoRecorderControllerDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Controllers/IBGAttachmentController.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Controllers/IBGAttachmentController.m
 -[IBGUserStepLog initWithMessage:timeEpoch:type:]
 -[IBGUserStepLog toDictionary]
 -[IBGUserStepLog type]
 -[IBGUserStepLog .cxx_destruct]
 _OBJC_IVAR_$_IBGUserStepLog._type
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGUserStepLog.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGUserStepLog.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGUserStepLog.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGUserStepLog.h
 -[IBGAnalyticsEventsLogger init]
 -[IBGAnalyticsEventsLogger initWithDelegate:]
 -[IBGAnalyticsEventsLogger startEvent:]
@@ -4308,11 +4310,11 @@ _OBJC_IVAR_$_IBGUserStepLog._type
 _OBJC_IVAR_$_IBGAnalyticsEventsLogger._delegate
 _OBJC_IVAR_$_IBGAnalyticsEventsLogger._eventsLog
 _OBJC_IVAR_$_IBGAnalyticsEventsLogger._intermediateEvents
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGAnalyticsEventsLogger.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGAnalyticsEventsLogger.m
 +[IBGStringUtilities safeStringForString:]
 +[IBGStringUtilities validStringOfAppVersion:]
 +[IBGStringUtilities randomStringWithLength:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGStringUtilities.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGStringUtilities.m
 +[IBGMethodSwizzlerManager getInstance]
 ___39+[IBGMethodSwizzlerManager getInstance]_block_invoke
 -[IBGMethodSwizzlerManager init]
@@ -4325,7 +4327,7 @@ ___39+[IBGMethodSwizzlerManager getInstance]_block_invoke
 -[IBGMethodSwizzlerManager setSwizzlers:]
 -[IBGMethodSwizzlerManager .cxx_destruct]
 _OBJC_IVAR_$_IBGMethodSwizzlerManager._swizzlers
-/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGMethodSwizzlerManager.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Managers/IBGMethodSwizzlerManager.m
 __39+[IBGMethodSwizzlerManager getInstance]_block_invoke
 -[IBGScreenshot initWithIdentifier:timpStamp:andDate:]
 -[IBGScreenshot updateScreenshotTimeStamp:]
@@ -4350,8 +4352,8 @@ _OBJC_IVAR_$_IBGScreenshot._timeStamp
 _OBJC_IVAR_$_IBGScreenshot._date
 _OBJC_IVAR_$_IBGScreenshot._path
 _OBJC_IVAR_$_IBGScreenshot._orientation
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGScreenshot.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGScreenshot.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGScreenshot.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGScreenshot.h
 -[IBGZZDataChannelOutput initWithData:]
 -[IBGZZDataChannelOutput offset]
 -[IBGZZDataChannelOutput seekToOffset:error:]
@@ -4363,7 +4365,7 @@ _OBJC_IVAR_$_IBGZZDataChannelOutput._allData
 _OBJC_IVAR_$_IBGZZDataChannelOutput._offset
 l_OBJC_PROTOCOL_$_IBGZZChannelOutput
 l_OBJC_LABEL_PROTOCOL_$_IBGZZChannelOutput
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDataChannelOutput.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZDataChannelOutput.m
 +[IBGMigrationManager getInstance]
 ___34+[IBGMigrationManager getInstance]_block_invoke
 -[IBGMigrationManager initializationOperation]
@@ -4393,7 +4395,7 @@ ___block_descriptor_tmp.65
 _OBJC_IVAR_$_IBGMigrationManager._migration
 l_OBJC_PROTOCOL_$_IBGMigrationDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGMigrationDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Migrations/IBGMigrationManager.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Migrations/IBGMigrationManager.m
 __54-[IBGMigrationManager didFinishMigration:withSuccess:]_block_invoke
 __46-[IBGMigrationManager runAnyPendingMigrations]_block_invoke
 __46-[IBGMigrationManager initializationOperation]_block_invoke
@@ -4410,7 +4412,7 @@ _OBJC_IVAR_$_IBGVideoPlayer._playbackView
 _OBJC_IVAR_$_IBGVideoPlayer._delegate
 l_OBJC_PROTOCOL_$_IBGVideoPlaybackViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGVideoPlaybackViewDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVideoPlayer.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVideoPlayer.m
 -[IBGBorderedImageView initWithBorderColor:backgroundColor:borderWidth:]
 -[IBGBorderedImageView drawRect:]
 -[IBGBorderedImageView setImage:]
@@ -4426,8 +4428,8 @@ _OBJC_IVAR_$_IBGBorderedImageView._image
 _OBJC_IVAR_$_IBGBorderedImageView._borderColor
 _OBJC_IVAR_$_IBGBorderedImageView._borderBackgroundColor
 _OBJC_IVAR_$_IBGBorderedImageView._borderWidth
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGBorderedImageView.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGBorderedImageView.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGBorderedImageView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGBorderedImageView.h
 +[IBGAlertView alertWithTitle:message:cancelTitle:actionTitle:actionHanlder:]
 -[IBGAlertView show]
 ___20-[IBGAlertView show]_block_invoke
@@ -4454,8 +4456,8 @@ _OBJC_IVAR_$_IBGAlertView._title
 _OBJC_IVAR_$_IBGAlertView._message
 _OBJC_IVAR_$_IBGAlertView._cancelTitle
 _OBJC_IVAR_$_IBGAlertView._actionTitle
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGAlertView.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGAlertView.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGAlertView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGAlertView.h
 __20-[IBGAlertView show]_block_invoke.32
 __20-[IBGAlertView show]_block_invoke
 -[IBGActionSheetItem initWithName:accessibilityIdentifier:imageName:handler:]
@@ -4472,12 +4474,12 @@ _OBJC_IVAR_$_IBGActionSheetItem._accessibilityIdentifier
 _OBJC_IVAR_$_IBGActionSheetItem._name
 _OBJC_IVAR_$_IBGActionSheetItem._imageName
 _OBJC_IVAR_$_IBGActionSheetItem._handler
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGActionSheetItem.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGActionSheetItem.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGActionSheetItem.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGActionSheetItem.h
 -[IBGInternalErrorAttachmentRequestCreator logRequestWithId:parameters:delegate:]
 l_OBJC_PROTOCOL_$_IBGAttachmentRequestCreator
 l_OBJC_LABEL_PROTOCOL_$_IBGAttachmentRequestCreator
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/IBGInternalErrorAttachmentRequestCreator.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/IBGInternalErrorAttachmentRequestCreator.m
 -[IBGBackwardMigration version]
 -[IBGBackwardMigration shouldRun]
 -[IBGBackwardMigration run]
@@ -4485,7 +4487,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGAttachmentRequestCreator
 -[IBGBackwardMigration setDelegate:]
 -[IBGBackwardMigration .cxx_destruct]
 _OBJC_IVAR_$_IBGBackwardMigration._delegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Migrations/IBGBackwardMigration.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Migrations/IBGBackwardMigration.m
 +[IBGSDKInternalLogManager sharedManager]
 ___41+[IBGSDKInternalLogManager sharedManager]_block_invoke
 -[IBGSDKInternalLogManager addSDKInternalLog:]
@@ -4498,7 +4500,7 @@ ___41+[IBGSDKInternalLogManager sharedManager]_block_invoke
 _sharedManager.once
 _sharedManager.sharedManager
 _OBJC_IVAR_$_IBGSDKInternalLogManager._internalLog
-/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGSDKInternalLogManager.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Managers/IBGSDKInternalLogManager.m
 __41+[IBGSDKInternalLogManager sharedManager]_block_invoke
 +[IBGEventLogger sharedInstance]
 ___32+[IBGEventLogger sharedInstance]_block_invoke
@@ -4545,8 +4547,8 @@ _OBJC_IVAR_$_IBGEventLogger._eventLogsQueue
 _OBJC_IVAR_$_IBGEventLogger._dataLayerService
 ___block_descriptor_tmp.633
 _OBJC_IVAR_$_IBGEventLogger._context
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGEventLogger.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGEventLogger.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGEventLogger.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGEventLogger.h
 __34-[IBGEventLogger dataLayerService]_block_invoke
 __27-[IBGEventLogger stateLogs]_block_invoke_2
 __27-[IBGEventLogger stateLogs]_block_invoke
@@ -4575,7 +4577,7 @@ _OBJC_IVAR_$_IBGFullActivityIndicatorView._activityIndicatorView
 _OBJC_IVAR_$_IBGFullActivityIndicatorView._dimmingView
 _OBJC_IVAR_$_IBGFullActivityIndicatorView._containerView
 _OBJC_IVAR_$_IBGFullActivityIndicatorView._collectingDataLabel
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGFullActivityIndicatorView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGFullActivityIndicatorView.m
 +[IBGNetworkLog logsFetchRequestWithMaxCount:sessionId:]
 +[IBGNetworkLog entityName]
 -[IBGNetworkLog saveRequest:body:sessionId:date:]
@@ -4585,8 +4587,8 @@ _OBJC_IVAR_$_IBGFullActivityIndicatorView._collectingDataLabel
 -[IBGNetworkLog contentType]
 -[IBGNetworkLog setContentType:]
 _OBJC_IVAR_$_IBGNetworkLog.contentType
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGNetworkLog+CoreDataClass.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGNetworkLog+CoreDataClass.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/Core Data/IBGNetworkLog+CoreDataClass.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/Core Data/IBGNetworkLog+CoreDataClass.h
 -[IBGZZNewArchiveEntryWriter initWithFileName:fileMode:lastModified:compressionLevel:dataBlock:streamBlock:dataConsumerBlock:]
 -[IBGZZNewArchiveEntryWriter centralFileHeader]
 -[IBGZZNewArchiveEntryWriter localFileHeader]
@@ -4608,7 +4610,7 @@ _OBJC_IVAR_$_IBGZZNewArchiveEntryWriter._streamBlock
 _OBJC_IVAR_$_IBGZZNewArchiveEntryWriter._dataConsumerBlock
 __ZN17IBGZZDataConsumerL9callbacksE
 ___block_descriptor_tmp.71
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZNewArchiveEntryWriter.mm
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZNewArchiveEntryWriter.mm
 putBytes
 __82-[IBGZZNewArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]_block_invoke.69
 __82-[IBGZZNewArchiveEntryWriter writeLocalFileToChannelOutput:withInitialSkip:error:]_block_invoke_2.65
@@ -4632,7 +4634,7 @@ _OBJC_IVAR_$_IBGZZNewArchiveEntry._compressionLevel
 _OBJC_IVAR_$_IBGZZNewArchiveEntry._dataBlock
 _OBJC_IVAR_$_IBGZZNewArchiveEntry._streamBlock
 _OBJC_IVAR_$_IBGZZNewArchiveEntry._dataConsumerBlock
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZNewArchiveEntry.mm
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZNewArchiveEntry.mm
 +[IBGCacheManager getInstance]
 ___30+[IBGCacheManager getInstance]_block_invoke
 -[IBGCacheManager init]
@@ -4662,8 +4664,8 @@ ___block_descriptor_tmp.555
 ___block_descriptor_tmp.575
 _OBJC_IVAR_$_IBGCacheManager._cacheManagers
 _OBJC_IVAR_$_IBGCacheManager._cacheManagerQueue
-/Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGCacheManager.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGCacheManager.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Caching/IBGCacheManager.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Caching/IBGCacheManager.h
 __64-[IBGCacheManager registerCache:forClass:withCompletionHandler:]_block_invoke
 __42-[IBGCacheManager initializationOperation]_block_invoke
 __30+[IBGCacheManager getInstance]_block_invoke
@@ -4681,9 +4683,9 @@ __30+[IBGCacheManager getInstance]_block_invoke
 _OBJC_IVAR_$_IBGLineLimitedString._lines
 _OBJC_IVAR_$_IBGLineLimitedString._linesLimit
 _OBJC_IVAR_$_IBGLineLimitedString._syncLock
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGLineLimitedString.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGLineLimitedString.m
 +[IBGUserStep(CoreDataProperties) fetchRequest]
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGUserStep+CoreDataProperties.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/Core Data/IBGUserStep+CoreDataProperties.m
 -[IBGAttachment coderNameForSelector:]
 -[IBGAttachment fetchAttachmentsWithCompletionHandler:]
 -[IBGAttachment dictionaryValue]
@@ -4702,7 +4704,7 @@ _OBJC_IVAR_$_IBGAttachment._attachment
 _OBJC_IVAR_$_IBGAttachment._metadata
 _OBJC_IVAR_$_IBGAttachment._isSent
 _OBJC_IVAR_$_IBGAttachment._byline
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGAttachment.m
 +[IBGDiskPersistenceManager getInstance]
 ___40+[IBGDiskPersistenceManager getInstance]_block_invoke
 -[IBGDiskPersistenceManager init]
@@ -4760,8 +4762,8 @@ ___block_descriptor_tmp.515
 _OBJC_IVAR_$_IBGDiskPersistenceManager._cacheDirectory
 _OBJC_IVAR_$_IBGDiskPersistenceManager._fileManager
 _OBJC_IVAR_$_IBGDiskPersistenceManager._tempDirectory
-/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGDiskPersistenceManager.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGDiskPersistenceManager.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Managers/IBGDiskPersistenceManager.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Managers/IBGDiskPersistenceManager.h
 __71-[IBGDiskPersistenceManager persistDataInTempDirectory:withCompletion:]_block_invoke
 __40+[IBGDiskPersistenceManager getInstance]_block_invoke
 +[IBGPresentationManager getInstance]
@@ -4828,8 +4830,8 @@ _OBJC_IVAR_$_IBGPresentationManager._screenshotCapturingHandler
 _OBJC_IVAR_$_IBGPresentationManager._delegates
 _OBJC_IVAR_$_IBGPresentationManager._shouldDisbalePresentationManager
 _OBJC_IVAR_$_IBGPresentationManager._userFirstResponderView
-/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGPresentationManager.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGPresentationManager.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Managers/IBGPresentationManager.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Managers/IBGPresentationManager.h
 __41-[IBGPresentationManager dismissKeyboard]_block_invoke
 __49-[IBGPresentationManager initializationOperation]_block_invoke
 __37+[IBGPresentationManager getInstance]_block_invoke
@@ -4854,8 +4856,8 @@ _OBJC_IVAR_$_IBGOperation._executing
 _OBJC_IVAR_$_IBGOperation._finished
 _OBJC_IVAR_$_IBGOperation._block
 _OBJC_IVAR_$_IBGOperation._compeltionBlock
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGOperation.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGOperation.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGOperation.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGOperation.h
 -[IBGVideoCache cacheDiskPath]
 -[IBGVideoCache videoForIdentifier:]
 -[IBGVideoCache removeVideoWithIdentfier:]
@@ -4866,7 +4868,7 @@ _OBJC_IVAR_$_IBGOperation._compeltionBlock
 -[IBGVideoCache setCachedModels:]
 -[IBGVideoCache .cxx_destruct]
 _OBJC_IVAR_$_IBGVideoCache._cachedModels
-/Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGVideoCache.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Caching/IBGVideoCache.m
 -[IBGConsoleLog initWithMessage:timeEpoch:]
 -[IBGConsoleLog toDictionary]
 -[IBGConsoleLog description]
@@ -4875,8 +4877,8 @@ _OBJC_IVAR_$_IBGVideoCache._cachedModels
 -[IBGConsoleLog .cxx_destruct]
 _OBJC_IVAR_$_IBGConsoleLog._message
 _OBJC_IVAR_$_IBGConsoleLog._timeEpoch
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGConsoleLog.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGConsoleLog.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGConsoleLog.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGConsoleLog.h
 -[IBGSafeMutableDictionary init]
 -[IBGSafeMutableDictionary objectForKey:]
 -[IBGSafeMutableDictionary setObject:forKey:]
@@ -4888,7 +4890,7 @@ _OBJC_IVAR_$_IBGConsoleLog._timeEpoch
 -[IBGSafeMutableDictionary .cxx_destruct]
 _OBJC_IVAR_$_IBGSafeMutableDictionary._underlyingDictionary
 _OBJC_IVAR_$_IBGSafeMutableDictionary._lock
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGSafeMutableDictionary.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGSafeMutableDictionary.m
 -[IBGSession initWithSessionNumber:]
 -[IBGSession sessionDurationTillNow]
 -[IBGSession coderNameForSelector:]
@@ -4923,10 +4925,10 @@ _OBJC_IVAR_$_IBGSession._userAttributes
 _OBJC_IVAR_$_IBGSession._eventLogs
 l_OBJC_PROTOCOL_$_IBGSessionRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGSessionRequestDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGSession.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGSession.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Caching/IBGSession.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Caching/IBGSession.h
 __inline_isinfd
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/math.h
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/usr/include/math.h
 +[IBGGeomtryUtilities lock]
 +[IBGGeomtryUtilities syntheizedPathInRect:andShape:withAngle:withInRect:]
 +[IBGGeomtryUtilities pathFromPoints:]
@@ -4951,7 +4953,7 @@ __inline_isinfd
 +[IBGGeomtryUtilities pointsFromRect:withCount:]
 +[IBGGeomtryUtilities boundingPointsForPoints:]
 +[IBGGeomtryUtilities shouldRotateWithFirstOrientation:AndSecondOrientation:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGGeomtryUtilities.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGGeomtryUtilities.m
 UIInterfaceOrientationIsPortrait
 -[IBGReplyView initWithDelegate:andText:]
 -[IBGReplyView fitReplyViewToText]
@@ -5037,8 +5039,8 @@ _OBJC_IVAR_$_IBGReplyView._addAttachmentHeightConstraint
 _OBJC_IVAR_$_IBGReplyView._addAttachmentBottomConstraint
 l_OBJC_PROTOCOL_$_UITextViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_UITextViewDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGReplyView.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGReplyView.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGReplyView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGReplyView.h
 __32-[IBGReplyView actionSheetItems]_block_invoke.224
 __32-[IBGReplyView actionSheetItems]_block_invoke.216
 __32-[IBGReplyView actionSheetItems]_block_invoke
@@ -5048,7 +5050,7 @@ __32-[IBGReplyView showActionSheet:]_block_invoke
 +[IBGMathUtilities isClose:toFloat:]
 +[IBGMathUtilities make2DMatrixWithDims:width:]
 +[IBGMathUtilities softMax:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGMathUtilities.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGMathUtilities.m
 isClose
 multiplyMat
 softMax
@@ -5073,8 +5075,8 @@ _OBJC_IVAR_$_IBGSnapshotView._view
 _OBJC_IVAR_$_IBGSnapshotView._memoryAddress
 _OBJC_IVAR_$_IBGSnapshotView._captureFrame
 _OBJC_IVAR_$_IBGSnapshotView._index
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGSnapshotView.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGSnapshotView.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGSnapshotView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGSnapshotView.h
 -[UIView(Inspect) ibg_formattedConstraints]
 -[UIView(Inspect) ibg_isValidConstraint:]
 -[UIView(Inspect) ibg_objectMemoryAddress:]
@@ -5090,7 +5092,7 @@ _OBJC_IVAR_$_IBGSnapshotView._index
 -[UIView(Inspect) ibg_inspectInsideWindow:]
 -[UIView(Inspect) viewHeirarchyDictIfUIViewIsWrapperViewForViewController:]
 -[UIView(Inspect) ibg_isProtected]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/UIView+Inspect.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Categories/UIView+Inspect.m
 -[IBGPoweredByView initWithBlackBackground:]
 -[IBGPoweredByView applyTheme]
 -[IBGPoweredByView hideInstabugIcon]
@@ -5107,7 +5109,7 @@ _OBJC_IVAR_$_IBGPoweredByView._hasBlackBackground
 _OBJC_IVAR_$_IBGPoweredByView._poweredByLabel
 _OBJC_IVAR_$_IBGPoweredByView._instabugIconImageView
 _OBJC_IVAR_$_IBGPoweredByView._iconWidthConstraint
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGPoweredByView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGPoweredByView.m
 -[IBGAttachmentsView initWithDelegate:]
 -[IBGAttachmentsView updateConstraints]
 -[IBGAttachmentsView layoutSubviews]
@@ -5137,14 +5139,13 @@ ___49-[IBGAttachmentsView stopPlayingAudioAttachment:]_block_invoke
 -[IBGAttachmentsView attachments]
 -[IBGAttachmentsView setAttachments:]
 -[IBGAttachmentsView .cxx_destruct]
-___block_descriptor_tmp.497
 _OBJC_IVAR_$_IBGAttachmentsView._collectionView
 _OBJC_IVAR_$_IBGAttachmentsView._delegate
 _OBJC_IVAR_$_IBGAttachmentsView._currentlyPlayingAudioAttachmentTimer
 _OBJC_IVAR_$_IBGAttachmentsView._secondsElapsedForPlayingAudioAttachment
 _OBJC_IVAR_$_IBGAttachmentsView._currentlyPlayingAudioAttachment
 _OBJC_IVAR_$_IBGAttachmentsView._attachments
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGAttachmentsView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGAttachmentsView.m
 __49-[IBGAttachmentsView stopPlayingAudioAttachment:]_block_invoke
 __60-[IBGAttachmentsView collectionView:cellForItemAtIndexPath:]_block_invoke
 -[IBGFloatingButtonWindow initWithDelegate:]
@@ -5174,7 +5175,7 @@ _OBJC_IVAR_$_IBGFloatingButtonWindow._buttonDelegate
 _OBJC_IVAR_$_IBGFloatingButtonWindow._button
 l_OBJC_PROTOCOL_$_IBGFloatingButtonViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGFloatingButtonViewDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/IBGFloatingButtonWindow.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/IBGFloatingButtonWindow.m
 __34-[IBGFloatingButtonWindow refresh]_block_invoke
 __31-[IBGFloatingButtonWindow show]_block_invoke
 +[IBGAudioVideoRecorder sharedInstance]
@@ -5221,8 +5222,8 @@ _OBJC_IVAR_$_IBGAudioVideoRecorder._startedAt
 _OBJC_IVAR_$_IBGAudioVideoRecorder._isRecordingAudio
 l_OBJC_PROTOCOL_$_IBGVideoRecorderDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGVideoRecorderDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGAudioVideoRecorder.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGAudioVideoRecorder.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGAudioVideoRecorder.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGAudioVideoRecorder.h
 __62-[IBGAudioVideoRecorder mergeAudioVideoWithCompletionHandler:]_block_invoke_3
 __62-[IBGAudioVideoRecorder mergeAudioVideoWithCompletionHandler:]_block_invoke_2
 __62-[IBGAudioVideoRecorder mergeAudioVideoWithCompletionHandler:]_block_invoke
@@ -5237,7 +5238,7 @@ __39+[IBGAudioVideoRecorder sharedInstance]_block_invoke
 -[IBGNullableMutableDictionary setDictionary:]
 -[IBGNullableMutableDictionary .cxx_destruct]
 _OBJC_IVAR_$_IBGNullableMutableDictionary._dictionary
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGNullableMutableDictionary.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGNullableMutableDictionary.m
 -[IBGZZAESDecryptInputStream initWithStream:password:header:strength:error:]
 -[IBGZZAESDecryptInputStream streamStatus]
 -[IBGZZAESDecryptInputStream streamError]
@@ -5253,7 +5254,7 @@ _OBJC_IVAR_$_IBGZZAESDecryptInputStream._counterNonce
 _OBJC_IVAR_$_IBGZZAESDecryptInputStream._keystreamPos
 _OBJC_IVAR_$_IBGZZAESDecryptInputStream._aes
 _OBJC_IVAR_$_IBGZZAESDecryptInputStream._keystream
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZAESDecryptInputStream.mm
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZAESDecryptInputStream.mm
 getMacLength
 getKeyLength
 -[IBGScreenshotVC initWithTitle:screenshot:reportType:delegate:rightNavigationButtonType:]
@@ -5426,13 +5427,14 @@ l_OBJC_PROTOCOL_$_IBGScreenshotAnnotationsViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGScreenshotAnnotationsViewDelegate
 l_OBJC_PROTOCOL_$_IBGShapeDetectionOverlayProtocol
 l_OBJC_LABEL_PROTOCOL_$_IBGShapeDetectionOverlayProtocol
-/Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGScreenshotVC.m
-/Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGScreenshotVC.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/View Controllers/IBGScreenshotVC.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/View Controllers/IBGScreenshotVC.h
+__inline_isnanf
 __38-[IBGScreenshotVC startShapeDetection]_block_invoke_2
 __38-[IBGScreenshotVC startShapeDetection]_block_invoke
 __51-[IBGScreenshotVC adjustScreenshotAnnotationsImage]_block_invoke
 -[NSString(MD5) MD5String]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/NSString+MD5.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/NSString+MD5.m
 -[IBGUserStepsTrimmer init]
 -[IBGUserStepsTrimmer getUserStepsFrom:maxScreenShots:maxSteps:]
 -[IBGUserStepsTrimmer validIdentiferFromTrimmedNodes:]
@@ -5447,7 +5449,7 @@ __51-[IBGScreenshotVC adjustScreenshotAnnotationsImage]_block_invoke
 -[IBGUserStepsTrimmer .cxx_destruct]
 _OBJC_IVAR_$_IBGUserStepsTrimmer._parentNodes
 _OBJC_IVAR_$_IBGUserStepsTrimmer._currentChildNumber
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsTrimmer.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGUserStepsTrimmer.m
 -[IBGServerFileRequest initWithURL:filePath:fileInfo:delegate:]
 -[IBGServerFileRequest mimeTypeFromFile:]
 -[IBGServerFileRequest setRequestData:]
@@ -5480,8 +5482,8 @@ _OBJC_IVAR_$_IBGServerFileRequest._fileName
 _OBJC_IVAR_$_IBGServerFileRequest._mimeType
 _OBJC_IVAR_$_IBGServerFileRequest._url
 _OBJC_IVAR_$_IBGServerFileRequest._info
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Generic Requests/IBGServerFileRequest.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Generic Requests/IBGServerFileRequest.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Generic Requests/IBGServerFileRequest.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Generic Requests/IBGServerFileRequest.h
 __60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke.472
 __60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke
 -[IBGFeature initWithDefaultValue:]
@@ -5502,11 +5504,11 @@ _OBJC_IVAR_$_IBGFeature._serverPermission
 _OBJC_IVAR_$_IBGFeature._userPreferenceSet
 _OBJC_IVAR_$_IBGFeature._serverPermissionSet
 _OBJC_IVAR_$_IBGFeature._defaultValue
-/Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGFeature.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGFeature.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Defaults/IBGFeature.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Defaults/IBGFeature.h
 -[IBGFlowController dismissSDKForCancellationWithReportType:dismissKeyboard:]
 -[IBGFlowController minimizeSDKWithReportType:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Flow Controllers/IBGFlowController.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Flow Controllers/IBGFlowController.m
 +[IBGViewUtilities addDropShadowToView:withOfsset:shadowRadius:andShadowOpacity:]
 +[IBGViewUtilities addFullScreenConstraintsToView:superview:]
 +[IBGViewUtilities shouldFlipImageForBarButtonItems]
@@ -5516,7 +5518,7 @@ _OBJC_IVAR_$_IBGFeature._defaultValue
 -[UIView(AutoLayoutHelpers) ibg_addConstraintWithView:relatedToView:attribute:constant:]
 -[UIView(AutoLayoutHelpers) ibg_addConstraintWithView:relatedToView:attribute:constant:priority:]
 -[UIView(AutoLayoutHelpers) ibg_addSizeConstraintWithView:attribute:value:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGViewUtilities.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGViewUtilities.m
 -[IBGAutoScreenRecordingLocalAttachment initWithVideoIdentifier:]
 -[IBGAutoScreenRecordingLocalAttachment coderNameForSelector:]
 -[IBGAutoScreenRecordingLocalAttachment encodedVideoName]
@@ -5538,7 +5540,7 @@ ___destroy_helper_block_.430
 _OBJC_IVAR_$_IBGAutoScreenRecordingLocalAttachment._videoIdentifier
 ___block_descriptor_tmp.432
 _OBJC_IVAR_$_IBGAutoScreenRecordingLocalAttachment.fileName
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGAutoScreenRecordingLocalAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGAutoScreenRecordingLocalAttachment.m
 __80-[IBGAutoScreenRecordingLocalAttachment prepareAttachmentAndSaveWithCompletion:]_block_invoke
 __83-[IBGAutoScreenRecordingLocalAttachment prepareAttachmentPathWithCompetionHandler:]_block_invoke
 +[IBGAssetsManager getInstance]
@@ -5569,7 +5571,7 @@ _OBJC_IVAR_$_IBGAssetsManager._delegates
 _OBJC_IVAR_$_IBGAssetsManager._URLs
 l_OBJC_PROTOCOL_$_IBGServerManagerAssetDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGServerManagerAssetDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGAssetsManager.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Managers/IBGAssetsManager.m
 __31+[IBGAssetsManager getInstance]_block_invoke
 -[IBGShapeDetectionMemento initWithFrame:superViewFrame:zPosition:angel:points:]
 -[IBGShapeDetectionMemento superView]
@@ -5582,8 +5584,8 @@ __31+[IBGAssetsManager getInstance]_block_invoke
 _OBJC_IVAR_$_IBGShapeDetectionMemento._superView
 _OBJC_IVAR_$_IBGShapeDetectionMemento._points
 _OBJC_IVAR_$_IBGShapeDetectionMemento._color
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGShapeDetectionMemento.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGShapeDetectionMemento.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGShapeDetectionMemento.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGShapeDetectionMemento.h
 -[IBGAnnotationCommand initWithAnnotationView:previousState:currentState:]
 -[IBGAnnotationCommand execute]
 -[IBGAnnotationCommand unexecute]
@@ -5598,12 +5600,12 @@ _OBJC_IVAR_$_IBGShapeDetectionMemento._color
 _OBJC_IVAR_$_IBGAnnotationCommand._annotationView
 _OBJC_IVAR_$_IBGAnnotationCommand._previousState
 _OBJC_IVAR_$_IBGAnnotationCommand._currentState
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Undo-Redo/IBGAnnotationCommand.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Undo-Redo/IBGAnnotationCommand.m
 -[UIView(Instabug) setInstabug_privateView:]
 -[UIView(Instabug) instabug_privateView]
-/Users/distiller/ios/InstabugCore/InstabugCore/IBGTypes.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/IBGTypes.m
 -[IBGOperationQueue addOperationWithBlock:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGOperationQueue.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGOperationQueue.m
 +[IBGImageUtilities coloredImage:withColor:withBlendMode:]
 +[IBGImageUtilities coloredImage:withForeColor:withBackColor:]
 +[IBGImageUtilities imageWithColor:]
@@ -5625,7 +5627,7 @@ _OBJC_IVAR_$_IBGAnnotationCommand._currentState
 +[IBGImageUtilities imageWithBezierPath:strokeColor:lineWidth:]
 +[IBGImageUtilities imageWithShapeType:frame:bigFrame:strokeColor:angle:lineWidth:]
 +[IBGImageUtilities bezierPathWithType:rect:lineWidth:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGImageUtilities.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGImageUtilities.m
 createPathRotatedAroundBoundingBoxCenter
 -[IBGLinkedListNode initWithObject:]
 -[IBGLinkedListNode nextNode]
@@ -5634,11 +5636,11 @@ createPathRotatedAroundBoundingBoxCenter
 -[IBGLinkedListNode .cxx_destruct]
 _OBJC_IVAR_$_IBGLinkedListNode._nodeObject
 _OBJC_IVAR_$_IBGLinkedListNode._nextNode
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGLinkedListNode.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGLinkedListNode.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGLinkedListNode.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGLinkedListNode.h
 -[NSObject(Description) ibg_description]
 -[NSObject(Description) ibg_descriptionExcludingProperties:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/NSObject+Description.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Categories/NSObject+Description.m
 -[IBGMatchingInfo init]
 -[IBGMatchingInfo value]
 -[IBGMatchingInfo setValue:]
@@ -5679,8 +5681,8 @@ _OBJC_IVAR_$_IBGMatchingInfo._rightWeight
 _OBJC_IVAR_$_IBGMatchingInfo._bottomWeight
 _OBJC_IVAR_$_IBGMatchingInfo._pathLength
 _OBJC_IVAR_$_IBGMatchingInfo._matchRect
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Shape Recognizer/IBGMatchingInfo.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Shape Recognizer/IBGMatchingInfo.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Shape Recognizer/IBGMatchingInfo.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Shape Recognizer/IBGMatchingInfo.h
 -[IBGCircleAnnotationView initWithFrame:zPosition:originator:annotatingColor:angle:]
 -[IBGCircleAnnotationView drawRect:]
 -[IBGCircleAnnotationView containsPoint:]
@@ -5694,9 +5696,9 @@ _OBJC_IVAR_$_IBGMatchingInfo._matchRect
 _OBJC_IVAR_$_IBGCircleAnnotationView.path
 _OBJC_IVAR_$_IBGCircleAnnotationView._annotatingColor
 _OBJC_IVAR_$_IBGCircleAnnotationView._circleLineWidth
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGCircleAnnotationView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGCircleAnnotationView.m
 -[UIImage(IBGUtilities) flipedImage]
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/UIImage+IBGUtilities.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/UIImage+IBGUtilities.m
 -[IBGLogLocalAttachment initWithDelegate:logType:snapShot:isSynchronouslyFetch:]
 -[IBGLogLocalAttachment fetchLogs]
 ___34-[IBGLogLocalAttachment fetchLogs]_block_invoke
@@ -5767,7 +5769,7 @@ _OBJC_IVAR_$_IBGLogLocalAttachment._viewHierarchy
 _OBJC_IVAR_$_IBGLogLocalAttachment._eventLogs
 _OBJC_IVAR_$_IBGLogLocalAttachment._logType
 _OBJC_IVAR_$_IBGLogLocalAttachment._snapshot
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGLogLocalAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGLogLocalAttachment.m
 __29-[IBGLogLocalAttachment send]_block_invoke_2
 __29-[IBGLogLocalAttachment send]_block_invoke
 __34-[IBGLogLocalAttachment fetchLogs]_block_invoke.618
@@ -5803,8 +5805,8 @@ _OBJC_IVAR_$_IBGAttachmentRequest._isExecuting
 _OBJC_IVAR_$_IBGAttachmentRequest._URL
 _OBJC_IVAR_$_IBGAttachmentRequest._delegate
 _OBJC_IVAR_$_IBGAttachmentRequest._isSuccess
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGAttachmentRequest.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGAttachmentRequest.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGAttachmentRequest.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGAttachmentRequest.h
 __34-[IBGAttachmentRequest executeNow]_block_invoke_3
 __34-[IBGAttachmentRequest executeNow]_block_invoke_2
 __34-[IBGAttachmentRequest executeNow]_block_invoke
@@ -5815,7 +5817,7 @@ __34-[IBGAttachmentRequest executeNow]_block_invoke
 -[IBGCaptureWindow handleKeyWindowDidChange:]
 -[IBGCaptureWindow updateWindowLevel]
 -[IBGCaptureWindow observeKeyWindowChanged]
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/IBGCaptureWindow.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/IBGCaptureWindow.m
 -[IBGAnnotationView initWithFrame:zPosition:originator:angle:]
 -[IBGAnnotationView gestureRecognizer:shouldRequireFailureOfGestureRecognizer:]
 -[IBGAnnotationView panGesture]
@@ -5873,8 +5875,8 @@ _OBJC_IVAR_$_IBGAnnotationView._controlPoints
 _OBJC_IVAR_$_IBGAnnotationView._oldSuperViewFrame
 _OBJC_IVAR_$_IBGAnnotationView._oldFrame
 _OBJC_IVAR_$_IBGAnnotationView._angle
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGAnnotationView.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGAnnotationView.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGAnnotationView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGAnnotationView.h
 __30-[IBGAnnotationView setState:]_block_invoke
 -[IBGServersQueue init]
 ___23-[IBGServersQueue init]_block_invoke
@@ -5900,7 +5902,7 @@ ___block_descriptor_tmp.6
 ___block_descriptor_tmp.17
 ___block_descriptor_tmp.32
 _OBJC_IVAR_$_IBGServersQueue._servers
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/IBGServersQueue.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/IBGServersQueue.m
 __35-[IBGServersQueue removeAllServers]_block_invoke
 __33-[IBGServersQueue serverRequests]_block_invoke
 __29-[IBGServersQueue popServer:]_block_invoke
@@ -5914,7 +5916,7 @@ __23-[IBGServersQueue init]_block_invoke
 -[IBGCacheMigration setDelegate:]
 -[IBGCacheMigration .cxx_destruct]
 _OBJC_IVAR_$_IBGCacheMigration._delegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Migrations/IBGCacheMigration.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Migrations/IBGCacheMigration.m
 -[IBGScreenshotGestureAnnotator init]
 -[IBGScreenshotGestureAnnotator annotateFrameInContext:]
 -[IBGScreenshotGestureAnnotator getLastTouchLocations]
@@ -5925,8 +5927,8 @@ _OBJC_IVAR_$_IBGCacheMigration._delegate
 -[IBGScreenshotGestureAnnotator .cxx_destruct]
 _OBJC_IVAR_$_IBGScreenshotGestureAnnotator._delegate
 _OBJC_IVAR_$_IBGScreenshotGestureAnnotator._touchImage
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGScreenshotGestureAnnotator.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGScreenshotGestureAnnotator.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGScreenshotGestureAnnotator.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGScreenshotGestureAnnotator.h
 -[IBGUserStepsImagesLocalAttachment initWithSnapshot:sessionId:reportDate:]
 -[IBGUserStepsImagesLocalAttachment prepareAttachmentMetadata]
 -[IBGUserStepsImagesLocalAttachment compressFiles:withCompletion:]
@@ -5961,7 +5963,7 @@ _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment.fileName
 _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment._sessionId
 _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment._reportDate
 _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment._snapshot
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGUserStepsImagesLocalAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGUserStepsImagesLocalAttachment.m
 __76-[IBGUserStepsImagesLocalAttachment prepareAttachmentAndSaveWithCompletion:]_block_invoke
 __73-[IBGUserStepsImagesLocalAttachment prepareAttachmentPathWithCompletion:]_block_invoke_2
 __73-[IBGUserStepsImagesLocalAttachment prepareAttachmentPathWithCompletion:]_block_invoke
@@ -5989,8 +5991,8 @@ __66-[IBGUserStepsImagesLocalAttachment compressFiles:withCompletion:]_block_inv
 -[IBGTextView .cxx_destruct]
 _OBJC_IVAR_$_IBGTextView._placeholderTextView
 _OBJC_IVAR_$_IBGTextView._placeholder
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGTextView.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGTextView.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGTextView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGTextView.h
 +[IBGVideoRecorder sharedInstance]
 ___34+[IBGVideoRecorder sharedInstance]_block_invoke
 -[IBGVideoRecorder init]
@@ -6070,8 +6072,8 @@ l_OBJC_LABEL_PROTOCOL_$_IBGVideoEncoderDelegate
 l_OBJC_PROTOCOL_$_IBGScreenshotGestureAnnotatorDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGScreenshotGestureAnnotatorDelegate
 _OBJC_IVAR_$_IBGVideoRecorder._scale
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVideoRecorder.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVideoRecorder.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVideoRecorder.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVideoRecorder.h
 __49-[IBGVideoRecorder didFailRecordingVideoEncoding]_block_invoke
 __73-[IBGVideoRecorder didFinishRecordingVideoWithURL:withCompletionHandler:]_block_invoke_2
 __73-[IBGVideoRecorder didFinishRecordingVideoWithURL:withCompletionHandler:]_block_invoke
@@ -6093,7 +6095,7 @@ ___36-[IBGLogLoggerContextProvider queue]_block_invoke
 _OBJC_IVAR_$_IBGLogLoggerContextProvider._memoryContext
 _OBJC_IVAR_$_IBGLogLoggerContextProvider._backgroundContext
 __logLoggerQueue
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGLogLoggerContextProvider.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGLogLoggerContextProvider.m
 __36-[IBGLogLoggerContextProvider queue]_block_invoke
 __48-[IBGLogLoggerContextProvider backgroundContext]_block_invoke
 __44-[IBGLogLoggerContextProvider memoryContext]_block_invoke
@@ -6206,7 +6208,7 @@ _sessionUUID.onceToken
 ___block_descriptor_tmp.930
 ___block_literal_global.931
 _sessionUUID
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGInspector.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGInspector.m
 __27+[IBGInspector sessionUUID]_block_invoke
 __45+[IBGInspector logViewHierarchyForAllWindows]_block_invoke
 __41+[IBGInspector currentFirstResponderView]_block_invoke
@@ -6241,7 +6243,7 @@ _OBJC_IVAR_$_IBGAspectRatioRectControlPoints._bottomRightView
 _OBJC_IVAR_$_IBGAspectRatioRectControlPoints._initialFrame
 _OBJC_IVAR_$_IBGAspectRatioRectControlPoints._initialDistance
 _OBJC_IVAR_$_IBGAspectRatioRectControlPoints._initialCenter
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGAspectRatioRectControlPoints.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGAspectRatioRectControlPoints.m
 +[IBGUserStep entityName]
 -[IBGUserStep dictionaryRepresentation]
 -[IBGUserStep userStepId]
@@ -6250,7 +6252,7 @@ _OBJC_IVAR_$_IBGAspectRatioRectControlPoints._initialCenter
 -[IBGUserStep hasScreenshot]
 +[IBGUserStep userStepslogFetchRequestWithID:]
 +[IBGUserStep userStepslogFetchRequestWithReportId:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/Core Data/IBGUserStep+CoreDataClass.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/Core Data/IBGUserStep+CoreDataClass.m
 +[IBGSnapshotManager sharedInstance]
 ___36+[IBGSnapshotManager sharedInstance]_block_invoke
 +[IBGSnapshotManager startLoggers]
@@ -6338,8 +6340,8 @@ _OBJC_IVAR_$_IBGSnapshotManager._uiDeviceFamily
 _OBJC_IVAR_$_IBGSnapshotManager._locale
 _OBJC_IVAR_$_IBGSnapshotManager._screenSize
 _OBJC_IVAR_$_IBGSnapshotManager._screenScale
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGSnapshotManager.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGSnapshotManager.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGSnapshotManager.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGSnapshotManager.h
 __63-[IBGSnapshotManager getSurveyConditionsWithCompletionHanlder:]_block_invoke
 __59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.791
 __59-[IBGSnapshotManager takePostSendingSnapshotSynchronously:]_block_invoke.777
@@ -6358,14 +6360,14 @@ __36+[IBGSnapshotManager sharedInstance]_block_invoke
 -[IBGAnnotationView(Transform) transformedTop]
 -[IBGAnnotationView(Transform) transformedBottom]
 -[IBGAnnotationView(Transform) setAnchorPoint:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGAnnotationView+Transform.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGAnnotationView+Transform.m
 -[IBGAnalyticsCache cacheDiskPath]
 -[IBGAnalyticsCache unpersistAll]
 -[IBGAnalyticsCache cachedModels]
 -[IBGAnalyticsCache setCachedModels:]
 -[IBGAnalyticsCache .cxx_destruct]
 _OBJC_IVAR_$_IBGAnalyticsCache._cachedModels
-/Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGAnalyticsCache.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Caching/IBGAnalyticsCache.m
 -[IBGMenuButtonItem init]
 -[IBGMenuButtonItem pressedImageName]
 -[IBGMenuButtonItem pressedIconColor]
@@ -6401,13 +6403,13 @@ _OBJC_IVAR_$_IBGMenuButtonItem._pressedBackgroundColor
 _OBJC_IVAR_$_IBGMenuButtonItem._borderColor
 _OBJC_IVAR_$_IBGMenuButtonItem._animateToBackgroundColor
 _OBJC_IVAR_$_IBGMenuButtonItem._handler
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGMenuButtonItem.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGMenuButtonItem.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGMenuButtonItem.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGMenuButtonItem.h
 -[IBGMagnifyAnnotationView initWithFrame:zPosition:originator:angle:]
 -[IBGMagnifyAnnotationView needsToTrackUnderLyingViews]
 -[IBGMagnifyAnnotationView didMoveToSuperview]
 -[IBGMagnifyAnnotationView drawRect:]
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGMagnifyAnnotationView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGMagnifyAnnotationView.m
 +[IBGDefaults getInstance]
 ___26+[IBGDefaults getInstance]_block_invoke
 -[IBGDefaults init]
@@ -6547,8 +6549,8 @@ _OBJC_IVAR_$_IBGDefaults._videoRecordingCaptureButtonDefaultPostion
 _OBJC_IVAR_$_IBGDefaults._willSkipScreenShot
 _OBJC_IVAR_$_IBGDefaults._startAlertTextIsSet
 _OBJC_IVAR_$_IBGDefaults._UUID
-/Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGDefaults.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Defaults/IBGDefaults.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Defaults/IBGDefaults.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Defaults/IBGDefaults.h
 __19-[IBGDefaults init]_block_invoke
 __26+[IBGDefaults getInstance]_block_invoke
 -[IBGButtonContainer initWithButtonFrame:]
@@ -6560,8 +6562,8 @@ __26+[IBGDefaults getInstance]_block_invoke
 -[IBGButtonContainer .cxx_destruct]
 _OBJC_IVAR_$_IBGButtonContainer._button
 _OBJC_IVAR_$_IBGButtonContainer._buttonFrame
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGButtonContainer.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGButtonContainer.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGButtonContainer.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGButtonContainer.h
 -[IBGMainWindow init]
 -[IBGMainWindow restoreApplicationStatusBarStyle]
 -[IBGMainWindow navigationController]
@@ -6598,7 +6600,7 @@ ___block_descriptor_tmp.110
 _OBJC_IVAR_$_IBGMainWindow._parentViewController
 _OBJC_IVAR_$_IBGMainWindow._style
 _OBJC_IVAR_$_IBGMainWindow._previousKeyWindow
-/Users/distiller/ios/InstabugCore/InstabugCore/Windows/IBGMainWindow.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Windows/IBGMainWindow.m
 __53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke.108
 __53-[IBGMainWindow showViewControllerWithFadeAnimation:]_block_invoke
 +[IBGMethodsLogger sharedInstance]
@@ -6630,7 +6632,7 @@ ___block_literal_global.539
 _OBJC_IVAR_$_IBGMethodsLogger._delegate
 _OBJC_IVAR_$_IBGMethodsLogger._methodsLog
 _OBJC_IVAR_$_IBGMethodsLogger._logMethodsLog
-/Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGMethodsLogger.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Logging/IBGMethodsLogger.m
 __37-[IBGMethodsLogger logLogMethodQueue]_block_invoke
 __34+[IBGMethodsLogger sharedInstance]_block_invoke
 -[IBGEmptyVC init]
@@ -6650,7 +6652,7 @@ __34+[IBGMethodsLogger sharedInstance]_block_invoke
 -[IBGEmptyVC .cxx_destruct]
 _OBJC_IVAR_$_IBGEmptyVC._topViewController
 _OBJC_IVAR_$_IBGEmptyVC._visibleViewController
-/Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGEmptyVC.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/View Controllers/IBGEmptyVC.m
 -[IBGMenuButton initWithItem:]
 -[IBGMenuButton performHandler:]
 -[IBGMenuButton setupForNormalState:]
@@ -6660,7 +6662,7 @@ ___38-[IBGMenuButton setupForPressedState:]_block_invoke
 -[IBGMenuButton setItem:]
 -[IBGMenuButton .cxx_destruct]
 _OBJC_IVAR_$_IBGMenuButton._item
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGMenuButton.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGMenuButton.m
 __38-[IBGMenuButton setupForPressedState:]_block_invoke
 -[IBGCountLimitedArray init]
 -[IBGCountLimitedArray initWithMaximumCount:]
@@ -6678,7 +6680,7 @@ ___31-[IBGCountLimitedArray objects]_block_invoke
 _OBJC_IVAR_$_IBGCountLimitedArray._mutableObjects
 _OBJC_IVAR_$_IBGCountLimitedArray._maximumCount
 _OBJC_IVAR_$_IBGCountLimitedArray._queue
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGCountLimitedArray.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/IBGCountLimitedArray.m
 __31-[IBGCountLimitedArray objects]_block_invoke
 __34-[IBGCountLimitedArray addObject:]_block_invoke
 -[IBGZZFileChannel initWithURL:]
@@ -6690,7 +6692,7 @@ __34-[IBGCountLimitedArray addObject:]_block_invoke
 -[IBGZZFileChannel newOutput:]
 -[IBGZZFileChannel .cxx_destruct]
 _OBJC_IVAR_$_IBGZZFileChannel._URL
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZFileChannel.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZFileChannel.m
 -[IBGFileLocalAttachment initWithLocalFilePath:]
 -[IBGFileLocalAttachment prepareAttachmentPath]
 -[IBGFileLocalAttachment prepareAttachmentMetadata]
@@ -6708,7 +6710,7 @@ _OBJC_IVAR_$_IBGZZFileChannel._URL
 _OBJC_IVAR_$_IBGFileLocalAttachment._metadata
 _OBJC_IVAR_$_IBGFileLocalAttachment.fileName
 _OBJC_IVAR_$_IBGFileLocalAttachment._localFilePath
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGFileLocalAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGFileLocalAttachment.m
 -[IBGUUIDMigrationRequest initWithUUIDMigration:delegate:]
 -[IBGUUIDMigrationRequest executeNow]
 -[IBGUUIDMigrationRequest serverExecutionDone:statusCode:error:response:]
@@ -6731,19 +6733,19 @@ _OBJC_IVAR_$_IBGUUIDMigrationRequest._dataUrl
 _OBJC_IVAR_$_IBGUUIDMigrationRequest._failures
 _OBJC_IVAR_$_IBGUUIDMigrationRequest._isSuccess
 _OBJC_IVAR_$_IBGUUIDMigrationRequest._UUIDMigration
-/Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGUUIDMigrationRequest.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGUUIDMigrationRequest.m
 -[IBGPaddingLabel textRectForBounds:limitedToNumberOfLines:]
 -[IBGPaddingLabel drawTextInRect:]
 -[IBGPaddingLabel edgeInsets]
 -[IBGPaddingLabel setEdgeInsets:]
 _OBJC_IVAR_$_IBGPaddingLabel._edgeInsets
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGPaddingLabel.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGPaddingLabel.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGPaddingLabel.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGPaddingLabel.h
 -[IBGAudioRemoteAttachment fetchAttachmentsWithCompletionHandler:]
 -[IBGAudioRemoteAttachment byline]
 -[IBGAudioRemoteAttachment fetchedAsset:ofURL:isSuccess:]
 -[IBGAudioRemoteAttachment status]
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGAudioRemoteAttachment.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGAudioRemoteAttachment.m
 -[IBGAnnotationViewFactory initWithAnnotationOriginator:screenshotSize:]
 -[IBGAnnotationViewFactory annotationOriginator]
 -[IBGAnnotationViewFactory annotationViewWithFrame:type:annotatingColor:angle:]
@@ -6760,7 +6762,7 @@ _OBJC_IVAR_$_IBGAnnotationViewFactory._annotationOriginator
 _OBJC_IVAR_$_IBGAnnotationViewFactory._screenshotSize
 _OBJC_IVAR_$_IBGAnnotationViewFactory._bluredScreenshotImage
 _OBJC_IVAR_$_IBGAnnotationViewFactory._numberOfCreatedAnnotationViews
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/IBGAnnotationViewFactory.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/IBGAnnotationViewFactory.m
 +[IBGReachability reachabilityWithHostName:]
 +[IBGReachability reachabilityWithAddress:]
 +[IBGReachability reachabilityForInternetConnection]
@@ -6775,7 +6777,7 @@ _ReachabilityCallback
 -[IBGReachability currentReachabilityStatus]
 _OBJC_IVAR_$_IBGReachability._reachabilityRef
 _OBJC_IVAR_$_IBGReachability._alwaysReturnLocalWiFiStatus
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Reachability/IBGReachability.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/Reachability/IBGReachability.m
 ReachabilityCallback
 -[IBGCache init]
 -[IBGCache initWithShouldForceWrite:]
@@ -6814,7 +6816,7 @@ _OBJC_IVAR_$_IBGCache._shouldWriteToDisk
 _OBJC_IVAR_$_IBGCache._shouldForceWrite
 _OBJC_IVAR_$_IBGCache._isUnPresisted
 _OBJC_IVAR_$_IBGCache._isSent
-/Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGCache.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Caching/IBGCache.m
 __22-[IBGCache persistAll]_block_invoke
 -[IBGAttachmentCell initWithFrame:]
 -[IBGAttachmentCell prepareForReuse]
@@ -6846,8 +6848,8 @@ _OBJC_IVAR_$_IBGAttachmentCell._dimmingView
 _OBJC_IVAR_$_IBGAttachmentCell._timerLabel
 _OBJC_IVAR_$_IBGAttachmentCell._isPlaying
 _OBJC_IVAR_$_IBGAttachmentCell._removeHandler
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/Collection View Cells/IBGAttachmentCell.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/Collection View Cells/IBGAttachmentCell.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/Collection View Cells/IBGAttachmentCell.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/Collection View Cells/IBGAttachmentCell.h
 +[NSDate(IBGHelpers) ibg_currentTimeStamp]
 +[NSDate(IBGHelpers) ibg_dateWithConsoleLogTimeStamp:]
 -[NSDate(IBGHelpers) ibg_daysCountToDate:]
@@ -6863,7 +6865,7 @@ _OBJC_IVAR_$_IBGAttachmentCell._removeHandler
 +[NSDate(IBGHelpers) dateFormatter]
 _ibg_timeStamp.dateFormatter
 _dateFormatter.formatter
-/Users/distiller/ios/InstabugCore/InstabugCore/Helpers/NSDate+IBGHelpers.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Helpers/NSDate+IBGHelpers.m
 -[IBGRectangleAnnotationView initWithFrame:zPosition:originator:annotatingColor:angle:]
 -[IBGRectangleAnnotationView drawRect:]
 -[IBGRectangleAnnotationView containsPoint:]
@@ -6877,7 +6879,7 @@ _dateFormatter.formatter
 _OBJC_IVAR_$_IBGRectangleAnnotationView.path
 _OBJC_IVAR_$_IBGRectangleAnnotationView._annotatingColor
 _OBJC_IVAR_$_IBGRectangleAnnotationView._rectangleLineWidth
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGRectangleAnnotationView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGRectangleAnnotationView.m
 +[IBGAnalytics sharedInstance]
 ___30+[IBGAnalytics sharedInstance]_block_invoke
 -[IBGAnalytics init]
@@ -6899,8 +6901,8 @@ l_OBJC_PROTOCOL_$_IBGAnalyticsRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGAnalyticsRequestDelegate
 l_OBJC_PROTOCOL_$_IBGLogDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGLogDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGAnalytics.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGAnalytics.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGAnalytics.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGAnalytics.h
 __20-[IBGAnalytics send]_block_invoke
 __30+[IBGAnalytics sharedInstance]_block_invoke
 -[IBGVideoRecorderController initWithDelegate:]
@@ -6935,7 +6937,7 @@ l_OBJC_PROTOCOL_$_IBGAudioVideoRecordingDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGAudioVideoRecordingDelegate
 l_OBJC_PROTOCOL_$_IBGVideoRecordingViewControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGVideoRecordingViewControllerDelegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Controllers/IBGVideoRecorderController.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Controllers/IBGVideoRecorderController.m
 __55-[IBGVideoRecorderController alertUserAboutPermissions]_block_invoke
 -[IBGFullScreenImageViewController initWithImage:title:]
 -[IBGFullScreenImageViewController shouldAutorotateToInterfaceOrientation:]
@@ -6954,7 +6956,7 @@ __55-[IBGVideoRecorderController alertUserAboutPermissions]_block_invoke
 _OBJC_IVAR_$_IBGFullScreenImageViewController._scrollView
 _OBJC_IVAR_$_IBGFullScreenImageViewController._imageView
 _OBJC_IVAR_$_IBGFullScreenImageViewController._image
-/Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGFullScreenImageViewController.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/View Controllers/IBGFullScreenImageViewController.m
 -[IBGArrowControlPoints initWithAnnotationView:]
 -[IBGArrowControlPoints updateControlPoints]
 -[IBGArrowControlPoints showControlPoints]
@@ -6974,14 +6976,14 @@ _OBJC_IVAR_$_IBGArrowControlPoints._annotationView
 _OBJC_IVAR_$_IBGArrowControlPoints._previousTouch
 _OBJC_IVAR_$_IBGArrowControlPoints._topView
 _OBJC_IVAR_$_IBGArrowControlPoints._bottomView
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGArrowControlPoints.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGArrowControlPoints.m
 -[IBGScreenshotAnnotationsView setBounds:]
 -[IBGScreenshotAnnotationsView delegate]
 -[IBGScreenshotAnnotationsView setDelegate:]
 -[IBGScreenshotAnnotationsView .cxx_destruct]
 _OBJC_IVAR_$_IBGScreenshotAnnotationsView._delegate
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGScreenshotAnnotationsView.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Views/IBGScreenshotAnnotationsView.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGScreenshotAnnotationsView.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Views/IBGScreenshotAnnotationsView.h
 -[IBGZZFileChannelOutput initWithFileDescriptor:]
 -[IBGZZFileChannelOutput offset]
 -[IBGZZFileChannelOutput seekToOffset:error:]
@@ -6991,8 +6993,8 @@ _OBJC_IVAR_$_IBGScreenshotAnnotationsView._delegate
 -[IBGZZFileChannelOutput setOffset:]
 _OBJC_IVAR_$_IBGZZFileChannelOutput._fileDescriptor
 _OBJC_IVAR_$_IBGZZFileChannelOutput._offset
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZFileChannelOutput.m
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZFileChannelOutput.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZFileChannelOutput.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZFileChannelOutput.h
 +[IBGDiskIOManager getInstance]
 ___31+[IBGDiskIOManager getInstance]_block_invoke
 -[IBGDiskIOManager init]
@@ -7003,12 +7005,12 @@ ___48-[IBGDiskIOManager writeData:toFile:completion:]_block_invoke
 ___41-[IBGDiskIOManager readFileAtPath:error:]_block_invoke
 _diskIOQueue
 ___block_descriptor_tmp.11
-/Users/distiller/ios/InstabugCore/InstabugCore/Managers/IBGDiskIOManager.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Managers/IBGDiskIOManager.m
 __41-[IBGDiskIOManager readFileAtPath:error:]_block_invoke
 __48-[IBGDiskIOManager writeData:toFile:completion:]_block_invoke
 __31+[IBGDiskIOManager getInstance]_block_invoke
 -[IBGSessionCache cacheDiskPath]
-/Users/distiller/ios/InstabugCore/InstabugCore/Caching/IBGSessionCache.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Caching/IBGSessionCache.m
 -[IBGRectControlPoints initWithAnnotationView:]
 -[IBGRectControlPoints updateControlPoints]
 -[IBGRectControlPoints showControlPoints]
@@ -7030,7 +7032,7 @@ _OBJC_IVAR_$_IBGRectControlPoints._topLeftView
 _OBJC_IVAR_$_IBGRectControlPoints._topRightView
 _OBJC_IVAR_$_IBGRectControlPoints._bottomLeftView
 _OBJC_IVAR_$_IBGRectControlPoints._bottomRightView
-/Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGRectControlPoints.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGRectControlPoints.m
 -[IBGZZStoreOutputStream initWithChannelOutput:]
 -[IBGZZStoreOutputStream streamStatus]
 -[IBGZZStoreOutputStream streamError]
@@ -7046,8 +7048,8 @@ _OBJC_IVAR_$_IBGZZStoreOutputStream._status
 _OBJC_IVAR_$_IBGZZStoreOutputStream._error
 _OBJC_IVAR_$_IBGZZStoreOutputStream._crc32
 _OBJC_IVAR_$_IBGZZStoreOutputStream._size
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStoreOutputStream.m
-/Users/distiller/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStoreOutputStream.h
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStoreOutputStream.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/ZipZap/IBGZZStoreOutputStream.h
 -[IBGVideoPlaybackViewController awakeFromNib]
 -[IBGVideoPlaybackViewController initWithTitle:player:delegate:]
 -[IBGVideoPlaybackViewController viewDidLoad]
@@ -7069,7 +7071,7 @@ _OBJC_IVAR_$_IBGVideoPlaybackViewController._playView
 _OBJC_IVAR_$_IBGVideoPlaybackViewController._player
 _OBJC_IVAR_$_IBGVideoPlaybackViewController._delegate
 _OBJC_IVAR_$_IBGVideoPlaybackViewController._playerLayer
-/Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGVideoPlaybackViewController.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/View Controllers/IBGVideoPlaybackViewController.m
 +[IBGToolbarItem itemWithTitle:accessibilityIdentifier:image:handler:]
 -[IBGToolbarItem initWithTitle:accessibilityIdentifier:image:handler:]
 -[IBGToolbarItem accessibilityIdentifier]
@@ -7082,6 +7084,6 @@ _OBJC_IVAR_$_IBGToolbarItem._title
 _OBJC_IVAR_$_IBGToolbarItem._accessibilityIdentifier
 _OBJC_IVAR_$_IBGToolbarItem._image
 _OBJC_IVAR_$_IBGToolbarItem._handler
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGToolbarItem.m
-/Users/distiller/ios/InstabugCore/InstabugCore/Models/IBGToolbarItem.h
-/Users/distiller/Library/Developer/Xcode/DerivedData/InstabugCore-gvctpmulizaummctoicjugzlaxhs/Build/Intermediates.noindex/ArchiveIntermediates/InstabugCore/IntermediateBuildFilesPath/InstabugCore.build/Release-iphoneos/InstabugCore.build/DerivedSources/InstabugCore_vers.c
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGToolbarItem.m
+/Users/khaledElMorabea/Documents/ios/InstabugCore/InstabugCore/Models/IBGToolbarItem.h
+/Users/khaledElMorabea/Library/Developer/Xcode/DerivedData/InstabugCore-fcdirsvsuohqzwfpwswjxsujnwgt/Build/Intermediates.noindex/ArchiveIntermediates/InstabugCore/IntermediateBuildFilesPath/InstabugCore.build/Release-iphoneos/InstabugCore.build/DerivedSources/InstabugCore_vers.c
