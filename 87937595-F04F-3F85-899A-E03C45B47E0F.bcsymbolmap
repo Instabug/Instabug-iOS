@@ -4591,18 +4591,18 @@ ___destroy_helper_block_.600
 -[IBGEventLogger clearAllStateEventLogs]
 -[IBGEventLogger clearAllLogs]
 ___30-[IBGEventLogger clearAllLogs]_block_invoke
-___copy_helper_block_.617
-___destroy_helper_block_.618
 -[IBGEventLogger eventLoggerContextProvider]
 -[IBGEventLogger stateLogs]
 ___27-[IBGEventLogger stateLogs]_block_invoke
 ___27-[IBGEventLogger stateLogs]_block_invoke_2
+___copy_helper_block_.627
+___destroy_helper_block_.628
 -[IBGEventLogger stateEventLogs]
 -[IBGEventLogger eventLogsQueue]
 -[IBGEventLogger dataLayerService]
 ___34-[IBGEventLogger dataLayerService]_block_invoke
-___copy_helper_block_.641
-___destroy_helper_block_.642
+___copy_helper_block_.638
+___destroy_helper_block_.639
 -[IBGEventLogger context]
 -[IBGEventLogger setEventLoggerContextProvider:]
 -[IBGEventLogger setDataLayerService:]
@@ -4611,14 +4611,15 @@ ___destroy_helper_block_.642
 -[IBGEventLogger .cxx_destruct]
 ___block_descriptor_tmp.574
 ___block_descriptor_tmp.589
-___block_descriptor_tmp.619
+___block_literal_global.610
 _OBJC_IVAR_$_IBGEventLogger._eventLoggerContextProvider
-___block_descriptor_tmp.624
-___block_literal_global.625
+___block_descriptor_tmp.621
+___block_literal_global.622
+___block_descriptor_tmp.629
 _OBJC_IVAR_$_IBGEventLogger._stateEventLogs
 _OBJC_IVAR_$_IBGEventLogger._eventLogsQueue
 _OBJC_IVAR_$_IBGEventLogger._dataLayerService
-___block_descriptor_tmp.643
+___block_descriptor_tmp.640
 _OBJC_IVAR_$_IBGEventLogger._context
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGEventLogger.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Logging/IBGEventLogger.h
