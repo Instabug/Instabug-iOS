@@ -37,6 +37,8 @@ _OBJC_IVAR_$_IBGChatCell._dateLabel
 _OBJC_IVAR_$_IBGChatCell._unreadMessageButton
 _OBJC_IVAR_$_IBGChatCell._seperatorView
 /Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/IBGChatCell.m
+NSMakeRange
+/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 -[IBGChatListVC init]
 -[IBGChatListVC viewDidLoad]
 -[IBGChatListVC viewWillAppear:]
@@ -623,8 +625,6 @@ l_OBJC_LABEL_PROTOCOL_$_IBGChatView
 /Users/distiller/ios/Instabug/InstabugChats/View Controllers/IBGChatVC.m
 /Users/distiller/ios/Instabug/InstabugChats/View Controllers/IBGChatVC.h
 __57-[IBGChatVC tableView:willDisplayCell:forRowAtIndexPath:]_block_invoke
-CGRectMake
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[IBGBugFlowController startBugReportingFlowWithSnapshot:withFadeAnimation:]
 -[IBGBugFlowController startFeedbackSendingFlowWithSnapshot:withFadeAnimation:]
 -[IBGBugFlowController showBugViewControllerWithScreenshot:reportType:animated:controller:withFadeAnimation:]
@@ -2296,17 +2296,17 @@ ___32-[IBGBugVC submitButtonPressed:]_block_invoke
 -[IBGBugVC cancelButtonPressed:]
 -[IBGBugVC showInvalidEmailAndCommentAlerts]
 ___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke
-___copy_helper_block_.756
-___destroy_helper_block_.757
-___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.763
-___copy_helper_block_.766
-___destroy_helper_block_.767
+___copy_helper_block_.754
+___destroy_helper_block_.755
+___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.761
+___copy_helper_block_.764
+___destroy_helper_block_.765
 -[IBGBugVC alertWithTitle:message:action:]
 -[IBGBugVC didSelectAttachment:]
 -[IBGBugVC didSelectAudioAttachment:startedPlaying:]
 ___52-[IBGBugVC didSelectAudioAttachment:startedPlaying:]_block_invoke
-___copy_helper_block_.801
-___destroy_helper_block_.802
+___copy_helper_block_.799
+___destroy_helper_block_.800
 -[IBGBugVC didRemoveAttachment:]
 -[IBGBugVC nextTappedInScreenshotView:]
 -[IBGBugVC bugRequestCreator]
@@ -2316,8 +2316,8 @@ ___destroy_helper_block_.802
 -[IBGBugVC keyboardWillHide:]
 -[IBGBugVC orientationChanged]
 ___30-[IBGBugVC orientationChanged]_block_invoke
-___copy_helper_block_.866
-___destroy_helper_block_.867
+___copy_helper_block_.864
+___destroy_helper_block_.865
 -[IBGBugVC calculateTextViewHeightWithKeyboardSize:]
 -[IBGBugVC adjustContentScrollViewToObscuringViewSize:]
 -[IBGBugVC resetViewForNoObstruction]
@@ -2334,22 +2334,22 @@ ___destroy_helper_block_.867
 -[IBGBugVC attachmentsToolbarItems]
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
-___copy_helper_block_.918
-___destroy_helper_block_.919
-___copy_helper_block_.923
-___destroy_helper_block_.924
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.932
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.933
-___copy_helper_block_.936
-___destroy_helper_block_.937
-___copy_helper_block_.939
-___destroy_helper_block_.940
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.944
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.945
-___copy_helper_block_.948
-___destroy_helper_block_.949
-___copy_helper_block_.951
-___destroy_helper_block_.952
+___copy_helper_block_.916
+___destroy_helper_block_.917
+___copy_helper_block_.921
+___destroy_helper_block_.922
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.930
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.931
+___copy_helper_block_.934
+___destroy_helper_block_.935
+___copy_helper_block_.937
+___destroy_helper_block_.938
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.942
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.943
+___copy_helper_block_.946
+___destroy_helper_block_.947
+___copy_helper_block_.949
+___destroy_helper_block_.950
 -[IBGBugVC maximumNumberOfAttachmentsAllowed]
 -[IBGBugVC performActionOrShowMaximumNumberOfAttachmentsAlert:]
 -[IBGBugVC dealloc]
@@ -2413,17 +2413,16 @@ ___destroy_helper_block_.952
 _OBJC_IVAR_$_IBGBugVC._controller
 _OBJC_IVAR_$_IBGBugVC._type
 _OBJC_IVAR_$_IBGBugVC._shouldShowEmail
-___block_descriptor_tmp.758
-___block_descriptor_tmp.768
-___block_descriptor_tmp.803
+___block_descriptor_tmp.756
+___block_descriptor_tmp.801
 _OBJC_IVAR_$_IBGBugVC._bugRequestCreator
-___block_descriptor_tmp.868
-___block_descriptor_tmp.920
-___block_descriptor_tmp.925
-___block_descriptor_tmp.938
-___block_descriptor_tmp.941
-___block_descriptor_tmp.950
-___block_descriptor_tmp.953
+___block_descriptor_tmp.866
+___block_descriptor_tmp.918
+___block_descriptor_tmp.923
+___block_descriptor_tmp.936
+___block_descriptor_tmp.939
+___block_descriptor_tmp.948
+___block_descriptor_tmp.951
 _OBJC_IVAR_$_IBGBugVC._attachmentController
 _OBJC_IVAR_$_IBGBugVC._videoPlayer
 _OBJC_IVAR_$_IBGBugVC._voicePlayer
@@ -2459,17 +2458,15 @@ l_OBJC_PROTOCOL_$_IBGBugControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGBugControllerDelegate
 /Users/distiller/ios/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.m
 /Users/distiller/ios/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.h
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.945
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.944
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.933
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.932
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.943
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.942
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.931
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.930
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke
-UIEdgeInsetsMake
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGeometry.h
 __30-[IBGBugVC orientationChanged]_block_invoke
 __52-[IBGBugVC didSelectAudioAttachment:startedPlaying:]_block_invoke
-__44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.763
+__44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.761
 __44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke
 __32-[IBGBugVC submitButtonPressed:]_block_invoke
 -[IBGSurveyStarRatingViewController initWithQuestion:delegate:]
@@ -3086,7 +3083,6 @@ __22-[IBGPromptVC dismiss]_block_invoke
 __19-[IBGPromptVC show]_block_invoke.719
 __19-[IBGPromptVC show]_block_invoke
 __25-[IBGPromptVC handlePan:]_block_invoke
-CGPointMake
 -[IBGStarRatingSurveyView initWithDelegate:]
 -[IBGStarRatingSurveyView updateConstraints]
 -[IBGStarRatingSurveyView setRating:]
@@ -3804,7 +3800,6 @@ l_OBJC_LABEL_PROTOCOL_$_UICollectionViewDelegate
 l_OBJC_PROTOCOL_$_UICollectionViewDataSource
 l_OBJC_LABEL_PROTOCOL_$_UICollectionViewDataSource
 /Users/distiller/ios/Instabug/InstabugSurveys/View controllers/IBGSurveyMCQViewController.m
-CGSizeMake
 __50-[IBGSurveyMCQViewController didChangeOrientation]_block_invoke
 __40-[IBGSurveyMCQViewController reloadView]_block_invoke
 __45-[IBGSurveyMCQViewController viewWillAppear:]_block_invoke
@@ -4601,17 +4596,17 @@ _OBJC_IVAR_$_IBGPLCrashReportMachineInfo._processorCount
 _OBJC_IVAR_$_IBGPLCrashReportMachineInfo._logicalProcessorCount
 _plcrash_async_macho_find_best_symbol
 __ZL20free_mapped_sectionsP24plcrash_async_objc_cache
-__ZL24plcrash_async_objc_parseP19plcrash_async_machoP24plcrash_async_objc_cachePFvbP26plcrash_async_macho_stringS4_jPvES5_
-__ZL41pl_async_objc_find_method_search_callbackbP26plcrash_async_macho_stringS0_jPv
-__ZL39pl_async_objc_find_method_call_callbackbP26plcrash_async_macho_stringS0_jPv
+__ZL24plcrash_async_objc_parseP19plcrash_async_machoP24plcrash_async_objc_cachePFvbP26plcrash_async_macho_stringS4_mPvES5_
+__ZL41pl_async_objc_find_method_search_callbackbP26plcrash_async_macho_stringS0_mPv
+__ZL39pl_async_objc_find_method_call_callbackbP26plcrash_async_macho_stringS0_mPv
 ____ZL37plcrash_async_image_objc_has_ios9_abiv_block_invoke
-__ZL25pl_async_parse_obj1_classP19plcrash_async_machoP14pl_objc1_classbPFvbP26plcrash_async_macho_stringS4_jPvES5_
+__ZL25pl_async_parse_obj1_classP19plcrash_async_machoP14pl_objc1_classbPFvbP26plcrash_async_macho_stringS4_mPvES5_
 __ZL12map_sectionsP19plcrash_async_machoP24plcrash_async_objc_cache
-__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_jPvESC_
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_mPvESC_
 __ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
-__ZL37pl_async_objc_parse_objc2_method_listP19plcrash_async_machoP24plcrash_async_objc_cacheP26plcrash_async_macho_stringbjPFvbS4_S4_jPvES5_
-__ZL9cache_setP24plcrash_async_objc_cachejj
-__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_jPvESC_
+__ZL37pl_async_objc_parse_objc2_method_listP19plcrash_async_machoP24plcrash_async_objc_cacheP26plcrash_async_macho_stringbmPFvbS4_S4_mPvES5_
+__ZL9cache_setP24plcrash_async_objc_cachemm
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_mPvESC_
 __ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
 __GLOBAL__sub_I_PLCrashAsyncObjCSection.mm
 __ZZL37plcrash_async_image_objc_has_ios9_abivE9onceToken
@@ -4651,6 +4646,7 @@ _arm_nonvolatile_registers
 _arm64_nonvolatile_registers
 _arm_dwarf_table
 _arm64_dwarf_table
+_plcrash_async_map_register_name
 +[IBGPLCrashProcessInfo currentProcessInfo]
 -[IBGPLCrashProcessInfo initWithProcessID:]
 -[IBGPLCrashProcessInfo dealloc]

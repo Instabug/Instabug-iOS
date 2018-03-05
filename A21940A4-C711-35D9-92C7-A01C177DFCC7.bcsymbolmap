@@ -2070,7 +2070,7 @@ _OBJC_IVAR_$_IBGDeletedAnnotationMemento._superView
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGDeletedAnnotationMemento.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View Memento/IBGDeletedAnnotationMemento.h
 -[IBGViewController viewDidLoad]
--[IBGViewController getBarButtonItemWithImage:selector:accessibilityIdentifier:isLeft:]
+-[IBGViewController getBarButtonItemWithImage:selector:accessibilityIdentifier:]
 -[IBGViewController orientation]
 -[IBGViewController didReceiveMemoryWarning]
 -[IBGViewController supportedInterfaceOrientations]
