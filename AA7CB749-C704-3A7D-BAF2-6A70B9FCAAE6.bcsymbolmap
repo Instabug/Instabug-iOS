@@ -54,6 +54,8 @@ Apple LLVM version 9.0.0 (clang-900.0.39.2)
 /Users/distiller/ios/Instabug/InstabugChats/Views/Chat Collection View/IBGChatViewLayoutAttributes.m
 /Users/distiller/ios/Instabug
 /Users/distiller/ios/Instabug/InstabugChats/Views/Chat Collection View/IBGChatViewLayoutAttributes.h
+CGSizeMake
+/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[IBGChatCollectionViewCellHeightCalculator init]
 -[IBGChatCollectionViewCellHeightCalculator heightForItemAt:content:layoutAttributes:]
 -[IBGChatCollectionViewCellHeightCalculator heightForTextString:]
@@ -102,8 +104,6 @@ _OBJC_IVAR_$_IBGChatCell._dateLabel
 _OBJC_IVAR_$_IBGChatCell._unreadMessageButton
 _OBJC_IVAR_$_IBGChatCell._seperatorView
 /Users/distiller/ios/Instabug/InstabugChats/Views/Table View Cell/IBGChatCell.m
-NSMakeRange
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 -[IBGChatListVC init]
 -[IBGChatListVC viewDidLoad]
 -[IBGChatListVC viewWillAppear:]
@@ -769,6 +769,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGChatView
 /Users/distiller/ios/Instabug/InstabugChats/View Controllers/IBGChatVC.m
 /Users/distiller/ios/Instabug/InstabugChats/View Controllers/IBGChatVC.h
 __63-[IBGChatVC collectionView:willDisplayCell:forItemAtIndexPath:]_block_invoke
+CGRectMake
 __64-[IBGChatVC viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
 __28-[IBGChatVC viewWillAppear:]_block_invoke
 -[IBGBugFlowController startBugReportingFlowWithSnapshot:withFadeAnimation:]
@@ -2009,6 +2010,7 @@ _OBJC_IVAR_$_IBGScrollingDownHandler._shouldScrollToBottom
 _OBJC_IVAR_$_IBGScrollingDownHandler._contentOffsetDelta
 /Users/distiller/ios/Instabug/InstabugChats/Views/Chat Collection View/Layout Helpers/IBGScrollingDownHandler.m
 /Users/distiller/ios/Instabug/InstabugChats/Views/Chat Collection View/Layout Helpers/IBGScrollingDownHandler.h
+CGPointMake
 __53-[IBGScrollingDownHandler addedUpdatedIndexPaths:in:]_block_invoke_2
 __53-[IBGScrollingDownHandler addedUpdatedIndexPaths:in:]_block_invoke
 -[IBGSurveyCustomQuestionNavigator initWithQuestions:]
@@ -2825,6 +2827,8 @@ __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.955
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke.954
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke
+UIEdgeInsetsMake
+/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGeometry.h
 __30-[IBGBugVC orientationChanged]_block_invoke
 __52-[IBGBugVC didSelectAudioAttachment:startedPlaying:]_block_invoke
 __44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.785
@@ -4515,8 +4519,8 @@ ___44-[IBGChatPresenter processDiff:updateBlock:]_block_invoke
 -[IBGChatPresenter cellIdentifierForIndexPath:toContent:]
 -[IBGChatPresenter configureCell:forIndexPath:withContent:]
 ___59-[IBGChatPresenter configureCell:forIndexPath:withContent:]_block_invoke
-___copy_helper_block_.780
-___destroy_helper_block_.781
+___copy_helper_block_.781
+___destroy_helper_block_.782
 -[IBGChatPresenter cellModeForContent:]
 -[IBGChatPresenter analyticsLogEventFromCellType:]
 -[IBGChatPresenter attachmentController]
@@ -4533,7 +4537,7 @@ ___destroy_helper_block_.781
 -[IBGChatPresenter isLoadingNextPage]
 -[IBGChatPresenter setIsLoadingNextPage:]
 -[IBGChatPresenter .cxx_destruct]
-___block_descriptor_tmp.783
+___block_descriptor_tmp.784
 _OBJC_IVAR_$_IBGChatPresenter._attachmentController
 _OBJC_IVAR_$_IBGChatPresenter._interactor
 _OBJC_IVAR_$_IBGChatPresenter._view
@@ -4633,8 +4637,8 @@ ___35-[IBGMessagesView updateWithBlock:]_block_invoke
 -[IBGMessagesView scrollToBottom]
 -[IBGMessagesView keyboardWillShow:]
 ___36-[IBGMessagesView keyboardWillShow:]_block_invoke
-___copy_helper_block_.700
-___destroy_helper_block_.701
+___copy_helper_block_.693
+___destroy_helper_block_.694
 -[IBGMessagesView dealloc]
 -[IBGMessagesView messagesCollectionView]
 -[IBGMessagesView setMessagesCollectionView:]
@@ -4645,7 +4649,7 @@ ___destroy_helper_block_.701
 -[IBGMessagesView firstTimeShowKeyboard]
 -[IBGMessagesView setFirstTimeShowKeyboard:]
 -[IBGMessagesView .cxx_destruct]
-___block_descriptor_tmp.702
+___block_descriptor_tmp.695
 _OBJC_IVAR_$_IBGMessagesView._messagesCollectionView
 _OBJC_IVAR_$_IBGMessagesView._messageCellIdentifier
 _OBJC_IVAR_$_IBGMessagesView._message
@@ -5068,7 +5072,6 @@ _OBJC_IVAR_$_IBGRotationLayoutHandler._bottomLineBeforeRotating
 _OBJC_IVAR_$_IBGRotationLayoutHandler._newBounds
 /Users/distiller/ios/Instabug/InstabugChats/Views/Chat Collection View/Layout Helpers/IBGRotationLayoutHandler.m
 __CGPointEqualToPoint
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[IBGVoiceNotePlayerView init]
 -[IBGVoiceNotePlayerView updateConstraints]
 -[IBGVoiceNotePlayerView setPlaying:]
@@ -5618,17 +5621,17 @@ _OBJC_IVAR_$_IBGPLCrashReportMachineInfo._processorCount
 _OBJC_IVAR_$_IBGPLCrashReportMachineInfo._logicalProcessorCount
 _plcrash_async_macho_find_best_symbol
 __ZL20free_mapped_sectionsP24plcrash_async_objc_cache
-__ZL24plcrash_async_objc_parseP19plcrash_async_machoP24plcrash_async_objc_cachePFvbP26plcrash_async_macho_stringS4_mPvES5_
-__ZL41pl_async_objc_find_method_search_callbackbP26plcrash_async_macho_stringS0_mPv
-__ZL39pl_async_objc_find_method_call_callbackbP26plcrash_async_macho_stringS0_mPv
+__ZL24plcrash_async_objc_parseP19plcrash_async_machoP24plcrash_async_objc_cachePFvbP26plcrash_async_macho_stringS4_jPvES5_
+__ZL41pl_async_objc_find_method_search_callbackbP26plcrash_async_macho_stringS0_jPv
+__ZL39pl_async_objc_find_method_call_callbackbP26plcrash_async_macho_stringS0_jPv
 ____ZL37plcrash_async_image_objc_has_ios9_abiv_block_invoke
-__ZL25pl_async_parse_obj1_classP19plcrash_async_machoP14pl_objc1_classbPFvbP26plcrash_async_macho_stringS4_mPvES5_
+__ZL25pl_async_parse_obj1_classP19plcrash_async_machoP14pl_objc1_classbPFvbP26plcrash_async_macho_stringS4_jPvES5_
 __ZL12map_sectionsP19plcrash_async_machoP24plcrash_async_objc_cache
-__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_mPvESC_
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_jPvESC_
 __ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
-__ZL37pl_async_objc_parse_objc2_method_listP19plcrash_async_machoP24plcrash_async_objc_cacheP26plcrash_async_macho_stringbmPFvbS4_S4_mPvES5_
-__ZL9cache_setP24plcrash_async_objc_cachemm
-__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_mPvESC_
+__ZL37pl_async_objc_parse_objc2_method_listP19plcrash_async_machoP24plcrash_async_objc_cacheP26plcrash_async_macho_stringbjPFvbS4_S4_jPvES5_
+__ZL9cache_setP24plcrash_async_objc_cachejj
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_jPvESC_
 __ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
 __GLOBAL__sub_I_PLCrashAsyncObjCSection.mm
 __ZZL37plcrash_async_image_objc_has_ios9_abivE9onceToken
@@ -5668,7 +5671,6 @@ _arm_nonvolatile_registers
 _arm64_nonvolatile_registers
 _arm_dwarf_table
 _arm64_dwarf_table
-_plcrash_async_map_register_name
 +[IBGPLCrashProcessInfo currentProcessInfo]
 -[IBGPLCrashProcessInfo initWithProcessID:]
 -[IBGPLCrashProcessInfo dealloc]
