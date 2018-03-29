@@ -182,8 +182,11 @@ _OBJC_IVAR_$_IBGMagnifyControlPoints._initialCenter
 l_OBJC_PROTOCOL_$_IBGShapeControl
 l_OBJC_LABEL_PROTOCOL_$_IBGShapeControl
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/Control Points/IBGMagnifyControlPoints.m
+CGRectMake
+/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 IBGCGPointGetDistance
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGGeomtryUtilities.h
+CGPointMake
 -[IBGInternalErrorLogRequest initWithCrashId:parameters:delegate:]
 /Users/distiller/ios/InstabugCore/InstabugCore/Server and Requests/Specific Requests/IBGInternalErrorLogRequest.m
 +[IBGSessionManager getInstance]
@@ -550,6 +553,7 @@ _OBJC_IVAR_$_IBGZZDeflateOutputStream._stream
 _OBJC_IVAR_$_IBGArrowAnnotationView.path
 _OBJC_IVAR_$_IBGArrowAnnotationView._annotatingColor
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGArrowAnnotationView.m
+CGSizeMake
 -[IBGActionSheetVC initInSplitViewController:]
 -[IBGActionSheetVC init]
 -[IBGActionSheetVC registerNotifications]
@@ -777,24 +781,24 @@ ___copy_helper_block_.121
 ___destroy_helper_block_.122
 -[IBGURLSessionDemux URLSession:task:didCompleteWithError:]
 ___59-[IBGURLSessionDemux URLSession:task:didCompleteWithError:]_block_invoke
-___copy_helper_block_.130
-___destroy_helper_block_.131
+___copy_helper_block_.131
+___destroy_helper_block_.132
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]
 ___79-[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]_block_invoke
-___copy_helper_block_.135
-___destroy_helper_block_.136
+___copy_helper_block_.136
+___destroy_helper_block_.137
 -[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]
 ___64-[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]_block_invoke
-___copy_helper_block_.140
-___destroy_helper_block_.141
+___copy_helper_block_.141
+___destroy_helper_block_.142
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]
 ___57-[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]_block_invoke
-___copy_helper_block_.145
-___destroy_helper_block_.146
+___copy_helper_block_.146
+___destroy_helper_block_.147
 -[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]
 ___78-[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]_block_invoke
-___copy_helper_block_.150
-___destroy_helper_block_.151
+___copy_helper_block_.151
+___destroy_helper_block_.152
 -[IBGURLSessionDemux configuration]
 -[IBGURLSessionDemux session]
 -[IBGURLSessionDemux taskInfoByTaskID]
@@ -809,11 +813,12 @@ _OBJC_IVAR_$_IBGURLSessionDemux._taskInfoByTaskID
 _OBJC_IVAR_$_IBGURLSessionDemux._sessionDelegateQueue
 _OBJC_IVAR_$_IBGURLSessionDemux._session
 ___block_descriptor_tmp.113
-___block_descriptor_tmp.123
-___block_descriptor_tmp.132
-___block_descriptor_tmp.137
-___block_descriptor_tmp.142
-___block_descriptor_tmp.147
+___block_descriptor_tmp.124
+___block_descriptor_tmp.133
+___block_descriptor_tmp.138
+___block_descriptor_tmp.143
+___block_descriptor_tmp.148
+___block_descriptor_tmp.153
 l_OBJC_PROTOCOL_$_NSURLSessionDelegate
 l_OBJC_LABEL_PROTOCOL_$_NSURLSessionDelegate
 l_OBJC_PROTOCOL_$_NSURLSessionTaskDelegate
@@ -1645,6 +1650,8 @@ _OBJC_IVAR_$_IBGBaseHUDViewController._duration
 _OBJC_IVAR_$_IBGBaseHUDViewController._animation
 /Users/distiller/ios/InstabugCore/InstabugCore/Windows/HUDs/IBGBaseHUDViewController.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Windows/HUDs/IBGBaseHUDViewController.h
+NSMakeRange
+/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 __32-[IBGBaseHUDViewController hide]_block_invoke.89
 __32-[IBGBaseHUDViewController hide]_block_invoke
 __32-[IBGBaseHUDViewController show]_block_invoke
@@ -1662,22 +1669,22 @@ ___50-[IBGVideoEncoder videoEncodingUsingImage:atTime:]_block_invoke
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke_2
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke_3
-___copy_helper_block_.518
-___destroy_helper_block_.519
-___copy_helper_block_.529
-___destroy_helper_block_.530
-___copy_helper_block_.534
-___destroy_helper_block_.535
+___copy_helper_block_.520
+___destroy_helper_block_.521
+___copy_helper_block_.531
+___destroy_helper_block_.532
+___copy_helper_block_.536
+___destroy_helper_block_.537
 -[IBGVideoEncoder stopAutoRecordingCompletion]
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke_2
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke_3
-___copy_helper_block_.539
-___destroy_helper_block_.540
-___copy_helper_block_.542
-___destroy_helper_block_.543
-___copy_helper_block_.545
-___destroy_helper_block_.546
+___copy_helper_block_.541
+___destroy_helper_block_.542
+___copy_helper_block_.544
+___destroy_helper_block_.545
+___copy_helper_block_.547
+___destroy_helper_block_.548
 -[IBGVideoEncoder removeTempFilePath:]
 -[IBGVideoEncoder encodeVideo:]
 -[IBGVideoEncoder videoURL]
@@ -1717,12 +1724,12 @@ _OBJC_IVAR_$_IBGVideoEncoder._outputBufferPool
 _OBJC_IVAR_$_IBGVideoEncoder._videoWriter
 _OBJC_IVAR_$_IBGVideoEncoder._videoWriterInput
 _OBJC_IVAR_$_IBGVideoEncoder._avAdaptor
-___block_descriptor_tmp.520
-___block_descriptor_tmp.531
-___block_descriptor_tmp.536
-___block_descriptor_tmp.541
-___block_descriptor_tmp.544
-___block_descriptor_tmp.547
+___block_descriptor_tmp.522
+___block_descriptor_tmp.533
+___block_descriptor_tmp.538
+___block_descriptor_tmp.543
+___block_descriptor_tmp.546
+___block_descriptor_tmp.549
 _OBJC_IVAR_$_IBGVideoEncoder._delegate
 _OBJC_IVAR_$_IBGVideoEncoder._writeTimer
 _OBJC_IVAR_$_IBGVideoEncoder._timeStamp
@@ -2270,9 +2277,9 @@ __36-[IBGZZArchive updateEntries:error:]_block_invoke.82
 __36-[IBGZZArchive updateEntries:error:]_block_invoke.65
 __36-[IBGZZArchive updateEntries:error:]_block_invoke.56
 __36-[IBGZZArchive updateEntries:error:]_block_invoke
-min<unsigned long>
+min<unsigned int>
 /Applications/Xcode-9.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm
-min<unsigned long, std::__1::__less<unsigned long, unsigned long> >
+min<unsigned int, std::__1::__less<unsigned int, unsigned int> >
 find_end<const unsigned char *, const unsigned char *>
 find_end<const unsigned char *, const unsigned char *, std::__1::__equal_to<unsigned char, unsigned char> >
 __find_end<std::__1::__equal_to<unsigned char, unsigned char> &, const unsigned char *, const unsigned char *>
@@ -2284,8 +2291,6 @@ __find_end<std::__1::__equal_to<unsigned char, unsigned char> &, const unsigned 
 -[NSURLRequest(Additions) ibg_cURLCommandWithBody:]
 -[NSURLRequest(Additions) ibg_InstabugcURLCommand]
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/Categories/NSURLRequest+Additions.m
-NSMakeRange
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 -[IBGScreenshotCaptureWindow initWithDelegate:]
 -[IBGScreenshotCaptureWindow addCaptureButton]
 -[IBGScreenshotCaptureWindow captureScreenshot]
@@ -2484,8 +2489,6 @@ ___destroy_helper_block_.527
 -[IBGUserStepsLogger insertCrashStepInContext:crashStep:sessionId:]
 -[IBGUserStepsLogger attachVisualUserStepsWithReportId:]
 ___56-[IBGUserStepsLogger attachVisualUserStepsWithReportId:]_block_invoke
-___copy_helper_block_.547
-___destroy_helper_block_.548
 -[IBGUserStepsLogger removeVisualUserStepsWithReportId:]
 ___56-[IBGUserStepsLogger removeVisualUserStepsWithReportId:]_block_invoke
 ___copy_helper_block_.554
@@ -2542,7 +2545,6 @@ ___block_descriptor_tmp.470
 ___block_descriptor_tmp.475
 ___block_descriptor_tmp.525
 ___block_descriptor_tmp.528
-___block_descriptor_tmp.549
 ___block_descriptor_tmp.556
 ___block_descriptor_tmp.625
 _dataLayerService.once
@@ -3045,6 +3047,7 @@ ___block_literal_global.116
 ___block_descriptor_tmp.119
 ___block_literal_global.120
 ___block_literal_global.122
+___block_descriptor_tmp.123
 ___block_literal_global.124
 ___block_descriptor_tmp.125
 ___block_literal_global.126
@@ -3054,10 +3057,10 @@ ___block_descriptor_tmp.129
 ___block_literal_global.130
 ___block_descriptor_tmp.140
 ___block_literal_global.141
+___block_descriptor_tmp.142
 ___block_literal_global.143
 ___block_descriptor_tmp.144
 ___block_literal_global.145
-___block_descriptor_tmp.148
 ___block_literal_global.149
 ___block_descriptor_tmp.150
 ___block_literal_global.151
@@ -3643,7 +3646,6 @@ _OBJC_IVAR_$_IBGFreeDrawingAnnotationView._needsFrameMapping
 /Users/distiller/ios/InstabugCore/InstabugCore/Screenshot Annotations/Annotations View/IBGFreeDrawingAnnotationView.h
 midPointForPoints
 __CGPointEqualToPoint
-/Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[IBGLogLogger addIBGLogWithFormat:args:level:]
 -[IBGLogLogger addLog:level:date:]
 ___34-[IBGLogLogger addLog:level:date:]_block_invoke
@@ -4247,6 +4249,8 @@ ___copy_helper_block_.144
 ___destroy_helper_block_.145
 ___copy_helper_block_.147
 ___destroy_helper_block_.148
+___copy_helper_block_.150
+___destroy_helper_block_.151
 -[IBGCoreDataPersistenceManager destroyPersistent:storeAtURL:]
 -[IBGCoreDataPersistenceManager addCoreDataOperation:]
 ___54-[IBGCoreDataPersistenceManager addCoreDataOperation:]_block_invoke
@@ -4975,12 +4979,15 @@ __37+[IBGPresentationManager getInstance]_block_invoke
 -[IBGOperation setBlock:]
 -[IBGOperation compeltionBlock]
 -[IBGOperation setCompeltionBlock:]
+-[IBGOperation lock]
+-[IBGOperation setLock:]
 -[IBGOperation .cxx_destruct]
 _OBJC_IVAR_$_IBGOperation._ready
 _OBJC_IVAR_$_IBGOperation._executing
 _OBJC_IVAR_$_IBGOperation._finished
 _OBJC_IVAR_$_IBGOperation._block
 _OBJC_IVAR_$_IBGOperation._compeltionBlock
+_OBJC_IVAR_$_IBGOperation._lock
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGOperation.m
 /Users/distiller/ios/InstabugCore/InstabugCore/Helpers/IBGOperation.h
 -[IBGVideoCache cacheDiskPath]
@@ -5256,7 +5263,6 @@ ___49-[IBGAttachmentsView stopPlayingAudioAttachment:]_block_invoke
 -[IBGAttachmentsView attachments]
 -[IBGAttachmentsView setAttachments:]
 -[IBGAttachmentsView .cxx_destruct]
-___block_descriptor_tmp.533
 _OBJC_IVAR_$_IBGAttachmentsView._collectionView
 _OBJC_IVAR_$_IBGAttachmentsView._delegate
 _OBJC_IVAR_$_IBGAttachmentsView._currentlyPlayingAudioAttachmentTimer
@@ -5545,6 +5551,7 @@ l_OBJC_PROTOCOL_$_IBGShapeDetectionOverlayProtocol
 l_OBJC_LABEL_PROTOCOL_$_IBGShapeDetectionOverlayProtocol
 /Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGScreenshotVC.m
 /Users/distiller/ios/InstabugCore/InstabugCore/View Controllers/IBGScreenshotVC.h
+__inline_isnanf
 __38-[IBGScreenshotVC startShapeDetection]_block_invoke_2
 __38-[IBGScreenshotVC startShapeDetection]_block_invoke
 __51-[IBGScreenshotVC adjustScreenshotAnnotationsImage]_block_invoke
