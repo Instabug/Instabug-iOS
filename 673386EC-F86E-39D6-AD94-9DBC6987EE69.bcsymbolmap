@@ -3865,17 +3865,17 @@ ___32-[IBGBugVC submitButtonPressed:]_block_invoke
 -[IBGBugVC cancelButtonPressed:]
 -[IBGBugVC showInvalidEmailAndCommentAlerts]
 ___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke
-___copy_helper_block_.832
-___destroy_helper_block_.833
-___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.839
-___copy_helper_block_.842
-___destroy_helper_block_.843
+___copy_helper_block_.830
+___destroy_helper_block_.831
+___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.837
+___copy_helper_block_.840
+___destroy_helper_block_.841
 -[IBGBugVC alertWithTitle:message:action:]
 -[IBGBugVC didSelectAttachment:]
 -[IBGBugVC didSelectAudioAttachment:startedPlaying:]
 ___52-[IBGBugVC didSelectAudioAttachment:startedPlaying:]_block_invoke
-___copy_helper_block_.877
-___destroy_helper_block_.878
+___copy_helper_block_.875
+___destroy_helper_block_.876
 -[IBGBugVC didRemoveAttachment:]
 -[IBGBugVC nextTappedInScreenshotView:]
 -[IBGBugVC bugRequestCreator]
@@ -3885,8 +3885,8 @@ ___destroy_helper_block_.878
 -[IBGBugVC keyboardWillHide:]
 -[IBGBugVC orientationChanged]
 ___30-[IBGBugVC orientationChanged]_block_invoke
-___copy_helper_block_.942
-___destroy_helper_block_.943
+___copy_helper_block_.940
+___destroy_helper_block_.941
 -[IBGBugVC calculateTextViewHeightWithKeyboardSize:]
 -[IBGBugVC adjustContentScrollViewToObscuringViewSize:]
 -[IBGBugVC resetViewForNoObstruction]
@@ -3903,22 +3903,22 @@ ___destroy_helper_block_.943
 -[IBGBugVC attachmentsToolbarItems]
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
-___copy_helper_block_.994
-___destroy_helper_block_.995
-___copy_helper_block_.999
-___destroy_helper_block_.1000
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1008
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1009
-___copy_helper_block_.1012
-___destroy_helper_block_.1013
-___copy_helper_block_.1015
-___destroy_helper_block_.1016
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1020
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1021
-___copy_helper_block_.1024
-___destroy_helper_block_.1025
-___copy_helper_block_.1027
-___destroy_helper_block_.1028
+___copy_helper_block_.992
+___destroy_helper_block_.993
+___copy_helper_block_.997
+___destroy_helper_block_.998
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1006
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1007
+___copy_helper_block_.1010
+___destroy_helper_block_.1011
+___copy_helper_block_.1013
+___destroy_helper_block_.1014
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1018
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1019
+___copy_helper_block_.1022
+___destroy_helper_block_.1023
+___copy_helper_block_.1025
+___destroy_helper_block_.1026
 -[IBGBugVC maximumNumberOfAttachmentsAllowed]
 -[IBGBugVC performActionOrShowMaximumNumberOfAttachmentsAlert:]
 -[IBGBugVC dealloc]
@@ -3965,8 +3965,6 @@ ___destroy_helper_block_.1028
 -[IBGBugVC setAttachmentsToolbarContainerViewHeightConstraint:]
 -[IBGBugVC bugInputView]
 -[IBGBugVC setBugInputView:]
--[IBGBugVC footerViewHeightConstraint]
--[IBGBugVC setFooterViewHeightConstraint:]
 -[IBGBugVC viewsToThemeWithBackgroundColor]
 -[IBGBugVC setViewsToThemeWithBackgroundColor:]
 -[IBGBugVC inputViewsToThemeWithBackgroundColor]
@@ -3982,17 +3980,17 @@ ___destroy_helper_block_.1028
 _OBJC_IVAR_$_IBGBugVC._controller
 _OBJC_IVAR_$_IBGBugVC._type
 _OBJC_IVAR_$_IBGBugVC._shouldShowEmail
-___block_descriptor_tmp.834
-___block_descriptor_tmp.844
-___block_descriptor_tmp.879
+___block_descriptor_tmp.832
+___block_descriptor_tmp.842
+___block_descriptor_tmp.877
 _OBJC_IVAR_$_IBGBugVC._bugRequestCreator
-___block_descriptor_tmp.944
-___block_descriptor_tmp.996
-___block_descriptor_tmp.1001
-___block_descriptor_tmp.1014
-___block_descriptor_tmp.1017
-___block_descriptor_tmp.1026
-___block_descriptor_tmp.1029
+___block_descriptor_tmp.942
+___block_descriptor_tmp.994
+___block_descriptor_tmp.999
+___block_descriptor_tmp.1012
+___block_descriptor_tmp.1015
+___block_descriptor_tmp.1024
+___block_descriptor_tmp.1027
 _OBJC_IVAR_$_IBGBugVC._attachmentController
 _OBJC_IVAR_$_IBGBugVC._videoPlayer
 _OBJC_IVAR_$_IBGBugVC._voicePlayer
@@ -4010,7 +4008,6 @@ _OBJC_IVAR_$_IBGBugVC._attachmentsView
 _OBJC_IVAR_$_IBGBugVC._attachmentsToolbarContainerView
 _OBJC_IVAR_$_IBGBugVC._attachmentsToolbarContainerViewHeightConstraint
 _OBJC_IVAR_$_IBGBugVC._bugInputView
-_OBJC_IVAR_$_IBGBugVC._footerViewHeightConstraint
 _OBJC_IVAR_$_IBGBugVC._viewsToThemeWithBackgroundColor
 _OBJC_IVAR_$_IBGBugVC._inputViewsToThemeWithBackgroundColor
 _OBJC_IVAR_$_IBGBugVC._viewsToCalculateContentHeiht
@@ -4028,17 +4025,17 @@ l_OBJC_PROTOCOL_$_IBGBugControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGBugControllerDelegate
 /Users/distiller/ios/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.m
 /Users/distiller/ios/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.h
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1021
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1020
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1009
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1008
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1019
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1018
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1007
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1006
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke
 UIEdgeInsetsMake
 /Applications/Xcode-9.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGeometry.h
 __30-[IBGBugVC orientationChanged]_block_invoke
 __52-[IBGBugVC didSelectAudioAttachment:startedPlaying:]_block_invoke
-__44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.839
+__44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.837
 __44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke
 __32-[IBGBugVC submitButtonPressed:]_block_invoke
 -[IBGSurveyStarRatingViewController viewDidLoad]
