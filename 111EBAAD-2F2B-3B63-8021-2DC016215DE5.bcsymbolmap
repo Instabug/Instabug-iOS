@@ -580,6 +580,7 @@ CGSizeMake
 -[IBGSessionProfileLogger init]
 -[IBGSessionProfileLogger getLoggers]
 -[IBGSessionProfileLogger startLoggers]
+___39-[IBGSessionProfileLogger startLoggers]_block_invoke
 -[IBGSessionProfileLogger stopLoggers]
 -[IBGSessionProfileLogger loadProfilerLogsSynchronously:date:withCompletionHandler:]
 -[IBGSessionProfileLogger fetchLogsWithDate:]
@@ -600,6 +601,7 @@ _OBJC_IVAR_$_IBGSessionProfileLogger._deviceStateLogger
 _OBJC_IVAR_$_IBGSessionProfileLogger._deviceQueuesLatencyLogger
 _OBJC_IVAR_$_IBGSessionProfileLogger._deviceCPUUsageLogger
 /Users/distiller/project/InstabugCore/InstabugSessionProfiler/Logger/IBGSessionProfileLogger.m
+__39-[IBGSessionProfileLogger startLoggers]_block_invoke
 -[IBGActionSheetVC initInSplitViewController:]
 -[IBGActionSheetVC init]
 -[IBGActionSheetVC registerNotifications]
@@ -2040,12 +2042,15 @@ __54-[IBGUserStepsLoggerContextProvider backgroundContext]_block_invoke
 -[IBGProgress setChildren:]
 -[IBGProgress value]
 -[IBGProgress setValue:]
+-[IBGProgress lock]
+-[IBGProgress setLock:]
 -[IBGProgress .cxx_destruct]
+_OBJC_IVAR_$_IBGProgress._parent
+_OBJC_IVAR_$_IBGProgress._lock
+_OBJC_IVAR_$_IBGProgress._completionHandlers
+_OBJC_IVAR_$_IBGProgress._children
 _OBJC_IVAR_$_IBGProgress._status
 _OBJC_IVAR_$_IBGProgress._key
-_OBJC_IVAR_$_IBGProgress._completionHandlers
-_OBJC_IVAR_$_IBGProgress._parent
-_OBJC_IVAR_$_IBGProgress._children
 _OBJC_IVAR_$_IBGProgress._value
 /Users/distiller/project/InstabugCore/InstabugCore/Helpers/IBGProgress.m
 /Users/distiller/project/InstabugCore/InstabugCore/Helpers/IBGProgress.h
@@ -4395,26 +4400,28 @@ _OBJC_IVAR_$_IBGCPU._date
 -[IBGBatteryStateReader getBatteryState]
 -[IBGBatteryStateReader isBatteryPlugged]
 /Users/distiller/project/InstabugCore/InstabugSessionProfiler/Readers/IBGBatteryStateReader.m
+-[IBGNetworkLogger init]
 -[IBGNetworkLogger loggedRequestFromOriginalRequest:body:]
 -[IBGNetworkLogger loggedResponse:data:]
 ___40-[IBGNetworkLogger loggedResponse:data:]_block_invoke
 -[IBGNetworkLogger saveLogWithRequest:body:resposne:data:error:duration:withCompletionHandler:]
 -[IBGNetworkLogger saveLogWithRequest:body:resposne:data:error:duration:withCompletionHandler:date:]
 ___100-[IBGNetworkLogger saveLogWithRequest:body:resposne:data:error:duration:withCompletionHandler:date:]_block_invoke
-___copy_helper_block_.89
-___destroy_helper_block_.90
+___copy_helper_block_.94
+___destroy_helper_block_.95
 -[IBGNetworkLogger loadLogsSynchronously]
 ___41-[IBGNetworkLogger loadLogsSynchronously]_block_invoke
+___copy_helper_block_.124
+___destroy_helper_block_.125
 -[IBGNetworkLogger loadLogsAsynchronouslyWithCompletionHandler:]
 ___64-[IBGNetworkLogger loadLogsAsynchronouslyWithCompletionHandler:]_block_invoke
-___copy_helper_block_.135
-___destroy_helper_block_.136
+___copy_helper_block_.138
+___destroy_helper_block_.139
 -[IBGNetworkLogger loadSnapshotSynchronously:withCompletionHandler:]
 -[IBGNetworkLogger purgeAllLogs]
 ___32-[IBGNetworkLogger purgeAllLogs]_block_invoke
 -[IBGNetworkLogger clearAllLogs]
 ___32-[IBGNetworkLogger clearAllLogs]_block_invoke
--[IBGNetworkLogger lock]
 +[IBGNetworkLogger fetchRequest]
 +[IBGNetworkLogger registerNetworkLogProtocolForSharedSession]
 +[IBGNetworkLogger registerNetworkLogProtocolInSessionConfiguration:]
@@ -4442,17 +4449,19 @@ ___50+[IBGNetworkLogger requestProgressBlockDictionary]_block_invoke
 -[IBGNetworkLogger setLoggedResponse:]
 -[IBGNetworkLogger loggedResponseData]
 -[IBGNetworkLogger setLoggedResponseData:]
+-[IBGNetworkLogger lock]
 -[IBGNetworkLogger setLock:]
 -[IBGNetworkLogger .cxx_destruct]
 __legacyURLObfuscationHandler
 __requestFilterPredicate
 __responseFilterPredicate
+_OBJC_IVAR_$_IBGNetworkLogger._lock
 __userRequestObfuscationBlock
 __userResponseObfuscationBlock
-___block_descriptor_tmp.92
-___block_descriptor_tmp.122
-___block_descriptor_tmp.137
-_OBJC_IVAR_$_IBGNetworkLogger._lock
+___block_descriptor_tmp.140
+___block_descriptor_tmp.147
+___block_descriptor_tmp.161
+___block_literal_global.162
 __customSessionConfiguration
 ___block_descriptor_tmp.180
 ___block_literal_global.181
@@ -4593,12 +4602,12 @@ ___destroy_helper_block_.29
 -[IBGCoreDataPersistenceManager initializeCoreData]
 ___51-[IBGCoreDataPersistenceManager initializeCoreData]_block_invoke
 ___51-[IBGCoreDataPersistenceManager initializeCoreData]_block_invoke_2
-___copy_helper_block_.124
-___destroy_helper_block_.125
 -[IBGCoreDataPersistenceManager destroyPersistent:storeAtURL:]
 -[IBGCoreDataPersistenceManager isOldStoreExistAtURL:]
 -[IBGCoreDataPersistenceManager saveWithCompletionHandler:]
 ___59-[IBGCoreDataPersistenceManager saveWithCompletionHandler:]_block_invoke
+___copy_helper_block_.135
+___destroy_helper_block_.136
 ___59-[IBGCoreDataPersistenceManager saveWithCompletionHandler:]_block_invoke.138
 ___59-[IBGCoreDataPersistenceManager saveWithCompletionHandler:]_block_invoke_2
 ___59-[IBGCoreDataPersistenceManager saveWithCompletionHandler:]_block_invoke_3
@@ -4652,6 +4661,7 @@ ___block_descriptor_tmp.30
 _isCoreDataInitialized
 _OBJC_IVAR_$_IBGCoreDataPersistenceManager._managedObjectContext
 ___block_descriptor_tmp.126
+___block_descriptor_tmp.137
 ___block_descriptor_tmp.151
 ___block_descriptor_tmp.154
 ___block_descriptor_tmp.163
@@ -5096,8 +5106,8 @@ ___42-[IBGCacheManager initializationOperation]_block_invoke
 -[IBGCacheManager forcePersistAll]
 -[IBGCacheManager registerCaches:forClasses:withCompletionHandler:]
 ___67-[IBGCacheManager registerCaches:forClasses:withCompletionHandler:]_block_invoke
-___copy_helper_block_.667
-___destroy_helper_block_.668
+___copy_helper_block_.668
+___destroy_helper_block_.669
 -[IBGCacheManager registerCache:forClass:withCompletionHandler:]
 -[IBGCacheManager send]
 -[IBGCacheManager unpersistAndSendPendingCache]
@@ -5112,12 +5122,15 @@ ___destroy_helper_block_.668
 -[IBGCacheManager setCacheManagers:]
 -[IBGCacheManager cacheManagerQueue]
 -[IBGCacheManager setCacheManagerQueue:]
+-[IBGCacheManager lock]
+-[IBGCacheManager setLock:]
 -[IBGCacheManager .cxx_destruct]
-_OBJC_IVAR_$_IBGCacheManager._initializationOperation
-___block_descriptor_tmp.645
-___block_descriptor_tmp.669
-_OBJC_IVAR_$_IBGCacheManager._cacheManagers
 _OBJC_IVAR_$_IBGCacheManager._cacheManagerQueue
+_OBJC_IVAR_$_IBGCacheManager._lock
+_OBJC_IVAR_$_IBGCacheManager._cacheManagers
+_OBJC_IVAR_$_IBGCacheManager._initializationOperation
+___block_descriptor_tmp.642
+___block_descriptor_tmp.670
 /Users/distiller/project/InstabugCore/InstabugCore/Caching/IBGCacheManager.m
 /Users/distiller/project/InstabugCore/InstabugCore/Caching/IBGCacheManager.h
 __67-[IBGCacheManager registerCaches:forClasses:withCompletionHandler:]_block_invoke
@@ -5722,6 +5735,7 @@ ___destroy_helper_block_.124
 -[IBGAudioVideoRecorder setIsRecordingAudio:]
 -[IBGAudioVideoRecorder .cxx_destruct]
 ___block_descriptor_tmp.69
+___block_descriptor_tmp.122
 _OBJC_IVAR_$_IBGAudioVideoRecorder._audioTracks
 _OBJC_IVAR_$_IBGAudioVideoRecorder._delegate
 _OBJC_IVAR_$_IBGAudioVideoRecorder._voiceRecorder
@@ -6307,7 +6321,6 @@ ___destroy_helper_block_.844
 -[IBGLogLocalAttachment setSnapshot:]
 -[IBGLogLocalAttachment .cxx_destruct]
 ___block_descriptor_tmp.665
-___block_descriptor_tmp.670
 ___block_descriptor_tmp.681
 ___block_descriptor_tmp.685
 ___block_literal_global.686
@@ -7131,6 +7144,8 @@ ___19-[IBGDefaults init]_block_invoke
 -[IBGDefaults setLastRetrievedAPNSToken:]
 -[IBGDefaults lastRegisteredPNToken]
 -[IBGDefaults setLastRegisteredPNToken:]
+-[IBGDefaults unreadMessagesCount]
+-[IBGDefaults setUnreadMessagesCount:]
 +[IBGDefaults invalidTokenString]
 -[IBGDefaults deviceTokenRequested]
 -[IBGDefaults setIssueTags:]
@@ -7217,6 +7232,7 @@ ___19-[IBGDefaults init]_block_invoke
 _OBJC_IVAR_$_IBGDefaults._name
 _OBJC_IVAR_$_IBGDefaults._issueTags
 _OBJC_IVAR_$_IBGDefaults._categories
+_OBJC_IVAR_$_IBGDefaults._unreadMessagesCount
 _OBJC_IVAR_$_IBGDefaults._email
 _OBJC_IVAR_$_IBGDefaults._identifiedEmail
 _OBJC_IVAR_$_IBGDefaults._identifiedName
@@ -7322,8 +7338,6 @@ ___destroy_helper_block_.659
 ___50-[IBGMethodsLogger logCountedMethod:isDeprecated:]_block_invoke
 -[IBGMethodsLogger logMethod:isDeprecated:params:]
 ___50-[IBGMethodsLogger logMethod:isDeprecated:params:]_block_invoke
-___copy_helper_block_.668
-___destroy_helper_block_.669
 -[IBGMethodsLogger loadSnapshotSynchronously:withCompletionHandler:]
 -[IBGMethodsLogger allMethodsLog]
 ___33-[IBGMethodsLogger allMethodsLog]_block_invoke
