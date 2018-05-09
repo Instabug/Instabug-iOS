@@ -284,13 +284,13 @@ ___75-[IBGSurveyFlowController dismissIntroViewControllerWithCompletionHandler:]
 -[IBGSurveyFlowController firstQuestionVCFrom:]
 -[IBGSurveyFlowController showSurveyViewControllerWithSurvey:withDelegate:appStoreURL:]
 ___87-[IBGSurveyFlowController showSurveyViewControllerWithSurvey:withDelegate:appStoreURL:]_block_invoke
-___copy_helper_block_.484
-___destroy_helper_block_.485
+___copy_helper_block_.488
+___destroy_helper_block_.489
 -[IBGSurveyFlowController dismissSurvey]
 -[IBGSurveyFlowController window]
 -[IBGSurveyFlowController setWindow:]
 -[IBGSurveyFlowController .cxx_destruct]
-___block_descriptor_tmp.486
+___block_descriptor_tmp.490
 _OBJC_IVAR_$_IBGSurveyFlowController._window
 /Users/distiller/project/Instabug/InstabugSurveys/Flow Controllers/IBGSurveyFlowController.m
 __87-[IBGSurveyFlowController showSurveyViewControllerWithSurvey:withDelegate:appStoreURL:]_block_invoke
@@ -302,6 +302,7 @@ __75-[IBGSurveyFlowController dismissIntroViewControllerWithCompletionHandler:]_
 -[IBGSurveyController currentIndex]
 -[IBGSurveyController numberOfQuestions]
 -[IBGSurveyController setCurrentQuestionAnswer:]
+-[IBGSurveyController setSurveyShown]
 -[IBGSurveyController setSurveySubmitted]
 -[IBGSurveyController setSurveyDismissed]
 -[IBGSurveyController setSurveyDidRate]
@@ -327,6 +328,8 @@ __75-[IBGSurveyFlowController dismissIntroViewControllerWithCompletionHandler:]_
 -[IBGSurveyController setViewControllers:]
 -[IBGSurveyController currentQuestion]
 -[IBGSurveyController setCurrentQuestion:]
+-[IBGSurveyController didAddShowEvent]
+-[IBGSurveyController setDidAddShowEvent:]
 -[IBGSurveyController .cxx_destruct]
 _OBJC_IVAR_$_IBGSurveyController._appStoreURL
 _OBJC_IVAR_$_IBGSurveyController._survey
@@ -334,6 +337,7 @@ _OBJC_IVAR_$_IBGSurveyController._index
 _OBJC_IVAR_$_IBGSurveyController._total
 _OBJC_IVAR_$_IBGSurveyController._viewControllers
 _OBJC_IVAR_$_IBGSurveyController._currentQuestion
+_OBJC_IVAR_$_IBGSurveyController._didAddShowEvent
 l_OBJC_PROTOCOL_$_IBGSurveysNavigationDataSource
 l_OBJC_LABEL_PROTOCOL_$_IBGSurveysNavigationDataSource
 /Users/distiller/project/Instabug/InstabugSurveys/Controllers/IBGSurveyController.m
@@ -1227,8 +1231,8 @@ ___51-[IBGExtraFieldViewController submitButtonPressed:]_block_invoke
 -[IBGExtraFieldViewController tableView:heightForRowAtIndexPath:]
 -[IBGExtraFieldViewController textSampleViewCell]
 ___49-[IBGExtraFieldViewController textSampleViewCell]_block_invoke
-___copy_helper_block_.175
-___destroy_helper_block_.176
+___copy_helper_block_.181
+___destroy_helper_block_.182
 -[IBGExtraFieldViewController tableView:numberOfRowsInSection:]
 -[IBGExtraFieldViewController tableView:cellForRowAtIndexPath:]
 -[IBGExtraFieldViewController textViewDidBeginEditing:]
@@ -1244,14 +1248,17 @@ ___destroy_helper_block_.176
 -[IBGExtraFieldViewController setCurrentTextView:]
 -[IBGExtraFieldViewController firstTextView]
 -[IBGExtraFieldViewController setFirstTextView:]
+-[IBGExtraFieldViewController isSendingBug]
+-[IBGExtraFieldViewController setIsSendingBug:]
 -[IBGExtraFieldViewController .cxx_destruct]
 _OBJC_IVAR_$_IBGExtraFieldViewController._tableView
 _textSampleViewCell.cell
 _textSampleViewCell.onceToken
-___block_descriptor_tmp.177
+___block_descriptor_tmp.183
 _OBJC_IVAR_$_IBGExtraFieldViewController._controller
 _OBJC_IVAR_$_IBGExtraFieldViewController._currentTextView
 _OBJC_IVAR_$_IBGExtraFieldViewController._firstTextView
+_OBJC_IVAR_$_IBGExtraFieldViewController._isSendingBug
 l_OBJC_PROTOCOL_$_UITextViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_UITextViewDelegate
 /Users/distiller/project/Instabug/InstabugBugReporting/View Controllers/IBGExtraFieldViewController.m
@@ -1344,10 +1351,15 @@ _OBJC_IVAR_$_IBGSurveysNavigationHeader._total
 -[IBGSurveyTextViewController textViewDidBeginEditing:]
 -[IBGSurveyTextViewController textViewDidEndEditing:]
 -[IBGSurveyTextViewController surveyTextView]
+-[IBGSurveyTextViewController setAnswer:]
+-[IBGSurveyTextViewController answer]
 -[IBGSurveyTextViewController setSurveyTextView:]
 -[IBGSurveyTextViewController .cxx_destruct]
+_OBJC_IVAR_$_IBGSurveyTextViewController._answer
 _OBJC_IVAR_$_IBGSurveyTextViewController._surveyTextView
 /Users/distiller/project/Instabug/InstabugSurveys/View controllers/IBGSurveyTextViewController.m
+-[IBGSurveyViewController answer]
+/Users/distiller/project/Instabug/InstabugSurveys/View controllers/IBGSurveyViewController.h
 /Users/distiller/project/Instabug/InstabugSurveys/Defaults/IBGSurveysAccessibilityIdentifiers.m
 -[IBGSurveyCache init]
 -[IBGSurveyCache cacheDiskPath]
@@ -1848,6 +1860,8 @@ ___36+[IBGSurveysDefaults sharedInstance]_block_invoke
 -[IBGSurveysDefaults setDisableAutomaticShowingSurveys:]
 -[IBGSurveysDefaults surveysForceDisabled]
 -[IBGSurveysDefaults setSurveysForceDisabled:]
+-[IBGSurveysDefaults shouldShowWelcomeScreen]
+-[IBGSurveysDefaults setShouldShowWelcomeScreen:]
 -[IBGSurveysDefaults colors]
 -[IBGSurveysDefaults setColors:]
 -[IBGSurveysDefaults .cxx_destruct]
@@ -1855,6 +1869,7 @@ _sharedInstance.onceToken
 _sharedInstance.surveysDefaultsInstance
 _OBJC_IVAR_$_IBGSurveysDefaults._disableAutomaticShowingSurveys
 _OBJC_IVAR_$_IBGSurveysDefaults._surveysForceDisabled
+_OBJC_IVAR_$_IBGSurveysDefaults._shouldShowWelcomeScreen
 _OBJC_IVAR_$_IBGSurveysDefaults._colors
 /Users/distiller/project/Instabug/InstabugSurveys/Defaults/IBGSurveysDefaults.m
 /Users/distiller/project/Instabug/InstabugSurveys/Defaults/IBGSurveysDefaults.h
@@ -2349,11 +2364,14 @@ _OBJC_IVAR_$_IBGMessageAttachmentRequestCreator._chatId
 -[IBGSurveyNPSViewController ratingView]
 -[IBGSurveyNPSViewController dataSource]
 -[IBGSurveyNPSViewController didSelectRating:]
+-[IBGSurveyNPSViewController setAnswer:]
+-[IBGSurveyNPSViewController answer]
 -[IBGSurveyNPSViewController setRatingView:]
 -[IBGSurveyNPSViewController setDataSource:]
 -[IBGSurveyNPSViewController .cxx_destruct]
 _OBJC_IVAR_$_IBGSurveyNPSViewController._ratingView
 _OBJC_IVAR_$_IBGSurveyNPSViewController._dataSource
+_OBJC_IVAR_$_IBGSurveyNPSViewController._answer
 l_OBJC_PROTOCOL_$_IBGNPSSurveyViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGNPSSurveyViewDelegate
 /Users/distiller/project/Instabug/InstabugSurveys/View controllers/IBGSurveyNPSViewController.m
@@ -2372,28 +2390,29 @@ ___destroy_helper_block_.689
 -[InstabugSurveys setWillShowSurveyHandler:]
 -[InstabugSurveys setDidDismissSurveyHandler:]
 -[InstabugSurveys setThresholdForReshowingSurveyAfterDismiss:daysCount:]
+-[InstabugSurveys setShouldShowSurveysWelcomeScreen:]
 -[InstabugSurveys updateHasPendingSurveys]
 -[InstabugSurveys pendingSurveyToShowWithCompletionHandler:]
 ___60-[InstabugSurveys pendingSurveyToShowWithCompletionHandler:]_block_invoke
-___copy_helper_block_.723
-___destroy_helper_block_.724
+___copy_helper_block_.725
+___destroy_helper_block_.726
 -[InstabugSurveys loadSurveys]
 -[InstabugSurveys surveysFeatureEnabled]
 -[InstabugSurveys showPendingSurveys]
 ___37-[InstabugSurveys showPendingSurveys]_block_invoke
-___copy_helper_block_.760
-___destroy_helper_block_.761
+___copy_helper_block_.762
+___destroy_helper_block_.763
 -[InstabugSurveys fetchSurveys]
 -[InstabugSurveys showSurveyIfAvailable]
 ___40-[InstabugSurveys showSurveyIfAvailable]_block_invoke
-___copy_helper_block_.788
-___destroy_helper_block_.789
+___copy_helper_block_.790
+___destroy_helper_block_.791
 -[InstabugSurveys showSurveyWithToken:]
 -[InstabugSurveys hasRespondedToSurveyWithToken:]
 -[InstabugSurveys presentSurvey:]
 ___33-[InstabugSurveys presentSurvey:]_block_invoke
-___copy_helper_block_.821
-___destroy_helper_block_.822
+___copy_helper_block_.819
+___destroy_helper_block_.820
 -[InstabugSurveys shouldShowSurvey:]
 -[InstabugSurveys surveysRequestDone:isSucess:error:withSurveys:pausedSurveysIDs:]
 -[InstabugSurveys surveyDismissed]
@@ -2440,10 +2459,10 @@ ___destroy_helper_block_.822
 _InstabugSurveysInstance
 _OBJC_IVAR_$_InstabugSurveys._initializationOperation
 ___block_descriptor_tmp.685
-___block_descriptor_tmp.726
-___block_descriptor_tmp.762
-___block_descriptor_tmp.791
-___block_descriptor_tmp.823
+___block_descriptor_tmp.728
+___block_descriptor_tmp.764
+___block_descriptor_tmp.793
+___block_descriptor_tmp.821
 _OBJC_IVAR_$_InstabugSurveys._reactivationSessionCountThreshold
 _OBJC_IVAR_$_InstabugSurveys._reactivationDaysCountThreshold
 _OBJC_IVAR_$_InstabugSurveys._cachedSurveys
@@ -3495,7 +3514,6 @@ __24-[IBGBug persistAndSend]_block_invoke
 -[IBGSurveyViewController setSurveyView:]
 -[IBGSurveyViewController surveyQuestion]
 -[IBGSurveyViewController setSurveyQuestion:]
--[IBGSurveyViewController answer]
 -[IBGSurveyViewController setAnswer:]
 -[IBGSurveyViewController .cxx_destruct]
 _OBJC_IVAR_$_IBGSurveyViewController._surveyView
@@ -3505,7 +3523,6 @@ _OBJC_IVAR_$_IBGSurveyViewController._surveyNavigationController
 _OBJC_IVAR_$_IBGSurveyViewController._surveyQuestion
 _OBJC_IVAR_$_IBGSurveyViewController._answer
 /Users/distiller/project/Instabug/InstabugSurveys/View controllers/IBGSurveyViewController.m
-/Users/distiller/project/Instabug/InstabugSurveys/View controllers/IBGSurveyViewController.h
 /Users/distiller/project/Instabug/InstabugCrashReporting/InstabugCrashReporting+TestPrivate.m
 +[IBGFeatureDetailAddCommentFlowController createModuleWithFeatureRequest:]
 /Users/distiller/project/Instabug/FeaturesRequest/Flow Controller/IBGFeatureDetailAddCommentFlowController.m
@@ -3600,17 +3617,17 @@ l_OBJC_LABEL_PROTOCOL_$_UICollectionViewDataSource
 /Users/distiller/project/Instabug/InstabugSurveys/Helpers/NPS/IBGNPSCollectionViewDataSource.m
 /Users/distiller/project/Instabug/InstabugSurveys/Helpers/NPS/IBGNPSCollectionViewDataSource.h
 __71-[IBGNPSCollectionViewDataSource selectItemAtIndexPath:collectionView:]_block_invoke
--[IBGTextViewSurvey init]
--[IBGTextViewSurvey updateConstraints]
--[IBGTextViewSurvey getText]
--[IBGTextViewSurvey containerView]
--[IBGTextViewSurvey textView]
--[IBGTextViewSurvey setContainerView:]
--[IBGTextViewSurvey setTextView:]
--[IBGTextViewSurvey .cxx_destruct]
-_OBJC_IVAR_$_IBGTextViewSurvey._containerView
-_OBJC_IVAR_$_IBGTextViewSurvey._textView
-/Users/distiller/project/Instabug/InstabugSurveys/Views/IBGTextViewSurvey.m
+-[IBGSurveyTextView init]
+-[IBGSurveyTextView updateConstraints]
+-[IBGSurveyTextView getText]
+-[IBGSurveyTextView containerView]
+-[IBGSurveyTextView textView]
+-[IBGSurveyTextView setContainerView:]
+-[IBGSurveyTextView setTextView:]
+-[IBGSurveyTextView .cxx_destruct]
+_OBJC_IVAR_$_IBGSurveyTextView._containerView
+_OBJC_IVAR_$_IBGSurveyTextView._textView
+/Users/distiller/project/Instabug/InstabugSurveys/Views/IBGSurveyTextView.m
 -[IBGFeatureSortingTableViewPopUp initWithDelegate:]
 -[IBGFeatureSortingTableViewPopUp updateConstraints]
 -[IBGFeatureSortingTableViewPopUp didDismissViewWithType:stringValue:]
@@ -3856,17 +3873,17 @@ ___32-[IBGBugVC submitButtonPressed:]_block_invoke
 -[IBGBugVC cancelButtonPressed:]
 -[IBGBugVC showInvalidEmailAndCommentAlerts]
 ___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke
-___copy_helper_block_.834
-___destroy_helper_block_.835
-___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.841
-___copy_helper_block_.844
-___destroy_helper_block_.845
+___copy_helper_block_.836
+___destroy_helper_block_.837
+___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.843
+___copy_helper_block_.846
+___destroy_helper_block_.847
 -[IBGBugVC alertWithTitle:message:action:]
 -[IBGBugVC didSelectAttachment:]
 -[IBGBugVC didSelectAudioAttachment:startedPlaying:]
 ___52-[IBGBugVC didSelectAudioAttachment:startedPlaying:]_block_invoke
-___copy_helper_block_.879
-___destroy_helper_block_.880
+___copy_helper_block_.881
+___destroy_helper_block_.882
 -[IBGBugVC didRemoveAttachment:]
 -[IBGBugVC nextTappedInScreenshotView:]
 -[IBGBugVC bugRequestCreator]
@@ -3876,8 +3893,8 @@ ___destroy_helper_block_.880
 -[IBGBugVC keyboardWillHide:]
 -[IBGBugVC orientationChanged]
 ___30-[IBGBugVC orientationChanged]_block_invoke
-___copy_helper_block_.944
-___destroy_helper_block_.945
+___copy_helper_block_.946
+___destroy_helper_block_.947
 -[IBGBugVC calculateTextViewHeightWithKeyboardSize:]
 -[IBGBugVC adjustContentScrollViewToObscuringViewSize:]
 -[IBGBugVC resetViewForNoObstruction]
@@ -3894,22 +3911,22 @@ ___destroy_helper_block_.945
 -[IBGBugVC attachmentsToolbarItems]
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
-___copy_helper_block_.996
-___destroy_helper_block_.997
-___copy_helper_block_.1001
-___destroy_helper_block_.1002
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1010
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1011
-___copy_helper_block_.1014
-___destroy_helper_block_.1015
-___copy_helper_block_.1017
-___destroy_helper_block_.1018
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1022
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1023
-___copy_helper_block_.1026
-___destroy_helper_block_.1027
-___copy_helper_block_.1029
-___destroy_helper_block_.1030
+___copy_helper_block_.998
+___destroy_helper_block_.999
+___copy_helper_block_.1003
+___destroy_helper_block_.1004
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1012
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1013
+___copy_helper_block_.1016
+___destroy_helper_block_.1017
+___copy_helper_block_.1019
+___destroy_helper_block_.1020
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1024
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1025
+___copy_helper_block_.1028
+___destroy_helper_block_.1029
+___copy_helper_block_.1031
+___destroy_helper_block_.1032
 -[IBGBugVC maximumNumberOfAttachmentsAllowed]
 -[IBGBugVC performActionOrShowMaximumNumberOfAttachmentsAlert:]
 -[IBGBugVC dealloc]
@@ -3967,21 +3984,23 @@ ___destroy_helper_block_.1030
 -[IBGBugVC setBugRequestCreator:]
 -[IBGBugVC alert]
 -[IBGBugVC setAlert:]
+-[IBGBugVC isSendingBug]
+-[IBGBugVC setIsSendingBug:]
 -[IBGBugVC .cxx_destruct]
 _OBJC_IVAR_$_IBGBugVC._controller
 _OBJC_IVAR_$_IBGBugVC._type
 _OBJC_IVAR_$_IBGBugVC._shouldShowEmail
-___block_descriptor_tmp.836
-___block_descriptor_tmp.846
-___block_descriptor_tmp.881
+___block_descriptor_tmp.838
+___block_descriptor_tmp.848
+___block_descriptor_tmp.883
 _OBJC_IVAR_$_IBGBugVC._bugRequestCreator
-___block_descriptor_tmp.946
-___block_descriptor_tmp.998
-___block_descriptor_tmp.1003
-___block_descriptor_tmp.1016
-___block_descriptor_tmp.1019
-___block_descriptor_tmp.1028
-___block_descriptor_tmp.1031
+___block_descriptor_tmp.948
+___block_descriptor_tmp.1000
+___block_descriptor_tmp.1005
+___block_descriptor_tmp.1018
+___block_descriptor_tmp.1021
+___block_descriptor_tmp.1030
+___block_descriptor_tmp.1033
 _OBJC_IVAR_$_IBGBugVC._attachmentController
 _OBJC_IVAR_$_IBGBugVC._videoPlayer
 _OBJC_IVAR_$_IBGBugVC._voicePlayer
@@ -4004,6 +4023,7 @@ _OBJC_IVAR_$_IBGBugVC._inputViewsToThemeWithBackgroundColor
 _OBJC_IVAR_$_IBGBugVC._viewsToCalculateContentHeiht
 _OBJC_IVAR_$_IBGBugVC._emailLineHeightConstraint
 _OBJC_IVAR_$_IBGBugVC._alert
+_OBJC_IVAR_$_IBGBugVC._isSendingBug
 l_OBJC_PROTOCOL_$_IBGScreenshotViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGScreenshotViewDelegate
 l_OBJC_PROTOCOL_$_IBGAttachmentsViewDelegate
@@ -4016,15 +4036,15 @@ l_OBJC_PROTOCOL_$_IBGBugControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGBugControllerDelegate
 /Users/distiller/project/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.m
 /Users/distiller/project/Instabug/InstabugBugReporting/View Controllers/IBGBugVC.h
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1023
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1022
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1011
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1010
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1025
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1024
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1013
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1012
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke
 __30-[IBGBugVC orientationChanged]_block_invoke
 __52-[IBGBugVC didSelectAudioAttachment:startedPlaying:]_block_invoke
-__44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.841
+__44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke.843
 __44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke
 __32-[IBGBugVC submitButtonPressed:]_block_invoke
 -[IBGSurveyStarRatingViewController viewDidLoad]
@@ -4033,9 +4053,12 @@ __32-[IBGBugVC submitButtonPressed:]_block_invoke
 -[IBGSurveyStarRatingViewController reloadView]
 -[IBGSurveyStarRatingViewController starRatingView]
 -[IBGSurveyStarRatingViewController didSelectStar:]
+-[IBGSurveyStarRatingViewController setAnswer:]
+-[IBGSurveyStarRatingViewController answer]
 -[IBGSurveyStarRatingViewController setStarRatingView:]
 -[IBGSurveyStarRatingViewController .cxx_destruct]
 _OBJC_IVAR_$_IBGSurveyStarRatingViewController._starRatingView
+_OBJC_IVAR_$_IBGSurveyStarRatingViewController._answer
 l_OBJC_PROTOCOL_$_IBGStarRatingSurveyViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGStarRatingSurveyViewDelegate
 /Users/distiller/project/Instabug/InstabugSurveys/View controllers/IBGSurveyStarRatingViewController.m
@@ -4476,13 +4499,6 @@ _OSSwapInt32
 /Applications/Xcode-9.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/libkern/arm/OSByteOrder.h
 __54-[IBGPushNotificationsManager initializationOperation]_block_invoke
 __42+[IBGPushNotificationsManager getInstance]_block_invoke
--[IBGNPSTagCollectionViewDataSource initWithNumberOfTags:]
--[IBGNPSTagCollectionViewDataSource collectionView:numberOfItemsInSection:]
--[IBGNPSTagCollectionViewDataSource collectionView:cellForItemAtIndexPath:]
--[IBGNPSTagCollectionViewDataSource numberOfTags]
--[IBGNPSTagCollectionViewDataSource setNumberOfTags:]
-_OBJC_IVAR_$_IBGNPSTagCollectionViewDataSource._numberOfTags
-/Users/distiller/project/Instabug/InstabugSurveys/Helpers/NPS/IBGNPSTagCollectionViewDataSource.m
 -[IBGSurveyNPSLayoutAttributes init]
 -[IBGSurveyNPSLayoutAttributes initWithLayoutOrientation:]
 -[IBGSurveyNPSLayoutAttributes setupCommon]
@@ -4751,6 +4767,7 @@ _OBJC_IVAR_$_IBGFeatureDetailAddCommentController._email
 +[IBGSurvey surveysFromResponseArray:]
 -[IBGSurvey hasToken]
 -[IBGSurvey dismissed]
+-[IBGSurvey answered]
 -[IBGSurvey hasTokenEqualToToken:]
 -[IBGSurvey nextQuestionCurrentIndex:currentAnswer:]
 -[IBGSurvey previousQuestionCurrentIndex:]
@@ -4760,7 +4777,6 @@ _OBJC_IVAR_$_IBGFeatureDetailAddCommentController._email
 -[IBGSurvey wasPresentedBefore]
 -[IBGSurvey wasDismissedBefore]
 -[IBGSurvey canBePresented]
--[IBGSurvey shouldShowIntroMessage]
 -[IBGSurvey description]
 -[IBGSurvey isQuestionOptionalAt:]
 -[IBGSurvey isStarRartingSurvey]
@@ -4770,6 +4786,7 @@ _OBJC_IVAR_$_IBGFeatureDetailAddCommentController._email
 -[IBGSurvey send]
 ___17-[IBGSurvey send]_block_invoke
 -[IBGSurvey surveyAnswerRequestDone:sentEvents:isSucess:error:]
+-[IBGSurvey clearAnswers]
 -[IBGSurvey coderNameForSelector:]
 -[IBGSurvey save]
 -[IBGSurvey surveyContainsDaysSinceDismissCondition]
@@ -4809,8 +4826,6 @@ ___17-[IBGSurvey send]_block_invoke
 -[IBGSurvey setSurveyEvents:]
 -[IBGSurvey questions]
 -[IBGSurvey setQuestions:]
--[IBGSurvey welcomeConfig]
--[IBGSurvey setWelcomeConfig:]
 -[IBGSurvey questionNavigator]
 -[IBGSurvey setQuestionNavigator:]
 -[IBGSurvey .cxx_destruct]
@@ -4830,7 +4845,6 @@ _OBJC_IVAR_$_IBGSurvey._numberOfSessionsSinceDismiss
 _OBJC_IVAR_$_IBGSurvey._eventsIndex
 _OBJC_IVAR_$_IBGSurvey._surveyEvents
 _OBJC_IVAR_$_IBGSurvey._questions
-_OBJC_IVAR_$_IBGSurvey._welcomeConfig
 _OBJC_IVAR_$_IBGSurvey._questionNavigator
 l_OBJC_PROTOCOL_$_IBGSurveyAnswerRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGSurveyAnswerRequestDelegate
@@ -4978,6 +4992,10 @@ _OBJC_IVAR_$_IBGStarRatingSurveyView._rating
 _OBJC_IVAR_$_IBGStarRatingSurveyView._delegate
 /Users/distiller/project/Instabug/InstabugSurveys/Views/IBGStarRatingSurveyView.m
 /Users/distiller/project/Instabug/InstabugSurveys/Views/IBGStarRatingSurveyView.h
+-[IBGSurveyEventShow initAt:index:]
+-[IBGSurveyEventShow initWithIndex:]
+-[IBGSurveyEventShow type]
+/Users/distiller/project/Instabug/InstabugSurveys/Models/Survey Events/IBGSurveyEventShow.m
 -[IBGLoadingTableViewCell initWithStyle:reuseIdentifier:]
 -[IBGLoadingTableViewCell updateConstraints]
 -[IBGLoadingTableViewCell prepareForReuse]
@@ -5427,17 +5445,6 @@ _OBJC_IVAR_$_IBGUnnotifiedMessagesAlertWindow._trailingConstraint
 /Users/distiller/project/Instabug/InstabugChats/Window/IBGUnnotifiedMessagesAlertWindow.m
 __66-[IBGUnnotifiedMessagesAlertWindow animatePositionWithCompletion:]_block_invoke
 __49-[IBGUnnotifiedMessagesAlertWindow hideAnimated:]_block_invoke
--[IBGNPSTagCollectionViewCell initWithFrame:]
--[IBGNPSTagCollectionViewCell updateConstraints]
--[IBGNPSTagCollectionViewCell setTag:]
--[IBGNPSTagCollectionViewCell tagLabel]
--[IBGNPSTagCollectionViewCell attributes]
--[IBGNPSTagCollectionViewCell setTagLabel:]
--[IBGNPSTagCollectionViewCell setAttributes:]
--[IBGNPSTagCollectionViewCell .cxx_destruct]
-_OBJC_IVAR_$_IBGNPSTagCollectionViewCell._tagLabel
-_OBJC_IVAR_$_IBGNPSTagCollectionViewCell._attributes
-/Users/distiller/project/Instabug/InstabugSurveys/Views/Cells/IBGNPSTagCollectionViewCell.m
 -[IBGSurveyThankYouView initWithSurveyLayoutType:]
 -[IBGSurveyThankYouView setTraitCollecitonConstraints]
 -[IBGSurveyThankYouView updateConstraints]
@@ -5837,6 +5844,7 @@ _OBJC_IVAR_$_IBGSurveysEvaluator._hasPendingSurveys
 -[IBGSurveyNPSView didChangeOrientation]
 ___40-[IBGSurveyNPSView didChangeOrientation]_block_invoke
 -[IBGSurveyNPSView reloadCollectionView]
+-[IBGSurveyNPSView setRating:]
 -[IBGSurveyNPSView addSubviews]
 -[IBGSurveyNPSView registerNotifications]
 -[IBGSurveyNPSView unregisterNotifications]
@@ -5844,54 +5852,45 @@ ___40-[IBGSurveyNPSView didChangeOrientation]_block_invoke
 -[IBGSurveyNPSView likelyLabelWithText:]
 -[IBGSurveyNPSView showZoomedRateViewAtIndexPath:shouldDeselectPrevious:collectionView:]
 ___88-[IBGSurveyNPSView showZoomedRateViewAtIndexPath:shouldDeselectPrevious:collectionView:]_block_invoke
-___copy_helper_block_.147
-___destroy_helper_block_.148
+___copy_helper_block_.143
+___destroy_helper_block_.144
 -[IBGSurveyNPSView hideZoomedViewAndSelectItemAtIndexPath:]
 ___59-[IBGSurveyNPSView hideZoomedViewAndSelectItemAtIndexPath:]_block_invoke
-___copy_helper_block_.152
-___destroy_helper_block_.153
+___copy_helper_block_.146
+___destroy_helper_block_.147
 -[IBGSurveyNPSView collectionView:didBeginTouchAtIndexPath:]
 -[IBGSurveyNPSView collectionView:didEndTouchAtIndexPath:]
 -[IBGSurveyNPSView collectionView:didTapAtIndexPath:]
 ___53-[IBGSurveyNPSView collectionView:didTapAtIndexPath:]_block_invoke
-___copy_helper_block_.161
-___destroy_helper_block_.162
+___copy_helper_block_.155
+___destroy_helper_block_.156
 -[IBGSurveyNPSView collectionView]
--[IBGSurveyNPSView tagsCollectionView]
 -[IBGSurveyNPSView moreLikelyLabel]
 -[IBGSurveyNPSView lessLikelyLabel]
--[IBGSurveyNPSView tagsCollectionViewDataSource]
 -[IBGSurveyNPSView attributes]
 -[IBGSurveyNPSView zoomedRateView]
 -[IBGSurveyNPSView setSelectedIndex:]
 -[IBGSurveyNPSView setCollectionView:]
--[IBGSurveyNPSView setTagsCollectionView:]
 -[IBGSurveyNPSView setMoreLikelyLabel:]
 -[IBGSurveyNPSView setLessLikelyLabel:]
 -[IBGSurveyNPSView setZoomedRateView:]
--[IBGSurveyNPSView setTagsCollectionViewDataSource:]
 -[IBGSurveyNPSView setAttributes:]
 -[IBGSurveyNPSView collectionViewHeightConstraint]
 -[IBGSurveyNPSView setCollectionViewHeightConstraint:]
--[IBGSurveyNPSView tagCollectionViewHeightConstraint]
--[IBGSurveyNPSView setTagCollectionViewHeightConstraint:]
 -[IBGSurveyNPSView selectedIndex]
 -[IBGSurveyNPSView delegate]
 -[IBGSurveyNPSView setDelegate:]
 -[IBGSurveyNPSView .cxx_destruct]
-___block_descriptor_tmp.149
-___block_descriptor_tmp.154
-___block_descriptor_tmp.163
+___block_descriptor_tmp.145
+___block_descriptor_tmp.148
+___block_descriptor_tmp.157
 _OBJC_IVAR_$_IBGSurveyNPSView._collectionView
-_OBJC_IVAR_$_IBGSurveyNPSView._tagsCollectionView
 _OBJC_IVAR_$_IBGSurveyNPSView._moreLikelyLabel
 _OBJC_IVAR_$_IBGSurveyNPSView._lessLikelyLabel
-_OBJC_IVAR_$_IBGSurveyNPSView._tagsCollectionViewDataSource
 _OBJC_IVAR_$_IBGSurveyNPSView._attributes
 _OBJC_IVAR_$_IBGSurveyNPSView._zoomedRateView
 _OBJC_IVAR_$_IBGSurveyNPSView._selectedIndex
 _OBJC_IVAR_$_IBGSurveyNPSView._collectionViewHeightConstraint
-_OBJC_IVAR_$_IBGSurveyNPSView._tagCollectionViewHeightConstraint
 _OBJC_IVAR_$_IBGSurveyNPSView._delegate
 l_OBJC_PROTOCOL_$_IBGSurveyNPSCollectionViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGSurveyNPSCollectionViewDelegate
@@ -5961,7 +5960,8 @@ ___block_descriptor_tmp.33
 ___block_literal_global.34
 ___block_descriptor_tmp.35
 ___block_literal_global.36
-___block_literal_global.43
+___block_descriptor_tmp.40
+___block_literal_global.41
 /Users/distiller/project/Instabug/InstabugSurveys/Defaults/IBGSurveysIcons.m
 npsZoomedLandscapeBlock_block_invoke_5
 npsZoomedBlock_block_invoke_4
@@ -5971,10 +5971,14 @@ starRatingIcon_block_invoke
 -[IBGNPSCollectionViewCell initWithFrame:]
 -[IBGNPSCollectionViewCell updateConstraints]
 -[IBGNPSCollectionViewCell setSelected:]
--[IBGNPSCollectionViewCell circleView]
--[IBGNPSCollectionViewCell setCircleView:]
+-[IBGNPSCollectionViewCell setTag:]
+-[IBGNPSCollectionViewCell numberLabel]
+-[IBGNPSCollectionViewCell attributes]
+-[IBGNPSCollectionViewCell setNumberLabel:]
+-[IBGNPSCollectionViewCell setAttributes:]
 -[IBGNPSCollectionViewCell .cxx_destruct]
-_OBJC_IVAR_$_IBGNPSCollectionViewCell._circleView
+_OBJC_IVAR_$_IBGNPSCollectionViewCell._numberLabel
+_OBJC_IVAR_$_IBGNPSCollectionViewCell._attributes
 /Users/distiller/project/Instabug/InstabugSurveys/Views/Cells/IBGNPSCollectionViewCell.m
 -[IBGDiffEngine diffBetweenObjects:newObjects:]
 -[IBGDiffEngine createDictionaryFromDiffableArray:]
@@ -6554,13 +6558,16 @@ __32+[IBGChatsDataStore getInstance]_block_invoke
 -[IBGSurveyMCQViewController viewWillAppear:]
 ___45-[IBGSurveyMCQViewController viewWillAppear:]_block_invoke
 -[IBGSurveyMCQViewController viewDidAppear:]
+___44-[IBGSurveyMCQViewController viewDidAppear:]_block_invoke
+___copy_helper_block_.510
+___destroy_helper_block_.511
 -[IBGSurveyMCQViewController observeValueForKeyPath:ofObject:change:context:]
 -[IBGSurveyMCQViewController setupConstraints]
 -[IBGSurveyMCQViewController dealloc]
 -[IBGSurveyMCQViewController didChangeOrientation]
 ___50-[IBGSurveyMCQViewController didChangeOrientation]_block_invoke
-___copy_helper_block_.555
-___destroy_helper_block_.556
+___copy_helper_block_.560
+___destroy_helper_block_.561
 -[IBGSurveyMCQViewController setLayoutForCurrentLayout:]
 -[IBGSurveyMCQViewController collectionView:didSelectItemAtIndexPath:]
 -[IBGSurveyMCQViewController collectionView:didDeselectItemAtIndexPath:]
@@ -6568,15 +6575,13 @@ ___destroy_helper_block_.556
 -[IBGSurveyMCQViewController addSubviews]
 -[IBGSurveyMCQViewController reloadView]
 ___40-[IBGSurveyMCQViewController reloadView]_block_invoke
-___copy_helper_block_.587
-___destroy_helper_block_.588
+___copy_helper_block_.592
+___destroy_helper_block_.593
 -[IBGSurveyMCQViewController animateSelectionForCell:]
 ___54-[IBGSurveyMCQViewController animateSelectionForCell:]_block_invoke
-___copy_helper_block_.593
-___destroy_helper_block_.594
-___54-[IBGSurveyMCQViewController animateSelectionForCell:]_block_invoke.596
-___copy_helper_block_.597
-___destroy_helper_block_.598
+___copy_helper_block_.598
+___destroy_helper_block_.599
+___54-[IBGSurveyMCQViewController animateSelectionForCell:]_block_invoke.601
 -[IBGSurveyMCQViewController registerNotification]
 -[IBGSurveyMCQViewController unregisterNotification]
 -[IBGSurveyMCQViewController scrollViewDidScroll:]
@@ -6593,20 +6598,21 @@ ___destroy_helper_block_.598
 -[IBGSurveyMCQViewController setTopSepratorView:]
 -[IBGSurveyMCQViewController setBottomSepratorView:]
 -[IBGSurveyMCQViewController .cxx_destruct]
-___block_descriptor_tmp.557
-___block_descriptor_tmp.589
-___block_descriptor_tmp.595
+___block_descriptor_tmp.512
+___block_descriptor_tmp.562
 ___block_descriptor_tmp.600
+___block_descriptor_tmp.605
 _OBJC_IVAR_$_IBGSurveyMCQViewController._attributes
 _OBJC_IVAR_$_IBGSurveyMCQViewController._surveyCollectionView
 _OBJC_IVAR_$_IBGSurveyMCQViewController._topSepratorView
 _OBJC_IVAR_$_IBGSurveyMCQViewController._bottomSepratorView
 _OBJC_IVAR_$_IBGSurveyMCQViewController._dataSource
 /Users/distiller/project/Instabug/InstabugSurveys/View controllers/IBGSurveyMCQViewController.m
-__54-[IBGSurveyMCQViewController animateSelectionForCell:]_block_invoke.596
+__54-[IBGSurveyMCQViewController animateSelectionForCell:]_block_invoke.601
 __54-[IBGSurveyMCQViewController animateSelectionForCell:]_block_invoke
 __40-[IBGSurveyMCQViewController reloadView]_block_invoke
 __50-[IBGSurveyMCQViewController didChangeOrientation]_block_invoke
+__44-[IBGSurveyMCQViewController viewDidAppear:]_block_invoke
 __45-[IBGSurveyMCQViewController viewWillAppear:]_block_invoke
 -[IBGMessagesView init]
 -[IBGMessagesView awakeFromNib]
@@ -6939,6 +6945,8 @@ ___destroy_helper_block_.1102
 +[Instabug setDidDismissSurveyHandler:]
 +[Instabug setThresholdForReshowingSurveyAfterDismiss:daysCount:]
 ___65+[Instabug setThresholdForReshowingSurveyAfterDismiss:daysCount:]_block_invoke
++[Instabug setShouldShowSurveysWelcomeScreen:]
+___46+[Instabug setShouldShowSurveysWelcomeScreen:]_block_invoke
 +[Instabug showFeatureRequests]
 +[Instabug invoke]
 +[Instabug invokeWithInvocationMode:]
@@ -6946,29 +6954,29 @@ ___65+[Instabug setThresholdForReshowingSurveyAfterDismiss:daysCount:]_block_inv
 +[Instabug reportBugWithEmail:comment:screenshot:]
 ___50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke
 ___50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke_2
-___copy_helper_block_.1144
-___destroy_helper_block_.1145
-___copy_helper_block_.1147
-___destroy_helper_block_.1148
-+[Instabug reportFeedBackWithEmail:comment:screenshot:]
-___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke
-___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke_2
 ___copy_helper_block_.1150
 ___destroy_helper_block_.1151
 ___copy_helper_block_.1153
 ___destroy_helper_block_.1154
++[Instabug reportFeedBackWithEmail:comment:screenshot:]
+___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke
+___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke_2
+___copy_helper_block_.1156
+___destroy_helper_block_.1157
+___copy_helper_block_.1159
+___destroy_helper_block_.1160
 +[Instabug reportException:]
 ___28+[Instabug reportException:]_block_invoke
-___copy_helper_block_.1158
-___destroy_helper_block_.1159
+___copy_helper_block_.1164
+___destroy_helper_block_.1165
 +[Instabug reportError:]
 ___24+[Instabug reportError:]_block_invoke
-___copy_helper_block_.1163
-___destroy_helper_block_.1164
+___copy_helper_block_.1169
+___destroy_helper_block_.1170
 +[Instabug reportCrashWithStackTrace:handled:]
 ___46+[Instabug reportCrashWithStackTrace:handled:]_block_invoke
-___copy_helper_block_.1172
-___destroy_helper_block_.1173
+___copy_helper_block_.1178
+___destroy_helper_block_.1179
 +[Instabug invokeConversations]
 +[Instabug isInstabugNotification:]
 +[Instabug didRegisterForRemoteNotificationsWithDeviceToken:]
@@ -7006,13 +7014,14 @@ ___block_descriptor_tmp.1073
 ___block_descriptor_tmp.1098
 ___block_descriptor_tmp.1103
 ___block_descriptor_tmp.1119
-___block_descriptor_tmp.1146
-___block_descriptor_tmp.1149
+___block_descriptor_tmp.1125
 ___block_descriptor_tmp.1152
 ___block_descriptor_tmp.1155
-___block_descriptor_tmp.1160
-___block_descriptor_tmp.1165
-___block_descriptor_tmp.1174
+___block_descriptor_tmp.1158
+___block_descriptor_tmp.1161
+___block_descriptor_tmp.1166
+___block_descriptor_tmp.1171
+___block_descriptor_tmp.1180
 /Users/distiller/project/Instabug/InstabugI/Instabug.m
 IBGNSLogWithLevel
 IBGNSLog
@@ -7029,6 +7038,7 @@ __55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke_2
 __55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke
 __50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke_2
 __50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke
+__46+[Instabug setShouldShowSurveysWelcomeScreen:]_block_invoke
 __65+[Instabug setThresholdForReshowingSurveyAfterDismiss:daysCount:]_block_invoke
 __32+[Instabug showSurveyWithToken:]_block_invoke
 __33+[Instabug showSurveyIfAvailable]_block_invoke
@@ -7555,19 +7565,14 @@ ___65-[UIViewController(IBGFeatureRequestsHUD) dismissHUD:completion:]_block_inv
 ___copy_helper_block_.37
 ___destroy_helper_block_.38
 ___block_descriptor_tmp.28
-___block_descriptor_tmp.40
 /Users/distiller/project/Instabug/FeaturesRequest/Categories/UIViewController+IBGFeatureRequestsHUD.m
 __65-[UIViewController(IBGFeatureRequestsHUD) dismissHUD:completion:]_block_invoke.34
 __65-[UIViewController(IBGFeatureRequestsHUD) dismissHUD:completion:]_block_invoke
 __101-[UIViewController(IBGFeatureRequestsHUD) transitionHUD:toMode:text:subtext:dismissAfter:completion:]_block_invoke
 __72-[UIViewController(IBGFeatureRequestsHUD) showHUDWithText:subtext:mode:]_block_invoke
-+[IBGSurveyWelcome defaultWelcomeForTargeted:]
--[IBGSurveyWelcome initWithJSONDictionary:]
--[IBGSurveyWelcome initWithDictionary:]
++[IBGSurveyWelcome defaultWelcome]
 -[IBGSurveyWelcome dictionaryValue]
 -[IBGSurveyWelcome coderNameForSelector:]
--[IBGSurveyWelcome shouldShow]
--[IBGSurveyWelcome setShouldShow:]
 -[IBGSurveyWelcome title]
 -[IBGSurveyWelcome setTitle:]
 -[IBGSurveyWelcome subTitle]
@@ -7575,7 +7580,6 @@ __72-[UIViewController(IBGFeatureRequestsHUD) showHUDWithText:subtext:mode:]_blo
 -[IBGSurveyWelcome buttonTitle]
 -[IBGSurveyWelcome setButtonTitle:]
 -[IBGSurveyWelcome .cxx_destruct]
-_OBJC_IVAR_$_IBGSurveyWelcome._shouldShow
 _OBJC_IVAR_$_IBGSurveyWelcome._title
 _OBJC_IVAR_$_IBGSurveyWelcome._subTitle
 _OBJC_IVAR_$_IBGSurveyWelcome._buttonTitle
