@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
   s.requires_arc = true
+  s.static_framework = true
 
   s.subspec 'InstabugCore' do |sc|
     sc.source_files = 'InstabugCore.framework/Headers/*.{h}'
