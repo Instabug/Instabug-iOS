@@ -13,8 +13,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.script_phase = {
     :name => 'Upload dSYMs',
-    :script => '
-    SCRIPT_SRC=$(find "$PROJECT_DIR/../InstabugCore" -name "Instabug_dsym_upload.sh" | head -1)
+    :script => 'SCRIPT_SRC=$(find "$PROJECT_DIR" -name "Instabug_dsym_upload.sh" | head -1)
     if [ ! "${SCRIPT_SRC}" ]; then
       echo "Instabug: err: script not found. Make sure that you are including Instabug.bundle in your project directory"
       exit 1

@@ -39,7 +39,8 @@ if [ ! "${APP_TOKEN}" ]; then
 fi
 
 if [ ! "${APP_TOKEN}" ]; then
-    APP_TOKEN=$(grep -r 'Instabug.start(withToken:\"[0-9a-zA-Z]*\"' ./ -m 1 | grep -o '\"[0-9a-zA-Z]*\"' | cut -d "\"" -f 2)
+echo "Ok"
+    APP_TOKEN=$(grep -r 'Instabug.start(withToken:\"[0-9a-zA-Z]*\"' ./ -m 1 | grep -o '\"[0-9a-zA-Z]*\"' | cut -d "\"" -f 2 AppDelegate.swift)
 fi
 
 if [ ! "${APP_TOKEN}" ] || [ -z "${APP_TOKEN}" ];then
