@@ -27,6 +27,10 @@ if [ "$EFFECTIVE_PLATFORM_NAME" == "-iphonesimulator" ]; then
   fi
 fi
 
+# Change directory the project's root directory so that grep can search for the APP_TOKEN
+PRJ_DIR="${SRCROOT}/.."
+cd "$PRJ_DIR"
+
 # Check to make sure the app token exists
 # Objective-C
 if [ ! "${APP_TOKEN}" ]; then
@@ -39,8 +43,7 @@ if [ ! "${APP_TOKEN}" ]; then
 fi
 
 if [ ! "${APP_TOKEN}" ]; then
-echo "Ok"
-    APP_TOKEN=$(grep -r 'Instabug.start(withToken:\"[0-9a-zA-Z]*\"' ./ -m 1 | grep -o '\"[0-9a-zA-Z]*\"' | cut -d "\"" -f 2 AppDelegate.swift)
+    APP_TOKEN=$(grep -r 'Instabug.start(withToken:\"[0-9a-zA-Z]*\"' ./ -m 1 | grep -o '\"[0-9a-zA-Z]*\"' | cut -d "\"" -f 2)
 fi
 
 if [ ! "${APP_TOKEN}" ] || [ -z "${APP_TOKEN}" ];then
