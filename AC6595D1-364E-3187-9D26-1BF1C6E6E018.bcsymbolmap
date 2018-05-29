@@ -25,6 +25,7 @@ Apple LLVM version 9.1.0 (clang-902.0.39.1)
 /Users/distiller/project/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVoicePlayer.m
 /Users/distiller/project/InstabugCore
 /Users/distiller/project/InstabugCore/InstabugCore/Helpers/Recorders and Players/IBGVoicePlayer.h
+-[IBGNavigationController initWithRootViewController:]
 -[IBGNavigationController init]
 -[IBGNavigationController viewWillAppear:]
 -[IBGNavigationController preferredStatusBarStyle]
@@ -37,12 +38,12 @@ ___copy_helper_block_
 ___destroy_helper_block_
 -[IBGNavigationController navigationController:willShowViewController:animated:]
 ___80-[IBGNavigationController navigationController:willShowViewController:animated:]_block_invoke
-___copy_helper_block_.57
-___destroy_helper_block_.58
+___copy_helper_block_.71
+___destroy_helper_block_.72
 -[IBGNavigationController pushViewController:animated:]
 ___55-[IBGNavigationController pushViewController:animated:]_block_invoke
-___copy_helper_block_.62
-___destroy_helper_block_.63
+___copy_helper_block_.76
+___destroy_helper_block_.77
 -[IBGNavigationController setShadowHidden:]
 -[IBGNavigationController drawBorder]
 -[IBGNavigationController drawShadow]
@@ -52,8 +53,8 @@ ___destroy_helper_block_.63
 -[IBGNavigationController setBorderLayer:]
 -[IBGNavigationController .cxx_destruct]
 ___block_descriptor_tmp
-___block_descriptor_tmp.59
-___block_descriptor_tmp.64
+___block_descriptor_tmp.73
+___block_descriptor_tmp.78
 _OBJC_IVAR_$_IBGNavigationController._borderLayer
 l_OBJC_PROTOCOL_$_UINavigationControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_UINavigationControllerDelegate
@@ -1105,8 +1106,6 @@ ___copy_helper_block_.73
 ___destroy_helper_block_.74
 -[IBGDALService performBlockSyncWithoutSave:]
 ___45-[IBGDALService performBlockSyncWithoutSave:]_block_invoke
-___copy_helper_block_.76
-___destroy_helper_block_.77
 -[IBGDALService coreDataPersistenceManager]
 -[IBGDALService setCoreDataPersistenceManager:]
 -[IBGDALService contextProvider]
@@ -1128,7 +1127,6 @@ ___block_descriptor_tmp.60
 ___block_descriptor_tmp.68
 ___block_descriptor_tmp.71
 ___block_descriptor_tmp.75
-___block_descriptor_tmp.78
 l_OBJC_PROTOCOL_$_IBGDALProtocol
 l_OBJC_LABEL_PROTOCOL_$_IBGDALProtocol
 /Users/distiller/project/InstabugCore/InstabugCore/Models/Core Data/IBGDALService.m
@@ -6462,6 +6460,7 @@ _OBJC_IVAR_$_IBGMatchingInfo._pathLength
 _OBJC_IVAR_$_IBGMatchingInfo._matchRect
 /Users/distiller/project/InstabugCore/InstabugCore/Screenshot Annotations/Shape Recognizer/IBGMatchingInfo.m
 /Users/distiller/project/InstabugCore/InstabugCore/Screenshot Annotations/Shape Recognizer/IBGMatchingInfo.h
+/Users/distiller/project/InstabugCore/InstabugCore/View Controllers/Navigation Bar/IBGNavigationBar.m
 -[IBGCircleAnnotationView initWithFrame:zPosition:originator:annotatingColor:angle:]
 -[IBGCircleAnnotationView drawRect:]
 -[IBGCircleAnnotationView containsPoint:]
