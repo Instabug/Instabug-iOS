@@ -2970,9 +2970,6 @@ _OBJC_IVAR_$_IBGDrawingToolbarView._brushColorIndicator
 +[NSString(Additions) timerFromTimeInterval:]
 +[NSString(Additions) timeStringFromTime:]
 /Users/distiller/project/InstabugCore/InstabugCore/Helpers/Categories/NSString+Additions.m
--[NSString(IBGClassTypeInjectiton) ibg_ofType:]
--[NSString(IBGClassTypeInjectiton) ibg_type]
--[NSString(IBGClassTypeInjectiton) ibg_value]
 /Users/distiller/project/InstabugCore/InstabugCore/Helpers/IBGNSStringFromConversions.m
 NSStringFromIBGWelcomeMessageMode
 NSStringFromIBGExtendedBugReportMode
@@ -7616,24 +7613,22 @@ ___50-[IBGMethodsLogger logMethod:isDeprecated:params:]_block_invoke
 -[IBGMethodsLogger loadLogsSynchronously:sessionDate:withCompletionHandler:]
 -[IBGMethodsLogger loadLogsSynchronouslyWithSessionDate:]
 ___57-[IBGMethodsLogger loadLogsSynchronouslyWithSessionDate:]_block_invoke
-___copy_helper_block_.547
-___destroy_helper_block_.548
 -[IBGMethodsLogger loadLogsAsynchronouslyWithSessionDate:completionHandler:]
 ___76-[IBGMethodsLogger loadLogsAsynchronouslyWithSessionDate:completionHandler:]_block_invoke
-___copy_helper_block_.552
-___destroy_helper_block_.553
+___copy_helper_block_.550
+___destroy_helper_block_.551
 -[IBGMethodsLogger clearAllLogs]
 ___32-[IBGMethodsLogger clearAllLogs]_block_invoke
 -[IBGMethodsLogger purgeAllLogsTillDate:]
 ___41-[IBGMethodsLogger purgeAllLogsTillDate:]_block_invoke
-___copy_helper_block_.562
-___destroy_helper_block_.563
+___copy_helper_block_.560
+___destroy_helper_block_.561
 +[IBGMethodsLogger dataLayerService]
 ___36+[IBGMethodsLogger dataLayerService]_block_invoke
-___block_descriptor_tmp.554
-___block_descriptor_tmp.557
-___block_descriptor_tmp.566
-___block_literal_global.567
+___block_descriptor_tmp.552
+___block_descriptor_tmp.555
+___block_descriptor_tmp.562
+___block_literal_global.565
 /Users/distiller/project/InstabugCore/InstabugCore/Logging/IBGMethodsLogger.m
 __36+[IBGMethodsLogger dataLayerService]_block_invoke
 __41-[IBGMethodsLogger purgeAllLogsTillDate:]_block_invoke
