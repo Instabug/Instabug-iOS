@@ -1,7 +1,6 @@
 framework module InstabugCore {
     umbrella header "InstabugCore.h"
 
-    header "IBGTypes.h", "IBGReport.h"
     export *
     module * { export * }
 }
