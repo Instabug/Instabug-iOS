@@ -9,9 +9,8 @@
 /* Begin PBXBuildFile section */
 		547E5E8A1E225BD60026D35A /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547E5E881E225B890026D35A /* Instabug.framework */; };
 		547E5E8B1E225BD60026D35A /* Instabug.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 547E5E881E225B890026D35A /* Instabug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		54B011891D901660002AF597 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B011881D901660002AF597 /* main.m */; };
-		54B0118C1D901660002AF597 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0118B1D901660002AF597 /* AppDelegate.m */; };
-		54B0118F1D901660002AF597 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B0118E1D901660002AF597 /* ViewController.m */; };
+		54B0118C1D901660002AF597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0118B1D901660002AF597 /* AppDelegate.swift */; };
+		54B0118F1D901660002AF597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0118E1D901660002AF597 /* ViewController.swift */; };
 		54B011921D901660002AF597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B011901D901660002AF597 /* Main.storyboard */; };
 		54B011941D901660002AF597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B011931D901660002AF597 /* Assets.xcassets */; };
 		54B011971D901660002AF597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B011951D901660002AF597 /* LaunchScreen.storyboard */; };
@@ -22,8 +21,8 @@
 		54B011B01D9018C3002AF597 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B011AF1D9018C3002AF597 /* CoreGraphics.framework */; };
 		54B011B21D9018CB002AF597 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B011B11D9018CB002AF597 /* UIKit.framework */; };
 		54B011BC1D902CA9002AF597 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B011BB1D902CA9002AF597 /* CoreMedia.framework */; };
-		54B011C11D9110F5002AF597 /* UIViewController+DefaultAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B011C01D9110F5002AF597 /* UIViewController+DefaultAlertController.m */; };
-		54B011C41D911199002AF597 /* UIAlertAction+DefaultAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.m */; };
+		54B011C11D9110F5002AF597 /* UIViewController+DefaultAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B011C01D9110F5002AF597 /* UIViewController+DefaultAlertController.swift */; };
+		54B011C41D911199002AF597 /* UIAlertAction+DefaultAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.swift */; };
 		E18D79FC1FDE6D4200D7C10E /* InstabugCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18D79FB1FDE6D4200D7C10E /* InstabugCore.framework */; };
 		E18D79FD1FDE6D4200D7C10E /* InstabugCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E18D79FB1FDE6D4200D7C10E /* InstabugCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -46,11 +45,8 @@
 /* Begin PBXFileReference section */
 		547E5E881E225B890026D35A /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = ../../Instabug.framework; sourceTree = "<group>"; };
 		54B011841D901660002AF597 /* Instabug Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instabug Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		54B011881D901660002AF597 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		54B0118A1D901660002AF597 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		54B0118B1D901660002AF597 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		54B0118D1D901660002AF597 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		54B0118E1D901660002AF597 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		54B0118B1D901660002AF597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54B0118E1D901660002AF597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		54B011911D901660002AF597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54B011931D901660002AF597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54B011961D901660002AF597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,10 +58,8 @@
 		54B011AF1D9018C3002AF597 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		54B011B11D9018CB002AF597 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54B011BB1D902CA9002AF597 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		54B011BF1D9110F5002AF597 /* UIViewController+DefaultAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DefaultAlertController.h"; sourceTree = "<group>"; };
-		54B011C01D9110F5002AF597 /* UIViewController+DefaultAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DefaultAlertController.m"; sourceTree = "<group>"; };
-		54B011C21D911199002AF597 /* UIAlertAction+DefaultAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertAction+DefaultAction.h"; sourceTree = "<group>"; };
-		54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertAction+DefaultAction.m"; sourceTree = "<group>"; };
+		54B011C01D9110F5002AF597 /* UIViewController+DefaultAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+DefaultAlertController.swift"; sourceTree = "<group>"; };
+		54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertAction+DefaultAction.swift"; sourceTree = "<group>"; };
 		E18D79FB1FDE6D4200D7C10E /* InstabugCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InstabugCore.framework; path = ../InstabugCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,10 +114,8 @@
 			children = (
 				541FA2741DC888600037AA01 /* Instabug */,
 				54B011BE1D9110BD002AF597 /* Support */,
-				54B0118A1D901660002AF597 /* AppDelegate.h */,
-				54B0118B1D901660002AF597 /* AppDelegate.m */,
-				54B0118D1D901660002AF597 /* ViewController.h */,
-				54B0118E1D901660002AF597 /* ViewController.m */,
+				54B0118B1D901660002AF597 /* AppDelegate.swift */,
+				54B0118E1D901660002AF597 /* ViewController.swift */,
 				54B011901D901660002AF597 /* Main.storyboard */,
 				54B011931D901660002AF597 /* Assets.xcassets */,
 				54B011951D901660002AF597 /* LaunchScreen.storyboard */,
@@ -136,7 +128,6 @@
 		54B011871D901660002AF597 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				54B011881D901660002AF597 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -158,10 +149,8 @@
 		54B011BE1D9110BD002AF597 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				54B011BF1D9110F5002AF597 /* UIViewController+DefaultAlertController.h */,
-				54B011C01D9110F5002AF597 /* UIViewController+DefaultAlertController.m */,
-				54B011C21D911199002AF597 /* UIAlertAction+DefaultAction.h */,
-				54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.m */,
+				54B011C01D9110F5002AF597 /* UIViewController+DefaultAlertController.swift */,
+				54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -238,11 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B011C41D911199002AF597 /* UIAlertAction+DefaultAction.m in Sources */,
-				54B0118F1D901660002AF597 /* ViewController.m in Sources */,
-				54B011C11D9110F5002AF597 /* UIViewController+DefaultAlertController.m in Sources */,
-				54B0118C1D901660002AF597 /* AppDelegate.m in Sources */,
-				54B011891D901660002AF597 /* main.m in Sources */,
+				54B011C41D911199002AF597 /* UIAlertAction+DefaultAction.swift in Sources */,
+				54B0118F1D901660002AF597 /* ViewController.swift in Sources */,
+				54B011C11D9110F5002AF597 /* UIViewController+DefaultAlertController.swift in Sources */,
+				54B0118C1D901660002AF597 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +301,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -355,6 +344,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -373,6 +363,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.instabug.demo.Instabug-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -389,6 +380,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.instabug.demo.Instabug-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
