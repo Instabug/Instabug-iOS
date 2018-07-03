@@ -23,6 +23,7 @@
 		54B011BC1D902CA9002AF597 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B011BB1D902CA9002AF597 /* CoreMedia.framework */; };
 		54B011C11D9110F5002AF597 /* UIViewController+DefaultAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B011C01D9110F5002AF597 /* UIViewController+DefaultAlertController.swift */; };
 		54B011C41D911199002AF597 /* UIAlertAction+DefaultAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.swift */; };
+		71EB748D20EB9B0300C3918F /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB748C20EB9B0300C3918F /* SettingsTableViewController.swift */; };
 		E18D79FC1FDE6D4200D7C10E /* InstabugCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18D79FB1FDE6D4200D7C10E /* InstabugCore.framework */; };
 		E18D79FD1FDE6D4200D7C10E /* InstabugCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E18D79FB1FDE6D4200D7C10E /* InstabugCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		54B011BB1D902CA9002AF597 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		54B011C01D9110F5002AF597 /* UIViewController+DefaultAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+DefaultAlertController.swift"; sourceTree = "<group>"; };
 		54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertAction+DefaultAction.swift"; sourceTree = "<group>"; };
+		71EB748C20EB9B0300C3918F /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		E18D79FB1FDE6D4200D7C10E /* InstabugCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InstabugCore.framework; path = ../InstabugCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 				54B011BE1D9110BD002AF597 /* Support */,
 				54B0118B1D901660002AF597 /* AppDelegate.swift */,
 				54B0118E1D901660002AF597 /* ViewController.swift */,
+				71EB748C20EB9B0300C3918F /* SettingsTableViewController.swift */,
 				54B011901D901660002AF597 /* Main.storyboard */,
 				54B011931D901660002AF597 /* Assets.xcassets */,
 				54B011951D901660002AF597 /* LaunchScreen.storyboard */,
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54B011C41D911199002AF597 /* UIAlertAction+DefaultAction.swift in Sources */,
+				71EB748D20EB9B0300C3918F /* SettingsTableViewController.swift in Sources */,
 				54B0118F1D901660002AF597 /* ViewController.swift in Sources */,
 				54B011C11D9110F5002AF597 /* UIViewController+DefaultAlertController.swift in Sources */,
 				54B0118C1D901660002AF597 /* AppDelegate.swift in Sources */,
