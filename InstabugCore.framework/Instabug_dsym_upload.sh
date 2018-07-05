@@ -27,6 +27,10 @@ if [ "$EFFECTIVE_PLATFORM_NAME" == "-iphonesimulator" ]; then
   fi
 fi
 
+# Change directory the project's root directory so that grep can search for the APP_TOKEN
+PRJ_DIR="${SRCROOT}/.."
+cd "$PRJ_DIR"
+
 # Check to make sure the app token exists
 # Objective-C
 if [ ! "${APP_TOKEN}" ]; then
