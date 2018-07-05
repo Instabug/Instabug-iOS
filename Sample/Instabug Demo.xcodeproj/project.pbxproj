@@ -62,7 +62,7 @@
 		54B011C01D9110F5002AF597 /* UIViewController+DefaultAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+DefaultAlertController.swift"; sourceTree = "<group>"; };
 		54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertAction+DefaultAction.swift"; sourceTree = "<group>"; };
 		71EB748C20EB9B0300C3918F /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
-		E18D79FB1FDE6D4200D7C10E /* InstabugCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InstabugCore.framework; path = ../InstabugCore.framework; sourceTree = "<group>"; };
+		E18D79FB1FDE6D4200D7C10E /* InstabugCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InstabugCore.framework; path = ../../InstabugCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +88,7 @@
 		541FA2741DC888600037AA01 /* Instabug */ = {
 			isa = PBXGroup;
 			children = (
+				E18D79FB1FDE6D4200D7C10E /* InstabugCore.framework */,
 				547E5E881E225B890026D35A /* Instabug.framework */,
 			);
 			name = Instabug;
@@ -96,7 +97,6 @@
 		54B0117B1D901660002AF597 = {
 			isa = PBXGroup;
 			children = (
-				E18D79FB1FDE6D4200D7C10E /* InstabugCore.framework */,
 				54B011861D901660002AF597 /* Instabug Demo */,
 				54B011851D901660002AF597 /* Products */,
 				54B011A61D9018A4002AF597 /* Frameworks */,
