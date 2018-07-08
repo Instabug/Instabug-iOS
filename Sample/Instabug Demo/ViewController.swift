@@ -10,13 +10,12 @@
 //
 import Instabug
 
-
 class ViewController: UITableViewController {
     private var items = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        items = ["Show Instabug", "Show intro message",  "Crash me", "Show NPS Survey", "Show Multiple Question Survey", "Show Feature Requests" , "Show unread messages count", "Settings"]
+        items = ["Show Instabug", "Show intro message",  "Crash me", "Show NPS Survey", "Show Multiple Question Survey", "Show Feature Requests", "Settings"]
         executeHelloWorldRequest()
     }
 
@@ -29,10 +28,8 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "TableViewCellIdentifier", for: indexPath)
         cell?.textLabel?.text = items[indexPath.row]
-        if #available(iOS 8.2, *) {
-            cell?.textLabel?.font = UIFont.systemFont(ofSize: 15, weight: .light)
-        }
-        if indexPath.row == 7 {
+        cell?.textLabel?.font = UIFont.systemFont(ofSize: 15, weight: .light)
+        if indexPath.row == 6 {
             cell?.accessoryType = .disclosureIndicator
         }
         if let aCell = cell {
@@ -45,20 +42,18 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            Instabug.invoke()
+            BugReporting.invoke()
         } else if indexPath.row == 1 {
             Instabug.showWelcomeMessage(with: .beta)
         } else if indexPath.row == 2 {
             crashMe()
         } else if indexPath.row == 3 {
-            Instabug.showSurvey(withToken: "WTMvHW4ZQwQjsVCY9gsIgA")
+            Surveys.showSurvey(withToken: "WTMvHW4ZQwQjsVCY9gsIgA")
         } else if indexPath.row == 4 {
-            Instabug.showSurvey(withToken: "FeOS11wGXcuYgIukm4kFXw")
+            Surveys.showSurvey(withToken: "FeOS11wGXcuYgIukm4kFXw")
         } else if indexPath.row == 5 {
-            Instabug.showFeatureRequests()
+            FeatureRequests.show()
         } else if indexPath.row == 6 {
-            showUnreadMessagesCount()
-        } else if indexPath.row == 7 {
             performSegue(withIdentifier: "showSettings", sender: self)
         }
         tableView.deselectRow(at: indexPath, animated: true)
@@ -77,15 +72,6 @@ class ViewController: UITableViewController {
             print("Response: \(resp)")
         }
         dataTask.resume()
-    }
-    
-    func showUnreadMessagesCount() {
-        let unreadMessagesCount = Instabug.getUnreadMessagesCount()
-        let unreadMessagesCountString = "You have \(unreadMessagesCount) unread message(s)."
-        let alertController = UIAlertController(title: "Unread Messages", message: unreadMessagesCountString, preferredStyle: .alert)
-        let okayAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
-        alertController.addAction(okayAction)
-        present(alertController, animated: true)
     }
     
     func crashMe() {

@@ -20,7 +20,6 @@ class SettingsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return items.count
     }
 
@@ -28,9 +27,7 @@ class SettingsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath)
         cell?.textLabel?.text = items[indexPath.row]
-        if #available(iOS 8.2, *) {
-            cell?.textLabel?.font = UIFont.systemFont(ofSize: 15, weight: .light)
-        }
+        cell?.textLabel?.font = UIFont.systemFont(ofSize: 15, weight: .light)
         if let aCell = cell {
             return aCell
         }
@@ -52,19 +49,19 @@ class SettingsTableViewController: UITableViewController {
     func showInvocationEventsActionSheet() {
         
         let shakeAction = UIAlertAction.ibg_action(withTitle: "Shake", handler: { action in
-            Instabug.setInvocationEvent(.shake)
+            BugReporting.invocationEvents = [.shake]
         })
         
         let swipeAction = UIAlertAction.ibg_action(withTitle: "Swipe", handler: { action in
-            Instabug.setInvocationEvent(.twoFingersSwipeLeft)
+            BugReporting.invocationEvents = [.twoFingersSwipeLeft]
         })
         
         let screenshotAction = UIAlertAction.ibg_action(withTitle: "Screenshot", handler: { action in
-            Instabug.setInvocationEvent(.screenshot)
+            BugReporting.invocationEvents = [.screenshot]
         })
         
         let floatingButtonAction = UIAlertAction.ibg_action(withTitle: "Floating button", handler: { action in
-            Instabug.setInvocationEvent(.floatingButton)
+            BugReporting.invocationEvents = [.floatingButton]
         })
         
         ibg_showAlert(withTitle: "Invocation Event",
@@ -89,13 +86,13 @@ class SettingsTableViewController: UITableViewController {
         let greenColor = UIColor(red: 27.0 / 255.0, green: 128.0 / 255.0, blue: 18.0 / 255.0, alpha: 1.0)
         let blueColor = UIColor(red: 51.0 / 255.0, green: 87.0 / 255.0, blue: 245.0 / 255.0, alpha: 1.0)
         let redAction = UIAlertAction.ibg_action(withTitle: "Red", handler: { action in
-            Instabug.setPrimaryColor(redColor)
+            Instabug.tintColor = redColor
         })
         let greenAction = UIAlertAction.ibg_action(withTitle: "Green", handler: { action in
-            Instabug.setPrimaryColor(greenColor)
+            Instabug.tintColor = greenColor
         })
         let blueAction = UIAlertAction.ibg_action(withTitle: "Blue", handler: { action in
-            Instabug.setPrimaryColor(blueColor)
+            Instabug.tintColor = blueColor
         })
         ibg_showAlert(withTitle: "Select Primary Color",
                       message: "Select a color to set as the primary color of the SDK",
