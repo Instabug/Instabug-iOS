@@ -1,5 +1,3 @@
-//  Converted to Swift 4 by Swiftify v4.1.6751 - https://objectivec2swift.com/
-//
 //  UIAlertAction+DefaultAction.m
 //  Instabug Demo
 //
