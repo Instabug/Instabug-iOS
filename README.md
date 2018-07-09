@@ -30,7 +30,6 @@ To integrate Instabug into your Xcode project using [Carthage](https://github.co
 
 ```
 binary "https://raw.githubusercontent.com/Instabug/Instabug-iOS/master/Instabug.json"
-binary "https://raw.githubusercontent.com/Instabug/Instabug-iOS/master/InstabugCore/InstabugCore.json"
 ```
 
 Then, run the following command:
@@ -45,12 +44,12 @@ Then drag Instabug.framework into your Xcode project.
 
 1. [Download the Instabug SDK](https://s3.amazonaws.com/instabug-pro/sdk_releases/Instabug.zip)
 
-2. Extract it then drag & drop Instabug.framework & InstabugCore.framework to your project's "Embedded Binaries" section under the "General" tab, and make sure that the "Copy items if needed" checkbox is checked
+2. Extract it then drag & drop Instabug.framework to your project's "Embedded Binaries" section under the "General" tab, and make sure that the "Copy items if needed" checkbox is checked
 
 3. Create a new "Run Script Phase" in your project’s target "Build Phases" and add the following snippet
 
 ```
-bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstabugCore.framework/strip-frameworks.sh"
+bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Instabug.framework/strip-frameworks.sh"
 ```
 
 ## Usage

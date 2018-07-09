@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <InstabugCore/InstabugCore.h>
-#import <InstabugCore/IBGTypes.h>
+#import "IBGTypes.h"
 
 NS_SWIFT_NAME(BugReporting)
 @interface IBGBugReporting : NSObject

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Instabug"
-  s.version      = "8.0.2"
+  s.version      = "8.0.3"
   s.summary      = "Bug reporting for mobile apps. Learn more at http://instabug.com"
   s.homepage     = "http://instabug.com"
   s.license      = { :type => 'Commercial', :file => 'LICENSE.md' }
@@ -11,17 +11,7 @@ Pod::Spec.new do |s|
   s.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
   s.requires_arc = true
-
-  s.subspec 'InstabugCore' do |sc|
-    sc.source_files = 'InstabugCore.framework/Headers/*.{h}'
-    sc.vendored_frameworks = 'InstabugCore.framework'
-    sc.preserve_paths =  'InstabugCore.framework/*'
-  end
-
-  s.subspec 'Instabug' do |sp|
-    sp.source_files = 'Instabug.framework/Headers/*.{h}'
-    sp.vendored_frameworks = 'Instabug.framework'
-    sp.preserve_paths =  'Instabug.framework/*'
-    sp.dependency 'Instabug/InstabugCore'
-  end
+  s.source_files = 'Instabug.framework/Headers/*.{h}'
+  s.vendored_frameworks = 'Instabug.framework'
+  s.preserve_paths =  'Instabug.framework/*'
 end
