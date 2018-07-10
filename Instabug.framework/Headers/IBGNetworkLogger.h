@@ -14,10 +14,6 @@ NS_SWIFT_NAME(NetworkLogger)
 
 @property (class, atomic, assign) BOOL enabled;
 
-/* CHECK NULLABILITY! */
-typedef void (^NetworkObfuscationCompletionBlock)(NSData * _Nullable data, NSURLResponse * _Nonnull response);
-
-
 /**
  @brief Enable logging for network requests and responses on a custom NSURLSessionConfiguration.
  

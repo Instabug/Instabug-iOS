@@ -106,7 +106,7 @@ do
     fi
 done
 
-if [ -z $DSYM_UUIDs ]; then
+if [ -z "$DSYM_UUIDs" ]; then
     rm -rf "${DSYMS_DIR}"
     exit 0
 fi

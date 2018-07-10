@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2013-2018 by Instabug, Inc., all rights reserved.
 
- Version:    8.0.3
+ Version:    8.0.4
  */
 
 #import <Foundation/Foundation.h>
@@ -27,9 +27,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Instabug : NSObject
-
-typedef void (^NetworkObfuscationCompletionBlock)(NSData *data, NSURLResponse *response);
-
 
 /**
  @brief Sets whether the SDK is recording the screen or not.

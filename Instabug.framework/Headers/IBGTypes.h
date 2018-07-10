@@ -480,6 +480,9 @@ typedef NS_ENUM(NSInteger, IBGWelcomeMessageMode) {
     IBGWelcomeMessageModeDisabled
 };
 
+/* CHECK NULLABILITY! */
+typedef void (^NetworkObfuscationCompletionBlock)(NSData *data, NSURLResponse *response);
+
 @interface UIView (Instabug)
 
 /**
