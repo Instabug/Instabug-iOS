@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		547E5E8A1E225BD60026D35A /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547E5E881E225B890026D35A /* Instabug.framework */; };
-		547E5E8B1E225BD60026D35A /* Instabug.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 547E5E881E225B890026D35A /* Instabug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54B0118C1D901660002AF597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0118B1D901660002AF597 /* AppDelegate.swift */; };
 		54B0118F1D901660002AF597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0118E1D901660002AF597 /* ViewController.swift */; };
 		54B011921D901660002AF597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B011901D901660002AF597 /* Main.storyboard */; };
@@ -23,20 +21,19 @@
 		54B011BC1D902CA9002AF597 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B011BB1D902CA9002AF597 /* CoreMedia.framework */; };
 		54B011C11D9110F5002AF597 /* UIViewController+DefaultAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B011C01D9110F5002AF597 /* UIViewController+DefaultAlertController.swift */; };
 		54B011C41D911199002AF597 /* UIAlertAction+DefaultAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.swift */; };
+		71A1D49C20FF7F720082B09F /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A1D49B20FF7F720082B09F /* Instabug.framework */; };
+		71A1D49D20FF7F720082B09F /* Instabug.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71A1D49B20FF7F720082B09F /* Instabug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		71EB748D20EB9B0300C3918F /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB748C20EB9B0300C3918F /* SettingsTableViewController.swift */; };
-		E18D79FC1FDE6D4200D7C10E /* InstabugCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18D79FB1FDE6D4200D7C10E /* InstabugCore.framework */; };
-		E18D79FD1FDE6D4200D7C10E /* InstabugCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E18D79FB1FDE6D4200D7C10E /* InstabugCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		543A00CF1E06D446008FFB4F /* Embed Frameworks */ = {
+		71A1D49420FF7E5A0082B09F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E18D79FD1FDE6D4200D7C10E /* InstabugCore.framework in Embed Frameworks */,
-				547E5E8B1E225BD60026D35A /* Instabug.framework in Embed Frameworks */,
+				71A1D49D20FF7F720082B09F /* Instabug.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,7 +41,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		547E5E881E225B890026D35A /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = ../../Instabug.framework; sourceTree = "<group>"; };
 		54B011841D901660002AF597 /* Instabug Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instabug Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B0118B1D901660002AF597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54B0118E1D901660002AF597 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,8 +57,9 @@
 		54B011BB1D902CA9002AF597 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		54B011C01D9110F5002AF597 /* UIViewController+DefaultAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+DefaultAlertController.swift"; sourceTree = "<group>"; };
 		54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertAction+DefaultAction.swift"; sourceTree = "<group>"; };
+		71A1D48C20FF7DF70082B09F /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = "../../../Downloads/Instabug/Instabug-SDK/Instabug.framework"; sourceTree = "<group>"; };
+		71A1D49B20FF7F720082B09F /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = ../Instabug.framework; sourceTree = "<group>"; };
 		71EB748C20EB9B0300C3918F /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
-		E18D79FB1FDE6D4200D7C10E /* InstabugCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InstabugCore.framework; path = ../../InstabugCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +68,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				54B011BC1D902CA9002AF597 /* CoreMedia.framework in Frameworks */,
-				E18D79FC1FDE6D4200D7C10E /* InstabugCore.framework in Frameworks */,
 				54B011B21D9018CB002AF597 /* UIKit.framework in Frameworks */,
 				54B011B01D9018C3002AF597 /* CoreGraphics.framework in Frameworks */,
-				547E5E8A1E225BD60026D35A /* Instabug.framework in Frameworks */,
+				71A1D49C20FF7F720082B09F /* Instabug.framework in Frameworks */,
 				54B011AE1D9018BD002AF597 /* SystemConfiguration.framework in Frameworks */,
 				54B011AC1D9018B5002AF597 /* CoreMotion.framework in Frameworks */,
 				54B011AA1D9018AE002AF597 /* CoreTelephony.framework in Frameworks */,
@@ -88,8 +84,7 @@
 		541FA2741DC888600037AA01 /* Instabug */ = {
 			isa = PBXGroup;
 			children = (
-				E18D79FB1FDE6D4200D7C10E /* InstabugCore.framework */,
-				547E5E881E225B890026D35A /* Instabug.framework */,
+				71A1D49B20FF7F720082B09F /* Instabug.framework */,
 			);
 			name = Instabug;
 			sourceTree = "<group>";
@@ -138,6 +133,7 @@
 		54B011A61D9018A4002AF597 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				71A1D48C20FF7DF70082B09F /* Instabug.framework */,
 				54B011BB1D902CA9002AF597 /* CoreMedia.framework */,
 				54B011B11D9018CB002AF597 /* UIKit.framework */,
 				54B011AF1D9018C3002AF597 /* CoreGraphics.framework */,
@@ -168,7 +164,7 @@
 				54B011801D901660002AF597 /* Sources */,
 				54B011811D901660002AF597 /* Frameworks */,
 				54B011821D901660002AF597 /* Resources */,
-				543A00CF1E06D446008FFB4F /* Embed Frameworks */,
+				71A1D49420FF7E5A0082B09F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -378,6 +374,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../",
+					"$(PROJECT_DIR)/Instabug\\ Demo",
+					"$(PROJECT_DIR)/Instabug\\ Demo",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Instabug Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -395,6 +394,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../",
+					"$(PROJECT_DIR)/Instabug\\ Demo",
+					"$(PROJECT_DIR)/Instabug\\ Demo",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Instabug Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
