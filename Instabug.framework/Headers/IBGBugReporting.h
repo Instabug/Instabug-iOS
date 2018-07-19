@@ -117,6 +117,14 @@ NS_SWIFT_NAME(BugReporting)
  */
 @property(class, atomic, assign) IBGBugReportingInvocationOption invocationOptions;
 
+
+/**
+ @brief Sets the default position at which the Instabug screen recording button will be shown. Different orientations are already handled.
+ 
+ @discussion Default for `position` is `bottomRight`.
+ */
+@property(class, atomic, assign) IBGPosition videoRecordingFloatingButtonPosition;
+
 /**
  @brief Invokes the SDK manually with the default invocation mode.
  
