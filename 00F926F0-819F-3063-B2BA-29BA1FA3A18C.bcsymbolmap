@@ -14795,7 +14795,8 @@ ___24+[Instabug setUserData:]_block_invoke
 ___35+[Instabug printV8MigrationMessage]_block_invoke
 +[Instabug afterInitializationQueue]
 +[Instabug startWithToken:invocationEvent:]
-___43+[Instabug startWithToken:invocationEvent:]_block_invoke
++[Instabug intializeInstabugWithToken:invocationEvents:]
+___56+[Instabug intializeInstabugWithToken:invocationEvents:]_block_invoke
 +[Instabug intializeSDKStack]
 ___29+[Instabug intializeSDKStack]_block_invoke
 ___29+[Instabug intializeSDKStack]_block_invoke_2
@@ -15026,7 +15027,7 @@ __33+[Instabug logUserEventWithName:]_block_invoke
 __40+[Instabug logUserEventWithName:params:]_block_invoke
 __29+[Instabug intializeSDKStack]_block_invoke_2
 __29+[Instabug intializeSDKStack]_block_invoke
-__43+[Instabug startWithToken:invocationEvent:]_block_invoke
+__56+[Instabug intializeInstabugWithToken:invocationEvents:]_block_invoke
 __35+[Instabug printV8MigrationMessage]_block_invoke
 __24+[Instabug setUserData:]_block_invoke
 __42+[Instabug setAutoScreenRecordingEnabled:]_block_invoke_2
