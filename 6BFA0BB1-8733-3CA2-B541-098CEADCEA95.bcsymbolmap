@@ -11499,8 +11499,8 @@ _OBJC_IVAR_$_IBGFeatureRequestModel._colorCode
 -[IBGAnnotator recognizeDrawing:points:]
 ___40-[IBGAnnotator recognizeDrawing:points:]_block_invoke
 ___40-[IBGAnnotator recognizeDrawing:points:]_block_invoke_2
-___copy_helper_block_.243
-___destroy_helper_block_.244
+___copy_helper_block_.248
+___destroy_helper_block_.249
 -[IBGAnnotator didSelectDetectedShape:]
 -[IBGAnnotator removeAnnotationView:]
 -[IBGAnnotator undo]
@@ -11541,7 +11541,7 @@ _OBJC_IVAR_$_IBGAnnotator._viewController
 _OBJC_IVAR_$_IBGAnnotator._annotationStack
 _OBJC_IVAR_$_IBGAnnotator._annotationOriginator
 _OBJC_IVAR_$_IBGAnnotator._annotationViewFactory
-___block_descriptor_tmp.246
+___block_descriptor_tmp.251
 _OBJC_IVAR_$_IBGAnnotator._recognizer
 _OBJC_IVAR_$_IBGAnnotator._panGesture
 _OBJC_IVAR_$_IBGAnnotator._detectedAnnotationView
