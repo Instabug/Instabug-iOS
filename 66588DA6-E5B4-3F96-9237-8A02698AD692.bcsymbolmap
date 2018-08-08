@@ -2,6 +2,10 @@ BCSymbolMap Version: 2.0
 Apple LLVM version 9.1.0 (clang-902.0.39.1)
 /Users/distiller/Library/Developer/Xcode/DerivedData/Instabug-gyczlbrmgsydccauwvktdzbpvful/Build/Intermediates.noindex/ArchiveIntermediates/Instabug/IntermediateBuildFilesPath/Instabug.build/Release-iphoneos/Instabug.build/DerivedSources/Instabug_vers.c
 /Users/distiller/project/Instabug-dynamic
+-[UINavigationItem(Subtitle) setTitle:withSubtitle:]
+-[UINavigationItem(Subtitle) setupConstraintsForTitleLabel:andSubtitleLabel:forSuperview:]
+/Users/distiller/project/Instabug/InstabugChats/Views/Extensions/UINavigationItem+Subtitle.m
+/Users/distiller/project/Instabug
 -[IBGChatViewLayoutAttributes init]
 -[IBGChatViewLayoutAttributes cellContentInsets]
 -[IBGChatViewLayoutAttributes setCellContentInsets:]
@@ -54,10 +58,7 @@ _OBJC_IVAR_$_IBGChatViewLayoutAttributes._imageVideoSize
 _OBJC_IVAR_$_IBGChatViewLayoutAttributes._audioSize
 _OBJC_IVAR_$_IBGChatViewLayoutAttributes._constantVerticalHeight
 /Users/distiller/project/Instabug/InstabugChats/Views/Chat Collection View/IBGChatViewLayoutAttributes.m
-/Users/distiller/project/Instabug
 /Users/distiller/project/Instabug/InstabugChats/Views/Chat Collection View/IBGChatViewLayoutAttributes.h
-CGSizeMake
-/Applications/Xcode-9.3.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[IBGChatCollectionViewCellHeightCalculator init]
 -[IBGChatCollectionViewCellHeightCalculator heightForItemAt:content:layoutAttributes:]
 -[IBGChatCollectionViewCellHeightCalculator heightForTextString:]
@@ -160,7 +161,7 @@ __41+[IBGSDKInternalLogManager sharedManager]_block_invoke
 -[IBGResources loadPrimaryColoredImageWithName:]
 -[IBGResources loadPrimaryColoredImageWithName:flippedForRTLLayoutDirection:]
 -[IBGResources loadImageWithName:flippedForRTLLayoutDirection:]
--[IBGResources imageWithPath:shouldFlip:]
+-[IBGResources imageWithName:inBundle:shouldFlip:]
 -[IBGResources loadPDFImageWithName:flippedForRTLLayoutDirection:]
 -[IBGResources pathForResource:ofType:]
 -[IBGResources serversFile]
@@ -283,6 +284,8 @@ _OBJC_IVAR_$_IBGChatCell._dateLabel
 _OBJC_IVAR_$_IBGChatCell._unreadMessageButton
 _OBJC_IVAR_$_IBGChatCell._seperatorView
 /Users/distiller/project/Instabug/InstabugChats/Views/Table View Cell/IBGChatCell.m
+NSMakeRange
+/Applications/Xcode-9.3.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 -[IBGArrowAnnotationView initWithFrame:zPosition:originator:annotatingColor:angle:]
 -[IBGArrowAnnotationView drawRect:]
 +[IBGArrowAnnotationView minimumArrowSize]
@@ -295,7 +298,6 @@ _OBJC_IVAR_$_IBGChatCell._seperatorView
 _OBJC_IVAR_$_IBGArrowAnnotationView.path
 _OBJC_IVAR_$_IBGArrowAnnotationView._annotatingColor
 /Users/distiller/project/Instabug/InstabugAnnotations/Annotations View/IBGArrowAnnotationView.m
-CGPointMake
 _blurIconBlock_block_invoke
 _brushIconBlock_block_invoke_2
 _magnifyIconBlock_block_invoke_3
@@ -1845,9 +1847,6 @@ __29-[IBGInvocationShake install]_block_invoke
 +[IBGImageUtilities newCreatePathRotatedAroundBoundingBoxCenter:radians:lineWidth:]
 +[IBGImageUtilities bezierPathWithType:rect:lineWidth:]
 /Users/distiller/project/Instabug/InstabugCore/Helpers/IBGImageUtilities.m
-CGRectMake
-__inline_isnanf
-/Applications/Xcode-9.3.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/math.h
 -[IBGStatusChangeTableViewCell initWithStyle:reuseIdentifier:]
 -[IBGStatusChangeTableViewCell updateConstraints]
 -[IBGStatusChangeTableViewCell setComment:]
@@ -3615,6 +3614,7 @@ __33-[IBGSafeMutableArray enumerate:]_block_invoke
 +[IBGBugReporting invoke]
 +[IBGBugReporting invokeWithMode:options:]
 +[IBGBugReporting dismiss]
++[IBGBugReporting toggleDogFooding:]
 __willInvokeHandler
 __didDismissHandler
 __didSelectPromptOptionHandler
@@ -3692,6 +3692,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGSyncRequestDelegate
 /Users/distiller/project/Instabug/InstabugChats/Managers/IBGSyncManager.m
 /Users/distiller/project/Instabug/InstabugChats/Managers/IBGSyncManager.h
 __inline_isnand
+/Applications/Xcode-9.3.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/math.h
 __43-[IBGSyncManager scheduleSyncAfterSeconds:]_block_invoke
 __41-[IBGSyncManager initializationOperation]_block_invoke_2
 __41-[IBGSyncManager initializationOperation]_block_invoke
@@ -4205,6 +4206,7 @@ ___40+[IBGDataStore afterInitializationQueue]_block_invoke
 -[IBGDataStore setWillSendReportHandler:]
 -[IBGDataStore excutePreSendingBlockSynchronized:completionHandler:]
 ___68-[IBGDataStore excutePreSendingBlockSynchronized:completionHandler:]_block_invoke
++[IBGDataStore getPreSendingHandlerQueue]
 -[IBGDataStore excuteWillSendReportHandler]
 -[IBGDataStore registerNetworkLogProtocolInSessionConfiguration:]
 -[IBGDataStore clear]
@@ -4215,6 +4217,10 @@ ___68-[IBGDataStore excutePreSendingBlockSynchronized:completionHandler:]_block_
 +[IBGDataStore destroy]
 -[IBGDataStore fileLocation]
 -[IBGDataStore setFileLocation:]
+-[IBGDataStore dogFoodingAppToken]
+-[IBGDataStore setDogFoodingAppToken:]
+-[IBGDataStore shouldUseDogFoodingToken]
+-[IBGDataStore setShouldUseDogFoodingToken:]
 -[IBGDataStore isShowLowDiskStorageAlert]
 -[IBGDataStore setIsShowLowDiskStorageAlert:]
 -[IBGDataStore isAppCrashing]
@@ -4235,9 +4241,11 @@ _afterInitializationQueue.onceToken
 _OBJC_IVAR_$_IBGDataStore._appToken
 _OBJC_IVAR_$_IBGDataStore._preSendingBlock
 _OBJC_IVAR_$_IBGDataStore._willSendReportHandler
-___block_descriptor_tmp.550
+___block_descriptor_tmp.552
 _OBJC_IVAR_$_IBGDataStore._wasInstabugInitialized
 _OBJC_IVAR_$_IBGDataStore._fileLocation
+_OBJC_IVAR_$_IBGDataStore._dogFoodingAppToken
+_OBJC_IVAR_$_IBGDataStore._shouldUseDogFoodingToken
 _OBJC_IVAR_$_IBGDataStore._isShowLowDiskStorageAlert
 _OBJC_IVAR_$_IBGDataStore._isAppCrashing
 _OBJC_IVAR_$_IBGDataStore._viewHierarchyLog
@@ -4561,22 +4569,22 @@ ___50-[IBGVideoEncoder videoEncodingUsingImage:atTime:]_block_invoke
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke_2
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke_3
-___copy_helper_block_.586
-___destroy_helper_block_.587
-___copy_helper_block_.597
-___destroy_helper_block_.598
-___copy_helper_block_.602
-___destroy_helper_block_.603
+___copy_helper_block_.584
+___destroy_helper_block_.585
+___copy_helper_block_.595
+___destroy_helper_block_.596
+___copy_helper_block_.600
+___destroy_helper_block_.601
 -[IBGVideoEncoder stopAutoRecordingCompletion]
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke_2
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke_3
-___copy_helper_block_.607
-___destroy_helper_block_.608
-___copy_helper_block_.610
-___destroy_helper_block_.611
-___copy_helper_block_.613
-___destroy_helper_block_.614
+___copy_helper_block_.605
+___destroy_helper_block_.606
+___copy_helper_block_.608
+___destroy_helper_block_.609
+___copy_helper_block_.611
+___destroy_helper_block_.612
 -[IBGVideoEncoder removeTempFilePath:]
 -[IBGVideoEncoder encodeVideo:]
 -[IBGVideoEncoder videoURL]
@@ -4616,11 +4624,11 @@ _OBJC_IVAR_$_IBGVideoEncoder._outputBufferPool
 _OBJC_IVAR_$_IBGVideoEncoder._videoWriter
 _OBJC_IVAR_$_IBGVideoEncoder._videoWriterInput
 _OBJC_IVAR_$_IBGVideoEncoder._avAdaptor
-___block_descriptor_tmp.588
-___block_descriptor_tmp.599
-___block_descriptor_tmp.604
-___block_descriptor_tmp.609
-___block_descriptor_tmp.615
+___block_descriptor_tmp.586
+___block_descriptor_tmp.597
+___block_descriptor_tmp.602
+___block_descriptor_tmp.610
+___block_descriptor_tmp.613
 _OBJC_IVAR_$_IBGVideoEncoder._delegate
 _OBJC_IVAR_$_IBGVideoEncoder._writeTimer
 _OBJC_IVAR_$_IBGVideoEncoder._timeStamp
@@ -5651,9 +5659,7 @@ _InstabugSurveysInstance
 _OBJC_IVAR_$_InstabugSurveys._initializationOperation
 ___block_descriptor_tmp.526
 ___block_descriptor_tmp.532
-___block_descriptor_tmp.552
 ___block_literal_global.553
-___block_descriptor_tmp.597
 ___block_descriptor_tmp.631
 ___block_descriptor_tmp.657
 _OBJC_IVAR_$_InstabugSurveys._reactivationSessionCountThreshold
@@ -7086,8 +7092,6 @@ _OBJC_IVAR_$_IBGFeaturesEmptyView._addButtonCompletion
 -[IBGServerFileRequest prepareRequestWithCompletionHandler:]
 ___60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke
 ___60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke.590
-___copy_helper_block_.595
-___destroy_helper_block_.596
 -[IBGServerFileRequest sessionDataTaskWithRawRequest:]
 +[IBGServerFileRequest executeWithURL:filePath:fileInfo:delegate:]
 -[IBGServerFileRequest dataFromContentOfFilePath:]
@@ -8349,7 +8353,6 @@ l_OBJC_LABEL_PROTOCOL_$_IBGKeyboardEventsListenerDelegate
 /Users/distiller/project/Instabug/InstabugBugReporting/Views/IBGBugReportingView.h
 __51-[IBGBugReportingView updateAddingAttachmentMethod]_block_invoke
 __41-[IBGBugReportingView orientationChanged]_block_invoke
-UIEdgeInsetsMake
 -[IBGFeatureDetailAddCommentFormField initWithTitle:]
 -[IBGFeatureDetailAddCommentFormField initWithTitle:text:]
 -[IBGFeatureDetailAddCommentFormField updateConstraints]
@@ -8859,8 +8862,6 @@ ___destroy_helper_block_.586
 -[IBGSurveysNavigationViewController setBackButtonHidden:]
 -[IBGSurveysNavigationViewController dismiss]
 ___45-[IBGSurveysNavigationViewController dismiss]_block_invoke
-___copy_helper_block_.611
-___destroy_helper_block_.612
 -[IBGSurveysNavigationViewController updateHeaderTitleWithIndex:]
 -[IBGSurveysNavigationViewController invalidateLayoutAttributesShouldRefresh:]
 -[IBGSurveysNavigationViewController invalidateLayoutAttributes]
@@ -8898,7 +8899,6 @@ ___block_descriptor_tmp.569
 ___block_descriptor_tmp.573
 ___block_descriptor_tmp.582
 ___block_descriptor_tmp.587
-___block_descriptor_tmp.613
 ___block_descriptor_tmp.648
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._navigationView
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._currentViewController
@@ -9940,11 +9940,24 @@ _OBJC_IVAR_$_IBGFreeDrawingAnnotationView._needsFrameMapping
 /Users/distiller/project/Instabug/InstabugAnnotations/Annotations View/IBGFreeDrawingAnnotationView.h
 midPointForPoints
 __CGPointEqualToPoint
+/Applications/Xcode-9.3.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+-[IBGConnectionStateReader networkInfo]
+___39-[IBGConnectionStateReader networkInfo]_block_invoke
+-[IBGConnectionStateReader isSimCardAvailable]
+___46-[IBGConnectionStateReader isSimCardAvailable]_block_invoke
 -[IBGConnectionStateReader getWifiSSID]
 -[IBGConnectionStateReader getCarrierConnectionType]
 -[IBGConnectionStateReader getCarrierName]
 -[IBGConnectionStateReader getFullCarrierName]
+_networkInfoOnceToken
+_netinfo
+_simAvailableOnceToken
+___block_descriptor_tmp.3
+___block_literal_global.4
+_available
 /Users/distiller/project/Instabug/InstabugSessionProfiler/Readers/IBGConnectionStateReader.m
+__46-[IBGConnectionStateReader isSimCardAvailable]_block_invoke
+__39-[IBGConnectionStateReader networkInfo]_block_invoke
 -[IBGFullActivityIndicatorView init]
 +[IBGFullActivityIndicatorView show]
 +[IBGFullActivityIndicatorView hide]
@@ -10068,6 +10081,8 @@ ___43-[IBGAutoVideoRecorder autoScreenRecording]_block_invoke
 ___43-[IBGAutoVideoRecorder autoScreenRecording]_block_invoke_2
 ___43-[IBGAutoVideoRecorder autoScreenRecording]_block_invoke_3
 ___43-[IBGAutoVideoRecorder autoScreenRecording]_block_invoke_4
+___copy_helper_block_.597
+___destroy_helper_block_.598
 -[IBGAutoVideoRecorder screenshotModelWithImg:withCompletionHandler:]
 ___69-[IBGAutoVideoRecorder screenshotModelWithImg:withCompletionHandler:]_block_invoke
 -[IBGAutoVideoRecorder updateFrameRateForCapturingTime:]
@@ -10081,7 +10096,9 @@ ___block_descriptor_tmp.491
 ___block_descriptor_tmp.533
 ___block_descriptor_tmp.538
 ___block_descriptor_tmp.548
+___block_descriptor_tmp.588
 ___block_descriptor_tmp.596
+___block_descriptor_tmp.599
 _kIBGVideoFrameRate
 /Users/distiller/project/Instabug/InstabugCore/Helpers/Recorders and Players/IBGAutoVideoRecorder.m
 __69-[IBGAutoVideoRecorder screenshotModelWithImg:withCompletionHandler:]_block_invoke
@@ -11504,8 +11521,8 @@ _OBJC_IVAR_$_IBGFeatureRequestModel._colorCode
 -[IBGAnnotator recognizeDrawing:points:]
 ___40-[IBGAnnotator recognizeDrawing:points:]_block_invoke
 ___40-[IBGAnnotator recognizeDrawing:points:]_block_invoke_2
-___copy_helper_block_.243
-___destroy_helper_block_.244
+___copy_helper_block_.248
+___destroy_helper_block_.249
 -[IBGAnnotator didSelectDetectedShape:]
 -[IBGAnnotator removeAnnotationView:]
 -[IBGAnnotator undo]
@@ -11546,7 +11563,7 @@ _OBJC_IVAR_$_IBGAnnotator._viewController
 _OBJC_IVAR_$_IBGAnnotator._annotationStack
 _OBJC_IVAR_$_IBGAnnotator._annotationOriginator
 _OBJC_IVAR_$_IBGAnnotator._annotationViewFactory
-___block_descriptor_tmp.246
+___block_descriptor_tmp.251
 _OBJC_IVAR_$_IBGAnnotator._recognizer
 _OBJC_IVAR_$_IBGAnnotator._panGesture
 _OBJC_IVAR_$_IBGAnnotator._detectedAnnotationView
@@ -12376,6 +12393,8 @@ ___destroy_helper_block_.599
 ___45-[IBGFeaturesViewController presentSearchBar]_block_invoke.601
 -[IBGFeaturesViewController dismissSearchBarWithCompletion:]
 ___60-[IBGFeaturesViewController dismissSearchBarWithCompletion:]_block_invoke
+___copy_helper_block_.610
+___destroy_helper_block_.611
 ___60-[IBGFeaturesViewController dismissSearchBarWithCompletion:]_block_invoke.613
 ___copy_helper_block_.616
 ___destroy_helper_block_.617
@@ -13779,20 +13798,20 @@ ___copy_helper_block_.121
 ___destroy_helper_block_.122
 -[IBGURLSessionDemux URLSession:task:didCompleteWithError:]
 ___59-[IBGURLSessionDemux URLSession:task:didCompleteWithError:]_block_invoke
-___copy_helper_block_.131
-___destroy_helper_block_.132
+___copy_helper_block_.130
+___destroy_helper_block_.131
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]
 ___79-[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]_block_invoke
+___copy_helper_block_.135
+___destroy_helper_block_.136
 -[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]
 ___64-[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]_block_invoke
-___copy_helper_block_.141
-___destroy_helper_block_.142
+___copy_helper_block_.140
+___destroy_helper_block_.141
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]
 ___57-[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]_block_invoke
 -[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]
 ___78-[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]_block_invoke
-___copy_helper_block_.151
-___destroy_helper_block_.152
 -[IBGURLSessionDemux configuration]
 -[IBGURLSessionDemux session]
 -[IBGURLSessionDemux taskInfoByTaskID]
@@ -13806,8 +13825,7 @@ _OBJC_IVAR_$_IBGURLSessionDemux._configuration
 _OBJC_IVAR_$_IBGURLSessionDemux._taskInfoByTaskID
 _OBJC_IVAR_$_IBGURLSessionDemux._sessionDelegateQueue
 _OBJC_IVAR_$_IBGURLSessionDemux._session
-___block_descriptor_tmp.124
-___block_descriptor_tmp.153
+___block_descriptor_tmp.132
 /Users/distiller/project/Instabug/InstabugNetworkLogger/Helpers/IBGURLSessionDemux.m
 /Users/distiller/project/Instabug/InstabugNetworkLogger/Helpers/IBGURLSessionDemux.h
 __78-[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]_block_invoke
@@ -13886,6 +13904,8 @@ ___50-[IBGQueuesLatencyLogger fetchDeviceQueuesLatency]_block_invoke
 -[IBGQueuesLatencyLogger cpuUsageForQueue:]
 -[IBGQueuesLatencyLogger fetchLogsWithDate:]
 ___44-[IBGQueuesLatencyLogger fetchLogsWithDate:]_block_invoke
+___copy_helper_block_.141
+___destroy_helper_block_.142
 -[IBGQueuesLatencyLogger sortDispatchQueues:]
 -[IBGQueuesLatencyLogger addQueueDict:withQueueName:inQueues:]
 -[IBGQueuesLatencyLogger setFetchRate:]
@@ -13987,6 +14007,8 @@ ___destroy_helper_block_.581
 -[IBGUserStepsLogger maxScreenshotsNumber]
 -[IBGUserStepsLogger loadUserStepsJSONSynchronouslyWithSessionId:completionHandler:]
 ___84-[IBGUserStepsLogger loadUserStepsJSONSynchronouslyWithSessionId:completionHandler:]_block_invoke
+___copy_helper_block_.607
+___destroy_helper_block_.608
 -[IBGUserStepsLogger loadUserStepsJSONAsynchronouslyWithSessionId:completionHandler:]
 ___85-[IBGUserStepsLogger loadUserStepsJSONAsynchronouslyWithSessionId:completionHandler:]_block_invoke
 -[IBGUserStepsLogger loadUserStepsJSONWithContext:sessionId:completionHandler:]
@@ -14046,6 +14068,7 @@ ___block_descriptor_tmp.516
 ___block_literal_global.517
 _OBJC_IVAR_$_IBGUserStepsLogger._enabled
 ___block_descriptor_tmp.577
+___block_descriptor_tmp.609
 ___block_descriptor_tmp.619
 ___block_descriptor_tmp.626
 __IBGScreenshotCount
@@ -14174,10 +14197,10 @@ ___destroy_helper_block_.571
 -[IBGSurveyMCQViewController addSubviews]
 -[IBGSurveyMCQViewController reloadView]
 ___40-[IBGSurveyMCQViewController reloadView]_block_invoke
+___copy_helper_block_.602
+___destroy_helper_block_.603
 -[IBGSurveyMCQViewController animateSelectionForCell:]
 ___54-[IBGSurveyMCQViewController animateSelectionForCell:]_block_invoke
-___copy_helper_block_.608
-___destroy_helper_block_.609
 ___54-[IBGSurveyMCQViewController animateSelectionForCell:]_block_invoke.611
 -[IBGSurveyMCQViewController registerNotification]
 -[IBGSurveyMCQViewController unregisterNotification]
@@ -14197,7 +14220,8 @@ ___54-[IBGSurveyMCQViewController animateSelectionForCell:]_block_invoke.611
 -[IBGSurveyMCQViewController .cxx_destruct]
 ___block_descriptor_tmp.522
 ___block_descriptor_tmp.572
-___block_descriptor_tmp.610
+___block_descriptor_tmp.604
+___block_descriptor_tmp.615
 _OBJC_IVAR_$_IBGSurveyMCQViewController._attributes
 _OBJC_IVAR_$_IBGSurveyMCQViewController._surveyCollectionView
 _OBJC_IVAR_$_IBGSurveyMCQViewController._topSepratorView
@@ -14800,10 +14824,10 @@ ___56+[Instabug intializeInstabugWithToken:invocationEvents:]_block_invoke
 +[Instabug intializeSDKStack]
 ___29+[Instabug intializeSDKStack]_block_invoke
 ___29+[Instabug intializeSDKStack]_block_invoke_2
-___copy_helper_block_.822
-___destroy_helper_block_.823
-___copy_helper_block_.826
-___destroy_helper_block_.827
+___copy_helper_block_.824
+___destroy_helper_block_.825
+___copy_helper_block_.828
+___destroy_helper_block_.829
 +[Instabug prepareDependencies]
 +[Instabug setFileAttachment:]
 +[Instabug setFileAttachmentWithURL:]
@@ -14824,12 +14848,10 @@ ___destroy_helper_block_.827
 +[Instabug setDidReceiveAuthenticationChallengeHandler:]
 +[Instabug logUserEventWithName:params:]
 ___40+[Instabug logUserEventWithName:params:]_block_invoke
-___copy_helper_block_.884
-___destroy_helper_block_.885
+___copy_helper_block_.886
+___destroy_helper_block_.887
 +[Instabug logUserEventWithName:]
 ___33+[Instabug logUserEventWithName:]_block_invoke
-___copy_helper_block_.887
-___destroy_helper_block_.888
 +[Instabug setCrashReportingEnabled:]
 +[Instabug setOnNewMessageHandler:]
 +[Instabug setInAppConversationsEnabled:]
@@ -14839,8 +14861,8 @@ ___destroy_helper_block_.888
 +[Instabug setPreInvocationHandler:]
 +[Instabug setPostInvocationBlock:]
 ___35+[Instabug setPostInvocationBlock:]_block_invoke
-___copy_helper_block_.905
-___destroy_helper_block_.906
+___copy_helper_block_.907
+___destroy_helper_block_.908
 +[Instabug setPostInvocationHandler:]
 +[Instabug setDidSelectPromptOptionHandler:]
 +[Instabug showIntroMessage]
@@ -14848,8 +14870,8 @@ ___destroy_helper_block_.906
 +[Instabug setWillTakeScreenshot:]
 +[Instabug identifyUserWithEmail:name:]
 ___39+[Instabug identifyUserWithEmail:name:]_block_invoke
-___copy_helper_block_.920
-___destroy_helper_block_.921
+___copy_helper_block_.922
+___destroy_helper_block_.923
 +[Instabug logOut]
 ___18+[Instabug logOut]_block_invoke
 +[Instabug setUserEmail:]
@@ -14889,13 +14911,13 @@ ___18+[Instabug logOut]_block_invoke
 +[Instabug removeExtraReportFields]
 +[Instabug setUserAttribute:withKey:]
 ___37+[Instabug setUserAttribute:withKey:]_block_invoke
-___copy_helper_block_.1097
-___destroy_helper_block_.1098
+___copy_helper_block_.1099
+___destroy_helper_block_.1100
 +[Instabug userAttributeForKey:]
 +[Instabug removeUserAttributeForKey:]
 ___38+[Instabug removeUserAttributeForKey:]_block_invoke
-___copy_helper_block_.1104
-___destroy_helper_block_.1105
+___copy_helper_block_.1106
+___destroy_helper_block_.1107
 +[Instabug userAttributes]
 +[Instabug setViewHierarchyEnabled:]
 +[Instabug setEmailFieldRequired:forAction:]
@@ -14905,8 +14927,8 @@ ___destroy_helper_block_.1105
 ___33+[Instabug showSurveyIfAvailable]_block_invoke
 +[Instabug showSurveyWithToken:]
 ___32+[Instabug showSurveyWithToken:]_block_invoke
-___copy_helper_block_.1133
-___destroy_helper_block_.1134
+___copy_helper_block_.1135
+___destroy_helper_block_.1136
 +[Instabug hasRespondedToSurveyWithToken:]
 +[Instabug hasAvailableSurveys]
 +[Instabug resetTags]
@@ -14923,29 +14945,29 @@ ___46+[Instabug setShouldShowSurveysWelcomeScreen:]_block_invoke
 +[Instabug reportBugWithEmail:comment:screenshot:]
 ___50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke
 ___50+[Instabug reportBugWithEmail:comment:screenshot:]_block_invoke_2
-___copy_helper_block_.1182
-___destroy_helper_block_.1183
-___copy_helper_block_.1185
-___destroy_helper_block_.1186
+___copy_helper_block_.1184
+___destroy_helper_block_.1185
+___copy_helper_block_.1187
+___destroy_helper_block_.1188
 +[Instabug reportFeedBackWithEmail:comment:screenshot:]
 ___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke
 ___55+[Instabug reportFeedBackWithEmail:comment:screenshot:]_block_invoke_2
-___copy_helper_block_.1188
-___destroy_helper_block_.1189
-___copy_helper_block_.1191
-___destroy_helper_block_.1192
+___copy_helper_block_.1190
+___destroy_helper_block_.1191
+___copy_helper_block_.1193
+___destroy_helper_block_.1194
 +[Instabug reportException:]
 ___28+[Instabug reportException:]_block_invoke
-___copy_helper_block_.1196
-___destroy_helper_block_.1197
+___copy_helper_block_.1198
+___destroy_helper_block_.1199
 +[Instabug reportError:]
 ___24+[Instabug reportError:]_block_invoke
-___copy_helper_block_.1201
-___destroy_helper_block_.1202
+___copy_helper_block_.1203
+___destroy_helper_block_.1204
 +[Instabug reportCrashWithStackTrace:handled:]
 ___46+[Instabug reportCrashWithStackTrace:handled:]_block_invoke
-___copy_helper_block_.1210
-___destroy_helper_block_.1211
+___copy_helper_block_.1212
+___destroy_helper_block_.1213
 +[Instabug invokeConversations]
 +[Instabug isInstabugNotification:]
 +[Instabug didRegisterForRemoteNotificationsWithDeviceToken:]
@@ -14966,6 +14988,7 @@ ___destroy_helper_block_.1211
 +[Instabug forceDisableWhiteLabel]
 +[Instabug forceDisableInAppMessaging]
 +[Instabug setCrossPlatform:]
++[Instabug addCustomToken:]
 __autoScreenRecordingEnabled
 ___block_descriptor_tmp.666
 __sessionProfilerEnabled
@@ -14984,28 +15007,27 @@ __SDKDebugLogsLevel
 _printV8MigrationMessage.printer
 _printV8MigrationMessage.printerOnceToken
 ___block_descriptor_tmp.744
-___block_descriptor_tmp.794
-___block_literal_global.795
-___block_descriptor_tmp.825
-___block_descriptor_tmp.829
-___block_descriptor_tmp.886
-___block_descriptor_tmp.889
-___block_descriptor_tmp.908
-___block_descriptor_tmp.922
-___block_descriptor_tmp.926
-___block_descriptor_tmp.1099
-___block_descriptor_tmp.1106
-___block_descriptor_tmp.1130
-___block_descriptor_tmp.1135
-___block_descriptor_tmp.1151
-___block_descriptor_tmp.1157
-___block_descriptor_tmp.1184
-___block_descriptor_tmp.1187
-___block_descriptor_tmp.1190
-___block_descriptor_tmp.1193
-___block_descriptor_tmp.1198
-___block_descriptor_tmp.1203
-___block_descriptor_tmp.1212
+___block_descriptor_tmp.796
+___block_literal_global.797
+___block_descriptor_tmp.827
+___block_descriptor_tmp.831
+___block_descriptor_tmp.888
+___block_descriptor_tmp.910
+___block_descriptor_tmp.924
+___block_descriptor_tmp.928
+___block_descriptor_tmp.1101
+___block_descriptor_tmp.1108
+___block_descriptor_tmp.1132
+___block_descriptor_tmp.1137
+___block_descriptor_tmp.1153
+___block_descriptor_tmp.1159
+___block_descriptor_tmp.1186
+___block_descriptor_tmp.1189
+___block_descriptor_tmp.1192
+___block_descriptor_tmp.1195
+___block_descriptor_tmp.1200
+___block_descriptor_tmp.1205
+___block_descriptor_tmp.1214
 /Users/distiller/project/Instabug/InstabugI/Instabug.m
 __46+[Instabug reportCrashWithStackTrace:handled:]_block_invoke
 __24+[Instabug reportError:]_block_invoke
@@ -15342,9 +15364,6 @@ __63-[IBGAddFeatureViewController handleRequestSuccessWithFeature:]_block_invoke
 __63-[IBGAddFeatureViewController handleRequestSuccessWithFeature:]_block_invoke
 __49-[IBGAddFeatureViewController handleRequestError]_block_invoke_2
 __49-[IBGAddFeatureViewController handleRequestError]_block_invoke
--[UINavigationItem(Subtitle) setTitle:withSubtitle:]
--[UINavigationItem(Subtitle) setupConstraintsForTitleLabel:andSubtitleLabel:forSuperview:]
-/Users/distiller/project/Instabug/InstabugChats/Views/Extensions/UINavigationItem+Subtitle.m
 -[IBGChatViewFlowLayout init]
 -[IBGChatViewFlowLayout awakeFromNib]
 -[IBGChatViewFlowLayout initalizeLayout]
@@ -15584,9 +15603,9 @@ __36-[IBGZZArchive updateEntries:error:]_block_invoke.82
 __36-[IBGZZArchive updateEntries:error:]_block_invoke.65
 __36-[IBGZZArchive updateEntries:error:]_block_invoke.56
 __36-[IBGZZArchive updateEntries:error:]_block_invoke
-min<unsigned int>
+min<unsigned long>
 /Applications/Xcode-9.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm
-min<unsigned int, std::__1::__less<unsigned int, unsigned int> >
+min<unsigned long, std::__1::__less<unsigned long, unsigned long> >
 find_end<const unsigned char *, const unsigned char *>
 find_end<const unsigned char *, const unsigned char *, std::__1::__equal_to<unsigned char, unsigned char> >
 __find_end<std::__1::__equal_to<unsigned char, unsigned char> &, const unsigned char *, const unsigned char *>
@@ -16001,8 +16020,8 @@ ___destroy_helper_block_.29
 -[IBGCoreDataPersistenceManager initializeCoreData]
 ___51-[IBGCoreDataPersistenceManager initializeCoreData]_block_invoke
 ___51-[IBGCoreDataPersistenceManager initializeCoreData]_block_invoke_2
-___copy_helper_block_.140
-___destroy_helper_block_.141
+___copy_helper_block_.131
+___destroy_helper_block_.132
 -[IBGCoreDataPersistenceManager didAddPersistentStoreNotification]
 -[IBGCoreDataPersistenceManager destroyPersistent:storeAtURL:]
 -[IBGCoreDataPersistenceManager isOldStoreExistAtURL:]
@@ -16434,6 +16453,7 @@ __ZL22shared_handler_context
 __ZL13sharedHandler
 _OBJC_IVAR_$_IBGPLCrashSignalHandler._sigstk
 __ZZ59-[IBGPLCrashSignalHandler registerHandlerWithSignal:error:]E16registerHandlers
+_plcrash_writer_write_report_info
 _plcrash_writer_write_system_info
 _plcrash_writer_write_machine_info
 _plcrash_writer_write_app_info
@@ -16498,9 +16518,9 @@ _OBJC_IVAR_$_IBGPLCrashReporter._config
 _monitored_signals
 _OBJC_IVAR_$_IBGPLCrashReporter._previousMachPorts
 _OBJC_IVAR_$_IBGPLCrashReporter._machServer
+_OBJC_IVAR_$_IBGPLCrashReporter._crashReportDirectory
 _crashCallbacks.1
 _crashCallbacks.2
-_OBJC_IVAR_$_IBGPLCrashReporter._crashReportDirectory
 -[IBGPLCrashReport initWithData:error:]
 _populate_nserror
 -[IBGPLCrashReport dealloc]
@@ -16717,17 +16737,17 @@ _OBJC_IVAR_$_IBGPLCrashReportMachineInfo._processorCount
 _OBJC_IVAR_$_IBGPLCrashReportMachineInfo._logicalProcessorCount
 _plcrash_async_macho_find_best_symbol
 __ZL20free_mapped_sectionsP24plcrash_async_objc_cache
-__ZL24plcrash_async_objc_parseP19plcrash_async_machoP24plcrash_async_objc_cachePFvbP26plcrash_async_macho_stringS4_jPvES5_
-__ZL41pl_async_objc_find_method_search_callbackbP26plcrash_async_macho_stringS0_jPv
-__ZL39pl_async_objc_find_method_call_callbackbP26plcrash_async_macho_stringS0_jPv
+__ZL24plcrash_async_objc_parseP19plcrash_async_machoP24plcrash_async_objc_cachePFvbP26plcrash_async_macho_stringS4_mPvES5_
+__ZL41pl_async_objc_find_method_search_callbackbP26plcrash_async_macho_stringS0_mPv
+__ZL39pl_async_objc_find_method_call_callbackbP26plcrash_async_macho_stringS0_mPv
 ____ZL37plcrash_async_image_objc_has_ios9_abiv_block_invoke
-__ZL25pl_async_parse_obj1_classP19plcrash_async_machoP14pl_objc1_classbPFvbP26plcrash_async_macho_stringS4_jPvES5_
+__ZL25pl_async_parse_obj1_classP19plcrash_async_machoP14pl_objc1_classbPFvbP26plcrash_async_macho_stringS4_mPvES5_
 __ZL12map_sectionsP19plcrash_async_machoP24plcrash_async_objc_cache
-__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_jPvESC_
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_mPvESC_
 __ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
-__ZL37pl_async_objc_parse_objc2_method_listP19plcrash_async_machoP24plcrash_async_objc_cacheP26plcrash_async_macho_stringbjPFvbS4_S4_jPvES5_
-__ZL9cache_setP24plcrash_async_objc_cachejj
-__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_jPvESC_
+__ZL37pl_async_objc_parse_objc2_method_listP19plcrash_async_machoP24plcrash_async_objc_cacheP26plcrash_async_macho_stringbmPFvbS4_S4_mPvES5_
+__ZL9cache_setP24plcrash_async_objc_cachemm
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_mPvESC_
 __ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
 __GLOBAL__sub_I_PLCrashAsyncObjCSection.mm
 __ZZL37plcrash_async_image_objc_has_ios9_abivE9onceToken
@@ -16767,6 +16787,7 @@ _arm_nonvolatile_registers
 _arm64_nonvolatile_registers
 _arm_dwarf_table
 _arm64_dwarf_table
+_plcrash_async_map_register_name
 +[IBGPLCrashProcessInfo currentProcessInfo]
 -[IBGPLCrashProcessInfo initWithProcessID:]
 -[IBGPLCrashProcessInfo dealloc]
