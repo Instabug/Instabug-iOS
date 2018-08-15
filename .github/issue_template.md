@@ -19,6 +19,6 @@ your issue will help us a lot.
 
 ### iOS Version
 
-### Device Type
+### Device Model
 
 ### [Optional] Project That Reproduces the Issue
