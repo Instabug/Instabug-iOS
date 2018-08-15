@@ -1,3 +1,11 @@
+<!--
+Please fill in the template below when creating an issue 
+to help us reproduce it and fix it faster.
+
+While not required, including a sample project that reproduces 
+your issue will help us a lot.
+-->
+
 ### Steps to Reproduce the Problem
 
 ### Expected Behavior
@@ -12,3 +20,5 @@
 ### iOS Version
 
 ### Device Type
+
+### [Optional] Project That Reproduces the Issue
