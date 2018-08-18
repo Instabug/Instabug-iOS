@@ -49,9 +49,12 @@ fi
 echo "Instabug: found APP_TOKEN=${APP_TOKEN}"
 
 # Check internet connection
-if [ "`curl -s https://api.instabug.com | grep status | grep -c OK`" != "1" ]; then
-  echo "ERROR connecting to api.instabug.com."
-  exit 0
+CURL_RESPONSE=$(curl -s 'https://api.instabug.com')
+
+if [[ $CURL_RESPONSE != *"OK"* ]]; then
+    echo "ERROR connecting to api.instabug.com."
+    echo "${CURL_RESPONSE}"
+    exit 0
 fi
 
 # Create temp directory if not exists
