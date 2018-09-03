@@ -1299,6 +1299,7 @@ _OBJC_IVAR_$_IBGAudioLocalAttachment._completionHandler
 -[IBGFeatureDetailHeaderView setConstraintsWithDescription:]
 -[IBGFeatureDetailHeaderView setConstraintsWithoutDescription:]
 -[IBGFeatureDetailHeaderView .cxx_destruct]
+___clang_at_available_requires_core_foundation_framework
 _OBJC_IVAR_$_IBGFeatureDetailHeaderView._titleLabel
 _OBJC_IVAR_$_IBGFeatureDetailHeaderView._descriptionLabel
 _OBJC_IVAR_$_IBGFeatureDetailHeaderView._dateLabel
@@ -1942,33 +1943,30 @@ _OBJC_IVAR_$_IBGSystemEvent._eventName
 ___50-[IBGMethodsLogger logCountedMethod:isDeprecated:]_block_invoke
 -[IBGMethodsLogger logMethod:isDeprecated:params:]
 ___50-[IBGMethodsLogger logMethod:isDeprecated:params:]_block_invoke
-___copy_helper_block_.481
-___destroy_helper_block_.482
+___copy_helper_block_.483
+___destroy_helper_block_.484
 -[IBGMethodsLogger logMethod:isDeprecated:params:managedObjectContext:]
 -[IBGMethodsLogger loadLogsSynchronously:sessionDate:withCompletionHandler:]
 -[IBGMethodsLogger loadLogsSynchronouslyWithSessionDate:]
 ___57-[IBGMethodsLogger loadLogsSynchronouslyWithSessionDate:]_block_invoke
-___copy_helper_block_.549
-___destroy_helper_block_.550
+___copy_helper_block_.551
+___destroy_helper_block_.552
 -[IBGMethodsLogger loadLogsAsynchronouslyWithSessionDate:completionHandler:]
 ___76-[IBGMethodsLogger loadLogsAsynchronouslyWithSessionDate:completionHandler:]_block_invoke
-___copy_helper_block_.554
-___destroy_helper_block_.555
 -[IBGMethodsLogger clearAllLogs]
 ___32-[IBGMethodsLogger clearAllLogs]_block_invoke
 -[IBGMethodsLogger purgeAllLogsTillDate:]
 ___41-[IBGMethodsLogger purgeAllLogsTillDate:]_block_invoke
-___copy_helper_block_.564
-___destroy_helper_block_.565
+___copy_helper_block_.566
+___destroy_helper_block_.567
 +[IBGMethodsLogger dataLayerService]
 ___36+[IBGMethodsLogger dataLayerService]_block_invoke
-___block_descriptor_tmp.483
-___block_descriptor_tmp.551
-___block_descriptor_tmp.556
-___block_descriptor_tmp.559
-___block_descriptor_tmp.566
+___block_descriptor_tmp.485
+___block_descriptor_tmp.553
+___block_descriptor_tmp.561
 ___block_descriptor_tmp.568
-___block_literal_global.569
+___block_descriptor_tmp.570
+___block_literal_global.571
 /Users/distiller/project/Instabug/InstabugCore/Logging/IBGMethodsLogger.m
 __36+[IBGMethodsLogger dataLayerService]_block_invoke
 __41-[IBGMethodsLogger purgeAllLogsTillDate:]_block_invoke
@@ -2776,7 +2774,6 @@ _OBJC_IVAR_$_IBGSurveysNavigationHeader._total
 _OBJC_IVAR_$_IBGSearchController._ibgSearchBar
 /Users/distiller/project/Instabug/FeaturesRequest/Controllers/IBGSearchController.m
 -[IBGStorageStateReader getStorage]
-___clang_at_available_requires_core_foundation_framework
 /Users/distiller/project/Instabug/InstabugSessionProfiler/Readers/IBGStorageStateReader.m
 +[IBGFeatureRequests setEmailFieldRequired:forAction:]
 +[IBGFeatureRequests show]
@@ -3359,10 +3356,12 @@ ___destroy_helper_block_.569
 -[IBGFeatureDetailAddCommentView setupObservers]
 -[IBGFeatureDetailAddCommentView keyboardWillShowNotification:]
 ___63-[IBGFeatureDetailAddCommentView keyboardWillShowNotification:]_block_invoke
-___copy_helper_block_.624
-___destroy_helper_block_.625
+___copy_helper_block_.626
+___destroy_helper_block_.627
 -[IBGFeatureDetailAddCommentView keyboardWillHideNotification:]
 ___63-[IBGFeatureDetailAddCommentView keyboardWillHideNotification:]_block_invoke
+___copy_helper_block_.629
+___destroy_helper_block_.630
 -[IBGFeatureDetailAddCommentView textView:shouldChangeTextInRange:replacementText:]
 -[IBGFeatureDetailAddCommentView setName:]
 -[IBGFeatureDetailAddCommentView setEmail:]
@@ -3389,16 +3388,18 @@ ___63-[IBGFeatureDetailAddCommentView keyboardWillHideNotification:]_block_invok
 -[IBGFeatureDetailAddCommentView setCommentTextView:]
 -[IBGFeatureDetailAddCommentView setFooterView:]
 -[IBGFeatureDetailAddCommentView setViews:]
--[IBGFeatureDetailAddCommentView textViewBottomConstraint]
--[IBGFeatureDetailAddCommentView setTextViewBottomConstraint:]
+-[IBGFeatureDetailAddCommentView footerBottomConstraint]
+-[IBGFeatureDetailAddCommentView setFooterBottomConstraint:]
 -[IBGFeatureDetailAddCommentView setActivityIndicator:]
 -[IBGFeatureDetailAddCommentView setDimmedView:]
 -[IBGFeatureDetailAddCommentView setErrorToast:]
+-[IBGFeatureDetailAddCommentView orientation]
+-[IBGFeatureDetailAddCommentView setOrientation:]
 -[IBGFeatureDetailAddCommentView .cxx_destruct]
 ___block_descriptor_tmp.560
 ___block_descriptor_tmp.565
-___block_descriptor_tmp.570
-___block_descriptor_tmp.626
+___block_descriptor_tmp.628
+___block_descriptor_tmp.631
 _OBJC_IVAR_$_IBGFeatureDetailAddCommentView._cancelButton
 _OBJC_IVAR_$_IBGFeatureDetailAddCommentView._postButton
 _OBJC_IVAR_$_IBGFeatureDetailAddCommentView._titleLabel
@@ -3413,7 +3414,8 @@ _OBJC_IVAR_$_IBGFeatureDetailAddCommentView._email
 _OBJC_IVAR_$_IBGFeatureDetailAddCommentView._emailFieldDelegate
 _OBJC_IVAR_$_IBGFeatureDetailAddCommentView._commentTextViewDelegate
 _OBJC_IVAR_$_IBGFeatureDetailAddCommentView._delegate
-_OBJC_IVAR_$_IBGFeatureDetailAddCommentView._textViewBottomConstraint
+_OBJC_IVAR_$_IBGFeatureDetailAddCommentView._footerBottomConstraint
+_OBJC_IVAR_$_IBGFeatureDetailAddCommentView._orientation
 /Users/distiller/project/Instabug/FeaturesRequest/Views/IBGFeatureDetailAddCommentView.m
 /Users/distiller/project/Instabug/FeaturesRequest/Views/IBGFeatureDetailAddCommentView.h
 __63-[IBGFeatureDetailAddCommentView keyboardWillHideNotification:]_block_invoke
@@ -4866,6 +4868,7 @@ ___35-[IBGCrashManager reportException:]_block_invoke.563
 -[IBGCrashManager .cxx_destruct]
 _OBJC_IVAR_$_IBGCrashManager._crashManagerQueue
 _OBJC_IVAR_$_IBGCrashManager._initializationOperation
+___block_descriptor_tmp.483
 _OBJC_IVAR_$_IBGCrashManager._handlePendingCrashesOperation
 ___block_descriptor_tmp.490
 _OBJC_IVAR_$_IBGCrashManager._registerCrashCacheOperation
@@ -5225,6 +5228,8 @@ ___38+[IBGReachabilityInstance getInstance]_block_invoke
 -[IBGReachabilityInstance initializationOperation]
 ___50-[IBGReachabilityInstance initializationOperation]_block_invoke
 ___50-[IBGReachabilityInstance initializationOperation]_block_invoke_2
+___copy_helper_block_.481
+___destroy_helper_block_.482
 +[IBGReachabilityInstance isReachable]
 +[IBGReachabilityInstance destroy]
 -[IBGReachabilityInstance setInitializationOperation:]
@@ -7102,9 +7107,9 @@ _OBJC_IVAR_$_IBGFeaturesEmptyView._addButtonCompletion
 -[IBGServerFileRequest requestData]
 -[IBGServerFileRequest prepareRequestWithCompletionHandler:]
 ___60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke
-___60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke.592
-___copy_helper_block_.597
-___destroy_helper_block_.598
+___60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke.596
+___copy_helper_block_.601
+___destroy_helper_block_.602
 -[IBGServerFileRequest sessionDataTaskWithRawRequest:]
 +[IBGServerFileRequest executeWithURL:filePath:fileInfo:delegate:]
 -[IBGServerFileRequest dataFromContentOfFilePath:]
@@ -7123,6 +7128,7 @@ ___destroy_helper_block_.598
 -[IBGServerFileRequest info]
 -[IBGServerFileRequest setInfo:]
 -[IBGServerFileRequest .cxx_destruct]
+___block_descriptor_tmp.604
 _OBJC_IVAR_$_IBGServerFileRequest._delegate
 _OBJC_IVAR_$_IBGServerFileRequest._data
 _OBJC_IVAR_$_IBGServerFileRequest._filePath
@@ -7135,7 +7141,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGServerProtocol
 /Users/distiller/project/Instabug/InstabugCore/Server and Requests/Generic Requests/IBGServerFileRequest.m
 /Users/distiller/project/Instabug/InstabugCore/Server and Requests/Generic Requests/IBGServerFileRequest.h
 /Users/distiller/project/Instabug/InstabugCore/Server and Requests/Generic Requests/IBGServerProtocol.h
-__60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke.592
+__60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke.596
 __60-[IBGServerFileRequest prepareRequestWithCompletionHandler:]_block_invoke
 -[IBGMetadataController initWithSnapshot:]
 -[IBGMetadataController removeDisabledFeaturesWithCompletionHandler:]
@@ -7648,15 +7654,19 @@ ___49-[IBGFeatureDetailViewController viewWillAppear:]_block_invoke
 -[IBGFeatureDetailViewController didAddFeatureRequestComment:]
 -[IBGFeatureDetailViewController orientationChanged:]
 ___53-[IBGFeatureDetailViewController orientationChanged:]_block_invoke
-___copy_helper_block_.525
-___destroy_helper_block_.526
+___copy_helper_block_.521
+___destroy_helper_block_.522
 -[IBGFeatureDetailViewController didTapAddCommentSection:]
 -[IBGFeatureDetailViewController didTapBackButton]
 -[IBGFeatureDetailViewController didTapVoteUp:]
 -[IBGFeatureDetailViewController scrollToFirstComment]
 ___54-[IBGFeatureDetailViewController scrollToFirstComment]_block_invoke
+___copy_helper_block_.542
+___destroy_helper_block_.543
 -[IBGFeatureDetailViewController didFetchFeatureRequestDetail:isSuccess:]
 ___73-[IBGFeatureDetailViewController didFetchFeatureRequestDetail:isSuccess:]_block_invoke
+___copy_helper_block_.545
+___destroy_helper_block_.546
 -[IBGFeatureDetailViewController voteRequestCompletedAndVotedUp:]
 -[IBGFeatureDetailViewController updateLayout]
 -[IBGFeatureDetailViewController commentStatusChanged:atIndex:]
@@ -7684,8 +7694,8 @@ ___73-[IBGFeatureDetailViewController didFetchFeatureRequestDetail:isSuccess:]_b
 -[IBGFeatureDetailViewController setDelegate:]
 -[IBGFeatureDetailViewController setSectionHeader:]
 -[IBGFeatureDetailViewController .cxx_destruct]
-___block_descriptor_tmp.527
-___block_descriptor_tmp.548
+___block_descriptor_tmp.523
+___block_descriptor_tmp.547
 _OBJC_IVAR_$_IBGFeatureDetailViewController._detailView
 _OBJC_IVAR_$_IBGFeatureDetailViewController._sectionHeader
 _OBJC_IVAR_$_IBGFeatureDetailViewController._animationController
@@ -7847,6 +7857,7 @@ _OBJC_IVAR_$_IBGZZFileChannel._URL
 /Users/distiller/project/Instabug/InstabugCore/ZipZap/IBGZZFileChannel.m
 -[IBGFeatureDetailView init]
 -[IBGFeatureDetailView updateConstraints]
+-[IBGFeatureDetailView dealloc]
 -[IBGFeatureDetailView updateHeaderLayout]
 -[IBGFeatureDetailView orientaitonChanged]
 -[IBGFeatureDetailView populateHeaderWithFeatureRequest:]
@@ -7856,6 +7867,8 @@ _OBJC_IVAR_$_IBGZZFileChannel._URL
 -[IBGFeatureDetailView commentsTableView]
 -[IBGFeatureDetailView headerView]
 -[IBGFeatureDetailView dummyCommentView]
+-[IBGFeatureDetailView commentViewHeightConstraint]
+-[IBGFeatureDetailView setCommentViewHeightConstraint:]
 -[IBGFeatureDetailView setCommentsTableView:]
 -[IBGFeatureDetailView setHeaderView:]
 -[IBGFeatureDetailView setDummyCommentView:]
@@ -7865,10 +7878,12 @@ _OBJC_IVAR_$_IBGZZFileChannel._URL
 _OBJC_IVAR_$_IBGFeatureDetailView._commentsTableView
 _OBJC_IVAR_$_IBGFeatureDetailView._headerView
 _OBJC_IVAR_$_IBGFeatureDetailView._dummyCommentView
+_OBJC_IVAR_$_IBGFeatureDetailView._commentViewHeightConstraint
 _OBJC_IVAR_$_IBGFeatureDetailView._widthConstraint
 l_OBJC_PROTOCOL_$_IBGFeatureDetailHeaderViewDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGFeatureDetailHeaderViewDelegate
 /Users/distiller/project/Instabug/FeaturesRequest/Views/IBGFeatureDetailView.m
+/Users/distiller/project/Instabug/FeaturesRequest/Views/IBGFeatureDetailView.h
 -[IBGBorderedImageView initWithBorderColor:backgroundColor:borderWidth:]
 -[IBGBorderedImageView drawRect:]
 -[IBGBorderedImageView setImage:]
@@ -8944,6 +8959,8 @@ ___40-[IBGFeatures registerFeature:delegate:]_block_invoke
 -[IBGFeatures defaultsKeyForFeatureName:]
 -[IBGFeatures checkFeatures]
 ___28-[IBGFeatures checkFeatures]_block_invoke
+___copy_helper_block_.624
+___destroy_helper_block_.625
 -[IBGFeatures clearPreviousData]
 -[IBGFeatures updateFeatures]
 -[IBGFeatures featuresRequestDone:isSuccess:response:error:]
@@ -9049,6 +9066,7 @@ ___destroy_helper_block_.659
 _OBJC_IVAR_$_IBGFeatures._features_queue
 _OBJC_IVAR_$_IBGFeatures._observers
 _OBJC_IVAR_$_IBGFeatures._lock
+___block_descriptor_tmp.626
 _OBJC_IVAR_$_IBGFeatures._recentFeatureResponse
 ___block_descriptor_tmp.660
 _OBJC_IVAR_$_IBGFeatures._visualUserStepsWithScreenshots
@@ -11296,8 +11314,12 @@ ___copy_helper_block_.509
 ___destroy_helper_block_.510
 ___34-[IBGLogLocalAttachment fetchLogs]_block_invoke.514
 ___34-[IBGLogLocalAttachment fetchLogs]_block_invoke_2
+___copy_helper_block_.525
+___destroy_helper_block_.526
 ___34-[IBGLogLocalAttachment fetchLogs]_block_invoke.530
 ___34-[IBGLogLocalAttachment fetchLogs]_block_invoke_2.537
+___copy_helper_block_.549
+___destroy_helper_block_.550
 ___34-[IBGLogLocalAttachment fetchLogs]_block_invoke.554
 ___copy_helper_block_.557
 ___destroy_helper_block_.558
@@ -11348,7 +11370,10 @@ ___destroy_helper_block_.690
 -[IBGLogLocalAttachment setSnapshot:]
 -[IBGLogLocalAttachment .cxx_destruct]
 ___block_descriptor_tmp.511
+___block_descriptor_tmp.527
 ___block_literal_global.532
+___block_descriptor_tmp.551
+___block_descriptor_tmp.559
 ___block_descriptor_tmp.569
 ___block_descriptor_tmp.688
 ___block_descriptor_tmp.691
@@ -11910,6 +11935,8 @@ __37+[IBGAnalyticsManager sharedInstance]_block_invoke
 -[IBGSurveyThankYouView animateIn]
 ___34-[IBGSurveyThankYouView animateIn]_block_invoke
 ___34-[IBGSurveyThankYouView animateIn]_block_invoke.553
+___copy_helper_block_.554
+___destroy_helper_block_.555
 -[IBGSurveyThankYouView setInitialState]
 -[IBGSurveyThankYouView containerView]
 -[IBGSurveyThankYouView tickImageView]
@@ -11928,6 +11955,7 @@ ___34-[IBGSurveyThankYouView animateIn]_block_invoke.553
 -[IBGSurveyThankYouView surveyLayoutType]
 -[IBGSurveyThankYouView setSurveyLayoutType:]
 -[IBGSurveyThankYouView .cxx_destruct]
+___block_descriptor_tmp.556
 _OBJC_IVAR_$_IBGSurveyThankYouView._containerView
 _OBJC_IVAR_$_IBGSurveyThankYouView._tickImageView
 _OBJC_IVAR_$_IBGSurveyThankYouView._thankYouLabel
@@ -12366,8 +12394,6 @@ ___49-[IBGPresentationManager initializationOperation]_block_invoke
 -[IBGPresentationManager captureFirstResponderView]
 -[IBGPresentationManager dismissKeyboard]
 ___41-[IBGPresentationManager dismissKeyboard]_block_invoke
-___copy_helper_block_.629
-___destroy_helper_block_.630
 -[IBGPresentationManager nativeSharePresent]
 -[IBGPresentationManager presentNavigationControllerWithViewController:animated:completion:]
 -[IBGPresentationManager presentNavigationControllerWithViewController:animated:transitionDelegate:completion:]
@@ -12395,7 +12421,6 @@ _OBJC_IVAR_$_IBGPresentationManager._initializationOperation
 ___block_descriptor_tmp.495
 _OBJC_IVAR_$_IBGPresentationManager._window
 _OBJC_IVAR_$_IBGPresentationManager._SDKPresent
-___block_descriptor_tmp.631
 _OBJC_IVAR_$_IBGPresentationManager._windowLevel
 _OBJC_IVAR_$_IBGPresentationManager._screenshotCapturingHandler
 _OBJC_IVAR_$_IBGPresentationManager._delegates
@@ -12525,8 +12550,6 @@ __44-[IBGFeaturesViewController viewWillAppear:]_block_invoke
 ___53-[IBGMetadataItem fetchIBGLogsWithCompletionHandler:]_block_invoke
 -[IBGMetadataItem fetchNetworkLogsWithCompletionHandler:]
 ___57-[IBGMetadataItem fetchNetworkLogsWithCompletionHandler:]_block_invoke
-___copy_helper_block_.521
-___destroy_helper_block_.522
 -[IBGMetadataItem setSnapshot:]
 -[IBGMetadataItem paramsWithDetailViews]
 -[IBGMetadataItem paramsWithFetch]
@@ -12547,7 +12570,6 @@ ___destroy_helper_block_.522
 _OBJC_IVAR_$_IBGMetadataItem._name
 _OBJC_IVAR_$_IBGMetadataItem._details
 _OBJC_IVAR_$_IBGMetadataItem._hasDetailView
-___block_descriptor_tmp.523
 _OBJC_IVAR_$_IBGMetadataItem._snapshot
 _OBJC_IVAR_$_IBGMetadataItem._paramsWithDetailViews
 _OBJC_IVAR_$_IBGMetadataItem._nameMappings
@@ -12702,6 +12724,7 @@ _OBJC_IVAR_$_IBGVoiceRecorder._shouldKeepAttachmentInTemp
 /Users/distiller/project/Instabug/InstabugCore/Helpers/Recorders and Players/IBGVoiceRecorder.h
 __39-[IBGVoiceRecorder checkUserPermission]_block_invoke
 -[IBGFeatureTableViewCell initWithStyle:reuseIdentifier:]
+-[IBGFeatureTableViewCell updateConstraints]
 -[IBGFeatureTableViewCell setupConstratins]
 -[IBGFeatureTableViewCell showTopSeparator]
 -[IBGFeatureTableViewCell hideTopSeparator]
@@ -12709,7 +12732,6 @@ __39-[IBGVoiceRecorder checkUserPermission]_block_invoke
 -[IBGFeatureTableViewCell setCommentsCount:]
 -[IBGFeatureTableViewCell setDate:]
 -[IBGFeatureTableViewCell setTitle:]
--[IBGFeatureTableViewCell setFeatureStatus]
 -[IBGFeatureTableViewCell setVoted:]
 -[IBGFeatureTableViewCell setIndex:]
 -[IBGFeatureTableViewCell setFeatureVoteDelegate:]
@@ -14046,8 +14068,6 @@ ___copy_helper_block_.619
 ___destroy_helper_block_.620
 -[IBGUserStepsLogger removeVisualUserStepsWithReportId:]
 ___56-[IBGUserStepsLogger removeVisualUserStepsWithReportId:]_block_invoke
-___copy_helper_block_.626
-___destroy_helper_block_.627
 -[IBGUserStepsLogger applicationSendEventEnabled:]
 -[IBGUserStepsLogger addStepWithEventType:view:klass:label:date:legacyName:legacyType:]
 -[IBGUserStepsLogger viewNameFromLabel:klass:]
@@ -14094,10 +14114,10 @@ ___destroy_helper_block_.773
 -[IBGUserStepsLogger .cxx_destruct]
 ___block_descriptor_tmp.518
 ___block_literal_global.519
+___block_descriptor_tmp.566
 _OBJC_IVAR_$_IBGUserStepsLogger._enabled
 ___block_descriptor_tmp.579
 ___block_descriptor_tmp.621
-___block_descriptor_tmp.628
 __IBGScreenshotCount
 ___block_descriptor_tmp.706
 _OBJC_IVAR_$_IBGUserStepsLogger._dataLayerService
@@ -15729,7 +15749,6 @@ ___76-[IBGUserStepsImagesLocalAttachment prepareAttachmentAndSaveWithCompletion:
 -[IBGUserStepsImagesLocalAttachment snapshot]
 -[IBGUserStepsImagesLocalAttachment setSnapshot:]
 -[IBGUserStepsImagesLocalAttachment .cxx_destruct]
-___block_descriptor_tmp.561
 _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment.fileName
 _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment._sessionId
 _OBJC_IVAR_$_IBGUserStepsImagesLocalAttachment._reportDate
@@ -15811,8 +15830,6 @@ ___destroy_helper_block_.545
 ___85-[IBGFeatureModelPersistanceManager addCommentToFeatureWithID:dictionary:completion:]_block_invoke.547
 -[IBGFeatureModelPersistanceManager updateCommentWithID:dictionary:]
 ___68-[IBGFeatureModelPersistanceManager updateCommentWithID:dictionary:]_block_invoke
-___copy_helper_block_.551
-___destroy_helper_block_.552
 -[IBGFeatureModelPersistanceManager voteOnFeatureWithID:voteUp:]
 ___64-[IBGFeatureModelPersistanceManager voteOnFeatureWithID:voteUp:]_block_invoke
 ___copy_helper_block_.562
@@ -15830,7 +15847,6 @@ ___block_descriptor_tmp.515
 ___block_literal_global.516
 ___block_descriptor_tmp.533
 ___block_descriptor_tmp.546
-___block_descriptor_tmp.553
 _OBJC_IVAR_$_IBGFeatureModelPersistanceManager._service
 /Users/distiller/project/Instabug/FeaturesRequest/DataStore/IBGFeatureModelPersistanceManager.m
 __64-[IBGFeatureModelPersistanceManager voteOnFeatureWithID:voteUp:]_block_invoke
@@ -16165,6 +16181,8 @@ ___63-[IBGFeatureDetailAddCommentViewController orientationChanged:]_block_invok
 -[IBGFeatureDetailAddCommentViewController setupObservers]
 -[IBGFeatureDetailAddCommentViewController dismissSuccessfullyWithComment:]
 ___75-[IBGFeatureDetailAddCommentViewController dismissSuccessfullyWithComment:]_block_invoke
+___copy_helper_block_.564
+___destroy_helper_block_.565
 -[IBGFeatureDetailAddCommentViewController commentTextView:didChangeTextTo:]
 -[IBGFeatureDetailAddCommentViewController ibgFormField:didChangeTextTo:]
 -[IBGFeatureDetailAddCommentViewController ibgFormFieldShouldEndEditing:]
@@ -16172,7 +16190,7 @@ ___75-[IBGFeatureDetailAddCommentViewController dismissSuccessfullyWithComment:]
 -[IBGFeatureDetailAddCommentViewController didTapCancel]
 -[IBGFeatureDetailAddCommentViewController didAddComment:isSuccess:]
 ___68-[IBGFeatureDetailAddCommentViewController didAddComment:isSuccess:]_block_invoke
-___68-[IBGFeatureDetailAddCommentViewController didAddComment:isSuccess:]_block_invoke.593
+___68-[IBGFeatureDetailAddCommentViewController didAddComment:isSuccess:]_block_invoke.610
 -[IBGFeatureDetailAddCommentViewController validateForm]
 -[IBGFeatureDetailAddCommentViewController invalidateForm]
 -[IBGFeatureDetailAddCommentViewController addCommentView]
@@ -16187,6 +16205,8 @@ ___68-[IBGFeatureDetailAddCommentViewController didAddComment:isSuccess:]_block_
 -[IBGFeatureDetailAddCommentViewController setToastView:]
 -[IBGFeatureDetailAddCommentViewController isShowingErrorToast]
 -[IBGFeatureDetailAddCommentViewController setIsShowingErrorToast:]
+-[IBGFeatureDetailAddCommentViewController orientation]
+-[IBGFeatureDetailAddCommentViewController setOrientation:]
 -[IBGFeatureDetailAddCommentViewController .cxx_destruct]
 _OBJC_IVAR_$_IBGFeatureDetailAddCommentViewController._addCommentView
 _OBJC_IVAR_$_IBGFeatureDetailAddCommentViewController._listener
@@ -16194,6 +16214,7 @@ _OBJC_IVAR_$_IBGFeatureDetailAddCommentViewController._controller
 _OBJC_IVAR_$_IBGFeatureDetailAddCommentViewController._viewTopConstraint
 _OBJC_IVAR_$_IBGFeatureDetailAddCommentViewController._toastView
 _OBJC_IVAR_$_IBGFeatureDetailAddCommentViewController._isShowingErrorToast
+_OBJC_IVAR_$_IBGFeatureDetailAddCommentViewController._orientation
 l_OBJC_PROTOCOL_$_IBGAddCommentFormFieldDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGAddCommentFormFieldDelegate
 l_OBJC_PROTOCOL_$_IBGFeatureDetailCommentTextViewDelegate
@@ -16204,7 +16225,7 @@ l_OBJC_PROTOCOL_$_IBGFeatureDetailAddCommentViewControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGFeatureDetailAddCommentViewControllerDelegate
 /Users/distiller/project/Instabug/FeaturesRequest/View Controllers/IBGFeatureDetailAddCommentViewController.m
 /Users/distiller/project/Instabug/FeaturesRequest/View Controllers/IBGFeatureDetailAddCommentViewController.h
-__68-[IBGFeatureDetailAddCommentViewController didAddComment:isSuccess:]_block_invoke.593
+__68-[IBGFeatureDetailAddCommentViewController didAddComment:isSuccess:]_block_invoke.610
 __68-[IBGFeatureDetailAddCommentViewController didAddComment:isSuccess:]_block_invoke
 __75-[IBGFeatureDetailAddCommentViewController dismissSuccessfullyWithComment:]_block_invoke
 __63-[IBGFeatureDetailAddCommentViewController orientationChanged:]_block_invoke

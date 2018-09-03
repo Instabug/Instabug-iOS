@@ -1,3 +1,4 @@
+#!/bin/bash
 # Copyright 2014 Instabug, Inc. All rights reserved.
 #
 # Usage:
@@ -49,13 +50,19 @@ fi
 echo "Instabug: found APP_TOKEN=${APP_TOKEN}"
 
 # Check internet connection
-CURL_RESPONSE=$(curl -s 'https://api.instabug.com')
+set -x
+
+CURL_RESPONSE=$(curl 'https://api.instabug.com')
 
 if [[ $CURL_RESPONSE != *"OK"* ]]; then
     echo "ERROR connecting to api.instabug.com."
     echo "${CURL_RESPONSE}"
     exit 0
+else
+  echo SUCCESS
 fi
+
+set +x
 
 # Create temp directory if not exists
 CURRENT_USER=$(whoami| tr -dc '[:alnum:]\n\r' | tr '[:upper:]' '[:lower:]')
