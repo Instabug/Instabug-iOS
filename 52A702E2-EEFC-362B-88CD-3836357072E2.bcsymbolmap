@@ -59,6 +59,8 @@ _OBJC_IVAR_$_IBGChatViewLayoutAttributes._audioSize
 _OBJC_IVAR_$_IBGChatViewLayoutAttributes._constantVerticalHeight
 /Users/distiller/project/Instabug/InstabugChats/Views/Chat Collection View/IBGChatViewLayoutAttributes.m
 /Users/distiller/project/Instabug/InstabugChats/Views/Chat Collection View/IBGChatViewLayoutAttributes.h
+CGSizeMake
+/Applications/Xcode-9.3.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[IBGChatCollectionViewCellHeightCalculator init]
 -[IBGChatCollectionViewCellHeightCalculator heightForItemAt:content:layoutAttributes:]
 -[IBGChatCollectionViewCellHeightCalculator heightForTextString:]
@@ -231,8 +233,6 @@ _OBJC_IVAR_$_IBGChatCell._unreadMessageButton
 _OBJC_IVAR_$_IBGChatCell._seperatorView
 /Users/distiller/project/Instabug/InstabugChats/Views/Table View Cell/IBGChatCell.m
 /Users/distiller/project/Instabug/InstabugChats/Views/Table View Cell/IBGChatCell.h
-NSMakeRange
-/Applications/Xcode-9.3.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 -[IBGArrowAnnotationView initWithFrame:zPosition:originator:annotatingColor:angle:]
 -[IBGArrowAnnotationView drawRect:]
 +[IBGArrowAnnotationView minimumArrowSize]
@@ -245,6 +245,7 @@ NSMakeRange
 _OBJC_IVAR_$_IBGArrowAnnotationView.path
 _OBJC_IVAR_$_IBGArrowAnnotationView._annotatingColor
 /Users/distiller/project/Instabug/InstabugAnnotations/Annotations View/IBGArrowAnnotationView.m
+CGPointMake
 -[IBGPaddingLabel textRectForBounds:limitedToNumberOfLines:]
 -[IBGPaddingLabel drawTextInRect:]
 -[IBGPaddingLabel edgeInsets]
@@ -585,17 +586,6 @@ l_OBJC_LABEL_PROTOCOL_$_InstabugFrameworks
 __41-[InstabugChats initializationOperations]_block_invoke_2
 __41-[InstabugChats initializationOperations]_block_invoke
 __31+[InstabugChats sharedInstance]_block_invoke
--[IBGButton init]
--[IBGButton pointInside:withEvent:]
--[IBGButton resetUI]
--[IBGButton hitTestEdgeInsets]
--[IBGButton setHitTestEdgeInsets:]
--[IBGButton switchState]
--[IBGButton setSwitchState:]
-_OBJC_IVAR_$_IBGButton._hitTestEdgeInsets
-_OBJC_IVAR_$_IBGButton._switchState
-/Users/distiller/project/Instabug/InstabugCore/Views/IBGButton.m
-/Users/distiller/project/Instabug/InstabugCore/Views/IBGButton.h
 -[IBGZZStoreOutputStream initWithChannelOutput:]
 -[IBGZZStoreOutputStream streamStatus]
 -[IBGZZStoreOutputStream streamError]
@@ -2348,6 +2338,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGChatView
 /Users/distiller/project/Instabug/InstabugChats/View Controllers/IBGChatVC.m
 /Users/distiller/project/Instabug/InstabugChats/View Controllers/IBGChatVC.h
 __63-[IBGChatVC collectionView:willDisplayCell:forItemAtIndexPath:]_block_invoke
+CGRectMake
 __64-[IBGChatVC viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
 __28-[IBGChatVC viewWillAppear:]_block_invoke
 -[IBGVideoPerviewView init]
@@ -3698,65 +3689,6 @@ _OBJC_IVAR_$_IBGFeaturesInteractorState._page
 _OBJC_IVAR_$_IBGFeaturesInteractorState._hasNextPage
 /Users/distiller/project/Instabug/FeaturesRequest/Models/IBGFeaturesInteractorState.m
 /Users/distiller/project/Instabug/FeaturesRequest/Models/IBGFeaturesInteractorState.h
--[IBGToastView initWithMessage:autoDismissAfter:]
--[IBGToastView initWithMessage:autoDismissAfter:mode:]
--[IBGToastView updateConstraints]
--[IBGToastView didSwipeUp:]
--[IBGToastView setRightButtonTitle:]
--[IBGToastView setRightButtonCompletionHandler:]
--[IBGToastView layoutSubviews]
--[IBGToastView dismissAnimated:completion:]
-___43-[IBGToastView dismissAnimated:completion:]_block_invoke
-___43-[IBGToastView dismissAnimated:completion:]_block_invoke.94
-___copy_helper_block_.95
-___destroy_helper_block_.96
--[IBGToastView setupForMode:]
--[IBGToastView setupDefaultMode]
--[IBGToastView autoDismissAfter:]
-___33-[IBGToastView autoDismissAfter:]_block_invoke
-___copy_helper_block_.136
-___destroy_helper_block_.137
--[IBGToastView animatePresentationFromTopToBottom]
-___50-[IBGToastView animatePresentationFromTopToBottom]_block_invoke
-___copy_helper_block_.143
-___destroy_helper_block_.144
-___50-[IBGToastView animatePresentationFromTopToBottom]_block_invoke.146
-___copy_helper_block_.147
-___destroy_helper_block_.148
--[IBGToastView didTapRightButton]
--[IBGToastView setSideButtonHidden:]
--[IBGToastView messageLabel]
--[IBGToastView rightButton]
--[IBGToastView dismissOnTappingRightButton]
--[IBGToastView setDismissOnTappingRightButton:]
--[IBGToastView sideButtonHidden]
--[IBGToastView setMessageLabel:]
--[IBGToastView setRightButton:]
--[IBGToastView rightButtonCompletion]
--[IBGToastView setRightButtonCompletion:]
--[IBGToastView message]
--[IBGToastView setMessage:]
--[IBGToastView didPresentSelf]
--[IBGToastView setDidPresentSelf:]
--[IBGToastView .cxx_destruct]
-___block_descriptor_tmp.98
-___block_descriptor_tmp.138
-___block_descriptor_tmp.145
-___block_descriptor_tmp.149
-_OBJC_IVAR_$_IBGToastView._sideButtonHidden
-_OBJC_IVAR_$_IBGToastView._messageLabel
-_OBJC_IVAR_$_IBGToastView._rightButton
-_OBJC_IVAR_$_IBGToastView._dismissOnTappingRightButton
-_OBJC_IVAR_$_IBGToastView._rightButtonCompletion
-_OBJC_IVAR_$_IBGToastView._message
-_OBJC_IVAR_$_IBGToastView._didPresentSelf
-/Users/distiller/project/Instabug/InstabugCore/Views/IBGToastView.m
-/Users/distiller/project/Instabug/InstabugCore/Views/IBGToastView.h
-__50-[IBGToastView animatePresentationFromTopToBottom]_block_invoke.146
-__50-[IBGToastView animatePresentationFromTopToBottom]_block_invoke
-__33-[IBGToastView autoDismissAfter:]_block_invoke
-__43-[IBGToastView dismissAnimated:completion:]_block_invoke.94
-__43-[IBGToastView dismissAnimated:completion:]_block_invoke
 +[IBGSurveysDefaults sharedInstance]
 ___36+[IBGSurveysDefaults sharedInstance]_block_invoke
 -[IBGSurveysDefaults init]
@@ -3808,6 +3740,8 @@ ___61-[IBGBaseHUDView animateToTransformation:completion:dismiss:]_block_invoke
 ___copy_helper_block_.132
 ___destroy_helper_block_.133
 ___61-[IBGBaseHUDView animateToTransformation:completion:dismiss:]_block_invoke.135
+___copy_helper_block_.136
+___destroy_helper_block_.137
 -[IBGBaseHUDView regularContainerHeight]
 -[IBGBaseHUDView updateTraitConstraints]
 -[IBGBaseHUDView containerView]
@@ -3825,9 +3759,11 @@ ___61-[IBGBaseHUDView animateToTransformation:completion:dismiss:]_block_invoke.
 -[IBGBaseHUDView isLive]
 -[IBGBaseHUDView setIsLive:]
 -[IBGBaseHUDView .cxx_destruct]
+___block_descriptor_tmp.98
 ___block_descriptor_tmp.105
 ___block_descriptor_tmp.131
 ___block_descriptor_tmp.134
+___block_descriptor_tmp.138
 _OBJC_IVAR_$_IBGBaseHUDView._containerView
 _OBJC_IVAR_$_IBGBaseHUDView._contentView
 _OBJC_IVAR_$_IBGBaseHUDView._blurView
@@ -4214,22 +4150,22 @@ ___50-[IBGVideoEncoder videoEncodingUsingImage:atTime:]_block_invoke
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke_2
 ___42-[IBGVideoEncoder stopRecordingCompletion]_block_invoke_3
-___copy_helper_block_.586
-___destroy_helper_block_.587
-___copy_helper_block_.597
-___destroy_helper_block_.598
-___copy_helper_block_.602
-___destroy_helper_block_.603
+___copy_helper_block_.588
+___destroy_helper_block_.589
+___copy_helper_block_.599
+___destroy_helper_block_.600
+___copy_helper_block_.604
+___destroy_helper_block_.605
 -[IBGVideoEncoder stopAutoRecordingCompletion]
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke_2
 ___46-[IBGVideoEncoder stopAutoRecordingCompletion]_block_invoke_3
-___copy_helper_block_.607
-___destroy_helper_block_.608
-___copy_helper_block_.610
-___destroy_helper_block_.611
-___copy_helper_block_.613
-___destroy_helper_block_.614
+___copy_helper_block_.609
+___destroy_helper_block_.610
+___copy_helper_block_.612
+___destroy_helper_block_.613
+___copy_helper_block_.615
+___destroy_helper_block_.616
 -[IBGVideoEncoder removeTempFilePath:]
 -[IBGVideoEncoder encodeVideo:]
 -[IBGVideoEncoder videoURL]
@@ -4269,10 +4205,11 @@ _OBJC_IVAR_$_IBGVideoEncoder._outputBufferPool
 _OBJC_IVAR_$_IBGVideoEncoder._videoWriter
 _OBJC_IVAR_$_IBGVideoEncoder._videoWriterInput
 _OBJC_IVAR_$_IBGVideoEncoder._avAdaptor
-___block_descriptor_tmp.599
-___block_descriptor_tmp.604
-___block_descriptor_tmp.612
-___block_descriptor_tmp.615
+___block_descriptor_tmp.590
+___block_descriptor_tmp.601
+___block_descriptor_tmp.606
+___block_descriptor_tmp.611
+___block_descriptor_tmp.617
 _OBJC_IVAR_$_IBGVideoEncoder._delegate
 _OBJC_IVAR_$_IBGVideoEncoder._writeTimer
 _OBJC_IVAR_$_IBGVideoEncoder._timeStamp
@@ -4316,15 +4253,15 @@ ___118-[IBGNetworkLoggerPersistenceManager saveLogWithRequest:body:resposne:data
 ___156-[IBGNetworkLoggerPersistenceManager addNetworkLogWithUrl:method:requestBody:responseBody:responseCode:requestHeaders:responseHeaders:contentType:duration:]_block_invoke
 ___copy_helper_block_.91
 ___destroy_helper_block_.92
-___156-[IBGNetworkLoggerPersistenceManager addNetworkLogWithUrl:method:requestBody:responseBody:responseCode:requestHeaders:responseHeaders:contentType:duration:]_block_invoke.94
+___156-[IBGNetworkLoggerPersistenceManager addNetworkLogWithUrl:method:requestBody:responseBody:responseCode:requestHeaders:responseHeaders:contentType:duration:]_block_invoke.95
 -[IBGNetworkLoggerPersistenceManager loadLogsSynchronously]
 ___59-[IBGNetworkLoggerPersistenceManager loadLogsSynchronously]_block_invoke
-___copy_helper_block_.122
-___destroy_helper_block_.123
+___copy_helper_block_.118
+___destroy_helper_block_.119
 -[IBGNetworkLoggerPersistenceManager loadLogsAsynchronouslyWithCompletionHandler:]
 ___82-[IBGNetworkLoggerPersistenceManager loadLogsAsynchronouslyWithCompletionHandler:]_block_invoke
-___copy_helper_block_.135
-___destroy_helper_block_.136
+___copy_helper_block_.131
+___destroy_helper_block_.132
 -[IBGNetworkLoggerPersistenceManager purgeIfNeeded]
 +[IBGNetworkLoggerPersistenceManager fetchRequest]
 -[IBGNetworkLoggerPersistenceManager purgeOldLogs]
@@ -4351,21 +4288,20 @@ ___42+[IBGNetworkLoggerPersistenceManager lock]_block_invoke
 __sharedInstance
 ___block_descriptor_tmp.73
 __IBGlogsCount
-___block_descriptor_tmp.93
-___block_descriptor_tmp.97
-___block_descriptor_tmp.124
-___block_descriptor_tmp.137
-___block_descriptor_tmp.144
-___block_literal_global.145
+___block_descriptor_tmp.94
+___block_descriptor_tmp.120
+___block_descriptor_tmp.133
+___block_descriptor_tmp.140
+___block_literal_global.141
+___block_descriptor_tmp.162
+___block_literal_global.163
 ___block_descriptor_tmp.166
 ___block_literal_global.167
-___block_descriptor_tmp.170
-___block_literal_global.171
-___block_descriptor_tmp.176
-___block_literal_global.177
+___block_descriptor_tmp.172
+___block_literal_global.173
 _lock.once
-___block_descriptor_tmp.184
-___block_literal_global.185
+___block_descriptor_tmp.185
+___block_literal_global.186
 __IBGLock
 _OBJC_IVAR_$_IBGNetworkLoggerPersistenceManager._loggedRequest
 _OBJC_IVAR_$_IBGNetworkLoggerPersistenceManager._tobeSavedBody
@@ -4379,7 +4315,7 @@ __50-[IBGNetworkLoggerPersistenceManager clearAllLogs]_block_invoke
 __50-[IBGNetworkLoggerPersistenceManager purgeOldLogs]_block_invoke
 __82-[IBGNetworkLoggerPersistenceManager loadLogsAsynchronouslyWithCompletionHandler:]_block_invoke
 __59-[IBGNetworkLoggerPersistenceManager loadLogsSynchronously]_block_invoke
-__156-[IBGNetworkLoggerPersistenceManager addNetworkLogWithUrl:method:requestBody:responseBody:responseCode:requestHeaders:responseHeaders:contentType:duration:]_block_invoke.94
+__156-[IBGNetworkLoggerPersistenceManager addNetworkLogWithUrl:method:requestBody:responseBody:responseCode:requestHeaders:responseHeaders:contentType:duration:]_block_invoke.95
 __156-[IBGNetworkLoggerPersistenceManager addNetworkLogWithUrl:method:requestBody:responseBody:responseCode:requestHeaders:responseHeaders:contentType:duration:]_block_invoke
 __118-[IBGNetworkLoggerPersistenceManager saveLogWithRequest:body:resposne:data:error:duration:withCompletionHandler:date:]_block_invoke.74
 __118-[IBGNetworkLoggerPersistenceManager saveLogWithRequest:body:resposne:data:error:duration:withCompletionHandler:date:]_block_invoke
@@ -4503,6 +4439,8 @@ ___destroy_helper_block_.571
 -[IBGCrashManager removeFeaturesKVO]
 -[IBGCrashManager addFeaturesKVO]
 ___33-[IBGCrashManager addFeaturesKVO]_block_invoke
+___copy_helper_block_.602
+___destroy_helper_block_.603
 +[IBGCrashManager postCrashHandler]
 +[IBGCrashManager reactNativeStackTrace]
 +[IBGCrashManager destroy]
@@ -4528,6 +4466,7 @@ _OBJC_IVAR_$_IBGCrashManager._isTrackingCrashes
 ___block_descriptor_tmp.564
 ___block_descriptor_tmp.572
 __reactNativeStackTrace
+___block_descriptor_tmp.604
 _OBJC_IVAR_$_IBGCrashManager._crashReporter
 /Users/distiller/project/Instabug/InstabugCrashReporting/Managers/IBGCrashManager.m
 /Users/distiller/project/Instabug/InstabugCrashReporting/Managers/IBGCrashManager.h
@@ -4672,6 +4611,10 @@ ___copy_helper_block_.605
 ___destroy_helper_block_.606
 ___34-[IBGSendingBugController sendBug]_block_invoke.608
 ___34-[IBGSendingBugController sendBug]_block_invoke_2.609
+___copy_helper_block_.610
+___destroy_helper_block_.611
+___copy_helper_block_.613
+___destroy_helper_block_.614
 -[IBGSendingBugController attachVisualUserStepsWithDateString:]
 -[IBGSendingBugController prepareAndSendBug:]
 ___45-[IBGSendingBugController prepareAndSendBug:]_block_invoke
@@ -4704,6 +4647,8 @@ ___block_descriptor_tmp.584
 ___block_descriptor_tmp.597
 ___block_descriptor_tmp.602
 ___block_descriptor_tmp.607
+___block_descriptor_tmp.612
+___block_descriptor_tmp.615
 ___block_descriptor_tmp.681
 _OBJC_IVAR_$_IBGSendingBugController._snapshotHeadNode
 _OBJC_IVAR_$_IBGSendingBugController._shouldInterruptViewHierarchy
@@ -4943,6 +4888,7 @@ ___destroy_helper_block_.91
 -[IBGFeatureSortingTableViewList setDelegate:]
 -[IBGFeatureSortingTableViewList .cxx_destruct]
 ___block_descriptor_tmp.88
+___block_descriptor_tmp.93
 _OBJC_IVAR_$_IBGFeatureSortingTableViewList._dimmedView
 _OBJC_IVAR_$_IBGFeatureSortingTableViewList._tableView
 _OBJC_IVAR_$_IBGFeatureSortingTableViewList._tableViewBottomConstraint
@@ -5268,6 +5214,7 @@ ___block_descriptor_tmp.528
 ___block_descriptor_tmp.534
 ___block_descriptor_tmp.554
 ___block_literal_global.555
+___block_descriptor_tmp.599
 ___block_descriptor_tmp.659
 ___block_descriptor_tmp.711
 _OBJC_IVAR_$_InstabugSurveys._reactivationSessionCountThreshold
@@ -7145,6 +7092,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGKeyboardEventsListenerDelegate
 /Users/distiller/project/Instabug/InstabugBugReporting/Views/IBGBugReportingView.h
 __51-[IBGBugReportingView updateAddingAttachmentMethod]_block_invoke
 __41-[IBGBugReportingView orientationChanged]_block_invoke
+UIEdgeInsetsMake
 -[IBGFeatureDetailAddCommentFormField initWithTitle:]
 -[IBGFeatureDetailAddCommentFormField initWithTitle:text:]
 -[IBGFeatureDetailAddCommentFormField updateConstraints]
@@ -7637,8 +7585,6 @@ ___destroy_helper_block_.584
 -[IBGSurveysNavigationViewController setBackButtonHidden:]
 -[IBGSurveysNavigationViewController dismiss]
 ___45-[IBGSurveysNavigationViewController dismiss]_block_invoke
-___copy_helper_block_.609
-___destroy_helper_block_.610
 -[IBGSurveysNavigationViewController updateHeaderTitleWithIndex:]
 -[IBGSurveysNavigationViewController invalidateLayoutAttributesShouldRefresh:]
 -[IBGSurveysNavigationViewController invalidateLayoutAttributes]
@@ -7683,7 +7629,6 @@ ___block_descriptor_tmp.567
 ___block_descriptor_tmp.571
 ___block_descriptor_tmp.580
 ___block_descriptor_tmp.585
-___block_descriptor_tmp.611
 ___block_descriptor_tmp.646
 _OBJC_IVAR_$_IBGSurveysNavigationViewController._navigationView
 l_OBJC_PROTOCOL_$_IBGSurveysNavigationViewDelegate
@@ -8505,7 +8450,6 @@ _OBJC_IVAR_$_IBGFreeDrawingAnnotationView._needsFrameMapping
 /Users/distiller/project/Instabug/InstabugAnnotations/Annotations View/IBGFreeDrawingAnnotationView.h
 midPointForPoints
 __CGPointEqualToPoint
-/Applications/Xcode-9.3.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[IBGFullActivityIndicatorView init]
 +[IBGFullActivityIndicatorView show]
 +[IBGFullActivityIndicatorView hide]
@@ -9126,6 +9070,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGAnnotatorDelegate
 /Users/distiller/project/Instabug/InstabugCore/View Controllers/IBGScreenshotVC.m
 /Users/distiller/project/Instabug/InstabugCore/View Controllers/IBGScreenshotVC.h
 /Users/distiller/project/Instabug/InstabugAnnotations/IBGAnnotator.h
+__inline_isnanf
 __43-[IBGScreenshotVC dismissColorSelectorView]_block_invoke
 __43-[IBGScreenshotVC presentColorSelectorView]_block_invoke
 __51-[IBGScreenshotVC adjustScreenshotAnnotationsImage]_block_invoke
@@ -10320,6 +10265,8 @@ ___destroy_helper_block_.112
 -[IBGVideoRecorder didFinishRecordingVideoWithURL:withCompletionHandler:]
 ___73-[IBGVideoRecorder didFinishRecordingVideoWithURL:withCompletionHandler:]_block_invoke
 ___73-[IBGVideoRecorder didFinishRecordingVideoWithURL:withCompletionHandler:]_block_invoke_2
+___copy_helper_block_.122
+___destroy_helper_block_.123
 -[IBGVideoRecorder didFailRecordingVideoEncoding]
 ___49-[IBGVideoRecorder didFailRecordingVideoEncoding]_block_invoke
 -[IBGVideoRecorder shouldAnnotateTouch:withEvent:]
@@ -10360,6 +10307,7 @@ _OBJC_IVAR_$_IBGVideoRecorder._firstOrientation
 ___block_descriptor_tmp.104
 ___block_descriptor_tmp.107
 ___block_descriptor_tmp.113
+___block_descriptor_tmp.124
 _OBJC_IVAR_$_IBGVideoRecorder._delegate
 _OBJC_IVAR_$_IBGVideoRecorder._shouldKeepAttachmentInTemp
 _OBJC_IVAR_$_IBGVideoRecorder._videoURL
@@ -10568,7 +10516,6 @@ ___37+[IBGPresentationManager getInstance]_block_invoke
 -[IBGPresentationManager initializationOperation]
 ___49-[IBGPresentationManager initializationOperation]_block_invoke
 -[IBGPresentationManager dealloc]
--[IBGPresentationManager shouldDisablePresentationManager:]
 -[IBGPresentationManager window]
 -[IBGPresentationManager currentWindow]
 -[IBGPresentationManager addDelegate:]
@@ -10593,8 +10540,8 @@ ___49-[IBGPresentationManager initializationOperation]_block_invoke
 -[IBGPresentationManager captureFirstResponderView]
 -[IBGPresentationManager dismissKeyboard]
 ___41-[IBGPresentationManager dismissKeyboard]_block_invoke
-___copy_helper_block_.623
-___destroy_helper_block_.624
+___copy_helper_block_.622
+___destroy_helper_block_.623
 -[IBGPresentationManager nativeSharePresent]
 -[IBGPresentationManager presentNavigationControllerWithViewController:animated:completion:]
 -[IBGPresentationManager presentNavigationControllerWithViewController:animated:transitionDelegate:completion:]
@@ -10611,8 +10558,6 @@ ___destroy_helper_block_.624
 -[IBGPresentationManager setWindow:]
 -[IBGPresentationManager delegates]
 -[IBGPresentationManager setDelegates:]
--[IBGPresentationManager shouldDisbalePresentationManager]
--[IBGPresentationManager setShouldDisbalePresentationManager:]
 -[IBGPresentationManager userFirstResponderView]
 -[IBGPresentationManager setUserFirstResponderView:]
 -[IBGPresentationManager .cxx_destruct]
@@ -10620,10 +10565,9 @@ _OBJC_IVAR_$_IBGPresentationManager._initializationOperation
 ___block_descriptor_tmp.486
 _OBJC_IVAR_$_IBGPresentationManager._window
 _OBJC_IVAR_$_IBGPresentationManager._SDKPresent
-___block_descriptor_tmp.625
+___block_descriptor_tmp.624
 _OBJC_IVAR_$_IBGPresentationManager._windowLevel
 _OBJC_IVAR_$_IBGPresentationManager._delegates
-_OBJC_IVAR_$_IBGPresentationManager._shouldDisbalePresentationManager
 _OBJC_IVAR_$_IBGPresentationManager._userFirstResponderView
 /Users/distiller/project/Instabug/InstabugCore/Managers/IBGPresentationManager.m
 /Users/distiller/project/Instabug/InstabugCore/Managers/IBGPresentationManager.h
@@ -10646,8 +10590,6 @@ ___45-[IBGFeaturesViewController presentSearchBar]_block_invoke
 ___45-[IBGFeaturesViewController presentSearchBar]_block_invoke.603
 -[IBGFeaturesViewController dismissSearchBarWithCompletion:]
 ___60-[IBGFeaturesViewController dismissSearchBarWithCompletion:]_block_invoke
-___copy_helper_block_.612
-___destroy_helper_block_.613
 ___60-[IBGFeaturesViewController dismissSearchBarWithCompletion:]_block_invoke.615
 ___copy_helper_block_.618
 ___destroy_helper_block_.619
@@ -11218,6 +11160,8 @@ ___40-[IBGSurveyNPSView didChangeOrientation]_block_invoke
 -[IBGSurveyNPSView likelyLabelWithText:]
 -[IBGSurveyNPSView showZoomedRateViewAtIndexPath:shouldDeselectPrevious:collectionView:]
 ___88-[IBGSurveyNPSView showZoomedRateViewAtIndexPath:shouldDeselectPrevious:collectionView:]_block_invoke
+___copy_helper_block_.143
+___destroy_helper_block_.144
 -[IBGSurveyNPSView hideZoomedViewAndSelectItemAtIndexPath:]
 ___59-[IBGSurveyNPSView hideZoomedViewAndSelectItemAtIndexPath:]_block_invoke
 ___copy_helper_block_.146
@@ -11245,6 +11189,7 @@ ___destroy_helper_block_.156
 -[IBGSurveyNPSView delegate]
 -[IBGSurveyNPSView setDelegate:]
 -[IBGSurveyNPSView .cxx_destruct]
+___block_descriptor_tmp.145
 ___block_descriptor_tmp.148
 ___block_descriptor_tmp.157
 _OBJC_IVAR_$_IBGSurveyNPSView._collectionView
@@ -11557,7 +11502,6 @@ _OBJC_IVAR_$_IBGDeviceStateLogger._connectionReadings
 _OBJC_IVAR_$_IBGDeviceStateLogger._oreintationReadings
 ___block_descriptor_tmp.76
 ___block_descriptor_tmp.87
-___block_descriptor_tmp.94
 ___block_descriptor_tmp.180
 ___block_descriptor_tmp.221
 ___block_descriptor_tmp.224
@@ -11859,20 +11803,18 @@ ___copy_helper_block_.121
 ___destroy_helper_block_.122
 -[IBGURLSessionDemux URLSession:task:didCompleteWithError:]
 ___59-[IBGURLSessionDemux URLSession:task:didCompleteWithError:]_block_invoke
-___copy_helper_block_.130
-___destroy_helper_block_.131
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]
 ___79-[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]_block_invoke
 -[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]
 ___64-[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]_block_invoke
-___copy_helper_block_.140
-___destroy_helper_block_.141
+___copy_helper_block_.141
+___destroy_helper_block_.142
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]
 ___57-[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]_block_invoke
-___copy_helper_block_.145
-___destroy_helper_block_.146
 -[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]
 ___78-[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]_block_invoke
+___copy_helper_block_.151
+___destroy_helper_block_.152
 -[IBGURLSessionDemux configuration]
 -[IBGURLSessionDemux session]
 -[IBGURLSessionDemux taskInfoByTaskID]
@@ -11887,9 +11829,8 @@ _OBJC_IVAR_$_IBGURLSessionDemux._taskInfoByTaskID
 _OBJC_IVAR_$_IBGURLSessionDemux._sessionDelegateQueue
 _OBJC_IVAR_$_IBGURLSessionDemux._session
 ___block_descriptor_tmp.118
-___block_descriptor_tmp.123
-___block_descriptor_tmp.132
-___block_descriptor_tmp.142
+___block_descriptor_tmp.143
+___block_descriptor_tmp.153
 /Users/distiller/project/Instabug/InstabugNetworkLogger/Helpers/IBGURLSessionDemux.m
 /Users/distiller/project/Instabug/InstabugNetworkLogger/Helpers/IBGURLSessionDemux.h
 __78-[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]_block_invoke
@@ -11966,8 +11907,6 @@ ___50-[IBGQueuesLatencyLogger fetchDeviceQueuesLatency]_block_invoke
 -[IBGQueuesLatencyLogger cpuUsageForQueue:]
 -[IBGQueuesLatencyLogger fetchLogsWithDate:]
 ___44-[IBGQueuesLatencyLogger fetchLogsWithDate:]_block_invoke
-___copy_helper_block_.141
-___destroy_helper_block_.142
 -[IBGQueuesLatencyLogger sortDispatchQueues:]
 -[IBGQueuesLatencyLogger addQueueDict:withQueueName:inQueues:]
 -[IBGQueuesLatencyLogger setFetchRate:]
@@ -11987,7 +11926,7 @@ ___destroy_helper_block_.142
 _OBJC_IVAR_$_IBGQueuesLatencyLogger._queuesUsageLoggerQueue
 _OBJC_IVAR_$_IBGQueuesLatencyLogger._deviceQueuesLatencyFetchRate
 _OBJC_IVAR_$_IBGQueuesLatencyLogger._globalQueues
-___block_descriptor_tmp.143
+___block_descriptor_tmp.123
 _OBJC_IVAR_$_IBGQueuesLatencyLogger._isRunning
 _OBJC_IVAR_$_IBGQueuesLatencyLogger._shouldPauseLogger
 _OBJC_IVAR_$_IBGQueuesLatencyLogger._queuesLatency
@@ -13346,7 +13285,6 @@ ___destroy_helper_block_.149
 ___block_descriptor_tmp.116
 ___block_descriptor_tmp.127
 ___block_descriptor_tmp.130
-___block_descriptor_tmp.140
 ___block_descriptor_tmp.150
 _OBJC_IVAR_$_IBGAddFeatureViewController._cancelBarButtonItem
 _OBJC_IVAR_$_IBGAddFeatureViewController._addBarButtonItem
@@ -13536,9 +13474,9 @@ __36-[IBGZZArchive updateEntries:error:]_block_invoke.82
 __36-[IBGZZArchive updateEntries:error:]_block_invoke.65
 __36-[IBGZZArchive updateEntries:error:]_block_invoke.56
 __36-[IBGZZArchive updateEntries:error:]_block_invoke
-min<unsigned long>
+min<unsigned int>
 /Applications/Xcode-9.3.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm
-min<unsigned long, std::__1::__less<unsigned long, unsigned long> >
+min<unsigned int, std::__1::__less<unsigned int, unsigned int> >
 find_end<const unsigned char *, const unsigned char *>
 find_end<const unsigned char *, const unsigned char *, std::__1::__equal_to<unsigned char, unsigned char> >
 __find_end<std::__1::__equal_to<unsigned char, unsigned char> &, const unsigned char *, const unsigned char *>
@@ -13962,8 +13900,6 @@ ___75-[IBGFeatureDetailAddCommentViewController dismissSuccessfullyWithComment:]
 -[IBGFeatureDetailAddCommentViewController didTapCancel]
 -[IBGFeatureDetailAddCommentViewController didAddComment:isSuccess:]
 ___68-[IBGFeatureDetailAddCommentViewController didAddComment:isSuccess:]_block_invoke
-___copy_helper_block_.599
-___destroy_helper_block_.600
 ___68-[IBGFeatureDetailAddCommentViewController didAddComment:isSuccess:]_block_invoke.608
 ___copy_helper_block_.611
 ___destroy_helper_block_.612
@@ -13985,7 +13921,6 @@ ___destroy_helper_block_.612
 -[IBGFeatureDetailAddCommentViewController setOrientation:]
 -[IBGFeatureDetailAddCommentViewController .cxx_destruct]
 ___block_descriptor_tmp.566
-___block_descriptor_tmp.601
 ___block_descriptor_tmp.613
 _OBJC_IVAR_$_IBGFeatureDetailAddCommentViewController._addCommentView
 _OBJC_IVAR_$_IBGFeatureDetailAddCommentViewController._listener
@@ -14243,427 +14178,6 @@ _OBJC_IVAR_$_IBGStorage._date
 /Users/distiller/project/Instabug/InstabugSessionProfiler/Persistence/Core Data/Models/IBGStorage.m
 /Users/distiller/project/Instabug/InstabugSessionProfiler/Persistence/Core Data/Models/IBGStorage.h
 /Users/distiller/Library/Developer/Xcode/DerivedData/Instabug-cvgnxykmqaptlvcvhwtspqfbequo/Build/Intermediates.noindex/Instabug.build/Release-iphoneos/InstabugStatic.build/DerivedSources/InstabugStatic_vers.c
--[NSArray(PerformanceReadingsPercentage) performanceReadingsPercentage]
-/Users/distiller/project/Instabug/InstabugTracer/Categories/NSArray+PerformanceReadingsPercentage.m
--[InstabugTracer init]
--[InstabugTracer initWithTimeRate:]
--[InstabugTracer start]
--[InstabugTracer stop]
--[InstabugTracer stopWithDeviceStateDataCompletion:]
--[InstabugTracer setupTimer:]
--[InstabugTracer getMemory]
--[InstabugTracer getStorage]
--[InstabugTracer fetchDeviceStateData]
--[InstabugTracer setupDeviceStateArrays]
--[InstabugTracer setTracerStateToActive]
--[InstabugTracer setTracerStateToInactive]
--[InstabugTracer timeRate]
--[InstabugTracer setTimeRate:]
--[InstabugTracer state]
--[InstabugTracer setState:]
--[InstabugTracer memoryReadings]
--[InstabugTracer setMemoryReadings:]
--[InstabugTracer storageReadings]
--[InstabugTracer setStorageReadings:]
--[InstabugTracer timer]
--[InstabugTracer setTimer:]
--[InstabugTracer .cxx_destruct]
-_OBJC_IVAR_$_InstabugTracer._timeRate
-_OBJC_IVAR_$_InstabugTracer._state
-_OBJC_IVAR_$_InstabugTracer._memoryReadings
-_OBJC_IVAR_$_InstabugTracer._storageReadings
-_OBJC_IVAR_$_InstabugTracer._timer
-/Users/distiller/project/Instabug/InstabugTracer/InstabugTracer.m
-/Users/distiller/project/Instabug/InstabugTracer/InstabugTracer.h
--[IBGScreenshotGestureAnnotator init]
--[IBGScreenshotGestureAnnotator annotateFrameInContext:withTouchEvent:]
--[IBGScreenshotGestureAnnotator getLastTouchLocationsFrom:]
--[IBGScreenshotGestureAnnotator delegate]
--[IBGScreenshotGestureAnnotator setDelegate:]
--[IBGScreenshotGestureAnnotator touchImage]
--[IBGScreenshotGestureAnnotator setTouchImage:]
--[IBGScreenshotGestureAnnotator .cxx_destruct]
-_OBJC_IVAR_$_IBGScreenshotGestureAnnotator._delegate
-_OBJC_IVAR_$_IBGScreenshotGestureAnnotator._touchImage
-/Users/distiller/project/Instabug/InstabugScreenCapturer/Helpers/IBGScreenshotGestureAnnotator.m
-/Users/distiller/project/Instabug/InstabugScreenCapturer/Helpers/IBGScreenshotGestureAnnotator.h
-+[IBGExcludedWindowsStore sharedStore]
-___38+[IBGExcludedWindowsStore sharedStore]_block_invoke
--[IBGExcludedWindowsStore init]
--[IBGExcludedWindowsStore addExcludedWindowType:]
--[IBGExcludedWindowsStore excludedWindowTypes]
--[IBGExcludedWindowsStore setExcludedWindowTypes:]
--[IBGExcludedWindowsStore .cxx_destruct]
-_sharedStore.sharedInstance
-_sharedStore.onceToken
-_OBJC_IVAR_$_IBGExcludedWindowsStore._excludedWindowTypes
-/Users/distiller/project/Instabug/InstabugScreenCapturer/Managers/IBGExcludedWindowsStore.m
-/Users/distiller/project/Instabug/InstabugScreenCapturer/Managers/IBGExcludedWindowsStore.h
-__38+[IBGExcludedWindowsStore sharedStore]_block_invoke
-___IBG_tapImage_block_invoke
-_IBG_tapImage.redCircle
-_IBG_tapImage.onceToken
-/Users/distiller/project/Instabug/InstabugScreenCapturer/Helpers/IBGScreenCaptureImageUtilities.m
-IBG_drawImage
-__IBG_tapImage_block_invoke
-IBG_tapImage
-IBG_imageWithColor
-+[InstabugScreenCapturer getInstance]
-___37+[InstabugScreenCapturer getInstance]_block_invoke
--[InstabugScreenCapturer init]
--[InstabugScreenCapturer takeScreenshotWithAnnotator:shouldUseRenderInContext:lastTouchEvent:]
--[InstabugScreenCapturer imageFromCompletionHandler:]
--[InstabugScreenCapturer takeScreenshotInContext:shouldUseRenderInContext:]
--[InstabugScreenCapturer takeScreenshotOfWindow:inContex:shouldUseRenderInContext:]
--[InstabugScreenCapturer takeScreenshotFromView:]
-+[InstabugScreenCapturer addExcludedWindowType:]
-+[InstabugScreenCapturer shouldTakeScreenshotOfWindow:]
-+[InstabugScreenCapturer getInterfaceOrientation]
-+[InstabugScreenCapturer imageFromCurrentContext]
-+[InstabugScreenCapturer currentContextImageSize]
--[InstabugScreenCapturer capturingHandler]
--[InstabugScreenCapturer setCapturingHandler:]
--[InstabugScreenCapturer .cxx_destruct]
-_OBJC_IVAR_$_InstabugScreenCapturer._capturingHandler
-/Users/distiller/project/Instabug/InstabugScreenCapturer/InstabugScreenCapturer.m
-/Users/distiller/project/Instabug/InstabugScreenCapturer/InstabugScreenCapturer.h
-__37+[InstabugScreenCapturer getInstance]_block_invoke
-+[IBGScreenCaptureInspector applicationWindow]
-___46+[IBGScreenCaptureInspector applicationWindow]_block_invoke
-+[IBGScreenCaptureInspector keyWindow]
-+[IBGScreenCaptureInspector isNotInstabugWindow:]
-/Users/distiller/project/Instabug/InstabugScreenCapturer/Managers/IBGScreenCaptureInspector.m
-__46+[IBGScreenCaptureInspector applicationWindow]_block_invoke
-+[IBGDeviceState sharedInstance]
-___32+[IBGDeviceState sharedInstance]_block_invoke
--[IBGDeviceState getSDKVersion]
--[IBGDeviceState getSDKBuildNumber]
--[IBGDeviceState getiOSVersion]
--[IBGDeviceState getBundleIdentifier]
--[IBGDeviceState isPhotoLibraryUsageDescriptionAdded]
--[IBGDeviceState isMicrophoneUsageDescriptionAdded]
--[IBGDeviceState getScreenOrientation]
--[IBGDeviceState getInterfaceOrientation]
--[IBGDeviceState getScreenSize]
--[IBGDeviceState getScreenScalef]
--[IBGDeviceState getScreenScale]
--[IBGDeviceState getScreenScaleWithZoomMode]
--[IBGDeviceState isNativeScaleLessThanScale]
--[IBGDeviceState isNativeScaleGreaterThanScale]
--[IBGDeviceState getMaxOfWidthOrHeight]
--[IBGDeviceState screenZoomed]
--[IBGDeviceState isAppInActive]
--[IBGDeviceState getAppVersion]
--[IBGDeviceState getSupportedMaxOS]
--[IBGDeviceState getSupportedMinOS]
--[IBGDeviceState getSupportedDeviceFamily]
--[IBGDeviceState getSystemLocale]
--[IBGDeviceState isDebuggerAttached]
--[IBGDeviceState isDebuggerAttatchedToConsole]
--[IBGDeviceState isViewControllerBasedStatusBarAppearanceEnabled]
--[IBGDeviceState isLandscape]
--[IBGDeviceState isRTL]
--[IBGDeviceState iOSVersionIsLessThan:]
--[IBGDeviceState getWifiSSID]
--[IBGDeviceState getFullCarrierName]
--[IBGDeviceState getCarrierConnectionType]
--[IBGDeviceState getCarrierName]
--[IBGDeviceState getMemory]
--[IBGDeviceState getStorage]
--[IBGDeviceState getDeviceModel]
--[IBGDeviceState hasDiskSpaceAbove10Mega]
--[IBGDeviceState isIphoneX]
--[IBGDeviceState isIPad]
--[IBGDeviceState isPhone]
--[IBGDeviceState iOSVersionHasPrefix:]
--[IBGDeviceState deviceUUID]
--[IBGDeviceState getBatteryLevel]
--[IBGDeviceState getBatteryState]
--[IBGDeviceState isBatteryPlugged]
-/Users/distiller/project/Instabug/InstabugDeviceState/IBGDeviceState.m
-__32+[IBGDeviceState sharedInstance]_block_invoke
--[IBGStorageStateReader getStorage]
-/Users/distiller/project/Instabug/InstabugDeviceState/Readers/IBGStorageStateReader.m
--[IBGOrientationStateReader getScreenOrientation]
-/Users/distiller/project/Instabug/InstabugDeviceState/Readers/IBGOrientationStateReader.m
--[IBGConnectionStateReader networkInfo]
-___39-[IBGConnectionStateReader networkInfo]_block_invoke
--[IBGConnectionStateReader isSimCardAvailable]
-___46-[IBGConnectionStateReader isSimCardAvailable]_block_invoke
--[IBGConnectionStateReader getWifiSSID]
--[IBGConnectionStateReader isReachableViaWifi]
--[IBGConnectionStateReader getCarrierConnectionType]
--[IBGConnectionStateReader getCarrierName]
--[IBGConnectionStateReader getFullCarrierName]
-_networkInfoOnceToken
-_netinfo
-_simAvailableOnceToken
-___block_descriptor_tmp.3
-___block_literal_global.4
-_available
-/Users/distiller/project/Instabug/InstabugDeviceState/Readers/IBGConnectionStateReader.m
-__46-[IBGConnectionStateReader isSimCardAvailable]_block_invoke
-__39-[IBGConnectionStateReader networkInfo]_block_invoke
-+[IBGReadersFactory sharedInstance]
-___35+[IBGReadersFactory sharedInstance]_block_invoke
--[IBGReadersFactory init]
--[IBGReadersFactory batteryStateReader]
--[IBGReadersFactory connectionStateReader]
--[IBGReadersFactory oreintationStateReader]
--[IBGReadersFactory memoryStateReader]
--[IBGReadersFactory storageStateReader]
--[IBGReadersFactory getReaderForKey:]
--[IBGReadersFactory setupReadersDictionary]
--[IBGReadersFactory batteryReader]
--[IBGReadersFactory setBatteryReader:]
--[IBGReadersFactory orientationReader]
--[IBGReadersFactory setOrientationReader:]
--[IBGReadersFactory connectionReader]
--[IBGReadersFactory setConnectionReader:]
--[IBGReadersFactory memoryReader]
--[IBGReadersFactory setMemoryReader:]
--[IBGReadersFactory storageReader]
--[IBGReadersFactory setStorageReader:]
--[IBGReadersFactory readersDictionary]
--[IBGReadersFactory setReadersDictionary:]
--[IBGReadersFactory .cxx_destruct]
-_OBJC_IVAR_$_IBGReadersFactory._batteryReader
-_OBJC_IVAR_$_IBGReadersFactory._orientationReader
-_OBJC_IVAR_$_IBGReadersFactory._connectionReader
-_OBJC_IVAR_$_IBGReadersFactory._memoryReader
-_OBJC_IVAR_$_IBGReadersFactory._storageReader
-_OBJC_IVAR_$_IBGReadersFactory._readersDictionary
-/Users/distiller/project/Instabug/InstabugDeviceState/IBGReadersFactory.m
-__35+[IBGReadersFactory sharedInstance]_block_invoke
--[IBGMemoryStateReader getMemory]
-/Users/distiller/project/Instabug/InstabugDeviceState/Readers/IBGMemoryStateReader.m
-report_memory
--[IBGBatteryStateReader getBatteryLevel]
--[IBGBatteryStateReader getBatteryState]
--[IBGBatteryStateReader isBatteryPlugged]
-/Users/distiller/project/Instabug/InstabugDeviceState/Readers/IBGBatteryStateReader.m
-+[IBGReachability reachabilityWithHostName:]
-+[IBGReachability reachabilityWithAddress:]
-+[IBGReachability reachabilityForInternetConnection]
-+[IBGReachability reachabilityForLocalWiFi]
--[IBGReachability startNotifier]
-_ReachabilityCallback
--[IBGReachability stopNotifier]
--[IBGReachability dealloc]
--[IBGReachability localWiFiStatusForFlags:]
--[IBGReachability networkStatusForFlags:]
--[IBGReachability connectionRequired]
--[IBGReachability currentReachabilityStatus]
-_OBJC_IVAR_$_IBGReachability._reachabilityRef
-_OBJC_IVAR_$_IBGReachability._alwaysReturnLocalWiFiStatus
-/Users/distiller/project/Instabug/InstabugDeviceState/Reachability/IBGReachability.m
-ReachabilityCallback
-+[IBGReachabilityInstance getInstance]
-___38+[IBGReachabilityInstance getInstance]_block_invoke
--[IBGReachabilityInstance init]
-___31-[IBGReachabilityInstance init]_block_invoke
-+[IBGReachabilityInstance isReachable]
-+[IBGReachabilityInstance networkStatus]
-+[IBGReachabilityInstance destroy]
--[IBGReachabilityInstance reachability]
--[IBGReachabilityInstance setReachability:]
--[IBGReachabilityInstance .cxx_destruct]
-_OBJC_IVAR_$_IBGReachabilityInstance._reachability
-/Users/distiller/project/Instabug/InstabugDeviceState/Reachability/IBGReachabilityInstance.m
-__31-[IBGReachabilityInstance init]_block_invoke
-__38+[IBGReachabilityInstance getInstance]_block_invoke
--[IBGAssetsDiskCache init]
--[IBGAssetsDiskCache saveData:forURL:]
--[IBGAssetsDiskCache indexForCachedPath:]
-___41-[IBGAssetsDiskCache indexForCachedPath:]_block_invoke
--[IBGAssetsDiskCache assetForURL:]
--[IBGAssetsDiskCache hasAssetForURL:]
--[IBGAssetsDiskCache invalidate]
--[IBGAssetsDiskCache clean]
--[IBGAssetsDiskCache fileNameFromURL:]
--[IBGAssetsDiskCache cacheURLForQueryURL:]
--[IBGAssetsDiskCache cachePathForFile:]
--[IBGAssetsDiskCache cachePathDirectory]
--[IBGAssetsDiskCache dateLimit]
--[IBGAssetsDiskCache setDateLimit:]
--[IBGAssetsDiskCache sizeLimit]
--[IBGAssetsDiskCache setSizeLimit:]
--[IBGAssetsDiskCache cache]
--[IBGAssetsDiskCache setCache:]
--[IBGAssetsDiskCache .cxx_destruct]
-_OBJC_IVAR_$_IBGAssetsDiskCache._dateLimit
-_OBJC_IVAR_$_IBGAssetsDiskCache._sizeLimit
-_OBJC_IVAR_$_IBGAssetsDiskCache._cache
-l_OBJC_PROTOCOL_$_IBGAssetsCache
-l_OBJC_LABEL_PROTOCOL_$_IBGAssetsCache
-/Users/distiller/project/Instabug/InstabugAssets/Cache/IBGAssetsDiskCache.m
-/Users/distiller/project/Instabug/InstabugAssets/Cache/IBGAssetsMultiLevelCache.h
-__41-[IBGAssetsDiskCache indexForCachedPath:]_block_invoke
--[IBGAssetsMultiLevelCache init]
--[IBGAssetsMultiLevelCache saveData:forURL:]
--[IBGAssetsMultiLevelCache assetForURL:]
--[IBGAssetsMultiLevelCache hasAssetForURL:]
--[IBGAssetsMultiLevelCache cacheSourceForURL:]
--[IBGAssetsMultiLevelCache invalidate]
--[IBGAssetsMultiLevelCache clean]
--[IBGAssetsMultiLevelCache cleanURLFromURL:]
--[IBGAssetsMultiLevelCache dateLimit]
--[IBGAssetsMultiLevelCache setDateLimit:]
--[IBGAssetsMultiLevelCache sizeLimit]
--[IBGAssetsMultiLevelCache setSizeLimit:]
--[IBGAssetsMultiLevelCache memory]
--[IBGAssetsMultiLevelCache setMemory:]
--[IBGAssetsMultiLevelCache disk]
--[IBGAssetsMultiLevelCache setDisk:]
--[IBGAssetsMultiLevelCache .cxx_destruct]
-_OBJC_IVAR_$_IBGAssetsMultiLevelCache._dateLimit
-_OBJC_IVAR_$_IBGAssetsMultiLevelCache._sizeLimit
-_OBJC_IVAR_$_IBGAssetsMultiLevelCache._memory
-_OBJC_IVAR_$_IBGAssetsMultiLevelCache._disk
-/Users/distiller/project/Instabug/InstabugAssets/Cache/IBGAssetsMultiLevelCache.m
--[IBGAssetNetworkFetcher init]
--[IBGAssetNetworkFetcher fetchAssetAt:completionHandler:]
-___57-[IBGAssetNetworkFetcher fetchAssetAt:completionHandler:]_block_invoke
-___57-[IBGAssetNetworkFetcher fetchAssetAt:completionHandler:]_block_invoke_2
-___copy_helper_block_.22
-___destroy_helper_block_.23
--[IBGAssetNetworkFetcher session]
--[IBGAssetNetworkFetcher setSession:]
--[IBGAssetNetworkFetcher .cxx_destruct]
-___block_descriptor_tmp.25
-_OBJC_IVAR_$_IBGAssetNetworkFetcher._session
-/Users/distiller/project/Instabug/InstabugAssets/Network/IBGAssetNetworkFetcher.m
-__57-[IBGAssetNetworkFetcher fetchAssetAt:completionHandler:]_block_invoke_2
-__57-[IBGAssetNetworkFetcher fetchAssetAt:completionHandler:]_block_invoke
--[IBGAssetMemoryCacheItem initWithData:forURL:]
--[IBGAssetMemoryCacheItem size]
--[IBGAssetMemoryCacheItem remove]
--[IBGAssetMemoryCacheItem data]
--[IBGAssetMemoryCacheItem setData:]
--[IBGAssetMemoryCacheItem queryURl]
--[IBGAssetMemoryCacheItem setQueryURl:]
--[IBGAssetMemoryCacheItem lastUsedDate]
--[IBGAssetMemoryCacheItem setLastUsedDate:]
--[IBGAssetMemoryCacheItem .cxx_destruct]
-_OBJC_IVAR_$_IBGAssetMemoryCacheItem._data
-_OBJC_IVAR_$_IBGAssetMemoryCacheItem._queryURl
-_OBJC_IVAR_$_IBGAssetMemoryCacheItem._lastUsedDate
-l_OBJC_PROTOCOL_$_IBGAssetsCacheItem
-l_OBJC_LABEL_PROTOCOL_$_IBGAssetsCacheItem
-/Users/distiller/project/Instabug/InstabugAssets/Cache/Cache Items/IBGAssetMemoryCacheItem.m
-/Users/distiller/project/Instabug/InstabugAssets/Cache/Cache Items/IBGAssetMemoryCacheItem.h
-+[IBGAssetObjectFactory assetFromData:URL:]
-+[IBGAssetObjectFactory isPath:containsString:]
-+[IBGAssetObjectFactory isAVAssetPath:]
-/Users/distiller/project/Instabug/InstabugAssets/Helpers/IBGAssetObjectFactory.m
--[IBGAssetsMemoryCache init]
--[IBGAssetsMemoryCache saveData:forURL:]
--[IBGAssetsMemoryCache assetForURL:]
--[IBGAssetsMemoryCache hasAssetForURL:]
--[IBGAssetsMemoryCache invalidate]
--[IBGAssetsMemoryCache clean]
--[IBGAssetsMemoryCache indexOfCachedItemForURL:]
-___48-[IBGAssetsMemoryCache indexOfCachedItemForURL:]_block_invoke
--[IBGAssetsMemoryCache dateLimit]
--[IBGAssetsMemoryCache setDateLimit:]
--[IBGAssetsMemoryCache sizeLimit]
--[IBGAssetsMemoryCache setSizeLimit:]
--[IBGAssetsMemoryCache cache]
--[IBGAssetsMemoryCache setCache:]
--[IBGAssetsMemoryCache .cxx_destruct]
-_OBJC_IVAR_$_IBGAssetsMemoryCache._dateLimit
-_OBJC_IVAR_$_IBGAssetsMemoryCache._sizeLimit
-_OBJC_IVAR_$_IBGAssetsMemoryCache._cache
-/Users/distiller/project/Instabug/InstabugAssets/Cache/IBGAssetsMemoryCache.m
-__48-[IBGAssetsMemoryCache indexOfCachedItemForURL:]_block_invoke
-+[IBGAssetsLoader sharedInstance]
-___33+[IBGAssetsLoader sharedInstance]_block_invoke
--[IBGAssetsLoader init]
--[IBGAssetsLoader loadAssetAutomaticByURL:completionHandler:]
-___61-[IBGAssetsLoader loadAssetAutomaticByURL:completionHandler:]_block_invoke
-___61-[IBGAssetsLoader loadAssetAutomaticByURL:completionHandler:]_block_invoke_2
-___copy_helper_block_.498
-___destroy_helper_block_.499
--[IBGAssetsLoader loadAttachment:completionHandler:]
--[IBGAssetsLoader handleFailureWithBlock:url:]
--[IBGAssetsLoader loadAssetByURL:completionHandler:]
-___52-[IBGAssetsLoader loadAssetByURL:completionHandler:]_block_invoke
-___copy_helper_block_.520
-___destroy_helper_block_.521
--[IBGAssetsLoader hasLoadedURL:]
--[IBGAssetsLoader hasFailedLoading:]
--[IBGAssetsLoader hasFailedPath:]
--[IBGAssetsLoader networkStatusDidChange]
--[IBGAssetsLoader isReachable]
--[IBGAssetsLoader applicationDidReceiveMemoryWarning]
--[IBGAssetsLoader didDissmissUI]
--[IBGAssetsLoader cache]
--[IBGAssetsLoader setCache:]
--[IBGAssetsLoader network]
--[IBGAssetsLoader setNetwork:]
--[IBGAssetsLoader failedURLs]
--[IBGAssetsLoader setFailedURLs:]
--[IBGAssetsLoader pendingAutomaticRequests]
--[IBGAssetsLoader setPendingAutomaticRequests:]
--[IBGAssetsLoader .cxx_destruct]
-___block_descriptor_tmp.501
-_OBJC_IVAR_$_IBGAssetsLoader._cache
-_OBJC_IVAR_$_IBGAssetsLoader._network
-_OBJC_IVAR_$_IBGAssetsLoader._failedURLs
-_OBJC_IVAR_$_IBGAssetsLoader._pendingAutomaticRequests
-/Users/distiller/project/Instabug/InstabugAssets/IBGAssetsLoader.m
-/Users/distiller/project/Instabug/InstabugAssets/IBGAssetsLoader.h
-__52-[IBGAssetsLoader loadAssetByURL:completionHandler:]_block_invoke
-__61-[IBGAssetsLoader loadAssetAutomaticByURL:completionHandler:]_block_invoke_2
-__61-[IBGAssetsLoader loadAssetAutomaticByURL:completionHandler:]_block_invoke
-__33+[IBGAssetsLoader sharedInstance]_block_invoke
--[IBGCacheController initWithItems:sizeLimit:intervalLimit:]
--[IBGCacheController remainingItems]
-___36-[IBGCacheController remainingItems]_block_invoke
--[IBGCacheController removeLeastRecentlyUsedItems]
--[IBGCacheController removeItemsAfterTimeLimit]
--[IBGCacheController currentCacheSize]
--[IBGCacheController items]
--[IBGCacheController setItems:]
--[IBGCacheController sizeLimit]
--[IBGCacheController setSizeLimit:]
--[IBGCacheController intervalLimit]
--[IBGCacheController setIntervalLimit:]
--[IBGCacheController .cxx_destruct]
-_OBJC_IVAR_$_IBGCacheController._items
-_OBJC_IVAR_$_IBGCacheController._sizeLimit
-_OBJC_IVAR_$_IBGCacheController._intervalLimit
-/Users/distiller/project/Instabug/InstabugAssets/Cache/IBGCacheController.m
-__36-[IBGCacheController remainingItems]_block_invoke
-+[IBGAssetDiskCacheItem itemsFromDirectory:]
--[IBGAssetDiskCacheItem initWithURL:]
--[IBGAssetDiskCacheItem writeData:]
--[IBGAssetDiskCacheItem asset]
--[IBGAssetDiskCacheItem setLastUsedDate:]
--[IBGAssetDiskCacheItem remove]
--[IBGAssetDiskCacheItem size]
--[IBGAssetDiskCacheItem url]
--[IBGAssetDiskCacheItem setUrl:]
--[IBGAssetDiskCacheItem lastUsedDate]
--[IBGAssetDiskCacheItem .cxx_destruct]
-_OBJC_IVAR_$_IBGAssetDiskCacheItem._lastUsedDate
-_OBJC_IVAR_$_IBGAssetDiskCacheItem._url
-/Users/distiller/project/Instabug/InstabugAssets/Cache/Cache Items/IBGAssetDiskCacheItem.m
-/Users/distiller/project/Instabug/InstabugAssets/Cache/Cache Items/IBGAssetDiskCacheItem.h
--[UIImageView(IBGAssetsLoader) ibg_setImageWithURL:]
--[UIImageView(IBGAssetsLoader) ibg_setImageWithURL:placeholder:]
--[UIImageView(IBGAssetsLoader) ibg_setImageWithURL:placeholder:roundCorners:animated:completionHandler:]
-___104-[UIImageView(IBGAssetsLoader) ibg_setImageWithURL:placeholder:roundCorners:animated:completionHandler:]_block_invoke
--[UIImageView(IBGAssetsLoader) ibg_setImage:animated:]
-___54-[UIImageView(IBGAssetsLoader) ibg_setImage:animated:]_block_invoke
-___copy_helper_block_.481
-___destroy_helper_block_.482
--[UIImageView(IBGAssetsLoader) currentURL]
--[UIImageView(IBGAssetsLoader) setCurrentURL:]
-___block_descriptor_tmp.484
-/Users/distiller/project/Instabug/InstabugAssets/Categories/UIImageView+IBGAssetsLoader.m
-__54-[UIImageView(IBGAssetsLoader) ibg_setImage:animated:]_block_invoke
-__104-[UIImageView(IBGAssetsLoader) ibg_setImageWithURL:placeholder:roundCorners:animated:completionHandler:]_block_invoke
 +[IBGTempDirectory sharedDirectory]
 ___35+[IBGTempDirectory sharedDirectory]_block_invoke
 -[IBGTempDirectory init]
@@ -15043,189 +14557,6 @@ l_OBJC_PROTOCOL_$_IBGNetworkDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGNetworkDelegate
 /Users/distiller/project/Instabug/InstabugNetwork/IBGNetworkRequest.m
 __71-[IBGNetworkRequest createTaskWithSession:isTesting:completionHandler:]_block_invoke
--[IBGCoreDataLayer initWithModelURL:storeURL:]
--[IBGCoreDataLayer persistentStoreWithModelURL:]
--[IBGCoreDataLayer saveWithCompletionHandler:]
--[IBGCoreDataLayer addObserver:]
--[IBGCoreDataLayer removeObserver:]
--[IBGCoreDataLayer managedObjectContext]
--[IBGCoreDataLayer privateContext]
--[IBGCoreDataLayer afterInitializationCoreDataQueue]
--[IBGCoreDataLayer coreDataManager]
--[IBGCoreDataLayer setCoreDataManager:]
--[IBGCoreDataLayer managedObjectContextController]
--[IBGCoreDataLayer setManagedObjectContextController:]
--[IBGCoreDataLayer .cxx_destruct]
-_OBJC_IVAR_$_IBGCoreDataLayer._coreDataManager
-_OBJC_IVAR_$_IBGCoreDataLayer._managedObjectContextController
-/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGCoreDataLayer.m
--[IBGDALService initWithContextProvider:coreDataLayer:]
--[IBGDALService init]
--[IBGDALService registerNotifictaions]
--[IBGDALService unregisterNotifications]
--[IBGDALService clearCoreData]
-___30-[IBGDALService clearCoreData]_block_invoke
-___30-[IBGDALService clearCoreData]_block_invoke_2
--[IBGDALService writeSync:]
-___27-[IBGDALService writeSync:]_block_invoke
-___copy_helper_block_.33
-___destroy_helper_block_.34
--[IBGDALService writeASync:completionBlock:]
-___44-[IBGDALService writeASync:completionBlock:]_block_invoke
-___44-[IBGDALService writeASync:completionBlock:]_block_invoke.52
-___44-[IBGDALService writeASync:completionBlock:]_block_invoke_2
--[IBGDALService readSync:]
-___26-[IBGDALService readSync:]_block_invoke
--[IBGDALService readASync:completionBlock:]
-___43-[IBGDALService readASync:completionBlock:]_block_invoke
--[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]
-___70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke
-___70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_2
-___copy_helper_block_.80
-___destroy_helper_block_.81
--[IBGDALService performBlockSyncWithoutSave:]
-___45-[IBGDALService performBlockSyncWithoutSave:]_block_invoke
--[IBGDALService dealloc]
--[IBGDALService coreDataLayer]
--[IBGDALService setCoreDataLayer:]
--[IBGDALService contextProvider]
--[IBGDALService setContextProvider:]
--[IBGDALService operationTempStorage]
--[IBGDALService setOperationTempStorage:]
--[IBGDALService dataLayerServiceQueue]
--[IBGDALService setDataLayerServiceQueue:]
--[IBGDALService .cxx_destruct]
-_OBJC_IVAR_$_IBGDALService._coreDataLayer
-_OBJC_IVAR_$_IBGDALService._contextProvider
-_OBJC_IVAR_$_IBGDALService._operationTempStorage
-_OBJC_IVAR_$_IBGDALService._dataLayerServiceQueue
-l_OBJC_PROTOCOL_$_IBGDALProtocol
-l_OBJC_LABEL_PROTOCOL_$_IBGDALProtocol
-/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGDALService.m
-__45-[IBGDALService performBlockSyncWithoutSave:]_block_invoke
-__70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_2
-__70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke
-__43-[IBGDALService readASync:completionBlock:]_block_invoke
-__26-[IBGDALService readSync:]_block_invoke
-__44-[IBGDALService writeASync:completionBlock:]_block_invoke_2
-__44-[IBGDALService writeASync:completionBlock:]_block_invoke.52
-__44-[IBGDALService writeASync:completionBlock:]_block_invoke
-__27-[IBGDALService writeSync:]_block_invoke
-__30-[IBGDALService clearCoreData]_block_invoke_2
-__30-[IBGDALService clearCoreData]_block_invoke
--[IBGManagedObjectContextController initWithPersistanceStore:appStateReactor:]
-___78-[IBGManagedObjectContextController initWithPersistanceStore:appStateReactor:]_block_invoke
--[IBGManagedObjectContextController registerNotification]
--[IBGManagedObjectContextController applicationProtectedDataDidBecomeAvailable]
--[IBGManagedObjectContextController applicationProtectedDataWillBecomeUnavailable]
--[IBGManagedObjectContextController dealloc]
--[IBGManagedObjectContextController initializeManagedObjectContext]
--[IBGManagedObjectContextController initializePrivateContextWithPersistanceStore:]
--[IBGManagedObjectContextController saveWithCompletionHandler:]
-___63-[IBGManagedObjectContextController saveWithCompletionHandler:]_block_invoke
-___63-[IBGManagedObjectContextController saveWithCompletionHandler:]_block_invoke.54
--[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]
-___76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke
-___76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke_2
-___76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke.79
-___76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke.86
-___copy_helper_block_.89
-___destroy_helper_block_.90
--[IBGManagedObjectContextController didIntializeCoreDataStack]
--[IBGManagedObjectContextController didReceiveStateChange]
-___58-[IBGManagedObjectContextController didReceiveStateChange]_block_invoke
-___58-[IBGManagedObjectContextController didReceiveStateChange]_block_invoke_2
-___copy_helper_block_.100
-___destroy_helper_block_.101
--[IBGManagedObjectContextController registerBackgroundTaskWithBlock:]
-___69-[IBGManagedObjectContextController registerBackgroundTaskWithBlock:]_block_invoke
--[IBGManagedObjectContextController endBackgroundTask]
--[IBGManagedObjectContextController managedObjectContext]
--[IBGManagedObjectContextController setManagedObjectContext:]
--[IBGManagedObjectContextController privateContext]
--[IBGManagedObjectContextController setPrivateContext:]
--[IBGManagedObjectContextController backgroundTask]
--[IBGManagedObjectContextController setBackgroundTask:]
--[IBGManagedObjectContextController isApplicationProtectedDataAvailable]
--[IBGManagedObjectContextController setIsApplicationProtectedDataAvailable:]
--[IBGManagedObjectContextController didAddPersistentStore]
--[IBGManagedObjectContextController setDidAddPersistentStore:]
--[IBGManagedObjectContextController appStateReactor]
--[IBGManagedObjectContextController setAppStateReactor:]
--[IBGManagedObjectContextController .cxx_destruct]
-_OBJC_IVAR_$_IBGManagedObjectContextController._appStateReactor
-_OBJC_IVAR_$_IBGManagedObjectContextController._managedObjectContext
-___block_descriptor_tmp.91
-___block_descriptor_tmp.99
-_OBJC_IVAR_$_IBGManagedObjectContextController._privateContext
-_OBJC_IVAR_$_IBGManagedObjectContextController._backgroundTask
-_OBJC_IVAR_$_IBGManagedObjectContextController._isApplicationProtectedDataAvailable
-_OBJC_IVAR_$_IBGManagedObjectContextController._didAddPersistentStore
-l_OBJC_PROTOCOL_$_IBGAppStateReactorDelegate
-l_OBJC_LABEL_PROTOCOL_$_IBGAppStateReactorDelegate
-l_OBJC_PROTOCOL_$_IBGCoreDataLayerDelegate
-l_OBJC_LABEL_PROTOCOL_$_IBGCoreDataLayerDelegate
-/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGManagedObjectContextController.m
-/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGManagedObjectContextController.h
-__69-[IBGManagedObjectContextController registerBackgroundTaskWithBlock:]_block_invoke
-__58-[IBGManagedObjectContextController didReceiveStateChange]_block_invoke_2
-__58-[IBGManagedObjectContextController didReceiveStateChange]_block_invoke
-__76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke.86
-__76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke.79
-__76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke_2
-__76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke
-__63-[IBGManagedObjectContextController saveWithCompletionHandler:]_block_invoke.54
-__63-[IBGManagedObjectContextController saveWithCompletionHandler:]_block_invoke
-__78-[IBGManagedObjectContextController initWithPersistanceStore:appStateReactor:]_block_invoke
--[IBGAppStateReactor init]
--[IBGAppStateReactor addingNotificationsObserver]
--[IBGAppStateReactor removeNotificationObserver]
--[IBGAppStateReactor applicationDidEnterBackground]
--[IBGAppStateReactor applicationWillResignActive]
--[IBGAppStateReactor applicationWillTerminate]
--[IBGAppStateReactor forwardStatusChange]
--[IBGAppStateReactor dealloc]
--[IBGAppStateReactor delegate]
--[IBGAppStateReactor setDelegate:]
--[IBGAppStateReactor .cxx_destruct]
-_OBJC_IVAR_$_IBGAppStateReactor._delegate
-/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGAppStateReactor.m
-/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGAppStateReactor.h
--[IBGPersistentStoreCoordinator coordinatorWithModelURL:]
-/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGPersistentStoreCoordinator.m
--[IBGCoreDataManager initWithModelURL:storeURL:persistentStore:]
--[IBGCoreDataManager shouldDeleteInstabugSqlLiteFile:]
--[IBGCoreDataManager initializeSQLLiteStoreWithPersistentStore]
-___63-[IBGCoreDataManager initializeSQLLiteStoreWithPersistentStore]_block_invoke
--[IBGCoreDataManager handleCoreDataIntializationFailuerWithStoreURL:error:persistentStore:]
-___91-[IBGCoreDataManager handleCoreDataIntializationFailuerWithStoreURL:error:persistentStore:]_block_invoke
--[IBGCoreDataManager destoryStoreIfNeeded:persistentStore:]
--[IBGCoreDataManager isOldStoreExistAtURL:]
--[IBGCoreDataManager notifyDelegates]
-___37-[IBGCoreDataManager notifyDelegates]_block_invoke
--[IBGCoreDataManager addObserver:]
--[IBGCoreDataManager removeObserver:]
--[IBGCoreDataManager afterInitializationCoreDataQueue]
--[IBGCoreDataManager setAfterInitializationCoreDataQueue:]
--[IBGCoreDataManager modelURL]
--[IBGCoreDataManager setModelURL:]
--[IBGCoreDataManager storeURL]
--[IBGCoreDataManager setStoreURL:]
--[IBGCoreDataManager observers]
--[IBGCoreDataManager setObservers:]
--[IBGCoreDataManager persistentStoreCoordinator]
--[IBGCoreDataManager setPersistentStoreCoordinator:]
--[IBGCoreDataManager .cxx_destruct]
-_OBJC_IVAR_$_IBGCoreDataManager._modelURL
-_OBJC_IVAR_$_IBGCoreDataManager._storeURL
-_OBJC_IVAR_$_IBGCoreDataManager._observers
-_OBJC_IVAR_$_IBGCoreDataManager._persistentStoreCoordinator
-_OBJC_IVAR_$_IBGCoreDataManager._afterInitializationCoreDataQueue
-/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGCoreDataManager.m
-/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGCoreDataManager.h
-__37-[IBGCoreDataManager notifyDelegates]_block_invoke
-__91-[IBGCoreDataManager handleCoreDataIntializationFailuerWithStoreURL:error:persistentStore:]_block_invoke
-__63-[IBGCoreDataManager initializeSQLLiteStoreWithPersistentStore]_block_invoke
 -[NSDictionary(IBGJSON) ibg_jsonString]
 /Users/distiller/project/Instabug/InstabugUtilities/Categories/NSDictionary/NSDictionary+IBGJSON.m
 -[NSDictionary(ValueWithFallback) valueForKey:fallbackString:]
@@ -15257,10 +14588,6 @@ __63-[IBGCoreDataManager initializeSQLLiteStoreWithPersistentStore]_block_invoke
 -[UIView(IBGConstraints) ibg_pinCenterToSuperviewSafely]
 -[UIView(IBGConstraints) ibg_pinCenterToSuperviewSafelyWithVerticalInset:horizontalInset:]
 /Users/distiller/project/Instabug/InstabugUtilities/Categories/UIView/UIView+IBGConstraints.m
--[UIView(IBGToast) showToastWithMessage:autoDismissAfter:]
--[UIView(IBGToast) showErrorToastWithMessage:buttonText:autoDismissAfter:completion:]
--[UIView(IBGToast) setupConstraintsForToastView:]
-/Users/distiller/project/Instabug/InstabugUtilities/Categories/UIView/UIView+IBGToast.m
 -[UIView(IBGAnimateHidden) ibg_setHidden:animated:duration:]
 ___60-[UIView(IBGAnimateHidden) ibg_setHidden:animated:duration:]_block_invoke
 /Users/distiller/project/Instabug/InstabugUtilities/Categories/UIView/UIView+IBGAnimateHidden.m
@@ -15294,10 +14621,6 @@ __60-[UIView(IBGAnimateHidden) ibg_setHidden:animated:duration:]_block_invoke
 /Users/distiller/project/Instabug/InstabugUtilities/Categories/NSLayoutConstraint+Log.m
 -[UIViewController(IBGPreferredShadowStyle) prefersShadowHidden]
 /Users/distiller/project/Instabug/InstabugUtilities/Categories/UIViewController+IBGPreferredShadowStyle.m
--[UINavigationController(IBGToast) showToastWithMessage:autoDismissAfter:]
--[UINavigationController(IBGToast) showErrorToastWithMessage:buttonText:autoDismissAfter:completion:]
--[UINavigationController(IBGToast) setupConstraintsForToastView:]
-/Users/distiller/project/Instabug/InstabugUtilities/Categories/UINavigationController+IBGToast.m
 +[UIColor(ColorFromHexString) colorFromHexString:]
 +[UIColor(ColorFromHexString) isValidHexString:]
 /Users/distiller/project/Instabug/InstabugUtilities/Categories/UIColor+ColorFromHexString.m
@@ -15629,7 +14952,6 @@ ___48-[IBGTimedDispatcher dispatchAfter:On:ID:block:]_block_invoke
 -[IBGTimedDispatcher toBeDispatchedBlocks]
 -[IBGTimedDispatcher setToBeDispatchedBlocks:]
 -[IBGTimedDispatcher .cxx_destruct]
-___block_descriptor_tmp.14
 _OBJC_IVAR_$_IBGTimedDispatcher._toBeDispatchedBlocks
 /Users/distiller/project/Instabug/InstabugUtilities/IBGTimedDispatcher.m
 __48-[IBGTimedDispatcher dispatchAfter:On:ID:block:]_block_invoke
@@ -15647,6 +14969,651 @@ __38+[IBGTimedDispatcher sharedDispatcher]_block_invoke
 -[UIView(AutoLayoutHelpers) ibg_addSizeConstraintWithView:attribute:value:relation:]
 -[UIView(AutoLayoutHelpers) ibg_autoPinAttribute:ofView:toAttribute:ofView:withOffset:]
 /Users/distiller/project/Instabug/InstabugUtilities/IBGViewUtilities.m
++[IBGReachabilityInstance getInstance]
+___38+[IBGReachabilityInstance getInstance]_block_invoke
+-[IBGReachabilityInstance init]
+___31-[IBGReachabilityInstance init]_block_invoke
++[IBGReachabilityInstance isReachable]
++[IBGReachabilityInstance networkStatus]
++[IBGReachabilityInstance destroy]
+-[IBGReachabilityInstance reachability]
+-[IBGReachabilityInstance setReachability:]
+-[IBGReachabilityInstance .cxx_destruct]
+_OBJC_IVAR_$_IBGReachabilityInstance._reachability
+/Users/distiller/project/Instabug/InstabugReachibility/IBGReachabilityInstance.m
+__31-[IBGReachabilityInstance init]_block_invoke
+__38+[IBGReachabilityInstance getInstance]_block_invoke
++[IBGReachability reachabilityWithHostName:]
++[IBGReachability reachabilityWithAddress:]
++[IBGReachability reachabilityForInternetConnection]
++[IBGReachability reachabilityForLocalWiFi]
+-[IBGReachability startNotifier]
+_ReachabilityCallback
+-[IBGReachability stopNotifier]
+-[IBGReachability dealloc]
+-[IBGReachability localWiFiStatusForFlags:]
+-[IBGReachability networkStatusForFlags:]
+-[IBGReachability connectionRequired]
+-[IBGReachability currentReachabilityStatus]
+_OBJC_IVAR_$_IBGReachability._reachabilityRef
+_OBJC_IVAR_$_IBGReachability._alwaysReturnLocalWiFiStatus
+/Users/distiller/project/Instabug/InstabugReachibility/IBGReachability.m
+ReachabilityCallback
+-[UINavigationController(IBGToast) showToastWithMessage:autoDismissAfter:]
+-[UINavigationController(IBGToast) showErrorToastWithMessage:buttonText:autoDismissAfter:completion:]
+-[UINavigationController(IBGToast) setupConstraintsForToastView:]
+/Users/distiller/project/Instabug/InstabugViewUtilities/Categories/UINavigationController+IBGToast.m
+-[IBGToastView initWithMessage:autoDismissAfter:]
+-[IBGToastView initWithMessage:autoDismissAfter:mode:]
+-[IBGToastView updateConstraints]
+-[IBGToastView didSwipeUp:]
+-[IBGToastView setRightButtonTitle:]
+-[IBGToastView setRightButtonCompletionHandler:]
+-[IBGToastView layoutSubviews]
+-[IBGToastView dismissAnimated:completion:]
+___43-[IBGToastView dismissAnimated:completion:]_block_invoke
+___43-[IBGToastView dismissAnimated:completion:]_block_invoke.94
+___copy_helper_block_.95
+___destroy_helper_block_.96
+-[IBGToastView setupForMode:]
+-[IBGToastView setupDefaultMode]
+-[IBGToastView autoDismissAfter:]
+___33-[IBGToastView autoDismissAfter:]_block_invoke
+-[IBGToastView animatePresentationFromTopToBottom]
+___50-[IBGToastView animatePresentationFromTopToBottom]_block_invoke
+___50-[IBGToastView animatePresentationFromTopToBottom]_block_invoke.146
+___copy_helper_block_.147
+___destroy_helper_block_.148
+-[IBGToastView didTapRightButton]
+-[IBGToastView setSideButtonHidden:]
+-[IBGToastView messageLabel]
+-[IBGToastView rightButton]
+-[IBGToastView dismissOnTappingRightButton]
+-[IBGToastView setDismissOnTappingRightButton:]
+-[IBGToastView sideButtonHidden]
+-[IBGToastView setMessageLabel:]
+-[IBGToastView setRightButton:]
+-[IBGToastView rightButtonCompletion]
+-[IBGToastView setRightButtonCompletion:]
+-[IBGToastView message]
+-[IBGToastView setMessage:]
+-[IBGToastView didPresentSelf]
+-[IBGToastView setDidPresentSelf:]
+-[IBGToastView .cxx_destruct]
+___block_descriptor_tmp.149
+_OBJC_IVAR_$_IBGToastView._sideButtonHidden
+_OBJC_IVAR_$_IBGToastView._messageLabel
+_OBJC_IVAR_$_IBGToastView._rightButton
+_OBJC_IVAR_$_IBGToastView._dismissOnTappingRightButton
+_OBJC_IVAR_$_IBGToastView._rightButtonCompletion
+_OBJC_IVAR_$_IBGToastView._message
+_OBJC_IVAR_$_IBGToastView._didPresentSelf
+/Users/distiller/project/Instabug/InstabugViewUtilities/IBGToastView.m
+/Users/distiller/project/Instabug/InstabugViewUtilities/IBGToastView.h
+__50-[IBGToastView animatePresentationFromTopToBottom]_block_invoke.146
+__50-[IBGToastView animatePresentationFromTopToBottom]_block_invoke
+__33-[IBGToastView autoDismissAfter:]_block_invoke
+__43-[IBGToastView dismissAnimated:completion:]_block_invoke.94
+__43-[IBGToastView dismissAnimated:completion:]_block_invoke
+-[UIView(IBGToast) showToastWithMessage:autoDismissAfter:]
+-[UIView(IBGToast) showErrorToastWithMessage:buttonText:autoDismissAfter:completion:]
+-[UIView(IBGToast) setupConstraintsForToastView:]
+/Users/distiller/project/Instabug/InstabugViewUtilities/Categories/UIView+IBGToast.m
+-[IBGButton init]
+-[IBGButton pointInside:withEvent:]
+-[IBGButton resetUI]
+-[IBGButton hitTestEdgeInsets]
+-[IBGButton setHitTestEdgeInsets:]
+-[IBGButton switchState]
+-[IBGButton setSwitchState:]
+_OBJC_IVAR_$_IBGButton._hitTestEdgeInsets
+_OBJC_IVAR_$_IBGButton._switchState
+/Users/distiller/project/Instabug/InstabugViewUtilities/IBGButton.m
+/Users/distiller/project/Instabug/InstabugViewUtilities/IBGButton.h
+-[IBGAssetsDiskCache init]
+-[IBGAssetsDiskCache saveData:forURL:]
+-[IBGAssetsDiskCache indexForCachedPath:]
+___41-[IBGAssetsDiskCache indexForCachedPath:]_block_invoke
+-[IBGAssetsDiskCache assetForURL:]
+-[IBGAssetsDiskCache hasAssetForURL:]
+-[IBGAssetsDiskCache invalidate]
+-[IBGAssetsDiskCache clean]
+-[IBGAssetsDiskCache fileNameFromURL:]
+-[IBGAssetsDiskCache cacheURLForQueryURL:]
+-[IBGAssetsDiskCache cachePathForFile:]
+-[IBGAssetsDiskCache cachePathDirectory]
+-[IBGAssetsDiskCache dateLimit]
+-[IBGAssetsDiskCache setDateLimit:]
+-[IBGAssetsDiskCache sizeLimit]
+-[IBGAssetsDiskCache setSizeLimit:]
+-[IBGAssetsDiskCache cache]
+-[IBGAssetsDiskCache setCache:]
+-[IBGAssetsDiskCache .cxx_destruct]
+_OBJC_IVAR_$_IBGAssetsDiskCache._dateLimit
+_OBJC_IVAR_$_IBGAssetsDiskCache._sizeLimit
+_OBJC_IVAR_$_IBGAssetsDiskCache._cache
+l_OBJC_PROTOCOL_$_IBGAssetsCache
+l_OBJC_LABEL_PROTOCOL_$_IBGAssetsCache
+/Users/distiller/project/Instabug/InstabugAssets/Cache/IBGAssetsDiskCache.m
+/Users/distiller/project/Instabug/InstabugAssets/Cache/IBGAssetsMultiLevelCache.h
+__41-[IBGAssetsDiskCache indexForCachedPath:]_block_invoke
+-[IBGAssetsMultiLevelCache init]
+-[IBGAssetsMultiLevelCache saveData:forURL:]
+-[IBGAssetsMultiLevelCache assetForURL:]
+-[IBGAssetsMultiLevelCache hasAssetForURL:]
+-[IBGAssetsMultiLevelCache cacheSourceForURL:]
+-[IBGAssetsMultiLevelCache invalidate]
+-[IBGAssetsMultiLevelCache clean]
+-[IBGAssetsMultiLevelCache cleanURLFromURL:]
+-[IBGAssetsMultiLevelCache dateLimit]
+-[IBGAssetsMultiLevelCache setDateLimit:]
+-[IBGAssetsMultiLevelCache sizeLimit]
+-[IBGAssetsMultiLevelCache setSizeLimit:]
+-[IBGAssetsMultiLevelCache memory]
+-[IBGAssetsMultiLevelCache setMemory:]
+-[IBGAssetsMultiLevelCache disk]
+-[IBGAssetsMultiLevelCache setDisk:]
+-[IBGAssetsMultiLevelCache .cxx_destruct]
+_OBJC_IVAR_$_IBGAssetsMultiLevelCache._dateLimit
+_OBJC_IVAR_$_IBGAssetsMultiLevelCache._sizeLimit
+_OBJC_IVAR_$_IBGAssetsMultiLevelCache._memory
+_OBJC_IVAR_$_IBGAssetsMultiLevelCache._disk
+/Users/distiller/project/Instabug/InstabugAssets/Cache/IBGAssetsMultiLevelCache.m
+-[IBGAssetNetworkFetcher init]
+-[IBGAssetNetworkFetcher fetchAssetAt:completionHandler:]
+___57-[IBGAssetNetworkFetcher fetchAssetAt:completionHandler:]_block_invoke
+___57-[IBGAssetNetworkFetcher fetchAssetAt:completionHandler:]_block_invoke_2
+___copy_helper_block_.22
+___destroy_helper_block_.23
+-[IBGAssetNetworkFetcher session]
+-[IBGAssetNetworkFetcher setSession:]
+-[IBGAssetNetworkFetcher .cxx_destruct]
+___block_descriptor_tmp.25
+_OBJC_IVAR_$_IBGAssetNetworkFetcher._session
+/Users/distiller/project/Instabug/InstabugAssets/Network/IBGAssetNetworkFetcher.m
+__57-[IBGAssetNetworkFetcher fetchAssetAt:completionHandler:]_block_invoke_2
+__57-[IBGAssetNetworkFetcher fetchAssetAt:completionHandler:]_block_invoke
+-[IBGAssetMemoryCacheItem initWithData:forURL:]
+-[IBGAssetMemoryCacheItem size]
+-[IBGAssetMemoryCacheItem remove]
+-[IBGAssetMemoryCacheItem data]
+-[IBGAssetMemoryCacheItem setData:]
+-[IBGAssetMemoryCacheItem queryURl]
+-[IBGAssetMemoryCacheItem setQueryURl:]
+-[IBGAssetMemoryCacheItem lastUsedDate]
+-[IBGAssetMemoryCacheItem setLastUsedDate:]
+-[IBGAssetMemoryCacheItem .cxx_destruct]
+_OBJC_IVAR_$_IBGAssetMemoryCacheItem._data
+_OBJC_IVAR_$_IBGAssetMemoryCacheItem._queryURl
+_OBJC_IVAR_$_IBGAssetMemoryCacheItem._lastUsedDate
+l_OBJC_PROTOCOL_$_IBGAssetsCacheItem
+l_OBJC_LABEL_PROTOCOL_$_IBGAssetsCacheItem
+/Users/distiller/project/Instabug/InstabugAssets/Cache/Cache Items/IBGAssetMemoryCacheItem.m
+/Users/distiller/project/Instabug/InstabugAssets/Cache/Cache Items/IBGAssetMemoryCacheItem.h
++[IBGAssetObjectFactory assetFromData:URL:]
++[IBGAssetObjectFactory isPath:containsString:]
++[IBGAssetObjectFactory isAVAssetPath:]
+/Users/distiller/project/Instabug/InstabugAssets/Helpers/IBGAssetObjectFactory.m
+-[IBGAssetsMemoryCache init]
+-[IBGAssetsMemoryCache saveData:forURL:]
+-[IBGAssetsMemoryCache assetForURL:]
+-[IBGAssetsMemoryCache hasAssetForURL:]
+-[IBGAssetsMemoryCache invalidate]
+-[IBGAssetsMemoryCache clean]
+-[IBGAssetsMemoryCache indexOfCachedItemForURL:]
+___48-[IBGAssetsMemoryCache indexOfCachedItemForURL:]_block_invoke
+-[IBGAssetsMemoryCache dateLimit]
+-[IBGAssetsMemoryCache setDateLimit:]
+-[IBGAssetsMemoryCache sizeLimit]
+-[IBGAssetsMemoryCache setSizeLimit:]
+-[IBGAssetsMemoryCache cache]
+-[IBGAssetsMemoryCache setCache:]
+-[IBGAssetsMemoryCache .cxx_destruct]
+_OBJC_IVAR_$_IBGAssetsMemoryCache._dateLimit
+_OBJC_IVAR_$_IBGAssetsMemoryCache._sizeLimit
+_OBJC_IVAR_$_IBGAssetsMemoryCache._cache
+/Users/distiller/project/Instabug/InstabugAssets/Cache/IBGAssetsMemoryCache.m
+__48-[IBGAssetsMemoryCache indexOfCachedItemForURL:]_block_invoke
++[IBGAssetsLoader sharedInstance]
+___33+[IBGAssetsLoader sharedInstance]_block_invoke
+-[IBGAssetsLoader init]
+-[IBGAssetsLoader loadAssetAutomaticByURL:completionHandler:]
+___61-[IBGAssetsLoader loadAssetAutomaticByURL:completionHandler:]_block_invoke
+___61-[IBGAssetsLoader loadAssetAutomaticByURL:completionHandler:]_block_invoke_2
+___copy_helper_block_.498
+___destroy_helper_block_.499
+-[IBGAssetsLoader loadAttachment:completionHandler:]
+-[IBGAssetsLoader handleFailureWithBlock:url:]
+-[IBGAssetsLoader loadAssetByURL:completionHandler:]
+___52-[IBGAssetsLoader loadAssetByURL:completionHandler:]_block_invoke
+___copy_helper_block_.520
+___destroy_helper_block_.521
+-[IBGAssetsLoader hasLoadedURL:]
+-[IBGAssetsLoader hasFailedLoading:]
+-[IBGAssetsLoader hasFailedPath:]
+-[IBGAssetsLoader networkStatusDidChange]
+-[IBGAssetsLoader isReachable]
+-[IBGAssetsLoader applicationDidReceiveMemoryWarning]
+-[IBGAssetsLoader didDissmissUI]
+-[IBGAssetsLoader cache]
+-[IBGAssetsLoader setCache:]
+-[IBGAssetsLoader network]
+-[IBGAssetsLoader setNetwork:]
+-[IBGAssetsLoader failedURLs]
+-[IBGAssetsLoader setFailedURLs:]
+-[IBGAssetsLoader pendingAutomaticRequests]
+-[IBGAssetsLoader setPendingAutomaticRequests:]
+-[IBGAssetsLoader .cxx_destruct]
+___block_descriptor_tmp.501
+_OBJC_IVAR_$_IBGAssetsLoader._cache
+_OBJC_IVAR_$_IBGAssetsLoader._network
+_OBJC_IVAR_$_IBGAssetsLoader._failedURLs
+_OBJC_IVAR_$_IBGAssetsLoader._pendingAutomaticRequests
+/Users/distiller/project/Instabug/InstabugAssets/IBGAssetsLoader.m
+/Users/distiller/project/Instabug/InstabugAssets/IBGAssetsLoader.h
+__52-[IBGAssetsLoader loadAssetByURL:completionHandler:]_block_invoke
+__61-[IBGAssetsLoader loadAssetAutomaticByURL:completionHandler:]_block_invoke_2
+__61-[IBGAssetsLoader loadAssetAutomaticByURL:completionHandler:]_block_invoke
+__33+[IBGAssetsLoader sharedInstance]_block_invoke
+-[IBGCacheController initWithItems:sizeLimit:intervalLimit:]
+-[IBGCacheController remainingItems]
+___36-[IBGCacheController remainingItems]_block_invoke
+-[IBGCacheController removeLeastRecentlyUsedItems]
+-[IBGCacheController removeItemsAfterTimeLimit]
+-[IBGCacheController currentCacheSize]
+-[IBGCacheController items]
+-[IBGCacheController setItems:]
+-[IBGCacheController sizeLimit]
+-[IBGCacheController setSizeLimit:]
+-[IBGCacheController intervalLimit]
+-[IBGCacheController setIntervalLimit:]
+-[IBGCacheController .cxx_destruct]
+_OBJC_IVAR_$_IBGCacheController._items
+_OBJC_IVAR_$_IBGCacheController._sizeLimit
+_OBJC_IVAR_$_IBGCacheController._intervalLimit
+/Users/distiller/project/Instabug/InstabugAssets/Cache/IBGCacheController.m
+__36-[IBGCacheController remainingItems]_block_invoke
++[IBGAssetDiskCacheItem itemsFromDirectory:]
+-[IBGAssetDiskCacheItem initWithURL:]
+-[IBGAssetDiskCacheItem writeData:]
+-[IBGAssetDiskCacheItem asset]
+-[IBGAssetDiskCacheItem setLastUsedDate:]
+-[IBGAssetDiskCacheItem remove]
+-[IBGAssetDiskCacheItem size]
+-[IBGAssetDiskCacheItem url]
+-[IBGAssetDiskCacheItem setUrl:]
+-[IBGAssetDiskCacheItem lastUsedDate]
+-[IBGAssetDiskCacheItem .cxx_destruct]
+_OBJC_IVAR_$_IBGAssetDiskCacheItem._lastUsedDate
+_OBJC_IVAR_$_IBGAssetDiskCacheItem._url
+/Users/distiller/project/Instabug/InstabugAssets/Cache/Cache Items/IBGAssetDiskCacheItem.m
+/Users/distiller/project/Instabug/InstabugAssets/Cache/Cache Items/IBGAssetDiskCacheItem.h
+-[UIImageView(IBGAssetsLoader) ibg_setImageWithURL:]
+-[UIImageView(IBGAssetsLoader) ibg_setImageWithURL:placeholder:]
+-[UIImageView(IBGAssetsLoader) ibg_setImageWithURL:placeholder:roundCorners:animated:completionHandler:]
+___104-[UIImageView(IBGAssetsLoader) ibg_setImageWithURL:placeholder:roundCorners:animated:completionHandler:]_block_invoke
+-[UIImageView(IBGAssetsLoader) ibg_setImage:animated:]
+___54-[UIImageView(IBGAssetsLoader) ibg_setImage:animated:]_block_invoke
+___copy_helper_block_.481
+___destroy_helper_block_.482
+-[UIImageView(IBGAssetsLoader) currentURL]
+-[UIImageView(IBGAssetsLoader) setCurrentURL:]
+___block_descriptor_tmp.484
+/Users/distiller/project/Instabug/InstabugAssets/Categories/UIImageView+IBGAssetsLoader.m
+__54-[UIImageView(IBGAssetsLoader) ibg_setImage:animated:]_block_invoke
+__104-[UIImageView(IBGAssetsLoader) ibg_setImageWithURL:placeholder:roundCorners:animated:completionHandler:]_block_invoke
+-[IBGScreenshotGestureAnnotator init]
+-[IBGScreenshotGestureAnnotator annotateFrameInContext:withTouchEvent:]
+-[IBGScreenshotGestureAnnotator getLastTouchLocationsFrom:]
+-[IBGScreenshotGestureAnnotator delegate]
+-[IBGScreenshotGestureAnnotator setDelegate:]
+-[IBGScreenshotGestureAnnotator touchImage]
+-[IBGScreenshotGestureAnnotator setTouchImage:]
+-[IBGScreenshotGestureAnnotator .cxx_destruct]
+_OBJC_IVAR_$_IBGScreenshotGestureAnnotator._delegate
+_OBJC_IVAR_$_IBGScreenshotGestureAnnotator._touchImage
+/Users/distiller/project/Instabug/InstabugScreenCapturer/Helpers/IBGScreenshotGestureAnnotator.m
+/Users/distiller/project/Instabug/InstabugScreenCapturer/Helpers/IBGScreenshotGestureAnnotator.h
++[IBGExcludedWindowsStore sharedStore]
+___38+[IBGExcludedWindowsStore sharedStore]_block_invoke
+-[IBGExcludedWindowsStore init]
+-[IBGExcludedWindowsStore addExcludedWindowType:]
+-[IBGExcludedWindowsStore excludedWindowTypes]
+-[IBGExcludedWindowsStore setExcludedWindowTypes:]
+-[IBGExcludedWindowsStore .cxx_destruct]
+_sharedStore.sharedInstance
+_sharedStore.onceToken
+_OBJC_IVAR_$_IBGExcludedWindowsStore._excludedWindowTypes
+/Users/distiller/project/Instabug/InstabugScreenCapturer/Managers/IBGExcludedWindowsStore.m
+/Users/distiller/project/Instabug/InstabugScreenCapturer/Managers/IBGExcludedWindowsStore.h
+__38+[IBGExcludedWindowsStore sharedStore]_block_invoke
+___IBG_tapImage_block_invoke
+_IBG_tapImage.redCircle
+_IBG_tapImage.onceToken
+/Users/distiller/project/Instabug/InstabugScreenCapturer/Helpers/IBGScreenCaptureImageUtilities.m
+IBG_drawImage
+__IBG_tapImage_block_invoke
+IBG_tapImage
+IBG_imageWithColor
++[InstabugScreenCapturer getInstance]
+___37+[InstabugScreenCapturer getInstance]_block_invoke
+-[InstabugScreenCapturer init]
+-[InstabugScreenCapturer takeScreenshotWithAnnotator:shouldUseRenderInContext:lastTouchEvent:]
+-[InstabugScreenCapturer imageFromCompletionHandler:]
+-[InstabugScreenCapturer takeScreenshotInContext:shouldUseRenderInContext:]
+-[InstabugScreenCapturer takeScreenshotOfWindow:inContex:shouldUseRenderInContext:]
+-[InstabugScreenCapturer takeScreenshotFromView:]
++[InstabugScreenCapturer addExcludedWindowType:]
++[InstabugScreenCapturer shouldTakeScreenshotOfWindow:]
++[InstabugScreenCapturer getInterfaceOrientation]
++[InstabugScreenCapturer imageFromCurrentContext]
++[InstabugScreenCapturer currentContextImageSize]
+-[InstabugScreenCapturer capturingHandler]
+-[InstabugScreenCapturer setCapturingHandler:]
+-[InstabugScreenCapturer .cxx_destruct]
+_OBJC_IVAR_$_InstabugScreenCapturer._capturingHandler
+/Users/distiller/project/Instabug/InstabugScreenCapturer/InstabugScreenCapturer.m
+/Users/distiller/project/Instabug/InstabugScreenCapturer/InstabugScreenCapturer.h
+__37+[InstabugScreenCapturer getInstance]_block_invoke
++[IBGScreenCaptureInspector applicationWindow]
+___46+[IBGScreenCaptureInspector applicationWindow]_block_invoke
++[IBGScreenCaptureInspector keyWindow]
++[IBGScreenCaptureInspector isNotInstabugWindow:]
+/Users/distiller/project/Instabug/InstabugScreenCapturer/Managers/IBGScreenCaptureInspector.m
+__46+[IBGScreenCaptureInspector applicationWindow]_block_invoke
++[IBGDeviceState sharedInstance]
+___32+[IBGDeviceState sharedInstance]_block_invoke
+-[IBGDeviceState getSDKVersion]
+-[IBGDeviceState getSDKBuildNumber]
+-[IBGDeviceState getiOSVersion]
+-[IBGDeviceState getBundleIdentifier]
+-[IBGDeviceState isPhotoLibraryUsageDescriptionAdded]
+-[IBGDeviceState isMicrophoneUsageDescriptionAdded]
+-[IBGDeviceState getScreenOrientation]
+-[IBGDeviceState getInterfaceOrientation]
+-[IBGDeviceState getScreenSize]
+-[IBGDeviceState getScreenScalef]
+-[IBGDeviceState getScreenScale]
+-[IBGDeviceState getScreenScaleWithZoomMode]
+-[IBGDeviceState isNativeScaleLessThanScale]
+-[IBGDeviceState isNativeScaleGreaterThanScale]
+-[IBGDeviceState getMaxOfWidthOrHeight]
+-[IBGDeviceState screenZoomed]
+-[IBGDeviceState isAppInActive]
+-[IBGDeviceState getAppVersion]
+-[IBGDeviceState getSupportedMaxOS]
+-[IBGDeviceState getSupportedMinOS]
+-[IBGDeviceState getSupportedDeviceFamily]
+-[IBGDeviceState getSystemLocale]
+-[IBGDeviceState isDebuggerAttached]
+-[IBGDeviceState isDebuggerAttatchedToConsole]
+-[IBGDeviceState isViewControllerBasedStatusBarAppearanceEnabled]
+-[IBGDeviceState isLandscape]
+-[IBGDeviceState isRTL]
+-[IBGDeviceState iOSVersionIsLessThan:]
+-[IBGDeviceState getWifiSSID]
+-[IBGDeviceState getFullCarrierName]
+-[IBGDeviceState getCarrierConnectionType]
+-[IBGDeviceState getCarrierName]
+-[IBGDeviceState getMemory]
+-[IBGDeviceState getStorage]
+-[IBGDeviceState getDeviceModel]
+-[IBGDeviceState hasDiskSpaceAbove10Mega]
+-[IBGDeviceState isIphoneX]
+-[IBGDeviceState isIPad]
+-[IBGDeviceState isPhone]
+-[IBGDeviceState iOSVersionHasPrefix:]
+-[IBGDeviceState deviceUUID]
+-[IBGDeviceState getBatteryLevel]
+-[IBGDeviceState getBatteryState]
+-[IBGDeviceState isBatteryPlugged]
+/Users/distiller/project/Instabug/InstabugDeviceState/IBGDeviceState.m
+__32+[IBGDeviceState sharedInstance]_block_invoke
+-[IBGStorageStateReader getStorage]
+/Users/distiller/project/Instabug/InstabugDeviceState/Readers/IBGStorageStateReader.m
+-[IBGOrientationStateReader getScreenOrientation]
+/Users/distiller/project/Instabug/InstabugDeviceState/Readers/IBGOrientationStateReader.m
+-[IBGConnectionStateReader networkInfo]
+___39-[IBGConnectionStateReader networkInfo]_block_invoke
+-[IBGConnectionStateReader isSimCardAvailable]
+___46-[IBGConnectionStateReader isSimCardAvailable]_block_invoke
+-[IBGConnectionStateReader getWifiSSID]
+-[IBGConnectionStateReader isReachableViaWifi]
+-[IBGConnectionStateReader getCarrierConnectionType]
+-[IBGConnectionStateReader getCarrierName]
+-[IBGConnectionStateReader getFullCarrierName]
+_networkInfoOnceToken
+_netinfo
+_simAvailableOnceToken
+___block_descriptor_tmp.3
+___block_literal_global.4
+_available
+/Users/distiller/project/Instabug/InstabugDeviceState/Readers/IBGConnectionStateReader.m
+__46-[IBGConnectionStateReader isSimCardAvailable]_block_invoke
+__39-[IBGConnectionStateReader networkInfo]_block_invoke
++[IBGReadersFactory sharedInstance]
+___35+[IBGReadersFactory sharedInstance]_block_invoke
+-[IBGReadersFactory init]
+-[IBGReadersFactory batteryStateReader]
+-[IBGReadersFactory connectionStateReader]
+-[IBGReadersFactory oreintationStateReader]
+-[IBGReadersFactory memoryStateReader]
+-[IBGReadersFactory storageStateReader]
+-[IBGReadersFactory getReaderForKey:]
+-[IBGReadersFactory setupReadersDictionary]
+-[IBGReadersFactory batteryReader]
+-[IBGReadersFactory setBatteryReader:]
+-[IBGReadersFactory orientationReader]
+-[IBGReadersFactory setOrientationReader:]
+-[IBGReadersFactory connectionReader]
+-[IBGReadersFactory setConnectionReader:]
+-[IBGReadersFactory memoryReader]
+-[IBGReadersFactory setMemoryReader:]
+-[IBGReadersFactory storageReader]
+-[IBGReadersFactory setStorageReader:]
+-[IBGReadersFactory readersDictionary]
+-[IBGReadersFactory setReadersDictionary:]
+-[IBGReadersFactory .cxx_destruct]
+_OBJC_IVAR_$_IBGReadersFactory._batteryReader
+_OBJC_IVAR_$_IBGReadersFactory._orientationReader
+_OBJC_IVAR_$_IBGReadersFactory._connectionReader
+_OBJC_IVAR_$_IBGReadersFactory._memoryReader
+_OBJC_IVAR_$_IBGReadersFactory._storageReader
+_OBJC_IVAR_$_IBGReadersFactory._readersDictionary
+/Users/distiller/project/Instabug/InstabugDeviceState/IBGReadersFactory.m
+__35+[IBGReadersFactory sharedInstance]_block_invoke
+-[IBGMemoryStateReader getMemory]
+/Users/distiller/project/Instabug/InstabugDeviceState/Readers/IBGMemoryStateReader.m
+report_memory
+-[IBGBatteryStateReader getBatteryLevel]
+-[IBGBatteryStateReader getBatteryState]
+-[IBGBatteryStateReader isBatteryPlugged]
+/Users/distiller/project/Instabug/InstabugDeviceState/Readers/IBGBatteryStateReader.m
+-[IBGCoreDataLayer initWithModelURL:storeURL:]
+-[IBGCoreDataLayer persistentStoreWithModelURL:]
+-[IBGCoreDataLayer saveWithCompletionHandler:]
+-[IBGCoreDataLayer addObserver:]
+-[IBGCoreDataLayer removeObserver:]
+-[IBGCoreDataLayer managedObjectContext]
+-[IBGCoreDataLayer privateContext]
+-[IBGCoreDataLayer afterInitializationCoreDataQueue]
+-[IBGCoreDataLayer coreDataManager]
+-[IBGCoreDataLayer setCoreDataManager:]
+-[IBGCoreDataLayer managedObjectContextController]
+-[IBGCoreDataLayer setManagedObjectContextController:]
+-[IBGCoreDataLayer .cxx_destruct]
+_OBJC_IVAR_$_IBGCoreDataLayer._coreDataManager
+_OBJC_IVAR_$_IBGCoreDataLayer._managedObjectContextController
+/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGCoreDataLayer.m
+-[IBGDALService initWithContextProvider:coreDataLayer:]
+-[IBGDALService init]
+-[IBGDALService registerNotifictaions]
+-[IBGDALService unregisterNotifications]
+-[IBGDALService clearCoreData]
+___30-[IBGDALService clearCoreData]_block_invoke
+___30-[IBGDALService clearCoreData]_block_invoke_2
+-[IBGDALService writeSync:]
+___27-[IBGDALService writeSync:]_block_invoke
+___copy_helper_block_.33
+___destroy_helper_block_.34
+-[IBGDALService writeASync:completionBlock:]
+___44-[IBGDALService writeASync:completionBlock:]_block_invoke
+___44-[IBGDALService writeASync:completionBlock:]_block_invoke.52
+___44-[IBGDALService writeASync:completionBlock:]_block_invoke_2
+-[IBGDALService readSync:]
+___26-[IBGDALService readSync:]_block_invoke
+-[IBGDALService readASync:completionBlock:]
+___43-[IBGDALService readASync:completionBlock:]_block_invoke
+-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]
+___70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke
+___70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_2
+___copy_helper_block_.80
+___destroy_helper_block_.81
+-[IBGDALService performBlockSyncWithoutSave:]
+___45-[IBGDALService performBlockSyncWithoutSave:]_block_invoke
+-[IBGDALService dealloc]
+-[IBGDALService coreDataLayer]
+-[IBGDALService setCoreDataLayer:]
+-[IBGDALService contextProvider]
+-[IBGDALService setContextProvider:]
+-[IBGDALService operationTempStorage]
+-[IBGDALService setOperationTempStorage:]
+-[IBGDALService dataLayerServiceQueue]
+-[IBGDALService setDataLayerServiceQueue:]
+-[IBGDALService .cxx_destruct]
+_OBJC_IVAR_$_IBGDALService._coreDataLayer
+_OBJC_IVAR_$_IBGDALService._contextProvider
+_OBJC_IVAR_$_IBGDALService._operationTempStorage
+_OBJC_IVAR_$_IBGDALService._dataLayerServiceQueue
+l_OBJC_PROTOCOL_$_IBGDALProtocol
+l_OBJC_LABEL_PROTOCOL_$_IBGDALProtocol
+/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGDALService.m
+__45-[IBGDALService performBlockSyncWithoutSave:]_block_invoke
+__70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_2
+__70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke
+__43-[IBGDALService readASync:completionBlock:]_block_invoke
+__26-[IBGDALService readSync:]_block_invoke
+__44-[IBGDALService writeASync:completionBlock:]_block_invoke_2
+__44-[IBGDALService writeASync:completionBlock:]_block_invoke.52
+__44-[IBGDALService writeASync:completionBlock:]_block_invoke
+__27-[IBGDALService writeSync:]_block_invoke
+__30-[IBGDALService clearCoreData]_block_invoke_2
+__30-[IBGDALService clearCoreData]_block_invoke
+-[IBGManagedObjectContextController initWithPersistanceStore:appStateReactor:]
+___78-[IBGManagedObjectContextController initWithPersistanceStore:appStateReactor:]_block_invoke
+-[IBGManagedObjectContextController registerNotification]
+-[IBGManagedObjectContextController applicationProtectedDataDidBecomeAvailable]
+-[IBGManagedObjectContextController applicationProtectedDataWillBecomeUnavailable]
+-[IBGManagedObjectContextController dealloc]
+-[IBGManagedObjectContextController initializeManagedObjectContext]
+-[IBGManagedObjectContextController initializePrivateContextWithPersistanceStore:]
+-[IBGManagedObjectContextController saveWithCompletionHandler:]
+___63-[IBGManagedObjectContextController saveWithCompletionHandler:]_block_invoke
+___63-[IBGManagedObjectContextController saveWithCompletionHandler:]_block_invoke.52
+-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]
+___76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke
+___76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke_2
+___76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke.69
+___copy_helper_block_.73
+___destroy_helper_block_.74
+___76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke.76
+___copy_helper_block_.79
+___destroy_helper_block_.80
+-[IBGManagedObjectContextController didIntializeCoreDataStack]
+-[IBGManagedObjectContextController didReceiveStateChange]
+___58-[IBGManagedObjectContextController didReceiveStateChange]_block_invoke
+___58-[IBGManagedObjectContextController didReceiveStateChange]_block_invoke_2
+-[IBGManagedObjectContextController registerBackgroundTaskWithBlock:]
+___69-[IBGManagedObjectContextController registerBackgroundTaskWithBlock:]_block_invoke
+-[IBGManagedObjectContextController endBackgroundTask]
+-[IBGManagedObjectContextController managedObjectContext]
+-[IBGManagedObjectContextController setManagedObjectContext:]
+-[IBGManagedObjectContextController privateContext]
+-[IBGManagedObjectContextController setPrivateContext:]
+-[IBGManagedObjectContextController backgroundTask]
+-[IBGManagedObjectContextController setBackgroundTask:]
+-[IBGManagedObjectContextController isApplicationProtectedDataAvailable]
+-[IBGManagedObjectContextController setIsApplicationProtectedDataAvailable:]
+-[IBGManagedObjectContextController didAddPersistentStore]
+-[IBGManagedObjectContextController setDidAddPersistentStore:]
+-[IBGManagedObjectContextController appStateReactor]
+-[IBGManagedObjectContextController setAppStateReactor:]
+-[IBGManagedObjectContextController .cxx_destruct]
+_OBJC_IVAR_$_IBGManagedObjectContextController._appStateReactor
+_OBJC_IVAR_$_IBGManagedObjectContextController._managedObjectContext
+___block_descriptor_tmp.61
+___block_descriptor_tmp.75
+___block_descriptor_tmp.81
+___block_descriptor_tmp.92
+_OBJC_IVAR_$_IBGManagedObjectContextController._privateContext
+_OBJC_IVAR_$_IBGManagedObjectContextController._backgroundTask
+_OBJC_IVAR_$_IBGManagedObjectContextController._isApplicationProtectedDataAvailable
+_OBJC_IVAR_$_IBGManagedObjectContextController._didAddPersistentStore
+l_OBJC_PROTOCOL_$_IBGAppStateReactorDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGAppStateReactorDelegate
+l_OBJC_PROTOCOL_$_IBGCoreDataLayerDelegate
+l_OBJC_LABEL_PROTOCOL_$_IBGCoreDataLayerDelegate
+/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGManagedObjectContextController.m
+/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGManagedObjectContextController.h
+__69-[IBGManagedObjectContextController registerBackgroundTaskWithBlock:]_block_invoke
+__58-[IBGManagedObjectContextController didReceiveStateChange]_block_invoke_2
+__58-[IBGManagedObjectContextController didReceiveStateChange]_block_invoke
+__76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke.76
+__76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke.69
+__76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke_2
+__76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke
+__63-[IBGManagedObjectContextController saveWithCompletionHandler:]_block_invoke.52
+__63-[IBGManagedObjectContextController saveWithCompletionHandler:]_block_invoke
+__78-[IBGManagedObjectContextController initWithPersistanceStore:appStateReactor:]_block_invoke
+-[IBGAppStateReactor init]
+-[IBGAppStateReactor addingNotificationsObserver]
+-[IBGAppStateReactor removeNotificationObserver]
+-[IBGAppStateReactor applicationDidEnterBackground]
+-[IBGAppStateReactor applicationWillResignActive]
+-[IBGAppStateReactor applicationWillTerminate]
+-[IBGAppStateReactor forwardStatusChange]
+-[IBGAppStateReactor dealloc]
+-[IBGAppStateReactor delegate]
+-[IBGAppStateReactor setDelegate:]
+-[IBGAppStateReactor .cxx_destruct]
+_OBJC_IVAR_$_IBGAppStateReactor._delegate
+/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGAppStateReactor.m
+/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGAppStateReactor.h
+-[IBGPersistentStoreCoordinator coordinatorWithModelURL:]
+/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGPersistentStoreCoordinator.m
+-[IBGCoreDataManager initWithModelURL:storeURL:persistentStore:]
+-[IBGCoreDataManager shouldDeleteInstabugSqlLiteFile:]
+-[IBGCoreDataManager initializeSQLLiteStoreWithPersistentStore]
+___63-[IBGCoreDataManager initializeSQLLiteStoreWithPersistentStore]_block_invoke
+-[IBGCoreDataManager handleCoreDataIntializationFailuerWithStoreURL:error:persistentStore:]
+___91-[IBGCoreDataManager handleCoreDataIntializationFailuerWithStoreURL:error:persistentStore:]_block_invoke
+-[IBGCoreDataManager destoryStoreIfNeeded:persistentStore:]
+-[IBGCoreDataManager isOldStoreExistAtURL:]
+-[IBGCoreDataManager notifyDelegates]
+___37-[IBGCoreDataManager notifyDelegates]_block_invoke
+-[IBGCoreDataManager addObserver:]
+-[IBGCoreDataManager removeObserver:]
+-[IBGCoreDataManager afterInitializationCoreDataQueue]
+-[IBGCoreDataManager setAfterInitializationCoreDataQueue:]
+-[IBGCoreDataManager modelURL]
+-[IBGCoreDataManager setModelURL:]
+-[IBGCoreDataManager storeURL]
+-[IBGCoreDataManager setStoreURL:]
+-[IBGCoreDataManager observers]
+-[IBGCoreDataManager setObservers:]
+-[IBGCoreDataManager persistentStoreCoordinator]
+-[IBGCoreDataManager setPersistentStoreCoordinator:]
+-[IBGCoreDataManager .cxx_destruct]
+_OBJC_IVAR_$_IBGCoreDataManager._modelURL
+_OBJC_IVAR_$_IBGCoreDataManager._storeURL
+_OBJC_IVAR_$_IBGCoreDataManager._observers
+_OBJC_IVAR_$_IBGCoreDataManager._persistentStoreCoordinator
+_OBJC_IVAR_$_IBGCoreDataManager._afterInitializationCoreDataQueue
+/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGCoreDataManager.m
+/Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGCoreDataManager.h
+__37-[IBGCoreDataManager notifyDelegates]_block_invoke
+__91-[IBGCoreDataManager handleCoreDataIntializationFailuerWithStoreURL:error:persistentStore:]_block_invoke
+__63-[IBGCoreDataManager initializeSQLLiteStoreWithPersistentStore]_block_invoke
 +[IBGSDKDefaults sharedInstance]
 ___32+[IBGSDKDefaults sharedInstance]_block_invoke
 +[IBGSDKDefaults destory]
@@ -16033,6 +16000,7 @@ _instabugIconBlock_block_invoke_42
 +[IBGIcons imageWithName:fillColor:storkeColor:flippedForRTLLayoutDirection:]
 +[IBGIcons imageWithName:color:size:flippedForRTLLayoutDirection:]
 +[IBGIcons imageWithBlock:flippedForRTLLayoutDirection:]
++[IBGIcons isRTL]
 +[IBGIcons imageWithBlock:size:flippedForRTLLayoutDirection:]
 +[IBGIcons convertStringToBlock:]
 _IBGFillColor
@@ -16053,10 +16021,10 @@ ___block_literal_global.122
 ___block_literal_global.126
 ___block_literal_global.128
 ___block_literal_global.132
-___block_descriptor_tmp.133
 ___block_literal_global.134
 ___block_descriptor_tmp.135
 ___block_literal_global.136
+___block_descriptor_tmp.137
 ___block_literal_global.138
 ___block_descriptor_tmp.139
 ___block_literal_global.140
@@ -16066,17 +16034,15 @@ ___block_literal_global.146
 ___block_literal_global.148
 ___block_descriptor_tmp.160
 ___block_literal_global.161
-___block_descriptor_tmp.162
-___block_literal_global.163
 ___block_descriptor_tmp.164
 ___block_literal_global.165
 ___block_descriptor_tmp.168
 ___block_literal_global.169
 _IBGStrokeColor
-___block_descriptor_tmp.172
-___block_literal_global.173
 ___block_descriptor_tmp.174
 ___block_literal_global.175
+___block_descriptor_tmp.176
+___block_literal_global.177
 ___block_descriptor_tmp.178
 ___block_literal_global.179
 ___block_literal_global.181
@@ -16612,6 +16578,8 @@ ___destroy_helper_block_.647
 -[IBGFeatures setVisualUserStepsWithScreenshots:]
 -[IBGFeatures setUserEvents:]
 -[IBGFeatures setFeatureRequests:]
+-[IBGFeatures isSDKDisabeld]
+-[IBGFeatures setIsSDKDisabeld:]
 -[IBGFeatures sdkFeature]
 -[IBGFeatures setSdkFeature:]
 -[IBGFeatures whiteLabelFeature]
@@ -16672,6 +16640,7 @@ _OBJC_IVAR_$_IBGFeatures._visualUserStepsWithScreenshots
 _OBJC_IVAR_$_IBGFeatures._sdk
 _OBJC_IVAR_$_IBGFeatures._userEvents
 _OBJC_IVAR_$_IBGFeatures._featureRequests
+_OBJC_IVAR_$_IBGFeatures._isSDKDisabeld
 _OBJC_IVAR_$_IBGFeatures._sdkFeature
 _OBJC_IVAR_$_IBGFeatures._whiteLabelFeature
 _OBJC_IVAR_$_IBGFeatures._pushNotificationsFeature
@@ -17025,17 +16994,17 @@ _OBJC_IVAR_$_IBGPLCrashReportMachineInfo._processorCount
 _OBJC_IVAR_$_IBGPLCrashReportMachineInfo._logicalProcessorCount
 _plcrash_async_macho_find_best_symbol
 __ZL20free_mapped_sectionsP24plcrash_async_objc_cache
-__ZL24plcrash_async_objc_parseP19plcrash_async_machoP24plcrash_async_objc_cachePFvbP26plcrash_async_macho_stringS4_mPvES5_
-__ZL41pl_async_objc_find_method_search_callbackbP26plcrash_async_macho_stringS0_mPv
-__ZL39pl_async_objc_find_method_call_callbackbP26plcrash_async_macho_stringS0_mPv
+__ZL24plcrash_async_objc_parseP19plcrash_async_machoP24plcrash_async_objc_cachePFvbP26plcrash_async_macho_stringS4_jPvES5_
+__ZL41pl_async_objc_find_method_search_callbackbP26plcrash_async_macho_stringS0_jPv
+__ZL39pl_async_objc_find_method_call_callbackbP26plcrash_async_macho_stringS0_jPv
 ____ZL37plcrash_async_image_objc_has_ios9_abiv_block_invoke
-__ZL25pl_async_parse_obj1_classP19plcrash_async_machoP14pl_objc1_classbPFvbP26plcrash_async_macho_stringS4_mPvES5_
+__ZL25pl_async_parse_obj1_classP19plcrash_async_machoP14pl_objc1_classbPFvbP26plcrash_async_macho_stringS4_jPvES5_
 __ZL12map_sectionsP19plcrash_async_machoP24plcrash_async_objc_cache
-__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_mPvESC_
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_jPvESC_
 __ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_6425pl_objc2_class_data_ro_6425pl_objc2_class_data_rw_64E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
-__ZL37pl_async_objc_parse_objc2_method_listP19plcrash_async_machoP24plcrash_async_objc_cacheP26plcrash_async_macho_stringbmPFvbS4_S4_mPvES5_
-__ZL9cache_setP24plcrash_async_objc_cachemm
-__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_mPvESC_
+__ZL37pl_async_objc_parse_objc2_method_listP19plcrash_async_machoP24plcrash_async_objc_cacheP26plcrash_async_macho_stringbjPFvbS4_S4_jPvES5_
+__ZL9cache_setP24plcrash_async_objc_cachejj
+__ZL39pl_async_objc_parse_objc2_class_methodsI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_bPFvbP26plcrash_async_macho_stringSB_jPvESC_
 __ZL31pl_async_objc_parse_objc2_classI17pl_objc2_class_3225pl_objc2_class_data_ro_3225pl_objc2_class_data_rw_32E15plcrash_error_tP19plcrash_async_machoP24plcrash_async_objc_cachePT_P26plcrash_async_macho_stringPT0_
 __GLOBAL__sub_I_PLCrashAsyncObjCSection.mm
 __ZZL37plcrash_async_image_objc_has_ios9_abivE9onceToken
@@ -17075,7 +17044,6 @@ _arm_nonvolatile_registers
 _arm64_nonvolatile_registers
 _arm_dwarf_table
 _arm64_dwarf_table
-_plcrash_async_map_register_name
 +[IBGPLCrashProcessInfo currentProcessInfo]
 -[IBGPLCrashProcessInfo initWithProcessID:]
 -[IBGPLCrashProcessInfo dealloc]
