@@ -19,6 +19,7 @@
 #import "IBGSurveys.h"
 #import "IBGFeatureRequests.h"
 #import "UIView+Instabug.h"
+#import "UIViewController+Instabug.h"
 
 /**
  This is the API for using Instabug's SDK. For more details about the SDK integration,
