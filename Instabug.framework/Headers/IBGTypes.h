@@ -39,6 +39,14 @@ extern NSString * const kIBGInvocationTitleStringName;
 extern NSString * const kIBGTalkToUsStringName;
 extern NSString * const kIBGReportBugStringName;
 extern NSString * const kIBGReportFeedbackStringName;
+extern NSString * const kIBGPhotoPickerTitle;
+extern NSString * const kIBGProgressViewTitle;
+extern NSString * const kIBGGalleryPermissionDeniedAlertTitle;
+extern NSString * const kIBGGalleryPermissionDeniedAlertMessage;
+extern NSString * const kIBGMaximumSizeExceededAlertTitle;
+extern NSString * const kIBGMaximumSizeExceededAlertMessage;
+extern NSString * const kIBGiCloudImportErrorAlertTitle;
+extern NSString * const kIBGiCloudImportErrorAlertMessage;
 extern NSString * const kIBGEmailFieldPlaceholderStringName;
 extern NSString * const kIBGCommentFieldPlaceholderForBugReportStringName;
 extern NSString * const kIBGCommentFieldPlaceholderForFeedbackStringName;
@@ -145,6 +153,10 @@ extern NSString * const kIBGDiscardAlertTitle;
 extern NSString * const kIBGDiscardAlertMessage;
 extern NSString * const kIBGDiscardAlertAction;
 extern NSString * const kIBGDiscardAlertCancel;
+extern NSString * const kIBGVideoGalleryErrorMessageStringName;
+extern NSString * const kIBGMaximumDurationExceededAlertTitle;
+extern NSString * const kIBGMaximumDurationExceededAlertMessage;
+
 
 /// -----------
 /// @name Enums
@@ -310,6 +322,16 @@ typedef NS_ENUM(NSInteger, IBGString) {
     IBGStringTalkToUs,
     IBGStringReportBug,
     IBGStringReportFeedback,
+    IBGStringPhotoPickerTitle,
+    IBGStringProgressViewTitle,
+    IBGStringGalleryPermissionDeniedAlertTitle,
+    IBGStringGalleryPermissionDeniedAlertMessage,
+    IBGStringMaximumSizeExceededAlertTitle,
+    IBGStringMaximumSizeExceededAlertMessage,
+    IBGMaximumDurationExceededAlertTitle,
+    IBGMaximumDurationExceededAlertMessage,
+    IBGStringiCloudImportErrorAlertTitle,
+    IBGStringiCloudImportErrorAlertMessage,
     IBGStringEmailFieldHint,
     IBGStringCommentFieldHintForBugReport,
     IBGStringCommentFieldHintForFeedback,
@@ -401,7 +423,8 @@ typedef NS_ENUM(NSInteger, IBGString) {
     IBGDiscardAlertTitleStringName,
     IBGDiscardAlertMessageStringName,
     IBGDiscardAlertActionStringName,
-    IBGDiscardAlertCancelStringName
+    IBGDiscardAlertCancelStringName,
+    IBGVideoGalleryErrorMessageStringName
 };
 
 /**
