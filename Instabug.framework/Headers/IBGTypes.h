@@ -154,8 +154,8 @@ extern NSString * const kIBGDiscardAlertMessage;
 extern NSString * const kIBGDiscardAlertAction;
 extern NSString * const kIBGDiscardAlertCancel;
 extern NSString * const kIBGVideoGalleryErrorMessageStringName;
-extern NSString * const kIBGMaximumDurationExceededAlertTitle;
-extern NSString * const kIBGMaximumDurationExceededAlertMessage;
+extern NSString * const kIBGVideoDurationErrorTitle;
+extern NSString * const kIBGVideoDurationErrorMessage;
 
 
 /// -----------
@@ -277,7 +277,8 @@ typedef NS_ENUM(NSInteger, IBGLocale) {
     IBGLocaleSlovak,
     IBGLocaleSpanish,
     IBGLocaleSwedish,
-    IBGLocaleTurkish
+    IBGLocaleTurkish,
+    IBGLocaleHungarian
 };
 
 /**
@@ -328,8 +329,8 @@ typedef NS_ENUM(NSInteger, IBGString) {
     IBGStringGalleryPermissionDeniedAlertMessage,
     IBGStringMaximumSizeExceededAlertTitle,
     IBGStringMaximumSizeExceededAlertMessage,
-    IBGMaximumDurationExceededAlertTitle,
-    IBGMaximumDurationExceededAlertMessage,
+    IBGVideoDurationErrorTitle,
+    IBGVideoDurationErrorMessage,
     IBGStringiCloudImportErrorAlertTitle,
     IBGStringiCloudImportErrorAlertMessage,
     IBGStringEmailFieldHint,
