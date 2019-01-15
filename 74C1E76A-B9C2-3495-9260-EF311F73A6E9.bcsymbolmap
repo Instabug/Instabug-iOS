@@ -14730,16 +14730,15 @@ __22+[IBGDiskIO defaultIO]_block_invoke
 ___27+[IBGNetwork sharedNetwork]_block_invoke
 -[IBGNetwork init]
 -[IBGNetwork dealloc]
--[IBGNetwork currentSession]
+-[IBGNetwork sessionWithShouldUseBackgroundTask:]
 -[IBGNetwork shouldDisableServerManager:]
 -[IBGNetwork isExecuting]
 -[IBGNetwork runRequest:]
 ___25-[IBGNetwork runRequest:]_block_invoke
 -[IBGNetwork reachabilityStatus]
+-[IBGNetwork sessionIdentifierForSession:]
 -[IBGNetwork createTaskWithContext:]
 ___36-[IBGNetwork createTaskWithContext:]_block_invoke
-___copy_helper_block_.103
-___destroy_helper_block_.104
 -[IBGNetwork handleNilTaskForRequest:]
 -[IBGNetwork shouldResumeTask:]
 -[IBGNetwork resumeAndBeginBackgroundTask:]
@@ -14748,41 +14747,32 @@ ___destroy_helper_block_.104
 ___51-[IBGNetwork URLSession:task:didCompleteWithError:]_block_invoke
 ___51-[IBGNetwork URLSession:task:didCompleteWithError:]_block_invoke_2
 ___51-[IBGNetwork URLSession:task:didCompleteWithError:]_block_invoke_3
-___copy_helper_block_.158
-___destroy_helper_block_.159
-___copy_helper_block_.161
-___destroy_helper_block_.162
-___copy_helper_block_.164
-___destroy_helper_block_.165
+___copy_helper_block_.160
+___destroy_helper_block_.161
+___copy_helper_block_.163
+___destroy_helper_block_.164
+___copy_helper_block_.166
+___destroy_helper_block_.167
 -[IBGNetwork URLSession:dataTask:didReceiveData:]
--[IBGNetwork beginBackgroundTaskWithName:]
-___42-[IBGNetwork beginBackgroundTaskWithName:]_block_invoke
-___copy_helper_block_.177
-___destroy_helper_block_.178
--[IBGNetwork endBackgroundTaskWithName:]
--[IBGNetwork endBackgroundTask:]
 -[IBGNetwork pushContext:]
--[IBGNetwork contextWithTaskIdentifeier:]
-___41-[IBGNetwork contextWithTaskIdentifeier:]_block_invoke
--[IBGNetwork removefileRequestWithTaskIdentifeier:]
-___51-[IBGNetwork removefileRequestWithTaskIdentifeier:]_block_invoke
-___copy_helper_block_.203
-___destroy_helper_block_.204
+-[IBGNetwork contextWithTaskIdentifeier:sessionID:]
+___51-[IBGNetwork contextWithTaskIdentifeier:sessionID:]_block_invoke
+___copy_helper_block_.180
+___destroy_helper_block_.181
+-[IBGNetwork removefileRequestWithTaskIdentifeier:sessionID:]
 -[IBGNetwork handleNetworkChange:]
 ___34-[IBGNetwork handleNetworkChange:]_block_invoke
-___copy_helper_block_.214
-___destroy_helper_block_.215
+___copy_helper_block_.194
+___destroy_helper_block_.195
 -[IBGNetwork resumeAllContexts]
 ___31-[IBGNetwork resumeAllContexts]_block_invoke
 ___31-[IBGNetwork resumeAllContexts]_block_invoke_2
-___copy_helper_block_.217
-___destroy_helper_block_.218
-___copy_helper_block_.220
-___destroy_helper_block_.221
 -[IBGNetwork suspendAllContexts]
 ___32-[IBGNetwork suspendAllContexts]_block_invoke
 -[IBGNetwork updateNetworkActivityIndicator]
 ___44-[IBGNetwork updateNetworkActivityIndicator]_block_invoke
+___copy_helper_block_.212
+___destroy_helper_block_.213
 +[IBGNetwork destroy]
 -[IBGNetwork defaultSession]
 -[IBGNetwork backgroundSession]
@@ -14796,8 +14786,6 @@ ___44-[IBGNetwork updateNetworkActivityIndicator]_block_invoke
 -[IBGNetwork setShouldDisableNetwork:]
 -[IBGNetwork serverManagerQueue]
 -[IBGNetwork setServerManagerQueue:]
--[IBGNetwork backgroundTaskIdentifiers]
--[IBGNetwork setBackgroundTaskIdentifiers:]
 -[IBGNetwork lock]
 -[IBGNetwork setLock:]
 -[IBGNetwork reachbility]
@@ -14809,17 +14797,14 @@ _OBJC_IVAR_$_IBGNetwork._serverManagerQueue
 _OBJC_IVAR_$_IBGNetwork._defaultSession
 _OBJC_IVAR_$_IBGNetwork._backgroundSession
 _OBJC_IVAR_$_IBGNetwork._serverRequests
-_OBJC_IVAR_$_IBGNetwork._backgroundTaskIdentifiers
 _OBJC_IVAR_$_IBGNetwork._reachbility
-___block_descriptor_tmp.106
-___block_descriptor_tmp.160
-___block_descriptor_tmp.163
-___block_descriptor_tmp.179
-___block_descriptor_tmp.200
-___block_descriptor_tmp.205
-___block_descriptor_tmp.216
-___block_descriptor_tmp.222
-___block_literal_global.224
+___block_descriptor_tmp.165
+___block_descriptor_tmp.169
+___block_descriptor_tmp.183
+___block_descriptor_tmp.196
+___block_descriptor_tmp.202
+___block_literal_global.204
+___block_descriptor_tmp.214
 _OBJC_IVAR_$_IBGNetwork._matcher
 _OBJC_IVAR_$_IBGNetwork._shouldDisableNetwork
 /Users/distiller/project/Instabug/InstabugNetwork/IBGNetwork.m
@@ -14829,9 +14814,7 @@ __32-[IBGNetwork suspendAllContexts]_block_invoke
 __31-[IBGNetwork resumeAllContexts]_block_invoke_2
 __31-[IBGNetwork resumeAllContexts]_block_invoke
 __34-[IBGNetwork handleNetworkChange:]_block_invoke
-__51-[IBGNetwork removefileRequestWithTaskIdentifeier:]_block_invoke
-__41-[IBGNetwork contextWithTaskIdentifeier:]_block_invoke
-__42-[IBGNetwork beginBackgroundTaskWithName:]_block_invoke
+__51-[IBGNetwork contextWithTaskIdentifeier:sessionID:]_block_invoke
 __51-[IBGNetwork URLSession:task:didCompleteWithError:]_block_invoke_3
 __51-[IBGNetwork URLSession:task:didCompleteWithError:]_block_invoke_2
 __51-[IBGNetwork URLSession:task:didCompleteWithError:]_block_invoke
@@ -14954,16 +14937,22 @@ _OBJC_IVAR_$_IBGNetworkMatcher._expectations
 /Users/distiller/project/Instabug/InstabugNetwork/Testing Support/IBGNetworkMatcher.m
 +[IBGNetworkExectuionContext contextWithRequest:]
 -[IBGNetworkExectuionContext isExecuting]
+-[IBGNetworkExectuionContext sessionID]
+-[IBGNetworkExectuionContext setSessionID:]
 -[IBGNetworkExectuionContext request]
 -[IBGNetworkExectuionContext setRequest:]
 -[IBGNetworkExectuionContext task]
 -[IBGNetworkExectuionContext setTask:]
 -[IBGNetworkExectuionContext isCreatingTask]
 -[IBGNetworkExectuionContext setIsCreatingTask:]
+-[IBGNetworkExectuionContext isBackgroundTask]
+-[IBGNetworkExectuionContext setIsBackgroundTask:]
 -[IBGNetworkExectuionContext .cxx_destruct]
+_OBJC_IVAR_$_IBGNetworkExectuionContext._sessionID
 _OBJC_IVAR_$_IBGNetworkExectuionContext._request
 _OBJC_IVAR_$_IBGNetworkExectuionContext._task
 _OBJC_IVAR_$_IBGNetworkExectuionContext._isCreatingTask
+_OBJC_IVAR_$_IBGNetworkExectuionContext._isBackgroundTask
 /Users/distiller/project/Instabug/InstabugNetwork/Utilities/IBGNetworkExectuionContext.m
 /Users/distiller/project/Instabug/InstabugNetwork/Utilities/IBGNetworkExectuionContext.h
 -[IBGNetworRequestClassExpectation initWithClass:expectedResonse:]
@@ -15021,6 +15010,8 @@ ___71-[IBGNetworkRequest createTaskWithSession:isTesting:completionHandler:]_blo
 -[IBGNetworkRequest setIsExecuting:]
 -[IBGNetworkRequest isSuccess]
 -[IBGNetworkRequest setIsSuccess:]
+-[IBGNetworkRequest isBackgroundTask]
+-[IBGNetworkRequest setIsBackgroundTask:]
 -[IBGNetworkRequest shouldAutomaticallyReload]
 -[IBGNetworkRequest setShouldAutomaticallyReload:]
 -[IBGNetworkRequest requestData]
@@ -15029,6 +15020,7 @@ ___71-[IBGNetworkRequest createTaskWithSession:isTesting:completionHandler:]_blo
 _OBJC_IVAR_$_IBGNetworkRequest._failures
 _OBJC_IVAR_$_IBGNetworkRequest._isExecuting
 _OBJC_IVAR_$_IBGNetworkRequest._isSuccess
+_OBJC_IVAR_$_IBGNetworkRequest._isBackgroundTask
 _OBJC_IVAR_$_IBGNetworkRequest._shouldAutomaticallyReload
 _OBJC_IVAR_$_IBGNetworkRequest._requestData
 l_OBJC_PROTOCOL_$_IBGNetworkDelegate
@@ -15987,17 +15979,10 @@ ___destroy_helper_block_.80
 -[IBGManagedObjectContextController didReceiveStateChange]
 ___58-[IBGManagedObjectContextController didReceiveStateChange]_block_invoke
 ___58-[IBGManagedObjectContextController didReceiveStateChange]_block_invoke_2
--[IBGManagedObjectContextController registerBackgroundTaskWithBlock:]
-___69-[IBGManagedObjectContextController registerBackgroundTaskWithBlock:]_block_invoke
-___copy_helper_block_.98
-___destroy_helper_block_.99
--[IBGManagedObjectContextController endBackgroundTask]
 -[IBGManagedObjectContextController managedObjectContext]
 -[IBGManagedObjectContextController setManagedObjectContext:]
 -[IBGManagedObjectContextController privateContext]
 -[IBGManagedObjectContextController setPrivateContext:]
--[IBGManagedObjectContextController backgroundTask]
--[IBGManagedObjectContextController setBackgroundTask:]
 -[IBGManagedObjectContextController isApplicationProtectedDataAvailable]
 -[IBGManagedObjectContextController setIsApplicationProtectedDataAvailable:]
 -[IBGManagedObjectContextController didAddPersistentStore]
@@ -16010,10 +15995,7 @@ _OBJC_IVAR_$_IBGManagedObjectContextController._managedObjectContext
 ___block_descriptor_tmp.61
 ___block_descriptor_tmp.75
 ___block_descriptor_tmp.81
-___block_descriptor_tmp.92
-___block_descriptor_tmp.100
 _OBJC_IVAR_$_IBGManagedObjectContextController._privateContext
-_OBJC_IVAR_$_IBGManagedObjectContextController._backgroundTask
 _OBJC_IVAR_$_IBGManagedObjectContextController._isApplicationProtectedDataAvailable
 _OBJC_IVAR_$_IBGManagedObjectContextController._didAddPersistentStore
 l_OBJC_PROTOCOL_$_IBGAppStateReactorDelegate
@@ -16022,7 +16004,6 @@ l_OBJC_PROTOCOL_$_IBGCoreDataLayerDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGCoreDataLayerDelegate
 /Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGManagedObjectContextController.m
 /Users/distiller/project/Instabug/InstabugCoreDataLayer/IBGManagedObjectContextController.h
-__69-[IBGManagedObjectContextController registerBackgroundTaskWithBlock:]_block_invoke
 __58-[IBGManagedObjectContextController didReceiveStateChange]_block_invoke_2
 __58-[IBGManagedObjectContextController didReceiveStateChange]_block_invoke
 __76-[IBGManagedObjectContextController saveChangesToDiskWithCompeltionHandler:]_block_invoke.76
@@ -16498,6 +16479,7 @@ ___block_literal_global.142
 ___block_literal_global.144
 ___block_literal_global.146
 ___block_literal_global.148
+___block_descriptor_tmp.160
 ___block_literal_global.161
 ___block_literal_global.165
 ___block_descriptor_tmp.168
@@ -16517,9 +16499,9 @@ ___block_literal_global.189
 ___block_literal_global.193
 ___block_descriptor_tmp.194
 ___block_literal_global.195
-___block_descriptor_tmp.196
 ___block_literal_global.197
 ___block_literal_global.199
+___block_descriptor_tmp.200
 ___block_literal_global.201
 ___block_descriptor_tmp.204
 ___block_literal_global.205
