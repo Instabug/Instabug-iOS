@@ -1,5 +1,5 @@
 {
-  "8.0.16" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/8.0.16\/Instabug.zip",
+  "7.8.1" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/7.8.1\/Instabug.zip",
   "8.0.9" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/8.0.9\/Instabug.zip",
   "7.11" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/7.11\/Instabug.zip",
   "7.2.2" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/7.2.2\/Instabug.zip",
@@ -21,6 +21,7 @@
   "7.3.13" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/7.3.13\/Instabug.zip",
   "7.2.4" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/7.2.4\/Instabug.zip",
   "7.3.11" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/7.3.11\/Instabug.zip",
+  "8.1" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/8.1\/Instabug.zip",
   "7.3" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/7.3\/Instabug.zip",
   "7.13" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/7.13\/Instabug.zip",
   "8.0.15" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/8.0.15\/Instabug.zip",
@@ -80,5 +81,5 @@
   "7.9.1" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/7.9.1\/Instabug.zip",
   "7.14.5" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/7.14.5\/Instabug.zip",
   "7.3.2" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/7.3.2\/Instabug.zip",
-  "7.8.1" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/7.8.1\/Instabug.zip"
+  "8.0.16" : "https:\/\/github.com\/Instabug\/Instabug-iOS\/releases\/download\/8.0.16\/Instabug.zip"
 }
