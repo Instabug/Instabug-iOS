@@ -8144,10 +8144,10 @@ ___46-[IBGMigrationManager runAnyPendingMigrations]_block_invoke
 -[IBGMigrationManager runMigrationForClass:]
 -[IBGMigrationManager queueMigrationsOfNames:]
 ___46-[IBGMigrationManager queueMigrationsOfNames:]_block_invoke
-___copy_helper_block_.60
-___destroy_helper_block_.61
 -[IBGMigrationManager didFinishMigration:withSuccess:]
 ___54-[IBGMigrationManager didFinishMigration:withSuccess:]_block_invoke
+___copy_helper_block_.65
+___destroy_helper_block_.66
 -[IBGMigrationManager finishIfNoPendingMigrationsWithSuccess:]
 +[IBGMigrationManager destroy]
 -[IBGMigrationManager setInitializationOperation:]
@@ -8156,8 +8156,8 @@ ___54-[IBGMigrationManager didFinishMigration:withSuccess:]_block_invoke
 -[IBGMigrationManager .cxx_destruct]
 _OBJC_IVAR_$_IBGMigrationManager._initializationOperation
 ___block_descriptor_tmp.9
-___block_descriptor_tmp.62
 _didFinishMigration:withSuccess:.didAllMigrationsSucceed
+___block_descriptor_tmp.67
 _OBJC_IVAR_$_IBGMigrationManager._migration
 l_OBJC_PROTOCOL_$_IBGMigrationDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGMigrationDelegate
@@ -8516,12 +8516,15 @@ ___49-[IBGScreenshotFlashView animateaAndHideAtFrame:]_block_invoke_2
 ___49-[IBGScreenshotFlashView animateaAndHideAtFrame:]_block_invoke.49
 ___49-[IBGScreenshotFlashView animateaAndHideAtFrame:]_block_invoke.55
 ___49-[IBGScreenshotFlashView animateaAndHideAtFrame:]_block_invoke.59
+___copy_helper_block_.60
+___destroy_helper_block_.61
 ___49-[IBGScreenshotFlashView animateaAndHideAtFrame:]_block_invoke.66
 -[IBGScreenshotFlashView whiteView]
 -[IBGScreenshotFlashView setWhiteView:]
 -[IBGScreenshotFlashView blurView]
 -[IBGScreenshotFlashView setBlurView:]
 -[IBGScreenshotFlashView .cxx_destruct]
+___block_descriptor_tmp.62
 _OBJC_IVAR_$_IBGScreenshotFlashView._whiteView
 _OBJC_IVAR_$_IBGScreenshotFlashView._blurView
 /Users/distiller/project/Instabug/InstabugBugReporting/Views/IBGScreenshotFlashView.m
@@ -13059,8 +13062,6 @@ ___copy_helper_block_.62
 ___destroy_helper_block_.63
 -[IBGUserAttributesLogger getUserAttributes]
 ___44-[IBGUserAttributesLogger getUserAttributes]_block_invoke
-___copy_helper_block_.65
-___destroy_helper_block_.66
 -[IBGUserAttributesLogger syncUserAttributes]
 -[IBGUserAttributesLogger userAttributes]
 -[IBGUserAttributesLogger setUserAttributes:]
@@ -13069,7 +13070,6 @@ __userAttributesLogsQueue
 ___block_descriptor_tmp.16
 ___block_descriptor_tmp.56
 ___block_descriptor_tmp.64
-___block_descriptor_tmp.67
 _OBJC_IVAR_$_IBGUserAttributesLogger._userAttributes
 /Users/distiller/project/Instabug/InstabugCore/Logging/IBGUserAttributesLogger.m
 __44-[IBGUserAttributesLogger getUserAttributes]_block_invoke
