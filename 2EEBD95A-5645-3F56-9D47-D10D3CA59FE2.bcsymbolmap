@@ -5921,6 +5921,8 @@ ___destroy_helper_block_.871
 -[InstabugSurveys setReactivationSessionCountThreshold:]
 -[InstabugSurveys reactivationDaysCountThreshold]
 -[InstabugSurveys setReactivationDaysCountThreshold:]
+-[InstabugSurveys willSendSurveyAnswerHandler]
+-[InstabugSurveys setWillSendSurveyAnswerHandler:]
 -[InstabugSurveys cachedSurveys]
 -[InstabugSurveys setCachedSurveys:]
 -[InstabugSurveys currentConditions]
@@ -5985,6 +5987,7 @@ ___block_descriptor_tmp.848
 ___block_descriptor_tmp.872
 _OBJC_IVAR_$_InstabugSurveys._reactivationSessionCountThreshold
 _OBJC_IVAR_$_InstabugSurveys._reactivationDaysCountThreshold
+_OBJC_IVAR_$_InstabugSurveys._willSendSurveyAnswerHandler
 _OBJC_IVAR_$_InstabugSurveys._cachedSurveys
 _OBJC_IVAR_$_InstabugSurveys._currentConditions
 _OBJC_IVAR_$_InstabugSurveys._hasShownSurveyInCurrentSession
@@ -7709,6 +7712,8 @@ ___destroy_helper_block_.236
 +[IBGSurveys hasRespondedToSurveyWithToken:]
 +[IBGSurveys setThresholdForReshowingSurveyAfterDismiss:daysCount:]
 ___67+[IBGSurveys setThresholdForReshowingSurveyAfterDismiss:daysCount:]_block_invoke
++[IBGSurveys willSendSurveyAnswerHandler]
++[IBGSurveys setWillSendSurveyAnswerHandler:]
 __autoShowingEnabled
 __shouldShowWelcomeScreen
 __willShowSurveyHandler
@@ -7716,6 +7721,7 @@ __didDismissSurveyHandler
 ___block_descriptor_tmp.232
 ___block_descriptor_tmp.237
 ___block_descriptor_tmp.247
+__willSendSurveyAnswerHandler
 /Users/distiller/project/Instabug/InstabugSurveys/IBGSurveys.m
 __67+[IBGSurveys setThresholdForReshowingSurveyAfterDismiss:daysCount:]_block_invoke
 __34+[IBGSurveys showSurveyWithToken:]_block_invoke
@@ -9553,6 +9559,7 @@ l_OBJC_LABEL_PROTOCOL_$_IBGCastedCoding
 ___22-[IBGSurveyModel save]_block_invoke
 -[IBGSurveyModel send]
 ___22-[IBGSurveyModel send]_block_invoke
+-[IBGSurveyModel executeWillSendSurveyAnswerHandler:]
 -[IBGSurveyModel surveyAnswerRequestDone:sentEvents:withContext:isSucess:]
 -[IBGSurveyModel clearAnswers]
 -[IBGSurveyModel operatorFromDictionary:]
@@ -9561,7 +9568,7 @@ ___22-[IBGSurveyModel send]_block_invoke
 -[IBGSurveyModel setQuestionNavigator:]
 +[IBGSurveyModel isSurvey:equalSurvey:]
 -[IBGSurveyModel .cxx_destruct]
-___block_descriptor_tmp.719
+___block_descriptor_tmp.729
 _OBJC_IVAR_$_IBGSurveyModel._questionNavigator
 l_OBJC_PROTOCOL_$_IBGSurveyAnswerRequestDelegate
 l_OBJC_LABEL_PROTOCOL_$_IBGSurveyAnswerRequestDelegate

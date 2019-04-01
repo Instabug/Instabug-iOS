@@ -93,4 +93,13 @@ NS_SWIFT_NAME(Surveys)
 + (BOOL)hasRespondedToSurveyWithToken:(NSString *)surveyToken;
 
 
+/**
+ @brief Sets a block of code to be executed before sending Survey answer.
+ 
+ @discussion This block is executed in the background before sending each survey answer and return survey answer in JSON format.
+ 
+ @param willSendReportHandler A block of code that gets executed before sending sending survey answer.
+ */
+@property(class, atomic, copy) void(^willSendSurveyAnswerHandler)(NSDictionary*);
+
 @end
