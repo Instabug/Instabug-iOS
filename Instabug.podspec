@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Instabug"
-  s.version      = "8.9999"
+  s.version      = "rafik"
   s.summary      = "Bug reporting for mobile apps. Learn more at http://instabug.com"
   s.homepage     = "http://instabug.com"
   s.license      = { :type => 'Commercial', :file => 'LICENSE.md' }
