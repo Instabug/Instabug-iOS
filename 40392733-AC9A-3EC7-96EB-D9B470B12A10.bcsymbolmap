@@ -2569,7 +2569,6 @@ __52-[IBGFeatureRequestsHUD dismissAnimated:completion:]_block_invoke
 +[InstabugNetworkLogger fetchRequest]
 +[InstabugNetworkLogger setRequestFilterPredicate:]
 +[InstabugNetworkLogger setResponseFilterPredicate:]
-+[InstabugNetworkLogger setURLProtocolPropertyForHTTPBody:inRequest:]
 +[InstabugNetworkLogger setRequestProgressBlock:forRequestURL:]
 +[InstabugNetworkLogger setUserRequestObfuscationHandler:]
 +[InstabugNetworkLogger setUserResponseObfuscationHandler:]
@@ -5205,7 +5204,6 @@ __30+[IBGCrashManager getInstance]_block_invoke
 +[IBGURLProtocol requestIsCacheEquivalent:toRequest:]
 +[IBGURLProtocol setSessionConfiguration:]
 -[IBGURLProtocol startLoading]
--[IBGURLProtocol bodyOfRequest:]
 -[IBGURLProtocol stopLoading]
 +[IBGURLProtocol canServeRequest:]
 +[IBGURLProtocol sharedDemux]
@@ -5218,17 +5216,17 @@ ___29+[IBGURLProtocol sharedDemux]_block_invoke
 -[IBGURLProtocol URLSession:task:didReceiveChallenge:completionHandler:]
 -[IBGURLProtocol didReceiveAuthenticationChallenge:completionHandler:]
 ___70-[IBGURLProtocol didReceiveAuthenticationChallenge:completionHandler:]_block_invoke
-___copy_helper_block_.196
-___destroy_helper_block_.197
+___copy_helper_block_.176
+___destroy_helper_block_.177
 -[IBGURLProtocol mainThreadDidReceiveAuthenticationChallenge:completionHandler:]
 -[IBGURLProtocol cancelPendingChallenge]
 ___40-[IBGURLProtocol cancelPendingChallenge]_block_invoke
-___copy_helper_block_.205
-___destroy_helper_block_.206
+___copy_helper_block_.185
+___destroy_helper_block_.186
 -[IBGURLProtocol clientThreadCancelAuthenticationChallenge:completionHandler:]
 ___78-[IBGURLProtocol clientThreadCancelAuthenticationChallenge:completionHandler:]_block_invoke
-___copy_helper_block_.210
-___destroy_helper_block_.211
+___copy_helper_block_.190
+___destroy_helper_block_.191
 -[IBGURLProtocol persistenceManager]
 +[IBGURLProtocol setCanAuthenticateAgainstProtectionSpaceHandler:]
 +[IBGURLProtocol setDidReceiveAuthenticationChallengeHandler:]
@@ -5262,10 +5260,10 @@ ___destroy_helper_block_.211
 _sharedDemux.onceToken
 _sharedDemux.sDemux
 _protectionSpaceHandler
-___block_descriptor_tmp.198
+___block_descriptor_tmp.178
 _reciveAuthenticationChallengeHandler
-___block_descriptor_tmp.207
-___block_descriptor_tmp.212
+___block_descriptor_tmp.187
+___block_descriptor_tmp.192
 _OBJC_IVAR_$_IBGURLProtocol._persistenceManager
 _OBJC_IVAR_$_IBGURLProtocol._task
 _OBJC_IVAR_$_IBGURLProtocol._loggedRequest
@@ -9167,6 +9165,7 @@ _OBJC_IVAR_$_IBGPromptItem._handler
 -[NSURLRequest(Additions) ibg_isWebViewRequest]
 -[NSURLRequest(Additions) ibg_cURLCommandWithBody:]
 -[NSURLRequest(Additions) ibg_InstabugcURLCommand]
+-[NSURLRequest(Additions) ibg_bodyOfRequest]
 /Users/distiller/project/Instabug/InstabugNetworkLogger/Categories/NSURLRequest+Additions.m
 +[IBGNetworkLoggerController enable]
 +[IBGNetworkLoggerController disable]
@@ -12954,7 +12953,6 @@ _OBJC_IVAR_$_IBGSurveysCacheMigration._delegate
 __31-[IBGSurveysCacheMigration run]_block_invoke
 +[IBGNetworkLoggerURLProtocolManager registerNetworkLogProtocolForSharedSession]
 +[IBGNetworkLoggerURLProtocolManager registerNetworkLogProtocolInSessionConfiguration:]
-+[IBGNetworkLoggerURLProtocolManager setURLProtocolPropertyForHTTPBody:inRequest:]
 +[IBGNetworkLoggerURLProtocolManager requestProgressBlockDictionary]
 ___68+[IBGNetworkLoggerURLProtocolManager requestProgressBlockDictionary]_block_invoke
 +[IBGNetworkLoggerURLProtocolManager setRequestProgressBlock:forRequestURL:]
@@ -14991,8 +14989,6 @@ _OBJC_IVAR_$_IBGUserDataLogger._extraUserData
 /Users/distiller/project/Instabug/InstabugCore/Logging/IBGUserDataLogger.m
 /Users/distiller/project/Instabug/InstabugCore/Logging/IBGUserDataLogger.h
 __35+[IBGUserDataLogger sharedInstance]_block_invoke
-+[IBGNetworkLoggerHTTPFormatter sharedInstance]
-___47+[IBGNetworkLoggerHTTPFormatter sharedInstance]_block_invoke
 -[IBGNetworkLoggerHTTPFormatter loggedRequestFromOriginalRequest:body:]
 -[IBGNetworkLoggerHTTPFormatter loggedResponse:data:]
 ___53-[IBGNetworkLoggerHTTPFormatter loggedResponse:data:]_block_invoke
@@ -15006,24 +15002,15 @@ ___53-[IBGNetworkLoggerHTTPFormatter loggedResponse:data:]_block_invoke
 +[IBGNetworkLoggerHTTPFormatter setUserResponseObfuscationHandler:]
 +[IBGNetworkLoggerHTTPFormatter lock]
 ___37+[IBGNetworkLoggerHTTPFormatter lock]_block_invoke
--[IBGNetworkLoggerHTTPFormatter tobeSavedBody]
--[IBGNetworkLoggerHTTPFormatter setTobeSavedBody:]
--[IBGNetworkLoggerHTTPFormatter loggedResponseData]
--[IBGNetworkLoggerHTTPFormatter setLoggedResponseData:]
--[IBGNetworkLoggerHTTPFormatter .cxx_destruct]
 __legacyURLObfuscationHandler
 __requestFilterPredicate
 __responseFilterPredicate
 __userRequestObfuscationBlock
 __userResponseObfuscationBlock
-___block_descriptor_tmp.24
-___block_literal_global.31
-_OBJC_IVAR_$_IBGNetworkLoggerHTTPFormatter._tobeSavedBody
-_OBJC_IVAR_$_IBGNetworkLoggerHTTPFormatter._loggedResponseData
+___block_descriptor_tmp.25
 /Users/distiller/project/Instabug/InstabugNetworkLogger/Modules/IBGNetworkLoggerHTTPFormatter.m
 __37+[IBGNetworkLoggerHTTPFormatter lock]_block_invoke
 __53-[IBGNetworkLoggerHTTPFormatter loggedResponse:data:]_block_invoke
-__47+[IBGNetworkLoggerHTTPFormatter sharedInstance]_block_invoke
 -[IBGFadeInContentAndScaleTransition initWithCornerRaduis:backgroundColor:]
 -[IBGFadeInContentAndScaleTransition transitionDuration:]
 -[IBGFadeInContentAndScaleTransition animateTransition:]
@@ -16351,7 +16338,6 @@ ___destroy_helper_block_.23
 -[IBGAssetNetworkFetcher session]
 -[IBGAssetNetworkFetcher setSession:]
 -[IBGAssetNetworkFetcher .cxx_destruct]
-___block_descriptor_tmp.25
 _OBJC_IVAR_$_IBGAssetNetworkFetcher._session
 /Users/distiller/project/Instabug/InstabugAssets/Network/IBGAssetNetworkFetcher.m
 __57-[IBGAssetNetworkFetcher fetchAssetAt:completionHandler:]_block_invoke_2
@@ -17320,17 +17306,16 @@ ___block_literal_global.171
 ___block_literal_global.173
 ___block_descriptor_tmp.174
 ___block_literal_global.175
-___block_descriptor_tmp.178
 ___block_literal_global.179
 ___block_literal_global.181
 ___block_descriptor_tmp.184
 ___block_literal_global.185
 ___block_literal_global.187
-___block_descriptor_tmp.192
 ___block_literal_global.193
 ___block_descriptor_tmp.194
 ___block_literal_global.195
 ___block_literal_global.197
+___block_descriptor_tmp.198
 ___block_literal_global.199
 ___block_descriptor_tmp.200
 ___block_literal_global.201
@@ -17341,6 +17326,7 @@ ___block_descriptor_tmp.206
 ___block_literal_global.207
 ___block_descriptor_tmp.208
 ___block_literal_global.209
+___block_descriptor_tmp.212
 ___block_literal_global.213
 ___block_literal_global.215
 ___block_descriptor_tmp.216
