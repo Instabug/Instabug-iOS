@@ -6715,8 +6715,8 @@ ___block_descriptor_tmp.210
 ___block_descriptor_tmp.224
 ___block_descriptor_tmp.248
 _sessionUUID.onceToken
-___block_descriptor_tmp.300
-___block_literal_global.301
+___block_descriptor_tmp.297
+___block_literal_global.298
 _sessionUUID
 /Users/distiller/project/Instabug/InstabugCore/Logging/IBGInspector.m
 __27+[IBGInspector sessionUUID]_block_invoke
@@ -15870,7 +15870,10 @@ ibg_dispatch_group_notify_timeout
 +[UIColor(ColorFromHexString) isValidHexString:]
 /Users/distiller/project/Instabug/InstabugUtilities/Categories/UIColor+ColorFromHexString.m
 +[UIWindow(IBGHelpers) maxWindowLevel]
++[UIWindow(IBGHelpers) ibg_appDelegateWindow]
+___45+[UIWindow(IBGHelpers) ibg_appDelegateWindow]_block_invoke
 /Users/distiller/project/Instabug/InstabugUtilities/Categories/UIWindow+IBGHelpers.m
+__45+[UIWindow(IBGHelpers) ibg_appDelegateWindow]_block_invoke
 +[IBGStringUtilities safeStringForString:]
 +[IBGStringUtilities validStringOfAppVersion:]
 +[IBGStringUtilities randomStringWithLength:]
