@@ -335,7 +335,7 @@ NS_ASSUME_NONNULL_BEGIN
  | in a future release.                                                   |
  |                                                                        |
  | To adopt the new changes, please refer to our migration guide at:      |
- | https://docs.instabug.com/docs/ios-sdk-8-1-migration-guide             |
+ | https://docs.instabug.com/docs/ios-migration-guide                     |
  +------------------------------------------------------------------------+
  */
 
