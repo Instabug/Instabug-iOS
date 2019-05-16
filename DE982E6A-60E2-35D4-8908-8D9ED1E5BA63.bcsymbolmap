@@ -3619,10 +3619,8 @@ __49+[IBGBugReporting setAutoScreenRecordingEnabled:]_block_invoke
 __43+[IBGBugReporting printV8MigrationMessage:]_block_invoke
 +[IBGSDKDebugInfoLogger log:arguments:]
 +[IBGSDKDebugInfoLogger internalLog:arguments:]
-+[IBGSDKDebugInfoLogger lock]
 +[IBGSDKDebugInfoLogger level]
 +[IBGSDKDebugInfoLogger setLevel:]
-__lock
 __level
 /Users/distiller/project/Instabug/InstabugCore/Logging/IBGSDKDebugInfoLogger.m
 IBGSDKLogInternalError
@@ -3634,6 +3632,7 @@ ___29+[IBGSyncManager getInstance]_block_invoke
 -[IBGSyncManager initializationOperation]
 ___41-[IBGSyncManager initializationOperation]_block_invoke
 ___41-[IBGSyncManager initializationOperation]_block_invoke_2
+-[IBGSyncManager init]
 -[IBGSyncManager dealloc]
 +[IBGSyncManager NSStringFromLastChatAtSelector]
 -[IBGSyncManager stopSync]
@@ -4119,6 +4118,7 @@ __27-[IBGBaseHUDView animateIn]_block_invoke
 ___27+[IBGDataStore getInstance]_block_invoke
 +[IBGDataStore afterInitializationQueue]
 ___40+[IBGDataStore afterInitializationQueue]_block_invoke
++[IBGDataStore setAfterInitializationQueue:]
 -[IBGDataStore init]
 -[IBGDataStore appToken]
 -[IBGDataStore setAppToken:]
@@ -4156,8 +4156,8 @@ ___68-[IBGDataStore excutePreSendingBlockSynchronized:completionHandler:]_block_
 -[IBGDataStore setWasInstabugInitialized:]
 -[IBGDataStore willSendReportHandler]
 -[IBGDataStore .cxx_destruct]
+__queue
 _preSendingHandlerQueue
-_afterInitializationQueue._queue
 _afterInitializationQueue.onceToken
 _OBJC_IVAR_$_IBGDataStore._appToken
 _OBJC_IVAR_$_IBGDataStore._preSendingBlock
@@ -8333,6 +8333,7 @@ __32-[IBGReplyView showActionSheet:]_block_invoke
 +[IBGGeomtryUtilities pointsFromRect:withCount:]
 +[IBGGeomtryUtilities boundingPointsForPoints:]
 +[IBGGeomtryUtilities shouldRotateWithFirstOrientation:AndSecondOrientation:]
+__lock
 /Users/distiller/project/Instabug/InstabugAnnotations/Helpers/IBGGeomtryUtilities.m
 UIInterfaceOrientationIsLandscape
 /Applications/Xcode-10.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h
@@ -12233,6 +12234,7 @@ __68+[IBGNetworkLoggerURLProtocolManager requestProgressBlockDictionary]_block_i
 -[IBGURLSessionDemuxTaskInfo .cxx_destruct]
 -[IBGURLSessionDemux init]
 -[IBGURLSessionDemux initWithConfiguration:]
+-[IBGURLSessionDemux creatSessionFromCurrentConfiguration]
 -[IBGURLSessionDemux dataTaskWithRequest:delegate:modes:]
 -[IBGURLSessionDemux setSessionConfiguration:]
 -[IBGURLSessionDemux taskInfoForTask:]
@@ -12260,10 +12262,11 @@ ___64-[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]_block_invo
 ___57-[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]_block_invoke
 -[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]
 ___78-[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]_block_invoke
+-[IBGURLSessionDemux latestSession]
 -[IBGURLSessionDemux configuration]
 -[IBGURLSessionDemux setConfiguration:]
--[IBGURLSessionDemux session]
--[IBGURLSessionDemux setSession:]
+-[IBGURLSessionDemux sessions]
+-[IBGURLSessionDemux setSessions:]
 -[IBGURLSessionDemux taskInfoByTaskID]
 -[IBGURLSessionDemux sessionDelegateQueue]
 -[IBGURLSessionDemux .cxx_destruct]
@@ -12274,11 +12277,11 @@ _OBJC_IVAR_$_IBGURLSessionDemuxTaskInfo._modes
 _OBJC_IVAR_$_IBGURLSessionDemux._configuration
 _OBJC_IVAR_$_IBGURLSessionDemux._taskInfoByTaskID
 _OBJC_IVAR_$_IBGURLSessionDemux._sessionDelegateQueue
-_OBJC_IVAR_$_IBGURLSessionDemux._session
 ___block_descriptor_44_e4_20s24s28s32s36s40bs_e5_v4@?0l
 ___block_descriptor_40_e4_20s24s28s32s36bs_e5_v4@?0l
 ___block_descriptor_60_e8_20s52s56s_e5_v4@?0l
 ___block_descriptor_36_e4_20s24s28s32s_e5_v4@?0l
+_OBJC_IVAR_$_IBGURLSessionDemux._sessions
 /Users/distiller/project/Instabug/InstabugNetworkLogger/Helpers/IBGURLSessionDemux.m
 /Users/distiller/project/Instabug/InstabugNetworkLogger/Helpers/IBGURLSessionDemux.h
 __78-[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]_block_invoke
@@ -13225,6 +13228,7 @@ __79-[IBGNavigationController navigationController:didShowViewController:animate
 +[Instabug(InstabugTestPrivate) setAppVersion:]
 +[Instabug(InstabugTestPrivate) showSurveysAnnouncementsIfAvailable]
 +[Instabug(InstabugTestPrivate) ibg_backend]
++[Instabug(InstabugTestPrivate) setOperatioQueue:]
 /Users/distiller/project/Instabug/InstabugI/Instabug+InstabugTestPrivate.m
 +[IBGCrashCreator creatCrashAndSaveItWithStackTrace:]
 ___53+[IBGCrashCreator creatCrashAndSaveItWithStackTrace:]_block_invoke
