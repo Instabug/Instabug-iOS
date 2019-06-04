@@ -12931,34 +12931,30 @@ __68+[IBGNetworkLoggerURLProtocolManager requestProgressBlockDictionary]_block_i
 ___94-[IBGURLSessionDemux URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:]_block_invoke
 -[IBGURLSessionDemux URLSession:task:didReceiveChallenge:completionHandler:]
 ___76-[IBGURLSessionDemux URLSession:task:didReceiveChallenge:completionHandler:]_block_invoke
-___copy_helper_block_.137
-___destroy_helper_block_.138
 -[IBGURLSessionDemux URLSession:task:needNewBodyStream:]
 ___56-[IBGURLSessionDemux URLSession:task:needNewBodyStream:]_block_invoke
-___copy_helper_block_.142
-___destroy_helper_block_.143
 -[IBGURLSessionDemux URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]
 ___94-[IBGURLSessionDemux URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]_block_invoke
-___copy_helper_block_.147
-___destroy_helper_block_.148
+___copy_helper_block_.145
+___destroy_helper_block_.146
 -[IBGURLSessionDemux URLSession:task:didCompleteWithError:]
 ___59-[IBGURLSessionDemux URLSession:task:didCompleteWithError:]_block_invoke
-___copy_helper_block_.156
-___destroy_helper_block_.157
+___copy_helper_block_.154
+___destroy_helper_block_.155
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]
 ___79-[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]_block_invoke
-___copy_helper_block_.161
-___destroy_helper_block_.162
+___copy_helper_block_.159
+___destroy_helper_block_.160
 -[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]
 ___64-[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]_block_invoke
-___copy_helper_block_.166
-___destroy_helper_block_.167
+___copy_helper_block_.164
+___destroy_helper_block_.165
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]
 ___57-[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]_block_invoke
-___copy_helper_block_.171
-___destroy_helper_block_.172
 -[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]
 ___78-[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]_block_invoke
+___copy_helper_block_.174
+___destroy_helper_block_.175
 -[IBGURLSessionDemux latestSession]
 -[IBGURLSessionDemux configuration]
 -[IBGURLSessionDemux setConfiguration:]
@@ -12974,11 +12970,11 @@ _OBJC_IVAR_$_IBGURLSessionDemuxTaskInfo._modes
 _OBJC_IVAR_$_IBGURLSessionDemux._configuration
 _OBJC_IVAR_$_IBGURLSessionDemux._taskInfoByTaskID
 _OBJC_IVAR_$_IBGURLSessionDemux._sessionDelegateQueue
-___block_descriptor_tmp.149
-___block_descriptor_tmp.158
-___block_descriptor_tmp.163
-___block_descriptor_tmp.168
-___block_descriptor_tmp.173
+___block_descriptor_tmp.147
+___block_descriptor_tmp.156
+___block_descriptor_tmp.166
+___block_descriptor_tmp.171
+___block_descriptor_tmp.176
 _OBJC_IVAR_$_IBGURLSessionDemux._sessions
 /Users/distiller/project/Instabug/InstabugNetworkLogger/Helpers/IBGURLSessionDemux.m
 /Users/distiller/project/Instabug/InstabugNetworkLogger/Helpers/IBGURLSessionDemux.h
@@ -14285,6 +14281,8 @@ ___63-[IBGAddFeatureViewController handleRequestSuccessWithFeature:]_block_invok
 ___63-[IBGAddFeatureViewController handleRequestSuccessWithFeature:]_block_invoke_2
 -[IBGAddFeatureViewController presentAlertViewForCancel]
 ___56-[IBGAddFeatureViewController presentAlertViewForCancel]_block_invoke
+___copy_helper_block_.137
+___destroy_helper_block_.138
 ___56-[IBGAddFeatureViewController presentAlertViewForCancel]_block_invoke.145
 -[IBGAddFeatureViewController formDidBecomeValid]
 -[IBGAddFeatureViewController formDidBecomeInvalid]
@@ -16841,8 +16839,6 @@ ___destroy_helper_block_.135
 -[IBGToastView animatePresentationFromTopToBottom]
 ___50-[IBGToastView animatePresentationFromTopToBottom]_block_invoke
 ___50-[IBGToastView animatePresentationFromTopToBottom]_block_invoke.144
-___copy_helper_block_.145
-___destroy_helper_block_.146
 -[IBGToastView didTapRightButton]
 -[IBGToastView setSideButtonHidden:]
 -[IBGToastView messageLabel]
@@ -16861,7 +16857,6 @@ ___destroy_helper_block_.146
 -[IBGToastView .cxx_destruct]
 ___block_descriptor_tmp.136
 ___block_descriptor_tmp.143
-___block_descriptor_tmp.147
 _OBJC_IVAR_$_IBGToastView._sideButtonHidden
 _OBJC_IVAR_$_IBGToastView._messageLabel
 _OBJC_IVAR_$_IBGToastView._rightButton
@@ -18015,13 +18010,13 @@ ___block_literal_global.156
 ___block_literal_global.158
 ___block_descriptor_tmp.159
 ___block_literal_global.160
+___block_descriptor_tmp.168
 ___block_literal_global.169
 ___block_descriptor_tmp.170
 ___block_literal_global.171
 ___block_literal_global.173
 ___block_descriptor_tmp.174
 ___block_literal_global.175
-___block_descriptor_tmp.176
 ___block_literal_global.177
 ___block_literal_global.181
 ___block_descriptor_tmp.182

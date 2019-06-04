@@ -12934,34 +12934,30 @@ __68+[IBGNetworkLoggerURLProtocolManager requestProgressBlockDictionary]_block_i
 ___94-[IBGURLSessionDemux URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:]_block_invoke
 -[IBGURLSessionDemux URLSession:task:didReceiveChallenge:completionHandler:]
 ___76-[IBGURLSessionDemux URLSession:task:didReceiveChallenge:completionHandler:]_block_invoke
-___copy_helper_block_.137
-___destroy_helper_block_.138
 -[IBGURLSessionDemux URLSession:task:needNewBodyStream:]
 ___56-[IBGURLSessionDemux URLSession:task:needNewBodyStream:]_block_invoke
-___copy_helper_block_.142
-___destroy_helper_block_.143
 -[IBGURLSessionDemux URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]
 ___94-[IBGURLSessionDemux URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:]_block_invoke
-___copy_helper_block_.147
-___destroy_helper_block_.148
+___copy_helper_block_.145
+___destroy_helper_block_.146
 -[IBGURLSessionDemux URLSession:task:didCompleteWithError:]
 ___59-[IBGURLSessionDemux URLSession:task:didCompleteWithError:]_block_invoke
-___copy_helper_block_.157
-___destroy_helper_block_.158
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]
 ___79-[IBGURLSessionDemux URLSession:dataTask:didReceiveResponse:completionHandler:]_block_invoke
+___copy_helper_block_.160
+___destroy_helper_block_.161
 -[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]
 ___64-[IBGURLSessionDemux URLSession:dataTask:didBecomeDownloadTask:]_block_invoke
-___copy_helper_block_.167
-___destroy_helper_block_.168
+___copy_helper_block_.165
+___destroy_helper_block_.166
 -[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]
 ___57-[IBGURLSessionDemux URLSession:dataTask:didReceiveData:]_block_invoke
-___copy_helper_block_.172
-___destroy_helper_block_.173
+___copy_helper_block_.170
+___destroy_helper_block_.171
 -[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]
 ___78-[IBGURLSessionDemux URLSession:dataTask:willCacheResponse:completionHandler:]_block_invoke
-___copy_helper_block_.177
-___destroy_helper_block_.178
+___copy_helper_block_.175
+___destroy_helper_block_.176
 -[IBGURLSessionDemux latestSession]
 -[IBGURLSessionDemux configuration]
 -[IBGURLSessionDemux setConfiguration:]
@@ -12977,11 +12973,8 @@ _OBJC_IVAR_$_IBGURLSessionDemuxTaskInfo._modes
 _OBJC_IVAR_$_IBGURLSessionDemux._configuration
 _OBJC_IVAR_$_IBGURLSessionDemux._taskInfoByTaskID
 _OBJC_IVAR_$_IBGURLSessionDemux._sessionDelegateQueue
-___block_descriptor_tmp.139
-___block_descriptor_tmp.159
-___block_descriptor_tmp.169
-___block_descriptor_tmp.174
-___block_descriptor_tmp.179
+___block_descriptor_tmp.167
+___block_descriptor_tmp.177
 _OBJC_IVAR_$_IBGURLSessionDemux._sessions
 /Users/distiller/project/Instabug/InstabugNetworkLogger/Helpers/IBGURLSessionDemux.m
 /Users/distiller/project/Instabug/InstabugNetworkLogger/Helpers/IBGURLSessionDemux.h
@@ -14285,6 +14278,8 @@ ___63-[IBGAddFeatureViewController handleRequestSuccessWithFeature:]_block_invok
 ___63-[IBGAddFeatureViewController handleRequestSuccessWithFeature:]_block_invoke_2
 -[IBGAddFeatureViewController presentAlertViewForCancel]
 ___56-[IBGAddFeatureViewController presentAlertViewForCancel]_block_invoke
+___copy_helper_block_.137
+___destroy_helper_block_.138
 ___56-[IBGAddFeatureViewController presentAlertViewForCancel]_block_invoke.145
 -[IBGAddFeatureViewController formDidBecomeValid]
 -[IBGAddFeatureViewController formDidBecomeInvalid]
@@ -15705,8 +15700,6 @@ ___36-[IBGNetwork createTaskWithContext:]_block_invoke
 ___51-[IBGNetwork URLSession:task:didCompleteWithError:]_block_invoke
 ___51-[IBGNetwork URLSession:task:didCompleteWithError:]_block_invoke_2
 ___51-[IBGNetwork URLSession:task:didCompleteWithError:]_block_invoke_3
-___copy_helper_block_.175
-___destroy_helper_block_.176
 ___copy_helper_block_.181
 ___destroy_helper_block_.182
 -[IBGNetwork URLSession:dataTask:didReceiveData:]
@@ -15757,7 +15750,6 @@ _OBJC_IVAR_$_IBGNetwork._defaultSession
 _OBJC_IVAR_$_IBGNetwork._serverRequests
 _OBJC_IVAR_$_IBGNetwork._reachbility
 ___block_descriptor_tmp.90
-___block_descriptor_tmp.177
 ___block_descriptor_tmp.184
 ___block_descriptor_tmp.194
 ___block_descriptor_tmp.207
@@ -16839,8 +16831,6 @@ ___destroy_helper_block_.135
 -[IBGToastView animatePresentationFromTopToBottom]
 ___50-[IBGToastView animatePresentationFromTopToBottom]_block_invoke
 ___50-[IBGToastView animatePresentationFromTopToBottom]_block_invoke.144
-___copy_helper_block_.145
-___destroy_helper_block_.146
 -[IBGToastView didTapRightButton]
 -[IBGToastView setSideButtonHidden:]
 -[IBGToastView messageLabel]
@@ -18003,6 +17993,7 @@ ___block_literal_global.130
 ___block_literal_global.134
 ___block_descriptor_tmp.135
 ___block_literal_global.136
+___block_descriptor_tmp.139
 ___block_literal_global.140
 ___block_descriptor_tmp.141
 ___block_literal_global.142
@@ -18013,12 +18004,14 @@ _IBGStrokeColor
 ___block_descriptor_tmp.155
 ___block_literal_global.156
 ___block_literal_global.158
+___block_descriptor_tmp.159
 ___block_literal_global.160
 ___block_descriptor_tmp.161
 ___block_literal_global.162
 ___block_descriptor_tmp.168
 ___block_literal_global.169
 ___block_literal_global.173
+___block_descriptor_tmp.174
 ___block_literal_global.175
 ___block_literal_global.181
 ___block_descriptor_tmp.182
