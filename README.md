@@ -70,11 +70,11 @@ bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Instabug.framework/strip-f
 	
 	```swift
 	// Swift
-	Instabug.start(withToken: <#app token#>, invocationEvent: .shake)
+	Instabug.start(withToken: <#app token#>, invocationEvents: .shake)
 	```
 	```objective-c
 	// Objective-C
-	[Instabug startWithToken:<#app token#> invocationEvent:IBGInvocationEventShake];
+	[Instabug startWithToken:<#app token#> invocationEvents:IBGInvocationEventShake];
 	```
 	Make sure to replace `app_token` with your application token. Find it [here](https://instabug.com/app/sdk/).
 
