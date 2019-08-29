@@ -4131,13 +4131,13 @@ ___destroy_helper_block_.115
 -[IBGUserAttributesRepo allUserAttributesDictionary]
 -[IBGUserAttributesRepo userAttributesOfSource:]
 ___48-[IBGUserAttributesRepo userAttributesOfSource:]_block_invoke
-___copy_helper_block_.135
-___destroy_helper_block_.136
+___copy_helper_block_.133
+___destroy_helper_block_.134
 -[IBGUserAttributesRepo sdkUserAttributesJSONString]
 -[IBGUserAttributesRepo migrateAllAttributesFromUUID:toUUID:]
 ___61-[IBGUserAttributesRepo migrateAllAttributesFromUUID:toUUID:]_block_invoke
-___copy_helper_block_.153
-___destroy_helper_block_.154
+___copy_helper_block_.151
+___destroy_helper_block_.152
 -[IBGUserAttributesRepo currentUserUUID]
 -[IBGUserAttributesRepo stopListentingToNewSession]
 -[IBGUserAttributesRepo dalService]
@@ -4154,8 +4154,8 @@ ___block_descriptor_tmp.103
 ___block_descriptor_tmp.106
 ___block_descriptor_tmp.111
 ___block_descriptor_tmp.116
-___block_descriptor_tmp.137
-___block_descriptor_tmp.155
+___block_descriptor_tmp.135
+___block_descriptor_tmp.153
 _OBJC_IVAR_$_IBGUserAttributesRepo._dalService
 _OBJC_IVAR_$_IBGUserAttributesRepo._userController
 _OBJC_IVAR_$_IBGUserAttributesRepo._lastUserAttributesRequestSentDate
@@ -4319,8 +4319,6 @@ ___destroy_helper_block_.103
 -[IBGBaseHUDView animateBackToPlace]
 -[IBGBaseHUDView moveOutToEdge:]
 ___32-[IBGBaseHUDView moveOutToEdge:]_block_invoke
-___copy_helper_block_.133
-___destroy_helper_block_.134
 -[IBGBaseHUDView animateToTransformation:completion:dismiss:]
 ___61-[IBGBaseHUDView animateToTransformation:completion:dismiss:]_block_invoke
 ___copy_helper_block_.136
@@ -4349,7 +4347,6 @@ ___destroy_helper_block_.141
 -[IBGBaseHUDView .cxx_destruct]
 ___block_descriptor_tmp.98
 ___block_descriptor_tmp.105
-___block_descriptor_tmp.135
 ___block_descriptor_tmp.138
 ___block_descriptor_tmp.142
 _OBJC_IVAR_$_IBGBaseHUDView._containerView
@@ -11317,6 +11314,8 @@ ___destroy_helper_block_.108
 -[IBGVideoRecorder didFinishRecordingVideoWithURL:withCompletionHandler:]
 ___73-[IBGVideoRecorder didFinishRecordingVideoWithURL:withCompletionHandler:]_block_invoke
 ___73-[IBGVideoRecorder didFinishRecordingVideoWithURL:withCompletionHandler:]_block_invoke_2
+___copy_helper_block_.135
+___destroy_helper_block_.136
 -[IBGVideoRecorder didFailRecordingVideoEncoding]
 ___49-[IBGVideoRecorder didFailRecordingVideoEncoding]_block_invoke
 -[IBGVideoRecorder shouldAnnotateTouch:withEvent:]
@@ -11358,6 +11357,7 @@ _OBJC_IVAR_$_IBGVideoRecorder._frameRate
 _OBJC_IVAR_$_IBGVideoRecorder._viewSize
 _OBJC_IVAR_$_IBGVideoRecorder._firstOrientation
 ___block_descriptor_tmp.109
+___block_descriptor_tmp.137
 _OBJC_IVAR_$_IBGVideoRecorder._delegate
 _OBJC_IVAR_$_IBGVideoRecorder._shouldKeepAttachmentInTemp
 _OBJC_IVAR_$_IBGVideoRecorder._videoURL
@@ -18244,6 +18244,7 @@ ___block_literal_global.144
 ___block_literal_global.146
 ___block_literal_global.148
 _IBGStrokeColor
+___block_descriptor_tmp.155
 ___block_literal_global.156
 ___block_literal_global.158
 ___block_literal_global.160
