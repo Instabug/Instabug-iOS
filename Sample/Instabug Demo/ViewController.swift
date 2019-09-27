@@ -42,7 +42,7 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            BugReporting.invoke()
+            Instabug.show()
         } else if indexPath.row == 1 {
             Instabug.showWelcomeMessage(with: .beta)
         } else if indexPath.row == 2 {
