@@ -5,7 +5,7 @@
  
  Copyright:  (c) 2013-2019 by Instabug, Inc., all rights reserved.
  
- Version:    8.7.2
+ Version:    8.7.1
  */
 
 #import <Foundation/Foundation.h>
@@ -27,14 +27,9 @@ NS_SWIFT_NAME(Surveys)
 @property (class, atomic, assign) BOOL autoShowingEnabled;
 
 /**
- @brief Returns array of available surveys that match the current device/user asynchronous.
+ @brief Returns array of available surveys that match the current device/user.
  */
-+ (void)availableSurveysWithCompletionHandler:(void (^)(NSArray<IBGSurvey *> * validSurveys))completionHandler;
-
-/**
- @brief Returns array of available surveys that match the current device/user synchronous.
- */
-@property (class, atomic, readonly, strong) NSArray<IBGSurvey *> *availableSurveys DEPRECATED_MSG_ATTRIBUTE("Please use availableSurveysWithCompletionHandler for reliability.");
+@property (class, atomic, readonly, strong) NSArray<IBGSurvey *> *availableSurveys;
 
 /**
  @brief Sets a block of code to be executed just before the survey's UI is presented.
