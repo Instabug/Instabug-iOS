@@ -611,21 +611,25 @@ _OBJC_IVAR_$_IBGMatchingInfo._matchRect
 InstabugAnnotations/Shape Recognizer/IBGMatchingInfo.h
 InstabugAnnotations/Shape Recognizer/IBGMatchingInfo.m
 -[IBGUserRepository initWithDALService:]
--[IBGUserRepository getOrCreateUserWithUUID:]
+-[IBGUserRepository getOrCreateUserWithUUID:completionHandler:]
 ___Block_byref_object_copy_
 ___Block_byref_object_dispose_
-___45-[IBGUserRepository getOrCreateUserWithUUID:]_block_invoke
-___copy_helper_block_e4_20s24r
-___destroy_helper_block_e4_20s24r
+___63-[IBGUserRepository getOrCreateUserWithUUID:completionHandler:]_block_invoke
+___copy_helper_block_e4_20s24b28r
+___destroy_helper_block_e4_20s24s28r
 -[IBGUserRepository updateOrCreateUser:]
 ___40-[IBGUserRepository updateOrCreateUser:]_block_invoke
--[IBGUserRepository userExistsWithUUID:]
-___40-[IBGUserRepository userExistsWithUUID:]_block_invoke
--[IBGUserRepository getOrCreateInteractionWithSurveyID:userUUID:]
+-[IBGUserRepository userExistsWithUUID:completionHandler:]
+___58-[IBGUserRepository userExistsWithUUID:completionHandler:]_block_invoke
+-[IBGUserRepository getOrCreateInteractionWithSurveyID:userUUID:completionHandler:]
 -[IBGUserRepository deleteUsersAboveCountThresholdExceptUUID:]
 ___62-[IBGUserRepository deleteUsersAboveCountThresholdExceptUUID:]_block_invoke
 -[IBGUserRepository deleteOutdatedUsersExceptUUID:]
 ___51-[IBGUserRepository deleteOutdatedUsersExceptUUID:]_block_invoke
+-[IBGUserRepository migrateUserDataFromUUID:toUUID:completionHandler:]
+___70-[IBGUserRepository migrateUserDataFromUUID:toUUID:completionHandler:]_block_invoke
+___copy_helper_block_e4_20s24s28b32r
+___destroy_helper_block_e4_20s24s28s32r
 -[IBGUserRepository migrateSurveyInteractionsFromUUID:toUUID:]
 -[IBGUserRepository deleteInteractionsForUserWithUUID:]
 -[IBGUserRepository deleteInteractionsWithSurveyIDs:]
@@ -645,30 +649,40 @@ ___copy_helper_block_e4_20r
 ___destroy_helper_block_e4_20r
 -[IBGUserRepository(Helpers) userMOWithUUID:]
 ___45-[IBGUserRepository(Helpers) userMOWithUUID:]_block_invoke
+___copy_helper_block_e4_20s24r
+___destroy_helper_block_e4_20s24r
 -[IBGUserRepository(Helpers) waitForAllOperationsToFinish]
 ___58-[IBGUserRepository(Helpers) waitForAllOperationsToFinish]_block_invoke
-___block_descriptor_28_e4_20s24r_e31_v8?0"NSManagedObjectContext"4l
+___block_descriptor_32_e4_20s24bs28r_e31_v8?0"NSManagedObjectContext"4l
 ___block_descriptor_28_e4_20s24w_e31_v8?0"NSManagedObjectContext"4l
+___block_descriptor_28_e4_20s24bs_e31_v8?0"NSManagedObjectContext"4l
 ___block_descriptor_24_e4_20s_e31_v8?0"NSManagedObjectContext"4l
+___block_descriptor_36_e4_20s24s28bs32r_e31_v8?0"NSManagedObjectContext"4l
 _OBJC_IVAR_$_IBGUserRepository._dalService
 _OBJC_IVAR_$_IBGUserRepository._surveyInteractionRepo
 _OBJC_IVAR_$_IBGUserRepository._lock
 ___block_descriptor_24_e4_20r_e31_v8?0"NSManagedObjectContext"4l
+___block_descriptor_28_e4_20s24r_e31_v8?0"NSManagedObjectContext"4l
 ___block_descriptor_20_e31_v8?0"NSManagedObjectContext"4l
 /Users/distiller/project/Instabug/InstabugCore/User/Repositories/IBGUserRepository.m
 __58-[IBGUserRepository(Helpers) waitForAllOperationsToFinish]_block_invoke
 InstabugCore/User/Repositories/IBGUserRepository.m
+__destroy_helper_block_e4_20s24r
+__copy_helper_block_e4_20s24r
 __45-[IBGUserRepository(Helpers) userMOWithUUID:]_block_invoke
 __destroy_helper_block_e4_20r
 __copy_helper_block_e4_20r
 __38-[IBGUserRepository(Helpers) allUsers]_block_invoke
+__destroy_helper_block_e4_20s24s28s32r
+__copy_helper_block_e4_20s24s28b32r
+__70-[IBGUserRepository migrateUserDataFromUUID:toUUID:completionHandler:]_block_invoke
 __51-[IBGUserRepository deleteOutdatedUsersExceptUUID:]_block_invoke
 __62-[IBGUserRepository deleteUsersAboveCountThresholdExceptUUID:]_block_invoke
-__40-[IBGUserRepository userExistsWithUUID:]_block_invoke
+__58-[IBGUserRepository userExistsWithUUID:completionHandler:]_block_invoke
 __40-[IBGUserRepository updateOrCreateUser:]_block_invoke
-__destroy_helper_block_e4_20s24r
-__copy_helper_block_e4_20s24r
-__45-[IBGUserRepository getOrCreateUserWithUUID:]_block_invoke
+__destroy_helper_block_e4_20s24s28r
+__copy_helper_block_e4_20s24b28r
+__63-[IBGUserRepository getOrCreateUserWithUUID:completionHandler:]_block_invoke
 __Block_byref_object_dispose_
 __Block_byref_object_copy_
 -[IBGAnnotationView(Transform) offsetPointToParentCoordinate:]
@@ -923,12 +937,15 @@ FeaturesRequest/Controllers/IBGFeatureFormFieldStatusController.h
 -[IBGSDKConditionsLoader init]
 -[IBGSDKConditionsLoader surveyConditionsWithCompletionHandler:]
 ___64-[IBGSDKConditionsLoader surveyConditionsWithCompletionHandler:]_block_invoke
+___64-[IBGSDKConditionsLoader surveyConditionsWithCompletionHandler:]_block_invoke.576
 ___copy_helper_block_e4_20s24s28s32r
-___destroy_helper_block_e4_20s24s28s32r
-___64-[IBGSDKConditionsLoader surveyConditionsWithCompletionHandler:]_block_invoke.593
-___copy_helper_block_e4_20b24s
--[IBGSDKConditionsLoader surveyConditions]
-___42-[IBGSDKConditionsLoader surveyConditions]_block_invoke
+___64-[IBGSDKConditionsLoader surveyConditionsWithCompletionHandler:]_block_invoke.596
+-[IBGSDKConditionsLoader usersAttributesWithCompletionHandler:]
+___63-[IBGSDKConditionsLoader usersAttributesWithCompletionHandler:]_block_invoke
+___63-[IBGSDKConditionsLoader usersAttributesWithCompletionHandler:]_block_invoke_2
+___63-[IBGSDKConditionsLoader usersAttributesWithCompletionHandler:]_block_invoke_3
+___copy_helper_block_e4_20s24s28b
+___destroy_helper_block_e4_20s24s28s
 -[IBGSDKConditionsLoader shouldSendCountryRequest]
 -[IBGSDKConditionsLoader setDateOfLatestCountryCodeRequest:]
 -[IBGSDKConditionsLoader setLastCountryCodeRequestTTL:]
@@ -937,9 +954,12 @@ ___42-[IBGSDKConditionsLoader surveyConditions]_block_invoke
 -[IBGSDKConditionsLoader dateOfLatestCountryCodeRequest]
 -[IBGSDKConditionsLoader lastCountryCodeRequestTTL]
 -[IBGSDKConditionsLoader .cxx_destruct]
+___block_descriptor_28_e4_20s24r_e21_v8?0"NSDictionary"4l
 ___block_descriptor_36_e4_20s24s28s32r_e23_v16?0c4"NSString"8i12l
-___block_descriptor_28_e4_20bs24s_e5_v4?0l
-___block_descriptor_24_e4_20r_e16_v8?0"NSArray"4l
+___block_descriptor_32_e4_20s24bs28r_e5_v4?0l
+___block_descriptor_28_e4_20s24bs_e16_v8?0"NSArray"4l
+___block_descriptor_32_e4_20s24s28bs_e16_v8?0"IBGUser"4l
+___block_descriptor_28_e4_20s24bs_e21_v8?0"NSDictionary"4l
 __OBJC_PROTOCOL_$_IBGSurveyConditionsLoader
 __OBJC_LABEL_PROTOCOL_$_IBGSurveyConditionsLoader
 _OBJC_IVAR_$_IBGSDKConditionsLoader._latestCountryCode
@@ -947,11 +967,14 @@ _OBJC_IVAR_$_IBGSDKConditionsLoader._dateOfLatestCountryCodeRequest
 _OBJC_IVAR_$_IBGSDKConditionsLoader._lastCountryCodeRequestTTL
 /Users/distiller/project/Instabug/InstabugSurveys/Helpers/IBGSDKConditionsLoader.m
 InstabugSurveys/Helpers/IBGSDKConditionsLoader.m
-__42-[IBGSDKConditionsLoader surveyConditions]_block_invoke
-__copy_helper_block_e4_20b24s
-__64-[IBGSDKConditionsLoader surveyConditionsWithCompletionHandler:]_block_invoke.593
-__destroy_helper_block_e4_20s24s28s32r
+__destroy_helper_block_e4_20s24s28s
+__copy_helper_block_e4_20s24s28b
+__63-[IBGSDKConditionsLoader usersAttributesWithCompletionHandler:]_block_invoke_3
+__63-[IBGSDKConditionsLoader usersAttributesWithCompletionHandler:]_block_invoke_2
+__63-[IBGSDKConditionsLoader usersAttributesWithCompletionHandler:]_block_invoke
+__64-[IBGSDKConditionsLoader surveyConditionsWithCompletionHandler:]_block_invoke.596
 __copy_helper_block_e4_20s24s28s32r
+__64-[IBGSDKConditionsLoader surveyConditionsWithCompletionHandler:]_block_invoke.576
 __64-[IBGSDKConditionsLoader surveyConditionsWithCompletionHandler:]_block_invoke
 +[IBGSurveyCondition conditionsFromConditionsDictionary:wihtContext:]
 +[IBGSurveyCondition conditionWithUserEventResponseDictionary:withContext:]
@@ -1058,10 +1081,10 @@ ___34-[IBGLogLogger addLog:level:date:]_block_invoke.623
 -[IBGLogLogger loadLogsSynchronously]
 ___37-[IBGLogLogger loadLogsSynchronously]_block_invoke
 ___copy_helper_block_e4_20s24s28r
-___destroy_helper_block_e4_20s24s28r
 -[IBGLogLogger privateContext]
 -[IBGLogLogger loadLogsAsynchronouslyWithCompletionHandler:]
 ___60-[IBGLogLogger loadLogsAsynchronouslyWithCompletionHandler:]_block_invoke
+___copy_helper_block_e4_20b24s
 -[IBGLogLogger loadSnapshotSynchronously:withCompletionHandler:]
 -[IBGLogLogger addReportLogsToLogs:]
 -[IBGLogLogger getMaxCount]
@@ -1095,8 +1118,8 @@ __32+[IBGLogLogger dataLayerService]_block_invoke
 __28-[IBGLogLogger clearOldLogs]_block_invoke
 __28-[IBGLogLogger clearAllLogs]_block_invoke
 __28-[IBGLogLogger purgeOldLogs]_block_invoke
+__copy_helper_block_e4_20b24s
 __60-[IBGLogLogger loadLogsAsynchronouslyWithCompletionHandler:]_block_invoke
-__destroy_helper_block_e4_20s24s28r
 __copy_helper_block_e4_20s24s28r
 __37-[IBGLogLogger loadLogsSynchronously]_block_invoke
 __34-[IBGLogLogger addLog:level:date:]_block_invoke.623
@@ -2012,7 +2035,6 @@ ___50-[IBGMethodsLogger logCountedMethod:isDeprecated:]_block_invoke
 -[IBGMethodsLogger logMethod:isDeprecated:params:]
 ___50-[IBGMethodsLogger logMethod:isDeprecated:params:]_block_invoke
 ___copy_helper_block_e4_20s24s28s
-___destroy_helper_block_e4_20s24s28s
 -[IBGMethodsLogger logMethod:isDeprecated:params:managedObjectContext:]
 -[IBGMethodsLogger loadLogsSynchronously:sessionDate:withCompletionHandler:]
 -[IBGMethodsLogger loadLogsSynchronouslyWithSessionDate:]
@@ -2036,7 +2058,6 @@ __41-[IBGMethodsLogger purgeAllLogsTillDate:]_block_invoke
 __32-[IBGMethodsLogger clearAllLogs]_block_invoke
 __76-[IBGMethodsLogger loadLogsAsynchronouslyWithSessionDate:completionHandler:]_block_invoke
 __57-[IBGMethodsLogger loadLogsSynchronouslyWithSessionDate:]_block_invoke
-__destroy_helper_block_e4_20s24s28s
 __copy_helper_block_e4_20s24s28s
 __50-[IBGMethodsLogger logMethod:isDeprecated:params:]_block_invoke
 __50-[IBGMethodsLogger logCountedMethod:isDeprecated:]_block_invoke
@@ -2045,29 +2066,40 @@ __50-[IBGMethodsLogger logCountedMethod:isDeprecated:]_block_invoke
 ___35+[IBGUserController sharedInstance]_block_invoke
 +[IBGUserController destory]
 -[IBGUserController identifyUserWithEmail:name:]
+___48-[IBGUserController identifyUserWithEmail:name:]_block_invoke
+___48-[IBGUserController identifyUserWithEmail:name:]_block_invoke_2
+___copy_helper_block_e4_20s24s28s32s36s40s44s
+___destroy_helper_block_e4_20s24s28s32s36s40s44s
+___48-[IBGUserController identifyUserWithEmail:name:]_block_invoke.666
+-[IBGUserController getOrCreateUserWithCompletionHandler:]
 -[IBGUserController incrementSessionCountForCurrentUser]
+___56-[IBGUserController incrementSessionCountForCurrentUser]_block_invoke
 -[IBGUserController updateLastSeenToNow]
+___40-[IBGUserController updateLastSeenToNow]_block_invoke
 -[IBGUserController setLastSeenToDate:]
+___39-[IBGUserController setLastSeenToDate:]_block_invoke
 -[IBGUserController deleteInteractionsWithSurveyIDs:]
 -[IBGUserController generateNewUUIDFromCurrentState]
 -[IBGUserController resetUserData]
 -[IBGUserController logOut]
 +[IBGUserController generateNewUUIDForTest]
--[IBGUserController currentUserInteractionWithSurveyID:]
+-[IBGUserController currentUserInteractionWithSurveyID:completionHandler:]
 -[IBGUserController saveInteraction:]
 -[IBGUserController addListener:]
 -[IBGUserController removeListener:]
 -[IBGUserController notifyListenersForUserDidChange]
 ___52-[IBGUserController notifyListenersForUserDidChange]_block_invoke
+___52-[IBGUserController notifyListenersForUserDidChange]_block_invoke_2
 -[IBGUserController didInitializeSessionAtDate:sessionIndex:]
 -[IBGUserController resetUserLoggerData]
 -[IBGUserController purgeOldUsers]
 -[IBGUserController migrateUUIDForName:email:]
 -[IBGUserController migrationWithOldUUID:newUUID:newEmail:newName:]
 -[IBGUserController migrateAnonymousDataFrom:toUserWithUUID:]
+___61-[IBGUserController migrateAnonymousDataFrom:toUserWithUUID:]_block_invoke
 -[IBGUserController dalService]
--[IBGUserController currentUser]
--[IBGUserController setCurrentUser:]
+-[IBGUserController UUID]
+-[IBGUserController setUUID:]
 -[IBGUserController userRepostiory]
 -[IBGUserController setUserRepostiory:]
 -[IBGUserController userAttributesRepostiory]
@@ -2080,21 +2112,35 @@ ___52-[IBGUserController notifyListenersForUserDidChange]_block_invoke
 -[IBGUserController .cxx_destruct]
 -[IBGUserController(Helpers) waitForAllOperationsToFinish]
 ___58-[IBGUserController(Helpers) waitForAllOperationsToFinish]_block_invoke
+___block_descriptor_32_e4_20s24s28s_e16_v8?0"IBGUser"4l
+___block_descriptor_48_e4_20s24s28s32s36s40s44s_e7_v8?0c4l
+___block_descriptor_24_e4_20s_e16_v8?0"IBGUser"4l
+___block_descriptor_28_e4_20s24s_e16_v8?0"IBGUser"4l
 ___block_descriptor_24_e4_20s_e10_v12?0I48l
 __OBJC_PROTOCOL_$_IBGSessionListener
 __OBJC_LABEL_PROTOCOL_$_IBGSessionListener
-_OBJC_IVAR_$_IBGUserController._currentUser
+_OBJC_IVAR_$_IBGUserController._UUID
 _OBJC_IVAR_$_IBGUserController._userRepostiory
 _OBJC_IVAR_$_IBGUserController._userAttributesRepostiory
 _OBJC_IVAR_$_IBGUserController._migration
 _OBJC_IVAR_$_IBGUserController._dalService
 _OBJC_IVAR_$_IBGUserController._listeners
-___block_literal_global.800
+___block_literal_global.805
 /Users/distiller/project/Instabug/InstabugCore/User/IBGUserController.m
 __58-[IBGUserController(Helpers) waitForAllOperationsToFinish]_block_invoke
 InstabugCore/User/IBGUserController.m
 InstabugCore/User/IBGUserController.h
+__61-[IBGUserController migrateAnonymousDataFrom:toUserWithUUID:]_block_invoke
+__52-[IBGUserController notifyListenersForUserDidChange]_block_invoke_2
 __52-[IBGUserController notifyListenersForUserDidChange]_block_invoke
+__39-[IBGUserController setLastSeenToDate:]_block_invoke
+__40-[IBGUserController updateLastSeenToNow]_block_invoke
+__56-[IBGUserController incrementSessionCountForCurrentUser]_block_invoke
+__48-[IBGUserController identifyUserWithEmail:name:]_block_invoke.666
+__destroy_helper_block_e4_20s24s28s32s36s40s44s
+__copy_helper_block_e4_20s24s28s32s36s40s44s
+__48-[IBGUserController identifyUserWithEmail:name:]_block_invoke_2
+__48-[IBGUserController identifyUserWithEmail:name:]_block_invoke
 __35+[IBGUserController sharedInstance]_block_invoke
 -[IBGCache init]
 -[IBGCache initWithShouldForceWrite:]
@@ -3041,9 +3087,11 @@ FeaturesRequest/Models/CoreData/IBGFeatureComment+CoreDataProperties.m
 -[IBGSurveyCache syncSurveysResponse:pausedSurveysIDs:isAnnouncements:completionBlock:]
 ___87-[IBGSurveyCache syncSurveysResponse:pausedSurveysIDs:isAnnouncements:completionBlock:]_block_invoke
 ___87-[IBGSurveyCache syncSurveysResponse:pausedSurveysIDs:isAnnouncements:completionBlock:]_block_invoke_2
-___87-[IBGSurveyCache syncSurveysResponse:pausedSurveysIDs:isAnnouncements:completionBlock:]_block_invoke.626
+___87-[IBGSurveyCache syncSurveysResponse:pausedSurveysIDs:isAnnouncements:completionBlock:]_block_invoke.613
+___87-[IBGSurveyCache syncSurveysResponse:pausedSurveysIDs:isAnnouncements:completionBlock:]_block_invoke.632
 ___copy_helper_block_e4_20b24w
 -[IBGSurveyCache clearSurveyInteractions]
+___41-[IBGSurveyCache clearSurveyInteractions]_block_invoke
 -[IBGSurveyCache clearAllSurveys]
 -[IBGSurveyCache sendAll]
 -[IBGSurveyCache lockWithSurvey:]
@@ -3069,18 +3117,20 @@ ___73-[IBGSurveyCache surveyIDsNotInNewSurveys:orPausedIDs:fromCachedSurveys:]_b
 -[IBGSurveyCache persistenceManager]
 -[IBGSurveyCache setPersistenceManager:]
 -[IBGSurveyCache .cxx_destruct]
+___block_descriptor_28_e4_20s24s_e29_v8?0"IBGSurveyInteraction"4l
 ___block_descriptor_20_e23_8?0"IBGSurveyModel"4l
 ___block_descriptor_33_e4_20s24s28w_e31_v8?0"NSManagedObjectContext"4l
 ___block_descriptor_28_e4_20bs24w_e16_v8?0"NSError"4l
+___block_descriptor_24_e4_20s_e29_v8?0"IBGSurveyInteraction"4l
 ___block_descriptor_20_e23_c8?0"IBGSurveyModel"4l
-___block_literal_global.665
-___block_literal_global.668
-___block_descriptor_20_e42_i12?0"IBGSurveyModel"4"IBGSurveyModel"8l
+___block_literal_global.669
 ___block_literal_global.672
+___block_descriptor_20_e42_i12?0"IBGSurveyModel"4"IBGSurveyModel"8l
+___block_literal_global.676
 ___block_descriptor_20_e21_8?0"NSDictionary"4l
-___block_literal_global.711
+___block_literal_global.715
 ___block_descriptor_20_e17_8?0"NSString"4l
-___block_literal_global.719
+___block_literal_global.723
 _OBJC_IVAR_$_IBGSurveyCache._surveys
 _OBJC_IVAR_$_IBGSurveyCache._persistenceManager
 /Users/distiller/project/Instabug/InstabugSurveys/Caching/IBGSurveyCache.m
@@ -3091,8 +3141,10 @@ __73-[IBGSurveyCache surveyIDsNotInNewSurveys:orPausedIDs:fromCachedSurveys:]_bl
 __43-[IBGSurveyCache sortedSurveysFromSurveys:]_block_invoke
 __35-[IBGSurveyCache announcementsOnly]_block_invoke
 __29-[IBGSurveyCache surveysOnly]_block_invoke
+__41-[IBGSurveyCache clearSurveyInteractions]_block_invoke
 __copy_helper_block_e4_20b24w
-__87-[IBGSurveyCache syncSurveysResponse:pausedSurveysIDs:isAnnouncements:completionBlock:]_block_invoke.626
+__87-[IBGSurveyCache syncSurveysResponse:pausedSurveysIDs:isAnnouncements:completionBlock:]_block_invoke.632
+__87-[IBGSurveyCache syncSurveysResponse:pausedSurveysIDs:isAnnouncements:completionBlock:]_block_invoke.613
 __87-[IBGSurveyCache syncSurveysResponse:pausedSurveysIDs:isAnnouncements:completionBlock:]_block_invoke_2
 __87-[IBGSurveyCache syncSurveysResponse:pausedSurveysIDs:isAnnouncements:completionBlock:]_block_invoke
 +[IBGSurveyThankYouConfiguration defaultConfiguration]
@@ -3695,8 +3747,9 @@ InstabugSurveys/IBGSurvey.m
 InstabugSurveys/IBGSurvey.h
 __17-[IBGSurvey show]_block_invoke
 -[IBGSurveyInteractionRepo initWithDALService:]
--[IBGSurveyInteractionRepo getOrCreateInteractionWithSurveyID:userUUID:]
-___72-[IBGSurveyInteractionRepo getOrCreateInteractionWithSurveyID:userUUID:]_block_invoke
+-[IBGSurveyInteractionRepo getOrCreateInteractionWithSurveyID:userUUID:completionHandler:]
+___90-[IBGSurveyInteractionRepo getOrCreateInteractionWithSurveyID:userUUID:completionHandler:]_block_invoke
+___copy_helper_block_e4_20s24b28s
 -[IBGSurveyInteractionRepo migrateSurveyInteractionsFromUUID:toUUID:]
 ___69-[IBGSurveyInteractionRepo migrateSurveyInteractionsFromUUID:toUUID:]_block_invoke
 -[IBGSurveyInteractionRepo deleteInteractionsForUserWithUUID:]
@@ -3710,6 +3763,7 @@ ___44-[IBGSurveyInteractionRepo saveInteraction:]_block_invoke
 -[IBGSurveyInteractionRepo .cxx_destruct]
 -[IBGSurveyInteractionRepo(Helpers) waitForAllOperationsToFinish]
 ___65-[IBGSurveyInteractionRepo(Helpers) waitForAllOperationsToFinish]_block_invoke
+___block_descriptor_32_e4_20s24bs28s_e31_v8?0"NSManagedObjectContext"4l
 _OBJC_IVAR_$_IBGSurveyInteractionRepo._dalService
 /Users/distiller/project/Instabug/InstabugCore/User/Repositories/IBGSurveyInteractionRepo.m
 __65-[IBGSurveyInteractionRepo(Helpers) waitForAllOperationsToFinish]_block_invoke
@@ -3718,7 +3772,8 @@ __44-[IBGSurveyInteractionRepo saveInteraction:]_block_invoke
 __60-[IBGSurveyInteractionRepo deleteInteractionsWithSurveyIDs:]_block_invoke
 __62-[IBGSurveyInteractionRepo deleteInteractionsForUserWithUUID:]_block_invoke
 __69-[IBGSurveyInteractionRepo migrateSurveyInteractionsFromUUID:toUUID:]_block_invoke
-__72-[IBGSurveyInteractionRepo getOrCreateInteractionWithSurveyID:userUUID:]_block_invoke
+__copy_helper_block_e4_20s24b28s
+__90-[IBGSurveyInteractionRepo getOrCreateInteractionWithSurveyID:userUUID:completionHandler:]_block_invoke
 +[IBGBugReporting printV8MigrationMessage:]
 ___43+[IBGBugReporting printV8MigrationMessage:]_block_invoke
 +[IBGBugReporting enabled]
@@ -3787,7 +3842,6 @@ ___29+[IBGSyncManager getInstance]_block_invoke
 -[IBGSyncManager initializationOperation]
 ___41-[IBGSyncManager initializationOperation]_block_invoke
 ___41-[IBGSyncManager initializationOperation]_block_invoke_2
--[IBGSyncManager dealloc]
 +[IBGSyncManager NSStringFromLastChatAtSelector]
 -[IBGSyncManager stopSync]
 -[IBGSyncManager sync]
@@ -3847,14 +3901,15 @@ __29+[IBGSyncManager getInstance]_block_invoke
 ___36+[IBGSnapshotManager sharedInstance]_block_invoke
 +[IBGSnapshotManager startLoggers]
 -[IBGSnapshotManager init]
--[IBGSnapshotManager surveysResponseSnapshot]
+-[IBGSnapshotManager surveysResponseSnapshotWithCompletionHandler:]
+___67-[IBGSnapshotManager surveysResponseSnapshotWithCompletionHandler:]_block_invoke
 -[IBGSnapshotManager takePreSendingSnapshotWithConfiguration:]
 ___62-[IBGSnapshotManager takePreSendingSnapshotWithConfiguration:]_block_invoke
 -[IBGSnapshotManager getCurrentViewName]
 -[IBGSnapshotManager tags]
 -[IBGSnapshotManager takePostSendingSnapshotWithSnapshot:Synchronously:]
 ___72-[IBGSnapshotManager takePostSendingSnapshotWithSnapshot:Synchronously:]_block_invoke
-___72-[IBGSnapshotManager takePostSendingSnapshotWithSnapshot:Synchronously:]_block_invoke.842
+___72-[IBGSnapshotManager takePostSendingSnapshotWithSnapshot:Synchronously:]_block_invoke.844
 ___72-[IBGSnapshotManager takePostSendingSnapshotWithSnapshot:Synchronously:]_block_invoke_2
 ___72-[IBGSnapshotManager takePostSendingSnapshotWithSnapshot:Synchronously:]_block_invoke_3
 -[IBGSnapshotManager registerUserDataResetObserver:]
@@ -3926,9 +3981,10 @@ InstabugCore/Logging/IBGSnapshotManager.h
 __82-[IBGSnapshotManager removeManagedObjectWithFetchRequests:inManagedObjectContext:]_block_invoke
 __72-[IBGSnapshotManager takePostSendingSnapshotWithSnapshot:Synchronously:]_block_invoke_3
 __72-[IBGSnapshotManager takePostSendingSnapshotWithSnapshot:Synchronously:]_block_invoke_2
-__72-[IBGSnapshotManager takePostSendingSnapshotWithSnapshot:Synchronously:]_block_invoke.842
+__72-[IBGSnapshotManager takePostSendingSnapshotWithSnapshot:Synchronously:]_block_invoke.844
 __72-[IBGSnapshotManager takePostSendingSnapshotWithSnapshot:Synchronously:]_block_invoke
 __62-[IBGSnapshotManager takePreSendingSnapshotWithConfiguration:]_block_invoke
+__67-[IBGSnapshotManager surveysResponseSnapshotWithCompletionHandler:]_block_invoke
 __36+[IBGSnapshotManager sharedInstance]_block_invoke
 -[IBGVideoPlayer initWithDelegate:]
 -[IBGVideoPlayer playVideo:withTitle:]
@@ -4110,8 +4166,11 @@ InstabugCore/User/Models/CoreData Managed Objects/IBGUserAttribute+CoreDataClass
 -[IBGUserAttributesNetworkRequest networkDone:URLSessionDataTask:response:error:responseDictionary:]
 -[IBGUserAttributesNetworkRequest delegate]
 -[IBGUserAttributesNetworkRequest setDelegate:]
+-[IBGUserAttributesNetworkRequest currentUUID]
+-[IBGUserAttributesNetworkRequest setCurrentUUID:]
 -[IBGUserAttributesNetworkRequest .cxx_destruct]
 _OBJC_IVAR_$_IBGUserAttributesNetworkRequest._delegate
+_OBJC_IVAR_$_IBGUserAttributesNetworkRequest._currentUUID
 /Users/distiller/project/Instabug/InstabugCore/Server and Requests/Specific Requests/IBGUserAttributesNetworkRequest.m
 InstabugCore/Server and Requests/Specific Requests/IBGUserAttributesNetworkRequest.m
 InstabugCore/Server and Requests/Specific Requests/IBGUserAttributesNetworkRequest.h
@@ -4139,37 +4198,39 @@ InstabugSurveys/Models/Survey Events/IBGSurveyEventSubmit.m
 _OBJC_IVAR_$_IBGViewHierarchyLocalAttachment.fileName
 /Users/distiller/project/Instabug/InstabugCore/Models/IBGViewHierarchyLocalAttachment.m
 InstabugCore/Models/IBGViewHierarchyLocalAttachment.m
--[IBGUserAttributesRepo initWithDALService:userController:]
+-[IBGUserAttributesRepo initWithDALService:]
 -[IBGUserAttributesRepo loadBEUserAttributes]
 -[IBGUserAttributesRepo sendBEUserAttributesRequest]
 -[IBGUserAttributesRepo didInitializeSessionAtDate:sessionIndex:]
--[IBGUserAttributesRepo userAttributesNetworkRequest:didFinishWithStatus:ttl:userAttributes:]
+-[IBGUserAttributesRepo userAttributesNetworkRequest:didFinishWithStatus:ttl:userAttributes:userUUID:]
 -[IBGUserAttributesRepo registerToSessionManager]
--[IBGUserAttributesRepo invalidateBEUserAttributesWithNewAttributes:]
-___69-[IBGUserAttributesRepo invalidateBEUserAttributesWithNewAttributes:]_block_invoke
-___69-[IBGUserAttributesRepo invalidateBEUserAttributesWithNewAttributes:]_block_invoke_2
-___69-[IBGUserAttributesRepo invalidateBEUserAttributesWithNewAttributes:]_block_invoke.83
--[IBGUserAttributesRepo updateOrCreateAttributeWithKey:value:]
-___62-[IBGUserAttributesRepo updateOrCreateAttributeWithKey:value:]_block_invoke
--[IBGUserAttributesRepo deleteAttributeWithKey:]
-___48-[IBGUserAttributesRepo deleteAttributeWithKey:]_block_invoke
--[IBGUserAttributesRepo deleteAllAttributes]
-___44-[IBGUserAttributesRepo deleteAllAttributes]_block_invoke
--[IBGUserAttributesRepo attributeValueForKey:]
-___46-[IBGUserAttributesRepo attributeValueForKey:]_block_invoke
--[IBGUserAttributesRepo sdkUserAttributesDictionary]
--[IBGUserAttributesRepo allUserAttributesDictionary]
--[IBGUserAttributesRepo userAttributesOfSource:]
-___48-[IBGUserAttributesRepo userAttributesOfSource:]_block_invoke
--[IBGUserAttributesRepo sdkUserAttributesJSONStringWithExtraAttribute:]
+-[IBGUserAttributesRepo invalidateBEUserAttributesWithNewAttributes:userUUID:]
+___78-[IBGUserAttributesRepo invalidateBEUserAttributesWithNewAttributes:userUUID:]_block_invoke
+___78-[IBGUserAttributesRepo invalidateBEUserAttributesWithNewAttributes:userUUID:]_block_invoke_2
+___78-[IBGUserAttributesRepo invalidateBEUserAttributesWithNewAttributes:userUUID:]_block_invoke.77
+-[IBGUserAttributesRepo updateOrCreateAttributeWithKey:value:userUUID:]
+___71-[IBGUserAttributesRepo updateOrCreateAttributeWithKey:value:userUUID:]_block_invoke
+-[IBGUserAttributesRepo deleteAttributeWithKey:userUUID:]
+___57-[IBGUserAttributesRepo deleteAttributeWithKey:userUUID:]_block_invoke
+-[IBGUserAttributesRepo deleteAllAttributesWithUserUUID:]
+___57-[IBGUserAttributesRepo deleteAllAttributesWithUserUUID:]_block_invoke
+-[IBGUserAttributesRepo attributeValueForKey:userUUID:]
+___55-[IBGUserAttributesRepo attributeValueForKey:userUUID:]_block_invoke
+-[IBGUserAttributesRepo sdkUserAttributesDictionaryWithUserUUID:completionHandler:]
+-[IBGUserAttributesRepo sdkUserAttributesDictionaryWithUserUUID:]
+-[IBGUserAttributesRepo allUserAttributesDictionaryWihtUserUUID:completionHandler:]
+___83-[IBGUserAttributesRepo allUserAttributesDictionaryWihtUserUUID:completionHandler:]_block_invoke
+___83-[IBGUserAttributesRepo allUserAttributesDictionaryWihtUserUUID:completionHandler:]_block_invoke_2
+-[IBGUserAttributesRepo userAttributesOfSource:userUUID:]
+___57-[IBGUserAttributesRepo userAttributesOfSource:userUUID:]_block_invoke
+-[IBGUserAttributesRepo userAttributesOfSource:userUUID:completionHandler:]
+___75-[IBGUserAttributesRepo userAttributesOfSource:userUUID:completionHandler:]_block_invoke
+-[IBGUserAttributesRepo sdkUserAttributesJSONStringWithExtraAttribute:userUUID:]
 -[IBGUserAttributesRepo migrateAllAttributesFromUUID:toUUID:]
 ___61-[IBGUserAttributesRepo migrateAllAttributesFromUUID:toUUID:]_block_invoke
--[IBGUserAttributesRepo currentUserUUID]
 -[IBGUserAttributesRepo stopListentingToNewSession]
 -[IBGUserAttributesRepo dalService]
 -[IBGUserAttributesRepo setDalService:]
--[IBGUserAttributesRepo userController]
--[IBGUserAttributesRepo setUserController:]
 -[IBGUserAttributesRepo lastUserAttributesRequestSentDate]
 -[IBGUserAttributesRepo setLastUserAttributesRequestSentDate:]
 -[IBGUserAttributesRepo didRegisterToSessionManager]
@@ -4177,26 +4238,29 @@ ___61-[IBGUserAttributesRepo migrateAllAttributesFromUUID:toUUID:]_block_invoke
 -[IBGUserAttributesRepo .cxx_destruct]
 ___block_descriptor_24_e4_20s_e32_v16?0"IBGUserAttribute"4I8^c12l
 ___block_descriptor_28_e4_20s24s_e34_v16?0"NSString"4"NSString"8^c12l
-___block_descriptor_32_e4_20s24s28w_e31_v8?0"NSManagedObjectContext"4l
-___block_descriptor_24_e4_20w_e31_v8?0"NSManagedObjectContext"4l
+___block_descriptor_32_e4_20s24s28s_e31_v8?0"NSManagedObjectContext"4l
+___block_descriptor_32_e4_20s24s28bs_e21_v8?0"NSDictionary"4l
 ___block_descriptor_32_e4_20s24r_e31_v8?0"NSManagedObjectContext"4l
+___block_descriptor_32_e4_20s24bs_e31_v8?0"NSManagedObjectContext"4l
 __OBJC_PROTOCOL_$_IBGUserAttributesNetworkRequestDelegate
 __OBJC_LABEL_PROTOCOL_$_IBGUserAttributesNetworkRequestDelegate
 _OBJC_IVAR_$_IBGUserAttributesRepo._didRegisterToSessionManager
 _OBJC_IVAR_$_IBGUserAttributesRepo._dalService
-_OBJC_IVAR_$_IBGUserAttributesRepo._userController
 _OBJC_IVAR_$_IBGUserAttributesRepo._lastUserAttributesRequestSentDate
 /Users/distiller/project/Instabug/InstabugCore/User/Repositories/IBGUserAttributesRepo.m
 InstabugCore/User/Repositories/IBGUserAttributesRepo.m
 __61-[IBGUserAttributesRepo migrateAllAttributesFromUUID:toUUID:]_block_invoke
-__48-[IBGUserAttributesRepo userAttributesOfSource:]_block_invoke
-__46-[IBGUserAttributesRepo attributeValueForKey:]_block_invoke
-__44-[IBGUserAttributesRepo deleteAllAttributes]_block_invoke
-__48-[IBGUserAttributesRepo deleteAttributeWithKey:]_block_invoke
-__62-[IBGUserAttributesRepo updateOrCreateAttributeWithKey:value:]_block_invoke
-__69-[IBGUserAttributesRepo invalidateBEUserAttributesWithNewAttributes:]_block_invoke.83
-__69-[IBGUserAttributesRepo invalidateBEUserAttributesWithNewAttributes:]_block_invoke_2
-__69-[IBGUserAttributesRepo invalidateBEUserAttributesWithNewAttributes:]_block_invoke
+__75-[IBGUserAttributesRepo userAttributesOfSource:userUUID:completionHandler:]_block_invoke
+__57-[IBGUserAttributesRepo userAttributesOfSource:userUUID:]_block_invoke
+__83-[IBGUserAttributesRepo allUserAttributesDictionaryWihtUserUUID:completionHandler:]_block_invoke_2
+__83-[IBGUserAttributesRepo allUserAttributesDictionaryWihtUserUUID:completionHandler:]_block_invoke
+__55-[IBGUserAttributesRepo attributeValueForKey:userUUID:]_block_invoke
+__57-[IBGUserAttributesRepo deleteAllAttributesWithUserUUID:]_block_invoke
+__57-[IBGUserAttributesRepo deleteAttributeWithKey:userUUID:]_block_invoke
+__71-[IBGUserAttributesRepo updateOrCreateAttributeWithKey:value:userUUID:]_block_invoke
+__78-[IBGUserAttributesRepo invalidateBEUserAttributesWithNewAttributes:userUUID:]_block_invoke.77
+__78-[IBGUserAttributesRepo invalidateBEUserAttributesWithNewAttributes:userUUID:]_block_invoke_2
+__78-[IBGUserAttributesRepo invalidateBEUserAttributesWithNewAttributes:userUUID:]_block_invoke
 -[IBGSurveyNPSCollectionView initWithFrame:collectionViewLayout:]
 -[IBGSurveyNPSCollectionView touchesBegan:withEvent:]
 -[IBGSurveyNPSCollectionView touchesMoved:withEvent:]
@@ -4754,9 +4818,7 @@ ___68-[IBGVideoEncoder stopAutoRecordingWithAudio:withCompletionHandler:]_block_
 ___68-[IBGVideoEncoder stopAutoRecordingWithAudio:withCompletionHandler:]_block_invoke_2
 ___68-[IBGVideoEncoder stopAutoRecordingWithAudio:withCompletionHandler:]_block_invoke_3
 ___68-[IBGVideoEncoder stopAutoRecordingWithAudio:withCompletionHandler:]_block_invoke_4
-___copy_helper_block_e4_20s24b28r
 ___68-[IBGVideoEncoder stopAutoRecordingWithAudio:withCompletionHandler:]_block_invoke.702
-___copy_helper_block_e4_20s24s28b32r
 -[IBGVideoEncoder mergeAudio:withVideo:withCompletionHandler:]
 ___62-[IBGVideoEncoder mergeAudio:withVideo:withCompletionHandler:]_block_invoke
 ___copy_helper_block_e4_20s24s28s32b
@@ -4768,10 +4830,8 @@ ___53-[IBGVideoEncoder encodeVideo:withCompletionHandler:]_block_invoke
 ___53-[IBGVideoEncoder encodeVideo:withCompletionHandler:]_block_invoke_2
 ___53-[IBGVideoEncoder encodeVideo:withCompletionHandler:]_block_invoke.772
 ___53-[IBGVideoEncoder encodeVideo:withCompletionHandler:]_block_invoke_2.773
-___copy_helper_block_e4_20s24s28b
 -[IBGVideoEncoder trimAudio:toDuration:withCompletionHandler:]
 ___62-[IBGVideoEncoder trimAudio:toDuration:withCompletionHandler:]_block_invoke
-___copy_helper_block_e4_20s24b28s
 -[IBGVideoEncoder videoURL]
 -[IBGVideoEncoder delegate]
 -[IBGVideoEncoder setDelegate:]
@@ -4829,9 +4889,7 @@ _OBJC_IVAR_$_IBGVideoEncoder._lastTimeStamp
 /Users/distiller/project/Instabug/InstabugCore/Helpers/Recorders and Players/IBGVideoEncoder.m
 InstabugCore/Helpers/Recorders and Players/IBGVideoEncoder.m
 InstabugCore/Helpers/Recorders and Players/IBGVideoEncoder.h
-__copy_helper_block_e4_20s24b28s
 __62-[IBGVideoEncoder trimAudio:toDuration:withCompletionHandler:]_block_invoke
-__copy_helper_block_e4_20s24s28b
 __53-[IBGVideoEncoder encodeVideo:withCompletionHandler:]_block_invoke_2.773
 __53-[IBGVideoEncoder encodeVideo:withCompletionHandler:]_block_invoke.772
 __53-[IBGVideoEncoder encodeVideo:withCompletionHandler:]_block_invoke_2
@@ -4839,9 +4897,7 @@ __53-[IBGVideoEncoder encodeVideo:withCompletionHandler:]_block_invoke
 __destroy_helper_block_e4_20s24s28s32s
 __copy_helper_block_e4_20s24s28s32b
 __62-[IBGVideoEncoder mergeAudio:withVideo:withCompletionHandler:]_block_invoke
-__copy_helper_block_e4_20s24s28b32r
 __68-[IBGVideoEncoder stopAutoRecordingWithAudio:withCompletionHandler:]_block_invoke.702
-__copy_helper_block_e4_20s24b28r
 __68-[IBGVideoEncoder stopAutoRecordingWithAudio:withCompletionHandler:]_block_invoke_4
 __68-[IBGVideoEncoder stopAutoRecordingWithAudio:withCompletionHandler:]_block_invoke_3
 __68-[IBGVideoEncoder stopAutoRecordingWithAudio:withCompletionHandler:]_block_invoke_2
@@ -5223,6 +5279,7 @@ _OBJC_IVAR_$_IBGCacheMigration._delegate
 /Users/distiller/project/Instabug/InstabugCore/Migrations/IBGCacheMigration.m
 InstabugCore/Migrations/IBGCacheMigration.m
 -[IBGSendingBugController initWithSnapshot:email:comment:number:reportType:attachments:showPostDialog:]
+-[IBGSendingBugController init]
 -[IBGSendingBugController reportType]
 -[IBGSendingBugController addExtrafieldsJSONToComment:]
 -[IBGSendingBugController createBug]
@@ -7178,7 +7235,7 @@ _OBJC_IVAR_$_IBGMagnifyControlPoints._initialFrame
 InstabugAnnotations/Annotations View/Control Points/IBGMagnifyControlPoints.m
 IBGCGPointGetDistance
 InstabugAnnotations/Helpers/IBGGeomtryUtilities.h
--[IBGSession initWithSessionNumber:]
+-[IBGSession init]
 -[IBGSession sessionDurationTillNow]
 -[IBGSession coderNameForSelector:]
 -[IBGSession requestParametersDict]
@@ -7194,7 +7251,6 @@ InstabugAnnotations/Helpers/IBGGeomtryUtilities.h
 -[IBGSession isEqual:]
 -[IBGSession date]
 -[IBGSession setDate:]
--[IBGSession sessionNumber]
 -[IBGSession sessionStartTimestamp]
 -[IBGSession setSessionStartTimestamp:]
 -[IBGSession userAttributes]
@@ -7209,7 +7265,6 @@ InstabugAnnotations/Helpers/IBGGeomtryUtilities.h
 __OBJC_PROTOCOL_$_IBGSessionRequestDelegate
 __OBJC_LABEL_PROTOCOL_$_IBGSessionRequestDelegate
 _OBJC_IVAR_$_IBGSession._date
-_OBJC_IVAR_$_IBGSession._sessionNumber
 _OBJC_IVAR_$_IBGSession._userAttributes
 _OBJC_IVAR_$_IBGSession._eventLogs
 _OBJC_IVAR_$_IBGSession._requestParameters
@@ -7386,8 +7441,6 @@ FeaturesRequest/Views/Cells/State cells/IBGEmptyTableViewCell.m
 +[IBGSurveys shouldShowWelcomeScreen]
 +[IBGSurveys setShouldShowWelcomeScreen:]
 ___41+[IBGSurveys setShouldShowWelcomeScreen:]_block_invoke
-+[IBGSurveys availableSurveys]
-___30+[IBGSurveys availableSurveys]_block_invoke
 +[IBGSurveys availableSurveysWithCompletionHandler:]
 +[IBGSurveys willShowSurveyHandler]
 +[IBGSurveys setWillShowSurveyHandler:]
@@ -7413,7 +7466,6 @@ InstabugSurveys/IBGSurveys.m
 __67+[IBGSurveys setThresholdForReshowingSurveyAfterDismiss:daysCount:]_block_invoke
 __34+[IBGSurveys showSurveyWithToken:]_block_invoke
 __35+[IBGSurveys showSurveyIfAvailable]_block_invoke
-__30+[IBGSurveys availableSurveys]_block_invoke
 __41+[IBGSurveys setShouldShowWelcomeScreen:]_block_invoke
 -[IBGAnnouncementsAssetStoreGroupObject init]
 -[IBGAnnouncementsAssetStoreGroupObject group]
@@ -8136,11 +8188,11 @@ ___32+[IBGEventLogger sharedInstance]_block_invoke
 -[IBGEventLogger addEventLogWithName:params:completionHandler:]
 -[IBGEventLogger addEventLogWithName:params:date:completionHandler:]
 ___68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke
-___68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke.39
-___68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke.72
+___68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke.37
+___68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke.70
 -[IBGEventLogger migrateEventsToUserWithUUID:completionHandler:]
 ___64-[IBGEventLogger migrateEventsToUserWithUUID:completionHandler:]_block_invoke
-___64-[IBGEventLogger migrateEventsToUserWithUUID:completionHandler:]_block_invoke.84
+___64-[IBGEventLogger migrateEventsToUserWithUUID:completionHandler:]_block_invoke.82
 -[IBGEventLogger migrateEventsFromUUID:toUUID:]
 ___47-[IBGEventLogger migrateEventsFromUUID:toUUID:]_block_invoke
 -[IBGEventLogger deleteEventsForUserWithUUID:]
@@ -8179,7 +8231,6 @@ ___block_descriptor_24_e4_20bs_e16_v8?0"NSError"4l
 ___block_descriptor_20_e25_8?0"IBGStateEventLog"4l
 ___block_literal_global.101
 ___block_descriptor_28_e4_20r24w_e5_v4?0l
-___block_descriptor_28_e4_20s24bs_e31_v8?0"NSManagedObjectContext"4l
 ___block_descriptor_32_e4_20s24r28w_e31_v8?0"NSManagedObjectContext"4l
 ___block_descriptor_28_e4_20bs24r_e5_v4?0l
 ___block_literal_global.128
@@ -8205,10 +8256,10 @@ __27-[IBGEventLogger stateLogs]_block_invoke_2
 __27-[IBGEventLogger stateLogs]_block_invoke
 __46-[IBGEventLogger deleteEventsForUserWithUUID:]_block_invoke
 __47-[IBGEventLogger migrateEventsFromUUID:toUUID:]_block_invoke
-__64-[IBGEventLogger migrateEventsToUserWithUUID:completionHandler:]_block_invoke.84
+__64-[IBGEventLogger migrateEventsToUserWithUUID:completionHandler:]_block_invoke.82
 __64-[IBGEventLogger migrateEventsToUserWithUUID:completionHandler:]_block_invoke
-__68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke.72
-__68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke.39
+__68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke.70
+__68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke.37
 __68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke
 __32+[IBGEventLogger sharedInstance]_block_invoke
 -[IBGAttachmentButton initWithButtonType:]
@@ -8337,11 +8388,10 @@ ___43-[InstabugSurveys initializationOperations]_block_invoke_2
 +[InstabugSurveys sharedInstance]
 ___33+[InstabugSurveys sharedInstance]_block_invoke
 +[InstabugSurveys safeSharedInstance]
--[InstabugSurveys availableSurveys]
-___35-[InstabugSurveys availableSurveys]_block_invoke
 -[InstabugSurveys availableSurveysWithCompletionHandler:]
 ___57-[InstabugSurveys availableSurveysWithCompletionHandler:]_block_invoke
 ___57-[InstabugSurveys availableSurveysWithCompletionHandler:]_block_invoke_2
+___57-[InstabugSurveys availableSurveysWithCompletionHandler:]_block_invoke_3
 -[InstabugSurveys setAutoShowingSurveysEnabled:]
 -[InstabugSurveys setSurveysEnabled:]
 -[InstabugSurveys showSurveyIfAvailable]
@@ -8353,7 +8403,7 @@ ___54-[InstabugSurveys showSurveysAnnouncementsIfAvailable]_block_invoke
 ___39-[InstabugSurveys showSurveyWithToken:]_block_invoke
 -[InstabugSurveys showSurveyWithIdentifier:]
 ___44-[InstabugSurveys showSurveyWithIdentifier:]_block_invoke
-___44-[InstabugSurveys showSurveyWithIdentifier:]_block_invoke.716
+___44-[InstabugSurveys showSurveyWithIdentifier:]_block_invoke.714
 -[InstabugSurveys hasRespondedToSurveyWithToken:]
 -[InstabugSurveys hasAvailableSurveys]
 -[InstabugSurveys setWillShowSurveyHandler:]
@@ -8460,9 +8510,7 @@ ___33-[InstabugSurveys addFeaturesKVO]_block_invoke
 -[InstabugSurveys setConditionsLoader:]
 -[InstabugSurveys .cxx_destruct]
 _InstabugSurveysInstance
-___block_literal_global.641
-___block_literal_global.653
-___block_descriptor_28_e4_20s24bs_e16_v8?0"NSArray"4l
+___block_literal_global.637
 ___block_descriptor_24_e4_20s_e23_c8?0"IBGSurveyModel"4l
 ___block_descriptor_45_e8_20s36s40s_e21_v8?0"NSDictionary"4l
 ___block_descriptor_41_e8_20s36s_e16_v8?0"NSArray"4l
@@ -8520,14 +8568,14 @@ __64-[InstabugSurveys showSurveyIfAvailableByTrigger:userEventName:]_block_invok
 __64-[InstabugSurveys showSurveyIfAvailableByTrigger:userEventName:]_block_invoke
 __52-[InstabugSurveys showSurveyAutomaticForNewSession:]_block_invoke
 __33-[InstabugSurveys presentSurvey:]_block_invoke
-__44-[InstabugSurveys showSurveyWithIdentifier:]_block_invoke.716
+__44-[InstabugSurveys showSurveyWithIdentifier:]_block_invoke.714
 __44-[InstabugSurveys showSurveyWithIdentifier:]_block_invoke
 __39-[InstabugSurveys showSurveyWithToken:]_block_invoke
 __54-[InstabugSurveys showSurveysAnnouncementsIfAvailable]_block_invoke
 __40-[InstabugSurveys showSurveyIfAvailable]_block_invoke
+__57-[InstabugSurveys availableSurveysWithCompletionHandler:]_block_invoke_3
 __57-[InstabugSurveys availableSurveysWithCompletionHandler:]_block_invoke_2
 __57-[InstabugSurveys availableSurveysWithCompletionHandler:]_block_invoke
-__35-[InstabugSurveys availableSurveys]_block_invoke
 __33+[InstabugSurveys sharedInstance]_block_invoke
 __43-[InstabugSurveys initializationOperations]_block_invoke_2
 __43-[InstabugSurveys initializationOperations]_block_invoke
@@ -9515,8 +9563,6 @@ ___44-[IBGSessionManager initializationOperation]_block_invoke_2
 -[IBGSessionManager sendPreviousSessionIfExistThenInitializeNewOne]
 -[IBGSessionManager initializeSession]
 -[IBGSessionManager registerNotifications]
--[IBGSessionManager sessionIndex]
--[IBGSessionManager setSessionIndex:]
 -[IBGSessionManager notifyAllListenersForSessionInitialization:]
 -[IBGSessionManager notifyAllListenersForSessionEnd]
 -[IBGSessionManager dealloc]
@@ -9684,6 +9730,9 @@ __42+[IBGPoliceSessionListener sharedInstance]_block_invoke
 ___22-[IBGSurveyModel save]_block_invoke
 -[IBGSurveyModel send]
 ___22-[IBGSurveyModel send]_block_invoke
+___22-[IBGSurveyModel send]_block_invoke_2
+___copy_helper_block_e4_20s24s28s32s36s40s
+___destroy_helper_block_e4_20s24s28s32s36s40s
 -[IBGSurveyModel executeWillSendSurveyAnswerHandler:]
 -[IBGSurveyModel surveyAnswerRequestDone:sentEvents:withContext:isSucess:]
 +[IBGSurveyModel isSurveyValid:]
@@ -9701,11 +9750,12 @@ ___22-[IBGSurveyModel send]_block_invoke
 -[IBGSurveyModel setNumberOfSessionsSinceDismiss:]
 -[IBGSurveyModel questionNavigator]
 -[IBGSurveyModel setQuestionNavigator:]
--[IBGSurveyModel interaction]
 +[IBGSurveyModel isSurvey:equalSurvey:]
+-[IBGSurveyModel interaction]
 -[IBGSurveyModel setInteraction:]
 -[IBGSurveyModel .cxx_destruct]
 ___block_descriptor_20_e23_8?0"IBGSurveyEvent"4l
+___block_descriptor_44_e4_20s24s28s32s36s40s_e28_v8?0"NSMutableDictionary"4l
 _OBJC_IVAR_$_IBGSurveyModel._questionNavigator
 _OBJC_IVAR_$_IBGSurveyModel._interaction
 _OBJC_IVAR_$_IBGSurveyModel.dismissDate
@@ -9716,6 +9766,10 @@ _OBJC_IVAR_$_IBGSurveyModel.dismissCount
 _OBJC_IVAR_$_IBGSurveyModel.numberOfSessionsSinceDismiss
 /Users/distiller/project/Instabug/InstabugSurveys/Models/IBGSurveyModel.m
 InstabugSurveys/Models/IBGSurveyModel.m
+InstabugSurveys/Models/IBGSurveyModel.h
+__destroy_helper_block_e4_20s24s28s32s36s40s
+__copy_helper_block_e4_20s24s28s32s36s40s
+__22-[IBGSurveyModel send]_block_invoke_2
 __22-[IBGSurveyModel send]_block_invoke
 __22-[IBGSurveyModel save]_block_invoke
 -[IBGPromptVC initWithContainer:controller:]
@@ -9871,6 +9925,9 @@ ___copy_helper_block_e4_20b24b28s32w
 -[IBGSurveysCoreDataController writeASyncAfterCoreDataIntialization:completionBlock:]
 ___85-[IBGSurveysCoreDataController writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke
 ___85-[IBGSurveysCoreDataController writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_2
+-[IBGSurveysCoreDataController readASyncAfterCoreDataIntialization:completionBlock:]
+___84-[IBGSurveysCoreDataController readASyncAfterCoreDataIntialization:completionBlock:]_block_invoke
+___84-[IBGSurveysCoreDataController readASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_2
 -[IBGSurveysCoreDataController writeSync:]
 ___42-[IBGSurveysCoreDataController writeSync:]_block_invoke
 ___copy_helper_block_e4_20b24s28w
@@ -9880,7 +9937,7 @@ ___37-[IBGSurveysCoreDataController clear]_block_invoke
 ___36-[IBGSurveysCoreDataController lock]_block_invoke
 -[IBGSurveysCoreDataController unlock]
 ___38-[IBGSurveysCoreDataController unlock]_block_invoke
-___38-[IBGSurveysCoreDataController unlock]_block_invoke.650
+___38-[IBGSurveysCoreDataController unlock]_block_invoke.652
 -[IBGSurveysCoreDataController writerContext]
 -[IBGSurveysCoreDataController saveToDisk:]
 -[IBGSurveysCoreDataController didSaveWriterModel:]
@@ -9905,8 +9962,9 @@ ___49-[IBGSurveysCoreDataController didSaveMainModel:]_block_invoke
 ___block_descriptor_32_e4_20bs24bs28w_e5_v4?0l
 ___block_descriptor_28_e4_20bs24w_e5_v4?0l
 ___block_descriptor_36_e4_20bs24bs28s32w_e5_v4?0l
+___block_descriptor_28_e4_20bs24s_e5_v4?0l
 ___block_descriptor_32_e4_20bs24s28w_e5_v4?0l
-___block_literal_global.651
+___block_literal_global.653
 __OBJC_PROTOCOL_$_IBGDALProtocol
 __OBJC_LABEL_PROTOCOL_$_IBGDALProtocol
 _OBJC_IVAR_$_IBGSurveysCoreDataController._isLocked
@@ -9920,12 +9978,14 @@ _OBJC_IVAR_$_IBGSurveysCoreDataController._storeURL
 InstabugSurveys/CoreData/IBGSurveysCoreDataController.m
 __49-[IBGSurveysCoreDataController didSaveMainModel:]_block_invoke
 __51-[IBGSurveysCoreDataController didSaveWriterModel:]_block_invoke
-__38-[IBGSurveysCoreDataController unlock]_block_invoke.650
+__38-[IBGSurveysCoreDataController unlock]_block_invoke.652
 __38-[IBGSurveysCoreDataController unlock]_block_invoke
 __36-[IBGSurveysCoreDataController lock]_block_invoke
 __37-[IBGSurveysCoreDataController clear]_block_invoke
 __copy_helper_block_e4_20b24s28w
 __42-[IBGSurveysCoreDataController writeSync:]_block_invoke
+__84-[IBGSurveysCoreDataController readASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_2
+__84-[IBGSurveysCoreDataController readASyncAfterCoreDataIntialization:completionBlock:]_block_invoke
 __85-[IBGSurveysCoreDataController writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_2
 __85-[IBGSurveysCoreDataController writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke
 __copy_helper_block_e4_20b24b28s32w
@@ -12663,6 +12723,7 @@ ___46+[IBGSurveysPersistenceManager sharedInstance]_block_invoke
 -[IBGSurveysPersistenceManager addSurveysSynchronouslyWithContext:]
 -[IBGSurveysPersistenceManager fetchSurveys]
 ___44-[IBGSurveysPersistenceManager fetchSurveys]_block_invoke
+___44-[IBGSurveysPersistenceManager fetchSurveys]_block_invoke_2
 -[IBGSurveysPersistenceManager clearSurveysObjects]
 +[IBGSurveysPersistenceManager destroy]
 -[IBGSurveysPersistenceManager dataLayerService]
@@ -12672,6 +12733,7 @@ _OBJC_IVAR_$_IBGSurveysPersistenceManager._dataLayerService
 /Users/distiller/project/Instabug/InstabugSurveys/Models/CoreData/IBGSurveysPersistenceManager.m
 InstabugSurveys/Models/CoreData/IBGSurveysPersistenceManager.m
 InstabugSurveys/Models/CoreData/IBGSurveysPersistenceManager.h
+__44-[IBGSurveysPersistenceManager fetchSurveys]_block_invoke_2
 __44-[IBGSurveysPersistenceManager fetchSurveys]_block_invoke
 __46+[IBGSurveysPersistenceManager sharedInstance]_block_invoke
 -[IBGBugCategoriesStore init]
@@ -13161,7 +13223,6 @@ __68+[IBGNetworkLoggerURLProtocolManager requestProgressBlockDictionary]_block_i
 -[IBGURLSessionDemux URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:]
 ___94-[IBGURLSessionDemux URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:]_block_invoke
 ___copy_helper_block_e4_20s24s28s32s36s40b
-___destroy_helper_block_e4_20s24s28s32s36s40s
 -[IBGURLSessionDemux URLSession:task:didReceiveChallenge:completionHandler:]
 ___76-[IBGURLSessionDemux URLSession:task:didReceiveChallenge:completionHandler:]_block_invoke
 ___copy_helper_block_e4_20s24s28s32s36b
@@ -13215,7 +13276,6 @@ __94-[IBGURLSessionDemux URLSession:task:didSendBodyData:totalBytesSent:totalByt
 __56-[IBGURLSessionDemux URLSession:task:needNewBodyStream:]_block_invoke
 __copy_helper_block_e4_20s24s28s32s36b
 __76-[IBGURLSessionDemux URLSession:task:didReceiveChallenge:completionHandler:]_block_invoke
-__destroy_helper_block_e4_20s24s28s32s36s40s
 __copy_helper_block_e4_20s24s28s32s36s40b
 __94-[IBGURLSessionDemux URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:]_block_invoke
 +[IBGLegacyUserAttributesLogger sharedInstance]
@@ -15653,9 +15713,10 @@ ___43-[IBGUserStepsLogger purgeOtherSessionLogs]_block_invoke
 -[IBGUserStepsLogger purgeUntrimmedLogs]
 ___40-[IBGUserStepsLogger purgeUntrimmedLogs]_block_invoke
 -[IBGUserStepsLogger updateTopViewWithDate:isValidWindow:topViewChanged:topViewName:]
+-[IBGUserStepsLogger addStep:WithCompletionHandler:]
+___52-[IBGUserStepsLogger addStep:WithCompletionHandler:]_block_invoke
+___52-[IBGUserStepsLogger addStep:WithCompletionHandler:]_block_invoke.702
 -[IBGUserStepsLogger addStep:]
-___30-[IBGUserStepsLogger addStep:]_block_invoke
-___30-[IBGUserStepsLogger addStep:]_block_invoke.702
 -[IBGUserStepsLogger purgeIfNeeded]
 -[IBGUserStepsLogger JSONuserSteps]
 ___35-[IBGUserStepsLogger JSONuserSteps]_block_invoke
@@ -15669,7 +15730,6 @@ ___31-[IBGUserStepsLogger userSteps]_block_invoke
 -[IBGUserStepsLogger setUserStepsCount:]
 -[IBGUserStepsLogger .cxx_destruct]
 ___block_literal_global.598
-___block_descriptor_24_e4_20w_e16_v8?0"NSError"4l
 ___block_descriptor_24_e4_20s_e37_"NSDictionary"8?0"IBGUserStepLog"4l
 _OBJC_IVAR_$_IBGUserStepsLogger._dataLayerService
 _OBJC_IVAR_$_IBGUserStepsLogger._userStepsCount
@@ -15678,8 +15738,8 @@ InstabugUserSteps/Logging/IBGUserStepsLogger.m
 __31-[IBGUserStepsLogger userSteps]_block_invoke
 __35-[IBGUserStepsLogger JSONuserSteps]_block_invoke_2
 __35-[IBGUserStepsLogger JSONuserSteps]_block_invoke
-__30-[IBGUserStepsLogger addStep:]_block_invoke.702
-__30-[IBGUserStepsLogger addStep:]_block_invoke
+__52-[IBGUserStepsLogger addStep:WithCompletionHandler:]_block_invoke.702
+__52-[IBGUserStepsLogger addStep:WithCompletionHandler:]_block_invoke
 __40-[IBGUserStepsLogger purgeUntrimmedLogs]_block_invoke
 __43-[IBGUserStepsLogger purgeOtherSessionLogs]_block_invoke
 __36-[IBGUserStepsLogger intializeSteps]_block_invoke
@@ -18414,12 +18474,12 @@ InstabugCoreDataLayer/IBGCoreDataLayer.h
 -[IBGDALService applicationProtectedDataWillBecomeUnavailable]
 -[IBGDALService clearCoreDataWithEntitiesName:completionHandler:]
 ___65-[IBGDALService clearCoreDataWithEntitiesName:completionHandler:]_block_invoke
-___65-[IBGDALService clearCoreDataWithEntitiesName:completionHandler:]_block_invoke_2
+___65-[IBGDALService clearCoreDataWithEntitiesName:completionHandler:]_block_invoke.39
 -[IBGDALService writeSync:]
 ___27-[IBGDALService writeSync:]_block_invoke
 -[IBGDALService writeASync:completionBlock:]
 ___44-[IBGDALService writeASync:completionBlock:]_block_invoke
-___44-[IBGDALService writeASync:completionBlock:]_block_invoke.59
+___44-[IBGDALService writeASync:completionBlock:]_block_invoke.60
 ___44-[IBGDALService writeASync:completionBlock:]_block_invoke_2
 ___copy_helper_block_e4_20b24s28s32s36b40w
 ___destroy_helper_block_e4_20s24s28s32s36s40w
@@ -18431,6 +18491,12 @@ ___copy_helper_block_e4_20s24b28b32s
 -[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]
 ___70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke
 ___70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_2
+___70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_3
+___70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_4
+___copy_helper_block_e4_20s24b28s32s36b40w
+-[IBGDALService readASyncAfterCoreDataIntialization:completionBlock:]
+___69-[IBGDALService readASyncAfterCoreDataIntialization:completionBlock:]_block_invoke
+___69-[IBGDALService readASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_2
 ___copy_helper_block_e4_20b24s28b
 ___copy_helper_block_e4_20s24b28b
 -[IBGDALService performBlockSyncWithoutSave:]
@@ -18447,9 +18513,9 @@ ___45-[IBGDALService performBlockSyncWithoutSave:]_block_invoke
 -[IBGDALService isApplicationDataProtected]
 -[IBGDALService setIsApplicationDataProtected:]
 -[IBGDALService .cxx_destruct]
-___block_descriptor_32_e4_20s24s28bs_e16_v8?0"NSError"4l
 ___block_descriptor_44_e4_20bs24s28s32s36bs40w_e5_v4?0l
 ___block_descriptor_36_e4_20s24bs28bs32s_e5_v4?0l
+___block_descriptor_44_e4_20s24bs28s32s36bs40w_e5_v4?0l
 ___block_descriptor_32_e4_20bs24s28bs_e5_v4?0l
 ___block_descriptor_32_e4_20s24bs28bs_e5_v4?0l
 _OBJC_IVAR_$_IBGDALService._isApplicationDataProtected
@@ -18462,6 +18528,11 @@ InstabugCoreDataLayer/IBGDALService.m
 __45-[IBGDALService performBlockSyncWithoutSave:]_block_invoke
 __copy_helper_block_e4_20s24b28b
 __copy_helper_block_e4_20b24s28b
+__69-[IBGDALService readASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_2
+__69-[IBGDALService readASyncAfterCoreDataIntialization:completionBlock:]_block_invoke
+__copy_helper_block_e4_20s24b28s32s36b40w
+__70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_4
+__70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_3
 __70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke_2
 __70-[IBGDALService writeASyncAfterCoreDataIntialization:completionBlock:]_block_invoke
 __copy_helper_block_e4_20s24b28b32s
@@ -18470,10 +18541,10 @@ __26-[IBGDALService readSync:]_block_invoke
 __destroy_helper_block_e4_20s24s28s32s36s40w
 __copy_helper_block_e4_20b24s28s32s36b40w
 __44-[IBGDALService writeASync:completionBlock:]_block_invoke_2
-__44-[IBGDALService writeASync:completionBlock:]_block_invoke.59
+__44-[IBGDALService writeASync:completionBlock:]_block_invoke.60
 __44-[IBGDALService writeASync:completionBlock:]_block_invoke
 __27-[IBGDALService writeSync:]_block_invoke
-__65-[IBGDALService clearCoreDataWithEntitiesName:completionHandler:]_block_invoke_2
+__65-[IBGDALService clearCoreDataWithEntitiesName:completionHandler:]_block_invoke.39
 __65-[IBGDALService clearCoreDataWithEntitiesName:completionHandler:]_block_invoke
 -[IBGManagedObjectContextController initWithPersistanceStore:appStateReactor:]
 -[IBGManagedObjectContextController registerNotification]
