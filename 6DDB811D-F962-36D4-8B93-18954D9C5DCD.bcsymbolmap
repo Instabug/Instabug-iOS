@@ -1010,7 +1010,6 @@ InstabugReporting/Controllers/IBGPromptController.m
 -[IBGVideoAttachmentView didClickContentInChatWithTitle:]
 -[IBGVideoAttachmentView applyLayoutAttributes:]
 -[IBGVideoAttachmentView setAttachmentObject:]
--[IBGVideoAttachmentView didDismiss]
 -[IBGVideoAttachmentView layoutAttributes]
 -[IBGVideoAttachmentView setLayoutAttributes:]
 -[IBGVideoAttachmentView stateHandler]
@@ -1029,8 +1028,6 @@ _OBJC_IVAR_$_IBGVideoAttachmentView._stateHandler
 _OBJC_IVAR_$_IBGVideoAttachmentView._recording
 _OBJC_IVAR_$_IBGVideoAttachmentView._chatTitle
 _OBJC_IVAR_$_IBGVideoAttachmentView._perviewView
-__OBJC_PROTOCOL_$_IBGVideoPlayerDelegate
-__OBJC_LABEL_PROTOCOL_$_IBGVideoPlayerDelegate
 __OBJC_PROTOCOL_$_IBGAttachmentStateHandlerView
 __OBJC_LABEL_PROTOCOL_$_IBGAttachmentStateHandlerView
 __OBJC_PROTOCOL_$_IBGMessageContentHandler
@@ -1737,13 +1734,18 @@ __68-[IBGFloatingButton animateToEdgesWithRespectToVerticalConstraints:]_block_i
 -[IBGAppStoreURLLoader shouldLoad]
 -[IBGAppStoreURLLoader appStoreURL]
 -[IBGAppStoreURLLoader setCachedAppStoreURL:]
+-[IBGAppStoreURLLoader writeReviewAppStoreURLBySDK]
+-[IBGAppStoreURLLoader appStoreURLBySDK]
+-[IBGAppStoreURLLoader setAppStoreURLBySDK:]
 -[IBGAppStoreURLLoader cachedAppStoreURL]
 -[IBGAppStoreURLLoader .cxx_destruct]
 __OBJC_PROTOCOL_$_IBGAppStoreURLRequestDelegate
 __OBJC_LABEL_PROTOCOL_$_IBGAppStoreURLRequestDelegate
+_OBJC_IVAR_$_IBGAppStoreURLLoader._appStoreURLBySDK
 _OBJC_IVAR_$_IBGAppStoreURLLoader._cachedAppStoreURL
 /Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/Managers/IBGAppStoreURLLoader.m
 InstabugSurveys/Managers/IBGAppStoreURLLoader.m
+InstabugSurveys/Managers/IBGAppStoreURLLoader.h
 -[IBGAttachment coderNameForSelector:]
 -[IBGAttachment fetchAttachmentsWithCompletionHandler:]
 -[IBGAttachment dictionaryValue]
@@ -4036,18 +4038,7 @@ __72-[IBGSnapshotManager takePostSendingSnapshotWithSnapshot:Synchronously:]_blo
 __62-[IBGSnapshotManager takePreSendingSnapshotWithConfiguration:]_block_invoke
 __67-[IBGSnapshotManager surveysResponseSnapshotWithCompletionHandler:]_block_invoke
 __36+[IBGSnapshotManager sharedInstance]_block_invoke
--[IBGVideoPlayer initWithDelegate:]
 -[IBGVideoPlayer playVideo:withTitle:]
--[IBGVideoPlayer doneTapped]
--[IBGVideoPlayer playbackView]
--[IBGVideoPlayer setPlaybackView:]
--[IBGVideoPlayer delegate]
--[IBGVideoPlayer setDelegate:]
--[IBGVideoPlayer .cxx_destruct]
-__OBJC_PROTOCOL_$_IBGVideoPlaybackViewDelegate
-__OBJC_LABEL_PROTOCOL_$_IBGVideoPlaybackViewDelegate
-_OBJC_IVAR_$_IBGVideoPlayer._playbackView
-_OBJC_IVAR_$_IBGVideoPlayer._delegate
 /Users/khaledElMorabea/Documents/ios/Instabug/InstabugCore/Helpers/Recorders and Players/IBGVideoPlayer.m
 InstabugCore/Helpers/Recorders and Players/IBGVideoPlayer.m
 -[IBGFeaturesPresenter init]
@@ -6251,29 +6242,6 @@ InstabugChats/Views/Chat Collection View/Layout Helpers/IBGScrollingDownHandler.
 InstabugChats/Views/Chat Collection View/Layout Helpers/IBGScrollingDownHandler.h
 __53-[IBGScrollingDownHandler addedUpdatedIndexPaths:in:]_block_invoke_2
 __53-[IBGScrollingDownHandler addedUpdatedIndexPaths:in:]_block_invoke
--[IBGVideoPlaybackViewController awakeFromNib]
--[IBGVideoPlaybackViewController initWithTitle:player:delegate:]
--[IBGVideoPlaybackViewController viewDidLoad]
--[IBGVideoPlaybackViewController addNaviagtionBarButtons]
--[IBGVideoPlaybackViewController viewDidRotate]
--[IBGVideoPlaybackViewController getFullscreenWithoutNavigationBarRect]
--[IBGVideoPlaybackViewController dealloc]
--[IBGVideoPlaybackViewController doneButtonTapped]
--[IBGVideoPlaybackViewController playView]
--[IBGVideoPlaybackViewController setPlayView:]
--[IBGVideoPlaybackViewController player]
--[IBGVideoPlaybackViewController setPlayer:]
--[IBGVideoPlaybackViewController delegate]
--[IBGVideoPlaybackViewController setDelegate:]
--[IBGVideoPlaybackViewController playerLayer]
--[IBGVideoPlaybackViewController setPlayerLayer:]
--[IBGVideoPlaybackViewController .cxx_destruct]
-_OBJC_IVAR_$_IBGVideoPlaybackViewController._playView
-_OBJC_IVAR_$_IBGVideoPlaybackViewController._player
-_OBJC_IVAR_$_IBGVideoPlaybackViewController._delegate
-_OBJC_IVAR_$_IBGVideoPlaybackViewController._playerLayer
-/Users/khaledElMorabea/Documents/ios/Instabug/InstabugCore/View Controllers/IBGVideoPlaybackViewController.m
-InstabugCore/View Controllers/IBGVideoPlaybackViewController.m
 -[IBGShapeDetectionOverlay initWithOriginalImage:detectedImage:delegate:]
 -[IBGShapeDetectionOverlay overlayBackgroundView]
 -[IBGShapeDetectionOverlay originalShapeButton]
@@ -7512,12 +7480,15 @@ ___34+[IBGSurveys showSurveyWithToken:]_block_invoke
 ___67+[IBGSurveys setThresholdForReshowingSurveyAfterDismiss:daysCount:]_block_invoke
 +[IBGSurveys willSendSurveyAnswerHandler]
 +[IBGSurveys setWillSendSurveyAnswerHandler:]
++[IBGSurveys appStoreURL]
++[IBGSurveys setAppStoreURL:]
 __autoShowingEnabled
 __shouldShowWelcomeScreen
 __willShowSurveyHandler
 __didDismissSurveyHandler
 ___block_descriptor_56_e5_v8?0l
 __willSendSurveyAnswerHandler
+__appStoreURL
 /Users/khaledElMorabea/Documents/ios/Instabug/InstabugSurveys/IBGSurveys.m
 InstabugSurveys/IBGSurveys.m
 __67+[IBGSurveys setThresholdForReshowingSurveyAfterDismiss:daysCount:]_block_invoke
@@ -8469,6 +8440,7 @@ ___44-[InstabugSurveys showSurveyWithIdentifier:]_block_invoke.714
 -[InstabugSurveys setDidDismissSurveyHandler:]
 -[InstabugSurveys setThresholdForReshowingSurveyAfterDismiss:daysCount:]
 -[InstabugSurveys setShouldShowSurveysWelcomeScreen:]
+-[InstabugSurveys setAppStoreURLBySDK:]
 -[InstabugSurveys shouldShowScheduledNewSessionSurvey:]
 -[InstabugSurveys showScheduledSurveyNow:]
 -[InstabugSurveys presentSurvey:]
@@ -10125,16 +10097,12 @@ InstabugCore/Helpers/UINavigationBar+Instabug.m
 -[IBGScreenshotVC viewDidLoad]
 -[IBGScreenshotVC viewDidAppear:]
 -[IBGScreenshotVC viewWillAppear:]
--[IBGScreenshotVC viewDidDisappear:]
 -[IBGScreenshotVC addNaviagtionBarButtons]
 -[IBGScreenshotVC imageNameFromNavigationButtonType:]
--[IBGScreenshotVC registerNotification]
--[IBGScreenshotVC unreigsterNotification]
--[IBGScreenshotVC dealloc]
 -[IBGScreenshotVC shouldFlipImageForRTLLayoutDirection:]
 -[IBGScreenshotVC generateColors]
--[IBGScreenshotVC adjustScreenshotAnnotationsImage]
-___51-[IBGScreenshotVC adjustScreenshotAnnotationsImage]_block_invoke
+-[IBGScreenshotVC traitCollectionDidChange:]
+___44-[IBGScreenshotVC traitCollectionDidChange:]_block_invoke
 -[IBGScreenshotVC isColorSelectorPresented]
 -[IBGScreenshotVC toggleColorSelectorView]
 -[IBGScreenshotVC presentColorSelectorView]
@@ -10282,7 +10250,7 @@ InstabugCore/View Controllers/IBGScreenshotVC.h
 InstabugAnnotations/IBGAnnotator.h
 __43-[IBGScreenshotVC dismissColorSelectorView]_block_invoke
 __43-[IBGScreenshotVC presentColorSelectorView]_block_invoke
-__51-[IBGScreenshotVC adjustScreenshotAnnotationsImage]_block_invoke
+__44-[IBGScreenshotVC traitCollectionDidChange:]_block_invoke
 -[IBGStarRatingSurveyView initWithDelegate:]
 -[IBGStarRatingSurveyView updateConstraints]
 -[IBGStarRatingSurveyView setRating:]
@@ -10370,19 +10338,18 @@ ___42-[IBGBugVC alertWithTitle:message:action:]_block_invoke
 -[IBGBugVC resetViewForNoObstruction]
 -[IBGBugVC attachmentAnalyticsType:]
 -[IBGBugVC inputViewBecomeFirstResponsderAndAddAttachment:]
--[IBGBugVC didDismiss]
 -[IBGBugVC videoPlayer]
 -[IBGBugVC setMainScreenshot:]
 -[IBGBugVC metadataVC]
 -[IBGBugVC didFinishEncoding:filePath:]
 ___39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke
-___39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke.1125
+___39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke.1123
 ___39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke_2
 -[IBGBugVC attachmentsToolbarItems]
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1143
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1144
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1141
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1142
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_3
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_4
 -[IBGBugVC bottomToolbarView]
@@ -10441,12 +10408,12 @@ InstabugBugReporting/View Controllers/IBGBugVC.m
 InstabugBugReporting/View Controllers/IBGBugVC.h
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_4
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_3
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1144
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1143
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1142
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1141
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke
 __39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke_2
-__39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke.1125
+__39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke.1123
 __39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke
 __42-[IBGBugVC alertWithTitle:message:action:]_block_invoke
 __copy_helper_block_e8_32s40s48s56s64w
@@ -15484,8 +15451,8 @@ InstabugUserSteps/Listeners/IBGLiteLabel.h
 -[IBGUserStepsListener initWithDelegate:]
 -[IBGUserStepsListener startUserStepsLogger]
 ___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke
-___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.624
-___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.634
+___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.622
+___44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.632
 -[IBGUserStepsListener registerNotifications]
 -[IBGUserStepsListener unRegisterNotifications]
 -[IBGUserStepsListener sendStatusBarUpdateNotification]
@@ -15511,7 +15478,6 @@ ___37-[IBGUserStepsListener didUIChanged:]_block_invoke
 -[IBGUserStepsListener addReproStepForView:]
 -[IBGUserStepsListener addEvent:]
 -[IBGUserStepsListener windowFromEvent:]
--[IBGUserStepsListener updateTopViewWithIsValidWindow:eventName:]
 -[IBGUserStepsListener addEdittingEvent:edittingEventType:]
 -[IBGUserStepsListener topView]
 -[IBGUserStepsListener setTopView:]
@@ -15549,8 +15515,8 @@ _OBJC_IVAR_$_IBGUserStepsListener._activeTopViewsOfActiveWindows
 InstabugUserSteps/Listeners/IBGUserStepsListener.m
 InstabugUserSteps/Listeners/IBGUserStepsListenerProtocol.h
 __37-[IBGUserStepsListener didUIChanged:]_block_invoke
-__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.634
-__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.624
+__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.632
+__44-[IBGUserStepsListener startUserStepsLogger]_block_invoke.622
 __44-[IBGUserStepsListener startUserStepsLogger]_block_invoke
 -[IBGUserStepBuilder init]
 -[IBGUserStepBuilder userStepMessage]
@@ -16574,7 +16540,7 @@ InstabugUtilities/ZipZap/IBGZZStoreOutputStream.m
 InstabugUtilities/ZipZap/IBGZZStoreOutputStream.h
 -[UIView(IBGProtect) setIbg_visibleFrame:]
 -[UIView(IBGProtect) ibg_visibleFrame]
--[UIView(IBGProtect) protectViewinContext:window:]
+-[UIView(IBGProtect) protectViewinContext:window:horizontalOffset:]
 -[UIView(IBGProtect) adjustVisibleFrameInWindow:]
 -[UIView(IBGProtect) frameToBlockInWindow:]
 /Users/khaledElMorabea/Documents/ios/Instabug/InstabugUtilities/Categories/UIView/UIView+IBGProtect.m
@@ -17548,12 +17514,12 @@ __35+[IBGPoliceDefaults sharedInstance]_block_invoke
 +[IBGPoliceLogsSender sharedInstance]
 ___37+[IBGPoliceLogsSender sharedInstance]_block_invoke
 -[IBGPoliceLogsSender initWithAPIWrapper:diskManager:]
--[IBGPoliceLogsSender sendLogsIfNeededForEmail:UUID:]
-___53-[IBGPoliceLogsSender sendLogsIfNeededForEmail:UUID:]_block_invoke
--[IBGPoliceLogsSender sendLogsForCredentials:]
-___46-[IBGPoliceLogsSender sendLogsForCredentials:]_block_invoke
-___46-[IBGPoliceLogsSender sendLogsForCredentials:]_block_invoke_2
-___46-[IBGPoliceLogsSender sendLogsForCredentials:]_block_invoke.73
+-[IBGPoliceLogsSender sendLogsIfNeededForEmail:UUID:completion:]
+___64-[IBGPoliceLogsSender sendLogsIfNeededForEmail:UUID:completion:]_block_invoke
+-[IBGPoliceLogsSender sendLogsForCredentials:completion:]
+___57-[IBGPoliceLogsSender sendLogsForCredentials:completion:]_block_invoke
+___57-[IBGPoliceLogsSender sendLogsForCredentials:completion:]_block_invoke_2
+___57-[IBGPoliceLogsSender sendLogsForCredentials:completion:]_block_invoke.73
 -[IBGPoliceLogsSender checkIfEmailIsTargeted:]
 -[IBGPoliceLogsSender checkIfUUIDIsTargeted:]
 -[IBGPoliceLogsSender shouldUploadLogs]
@@ -17569,7 +17535,6 @@ ___46-[IBGPoliceLogsSender sendLogsForCredentials:]_block_invoke.73
 -[IBGPoliceLogsSender setRequestsGroup:]
 -[IBGPoliceLogsSender .cxx_destruct]
 ___block_descriptor_48_e8_32s40s_e22_v16?0"NSDictionary"8l
-___block_literal_global.74
 _OBJC_IVAR_$_IBGPoliceLogsSender._apiWrapper
 _OBJC_IVAR_$_IBGPoliceLogsSender._diskManager
 _OBJC_IVAR_$_IBGPoliceLogsSender._sendingQueue
@@ -17577,10 +17542,10 @@ _OBJC_IVAR_$_IBGPoliceLogsSender._requestsQueue
 _OBJC_IVAR_$_IBGPoliceLogsSender._requestsGroup
 /Users/khaledElMorabea/Documents/ios/Instabug/InstabugPolice/Logging/IBGPoliceLogsSender.m
 InstabugPolice/Logging/IBGPoliceLogsSender.m
-__46-[IBGPoliceLogsSender sendLogsForCredentials:]_block_invoke.73
-__46-[IBGPoliceLogsSender sendLogsForCredentials:]_block_invoke_2
-__46-[IBGPoliceLogsSender sendLogsForCredentials:]_block_invoke
-__53-[IBGPoliceLogsSender sendLogsIfNeededForEmail:UUID:]_block_invoke
+__57-[IBGPoliceLogsSender sendLogsForCredentials:completion:]_block_invoke.73
+__57-[IBGPoliceLogsSender sendLogsForCredentials:completion:]_block_invoke_2
+__57-[IBGPoliceLogsSender sendLogsForCredentials:completion:]_block_invoke
+__64-[IBGPoliceLogsSender sendLogsIfNeededForEmail:UUID:completion:]_block_invoke
 __37+[IBGPoliceLogsSender sharedInstance]_block_invoke
 +[IBGPoliceLogsRetentionManager sharedInstance]
 ___47+[IBGPoliceLogsRetentionManager sharedInstance]_block_invoke
@@ -17746,8 +17711,8 @@ InstabugPolice/Network/IBGPoliceCredentials.h
 +[IBGPoliceDiskManager sharedInstance]
 ___38+[IBGPoliceDiskManager sharedInstance]_block_invoke
 -[IBGPoliceDiskManager init]
--[IBGPoliceDiskManager writeLine:]
-___34-[IBGPoliceDiskManager writeLine:]_block_invoke
+-[IBGPoliceDiskManager writeLine:completion:]
+___45-[IBGPoliceDiskManager writeLine:completion:]_block_invoke
 -[IBGPoliceDiskManager readFileAtPath:]
 ___39-[IBGPoliceDiskManager readFileAtPath:]_block_invoke
 -[IBGPoliceDiskManager deleteFileAtPath:]
@@ -17770,7 +17735,7 @@ InstabugPolice/Managers/IBGPoliceDiskManager.m
 InstabugPolice/Managers/IBGPoliceDiskManager.h
 __41-[IBGPoliceDiskManager deleteFileAtPath:]_block_invoke
 __39-[IBGPoliceDiskManager readFileAtPath:]_block_invoke
-__34-[IBGPoliceDiskManager writeLine:]_block_invoke
+__45-[IBGPoliceDiskManager writeLine:completion:]_block_invoke
 __38+[IBGPoliceDiskManager sharedInstance]_block_invoke
 +[IBGPoliceLogFormatter sharedInstance]
 ___39+[IBGPoliceLogFormatter sharedInstance]_block_invoke
@@ -18158,7 +18123,7 @@ InstabugAssets/Categories/UIImageView+IBGAssetsLoader.m
 __54-[UIImageView(IBGAssetsLoader) ibg_setImage:animated:]_block_invoke
 __104-[UIImageView(IBGAssetsLoader) ibg_setImageWithURL:placeholder:roundCorners:animated:completionHandler:]_block_invoke
 -[IBGScreenshotGestureAnnotator init]
--[IBGScreenshotGestureAnnotator annotateFrameInContext:withTouchEvent:]
+-[IBGScreenshotGestureAnnotator annotateFrameInContext:withTouchEvent:offset:]
 -[IBGScreenshotGestureAnnotator getLastTouchLocationsFrom:]
 -[IBGScreenshotGestureAnnotator delegate]
 -[IBGScreenshotGestureAnnotator setDelegate:]
@@ -18206,7 +18171,8 @@ ___37+[InstabugScreenCapturer getInstance]_block_invoke
 -[InstabugScreenCapturer init]
 -[InstabugScreenCapturer takeScreenshotWithAnnotator:shouldUseRenderInContext:lastTouchEvent:]
 -[InstabugScreenCapturer imageFromCompletionHandler:]
--[InstabugScreenCapturer takeScreenshotInContext:shouldUseRenderInContext:]
+-[InstabugScreenCapturer takeScreenshotInContext:shouldUseRenderInContext:annotator:lastTouchEvent:]
+-[InstabugScreenCapturer windowFromTouchEvent:]
 -[InstabugScreenCapturer screenWindows]
 -[InstabugScreenCapturer moveKeyWindowDown:]
 -[InstabugScreenCapturer deleteNotValidWindows:]
@@ -18385,9 +18351,6 @@ _OBJC_IVAR_$_IBGOrientationStateReader._orientation
 /Users/khaledElMorabea/Documents/ios/Instabug/InstabugDeviceState/Readers/IBGOrientationStateReader.m
 InstabugDeviceState/Readers/IBGOrientationStateReader.m
 __47-[IBGOrientationStateReader captureOrientation]_block_invoke
-+[IBGWindowSceneStatus ibg_isWidowSceneForeground:]
-/Users/khaledElMorabea/Documents/ios/Instabug/InstabugDeviceState/IBGWindowSceneStatus.m
-InstabugDeviceState/IBGWindowSceneStatus.m
 -[IBGConnectionStateReader networkInfo]
 ___39-[IBGConnectionStateReader networkInfo]_block_invoke
 -[IBGConnectionStateReader isSimCardAvailable]
@@ -18448,7 +18411,7 @@ report_memory
 ___32+[IBGWindowState sharedInstance]_block_invoke
 -[IBGWindowState currentView]
 ___29-[IBGWindowState currentView]_block_invoke
--[IBGWindowState loadCurrentViewOf:]
+-[IBGWindowState loadedCurrentViewOfWindow:]
 -[IBGWindowState applicationWindow]
 ___35-[IBGWindowState applicationWindow]_block_invoke
 -[IBGWindowState loadApplicationWindow]
@@ -18486,7 +18449,7 @@ ___37+[IBGWindowSceneState sharedInstance]_block_invoke
 -[IBGWindowSceneState notifySceneDidEnterBackground:]
 -[IBGWindowSceneState activeWindowScenes]
 -[IBGWindowSceneState activeWindows]
-+[IBGWindowSceneState ibg_windowSceneIfAvailableOfState:]
++[IBGWindowSceneState activeWindowSceneIfAvailable]
 +[IBGWindowSceneState isValidWindowScene:]
 -[IBGWindowSceneState setCurrentWindowScene:]
 -[IBGWindowSceneState sdkWindowScene]
@@ -18510,6 +18473,9 @@ __37+[IBGWindowSceneState sharedInstance]_block_invoke
 -[IBGBatteryStateReader isBatteryPlugged]
 /Users/khaledElMorabea/Documents/ios/Instabug/InstabugDeviceState/Readers/IBGBatteryStateReader.m
 InstabugDeviceState/Readers/IBGBatteryStateReader.m
+-[UIWindowScene(IBGSceneStatus) ibg_isWidowSceneForeground]
+/Users/khaledElMorabea/Documents/ios/Instabug/InstabugDeviceState/UIWindowScene+IBGSceneStatus.m
+InstabugDeviceState/UIWindowScene+IBGSceneStatus.m
 -[IBGAbstractPersistenceManager storeURL]
 -[IBGAbstractPersistenceManager clearWithCompletionHandler:]
 ___60-[IBGAbstractPersistenceManager clearWithCompletionHandler:]_block_invoke

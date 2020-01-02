@@ -95,4 +95,12 @@ NS_SWIFT_NAME(Surveys)
 + (BOOL)hasRespondedToSurveyWithToken:(NSString *)surveyToken;
 
 
+/**
+ @brief Sets url for the published iOS app on AppStore.
+ 
+ @discussion You can redirect NPS Surveys or AppRating Surveys to AppStore to let users rate your app on AppStore itself.
+ 
+ */
+@property (class, atomic, strong) NSString *appStoreURL;
+
 @end
