@@ -212,12 +212,10 @@ SWIFT_CLASS("_TtC14InstabugStatic15IBGCrashManager")
 @interface IBGCrashManager : NSObject
 @property (nonatomic, copy) NSArray<IBGOperation *> * _Nonnull initializationOperations;
 @property (nonatomic, readonly) BOOL hasPendingCrashReport;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IBGCrashManager * _Nonnull shared;)
-+ (IBGCrashManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
++ (IBGCrashManager * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic) BOOL shouldRunMigration;
 @property (nonatomic, strong) IBGPLCrashReporter * _Nullable crashReporter;
 - (nonnull instancetype)initWithDeviceState:(IBGDeviceState * _Nonnull)deviceState OBJC_DESIGNATED_INITIALIZER;
-+ (void)destroy;
 - (void)reportExceptionWith:(NSException * _Nonnull)exception;
 - (void)reportErrorWith:(NSError * _Nonnull)error;
 - (void)reportCrashWithStackTrace:(NSString * _Nonnull)stackTrace handled:(BOOL)handled;
@@ -226,19 +224,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IBGCrashMana
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class IBGCrash;
 
-@interface IBGCrashManager (SWIFT_EXTENSION(InstabugStatic))
-- (IBGCrash * _Nullable)getCrashFromTempCrashCache SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-
-
-SWIFT_CLASS("_TtC14InstabugStatic28IBGCrossPlatformCrashManager")
-@interface IBGCrossPlatformCrashManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 
@@ -462,12 +448,10 @@ SWIFT_CLASS("_TtC14InstabugStatic15IBGCrashManager")
 @interface IBGCrashManager : NSObject
 @property (nonatomic, copy) NSArray<IBGOperation *> * _Nonnull initializationOperations;
 @property (nonatomic, readonly) BOOL hasPendingCrashReport;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IBGCrashManager * _Nonnull shared;)
-+ (IBGCrashManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
++ (IBGCrashManager * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic) BOOL shouldRunMigration;
 @property (nonatomic, strong) IBGPLCrashReporter * _Nullable crashReporter;
 - (nonnull instancetype)initWithDeviceState:(IBGDeviceState * _Nonnull)deviceState OBJC_DESIGNATED_INITIALIZER;
-+ (void)destroy;
 - (void)reportExceptionWith:(NSException * _Nonnull)exception;
 - (void)reportErrorWith:(NSError * _Nonnull)error;
 - (void)reportCrashWithStackTrace:(NSString * _Nonnull)stackTrace handled:(BOOL)handled;
@@ -476,19 +460,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IBGCrashMana
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class IBGCrash;
 
-@interface IBGCrashManager (SWIFT_EXTENSION(InstabugStatic))
-- (IBGCrash * _Nullable)getCrashFromTempCrashCache SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-
-
-SWIFT_CLASS("_TtC14InstabugStatic28IBGCrossPlatformCrashManager")
-@interface IBGCrossPlatformCrashManager : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 
