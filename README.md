@@ -61,7 +61,7 @@ If that's the case, do the following steps:
 
 - Drag the newly created Copy Files phase above Compile Sources phase
 
-- In the new Copy Files phase, select Frameworks for Destination drop down.
+- In the new Copy Files phase, select Frameworks from Destination dropdown.
 
 - Leave subpath blank. Let be default Copy only when installing.
 
