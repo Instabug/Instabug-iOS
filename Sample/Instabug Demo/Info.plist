@@ -27,7 +27,7 @@
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Used for video recording</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Used for attach images from gallery</string>
+	<string>Used for attaching images from gallery</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
