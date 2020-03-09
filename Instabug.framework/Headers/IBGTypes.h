@@ -403,3 +403,15 @@ typedef NS_ENUM(NSInteger, IBGPlatform) {
     IBGPlatformCordova,
     IBGPlatformXamarin
 };
+
+/**
+User's touch event types
+*/
+typedef NS_ENUM(NSInteger, IBGUIEventType) {
+    IBGUIEventTypeTap,
+    IBGUIEventTypeForceTouch,
+    IBGUIEventTypeLongPress,
+    IBGUIEventTypePinch,
+    IBGUIEventTypeSwipe,
+    IBGUIEventTypeScroll
+};
