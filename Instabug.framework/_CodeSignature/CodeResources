@@ -6,31 +6,31 @@
 	<dict>
 		<key>Headers/IBGBugReporting.h</key>
 		<data>
-		A2egP1Z/FsL3/GXH0Vcjoyie08I=
+		pM5rYOZP1Xs7MNwa7cbAfJ9qjJA=
 		</data>
 		<key>Headers/IBGChats.h</key>
 		<data>
-		xnV48ix6SWxIEmuTCx8+tm9INZU=
+		JTj8dSvrScENbbn7xio4nX/TwVY=
 		</data>
 		<key>Headers/IBGCrashReporting.h</key>
 		<data>
-		vDIGet/xhS01elb6ZGQB/dWyVi4=
+		eZBA9xp4TuhYpjxIOb75rc+mF7k=
 		</data>
 		<key>Headers/IBGFeatureRequests.h</key>
 		<data>
-		8wW9jut+25CGWTPwf4va1fnQCtY=
+		CoVdgTbWKfS1v1OBYqTG8q0NbwQ=
 		</data>
 		<key>Headers/IBGLog.h</key>
 		<data>
-		H8oM62RRFieHvHh2wggaKtK3Q/k=
+		Xj6edmhrIJESbD/hbM96V1H914o=
 		</data>
 		<key>Headers/IBGNetworkLogger.h</key>
 		<data>
-		PM/qfp8dRei7Az2pcqCzH1MZcUg=
+		JR4WeO1E+e0j9QpI4xHbh+ztyVc=
 		</data>
 		<key>Headers/IBGReplies.h</key>
 		<data>
-		qntqy03xcFyV8UYe1TZBm39MtPM=
+		JJMJEX5LLXUCNc/65TUYPKmnhIM=
 		</data>
 		<key>Headers/IBGReport.h</key>
 		<data>
@@ -38,31 +38,31 @@
 		</data>
 		<key>Headers/IBGSurvey.h</key>
 		<data>
-		RAhXEq1fgjXtsjaRt+YGFAmhl30=
+		MiP6F/XNF95BdmBkZmxEiCJ4lvU=
 		</data>
 		<key>Headers/IBGSurveys.h</key>
 		<data>
-		YmCCr+BN5HH6KkMB+m84NdMuzYU=
+		5DatM/UWbQUta8KvwErh1v/pF74=
 		</data>
 		<key>Headers/IBGTypes.h</key>
 		<data>
-		a4YjzwzEBL+c7N9Ko8qyiJ8cDXE=
+		7VNX2cYl/+8vqxjoaSUhIhoGa10=
 		</data>
 		<key>Headers/Instabug-Swift.h</key>
 		<data>
-		15fDhQoBLC8UXePUm+/G978dCC8=
+		rxHSzFiFexugq6c5VAXqPpVe378=
 		</data>
 		<key>Headers/Instabug.h</key>
 		<data>
-		XC6kM4Q9fJC6qbF3S3CmAbxU1Po=
+		84mJhTQDQXWsC+w8/gUemSjDek8=
 		</data>
 		<key>Headers/InstabugCore.h</key>
 		<data>
-		AmpNz20TB7krtcmwy+/6F0/wB40=
+		w6OzvG/PiqcIcPHt1fYMmcH2H80=
 		</data>
 		<key>Headers/InstabugStatic-Swift.h</key>
 		<data>
-		miBfd4MYjOvVOqFQIl7jgDIABdk=
+		a8a9zxrQy1H4De79TgpIkU6JuxA=
 		</data>
 		<key>Headers/UIView+Instabug.h</key>
 		<data>
@@ -70,139 +70,87 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MykuSTuQ3x5UAJEom5WrFuuKXTQ=
+		lvQTf1e0wszXiDj+iPGLq/U1vmI=
 		</data>
 		<key>InstabugResources.bundle/Assets.car</key>
 		<data>
-		NIk9ECzMBA9DTTaiuASl8rfsiTw=
+		uwYvK6MuNxtN1WBfVgSUXna996M=
 		</data>
 		<key>InstabugResources.bundle/Config.plist</key>
 		<data>
 		zmV6UqBSo6r1NOz798vd5O4zTBA=
 		</data>
-		<key>InstabugResources.bundle/IBGActionSheetCell.nib/objects-13.0+.nib</key>
+		<key>InstabugResources.bundle/IBGActionSheetCell.nib</key>
 		<data>
-		M6lw5zdWMRWG8MxMEhKYcOyjg4k=
-		</data>
-		<key>InstabugResources.bundle/IBGActionSheetCell.nib/runtime.nib</key>
-		<data>
-		c25tW+AMOt05qgN5sqTrzIkj98E=
+		c5tvK0ZvUsU0EP98vhLni13g4P4=
 		</data>
 		<key>InstabugResources.bundle/IBGActionSheetVC-iPhone.nib/objects-11.0+.nib</key>
 		<data>
-		5ckkPNl7ZU7kZg8ePPDDROyWrT0=
-		</data>
-		<key>InstabugResources.bundle/IBGActionSheetVC-iPhone.nib/objects-13.0+.nib</key>
-		<data>
-		LcF3kQHej6HD0J1MvvADrauL5Vg=
+		l75UISmyVWOkf3RaaOLARk/2wts=
 		</data>
 		<key>InstabugResources.bundle/IBGActionSheetVC-iPhone.nib/runtime.nib</key>
 		<data>
-		DYJA9WXKEQwhhtR6YQX8Tc9D534=
+		d+hGZqqgUWKQzrn936eii5P3F9Q=
 		</data>
 		<key>InstabugResources.bundle/IBGBugVC-iPhone.nib/objects-11.0+.nib</key>
 		<data>
-		tOd26Ki2qXS+m0mUFC+mbYLwkLM=
-		</data>
-		<key>InstabugResources.bundle/IBGBugVC-iPhone.nib/objects-13.0+.nib</key>
-		<data>
-		XbZCNVCNbLVTfdwVcX4llwK5hjI=
+		nGyCkQpGX9IlpUU6hOaTWljj6II=
 		</data>
 		<key>InstabugResources.bundle/IBGBugVC-iPhone.nib/runtime.nib</key>
 		<data>
-		Ltb1BfhNKm2XPdgZBmN4B6/eL48=
+		Nu9sQ6gLnv31VwIJ9/Eol9rmqRw=
 		</data>
-		<key>InstabugResources.bundle/IBGChatCell.nib/objects-13.0+.nib</key>
+		<key>InstabugResources.bundle/IBGChatCell.nib</key>
 		<data>
-		BjGOe9rQHXrdHMEY2lPPGK8qZq0=
+		YZU9Np022TW/LlXa7+l7vOt6Hps=
 		</data>
-		<key>InstabugResources.bundle/IBGChatCell.nib/runtime.nib</key>
+		<key>InstabugResources.bundle/IBGChatListVC-iPhone.nib</key>
 		<data>
-		OUsrtHXK//ggcaI5HATGmR3J8lY=
-		</data>
-		<key>InstabugResources.bundle/IBGChatListVC-iPhone.nib/objects-13.0+.nib</key>
-		<data>
-		sDpMiYaCfGBgbBBcKW/h7WK4xWU=
-		</data>
-		<key>InstabugResources.bundle/IBGChatListVC-iPhone.nib/runtime.nib</key>
-		<data>
-		wvSLr05pdoYNQYPd+bJCXPBgJhY=
+		4HUBx7cz3CqJjHL2YQd45hM1LvE=
 		</data>
 		<key>InstabugResources.bundle/IBGChatVC-iPhone.nib/objects-11.0+.nib</key>
 		<data>
-		U8w3KZ+/ES55Q/ZAhEoCw4NUPbw=
-		</data>
-		<key>InstabugResources.bundle/IBGChatVC-iPhone.nib/objects-13.0+.nib</key>
-		<data>
-		LmD0QU7ujrdzg27V4my2aAcYIG8=
+		RsxojcoeliMBNrDQKIeHJIYnMDg=
 		</data>
 		<key>InstabugResources.bundle/IBGChatVC-iPhone.nib/runtime.nib</key>
 		<data>
-		2AxX7mGpncQpZIPI/JtX/JeUuTY=
+		W/7TfhbRTLnHYoQ2hnmQCcpjKkU=
 		</data>
-		<key>InstabugResources.bundle/IBGFullScreenImageViewController.nib/objects-13.0+.nib</key>
+		<key>InstabugResources.bundle/IBGFullScreenImageViewController.nib</key>
 		<data>
-		Su3KRwioCjgH8pmTsvTl6eCp6Qs=
+		22YACgHNBsW/BGtVU7WKjC7p7js=
 		</data>
-		<key>InstabugResources.bundle/IBGFullScreenImageViewController.nib/runtime.nib</key>
+		<key>InstabugResources.bundle/IBGPoweredByView.nib</key>
 		<data>
-		COf7Plf1/tCMSSVXNfHXm+QjB2g=
+		3cAi3jxn9STohgCGCHqUu2/xHgU=
 		</data>
-		<key>InstabugResources.bundle/IBGPoweredByView.nib/objects-13.0+.nib</key>
+		<key>InstabugResources.bundle/IBGPromptCell.nib</key>
 		<data>
-		5RLTH05lddshdv4WWL4g57pbNNo=
+		zMIhI0csl95bxkPGpeFGIKImz6I=
 		</data>
-		<key>InstabugResources.bundle/IBGPoweredByView.nib/runtime.nib</key>
+		<key>InstabugResources.bundle/IBGReplyView-iPhone.nib</key>
 		<data>
-		332fc+t8jQpQwxDkpFH5K23OqPQ=
+		WIsuOWLLaYWaXFbccOAzPxylOL0=
 		</data>
-		<key>InstabugResources.bundle/IBGPromptCell.nib/objects-13.0+.nib</key>
+		<key>InstabugResources.bundle/IBGReportCategoryCell.nib</key>
 		<data>
-		zBEE0lnCXpMDVOzWE9FtyD/Lbno=
-		</data>
-		<key>InstabugResources.bundle/IBGPromptCell.nib/runtime.nib</key>
-		<data>
-		l6luwNPCQ7rKB6SLjk2P3wAovLQ=
-		</data>
-		<key>InstabugResources.bundle/IBGReplyView-iPhone.nib/objects-13.0+.nib</key>
-		<data>
-		eSG8GxIhH3rkHP5/l3F4jwLBfxc=
-		</data>
-		<key>InstabugResources.bundle/IBGReplyView-iPhone.nib/runtime.nib</key>
-		<data>
-		WxqIPwdPZlDDJPw2qU2RO9y5Q8Q=
-		</data>
-		<key>InstabugResources.bundle/IBGReportCategoryCell.nib/objects-13.0+.nib</key>
-		<data>
-		q31d+iWcofgF2Wf1u+uB/ePr8KU=
-		</data>
-		<key>InstabugResources.bundle/IBGReportCategoryCell.nib/runtime.nib</key>
-		<data>
-		YpJLFlPr6B5lZNLtIiGSUNf340s=
+		smS+OhIystNa9LVLar2vRjwz17g=
 		</data>
 		<key>InstabugResources.bundle/IBGScreenshotVC-iPhone.nib/objects-11.0+.nib</key>
 		<data>
-		Z1zxFCj2mEVFza4OhGaLj5dDNZs=
-		</data>
-		<key>InstabugResources.bundle/IBGScreenshotVC-iPhone.nib/objects-13.0+.nib</key>
-		<data>
-		RwyeUCSDWBM711SjSYUKb9z46qY=
+		+BJ6RWiR+KcSgw2KLpRxsXJJ0+I=
 		</data>
 		<key>InstabugResources.bundle/IBGScreenshotVC-iPhone.nib/runtime.nib</key>
 		<data>
-		/LAM+oYMmu5hVMK51uhAIs8v0Sc=
+		dxstlA2FVS8fhtBYKyvZBZjjy7U=
 		</data>
-		<key>InstabugResources.bundle/IBGVoiceNoteRecordingViewController-iPhone.nib/objects-13.0+.nib</key>
+		<key>InstabugResources.bundle/IBGVoiceNoteRecordingViewController-iPhone.nib</key>
 		<data>
-		mX/dUCilkww4uWi2ZPD0P1jzlow=
-		</data>
-		<key>InstabugResources.bundle/IBGVoiceNoteRecordingViewController-iPhone.nib/runtime.nib</key>
-		<data>
-		PmfAKgI7b3LA8hZofdF8gAXO8Jk=
+		0awGNMSQopr4ErRtRIMpcoDmb18=
 		</data>
 		<key>InstabugResources.bundle/Info.plist</key>
 		<data>
-		hb2D5YYy0zscb5ZZrhypMbh+drY=
+		XDuhOS7mB+RrOC9PufJmPwpI+8g=
 		</data>
 		<key>InstabugResources.bundle/Inject_DSYM_Project-Archive.sh</key>
 		<data>
@@ -246,7 +194,7 @@
 		</data>
 		<key>InstabugResources.bundle/InstabugDataModel.momd/InstabugDataModel 19.omo</key>
 		<data>
-		eEgcb/95mDoIuuG6b2vZD7y96e4=
+		fKrIAPMPM+8gmYBvrP4wdhBxAQE=
 		</data>
 		<key>InstabugResources.bundle/InstabugDataModel.momd/InstabugDataModel 2.mom</key>
 		<data>
@@ -274,7 +222,7 @@
 		</data>
 		<key>InstabugResources.bundle/InstabugDataModel.momd/VersionInfo.plist</key>
 		<data>
-		eqFskLBYPKTTHYWXXG2ksId1GH8=
+		1C0WkSrRb9PaXxJyXMLT1NjFzSQ=
 		</data>
 		<key>InstabugResources.bundle/InstabugSurveysDataModel.momd/InstabugSurveysDataModel 2.mom</key>
 		<data>
@@ -286,7 +234,7 @@
 		</data>
 		<key>InstabugResources.bundle/InstabugSurveysDataModel.momd/InstabugSurveysDataModel 3.omo</key>
 		<data>
-		KbBALOpNAfa57V/oNN8sYTqQVXU=
+		xe0GJTemzySTi+MShrzDUMxQsdQ=
 		</data>
 		<key>InstabugResources.bundle/InstabugSurveysDataModel.momd/InstabugSurveysDataModel.mom</key>
 		<data>
@@ -294,7 +242,7 @@
 		</data>
 		<key>InstabugResources.bundle/InstabugSurveysDataModel.momd/VersionInfo.plist</key>
 		<data>
-		G1Bg1aeVzkCQuyOFYhgFDNlOPwo=
+		4Fo41SC2YLVKgMWzzq8saFmiCvs=
 		</data>
 		<key>InstabugResources.bundle/InstabugUserStepsDataModel.momd/UserStepsDataModel 2.mom</key>
 		<data>
@@ -306,7 +254,7 @@
 		</data>
 		<key>InstabugResources.bundle/InstabugUserStepsDataModel.momd/UserStepsDataModel 3.omo</key>
 		<data>
-		qpX9Tuxnn9/OJ9MDKvG3sXl8+OM=
+		XcyBT0QkhJCcVQCvDmkkaihetgU=
 		</data>
 		<key>InstabugResources.bundle/InstabugUserStepsDataModel.momd/UserStepsDataModel.mom</key>
 		<data>
@@ -450,7 +398,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8GKpKoo/MUjt14pKg7qSmWxF3Uw=
+			HtRsuVYXBCtbT1BZQdoWAozzTNg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -538,63 +486,63 @@
 		</dict>
 		<key>Modules/Instabug.swiftmodule/arm.swiftdoc</key>
 		<data>
-		Bm603o1KgjSD+P3RdlnTCHaKffU=
+		wyw34YQj6ZYoL8QvN0AVz7XXSgc=
 		</data>
 		<key>Modules/Instabug.swiftmodule/arm.swiftinterface</key>
 		<data>
-		Q/GwvPj9bQG3Xp8kAQxYNKVvGho=
+		3GZ3S0o9Pa8ibDdlc+cOKrmLrfc=
 		</data>
 		<key>Modules/Instabug.swiftmodule/arm.swiftmodule</key>
 		<data>
-		1dPgxUuY7IxovMzvFD3iPgqMJ4U=
+		2rzlNs65dGNhASrava3atvxaV1c=
 		</data>
 		<key>Modules/Instabug.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		JiOOHhJ2PzGI78NiMHlY+cMQaS0=
+		GXoqBe3H4vlkpXYygKu+c3Cl3do=
 		</data>
 		<key>Modules/Instabug.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		zNx/09ZfsrMWUEY8K7qnCUbnxQA=
+		ZzkzJPOvXdYTAsT+bkZ508jr7R4=
 		</data>
 		<key>Modules/Instabug.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		DXbI8EFfOnfinV1jygcTx+tHk+Q=
+		d9aUzJr2zAqeiNQwN0XD5l4t6ag=
 		</data>
 		<key>Modules/Instabug.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		JiOOHhJ2PzGI78NiMHlY+cMQaS0=
+		GXoqBe3H4vlkpXYygKu+c3Cl3do=
 		</data>
 		<key>Modules/Instabug.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		zNx/09ZfsrMWUEY8K7qnCUbnxQA=
+		ZzkzJPOvXdYTAsT+bkZ508jr7R4=
 		</data>
 		<key>Modules/Instabug.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		DXbI8EFfOnfinV1jygcTx+tHk+Q=
+		d9aUzJr2zAqeiNQwN0XD5l4t6ag=
 		</data>
 		<key>Modules/Instabug.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		Bm603o1KgjSD+P3RdlnTCHaKffU=
+		wyw34YQj6ZYoL8QvN0AVz7XXSgc=
 		</data>
 		<key>Modules/Instabug.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<data>
-		Q/GwvPj9bQG3Xp8kAQxYNKVvGho=
+		3GZ3S0o9Pa8ibDdlc+cOKrmLrfc=
 		</data>
 		<key>Modules/Instabug.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		1dPgxUuY7IxovMzvFD3iPgqMJ4U=
+		2rzlNs65dGNhASrava3atvxaV1c=
 		</data>
 		<key>Modules/Instabug.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		Bm603o1KgjSD+P3RdlnTCHaKffU=
+		wyw34YQj6ZYoL8QvN0AVz7XXSgc=
 		</data>
 		<key>Modules/Instabug.swiftmodule/armv7.swiftinterface</key>
 		<data>
-		Q/GwvPj9bQG3Xp8kAQxYNKVvGho=
+		3GZ3S0o9Pa8ibDdlc+cOKrmLrfc=
 		</data>
 		<key>Modules/Instabug.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		1dPgxUuY7IxovMzvFD3iPgqMJ4U=
+		2rzlNs65dGNhASrava3atvxaV1c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -611,77 +559,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A2egP1Z/FsL3/GXH0Vcjoyie08I=
+			pM5rYOZP1Xs7MNwa7cbAfJ9qjJA=
 			</data>
 			<key>hash2</key>
 			<data>
-			7pEvK1Cu7RBNxf6GNk2Jo6f7glc/Ij71N5RBoRYDLxU=
+			mi6c15aCRNPYbusjebTQ9a1IrUXCuOKTw80tyPRueV4=
 			</data>
 		</dict>
 		<key>Headers/IBGChats.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xnV48ix6SWxIEmuTCx8+tm9INZU=
+			JTj8dSvrScENbbn7xio4nX/TwVY=
 			</data>
 			<key>hash2</key>
 			<data>
-			jlmJX84epbeO8INUXFXCiAgafHHf8vW9h5VviNtiRw8=
+			gsvdNg4ahcJCz/hQ2anLD7TVp9MO4zeuiDau+NDH3gE=
 			</data>
 		</dict>
 		<key>Headers/IBGCrashReporting.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vDIGet/xhS01elb6ZGQB/dWyVi4=
+			eZBA9xp4TuhYpjxIOb75rc+mF7k=
 			</data>
 			<key>hash2</key>
 			<data>
-			+CQn1VSUJgfolfO4BK90rKH+p/cORtFwkQ8LwP3ZeDg=
+			ZQx9UcKHT70Tqpglka80i0Nwngvu17YzGolK2CJoLOs=
 			</data>
 		</dict>
 		<key>Headers/IBGFeatureRequests.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8wW9jut+25CGWTPwf4va1fnQCtY=
+			CoVdgTbWKfS1v1OBYqTG8q0NbwQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			52aOOk8brYJvGTxorpGf3AIrorBbNgSQ2Yv6X+bp0dY=
+			aY6hRO8GIYlk0bR4s3qpVA1uKq5uWFUw+utTY0HYpUM=
 			</data>
 		</dict>
 		<key>Headers/IBGLog.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			H8oM62RRFieHvHh2wggaKtK3Q/k=
+			Xj6edmhrIJESbD/hbM96V1H914o=
 			</data>
 			<key>hash2</key>
 			<data>
-			NuHvjE2KYo7SCMAWSHC1jHrY7n2iu/dsoAruRYdzu2g=
+			Vw5/ws7q8C6smwDl02kQBJE85pXpj7SmtpZY0mHiKJg=
 			</data>
 		</dict>
 		<key>Headers/IBGNetworkLogger.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PM/qfp8dRei7Az2pcqCzH1MZcUg=
+			JR4WeO1E+e0j9QpI4xHbh+ztyVc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pg74ntYWyaG8FcWjDaI2sWZJASRJgZvc5DqekWlLu1U=
+			cRmFyJYa6dPTR+L2e/158VvyMHdkkiRfPmFs0KrAiYQ=
 			</data>
 		</dict>
 		<key>Headers/IBGReplies.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qntqy03xcFyV8UYe1TZBm39MtPM=
+			JJMJEX5LLXUCNc/65TUYPKmnhIM=
 			</data>
 			<key>hash2</key>
 			<data>
-			TCAb40nYNZKwmaBmfVyrZnI3C9YFfK1ssemFqpWuBKg=
+			mJk470N74f7h0b5RQ3MAzlK1meVyDL5KxBT1fFBP6GU=
 			</data>
 		</dict>
 		<key>Headers/IBGReport.h</key>
@@ -699,77 +647,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RAhXEq1fgjXtsjaRt+YGFAmhl30=
+			MiP6F/XNF95BdmBkZmxEiCJ4lvU=
 			</data>
 			<key>hash2</key>
 			<data>
-			6GTt+NDKmFr+2flEUQRwsXuiqnem757WfudpPm1gASk=
+			NIJgaLv6qlHxrQ+AJHfY1XVoK9IZTQo31jAziCKX7eA=
 			</data>
 		</dict>
 		<key>Headers/IBGSurveys.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YmCCr+BN5HH6KkMB+m84NdMuzYU=
+			5DatM/UWbQUta8KvwErh1v/pF74=
 			</data>
 			<key>hash2</key>
 			<data>
-			lQGzmVjjbLRtR68TEXpiXKNCiWrrJZoc5jAESsfOitY=
+			9Lmo1BtW9jUvWRbyXgyz3khaIe/doSETC01Jq02oq80=
 			</data>
 		</dict>
 		<key>Headers/IBGTypes.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a4YjzwzEBL+c7N9Ko8qyiJ8cDXE=
+			7VNX2cYl/+8vqxjoaSUhIhoGa10=
 			</data>
 			<key>hash2</key>
 			<data>
-			kTORhEKAIK5c+FM61dHr01QO9snaEGc+eMAvhwu/0jo=
+			1+Cp4asMwV9qltzGSluYqQmzyUdBqUsxjGHn9FHyMoE=
 			</data>
 		</dict>
 		<key>Headers/Instabug-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			15fDhQoBLC8UXePUm+/G978dCC8=
+			rxHSzFiFexugq6c5VAXqPpVe378=
 			</data>
 			<key>hash2</key>
 			<data>
-			xLmomyXTqf/QYES9iNv1xKIOc+2Gqmu5PW8qwcsCbto=
+			SXBGY8JxY7zZ06E17Tgxf/mG83LNHiBDRNbGsxO7L0o=
 			</data>
 		</dict>
 		<key>Headers/Instabug.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XC6kM4Q9fJC6qbF3S3CmAbxU1Po=
+			84mJhTQDQXWsC+w8/gUemSjDek8=
 			</data>
 			<key>hash2</key>
 			<data>
-			exF+tjChSvD4zYUVJY3LF7fMlQbc/YGT3GUc61LK3Fo=
+			LBKAY7P1A7bnkRiryDhccwTAEBKkPHHahbQegPyJzkY=
 			</data>
 		</dict>
 		<key>Headers/InstabugCore.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AmpNz20TB7krtcmwy+/6F0/wB40=
+			w6OzvG/PiqcIcPHt1fYMmcH2H80=
 			</data>
 			<key>hash2</key>
 			<data>
-			HpFazD8n1yuh54XStzRKE4PiIGovqiZLPFHz68xBbqs=
+			yXtXvafSyWxHujuLaLxT3M/bBgSKq/8sk1izD3BhClE=
 			</data>
 		</dict>
 		<key>Headers/InstabugStatic-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			miBfd4MYjOvVOqFQIl7jgDIABdk=
+			a8a9zxrQy1H4De79TgpIkU6JuxA=
 			</data>
 			<key>hash2</key>
 			<data>
-			YtGGKME5C3THC/6zXdq44AKdikhoS4d8B8DVstSnxC8=
+			K9dU9/2UOQq0K0PJ4IH0uOQxAeaiVtm0leLCD8UACEk=
 			</data>
 		</dict>
 		<key>Headers/UIView+Instabug.h</key>
@@ -787,11 +735,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NIk9ECzMBA9DTTaiuASl8rfsiTw=
+			uwYvK6MuNxtN1WBfVgSUXna996M=
 			</data>
 			<key>hash2</key>
 			<data>
-			3TnlGjLhAv8UPB2yQXB86qEvpVMq9krQatBBFaJmouw=
+			byuNLCdDnnyfQcpca5ig02t2hiII8bB6XwBYn/WkXXE=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/Config.plist</key>
@@ -805,345 +753,202 @@
 			kmHsztpgjvF0JW5f3HdMHm49z1M0CcG8OT1JDQHHE/E=
 			</data>
 		</dict>
-		<key>InstabugResources.bundle/IBGActionSheetCell.nib/objects-13.0+.nib</key>
+		<key>InstabugResources.bundle/IBGActionSheetCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			M6lw5zdWMRWG8MxMEhKYcOyjg4k=
+			c5tvK0ZvUsU0EP98vhLni13g4P4=
 			</data>
 			<key>hash2</key>
 			<data>
-			d7WbiLywES9BIWjDfJnabU0yy4rGh5ipMGiVIB47hCQ=
-			</data>
-		</dict>
-		<key>InstabugResources.bundle/IBGActionSheetCell.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			c25tW+AMOt05qgN5sqTrzIkj98E=
-			</data>
-			<key>hash2</key>
-			<data>
-			MMzGMO6Jq9T13BQAoOTkkElaYQB2MVLWKT8XSYSHFt8=
+			TzDx0jdDdP633PRc1D+5XcJXV2FOyjYo9IIa78tHB5s=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/IBGActionSheetVC-iPhone.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5ckkPNl7ZU7kZg8ePPDDROyWrT0=
+			l75UISmyVWOkf3RaaOLARk/2wts=
 			</data>
 			<key>hash2</key>
 			<data>
-			3U4Nwq0RQtFFgTOEyzIV4spDtI+v98Vak75syB4iAXM=
-			</data>
-		</dict>
-		<key>InstabugResources.bundle/IBGActionSheetVC-iPhone.nib/objects-13.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LcF3kQHej6HD0J1MvvADrauL5Vg=
-			</data>
-			<key>hash2</key>
-			<data>
-			kuyrm4SOOY60b8g7Jk52x4OLJ/tP9cz2O96jstqcbrk=
+			1D9DbfCRVjHk/obpxkIBsNDEh+th7VY9T3kS7IlYO6w=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/IBGActionSheetVC-iPhone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DYJA9WXKEQwhhtR6YQX8Tc9D534=
+			d+hGZqqgUWKQzrn936eii5P3F9Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			Go3ZsVR8s8y5UO6f3Xz8+RjdY3Z0TsUajlrocTMT3HA=
+			E3j1DXwWsqazAfdCp4LDNEoqCotMG2MNkiFFe0XE0Bk=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/IBGBugVC-iPhone.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tOd26Ki2qXS+m0mUFC+mbYLwkLM=
+			nGyCkQpGX9IlpUU6hOaTWljj6II=
 			</data>
 			<key>hash2</key>
 			<data>
-			quPFhIIlHlilGNa6hIRCJCbNJDwc+MkbQ+zvR4JvNNA=
-			</data>
-		</dict>
-		<key>InstabugResources.bundle/IBGBugVC-iPhone.nib/objects-13.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XbZCNVCNbLVTfdwVcX4llwK5hjI=
-			</data>
-			<key>hash2</key>
-			<data>
-			+RmJe2tXsBBRh3/H2QynYvfIgbGzQLI5OuvCMrjVBrw=
+			4Rr616kSLqEqcFZ5wdQ7WkkcafyFZwR7yG1uUW6xkk8=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/IBGBugVC-iPhone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ltb1BfhNKm2XPdgZBmN4B6/eL48=
+			Nu9sQ6gLnv31VwIJ9/Eol9rmqRw=
 			</data>
 			<key>hash2</key>
 			<data>
-			DVH+/qgveYOuPjgV+nNs3PKOdbBhlnaMIBdisXB4yZY=
+			JWCIrQDhQoPAovm8hSapJVaTqsn5o7S5c0oNJBtrf8Q=
 			</data>
 		</dict>
-		<key>InstabugResources.bundle/IBGChatCell.nib/objects-13.0+.nib</key>
+		<key>InstabugResources.bundle/IBGChatCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BjGOe9rQHXrdHMEY2lPPGK8qZq0=
+			YZU9Np022TW/LlXa7+l7vOt6Hps=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z+6ibkpeQvuyi+ZshAEoJO2W5mGLwIb8xQXQwO59iZw=
+			i5tIgV/dg8QdkDvu6tyolz5447LHSw1kS/q2dCmvgRs=
 			</data>
 		</dict>
-		<key>InstabugResources.bundle/IBGChatCell.nib/runtime.nib</key>
+		<key>InstabugResources.bundle/IBGChatListVC-iPhone.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OUsrtHXK//ggcaI5HATGmR3J8lY=
+			4HUBx7cz3CqJjHL2YQd45hM1LvE=
 			</data>
 			<key>hash2</key>
 			<data>
-			hjBNlUUb30lrERcczPvUI9SeedwDg3X8/Bqkr3jKLYo=
-			</data>
-		</dict>
-		<key>InstabugResources.bundle/IBGChatListVC-iPhone.nib/objects-13.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sDpMiYaCfGBgbBBcKW/h7WK4xWU=
-			</data>
-			<key>hash2</key>
-			<data>
-			q+HhBmBeKgGYGMZb27r0wea43YvmVNp3TnNHiIbNbyY=
-			</data>
-		</dict>
-		<key>InstabugResources.bundle/IBGChatListVC-iPhone.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wvSLr05pdoYNQYPd+bJCXPBgJhY=
-			</data>
-			<key>hash2</key>
-			<data>
-			j0uQe5gbvrn/0P3xYnwXRA6LO/hsSJ09Cyla2UqvUB4=
+			k9PqRYUbJX/jZkvqhj/5lGLji2dJVgGA9ZGL3iPFfzw=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/IBGChatVC-iPhone.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			U8w3KZ+/ES55Q/ZAhEoCw4NUPbw=
+			RsxojcoeliMBNrDQKIeHJIYnMDg=
 			</data>
 			<key>hash2</key>
 			<data>
-			gwOPZkYkcxaztY38eqhvlowjvaOAM21TnG7JlY2TZa0=
-			</data>
-		</dict>
-		<key>InstabugResources.bundle/IBGChatVC-iPhone.nib/objects-13.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LmD0QU7ujrdzg27V4my2aAcYIG8=
-			</data>
-			<key>hash2</key>
-			<data>
-			ik3TwhMlGzzhius2oVpkR4V/d5L9B3VXxR8sls/InD0=
+			LNWSIOZFHL7/qsTwBm3lHGT0/xvxfcFN5BtfrrHbrmI=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/IBGChatVC-iPhone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2AxX7mGpncQpZIPI/JtX/JeUuTY=
+			W/7TfhbRTLnHYoQ2hnmQCcpjKkU=
 			</data>
 			<key>hash2</key>
 			<data>
-			U1Exi7/QRoAGgQ+Fju1evO9+Sh0MQJ7ZTciSQXPIxwE=
+			YEH67of876reuDOMAXGqrzuv7hlMa9qLwQUBeAEUxsc=
 			</data>
 		</dict>
-		<key>InstabugResources.bundle/IBGFullScreenImageViewController.nib/objects-13.0+.nib</key>
+		<key>InstabugResources.bundle/IBGFullScreenImageViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Su3KRwioCjgH8pmTsvTl6eCp6Qs=
+			22YACgHNBsW/BGtVU7WKjC7p7js=
 			</data>
 			<key>hash2</key>
 			<data>
-			+Bi0QN7HE+BXUyaPTyY6BZsYdumkKDlXyv+r+H/N0oA=
+			qTe4GmfL7jGZe+o6UtdDrAP+6JcKxtFfSkFZKYUqb6E=
 			</data>
 		</dict>
-		<key>InstabugResources.bundle/IBGFullScreenImageViewController.nib/runtime.nib</key>
+		<key>InstabugResources.bundle/IBGPoweredByView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			COf7Plf1/tCMSSVXNfHXm+QjB2g=
+			3cAi3jxn9STohgCGCHqUu2/xHgU=
 			</data>
 			<key>hash2</key>
 			<data>
-			0GfvG7r0MWVCica43fzDSQzsgm1NxVXmFOH6bvf1dR0=
+			/ikEOsbONhJdNK1lQxchmQiFpva+sTCMtIcjO0Y+yJE=
 			</data>
 		</dict>
-		<key>InstabugResources.bundle/IBGPoweredByView.nib/objects-13.0+.nib</key>
+		<key>InstabugResources.bundle/IBGPromptCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5RLTH05lddshdv4WWL4g57pbNNo=
+			zMIhI0csl95bxkPGpeFGIKImz6I=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jx/bXgbPsKP6rIakMfRExFboda8dkrxxqwJ5hTFuY/Y=
+			J0Fn1PiMO0fquX1YJOlcDWxN+7dqNcTbOdf8Sf6sZXE=
 			</data>
 		</dict>
-		<key>InstabugResources.bundle/IBGPoweredByView.nib/runtime.nib</key>
+		<key>InstabugResources.bundle/IBGReplyView-iPhone.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			332fc+t8jQpQwxDkpFH5K23OqPQ=
+			WIsuOWLLaYWaXFbccOAzPxylOL0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bhe8706tLApkmSr/PoAmooaJ7/UAsapRSw0/ishLwjE=
+			4PRsqlpitD+8YLjN5V4gyP+66HOcMNozlvpj9MpzdyM=
 			</data>
 		</dict>
-		<key>InstabugResources.bundle/IBGPromptCell.nib/objects-13.0+.nib</key>
+		<key>InstabugResources.bundle/IBGReportCategoryCell.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zBEE0lnCXpMDVOzWE9FtyD/Lbno=
+			smS+OhIystNa9LVLar2vRjwz17g=
 			</data>
 			<key>hash2</key>
 			<data>
-			vOXPDh0egqWfva4v6kHfQ4YjoJtQxTrVxjx2D8G0jH0=
-			</data>
-		</dict>
-		<key>InstabugResources.bundle/IBGPromptCell.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			l6luwNPCQ7rKB6SLjk2P3wAovLQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			75uXJlqyCQMVWhfvDEL0MyaYf/W4OVrXQs5IfcqqA7o=
-			</data>
-		</dict>
-		<key>InstabugResources.bundle/IBGReplyView-iPhone.nib/objects-13.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			eSG8GxIhH3rkHP5/l3F4jwLBfxc=
-			</data>
-			<key>hash2</key>
-			<data>
-			zqRxl7AuyqxtiDk5FT4ttRIYf1vJIN3w0edK1T/0JTI=
-			</data>
-		</dict>
-		<key>InstabugResources.bundle/IBGReplyView-iPhone.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WxqIPwdPZlDDJPw2qU2RO9y5Q8Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			4ggi+/UWiLND/lYKicIwe4K1MXRqv280Ncr4ibaG9pY=
-			</data>
-		</dict>
-		<key>InstabugResources.bundle/IBGReportCategoryCell.nib/objects-13.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			q31d+iWcofgF2Wf1u+uB/ePr8KU=
-			</data>
-			<key>hash2</key>
-			<data>
-			Reu3IWao+DqzLVj2pypsrumsQGKSPvMVDCQq31/+7Tc=
-			</data>
-		</dict>
-		<key>InstabugResources.bundle/IBGReportCategoryCell.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YpJLFlPr6B5lZNLtIiGSUNf340s=
-			</data>
-			<key>hash2</key>
-			<data>
-			Y3whHCgqi0E0m1zPO1XsT7c2qnfu7jh0+3LgNbylgJY=
+			Wb7xu9RICvDmDKWUZmS9mLcAxmuxNyMm66K2EscS+2k=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/IBGScreenshotVC-iPhone.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Z1zxFCj2mEVFza4OhGaLj5dDNZs=
+			+BJ6RWiR+KcSgw2KLpRxsXJJ0+I=
 			</data>
 			<key>hash2</key>
 			<data>
-			7cqwey28JHeb2if8dp+Y8o8JzoWxNKGmivkbqNYw2GQ=
-			</data>
-		</dict>
-		<key>InstabugResources.bundle/IBGScreenshotVC-iPhone.nib/objects-13.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RwyeUCSDWBM711SjSYUKb9z46qY=
-			</data>
-			<key>hash2</key>
-			<data>
-			UKM+86qoYj7UrbTYc3Tlej2hv233YiC6Dm+iu0HKt9M=
+			3st7Fv9qaMkXetJ3zoKuJDrpUG2+WvWma31A37x99TQ=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/IBGScreenshotVC-iPhone.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/LAM+oYMmu5hVMK51uhAIs8v0Sc=
+			dxstlA2FVS8fhtBYKyvZBZjjy7U=
 			</data>
 			<key>hash2</key>
 			<data>
-			3Y6aIZA3T0yyW4C1vYOh+YczNN1oBuqvPHsDgvtlGHI=
+			2A6Nx648NZB2z7PLk75QE1yZhXMzd+ORunp/CaD+3rk=
 			</data>
 		</dict>
-		<key>InstabugResources.bundle/IBGVoiceNoteRecordingViewController-iPhone.nib/objects-13.0+.nib</key>
+		<key>InstabugResources.bundle/IBGVoiceNoteRecordingViewController-iPhone.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mX/dUCilkww4uWi2ZPD0P1jzlow=
+			0awGNMSQopr4ErRtRIMpcoDmb18=
 			</data>
 			<key>hash2</key>
 			<data>
-			9GhxJswDryw/lunmk072YnjNRD8+APwMZNroK/OzNr4=
-			</data>
-		</dict>
-		<key>InstabugResources.bundle/IBGVoiceNoteRecordingViewController-iPhone.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PmfAKgI7b3LA8hZofdF8gAXO8Jk=
-			</data>
-			<key>hash2</key>
-			<data>
-			lnoEYdlT9d0tT09TogmIgTSwu0GKIZ/y2EIvl2+MMFo=
+			yQqBRu2MIHD3j3o+lpAOFw1UjOStJYB/t1/Uc6AKZeI=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hb2D5YYy0zscb5ZZrhypMbh+drY=
+			XDuhOS7mB+RrOC9PufJmPwpI+8g=
 			</data>
 			<key>hash2</key>
 			<data>
-			Su1jJlWub/kIRch3LWPbips9n2Mno8O8Je09xIPd4gA=
+			6Ln2mquH2+Lr8dHVVe+7MgcdurQsGo5IXhEuV6wJ5ok=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/Inject_DSYM_Project-Archive.sh</key>
@@ -1260,11 +1065,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eEgcb/95mDoIuuG6b2vZD7y96e4=
+			fKrIAPMPM+8gmYBvrP4wdhBxAQE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Wk+Hijtk+zf2u9YNeTvjiv1VhHvn45Wwzebks56jnJM=
+			uMh2cB5TSwNVMpc2rqekd0xYvu69UpdpDf/anqgrzjI=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/InstabugDataModel.momd/InstabugDataModel 2.mom</key>
@@ -1337,11 +1142,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eqFskLBYPKTTHYWXXG2ksId1GH8=
+			1C0WkSrRb9PaXxJyXMLT1NjFzSQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			IAWZCx26WeptzrKdX2Gpt0IQq3Ud7B/Yxl8EAmOM2tk=
+			LA4N991+t6ljbc0P0EZIrQLlHgzRQA+W8xfj2VTukzk=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/InstabugSurveysDataModel.momd/InstabugSurveysDataModel 2.mom</key>
@@ -1370,11 +1175,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KbBALOpNAfa57V/oNN8sYTqQVXU=
+			xe0GJTemzySTi+MShrzDUMxQsdQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			lwuqF53aQZEY1FOzzWanf3y53y5GLf1zOlaZR2tVdAM=
+			/DwdSsiocY5uvOLB3Xc4i4VDyIJE4+h2eon/VJIHSAA=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/InstabugSurveysDataModel.momd/InstabugSurveysDataModel.mom</key>
@@ -1392,11 +1197,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G1Bg1aeVzkCQuyOFYhgFDNlOPwo=
+			4Fo41SC2YLVKgMWzzq8saFmiCvs=
 			</data>
 			<key>hash2</key>
 			<data>
-			ikzLfxdWCza40XxrdFZ+EBlVbf9iTh/RKJRJ9Mr+ujo=
+			qTR4Y8YkOdXN+pTz++0QnZdjhShac8vkU8Ny14P+iBA=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/InstabugUserStepsDataModel.momd/UserStepsDataModel 2.mom</key>
@@ -1425,11 +1230,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qpX9Tuxnn9/OJ9MDKvG3sXl8+OM=
+			XcyBT0QkhJCcVQCvDmkkaihetgU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZS9HVXQFVYVvnn+WbbrEzdvdyFvjDrnETfhJKxCzIo4=
+			itey4+18liRKpDT8VU18GVZVJxtrRKNdYTSdFr8U/3s=
 			</data>
 		</dict>
 		<key>InstabugResources.bundle/InstabugUserStepsDataModel.momd/UserStepsDataModel.mom</key>
@@ -1651,11 +1456,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8GKpKoo/MUjt14pKg7qSmWxF3Uw=
+			HtRsuVYXBCtbT1BZQdoWAozzTNg=
 			</data>
 			<key>hash2</key>
 			<data>
-			mUU6oDmE1LmvvFy8jISax+xE4itzZslJMGFweu+w5EA=
+			ycNWHwym48HiIY7ZIutplcqbNDwmkyNiagPGcbFz7yc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1781,165 +1586,165 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Bm603o1KgjSD+P3RdlnTCHaKffU=
+			wyw34YQj6ZYoL8QvN0AVz7XXSgc=
 			</data>
 			<key>hash2</key>
 			<data>
-			nvsNYU0TbkuwHsiO2WTxfT8U8FGCqEK6A/2AjxMgvUY=
+			13noCJ3YVFT5cdxq7Kwz0z3oIb9MzrT906Q1DXwkR+k=
 			</data>
 		</dict>
 		<key>Modules/Instabug.swiftmodule/arm.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Q/GwvPj9bQG3Xp8kAQxYNKVvGho=
+			3GZ3S0o9Pa8ibDdlc+cOKrmLrfc=
 			</data>
 			<key>hash2</key>
 			<data>
-			+1XLXhqI0qFeKgU+x4FjYl/easumCRZPgHQW7tT41tQ=
+			4/JSW4M19x/VAsIe9iLWH/U8Aavuv+rMg8oj9jwfLmU=
 			</data>
 		</dict>
 		<key>Modules/Instabug.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1dPgxUuY7IxovMzvFD3iPgqMJ4U=
+			2rzlNs65dGNhASrava3atvxaV1c=
 			</data>
 			<key>hash2</key>
 			<data>
-			vyXUv8iAy3o+QePnllf+u0ujkc/hownha0GNMXY2+8g=
+			jobjGYMBbt+qANntm7EcBGuwuKvaWILjYqXYagaQTpQ=
 			</data>
 		</dict>
 		<key>Modules/Instabug.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JiOOHhJ2PzGI78NiMHlY+cMQaS0=
+			GXoqBe3H4vlkpXYygKu+c3Cl3do=
 			</data>
 			<key>hash2</key>
 			<data>
-			8jgz7Cg0+qcyTi69J7tfJgHTq6UlEWJunZE008N2qd4=
+			wSiHIZZDsvYhaW4ncaYTpG8wITUp4WE05eGIuACuqww=
 			</data>
 		</dict>
 		<key>Modules/Instabug.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zNx/09ZfsrMWUEY8K7qnCUbnxQA=
+			ZzkzJPOvXdYTAsT+bkZ508jr7R4=
 			</data>
 			<key>hash2</key>
 			<data>
-			THC/hpXwkDGkyTUYwgqtTN4TcHWTNvyA+G7b4oQGs6c=
+			B/w3WPLX4T63JiS9fsjGX3qpx51eeFizvZzTFBuRrvw=
 			</data>
 		</dict>
 		<key>Modules/Instabug.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DXbI8EFfOnfinV1jygcTx+tHk+Q=
+			d9aUzJr2zAqeiNQwN0XD5l4t6ag=
 			</data>
 			<key>hash2</key>
 			<data>
-			v7qqWo2OQi6E1UP3W2u3dQIoPgh3J7b53HSy+AEAiYA=
+			naEYdI6kZZ1rFPPDAL1OhmVu/bIQC+hMtnuqEXRtXvU=
 			</data>
 		</dict>
 		<key>Modules/Instabug.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JiOOHhJ2PzGI78NiMHlY+cMQaS0=
+			GXoqBe3H4vlkpXYygKu+c3Cl3do=
 			</data>
 			<key>hash2</key>
 			<data>
-			8jgz7Cg0+qcyTi69J7tfJgHTq6UlEWJunZE008N2qd4=
+			wSiHIZZDsvYhaW4ncaYTpG8wITUp4WE05eGIuACuqww=
 			</data>
 		</dict>
 		<key>Modules/Instabug.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zNx/09ZfsrMWUEY8K7qnCUbnxQA=
+			ZzkzJPOvXdYTAsT+bkZ508jr7R4=
 			</data>
 			<key>hash2</key>
 			<data>
-			THC/hpXwkDGkyTUYwgqtTN4TcHWTNvyA+G7b4oQGs6c=
+			B/w3WPLX4T63JiS9fsjGX3qpx51eeFizvZzTFBuRrvw=
 			</data>
 		</dict>
 		<key>Modules/Instabug.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DXbI8EFfOnfinV1jygcTx+tHk+Q=
+			d9aUzJr2zAqeiNQwN0XD5l4t6ag=
 			</data>
 			<key>hash2</key>
 			<data>
-			v7qqWo2OQi6E1UP3W2u3dQIoPgh3J7b53HSy+AEAiYA=
+			naEYdI6kZZ1rFPPDAL1OhmVu/bIQC+hMtnuqEXRtXvU=
 			</data>
 		</dict>
 		<key>Modules/Instabug.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Bm603o1KgjSD+P3RdlnTCHaKffU=
+			wyw34YQj6ZYoL8QvN0AVz7XXSgc=
 			</data>
 			<key>hash2</key>
 			<data>
-			nvsNYU0TbkuwHsiO2WTxfT8U8FGCqEK6A/2AjxMgvUY=
+			13noCJ3YVFT5cdxq7Kwz0z3oIb9MzrT906Q1DXwkR+k=
 			</data>
 		</dict>
 		<key>Modules/Instabug.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Q/GwvPj9bQG3Xp8kAQxYNKVvGho=
+			3GZ3S0o9Pa8ibDdlc+cOKrmLrfc=
 			</data>
 			<key>hash2</key>
 			<data>
-			+1XLXhqI0qFeKgU+x4FjYl/easumCRZPgHQW7tT41tQ=
+			4/JSW4M19x/VAsIe9iLWH/U8Aavuv+rMg8oj9jwfLmU=
 			</data>
 		</dict>
 		<key>Modules/Instabug.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1dPgxUuY7IxovMzvFD3iPgqMJ4U=
+			2rzlNs65dGNhASrava3atvxaV1c=
 			</data>
 			<key>hash2</key>
 			<data>
-			vyXUv8iAy3o+QePnllf+u0ujkc/hownha0GNMXY2+8g=
+			jobjGYMBbt+qANntm7EcBGuwuKvaWILjYqXYagaQTpQ=
 			</data>
 		</dict>
 		<key>Modules/Instabug.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Bm603o1KgjSD+P3RdlnTCHaKffU=
+			wyw34YQj6ZYoL8QvN0AVz7XXSgc=
 			</data>
 			<key>hash2</key>
 			<data>
-			nvsNYU0TbkuwHsiO2WTxfT8U8FGCqEK6A/2AjxMgvUY=
+			13noCJ3YVFT5cdxq7Kwz0z3oIb9MzrT906Q1DXwkR+k=
 			</data>
 		</dict>
 		<key>Modules/Instabug.swiftmodule/armv7.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Q/GwvPj9bQG3Xp8kAQxYNKVvGho=
+			3GZ3S0o9Pa8ibDdlc+cOKrmLrfc=
 			</data>
 			<key>hash2</key>
 			<data>
-			+1XLXhqI0qFeKgU+x4FjYl/easumCRZPgHQW7tT41tQ=
+			4/JSW4M19x/VAsIe9iLWH/U8Aavuv+rMg8oj9jwfLmU=
 			</data>
 		</dict>
 		<key>Modules/Instabug.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1dPgxUuY7IxovMzvFD3iPgqMJ4U=
+			2rzlNs65dGNhASrava3atvxaV1c=
 			</data>
 			<key>hash2</key>
 			<data>
-			vyXUv8iAy3o+QePnllf+u0ujkc/hownha0GNMXY2+8g=
+			jobjGYMBbt+qANntm7EcBGuwuKvaWILjYqXYagaQTpQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
