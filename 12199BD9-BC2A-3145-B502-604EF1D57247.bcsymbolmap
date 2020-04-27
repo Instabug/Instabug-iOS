@@ -1116,9 +1116,8 @@ __29+[IBGFileStorage getInstance]_block_invoke
 -[IBGLogLogger trimmedLogStatemement:]
 -[IBGLogLogger addLog:level:date:]
 ___34-[IBGLogLogger addLog:level:date:]_block_invoke
-___copy_helper_block_e8_32s40s48s56w
-___destroy_helper_block_e8_32s40s48s56w
-___34-[IBGLogLogger addLog:level:date:]_block_invoke.633
+___copy_helper_block_e8_32s40s48s56s64w
+___34-[IBGLogLogger addLog:level:date:]_block_invoke.639
 -[IBGLogLogger addLog:level:date:inManagedObjectContext:]
 -[IBGLogLogger loadLogsSynchronously]
 ___37-[IBGLogLogger loadLogsSynchronously]_block_invoke
@@ -1131,9 +1130,8 @@ ___copy_helper_block_e8_32s40b48s
 -[IBGLogLogger loadSnapshotSynchronously:withCompletionHandler:]
 -[IBGLogLogger addReportLogsToLogs:]
 -[IBGLogLogger getMaxCount]
--[IBGLogLogger purgeIfNeeded]
--[IBGLogLogger purgeOldLogs]
-___28-[IBGLogLogger purgeOldLogs]_block_invoke
+-[IBGLogLogger purgeIfNeededWithContext:]
+-[IBGLogLogger purgeOldLogWithContext:]
 -[IBGLogLogger clearAllLogs]
 ___28-[IBGLogLogger clearAllLogs]_block_invoke
 -[IBGLogLogger clearLastSessionLogs]
@@ -1146,13 +1144,14 @@ ___32+[IBGLogLogger dataLayerService]_block_invoke
 +[IBGLogLogger defaultLogLevel]
 -[IBGLogLogger logsCount]
 -[IBGLogLogger setLogsCount:]
-___block_descriptor_64_e8_32s40s48s56w_e32_v16?0"NSManagedObjectContext"8l
-___block_descriptor_48_e8_32s40w_e17_v16?0"NSError"8l
+___block_descriptor_72_e8_32s40s48s56s64w_e32_v16?0"NSManagedObjectContext"8l
+___block_descriptor_32_e17_v16?0"NSError"8l
 ___block_descriptor_56_e8_32s40s48r_e32_v16?0"NSManagedObjectContext"8l
 ___block_descriptor_56_e8_32s40bs48s_e32_v16?0"NSManagedObjectContext"8l
-___block_literal_global.773
+___block_literal_global.745
+___block_literal_global.770
 _dataLayerService.once
-___block_literal_global.791
+___block_literal_global.788
 __dataLayerService
 __OBJC_PROTOCOL_$_IBGSnapshotProtcol
 __OBJC_LABEL_PROTOCOL_$_IBGSnapshotProtcol
@@ -1163,14 +1162,12 @@ __32+[IBGLogLogger dataLayerService]_block_invoke
 __28-[IBGLogLogger clearOldLogs]_block_invoke
 __36-[IBGLogLogger clearLastSessionLogs]_block_invoke
 __28-[IBGLogLogger clearAllLogs]_block_invoke
-__28-[IBGLogLogger purgeOldLogs]_block_invoke
 __copy_helper_block_e8_32s40b48s
 __56-[IBGLogLogger loadLogsWithSessionId:completionHandler:]_block_invoke
 __copy_helper_block_e8_32s40s48r
 __37-[IBGLogLogger loadLogsSynchronously]_block_invoke
-__34-[IBGLogLogger addLog:level:date:]_block_invoke.633
-__destroy_helper_block_e8_32s40s48s56w
-__copy_helper_block_e8_32s40s48s56w
+__34-[IBGLogLogger addLog:level:date:]_block_invoke.639
+__copy_helper_block_e8_32s40s48s56s64w
 __34-[IBGLogLogger addLog:level:date:]_block_invoke
 -[IBGUUIDMigrationCache cacheDiskPath]
 /Users/distiller/project/Instabug/InstabugCore/Caching/IBGUUIDMigrationCache.m
@@ -2723,6 +2720,7 @@ FeaturesRequest/Views/Cells/IBGSortingTableViewCell.m
 -[IBGShapeRecognizer recognizeDrawing:points:withReturnBlock:]
 ___62-[IBGShapeRecognizer recognizeDrawing:points:withReturnBlock:]_block_invoke
 ___copy_helper_block_e8_32s40s48b56w
+___destroy_helper_block_e8_32s40s48s56w
 -[IBGShapeRecognizer recgonizingEngine]
 -[IBGShapeRecognizer setRecgonizingEngine:]
 -[IBGShapeRecognizer .cxx_destruct]
@@ -2731,6 +2729,7 @@ ___block_descriptor_64_e8_32s40s48bs56w_e5_v8?0l
 _OBJC_IVAR_$_IBGShapeRecognizer._recgonizingEngine
 /Users/distiller/project/Instabug/InstabugAnnotations/Shape Recognizer/IBGShapeRecognizer.m
 InstabugAnnotations/Shape Recognizer/IBGShapeRecognizer.m
+__destroy_helper_block_e8_32s40s48s56w
 __copy_helper_block_e8_32s40s48b56w
 __62-[IBGShapeRecognizer recognizeDrawing:points:withReturnBlock:]_block_invoke
 -[IBGRectangleAnnotationView initWithFrame:zPosition:originator:annotatingColor:angle:]
@@ -5059,17 +5058,17 @@ ___52+[IBGNetworkLoggerPersistenceManager sharedInstance]_block_invoke
 -[IBGNetworkLoggerPersistenceManager saveLogWithRequest:body:resposne:data:error:duration:withCompletionHandler:]
 -[IBGNetworkLoggerPersistenceManager saveLogWithRequest:body:resposne:data:error:duration:withCompletionHandler:date:]
 ___118-[IBGNetworkLoggerPersistenceManager saveLogWithRequest:body:resposne:data:error:duration:withCompletionHandler:date:]_block_invoke
-___copy_helper_block_e8_32s40s48s56s64s72s80b
-___118-[IBGNetworkLoggerPersistenceManager saveLogWithRequest:body:resposne:data:error:duration:withCompletionHandler:date:]_block_invoke.71
+___118-[IBGNetworkLoggerPersistenceManager saveLogWithRequest:body:resposne:data:error:duration:withCompletionHandler:date:]_block_invoke.77
 -[IBGNetworkLoggerPersistenceManager addNetworkLogWithUrl:method:requestBody:responseBody:responseCode:requestHeaders:responseHeaders:contentType:duration:]
 ___156-[IBGNetworkLoggerPersistenceManager addNetworkLogWithUrl:method:requestBody:responseBody:responseCode:requestHeaders:responseHeaders:contentType:duration:]_block_invoke
+___copy_helper_block_e8_32s40s48s56s64s72s80s88s
+___destroy_helper_block_e8_32s40s48s56s64s72s80s88s
 ___156-[IBGNetworkLoggerPersistenceManager addNetworkLogWithUrl:method:requestBody:responseBody:responseCode:requestHeaders:responseHeaders:contentType:duration:]_block_invoke.85
 -[IBGNetworkLoggerPersistenceManager loadLogsWithSessionId:completionHandler:]
 ___78-[IBGNetworkLoggerPersistenceManager loadLogsWithSessionId:completionHandler:]_block_invoke
--[IBGNetworkLoggerPersistenceManager purgeIfNeeded]
 +[IBGNetworkLoggerPersistenceManager fetchRequest]
--[IBGNetworkLoggerPersistenceManager purgeOldLogs]
-___50-[IBGNetworkLoggerPersistenceManager purgeOldLogs]_block_invoke
+-[IBGNetworkLoggerPersistenceManager purgeIfNeededWithContext:]
+-[IBGNetworkLoggerPersistenceManager purgeOldLogWithContext:]
 -[IBGNetworkLoggerPersistenceManager loadSnapshotSynchronously:withCompletionHandler:]
 -[IBGNetworkLoggerPersistenceManager loadSnapshotWithSessionId:withCompletionHandler:]
 -[IBGNetworkLoggerPersistenceManager clearAllLogs]
@@ -5086,12 +5085,12 @@ ___50-[IBGNetworkLoggerPersistenceManager clearOldLogs]_block_invoke
 -[IBGNetworkLoggerPersistenceManager setLogsCount:]
 -[IBGNetworkLoggerPersistenceManager .cxx_destruct]
 __sharedInstance
-___block_descriptor_96_e8_32s40s48s56s64s72s80bs_e32_v16?0"NSManagedObjectContext"8l
-___block_descriptor_40_e8_32s_e17_v16?0"NSError"8l
-___block_descriptor_100_e8_32s40s48s56s64s72s80s_e32_v16?0"NSManagedObjectContext"8l
-___block_literal_global.142
-___block_literal_global.149
-___block_literal_global.152
+___block_descriptor_96_e8_32s40s48s56s64s72s80s_e32_v16?0"NSManagedObjectContext"8l
+___block_descriptor_108_e8_32s40s48s56s64s72s80s88s_e32_v16?0"NSManagedObjectContext"8l
+___block_literal_global.86
+___block_literal_global.141
+___block_literal_global.148
+___block_literal_global.151
 _OBJC_IVAR_$_IBGNetworkLoggerPersistenceManager._dataLayerService
 _OBJC_IVAR_$_IBGNetworkLoggerPersistenceManager._logsCount
 /Users/distiller/project/Instabug/InstabugNetworkLogger/Modules/IBGNetworkLoggerPersistenceManager.m
@@ -5100,12 +5099,12 @@ __50-[IBGNetworkLoggerPersistenceManager clearOldLogs]_block_invoke
 __63-[IBGNetworkLoggerPersistenceManager clearAllLogsSynchronously]_block_invoke
 __58-[IBGNetworkLoggerPersistenceManager clearLastSessionLogs]_block_invoke
 __50-[IBGNetworkLoggerPersistenceManager clearAllLogs]_block_invoke
-__50-[IBGNetworkLoggerPersistenceManager purgeOldLogs]_block_invoke
 __78-[IBGNetworkLoggerPersistenceManager loadLogsWithSessionId:completionHandler:]_block_invoke
 __156-[IBGNetworkLoggerPersistenceManager addNetworkLogWithUrl:method:requestBody:responseBody:responseCode:requestHeaders:responseHeaders:contentType:duration:]_block_invoke.85
+__destroy_helper_block_e8_32s40s48s56s64s72s80s88s
+__copy_helper_block_e8_32s40s48s56s64s72s80s88s
 __156-[IBGNetworkLoggerPersistenceManager addNetworkLogWithUrl:method:requestBody:responseBody:responseCode:requestHeaders:responseHeaders:contentType:duration:]_block_invoke
-__118-[IBGNetworkLoggerPersistenceManager saveLogWithRequest:body:resposne:data:error:duration:withCompletionHandler:date:]_block_invoke.71
-__copy_helper_block_e8_32s40s48s56s64s72s80b
+__118-[IBGNetworkLoggerPersistenceManager saveLogWithRequest:body:resposne:data:error:duration:withCompletionHandler:date:]_block_invoke.77
 __118-[IBGNetworkLoggerPersistenceManager saveLogWithRequest:body:resposne:data:error:duration:withCompletionHandler:date:]_block_invoke
 __52+[IBGNetworkLoggerPersistenceManager sharedInstance]_block_invoke
 -[IBGSurveysPartialGradientView init]
@@ -6530,7 +6529,6 @@ __inspectorQueue
 ___block_descriptor_48_e8_40r_e5_v8?0l
 ___block_descriptor_40_e8_32r_e5_v8?0l
 _isOSLogAvailabile
-___block_literal_global.141
 _consoleLogs
 ___block_descriptor_48_e8_40r_e25_v32?0"UIWindow"8Q16^B24l
 ___block_descriptor_40_e8__e25_v32?0"UIWindow"8Q16^B24l
@@ -6741,7 +6739,6 @@ ___32-[IBGConsoleLogger purgeOldLogs]_block_invoke
 -[IBGConsoleLogger dataLayerService]
 -[IBGConsoleLogger setDataLayerService:]
 -[IBGConsoleLogger .cxx_destruct]
-___block_descriptor_32_e17_v16?0"NSError"8l
 ___block_literal_global.29
 ___block_literal_global.73
 ___block_descriptor_40_e8_32s_e44_"IBGConsoleLog"16?0"IBGReportConsoleLog"8l
@@ -8304,12 +8301,12 @@ __20-[IBGAlertView show]_block_invoke
 ___32+[IBGEventLogger sharedInstance]_block_invoke
 -[IBGEventLogger init]
 +[IBGEventLogger destroy]
--[IBGEventLogger purgeOldLogs]
 -[IBGEventLogger addEventLogWithName:params:]
 -[IBGEventLogger addEventLogWithName:params:date:]
 -[IBGEventLogger addEventLogWithName:params:completionHandler:]
 -[IBGEventLogger addEventLogWithName:params:date:completionHandler:]
 ___68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke
+___copy_helper_block_e8_32s40s48s56w
 ___68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke.41
 ___68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke.74
 -[IBGEventLogger migrateEventsToUserWithUUID:completionHandler:]
@@ -8359,6 +8356,7 @@ ___block_literal_global.108
 ___block_descriptor_48_e8_32r40w_e5_v8?0l
 ___block_descriptor_56_e8_32s40r48w_e32_v16?0"NSManagedObjectContext"8l
 ___block_descriptor_48_e8_32bs40r_e5_v8?0l
+___block_literal_global.142
 ___block_literal_global.146
 _OBJC_IVAR_$_IBGEventLogger._observer
 _OBJC_IVAR_$_IBGEventLogger._stateEventLogs
@@ -8386,6 +8384,7 @@ __64-[IBGEventLogger migrateEventsToUserWithUUID:completionHandler:]_block_invok
 __64-[IBGEventLogger migrateEventsToUserWithUUID:completionHandler:]_block_invoke
 __68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke.74
 __68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke.41
+__copy_helper_block_e8_32s40s48s56w
 __68-[IBGEventLogger addEventLogWithName:params:date:completionHandler:]_block_invoke
 __32+[IBGEventLogger sharedInstance]_block_invoke
 -[IBGAttachmentButton initWithButtonType:]
@@ -10474,7 +10473,6 @@ ___32-[IBGBugVC cancelButtonPressed:]_block_invoke_2
 ___32-[IBGBugVC cancelButtonPressed:]_block_invoke_3
 -[IBGBugVC showInvalidEmailAndCommentAlerts]
 ___44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke
-___copy_helper_block_e8_32s40s48s56s64w
 -[IBGBugVC alertWithTitle:message:action:]
 ___42-[IBGBugVC alertWithTitle:message:action:]_block_invoke
 -[IBGBugVC resetViewForNoObstruction]
@@ -10558,7 +10556,6 @@ __39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke_2
 __39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke.1153
 __39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke
 __42-[IBGBugVC alertWithTitle:message:action:]_block_invoke
-__copy_helper_block_e8_32s40s48s56s64w
 __44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke
 __32-[IBGBugVC cancelButtonPressed:]_block_invoke_3
 __32-[IBGBugVC cancelButtonPressed:]_block_invoke_2
@@ -12676,6 +12673,7 @@ ___39-[IBGReportInvocationManager didInvoke]_block_invoke
 -[IBGReportInvocationManager setPromptInvocationEvent:]
 -[IBGReportInvocationManager .cxx_destruct]
 ___block_literal_global.778
+___block_literal_global.791
 ___block_literal_global.806
 ___block_literal_global.807
 ___block_descriptor_32_e37_v16?0"IBGInvocationFloatingButton"8l
@@ -20596,7 +20594,7 @@ _IBGStrokeColor
 ___block_literal_global.143
 ___block_literal_global.144
 ___block_literal_global.145
-___block_literal_global.151
+___block_literal_global.152
 ___block_literal_global.153
 ___block_literal_global.154
 ___block_literal_global.155
