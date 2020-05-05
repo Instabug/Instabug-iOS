@@ -6978,8 +6978,8 @@ ___71-[IBGActionSheetVC viewWillTransitionToSize:withTransitionCoordinator:]_blo
 -[IBGActionSheetVC traitCollectionDidChange:]
 -[IBGActionSheetVC addGesturesRecognizers]
 -[IBGActionSheetVC handleTapGestureRecognizer]
--[IBGActionSheetVC viewWillAppear:]
-___35-[IBGActionSheetVC viewWillAppear:]_block_invoke
+-[IBGActionSheetVC viewDidAppear:]
+___34-[IBGActionSheetVC viewDidAppear:]_block_invoke
 -[IBGActionSheetVC hideWithSelectedItem:]
 ___41-[IBGActionSheetVC hideWithSelectedItem:]_block_invoke
 ___41-[IBGActionSheetVC hideWithSelectedItem:]_block_invoke_2
@@ -7065,7 +7065,7 @@ InstabugCore/View Controllers/IBGActionSheetVC.m
 InstabugCore/View Controllers/IBGActionSheetVC.h
 __41-[IBGActionSheetVC hideWithSelectedItem:]_block_invoke_2
 __41-[IBGActionSheetVC hideWithSelectedItem:]_block_invoke
-__35-[IBGActionSheetVC viewWillAppear:]_block_invoke
+__34-[IBGActionSheetVC viewDidAppear:]_block_invoke
 __71-[IBGActionSheetVC viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke.97
 __71-[IBGActionSheetVC viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
 -[IBGSurveysViewFactory surveyViewControllerWithQuestion:controller:type:]
@@ -9601,7 +9601,7 @@ InstabugCore/Server and Requests/Specific Requests/IBGInternalErrorRequest.m
 -[IBGBugController isValidEmail:]
 -[IBGBugController isValidNumber:]
 -[IBGBugController isValidComment:]
--[IBGBugController nextTappedInScreenshotView:]
+-[IBGBugController nextTappedInScreenshotView:annotatedScreenshot:]
 -[IBGBugController cancelPressedInScreenshotView:]
 -[IBGBugController delegate]
 -[IBGBugController setDelegate:]
@@ -10295,7 +10295,7 @@ ___43-[IBGScreenshotVC dismissColorSelectorView]_block_invoke
 -[IBGScreenshotVC colorNameForIndex:]
 -[IBGScreenshotVC colorForIndex:]
 -[IBGScreenshotVC adjustDrawingAreaConstraints]
--[IBGScreenshotVC newImageSize]
+-[IBGScreenshotVC newImageSizeWithScale:]
 -[IBGScreenshotVC screenshotRatio]
 -[IBGScreenshotVC isScreenshotLandscape]
 -[IBGScreenshotVC annotatedScreenshot]
@@ -10474,7 +10474,7 @@ ___26-[IBGBugVC viewDidAppear:]_block_invoke.857
 -[IBGBugVC didSelectAttachment:cell:]
 -[IBGBugVC didRemoveAttachment:]
 -[IBGBugVC didReceiveMemoryWarning]
--[IBGBugVC nextTappedInScreenshotView:]
+-[IBGBugVC nextTappedInScreenshotView:annotatedScreenshot:]
 -[IBGBugVC bugRequestCreator]
 -[IBGBugVC cancelPressedInScreenshotView:]
 -[IBGBugVC attachmentController]
@@ -10508,13 +10508,13 @@ ___42-[IBGBugVC alertWithTitle:message:action:]_block_invoke
 -[IBGBugVC metadataVC]
 -[IBGBugVC didFinishEncoding:filePath:]
 ___39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke
-___39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke.1153
+___39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke.1151
 ___39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke_2
 -[IBGBugVC attachmentsToolbarItems]
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1171
-___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1172
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1169
+___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1170
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_3
 ___35-[IBGBugVC attachmentsToolbarItems]_block_invoke_4
 -[IBGBugVC bottomToolbarView]
@@ -10573,12 +10573,12 @@ InstabugBugReporting/View Controllers/IBGBugVC.m
 InstabugBugReporting/View Controllers/IBGBugVC.h
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_4
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_3
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1172
-__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1171
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2.1170
+__35-[IBGBugVC attachmentsToolbarItems]_block_invoke.1169
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke_2
 __35-[IBGBugVC attachmentsToolbarItems]_block_invoke
 __39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke_2
-__39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke.1153
+__39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke.1151
 __39-[IBGBugVC didFinishEncoding:filePath:]_block_invoke
 __42-[IBGBugVC alertWithTitle:message:action:]_block_invoke
 __44-[IBGBugVC showInvalidEmailAndCommentAlerts]_block_invoke
@@ -11100,13 +11100,13 @@ ___34-[IBGLogLocalAttachment fetchLogs]_block_invoke_5
 -[IBGLogLocalAttachment jsonStringFromArray:]
 -[IBGLogLocalAttachment prepareLogData]
 -[IBGLogLocalAttachment prepareAttachmentAndSaveWithCompletion:]
+___64-[IBGLogLocalAttachment prepareAttachmentAndSaveWithCompletion:]_block_invoke
+___64-[IBGLogLocalAttachment prepareAttachmentAndSaveWithCompletion:]_block_invoke_2
 -[IBGLogLocalAttachment dictionaryValue]
 -[IBGLogLocalAttachment coderNameForSelector:]
 -[IBGLogLocalAttachment initWithDictionary:]
 -[IBGLogLocalAttachment isFullySent]
 -[IBGLogLocalAttachment send]
-___29-[IBGLogLocalAttachment send]_block_invoke
-___29-[IBGLogLocalAttachment send]_block_invoke_2
 -[IBGLogLocalAttachment logRequestWithLogType:]
 -[IBGLogLocalAttachment logRequestDone:isSuccess:]
 -[IBGLogLocalAttachment reportTimeStamp]
@@ -11139,6 +11139,7 @@ ___29-[IBGLogLocalAttachment send]_block_invoke_2
 _OBJC_IVAR_$_IBGLogLocalAttachment._logType
 _OBJC_IVAR_$_IBGLogLocalAttachment._shoulDeleteLogsAfterSend
 _OBJC_IVAR_$_IBGLogLocalAttachment._snapshot
+___block_descriptor_28_e4_20bs24w_e7_v8?04l
 _OBJC_IVAR_$_IBGLogLocalAttachment._reportTimeStamp
 _OBJC_IVAR_$_IBGLogLocalAttachment._consoleLog
 _OBJC_IVAR_$_IBGLogLocalAttachment._userStepsLog
@@ -11152,8 +11153,8 @@ _OBJC_IVAR_$_IBGLogLocalAttachment._sessionProfilerLogs
 /Users/distiller/project/Instabug/InstabugCore/Models/IBGLogLocalAttachment.m
 InstabugCore/Models/IBGLogLocalAttachment.m
 InstabugCore/Models/IBGLogLocalAttachment.h
-__29-[IBGLogLocalAttachment send]_block_invoke_2
-__29-[IBGLogLocalAttachment send]_block_invoke
+__64-[IBGLogLocalAttachment prepareAttachmentAndSaveWithCompletion:]_block_invoke_2
+__64-[IBGLogLocalAttachment prepareAttachmentAndSaveWithCompletion:]_block_invoke
 __34-[IBGLogLocalAttachment fetchLogs]_block_invoke_5
 __34-[IBGLogLocalAttachment fetchLogs]_block_invoke_4
 __34-[IBGLogLocalAttachment fetchLogs]_block_invoke_3
@@ -13825,7 +13826,7 @@ ___44-[IBGChatPresenter processDiff:updateBlock:]_block_invoke
 -[IBGChatPresenter dismissedWithAudio:error:]
 -[IBGChatPresenter dismissedWithVideoFromGallery:error:]
 -[IBGChatPresenter dismissedWithVideo:error:]
--[IBGChatPresenter nextTappedInScreenshotView:]
+-[IBGChatPresenter nextTappedInScreenshotView:annotatedScreenshot:]
 -[IBGChatPresenter cancelPressedInScreenshotView:]
 -[IBGChatPresenter dismissedWithImage:isFromGallery:]
 -[IBGChatPresenter cellIdentifierForIndexPath:toContent:]
@@ -18839,6 +18840,14 @@ ___35+[IBGPoliceDefaults sharedInstance]_block_invoke
 -[IBGPoliceDefaults shouldLogToFileWithLogLevel:]
 -[IBGPoliceDefaults saveCurrentUserEmail:andUUID:]
 -[IBGPoliceDefaults defaultsChanged]
+-[IBGPoliceDefaults internalLoggingLevel]
+-[IBGPoliceDefaults retentionDays]
+-[IBGPoliceDefaults totalSizeLimit]
+-[IBGPoliceDefaults uploadInterval]
+-[IBGPoliceDefaults targetedEmails]
+-[IBGPoliceDefaults targetedUUIDs]
+-[IBGPoliceDefaults currentEmail]
+-[IBGPoliceDefaults currentUUID]
 -[IBGPoliceDefaults setInternalLoggingLevel:]
 -[IBGPoliceDefaults setRetentionDays:]
 -[IBGPoliceDefaults setTotalSizeLimit:]
@@ -18849,14 +18858,6 @@ ___35+[IBGPoliceDefaults sharedInstance]_block_invoke
 -[IBGPoliceDefaults setCurrentUUID:]
 -[IBGPoliceDefaults setLastLogsUpload:]
 -[IBGPoliceDefaults setLastRetentionCheck:]
--[IBGPoliceDefaults internalLoggingLevel]
--[IBGPoliceDefaults retentionDays]
--[IBGPoliceDefaults totalSizeLimit]
--[IBGPoliceDefaults uploadInterval]
--[IBGPoliceDefaults targetedUUIDs]
--[IBGPoliceDefaults targetedEmails]
--[IBGPoliceDefaults currentEmail]
--[IBGPoliceDefaults currentUUID]
 -[IBGPoliceDefaults lastLogsUpload]
 -[IBGPoliceDefaults lastRetentionCheck]
 -[IBGPoliceDefaults isDebuggerAttached]
