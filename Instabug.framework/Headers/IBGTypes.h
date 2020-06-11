@@ -5,7 +5,7 @@
  
  Copyright:  (c) 2013-2018 by Instabug, Inc., all rights reserved.
  
- Version:    9.1.4
+ Version:    0.0.0
  */
 
 #import <UIKit/UIKit.h>
@@ -403,7 +403,9 @@ typedef NS_ENUM(NSInteger, IBGPlatform) {
     IBGPlatformIOS,
     IBGPlatformReactNative,
     IBGPlatformCordova,
-    IBGPlatformXamarin
+    IBGPlatformXamarin,
+    IBGPlatformUnity,
+    IBGPlatformFlutter
 };
 
 /**
