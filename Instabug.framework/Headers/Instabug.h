@@ -5,7 +5,7 @@
 
  Copyright:  (c) 2013-2019 by Instabug, Inc., all rights reserved.
 
- Version:    8.7.2
+ Version:    9.1.4
  */
 
 #import <Foundation/Foundation.h>
@@ -68,7 +68,8 @@ NS_ASSUME_NONNULL_BEGIN
  @brief Sets a block of code to be executed before sending each report.
  
  @discussion This block is executed in the background before sending each report. Could be used for attaching logs
- and extra data to reports.
+ and extra data to reports. In case of a crash report, the block will be executed before sending the crash which is on the
+ following session, not while the app is crashing.
  
  @param willSendReportHandler A block of code that gets executed before sending each bug report.
  */
@@ -307,6 +308,33 @@ NS_ASSUME_NONNULL_BEGIN
  @param name Event name.
  */
 + (void)logUserEventWithName:(NSString *)name;
+
+/**
+ @brief Disable all method swizzling inside SDK. You need to call this API before startWithToken:
+ 
+ @discussion Disable all method swizzling inside SDK. Disable method swizzling will affect the automatic capturing of user steps and repro steps inside the SDK so you need to use manual APIs to make it work again.
+ 
+ */
++ (void)disableMethodSwizzling;
+
+/**
+@brief Log view did appear event when you disable method swizzling
+
+@discussion Log  view did appear event when you disable method swizzling. This will be reflected in user steps and repro steps.
+ 
+@param viewName Name of view controller.
+*/
++ (void)logViewDidAppearEvent:(NSString *)viewName;
+
+/**
+@brief Log user's touch event when you disable method swizzling
+
+@discussion Log user's touch event when you disable method swizzlin. This will be reflected in user steps and repro steps.
+ 
+@param event An enum to set user's touch event.
+@param viewName View that recieves this event.
+*/
++ (void)logTouchEvent:(IBGUIEventType)event viewName:(NSString *)viewName;
 
 #pragma mark - SDK Debugging
 

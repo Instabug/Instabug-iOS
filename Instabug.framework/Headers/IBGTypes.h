@@ -5,7 +5,7 @@
  
  Copyright:  (c) 2013-2018 by Instabug, Inc., all rights reserved.
  
- Version:    8.7.2
+ Version:    9.1.4
  */
 
 #import <UIKit/UIKit.h>
@@ -35,6 +35,8 @@ extern NSString * const kIBGInvalidEmailMessageStringName;
 extern NSString * const kIBGInvalidEmailTitleStringName;
 extern NSString * const kIBGInvalidCommentMessageStringName;
 extern NSString * const kIBGInvalidCommentTitleStringName;
+extern NSString * const kIBGInvalidNumberTitleStringName;
+extern NSString * const kIBGInvalidNumberMessageStringName;
 extern NSString * const kIBGInvocationTitleStringName;
 extern NSString * const kIBGFeatureRequetsPromptName;
 extern NSString * const kIBGAskAQuestionStringName;
@@ -53,6 +55,8 @@ extern NSString * const kIBGMaximumSizeExceededAlertMessage;
 extern NSString * const kIBGiCloudImportErrorAlertTitle;
 extern NSString * const kIBGiCloudImportErrorAlertMessage;
 extern NSString * const kIBGEmailFieldPlaceholderStringName;
+extern NSString * const kIBGNumberFieldPlaceholderStringName;
+extern NSString * const kIBGNumberInfoAlertMessageStringName;
 extern NSString * const kIBGCommentFieldPlaceholderForBugReportStringName;
 extern NSString * const kIBGCommentFieldPlaceholderForFeedbackStringName;
 extern NSString * const kIBGCommentFieldPlaceholderForQuestionStringName;
@@ -141,7 +145,8 @@ extern NSString * const kIBGStringFeatureRequestMyFeaturesText;
 extern NSString * const kIBGSurveyIntroTitleText;
 extern NSString * const kIBGSurveyIntroDescriptionText;
 extern NSString * const kIBGSurveyIntroTakeSurveyButtonText;
-extern NSString * const kIBGSurveyIntroDismissButtonText;
+extern NSString * const kIBDismissButtonTitleStringName DEPRECATED_MSG_ATTRIBUTE("kIBDismissButtonTitleStringName is deprecated. You can use kIBGDismissButtonTitleStringName instead.");
+extern NSString * const kIBGDismissButtonTitleStringName;
 extern NSString * const kIBGSurveyThankYouTitleText DEPRECATED_MSG_ATTRIBUTE("kIBGSurveyThankYouTitleText is deprecated. You can edit this string from the dashboard, and use kIBGCustomSurveyThankYouTitleText for Custom surveys.");
 extern NSString * const kIBGSurveyThankYouDescriptionText DEPRECATED_MSG_ATTRIBUTE("kIBGSurveyThankYouDescriptionText is deprecated. You can edit this string from the dashboard, and use kIBGCustomSurveyThankYouDescriptionText for Custom surveys.");
 extern NSString * const kIBGStoreRatingThankYouTitleText;
@@ -296,21 +301,8 @@ typedef NS_ENUM(NSInteger, IBGLocale) {
     IBGLocaleSpanish,
     IBGLocaleSwedish,
     IBGLocaleTurkish,
-    IBGLocaleHungarian
-};
-
-/**
- Verbosity level of the SDK debug logs. This has nothing to do with IBGLog, and only affect the logs used to debug the
- SDK itself.
- 
- Defaults to IBGSDKDebugLogsLevelError. Make sure you only use IBGSDKDebugLogsLevelError or IBGSDKDebugLogsLevelNone in
- production builds.
- */
-typedef NS_ENUM(NSInteger, IBGSDKDebugLogsLevel) {
-    IBGSDKDebugLogsLevelVerbose,
-    IBGSDKDebugLogsLevelDebug,
-    IBGSDKDebugLogsLevelError,
-    IBGSDKDebugLogsLevelNone
+    IBGLocaleHungarian,
+    IBGLocaleFinnish
 };
 
 /**
@@ -343,6 +335,20 @@ typedef NS_ENUM(NSInteger, IBGLogLevel) {
     IBGLogLevelWarning,
     IBGLogLevelError,
     IBGLogLevelFatal
+};
+
+/**
+ Verbosity level of the SDK debug logs. This has nothing to do with IBGLog, and only affect the logs used to debug the
+ SDK itself.
+ 
+ Defaults to IBGSDKDebugLogsLevelError. Make sure you only use IBGSDKDebugLogsLevelError or IBGSDKDebugLogsLevelNone in
+ production builds.
+ */
+typedef NS_ENUM(NSInteger, IBGSDKDebugLogsLevel) {
+    IBGSDKDebugLogsLevelVerbose = 1,
+    IBGSDKDebugLogsLevelDebug = 2,
+    IBGSDKDebugLogsLevelError = 3,
+    IBGSDKDebugLogsLevelNone = 4
 };
 
 /**
@@ -397,5 +403,19 @@ typedef NS_ENUM(NSInteger, IBGPlatform) {
     IBGPlatformIOS,
     IBGPlatformReactNative,
     IBGPlatformCordova,
-    IBGPlatformXamarin
+    IBGPlatformXamarin,
+    IBGPlatformUnity,
+    IBGPlatformFlutter
+};
+
+/**
+User's touch event types
+*/
+typedef NS_ENUM(NSInteger, IBGUIEventType) {
+    IBGUIEventTypeTap,
+    IBGUIEventTypeForceTouch,
+    IBGUIEventTypeLongPress,
+    IBGUIEventTypePinch,
+    IBGUIEventTypeSwipe,
+    IBGUIEventTypeScroll
 };
