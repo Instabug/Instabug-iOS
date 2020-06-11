@@ -51,6 +51,27 @@ Then drag Instabug.framework into your Xcode project.
 ```
 bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Instabug.framework/strip-frameworks.sh"
 ```
+4. In Xcode 11.x you might get the following error:
+```
+dyld: Library not loaded: @rpath/Instabug.framework/Instabug
+Reason: image not found
+```
+If that's the case, do the following steps:
+- Under Build Phases, click on + icon to add new phase, and select New Copy Files Phase.
+
+- Drag the newly created Copy Files phase above Compile Sources phase
+
+- In the new Copy Files phase, select Frameworks from Destination dropdown.
+
+- Leave subpath blank. Let be default Copy only when installing.
+
+- Under the table, click '+' and then select `Instabug.framework`
+
+- Make sure `Code Sign on Copy` is checked (ticked).
+
+- Do a clean build.
+
+
 
 ## Usage
 
