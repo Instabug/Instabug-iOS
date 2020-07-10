@@ -219,7 +219,7 @@ SWIFT_CLASS("_TtC14InstabugStatic15IBGCrashManager")
 - (void)startCrashReportingListeners;
 - (void)reportExceptionWith:(NSException * _Nonnull)exception;
 - (void)reportErrorWith:(NSError * _Nonnull)error;
-- (void)reportCrashWithStackTrace:(NSString * _Nonnull)stackTrace handled:(BOOL)handled willCrashNative:(BOOL)willCrashNative;
+- (void)reportCrashWithStackTrace:(NSString * _Nonnull)stackTrace handled:(BOOL)handled;
 - (void)handlePendingCrashReportIfExists;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -456,7 +456,7 @@ SWIFT_CLASS("_TtC14InstabugStatic15IBGCrashManager")
 - (void)startCrashReportingListeners;
 - (void)reportExceptionWith:(NSException * _Nonnull)exception;
 - (void)reportErrorWith:(NSError * _Nonnull)error;
-- (void)reportCrashWithStackTrace:(NSString * _Nonnull)stackTrace handled:(BOOL)handled willCrashNative:(BOOL)willCrashNative;
+- (void)reportCrashWithStackTrace:(NSString * _Nonnull)stackTrace handled:(BOOL)handled;
 - (void)handlePendingCrashReportIfExists;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
