@@ -5,12 +5,11 @@
 
  Copyright:  (c) 2013-2019 by Instabug, Inc., all rights reserved.
 
- Version:    9.1.6
+ Version:    9.1.5
  */
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "InstabugCore.h"
 #import "IBGNetworkLogger.h"
 #import "IBGReport.h"
 #import "IBGLog.h"
@@ -20,6 +19,8 @@
 #import "IBGFeatureRequests.h"
 #import "IBGChats.h"
 #import "IBGReplies.h"
+#import "IBGAPM.h"
+#import "IBGTrace.h"
 #import "UIView+Instabug.h"
 
 /**
