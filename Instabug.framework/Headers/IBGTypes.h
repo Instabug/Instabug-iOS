@@ -279,6 +279,7 @@ typedef NS_ENUM(NSInteger, IBGDismissType) {
  */
 typedef NS_ENUM(NSInteger, IBGLocale) {
     IBGLocaleArabic,
+    IBGLocaleAzerbaijani,
     IBGLocaleChineseSimplified,
     IBGLocaleChineseTaiwan,
     IBGLocaleChineseTraditional,
