@@ -16522,7 +16522,7 @@ ___35-[IBGVideoRecorder writeVideoFrame]_block_invoke_3
 ___35-[IBGVideoRecorder writeVideoFrame]_block_invoke_4
 -[IBGVideoRecorder handleFrameEncodingDone]
 -[IBGVideoRecorder adjustFrameRateWithCaptureDuration:]
--[IBGVideoRecorder initializeWriteTimer]
+-[IBGVideoRecorder initializeWriteTimerThenFire:]
 -[IBGVideoRecorder didFinishRecordingVideoWithURL:withCompletionHandler:]
 ___73-[IBGVideoRecorder didFinishRecordingVideoWithURL:withCompletionHandler:]_block_invoke
 ___73-[IBGVideoRecorder didFinishRecordingVideoWithURL:withCompletionHandler:]_block_invoke_2
