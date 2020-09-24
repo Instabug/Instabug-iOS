@@ -13998,7 +13998,7 @@ ___43-[IBGAutoVideoRecorder autoScreenRecording]_block_invoke_4
 ___69-[IBGAutoVideoRecorder screenshotModelWithImg:withCompletionHandler:]_block_invoke
 ___69-[IBGAutoVideoRecorder screenshotModelWithImg:withCompletionHandler:]_block_invoke_2
 -[IBGAutoVideoRecorder adjustFrameRateWithCaptureDuration:]
--[IBGAutoVideoRecorder initializeWriteTimer]
+-[IBGAutoVideoRecorder initializeWriteTimerThenFire:]
 -[IBGAutoVideoRecorder cleanup]
 -[IBGAutoVideoRecorder autoframeRate]
 -[IBGAutoVideoRecorder setAutoframeRate:]
