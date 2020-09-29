@@ -5,11 +5,10 @@
  
  Copyright:  (c) 2013-2019 by Instabug, Inc., all rights reserved.
  
- Version:    9.1.7
+ Version:    10.0
  */
 
 #import <Foundation/Foundation.h>
-#import "InstabugCore.h"
 
 @interface IBGLog : NSObject
 

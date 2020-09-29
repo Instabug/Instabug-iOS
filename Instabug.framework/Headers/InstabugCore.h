@@ -5,13 +5,16 @@
  
  Copyright:  (c) 2013-2019 by Instabug, Inc., all rights reserved.
  
- Version:    9.1.7
+ Version:    10.0
  */
 
 #import <Foundation/Foundation.h>
-#import "IBGTypes.h"
-#import "IBGReport.h"
+#import <InstabugDefaults/InstabugDefaults.h>
 
-@interface InstabugCore : NSObject
+//! Project version number for InstabugAPM.
+FOUNDATION_EXPORT double InstabugCoreVersionNumber;
 
-@end
+//! Project version string for InstabugAPM.
+FOUNDATION_EXPORT const unsigned char InstabugCoreVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <InstabugCore/PublicHeader.h>
