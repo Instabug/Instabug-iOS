@@ -1,10 +1,12 @@
-//
-//  IBGAPM.h
-//  InstabugAPM
-//
-//  Created by Yousef Hamza on 4/9/20.
-//  Copyright © 2020 Moataz. All rights reserved.
-//
+/*
+ File:       Instabug/IBGAPM.h
+ 
+ Contains:   API for using Instabug's SDK.
+ 
+ Copyright:  (c) 2013-2020 by Instabug, Inc., all rights reserved.
+ 
+ Version:    0.0.0
+ */
 
 #import <Foundation/Foundation.h>
 #import "IBGTypes.h"
