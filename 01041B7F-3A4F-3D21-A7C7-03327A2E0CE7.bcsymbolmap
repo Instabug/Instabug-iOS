@@ -3590,6 +3590,7 @@ __32-[IBGCPUUsageLogger startLogger]_block_invoke
 +[IBGReplies hasChats]
 +[IBGReplies didReceiveRemoteNotification:]
 +[IBGReplies didRegisterForRemoteNotificationsWithDeviceToken:]
++[IBGReplies markDismissedMessageAsRead]
 __enabled
 _OBJC_CLASSLIST_REFERENCES_$_.759
 _OBJC_SELECTOR_REFERENCES_.761
@@ -3615,6 +3616,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.815
 _OBJC_SELECTOR_REFERENCES_.819
 _OBJC_SELECTOR_REFERENCES_.827
 _OBJC_SELECTOR_REFERENCES_.829
+_OBJC_SELECTOR_REFERENCES_.831
 __OBJC_$_CLASS_METHODS_IBGReplies
 __OBJC_$_CLASS_PROP_LIST_IBGReplies
 __OBJC_METACLASS_RO_$_IBGReplies
@@ -5115,7 +5117,6 @@ _OBJC_SELECTOR_REFERENCES_.818
 _OBJC_SELECTOR_REFERENCES_.820
 _OBJC_SELECTOR_REFERENCES_.822
 _OBJC_CLASSLIST_REFERENCES_$_.825
-_OBJC_SELECTOR_REFERENCES_.831
 _OBJC_CLASSLIST_REFERENCES_$_.832
 _OBJC_CLASSLIST_REFERENCES_$_.835
 _OBJC_SELECTOR_REFERENCES_.837
@@ -9485,6 +9486,7 @@ InstabugCore/Controllers/IBGVideoRecorderController.m
 __55-[IBGVideoRecorderController alertUserAboutPermissions]_block_invoke
 -[IBGUnnotifiedMessagesHUDController showWithMessages:]
 ___55-[IBGUnnotifiedMessagesHUDController showWithMessages:]_block_invoke
+-[IBGUnnotifiedMessagesHUDController markShownMessagesAsRead]
 -[IBGUnnotifiedMessagesHUDController dismissWithAnimation:]
 -[IBGUnnotifiedMessagesHUDController initializeNotificationWindowForMessage:]
 -[IBGUnnotifiedMessagesHUDController initializeNotificationWindowForMultipleMessages:]
@@ -9500,6 +9502,8 @@ ___55-[IBGUnnotifiedMessagesHUDController showWithMessages:]_block_invoke
 -[IBGUnnotifiedMessagesHUDController setNotificationWindow:]
 -[IBGUnnotifiedMessagesHUDController notificationChat]
 -[IBGUnnotifiedMessagesHUDController setNotificationChat:]
+-[IBGUnnotifiedMessagesHUDController messagesToShow]
+-[IBGUnnotifiedMessagesHUDController setMessagesToShow:]
 -[IBGUnnotifiedMessagesHUDController .cxx_destruct]
 __OBJC_$_PROTOCOL_REFS_IBGUnnotifiedMessagesAlertWindowDelegate
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_IBGUnnotifiedMessagesAlertWindowDelegate
@@ -9512,6 +9516,7 @@ __OBJC_$_INSTANCE_METHODS_IBGUnnotifiedMessagesHUDController
 _OBJC_IVAR_$_IBGUnnotifiedMessagesHUDController._delegate
 _OBJC_IVAR_$_IBGUnnotifiedMessagesHUDController._notificationWindow
 _OBJC_IVAR_$_IBGUnnotifiedMessagesHUDController._notificationChat
+_OBJC_IVAR_$_IBGUnnotifiedMessagesHUDController._messagesToShow
 __OBJC_$_INSTANCE_VARIABLES_IBGUnnotifiedMessagesHUDController
 __OBJC_$_PROP_LIST_IBGUnnotifiedMessagesHUDController
 __OBJC_CLASS_RO_$_IBGUnnotifiedMessagesHUDController
@@ -33237,6 +33242,8 @@ ___32+[IBGSDKDefaults sharedInstance]_block_invoke
 +[IBGSDKDefaults IBGPromptOptionStatusDidChangeNotification]
 -[IBGSDKDefaults setReportingEmail:]
 -[IBGSDKDefaults setAllPromptOptionsDisabled:]
+-[IBGSDKDefaults markDismissedMessageAsRead]
+-[IBGSDKDefaults setMarkDismissedMessageAsRead:]
 -[IBGSDKDefaults defaults]
 -[IBGSDKDefaults setDefaults:]
 -[IBGSDKDefaults .cxx_destruct]
@@ -33245,6 +33252,7 @@ __OBJC_$_CLASS_METHODS_IBGSDKDefaults
 __OBJC_METACLASS_RO_$_IBGSDKDefaults
 __OBJC_$_INSTANCE_METHODS_IBGSDKDefaults
 _OBJC_IVAR_$_IBGSDKDefaults._allPromptOptionsDisabled
+_OBJC_IVAR_$_IBGSDKDefaults._markDismissedMessageAsRead
 _OBJC_IVAR_$_IBGSDKDefaults._reportingEmail
 _OBJC_IVAR_$_IBGSDKDefaults._defaults
 __OBJC_$_INSTANCE_VARIABLES_IBGSDKDefaults

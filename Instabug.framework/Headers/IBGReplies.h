@@ -91,5 +91,11 @@ NS_SWIFT_NAME(Replies)
  */
 + (void)didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
 
+/**
+ @brief Use this method to mark dismissed messages as read..
+ 
+ @discussion You should call this method after StartWithToken to mark dismissed messages by user as read.
+  */
++ (void)markDismissedMessageAsRead;
 
 @end
