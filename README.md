@@ -116,4 +116,4 @@ If your app doesn’t already access the microphone or photo library, we recomme
 	
 ## More
 
-You can also check out our [API Reference](https://instabug.com/public/ios-api-reference/Classes/Instabug.html) for more detailed information about our SDK.
+You can also check out our [API Reference](https://docs.instabug.com/docs/ios-overview) for more detailed information about our SDK.
