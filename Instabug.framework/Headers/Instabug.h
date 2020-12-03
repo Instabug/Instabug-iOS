@@ -33,6 +33,14 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Instabug : NSObject
 
 /**
+ @brief Acts as master switch for Instabug.
+ 
+ @discussion It's enabled by default. When disabled, We will send pending data then disable all features related to Instabug.
+ */
+@property (class, atomic, assign) BOOL enabled;
+
+
+/**
  @brief Sets whether the session profiler is enabled or disabled.
  
  @discussion The session profiler is enabled by default and it attaches to the bug and crash reports the following information during the last 60 seconds before the report is sent.
