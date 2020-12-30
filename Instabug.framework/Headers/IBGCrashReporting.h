@@ -5,7 +5,7 @@
  
  Copyright:  (c) 2013-2019 by Instabug, Inc., all rights reserved.
  
- Version:    10.1
+ Version:    10.1.1
  */
 
 #import <Foundation/Foundation.h>
@@ -13,6 +13,11 @@
 NS_SWIFT_NAME(CrashReporting)
 @interface IBGCrashReporting : NSObject
 
+/**
+ @brief Enable/Disable crash reporting.
+ 
+ Crash reporting is enabled by default. If you need to disable it, you need to call. It's recommended to call it before startWithToken.
+ */
 @property (class, atomic, assign) BOOL enabled;
 
 /**
