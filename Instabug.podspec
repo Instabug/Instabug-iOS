@@ -13,5 +13,4 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'Instabug.xcframework/ios-arm64_armv7/Instabug.framework/Headers/*.{h}'
   s.vendored_frameworks = 'Instabug.xcframework'
-  s.preserve_paths =  'Instabug.xcframework/*', 'Instabug.framework.dSYM/*'
 end
