@@ -16,3 +16,6 @@ xcuserdata/
 ## Other
 *.moved-aside
 *.xcuserstate
+
+Podfile.lock
+Pods/
