@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'Commercial', :file => 'LICENSE.md' }
   s.author       = { "Instabug" => "contactus@instabug.com" }
   s.platform     = :ios, '10.0'
-  s.source       = { :http => 'https://ios-releases.instabug.com/test/10.7.4/archive.zip' }
+  s.source       = { :http => 'https://ios-releases.instabug.com/test/Instabug/10.7.4/archive.zip' }
   s.library      = 'z'
   s.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
