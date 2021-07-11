@@ -21,24 +21,9 @@
 		54B011BC1D902CA9002AF597 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B011BB1D902CA9002AF597 /* CoreMedia.framework */; };
 		54B011C11D9110F5002AF597 /* UIViewController+DefaultAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B011C01D9110F5002AF597 /* UIViewController+DefaultAlertController.swift */; };
 		54B011C41D911199002AF597 /* UIAlertAction+DefaultAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B011C31D911199002AF597 /* UIAlertAction+DefaultAction.swift */; };
-		71A1D49F20FF88040082B09F /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A1D49E20FF88040082B09F /* Instabug.framework */; };
-		71A1D4A020FF88040082B09F /* Instabug.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 71A1D49E20FF88040082B09F /* Instabug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		71EB748D20EB9B0300C3918F /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB748C20EB9B0300C3918F /* SettingsTableViewController.swift */; };
+		DF7521262B991D851FC8327E /* Pods_Instabug_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BA50C54961C153E2212AD9 /* Pods_Instabug_Demo.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		71A1D49420FF7E5A0082B09F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				71A1D4A020FF88040082B09F /* Instabug.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		54B011841D901660002AF597 /* Instabug Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instabug Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +45,9 @@
 		71A1D48C20FF7DF70082B09F /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = "../../../Downloads/Instabug/Instabug-SDK/Instabug.framework"; sourceTree = "<group>"; };
 		71A1D49E20FF88040082B09F /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = ../../Instabug.framework; sourceTree = "<group>"; };
 		71EB748C20EB9B0300C3918F /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		9CF172BA0D62F8CCA2DA6EC2 /* Pods-Instabug Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instabug Demo.debug.xcconfig"; path = "Target Support Files/Pods-Instabug Demo/Pods-Instabug Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		A8BA50C54961C153E2212AD9 /* Pods_Instabug_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instabug_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB34BCB094B980708CC594C /* Pods-Instabug Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instabug Demo.release.xcconfig"; path = "Target Support Files/Pods-Instabug Demo/Pods-Instabug Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +58,11 @@
 				54B011BC1D902CA9002AF597 /* CoreMedia.framework in Frameworks */,
 				54B011B21D9018CB002AF597 /* UIKit.framework in Frameworks */,
 				54B011B01D9018C3002AF597 /* CoreGraphics.framework in Frameworks */,
-				71A1D49F20FF88040082B09F /* Instabug.framework in Frameworks */,
 				54B011AE1D9018BD002AF597 /* SystemConfiguration.framework in Frameworks */,
 				54B011AC1D9018B5002AF597 /* CoreMotion.framework in Frameworks */,
 				54B011AA1D9018AE002AF597 /* CoreTelephony.framework in Frameworks */,
 				54B011A81D9018A4002AF597 /* AVFoundation.framework in Frameworks */,
+				DF7521262B991D851FC8327E /* Pods_Instabug_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +83,7 @@
 				54B011861D901660002AF597 /* Instabug Demo */,
 				54B011851D901660002AF597 /* Products */,
 				54B011A61D9018A4002AF597 /* Frameworks */,
+				C6633F015D1ABC239B08DFBE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +130,7 @@
 				54B011AB1D9018B5002AF597 /* CoreMotion.framework */,
 				54B011A91D9018AE002AF597 /* CoreTelephony.framework */,
 				54B011A71D9018A4002AF597 /* AVFoundation.framework */,
+				A8BA50C54961C153E2212AD9 /* Pods_Instabug_Demo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,6 +144,15 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		C6633F015D1ABC239B08DFBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CF172BA0D62F8CCA2DA6EC2 /* Pods-Instabug Demo.debug.xcconfig */,
+				BEB34BCB094B980708CC594C /* Pods-Instabug Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,10 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54B0119B1D901660002AF597 /* Build configuration list for PBXNativeTarget "Instabug Demo" */;
 			buildPhases = (
+				DC9D39627264807213C5BD60 /* [CP] Check Pods Manifest.lock */,
 				54B011801D901660002AF597 /* Sources */,
 				54B011811D901660002AF597 /* Frameworks */,
 				54B011821D901660002AF597 /* Resources */,
-				71A1D49420FF7E5A0082B09F /* Embed Frameworks */,
+				A6D52481D73FA7AD8AC1EE89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,6 +222,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A6D52481D73FA7AD8AC1EE89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instabug Demo/Pods-Instabug Demo-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Instabug/Instabug.framework/Instabug",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Instabug.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instabug Demo/Pods-Instabug Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC9D39627264807213C5BD60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instabug Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54B011801D901660002AF597 /* Sources */ = {
@@ -375,8 +418,10 @@
 		};
 		54B0119C1D901660002AF597 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF172BA0D62F8CCA2DA6EC2 /* Pods-Instabug Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../",
@@ -395,8 +440,10 @@
 		};
 		54B0119D1D901660002AF597 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB34BCB094B980708CC594C /* Pods-Instabug Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../",
