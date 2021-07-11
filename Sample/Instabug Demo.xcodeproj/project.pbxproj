@@ -186,7 +186,6 @@
 				TargetAttributes = {
 					54B011831D901660002AF597 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 56S6Q9SA8U;
 						LastSwiftMigration = 1200;
 						ProvisioningStyle = Automatic;
 					};
@@ -422,7 +421,7 @@
 			baseConfigurationReference = 9CF172BA0D62F8CCA2DA6EC2 /* Pods-Instabug Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 56S6Q9SA8U;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../",
@@ -444,7 +443,7 @@
 			baseConfigurationReference = BEB34BCB094B980708CC594C /* Pods-Instabug Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 56S6Q9SA8U;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../",
