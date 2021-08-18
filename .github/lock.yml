@@ -1,0 +1,6 @@
+
+# Configuration for Lock Threads - https://github.com/dessant/lock-threads
+daysUntilLock: 45
+
+# Limit to issues only
+only: issues
