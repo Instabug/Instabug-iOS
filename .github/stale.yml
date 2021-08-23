@@ -12,12 +12,13 @@ onlyLabels: []
 
 # Issues or Pull Requests with these labels will never be considered stale. Set to `[]` to disable
 exemptLabels:
-  - Feature Request
-  - WIP
-  - Bug
+  - "Feature Request"
+  - "WIP"
+  - "Bug"
+  - pinned
 
 # Label to use when marking as stale
-staleLabel: Inactive
+staleLabel: "Inactive"
 
 # Comment to post when marking as stale. Set to `false` to disable
 markComment: >
