@@ -15,7 +15,6 @@ exemptLabels:
   - "Feature Request"
   - "WIP"
   - "Bug"
-  - pinned
 
 # Label to use when marking as stale
 staleLabel: "Inactive"
