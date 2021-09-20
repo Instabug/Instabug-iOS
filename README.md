@@ -42,9 +42,9 @@ Then drag Instabug.framework into your Xcode project.
 
 ### Manually
 
-1. [Download the Instabug SDK](https://s3.amazonaws.com/instabug-pro/sdk_releases/Instabug.zip)
+1. [Download the Instabug SDK](https://s3.amazonaws.com/instabug-pro/sdk_releases/Instabug-XCFramework.zip)
 
-2. Extract it then drag & drop Instabug.framework to your project's "Embedded Binaries" section under the "General" tab, and make sure that the "Copy items if needed" checkbox is checked
+2. Extract it then drag & drop Instabug.xcframework to your project's "Frameworks, Libraries, and Embedded Content" section under the "General" tab, and make sure that the "Copy items if needed" checkbox is checked
 
 3. Create a new "Run Script Phase" in your project’s target "Build Phases" and add the following snippet
 
@@ -65,7 +65,7 @@ If that's the case, do the following steps:
 
 - Leave subpath blank. Let be default Copy only when installing.
 
-- Under the table, click '+' and then select `Instabug.framework`
+- Under the table, click '+' and then select `Instabug.xcframework`
 
 - Make sure `Code Sign on Copy` is checked (ticked).
 
