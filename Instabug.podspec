@@ -5,12 +5,12 @@ Pod::Spec.new do |s|
   s.homepage     = "http://instabug.com"
   s.license      = { :type => 'Commercial', :file => 'LICENSE.md' }
   s.author       = { "Instabug" => "contactus@instabug.com" }
-  s.platform     = :ios, '10.0'
+  s.platform     = :ios, '11.0'
   s.source       = { :http => 'https://ios-releases.instabug.com/release/Instabug/11.5.0/archive.zip' }
   s.library      = 'z'
   s.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Instabug/"' }
   s.requires_arc = true
-  s.source_files = 'Instabug.xcframework/ios-arm64_armv7/Instabug.framework/Headers/*.{h}'
+  s.source_files = 'Instabug.xcframework/ios-arm64/Instabug.framework/Headers/*.{h}'
   s.vendored_frameworks = 'Instabug.xcframework'
 end
