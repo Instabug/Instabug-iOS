@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = "Instabug"
-  s.version      = "11.6.0"
+  s.version      = "11.5.0"
   s.summary      = "Bug reporting for mobile apps. Learn more at http://instabug.com"
   s.homepage     = "http://instabug.com"
   s.license      = { :type => 'Commercial', :file => 'LICENSE.md' }
   s.author       = { "Instabug" => "contactus@instabug.com" }
-  s.platform     = :ios, '10.0'
+  s.platform     = :ios, '11.0'
   s.source       = { :http => 'https://ios-releases.instabug.com/release/Instabug/11.5.0/archive.zip' }
   s.library      = 'z'
   s.frameworks   = 'AVFoundation', 'CoreGraphics', 'CoreMotion', 'SystemConfiguration', 'CoreTelephony', 'UIKit', 'CoreMedia', 'CoreVideo', 'CoreData'
