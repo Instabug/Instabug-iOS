@@ -40,6 +40,10 @@ $ carthage update
 
 Then drag Instabug.framework into your Xcode project.
 
+### Swift Package Manager
+
+To integrate Instabug into your Xcode project using SPM, please refer to https://github.com/Instabug/Instabug-SP
+
 ### Manually
 
 1. [Download the Instabug SDK](https://s3.amazonaws.com/instabug-pro/sdk_releases/Instabug-XCFramework.zip)
