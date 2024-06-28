@@ -46,16 +46,18 @@ To integrate Instabug into your Xcode project using SPM, please refer to https:/
 
 ### Manually
 
-1. [Download the Instabug SDK](https://s3.amazonaws.com/instabug-pro/sdk_releases/Instabug-XCFramework.zip)
+1. [Go to Instabug SDK latest release](https://github.com/Instabug/Instabug-iOS/releases/latest)
 
-2. Extract it then drag & drop Instabug.xcframework to your project's "Frameworks, Libraries, and Embedded Content" section under the "General" tab, and make sure that the "Copy items if needed" checkbox is checked
+2. Download Instabug-XCFramework.zip
 
-3. Create a new "Run Script Phase" in your project’s target "Build Phases" and add the following snippet
+3. Extract it then drag & drop Instabug.xcframework to your project's "Frameworks, Libraries, and Embedded Content" section under the "General" tab, and make sure that the "Copy items if needed" checkbox is checked
+
+4. Create a new "Run Script Phase" in your project’s target "Build Phases" and add the following snippet
 
 ```
 bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Instabug.framework/strip-frameworks.sh"
 ```
-4. In Xcode 11.x you might get the following error:
+5. In Xcode 11.x you might get the following error:
 ```
 dyld: Library not loaded: @rpath/Instabug.framework/Instabug
 Reason: image not found
@@ -92,16 +94,16 @@ If that's the case, do the following steps:
     ```
 
 2. Add the following to your app delegate's application:didFinishLaunchingWithOptions: method.
-	
-	```swift
-	// Swift
-	Instabug.start(withToken: <#app token#>, invocationEvents: .shake)
-	```
-	```objective-c
-	// Objective-C
-	[Instabug startWithToken:<#app token#> invocationEvents:IBGInvocationEventShake];
-	```
-	Make sure to replace `app_token` with your application token. Find it [here](https://instabug.com/app/sdk/).
+    
+    ```swift
+    // Swift
+    Instabug.start(withToken: <#app token#>, invocationEvents: .shake)
+    ```
+    ```objective-c
+    // Objective-C
+    [Instabug startWithToken:<#app token#> invocationEvents:IBGInvocationEventShake];
+    ```
+    Make sure to replace `app_token` with your application token. Find it [here](https://instabug.com/app/sdk/).
 
 ## Notes
 Instabug needs access to the microphone and photo library to be able to let users add audio and video attachments. Starting from iOS 10, apps that don’t provide a usage description for those 2 permissions would be rejected when submitted to the App Store.
@@ -117,7 +119,7 @@ If your app doesn’t already access the microphone or photo library, we recomme
 * "`<app name>` needs access to your photo library for you to be able to attach images."
 
 **The permission alert for accessing the microphone/photo library will NOT appear unless users attempt to attach a voice note/photo while using Instabug.**
-	
+    
 ## More
 
 You can also check out our [API Reference](https://docs.instabug.com/docs/ios-overview) for more detailed information about our SDK.
