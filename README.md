@@ -46,38 +46,24 @@ To integrate Instabug into your Xcode project using SPM, please refer to https:/
 
 ### Manually
 
-1. [Go to Instabug SDK latest release](https://github.com/Instabug/Instabug-iOS/releases/latest)
+Follow these steps to integrate the Instabug SDK into your iOS project:
 
-2. Download Instabug-XCFramework.zip
+1. **Download the Latest Instabug SDK Release:**
+   - [Go to Instabug SDK latest release](https://github.com/Instabug/Instabug-iOS/releases/latest)
+   - Click on `Instabug-XCFramework.zip` to download the file.
 
-3. Extract it then drag & drop Instabug.xcframework to your project's "Frameworks, Libraries, and Embedded Content" section under the "General" tab, and make sure that the "Copy items if needed" checkbox is checked
+2. **Extract the Zip File:**
+   - Unzip the downloaded file to reveal the `Instabug.xcframework`.
 
-4. Create a new "Run Script Phase" in your project’s target "Build Phases" and add the following snippet
+3. **Add the Framework to Your Project:**
+   - Open your project in Xcode.
+   - Navigate to your project's **General** tab.
+   - Scroll down to the **Frameworks, Libraries, and Embedded Content** section.
+   - Click the `+` button, then select **Add Files**.
+   - Choose the `Instabug.xcframework` from the extracted folder, then click **Open**.
 
-```
-bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Instabug.framework/strip-frameworks.sh"
-```
-5. In Xcode 11.x you might get the following error:
-```
-dyld: Library not loaded: @rpath/Instabug.framework/Instabug
-Reason: image not found
-```
-If that's the case, do the following steps:
-- Under Build Phases, click on + icon to add new phase, and select New Copy Files Phase.
-
-- Drag the newly created Copy Files phase above Compile Sources phase
-
-- In the new Copy Files phase, select Frameworks from Destination dropdown.
-
-- Leave subpath blank. Let be default Copy only when installing.
-
-- Under the table, click '+' and then select `Instabug.xcframework`
-
-- Make sure `Code Sign on Copy` is checked (ticked).
-
-- Do a clean build.
-
-
+4. **Set Embed Option:**
+   - In the **Embed** column next to `Instabug.xcframework`, select `Embed Without Signing`.
 
 ## Usage
 
