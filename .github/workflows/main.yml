@@ -1,0 +1,59 @@
+name: Cycle Time Analysis
+on:
+  schedule:
+    - cron: '0 9 * * *'  # Runs daily @ 9:00 AM
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  collect-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Get full git history
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+      
+      - name: Collect Cycle Time Data
+        run: |
+          # Create CSV header
+          echo "Feature,First_Commit_Date,Release_Date,Cycle_Time_Days" > cycle_time_data.csv
+          
+          # Get last 50 releases
+          gh release list --limit 50 --json tagName,publishedAt > releases.json
+          
+          # For each release, find associated PRs and calculate cycle time
+          jq -r '.[] | [.tagName, .publishedAt] | @csv' releases.json | while read release; do
+            tag=$(echo $release | cut -d',' -f1 | tr -d '"')
+            release_date=$(echo $release | cut -d',' -f2 | tr -d '"')
+            
+            # Get PRs merged since last release
+            gh pr list --state merged --base main --json number,mergedAt,headRefName | \
+            jq -r --arg release_date "$release_date" \
+            '.[] | select(.mergedAt <= $release_date) | [.number, .headRefName, .mergedAt] | @csv' | \
+            while read pr; do
+              pr_number=$(echo $pr | cut -d',' -f1 | tr -d '"')
+              branch_name=$(echo $pr | cut -d',' -f2 | tr -d '"')
+              merge_date=$(echo $pr | cut -d',' -f3 | tr -d '"')
+              
+              # Get first commit date on branch
+              first_commit=$(git log --reverse --format="%ai" origin/$branch_name | head -1)
+              
+              # Calculate cycle time in days
+              cycle_time=$(( ($(date -d "$release_date" +%s) - $(date -d "$first_commit" +%s)) / 86400 ))
+              
+              # Add to CSV
+              echo "$pr_number,$first_commit,$release_date,$cycle_time" >> cycle_time_data.csv
+            done
+          done
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Upload results
+        uses: actions/upload-artifact@v3
+        with:
+          name: cycle-time-data
+          path: cycle_time_data.csv
