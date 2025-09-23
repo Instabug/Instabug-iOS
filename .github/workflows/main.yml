@@ -31,7 +31,7 @@ jobs:
             release_date=$(echo $release | cut -d',' -f2 | tr -d '"')
             
             # Get PRs merged since last release
-            gh pr list --state merged --base main --json number,mergedAt,headRefName | \
+            gh pr list --state merged --base master --json number,mergedAt,headRefName | \
             jq -r --arg release_date "$release_date" \
             '.[] | select(.mergedAt <= $release_date) | [.number, .headRefName, .mergedAt] | @csv' | \
             while read pr; do
